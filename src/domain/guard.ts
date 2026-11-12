@@ -12,6 +12,8 @@ export type Quote = {
   provider?: "fixture" | "sandbox";
   deliveryBy?: string;
   returnPolicy?: string;
+  discovery?: { decisionId: string; version: number; productDigest: string; policyDigest: string };
+  paymentMethod?: "paypal" | "cod";
 };
 export function quoteFingerprint(quote: Quote): string {
   const fields = [
@@ -29,6 +31,8 @@ export function quoteFingerprint(quote: Quote): string {
   if (quote.provider) fields.push(quote.provider);
   if (quote.deliveryBy || quote.returnPolicy)
     fields.push(quote.deliveryBy ?? null, quote.returnPolicy ?? null);
+  if (quote.discovery) fields.push(JSON.stringify(quote.discovery));
+  if (quote.paymentMethod) fields.push(quote.paymentMethod);
   return createHash("sha256").update(JSON.stringify(fields)).digest("hex");
 }
 export function quotePaymentMode(quote: Quote) {

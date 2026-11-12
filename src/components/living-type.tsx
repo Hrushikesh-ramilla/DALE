@@ -139,9 +139,10 @@ export function LivingType({
       else reset();
     };
     const scroll = () => {
-      measured = false;
-      if (pointer && root.matches(":hover")) move(pointer);
-      else reset();
+      if (pointer && root.matches(":hover")) {
+        measured = false;
+        move(pointer);
+      }
     };
     const visibility = () => {
       if (document.hidden) reset();

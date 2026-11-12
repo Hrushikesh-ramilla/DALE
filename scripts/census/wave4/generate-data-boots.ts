@@ -1,0 +1,2317 @@
+import fs from "node:fs";
+import path from "node:path";
+
+export interface BootItem {
+  id: string;
+  brand: string;
+  productLine?: string;
+  modelName: string;
+  sourceUrl: string;
+  sourceRegion: string;
+  variants?: string[];
+  attrs: {
+    bootStyle: string;
+    shaftHeightCm: number;
+    weltType: string;
+    soleMaterial: string;
+    closure: string;
+    originCountry: string;
+    heelHeightMm?: number;
+    lastNumber?: string;
+  };
+  reason: string;
+}
+
+export const allBoots: BootItem[] = [
+  // ==========================================
+  // 1. Balenciaga (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "balenciaga-bulldozer-combat-boot",
+    brand: "Balenciaga",
+    productLine: "Bulldozer",
+    modelName: "Bulldozer Combat Boot",
+    sourceUrl: "https://www.balenciaga.com/en-us/bulldozer-boot-black-678912W0X801000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 22,
+      weltType: "Goodyear welted extreme lug",
+      soleMaterial: "Bulldozer exaggerated rubber lug sole",
+      closure: "Lace-up with side zip",
+      originCountry: "Italy",
+      heelHeightMm: 80
+    },
+    reason: "Demna's monumental runway combat boot featuring an extreme 80mm architectural lug sole."
+  },
+  {
+    id: "balenciaga-strike-20mm-lace-up-boot",
+    brand: "Balenciaga",
+    productLine: "Strike",
+    modelName: "Strike 20mm Lace-Up Boot",
+    sourceUrl: "https://www.balenciaga.com/en-us/strike-20mm-boot-black-590023WA9601000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 18,
+      weltType: "Blake stitched notched lug",
+      soleMaterial: "Thick toothed rubber sole",
+      closure: "Lace-up 8 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Military-inspired lace-up boot crafted from heavy matte calfskin with embossed Balenciaga toe logo."
+  },
+  {
+    id: "balenciaga-tractor-20mm-boot",
+    brand: "Balenciaga",
+    productLine: "Tractor",
+    modelName: "Tractor 20mm Boot",
+    sourceUrl: "https://www.balenciaga.com/en-us/tractor-20mm-boot-black-615697WA8E91000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Goodyear welted tractor tread",
+      soleMaterial: "Deep ridged rubber sole",
+      closure: "Elastic side gussets with pull tabs",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Chunky Chelsea boot defined by an assertive high-profile tractor tread sole and rounded toe."
+  },
+  {
+    id: "balenciaga-trooper-combat-boot",
+    brand: "Balenciaga",
+    productLine: "Trooper",
+    modelName: "Trooper Combat Boot",
+    sourceUrl: "https://www.balenciaga.com/en-us/trooper-boot-black-680712W0X801000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Sculpted Combat Boot",
+      shaftHeightCm: 20,
+      weltType: "Molded monobloc construction",
+      soleMaterial: "Architectural molded rubber",
+      closure: "Side zip closure",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Sculptural square-toe boot molded into an angular seamless silhouette with hidden side zip."
+  },
+  {
+    id: "balenciaga-rhino-20mm-derby-boot",
+    brand: "Balenciaga",
+    productLine: "Rhino",
+    modelName: "Rhino 20mm Derby Boot",
+    sourceUrl: "https://www.balenciaga.com/en-us/rhino-boot-black-656642WA8E91000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Ankle Boot",
+      shaftHeightCm: 15,
+      weltType: "Blake stitched with pyramid toe",
+      soleMaterial: "Leather and rubber sole",
+      closure: "Lace-up 6 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Avant-garde ankle boot recognized for its dramatic upward-turned architectural pyramid toe."
+  },
+  {
+    id: "balenciaga-biker-50mm-buckle-boot",
+    brand: "Balenciaga",
+    productLine: "Biker",
+    modelName: "Biker 50mm Buckle Boot",
+    sourceUrl: "https://www.balenciaga.com/en-us/biker-boot-black-702312W0X801000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Motorcycle Boot",
+      shaftHeightCm: 28,
+      weltType: "Goodyear welted heavy tread",
+      soleMaterial: "Cleated rubber sole",
+      closure: "Triple metallic buckle straps",
+      originCountry: "Italy",
+      heelHeightMm: 50
+    },
+    reason: "Heavy-duty motorcycle boot reinforced with industrial metal buckles and protective shin paneling."
+  },
+  {
+    id: "balenciaga-steroid-boot",
+    brand: "Balenciaga",
+    productLine: "Steroid",
+    modelName: "Steroid Boot",
+    sourceUrl: "https://www.balenciaga.com/en-us/steroid-boot-black-717812W0X801000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Exaggerated Monobloc Boot",
+      shaftHeightCm: 24,
+      weltType: "Injection-molded lightweight EVA",
+      soleMaterial: "Monobloc super-expanded EVA foam",
+      closure: "Slip-on oversized shaft",
+      originCountry: "Italy",
+      heelHeightMm: 60
+    },
+    reason: "Hyper-exaggerated cartoon proportion boot molded entirely from ultra-lightweight high-density EVA."
+  },
+  {
+    id: "balenciaga-cargo-combat-boot",
+    brand: "Balenciaga",
+    productLine: "Cargo",
+    modelName: "Cargo Combat Boot",
+    sourceUrl: "https://www.balenciaga.com/en-us/cargo-boot-black-734512W0X801000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 22,
+      weltType: "Goodyear welted multi-layer",
+      soleMaterial: "Oversized multi-density rubber sole",
+      closure: "Lace-up with metallic D-rings",
+      originCountry: "Italy",
+      heelHeightMm: 55
+    },
+    reason: "Maximalist combat boot showcasing multi-layered cargo proportions and weathered treatment."
+  },
+  {
+    id: "balenciaga-cagole-buckle-ankle-boot",
+    brand: "Balenciaga",
+    productLine: "Le Cagole",
+    modelName: "Cagole Buckle Ankle Boot",
+    sourceUrl: "https://www.balenciaga.com/en-us/cagole-boot-black-694312WA9601000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Ankle Boot",
+      shaftHeightCm: 16,
+      weltType: "Cemented pointed last",
+      soleMaterial: "Thin cuoio leather sole",
+      closure: "Side zip with aged silver studs",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Pointed-toe leather boot adopting the Y2K textured hardware and studs of the iconic Le Cagole bag."
+  },
+  {
+    id: "balenciaga-santiago-western-chelsea-boot",
+    brand: "Balenciaga",
+    productLine: "Santiago",
+    modelName: "Santiago Western Chelsea Boot",
+    sourceUrl: "https://www.balenciaga.com/en-us/santiago-boot-black-589124WA8E91000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Western Chelsea Boot",
+      shaftHeightCm: 17,
+      weltType: "Blake stitched with angled Cuban heel",
+      soleMaterial: "Leather sole with metal toe plate",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Contemporary cowboy boot sporting an elongated square toe, engraved metal toe cap, and Cuban heel."
+  },
+
+  // ==========================================
+  // 2. Berluti (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "berluti-brunico-leather-boot",
+    brand: "Berluti",
+    productLine: "Brunico",
+    modelName: "Brunico Leather Boot",
+    sourceUrl: "https://www.berluti.com/en-us/brunico-leather-boot/S4531-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Lace-Up Ankle Boot",
+      shaftHeightCm: 16,
+      weltType: "Norwegian welted",
+      soleMaterial: "Rubber lugged sole",
+      closure: "Lace-up with ski hooks",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Historic alpine boot created in 1938 for Greta Garbo, combining ski hooks with patinated Venezia leather."
+  },
+  {
+    id: "berluti-ultima-leather-boot",
+    brand: "Berluti",
+    productLine: "Ultima",
+    modelName: "Ultima Leather Boot",
+    sourceUrl: "https://www.berluti.com/en-us/ultima-leather-boot/S5180-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Dress Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake stitched bevelled waist",
+      lastNumber: "Ultima",
+      soleMaterial: "Leather sole",
+      closure: "Elastic side gussets",
+      originCountry: "Italy",
+      heelHeightMm: 28
+    },
+    reason: "Impeccable dress Chelsea boot featuring hand-cut Venezia leather and beveled waist."
+  },
+  {
+    id: "berluti-eiger-shearling-lined-boot",
+    brand: "Berluti",
+    productLine: "Eiger",
+    modelName: "Eiger Shearling Lined Boot",
+    sourceUrl: "https://www.berluti.com/en-us/eiger-shearling-boot/S5310-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Winter Hiking Boot",
+      shaftHeightCm: 19,
+      weltType: "Storm welted Norwegian",
+      soleMaterial: "Vibram Montagna rubber sole",
+      closure: "Lace-up with brass speed hooks",
+      originCountry: "Italy",
+      heelHeightMm: 38
+    },
+    reason: "Alpine winter hiking boot lined with genuine shearling and cut from weather-treated patinated calf."
+  },
+  {
+    id: "berluti-camden-venezia-leather-chelsea-boot",
+    brand: "Berluti",
+    productLine: "Camden",
+    modelName: "Camden Venezia Leather Chelsea Boot",
+    sourceUrl: "https://www.berluti.com/en-us/camden-chelsea-boot/S5412-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "City Chelsea Boot",
+      shaftHeightCm: 17,
+      weltType: "Goodyear welted",
+      soleMaterial: "Cleated micro rubber sole",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Modern urban Chelsea boot set atop a rugged Goodyear welted micro-lug sole."
+  },
+  {
+    id: "berluti-fast-track-leather-boot",
+    brand: "Berluti",
+    productLine: "Fast Track",
+    modelName: "Fast Track Leather Boot",
+    sourceUrl: "https://www.berluti.com/en-us/fast-track-boot/S5210-V2.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Hybrid Ankle Boot",
+      shaftHeightCm: 15,
+      weltType: "Hybrid athletic welt",
+      soleMaterial: "Sculpted running sole",
+      closure: "Lace-up with padded collar",
+      originCountry: "Italy",
+      heelHeightMm: 32
+    },
+    reason: "Hybrid luxury sneaker-boot uniting patinated Venezia leather with high-performance running sole."
+  },
+  {
+    id: "berluti-galet-leather-chelsea-boot",
+    brand: "Berluti",
+    productLine: "Galet",
+    modelName: "Galet Leather Chelsea Boot",
+    sourceUrl: "https://www.berluti.com/en-us/galet-chelsea-boot/S5510-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Formal Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake stitched",
+      soleMaterial: "Leather sole",
+      closure: "Elastic side gussets with pull tabs",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Sleek Chelsea boot built on the rounded Galet last featuring seamless wholecut-effect quarters."
+  },
+  {
+    id: "berluti-alessandro-infini-leather-boot",
+    brand: "Berluti",
+    productLine: "Alessandro",
+    modelName: "Alessandro Infini Leather Boot",
+    sourceUrl: "https://www.berluti.com/en-us/alessandro-infini-boot/S5620-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Dress Lace-Up Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake stitched bevelled waist",
+      soleMaterial: "Hand-painted leather sole",
+      closure: "Lace-up 7 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "High-top lace-up boot adaptation of the historic 1895 Alessandro wholecut silhouette."
+  },
+  {
+    id: "berluti-stellar-scritto-hiking-boot",
+    brand: "Berluti",
+    productLine: "Stellar",
+    modelName: "Stellar Scritto Hiking Boot",
+    sourceUrl: "https://www.berluti.com/en-us/stellar-scritto-boot/S5740-V2.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Technical Hiking Boot",
+      shaftHeightCm: 17,
+      weltType: "Blake rapid",
+      soleMaterial: "Lightweight rubber lug sole",
+      closure: "Lace-up with metallic D-rings",
+      originCountry: "Italy",
+      heelHeightMm: 32
+    },
+    reason: "City hiker inscribed with Scritto calligraphy and accented with padded technical ankle collar."
+  },
+  {
+    id: "berluti-lorenzo-suede-ankle-boot",
+    brand: "Berluti",
+    productLine: "Lorenzo",
+    modelName: "Lorenzo Suede Ankle Boot",
+    sourceUrl: "https://www.berluti.com/en-us/lorenzo-suede-boot/S5810-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Chukka Boot",
+      shaftHeightCm: 13,
+      weltType: "Blake flexible unlined",
+      soleMaterial: "Supple leather sole",
+      closure: "Lace-up 2 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Unlined, supremely pliable two-eyelet chukka boot crafted from velvety Italian calf suede."
+  },
+  {
+    id: "berluti-caractere-leather-chelsea-boot",
+    brand: "Berluti",
+    productLine: "Caractere",
+    modelName: "Caractere Leather Chelsea Boot",
+    sourceUrl: "https://www.berluti.com/en-us/caractere-chelsea-boot/S5920-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake stitched bevelled waist",
+      soleMaterial: "Leather sole with rubber insert",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 28
+    },
+    reason: "Chiseled square-toe Chelsea boot cut from hand-colored patinated leather."
+  },
+
+  // ==========================================
+  // 3. Bottega Veneta (10 models, Italy IT - LUG & TIRE ICONS!)
+  // ==========================================
+  {
+    id: "bottega-veneta-tire-chelsea-boot",
+    brand: "Bottega Veneta",
+    productLine: "Tire",
+    modelName: "Tire Chelsea Boot",
+    sourceUrl: "https://www.bottegaveneta.com/en-us/tire-chelsea-boot-black-630284VBS501025.html",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Chunky Chelsea Boot",
+      shaftHeightCm: 20,
+      weltType: "Wavy multi-layer rubber welt",
+      soleMaterial: "Chunky wavy tread rubber sole",
+      closure: "Elastic side gussets with pull tabs",
+      originCountry: "Italy",
+      heelHeightMm: 55
+    },
+    reason: "Daniel Lee's revolutionary design featuring an exaggerated wavy rubber lug sole and vegetable-tanned calfskin."
+  },
+  {
+    id: "bottega-veneta-lug-chelsea-boot",
+    brand: "Bottega Veneta",
+    productLine: "Lug",
+    modelName: "Lug Chelsea Boot",
+    sourceUrl: "https://www.bottegaveneta.com/en-us/lug-chelsea-boot-black-667144VBS501000.html",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Tall Chelsea Boot",
+      shaftHeightCm: 22,
+      weltType: "Stacked leather and micro lug welt",
+      soleMaterial: "Chunky cleated micro-rubber sole",
+      closure: "Elongated elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 55
+    },
+    reason: "The definitive modern luxury Chelsea boot with elongated slim shaft and pronounced layered lug sole."
+  },
+  {
+    id: "bottega-veneta-tire-lace-up-combat-boot",
+    brand: "Bottega Veneta",
+    productLine: "Tire",
+    modelName: "Tire Lace-Up Combat Boot",
+    sourceUrl: "https://www.bottegaveneta.com/en-us/tire-lace-up-boot-black-630281VBS501025.html",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 22,
+      weltType: "Wavy multi-layer rubber welt",
+      soleMaterial: "Sculpted wavy lug rubber sole",
+      closure: "Lace-up 8 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 55
+    },
+    reason: "High-top combat boot pairing vegetable-tanned calfskin with Bottega's signature contrast wavy Tire tread."
+  },
+  {
+    id: "bottega-veneta-lug-lace-up-ankle-boot",
+    brand: "Bottega Veneta",
+    productLine: "Lug",
+    modelName: "Lug Lace-Up Ankle Boot",
+    sourceUrl: "https://www.bottegaveneta.com/en-us/lug-lace-up-boot-black-667145VBS501000.html",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Lace-Up Ankle Boot",
+      shaftHeightCm: 17,
+      weltType: "Goodyear welted stacked lug",
+      soleMaterial: "Notched cleated rubber sole",
+      closure: "Lace-up 6 eyelets with pull tabs",
+      originCountry: "Italy",
+      heelHeightMm: 55
+    },
+    reason: "Clean lace-up ankle boot built on the architectural Lug chassis with stacked cuoio sole edge."
+  },
+  {
+    id: "bottega-veneta-strut-ankle-boot",
+    brand: "Bottega Veneta",
+    productLine: "Strut",
+    modelName: "Strut Ankle Boot",
+    sourceUrl: "https://www.bottegaveneta.com/en-us/strut-boot-black-599812VBS501000.html",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Dress Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Prominent welted edge",
+      soleMaterial: "Cuoio leather and rubber lugged sole",
+      closure: "Side zip closure",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Square-toe boot designed with an exaggerated welt protrusion and bevelled leather heel."
+  },
+  {
+    id: "bottega-veneta-puddle-rubber-ankle-boot",
+    brand: "Bottega Veneta",
+    productLine: "Puddle",
+    modelName: "Puddle Rubber Ankle Boot",
+    sourceUrl: "https://www.bottegaveneta.com/en-us/puddle-boot-black-640045V00P01000.html",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Waterproof Ankle Boot",
+      shaftHeightCm: 18,
+      weltType: "Molded seamless monobloc",
+      soleMaterial: "Biodegradable polymer rubber",
+      closure: "Slip-on waterproof body",
+      originCountry: "Italy",
+      heelHeightMm: 55
+    },
+    reason: "Monolithic rain boot molded seamlessly from biodegradable polymer with chunky rounded toe."
+  },
+  {
+    id: "bottega-veneta-flash-chelsea-boot",
+    brand: "Bottega Veneta",
+    productLine: "Flash",
+    modelName: "Flash Chelsea Boot",
+    sourceUrl: "https://www.bottegaveneta.com/en-us/flash-chelsea-boot-black-668589VBS501000.html",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Flatform Chelsea Boot",
+      shaftHeightCm: 18,
+      weltType: "Contrast flatform lug sole",
+      soleMaterial: "Brightly colored high-density rubber sole",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 60
+    },
+    reason: "Dramatic Chelsea boot featuring a vibrant contrast-colored flatform lug sole and glossy leather."
+  },
+  {
+    id: "bottega-veneta-highway-western-chelsea-boot",
+    brand: "Bottega Veneta",
+    productLine: "Highway",
+    modelName: "Highway Western Chelsea Boot",
+    sourceUrl: "https://www.bottegaveneta.com/en-us/highway-boot-black-708912VBS501000.html",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Western Ankle Boot",
+      shaftHeightCm: 17,
+      weltType: "Blake stitched with Cuban heel",
+      soleMaterial: "Smooth leather sole",
+      closure: "Elastic side gussets",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Sleek pointed western silhouette crafted with an angled Cuban heel and buttery calfskin."
+  },
+  {
+    id: "bottega-veneta-bounce-combat-boot",
+    brand: "Bottega Veneta",
+    productLine: "Bounce",
+    modelName: "Bounce Combat Boot",
+    sourceUrl: "https://www.bottegaveneta.com/en-us/bounce-boot-black-651406VBS501000.html",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 20,
+      weltType: "Exaggerated contrast welt",
+      soleMaterial: "Chunky rubber lug sole",
+      closure: "Lace-up 7 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Distinguished by an oversized protruding welt finished with bold contrast topstitching."
+  },
+  {
+    id: "bottega-veneta-haddock-moccasin-boot",
+    brand: "Bottega Veneta",
+    productLine: "Haddock",
+    modelName: "Haddock Moccasin Boot",
+    sourceUrl: "https://www.bottegaveneta.com/en-us/haddock-boot-black-721204VBS501000.html",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Moccasin Ankle Boot",
+      shaftHeightCm: 15,
+      weltType: "Tubular apron welt",
+      soleMaterial: "Ridged rubber lug sole",
+      closure: "Lace-up 3 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Hand-stitched apron moccasin boot pairing traditional artisan craftsmanship with a heavy cleated sole."
+  },
+
+  // ==========================================
+  // 4. Christian Louboutin (10 models, France FR / Italy IT - RED SOLES!)
+  // ==========================================
+  {
+    id: "christian-louboutin-roadie-flat-chelsea-boot",
+    brand: "Christian Louboutin",
+    productLine: "Roadie",
+    modelName: "Roadie Flat Chelsea Boot",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/roadie-flat-black-1170707bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 15,
+      weltType: "Blake construction with signature red sole",
+      soleMaterial: "Red lacquered leather sole",
+      closure: "Elastic side panels with grosgrain pull tabs",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Louboutin's essential rock-and-roll Chelsea boot, rendered in luxurious black suede with the signature red sole."
+  },
+  {
+    id: "christian-louboutin-our-georges-b-flat-combat-boot",
+    brand: "Christian Louboutin",
+    productLine: "Our Georges",
+    modelName: "Our Georges B Flat Combat Boot",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/our-georges-b-flat-black-3211078bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 19,
+      weltType: "Lugged rubber sole with red accent welt",
+      soleMaterial: "Lugged rubber sole with red bottom",
+      closure: "Lace-up with metallic CL logo buckle",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Rugged yet refined combat boot equipped with a signature CL metallic monogram buckle strap."
+  },
+  {
+    id: "christian-louboutin-trapman-flat-hiking-boot",
+    brand: "Christian Louboutin",
+    productLine: "Trapman",
+    modelName: "Trapman Flat Hiking Boot",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/trapman-flat-black-3200720bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Hiking Boot",
+      shaftHeightCm: 17,
+      weltType: "Storm welted with red rubber tread",
+      soleMaterial: "Red rubber lug sole",
+      closure: "Lace-up with ski hooks and padded collar",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Alpine city boot detailed with flannel padded collar and heavy-duty red-injected rubber tread."
+  },
+  {
+    id: "christian-louboutin-melon-spikes-flat-chelsea-boot",
+    brand: "Christian Louboutin",
+    productLine: "Melon Spikes",
+    modelName: "Melon Spikes Flat Chelsea Boot",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/melon-spikes-flat-black-3181222bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Spiked Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake stitched with red sole",
+      soleMaterial: "Signature red leather sole",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Chelsea boot armed with Louboutin's iconic metallic spikes covering the cap toe."
+  },
+  {
+    id: "christian-louboutin-mad-boot-flat-chelsea",
+    brand: "Christian Louboutin",
+    productLine: "Mad Boot",
+    modelName: "Mad Boot Flat Chelsea",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/mad-boot-flat-black-3220712bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Dress Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake stitched bevelled waist",
+      soleMaterial: "Red leather sole",
+      closure: "Elastic side gussets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "High-shine calfskin dress Chelsea boot cut with razor-sharp lines and brilliant red sole."
+  },
+  {
+    id: "christian-louboutin-alpha-male-flat-ankle-boot",
+    brand: "Christian Louboutin",
+    productLine: "Alpha Male",
+    modelName: "Alpha Male Flat Ankle Boot",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/alpha-male-flat-boot-3210740bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Dress Ankle Boot",
+      shaftHeightCm: 15,
+      weltType: "Blake construction with red sole",
+      soleMaterial: "Red leather sole",
+      closure: "Side zip closure",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Patent leather evening ankle boot designed with an inner side zip and grosgrain ribbon collar."
+  },
+  {
+    id: "christian-louboutin-marchaveille-flat-combat-boot",
+    brand: "Christian Louboutin",
+    productLine: "Marchaveille",
+    modelName: "Marchaveille Flat Combat Boot",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/marchaveille-flat-black-3220720bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 20,
+      weltType: "Blake rapid notched sole",
+      soleMaterial: "Cleated red rubber sole",
+      closure: "Lace-up 8 eyelets with side zip",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Polished leather ranger boot detailed with metal eyelets and aggressive scarlet lug sole."
+  },
+  {
+    id: "christian-louboutin-samson-flat-chelsea-boot",
+    brand: "Christian Louboutin",
+    productLine: "Samson",
+    modelName: "Samson Flat Chelsea Boot",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/samson-flat-black-1180277bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake stitched",
+      soleMaterial: "Signature red leather sole",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Classic British Chelsea boot cut in velvety suede elevated by Louboutin's scarlet bottom."
+  },
+  {
+    id: "christian-louboutin-yeti-flat-shearling-boot",
+    brand: "Christian Louboutin",
+    productLine: "Yeti",
+    modelName: "Yeti Flat Shearling Boot",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/yeti-flat-shearling-3230718bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Shearling Winter Boot",
+      shaftHeightCm: 18,
+      weltType: "Goodyear welted lug sole",
+      soleMaterial: "Red rubber commando sole",
+      closure: "Lace-up with shearling tongue",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Plush shearling-lined winter boot designed to brave mountain retreats in signature scarlet style."
+  },
+  {
+    id: "christian-louboutin-city-strass-flat-chelsea-boot",
+    brand: "Christian Louboutin",
+    productLine: "City Strass",
+    modelName: "City Strass Flat Chelsea Boot",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/city-strass-flat-boot-3230722bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Crystal Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake stitched with crystal welt",
+      soleMaterial: "Red leather sole",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Gala evening boot framed with glistening Strass crystal piping along the welt above the red sole."
+  },
+
+  // ==========================================
+  // 5. Church's (10 models, United Kingdom GB)
+  // ==========================================
+  {
+    id: "churchs-shannon-boot",
+    brand: "Church's",
+    productLine: "Classic",
+    modelName: "Shannon Boot",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/boots/product.shannon_boot.ETC004_9LG_F0AAB.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Derby Boot",
+      shaftHeightCm: 16,
+      weltType: "Storm welted Goodyear",
+      lastNumber: "103",
+      soleMaterial: "Double leather sole",
+      closure: "Lace-up 7 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 30
+    },
+    reason: "Boot version of Church's legendary plain derby, crafted from water-resistant polished binder leather on the 103 last."
+  },
+  {
+    id: "churchs-amberley-r-chelsea-boot",
+    brand: "Church's",
+    productLine: "Custom Grade",
+    modelName: "Amberley R Chelsea Boot",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/boots/product.amberley_r_chelsea_boot.ETC001_9VE_F0AAN.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Goodyear welted",
+      lastNumber: "173",
+      soleMaterial: "Dainite studded rubber sole",
+      closure: "Elastic side gussets with pull tabs",
+      originCountry: "United Kingdom",
+      heelHeightMm: 28
+    },
+    reason: "Classic Northampton Chelsea boot crafted on the elegant 173 last with Dainite all-weather rubber sole."
+  },
+  {
+    id: "churchs-houston-leather-chelsea-boot",
+    brand: "Church's",
+    productLine: "Classic",
+    modelName: "Houston Leather Chelsea Boot",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/boots/product.houston_chelsea_boot.ETC002_9LG_F0AXO.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Dress Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Goodyear welted",
+      lastNumber: "136",
+      soleMaterial: "Leather sole",
+      closure: "Elastic side panels",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Sleek formal Chelsea boot on the chiseled 136 last in high-shine bookbinder calf."
+  },
+  {
+    id: "churchs-bletsoe-double-monk-boot",
+    brand: "Church's",
+    productLine: "Classic",
+    modelName: "Bletsoe Double Monk Boot",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/boots/product.bletsoe_monk_boot.ETC008_9VE_F0ADY.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Monk Strap Boot",
+      shaftHeightCm: 16,
+      weltType: "Goodyear welted",
+      lastNumber: "173",
+      soleMaterial: "Leather sole with rubber forepart",
+      closure: "Dual brass monk buckles",
+      originCountry: "United Kingdom",
+      heelHeightMm: 28
+    },
+    reason: "Double monk ankle boot built with Northampton Goodyear welted precision in Nevada calfskin."
+  },
+  {
+    id: "churchs-coalport-2-commando-boot",
+    brand: "Church's",
+    productLine: "Country Collection",
+    modelName: "Coalport 2 Commando Boot",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/boots/product.coalport_2_boot.ETC012_9XV_F0AHK.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Derby Work Boot",
+      shaftHeightCm: 17,
+      weltType: "Storm welted Goodyear",
+      lastNumber: "103",
+      soleMaterial: "Commando rubber lug sole",
+      closure: "Lace-up with ski speed hooks",
+      originCountry: "United Kingdom",
+      heelHeightMm: 35
+    },
+    reason: "Heavy-duty English country boot crafted from grain leather and storm-welted onto a commando rubber sole."
+  },
+  {
+    id: "churchs-mcfarlane-brogue-boot",
+    brand: "Church's",
+    productLine: "Country Collection",
+    modelName: "McFarlane Brogue Boot",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/boots/product.mcfarlane_brogue_boot.ETC015_9XV_F0AKM.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Brogue Wingtip Boot",
+      shaftHeightCm: 18,
+      weltType: "Storm welted Goodyear",
+      lastNumber: "133",
+      soleMaterial: "Commando rubber sole",
+      closure: "Lace-up 8 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 35
+    },
+    reason: "Full brogue wingtip boot in Highland pebble grain leather engineered for rugged country walking."
+  },
+  {
+    id: "churchs-wootton-combat-boot",
+    brand: "Church's",
+    productLine: "City",
+    modelName: "Wootton Combat Boot",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/boots/product.wootton_boot.ETC020_9LG_F0AMZ.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 19,
+      weltType: "Goodyear welted",
+      lastNumber: "103",
+      soleMaterial: "Cleated St Moritz rubber sole",
+      closure: "Lace-up with side zip",
+      originCountry: "United Kingdom",
+      heelHeightMm: 32
+    },
+    reason: "Contemporary combat boot in polished binder leather set on an ultra-durable St Moritz rubber lug sole."
+  },
+  {
+    id: "churchs-danzey-suede-jodhpur-boot",
+    brand: "Church's",
+    productLine: "Heritage",
+    modelName: "Danzey Suede Jodhpur Boot",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/boots/product.danzey_jodhpur_boot.ETC025_9VE_F0APQ.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Jodhpur Boot",
+      shaftHeightCm: 16,
+      weltType: "Goodyear welted",
+      lastNumber: "81",
+      soleMaterial: "Leather sole",
+      closure: "Wraparound ankle strap with brass buckle",
+      originCountry: "United Kingdom",
+      heelHeightMm: 28
+    },
+    reason: "Equestrian Jodhpur boot crafted from Castoro suede with traditional wraparound leather ankle strap."
+  },
+  {
+    id: "churchs-welwyn-chukka-boot",
+    brand: "Church's",
+    productLine: "Classic",
+    modelName: "Welwyn Chukka Boot",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/boots/product.welwyn_chukka_boot.ETC030_9VE_F0ATU.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Chukka Boot",
+      shaftHeightCm: 13,
+      weltType: "Goodyear welted",
+      lastNumber: "173",
+      soleMaterial: "Dainite rubber sole",
+      closure: "Lace-up 2 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 28
+    },
+    reason: "Classic two-eyelet British chukka boot pairing velour calf suede with studded Dainite sole."
+  },
+  {
+    id: "churchs-kelsey-shearling-lined-boot",
+    brand: "Church's",
+    productLine: "Winter Special",
+    modelName: "Kelsey Shearling Lined Boot",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/boots/product.kelsey_shearling_boot.ETC035_9XV_F0AWX.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Winter Lace-Up Boot",
+      shaftHeightCm: 18,
+      weltType: "Storm welted Goodyear",
+      lastNumber: "103",
+      soleMaterial: "Commando rubber sole",
+      closure: "Lace-up with natural shearling lining",
+      originCountry: "United Kingdom",
+      heelHeightMm: 35
+    },
+    reason: "Substantial winter boot lined in genuine English shearling for warmth in snow and rain."
+  },
+
+  // ==========================================
+  // 6. Gucci (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "gucci-web-trim-leather-lace-up-boot",
+    brand: "Gucci",
+    productLine: "Web Heritage",
+    modelName: "Web Trim Leather Lace-Up Boot",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/boots-for-men/mens-lace-up-boot-with-web-p-6582500G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Lace-Up Combat Boot",
+      shaftHeightCm: 18,
+      weltType: "Goodyear welted rubber lug",
+      soleMaterial: "Chunky rubber lug sole",
+      closure: "Lace-up with green and red Web padded collar",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Combat-inspired boot highlighted by Gucci's signature green and red Web striping along the padded collar."
+  },
+  {
+    id: "gucci-lug-sole-chelsea-boot-with-horsebit",
+    brand: "Gucci",
+    productLine: "Horsebit Heritage",
+    modelName: "Lug Sole Chelsea Boot with Horsebit",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/boots-for-men/mens-chelsea-boot-with-horsebit-p-577236DS8001000",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Lug Sole Chelsea Boot",
+      shaftHeightCm: 17,
+      weltType: "Goodyear welted lug sole",
+      soleMaterial: "Cleated rubber lug sole",
+      closure: "Elastic side panels with Horsebit detail",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "High-shine spazzolato leather Chelsea boot accented with archival golden Horsebit and chunky lug sole."
+  },
+  {
+    id: "gucci-interlocking-g-combat-boot",
+    brand: "Gucci",
+    productLine: "Interlocking G",
+    modelName: "Interlocking G Combat Boot",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/boots-for-men/mens-interlocking-g-combat-boot-p-7195840G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 20,
+      weltType: "Blake rapid notched sole",
+      soleMaterial: "Chunky lugged rubber sole",
+      closure: "Lace-up with perforated Interlocking G",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Ranger boot displaying perforated Interlocking G logo detailing across the side quarter panels."
+  },
+  {
+    id: "gucci-leather-ankle-boot-with-buckle",
+    brand: "Gucci",
+    productLine: "Formal Boots",
+    modelName: "Leather Ankle Boot with Buckle",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/boots-for-men/mens-ankle-boot-with-buckle-p-6891240G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Dress Ankle Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake construction",
+      soleMaterial: "Leather sole",
+      closure: "Side zip with engraved Gucci buckle",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Sartorial dress boot crafted from box calfskin and detailed with an engraved metallic roller buckle."
+  },
+  {
+    id: "gucci-horsebit-suede-ankle-boot",
+    brand: "Gucci",
+    productLine: "Horsebit",
+    modelName: "Horsebit Suede Ankle Boot",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/boots-for-men/mens-suede-ankle-boot-p-5982120G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Ankle Boot",
+      shaftHeightCm: 15,
+      weltType: "Tubular construction",
+      soleMaterial: "Leather sole",
+      closure: "Side zip with vintage gold Horsebit",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Rich velour suede ankle boot embellished with Gucci's timeless Horsebit across the instep."
+  },
+  {
+    id: "gucci-gg-supreme-canvas-ankle-boot",
+    brand: "Gucci",
+    productLine: "GG Supreme",
+    modelName: "GG Supreme Canvas Ankle Boot",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/boots-for-men/mens-gg-supreme-boot-p-6281920G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Casual Lace-Up Boot",
+      shaftHeightCm: 17,
+      weltType: "Cemented with leather welt",
+      soleMaterial: "Lugged rubber sole",
+      closure: "Lace-up 6 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Durable ankle boot crafted in monogram GG Supreme canvas framed by supple black leather trims."
+  },
+  {
+    id: "gucci-distressed-suede-chelsea-boot",
+    brand: "Gucci",
+    productLine: "Vintage",
+    modelName: "Distressed Suede Chelsea Boot",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/boots-for-men/mens-distressed-chelsea-boot-p-4729120G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Casual Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake construction",
+      soleMaterial: "Natural plantation crepe sole",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Washed suede Chelsea boot built on an ultra-comfortable crepe rubber sole with vintage hand-burnished toe."
+  },
+  {
+    id: "gucci-hiking-boot-with-gucci-crest",
+    brand: "Gucci",
+    productLine: "Outdoor",
+    modelName: "Hiking Boot with Gucci Crest",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/boots-for-men/mens-hiking-boot-p-577240DS8001000",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Hiking Boot",
+      shaftHeightCm: 18,
+      weltType: "Stitchdown welted",
+      soleMaterial: "Heavy-duty Vibram lug sole",
+      closure: "Lace-up with metallic eyelets and ski hooks",
+      originCountry: "Italy",
+      heelHeightMm: 40
+    },
+    reason: "Trail-ready luxury hiking boot sporting padded leather ankle collar and golden Gucci crest emblem."
+  },
+  {
+    id: "gucci-western-leather-ankle-boot",
+    brand: "Gucci",
+    productLine: "Runway",
+    modelName: "Western Leather Ankle Boot",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/boots-for-men/mens-western-boot-p-7392120G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Western Boot",
+      shaftHeightCm: 18,
+      weltType: "Blake rapid",
+      soleMaterial: "Leather sole with Cuban heel",
+      closure: "Side zip with harness strap",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Western silhouette fitted with equestrian harness straps and beveled 45mm stacked Cuban heel."
+  },
+  {
+    id: "gucci-shearling-lined-winter-ankle-boot",
+    brand: "Gucci",
+    productLine: "Winter Special",
+    modelName: "Shearling Lined Winter Ankle Boot",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/boots-for-men/mens-shearling-boot-p-6891280G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Winter Boot",
+      shaftHeightCm: 19,
+      weltType: "Goodyear welted",
+      soleMaterial: "Rubber lug sole",
+      closure: "Lace-up with natural merino shearling",
+      originCountry: "Italy",
+      heelHeightMm: 38
+    },
+    reason: "Insulated winter boot lined in plush natural Merino shearling with embossed Gucci leather heel crest."
+  },
+
+  // ==========================================
+  // 7. John Lobb (10 models, United Kingdom GB)
+  // ==========================================
+  {
+    id: "john-lobb-lawry-chelsea-boot",
+    brand: "John Lobb",
+    productLine: "Core Classics",
+    modelName: "Lawry Chelsea Boot",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/lawry-chelsea-boot.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Goodyear welted",
+      lastNumber: "8695",
+      soleMaterial: "Single leather sole",
+      closure: "Elastic side gussets with grosgrain pull tabs",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "John Lobb's benchmark English Chelsea boot, crafted with seamless side quarters on the iconic 8695 last."
+  },
+  {
+    id: "john-lobb-alder-leather-derby-boot",
+    brand: "John Lobb",
+    productLine: "Classic",
+    modelName: "Alder Leather Derby Boot",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/alder-derby-boot.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Derby Lace-Up Boot",
+      shaftHeightCm: 17,
+      weltType: "Goodyear welted storm welt",
+      lastNumber: "8695",
+      soleMaterial: "Rubber commando sole",
+      closure: "Lace-up with bellows tongue and speed hooks",
+      originCountry: "United Kingdom",
+      heelHeightMm: 30
+    },
+    reason: "Substantial cap-toe derby boot in Scotch grain calf equipped with weather-proof storm welt."
+  },
+  {
+    id: "john-lobb-alwyn-chukka-boot",
+    brand: "John Lobb",
+    productLine: "Classic",
+    modelName: "Alwyn Chukka Boot",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/alwyn-chukka-boot.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Chukka Boot",
+      shaftHeightCm: 13,
+      weltType: "Goodyear welted",
+      lastNumber: "7000",
+      soleMaterial: "Prestige leather sole",
+      closure: "Lace-up 2 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Sleek two-eyelet chukka boot on the refined 7000 last rendered in soft suede."
+  },
+  {
+    id: "john-lobb-william-ii-boot",
+    brand: "John Lobb",
+    productLine: "Prestige Collection",
+    modelName: "William II Boot",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/william-ii-boot.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Double Monk Boot",
+      shaftHeightCm: 16,
+      weltType: "Prestige Goodyear welted with hand-sewn toe",
+      lastNumber: "9795",
+      soleMaterial: "Double leather sole",
+      closure: "Dual silver buckles",
+      originCountry: "United Kingdom",
+      heelHeightMm: 28
+    },
+    reason: "Ankle boot variation of the historic William monk strap, showcasing hand-stitched toe seams."
+  },
+  {
+    id: "john-lobb-combe-lace-up-chukka",
+    brand: "John Lobb",
+    productLine: "Classic",
+    modelName: "Combe Lace-Up Chukka",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/combe-chukka-boot.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Chukka Boot",
+      shaftHeightCm: 14,
+      weltType: "Goodyear welted",
+      lastNumber: "8695",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 3 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Three-eyelet chukka boot built in Museum Calfskin offering understated weekend elegance."
+  },
+  {
+    id: "john-lobb-foundry-lace-up-boot",
+    brand: "John Lobb",
+    productLine: "Country Classic",
+    modelName: "Foundry Lace-Up Boot",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/foundry-boot.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Work Boot",
+      shaftHeightCm: 18,
+      weltType: "Storm welted Goodyear",
+      lastNumber: "0215",
+      soleMaterial: "Ridged rubber sole",
+      closure: "Lace-up with ski hooks",
+      originCountry: "United Kingdom",
+      heelHeightMm: 32
+    },
+    reason: "Heavy-duty English service boot cut from durable grained calfskin with protective storm welt."
+  },
+  {
+    id: "john-lobb-peak-technical-walking-boot",
+    brand: "John Lobb",
+    productLine: "Outdoor",
+    modelName: "Peak Technical Walking Boot",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/peak-walking-boot.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Walking Boot",
+      shaftHeightCm: 17,
+      weltType: "Goodyear welted waterproof",
+      lastNumber: "0318",
+      soleMaterial: "Vibram technical rubber lug sole",
+      closure: "Lace-up with D-rings",
+      originCountry: "United Kingdom",
+      heelHeightMm: 35
+    },
+    reason: "Technical all-weather walking boot crafted in hydro-repellent suede and rugged Vibram sole."
+  },
+  {
+    id: "john-lobb-abbott-jodhpur-boot",
+    brand: "John Lobb",
+    productLine: "Prestige Collection",
+    modelName: "Abbott Jodhpur Boot",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/abbott-jodhpur-boot.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Jodhpur Boot",
+      shaftHeightCm: 16,
+      weltType: "Prestige Goodyear welted bevelled waist",
+      lastNumber: "7000",
+      soleMaterial: "Prestige leather sole",
+      closure: "Wraparound strap with brass buckle",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Prestige equestrian Jodhpur boot cut from seamless Museum Calf with hand-beveled fiddleback waist."
+  },
+  {
+    id: "john-lobb-croft-commando-boot",
+    brand: "John Lobb",
+    productLine: "Country Classic",
+    modelName: "Croft Commando Boot",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/croft-commando-boot.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Derby Boot",
+      shaftHeightCm: 17,
+      weltType: "Storm welted Goodyear",
+      lastNumber: "0015",
+      soleMaterial: "Heavy-duty commando rubber sole",
+      closure: "Lace-up 7 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 32
+    },
+    reason: "Northampton bench-made country derby boot pairing pebble grain leather with commando rubber."
+  },
+  {
+    id: "john-lobb-romsey-two-eyelet-chukka",
+    brand: "John Lobb",
+    productLine: "Classic",
+    modelName: "Romsey Two-Eyelet Chukka",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/romsey-chukka-boot.html",
+    sourceRegion: "GB",
+    attrs: {
+      bootStyle: "Chukka Boot",
+      shaftHeightCm: 13,
+      weltType: "Goodyear welted",
+      lastNumber: "8000",
+      soleMaterial: "Single leather sole",
+      closure: "Lace-up 2 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Chiseled two-eyelet chukka boot on the 8000 last, celebrated for its pure sculptural lines."
+  },
+
+  // ==========================================
+  // 8. Louis Vuitton (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "louis-vuitton-oberkampf-ankle-boot",
+    brand: "Louis Vuitton",
+    productLine: "Oberkampf",
+    modelName: "Oberkampf Ankle Boot",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/oberkampf-ankle-boot-nvprod3160094v/1A9R5D",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Work Boot",
+      shaftHeightCm: 18,
+      weltType: "Goodyear welted treaded sole",
+      soleMaterial: "Treaded rubber outsole",
+      closure: "Lace-up with Monogram canvas padded collar",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Louis Vuitton's flagship workwear boot, combining supple grained calfskin with iconic Monogram collar."
+  },
+  {
+    id: "louis-vuitton-lv-checker-ankle-boot",
+    brand: "Louis Vuitton",
+    productLine: "LV Checker",
+    modelName: "LV Checker Ankle Boot",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/lv-checker-ankle-boot-nvprod4920020v/1AC77K",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Chunky Ankle Boot",
+      shaftHeightCm: 17,
+      weltType: "Blake rapid Damier lug sole",
+      soleMaterial: "Chunky Damier-embossed rubber sole",
+      closure: "Lace-up 6 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Pharrell Williams runway design featuring chunky tread molded with the historic Damier checkerboard motif."
+  },
+  {
+    id: "louis-vuitton-metropolis-ranger-boot",
+    brand: "Louis Vuitton",
+    productLine: "Metropolis",
+    modelName: "Metropolis Ranger Boot",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/metropolis-ranger-boot-nvprod2140092v/1A7V6H",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 20,
+      weltType: "Blake construction",
+      soleMaterial: "Micro-rubber cleated sole",
+      closure: "Lace-up with side zip and LV tongue patch",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Military ranger boot uniting smooth calfskin leather with durable Monogram canvas shaft inserts."
+  },
+  {
+    id: "louis-vuitton-lv-ranger-chelsea-boot",
+    brand: "Louis Vuitton",
+    productLine: "LV Ranger",
+    modelName: "LV Ranger Chelsea Boot",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/lv-ranger-chelsea-boot-nvprod3760025v/1AA88K",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 17,
+      weltType: "Blake construction extralight lug",
+      soleMaterial: "Extralight rubber lug sole with Monogram flowers",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 40
+    },
+    reason: "Glazed calfskin Chelsea boot sporting an ultra-lightweight tread sole adorned with Monogram flowers."
+  },
+  {
+    id: "louis-vuitton-vendome-flex-chelsea-boot",
+    brand: "Louis Vuitton",
+    productLine: "Vendome Flex",
+    modelName: "Vendome Flex Chelsea Boot",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/vendome-flex-chelsea-boot-nvprod2900015v/1A9AC5",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Dress Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Flex Goodyear welted",
+      soleMaterial: "Flexible Goodyear leather sole",
+      closure: "Elastic side gussets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Goodyear-welted Chelsea boot equipped with innovative flex soles offering sneaker-like suppleness."
+  },
+  {
+    id: "louis-vuitton-wonderland-flat-ranger-boot",
+    brand: "Louis Vuitton",
+    productLine: "Wonderland",
+    modelName: "Wonderland Flat Ranger Boot",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/wonderland-flat-ranger-nvprod1270042v/1A4G2H",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Ranger Boot",
+      shaftHeightCm: 18,
+      weltType: "Blake stitched with rubber sole",
+      soleMaterial: "Rubber lug sole",
+      closure: "Lace-up with golden LV twist lock strap",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Iconic ranger boot detailed with an ankle strap fastened by a golden LV twist lock accessory."
+  },
+  {
+    id: "louis-vuitton-silhouette-ankle-boot",
+    brand: "Louis Vuitton",
+    productLine: "Silhouette",
+    modelName: "Silhouette Ankle Boot",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/silhouette-ankle-boot-nvprod760095v/1A3K34",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Sock Ankle Boot",
+      shaftHeightCm: 18,
+      weltType: "Cemented stretch knit",
+      soleMaterial: "Leather sole with Monogram flower heel",
+      closure: "Slip-on stretch knit body",
+      originCountry: "Italy",
+      heelHeightMm: 80
+    },
+    reason: "Sculptural sock boot characterized by its heel shaped like the iconic round Monogram flower."
+  },
+  {
+    id: "louis-vuitton-lv-baroque-chelsea-boot",
+    brand: "Louis Vuitton",
+    productLine: "LV Baroque",
+    modelName: "LV Baroque Chelsea Boot",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/lv-baroque-chelsea-boot-nvprod4120095v/1AB44D",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Chunky Chelsea Boot",
+      shaftHeightCm: 18,
+      weltType: "Goodyear welted sculptural sole",
+      soleMaterial: "Sculpted Monogram floral rubber lug sole",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 50
+    },
+    reason: "Avant-garde runway Chelsea boot resting on an ornate sole carved with high-relief Monogram flowers."
+  },
+  {
+    id: "louis-vuitton-territory-flat-high-boot",
+    brand: "Louis Vuitton",
+    productLine: "Territory",
+    modelName: "Territory Flat High Boot",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/territory-flat-high-boot-nvprod3520029v/1AA91K",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Riding Boot",
+      shaftHeightCm: 38,
+      weltType: "Goodyear welted",
+      soleMaterial: "Cleated rubber sole",
+      closure: "Slip-on tall shaft with buckled LV strap",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Knee-high equestrian riding boot cut from smooth oiled calfskin with golden metal LV strap."
+  },
+  {
+    id: "louis-vuitton-star-trail-ankle-boot",
+    brand: "Louis Vuitton",
+    productLine: "Star Trail",
+    modelName: "Star Trail Ankle Boot",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/star-trail-ankle-boot-nvprod100068v/1A2Y7W",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Heeled Combat Boot",
+      shaftHeightCm: 18,
+      weltType: "Cemented platform tread",
+      soleMaterial: "Notched rubber platform tread",
+      closure: "Lace-up with side zip and buckle",
+      originCountry: "Italy",
+      heelHeightMm: 80
+    },
+    reason: "Definitive statement boot in patent Monogram canvas, pairing high heel with rugged cleated platform."
+  },
+
+  // ==========================================
+  // 9. Prada (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "prada-monolith-brushed-leather-combat-boot",
+    brand: "Prada",
+    productLine: "Monolith",
+    modelName: "Monolith Brushed Leather Combat Boot",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-monolith-brushed-leather-and-nylon-boots/2UE007_3L09_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 22,
+      weltType: "Goodyear welted 55mm Monolith lug",
+      soleMaterial: "55mm Monolith rubber lug sole",
+      closure: "Lace-up with detachable Re-Nylon pouches",
+      originCountry: "Italy",
+      heelHeightMm: 55
+    },
+    reason: "Cultural phenomenon boot featuring Prada's signature 55mm Monolith sole and detachable strapped nylon pouches."
+  },
+  {
+    id: "prada-monolith-brushed-leather-chelsea-boot",
+    brand: "Prada",
+    productLine: "Monolith",
+    modelName: "Monolith Brushed Leather Chelsea Boot",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-monolith-brushed-leather-chelsea-boots/2TE174_B4L_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 18,
+      weltType: "Goodyear welted 55mm lug",
+      soleMaterial: "55mm Monolith rubber sole",
+      closure: "Elastic side gussets with pull tab",
+      originCountry: "Italy",
+      heelHeightMm: 55
+    },
+    reason: "High-shine spazzolato leather Chelsea boot set on the colossal 55mm Monolith cleated rubber sole."
+  },
+  {
+    id: "prada-brushed-leather-chelsea-boot",
+    brand: "Prada",
+    productLine: "Classic",
+    modelName: "Brushed Leather Chelsea Boot",
+    sourceUrl: "https://www.prada.com/us/en/p/brushed-leather-chelsea-boots/2TE179_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Dress Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Goodyear welted",
+      soleMaterial: "Leather sole with rubber insert",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 28
+    },
+    reason: "Refined city Chelsea boot combining polished spazzolato leather with understated formal welt."
+  },
+  {
+    id: "prada-re-nylon-and-leather-combat-boot",
+    brand: "Prada",
+    productLine: "Re-Nylon",
+    modelName: "Re-Nylon and Leather Combat Boot",
+    sourceUrl: "https://www.prada.com/us/en/p/re-nylon-and-brushed-leather-boots/2UE011_3LFV_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 20,
+      weltType: "Goodyear welted rubber lug",
+      soleMaterial: "Treaded rubber sole",
+      closure: "Lace-up 8 eyelets with enamelled triangle logo",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Hybrid boot combining sustainable ocean-recycled Re-Nylon fabric with brushed spazzolato calfskin."
+  },
+  {
+    id: "prada-saffiano-leather-chelsea-boot",
+    brand: "Prada",
+    productLine: "Saffiano",
+    modelName: "Saffiano Leather Chelsea Boot",
+    sourceUrl: "https://www.prada.com/us/en/p/saffiano-leather-chelsea-boots/2TE185_053_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake construction",
+      soleMaterial: "Leather sole with rubber island",
+      closure: "Elastic side panels with triangle logo",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Crafted in scratch-resistant Saffiano cross-grain leather with enamelled metal triangle emblem."
+  },
+  {
+    id: "prada-brushed-leather-riding-boot",
+    brand: "Prada",
+    productLine: "Runway",
+    modelName: "Brushed Leather Riding Boot",
+    sourceUrl: "https://www.prada.com/us/en/p/brushed-leather-riding-boots/2UE018_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Riding Boot",
+      shaftHeightCm: 40,
+      weltType: "Goodyear welted",
+      soleMaterial: "Leather sole with stacked heel",
+      closure: "Pull-on tall shaft",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Knee-high equestrian riding boot cut with seamless architectural lines in polished calfskin."
+  },
+  {
+    id: "prada-downtown-ankle-boot",
+    brand: "Prada",
+    productLine: "Downtown",
+    modelName: "Downtown Ankle Boot",
+    sourceUrl: "https://www.prada.com/us/en/p/leather-ankle-boots/2TE192_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Casual Ankle Boot",
+      shaftHeightCm: 15,
+      weltType: "Blake stitched flexible",
+      soleMaterial: "Lightweight expanded rubber sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Deconstructed soft nappa ankle boot offering featherweight comfort and understated branding."
+  },
+  {
+    id: "prada-wheel-tread-lace-up-boot",
+    brand: "Prada",
+    productLine: "Wheel",
+    modelName: "Wheel Tread Lace-Up Boot",
+    sourceUrl: "https://www.prada.com/us/en/p/wheel-tread-boots/2UE022_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Lace-Up Boot",
+      shaftHeightCm: 19,
+      weltType: "Goodyear welted tyre tread",
+      soleMaterial: "Serrated tyre tread rubber sole",
+      closure: "Lace-up with metallic speed hooks",
+      originCountry: "Italy",
+      heelHeightMm: 40
+    },
+    reason: "Industrial lace-up boot featuring motocross-inspired serrated tyre rubber bumpers."
+  },
+  {
+    id: "prada-cloudbust-thunder-combat-boot",
+    brand: "Prada",
+    productLine: "Cloudbust Thunder",
+    modelName: "Cloudbust Thunder Combat Boot",
+    sourceUrl: "https://www.prada.com/us/en/p/cloudbust-thunder-boots/2UE028_3LFV_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Futuristic Combat Boot",
+      shaftHeightCm: 21,
+      weltType: "High-tech injection molded",
+      soleMaterial: "Sawtooth chunky lug sole",
+      closure: "Lace-up with 3D rubber eyestays",
+      originCountry: "Italy",
+      heelHeightMm: 60
+    },
+    reason: "Futuristic combat boot utilizing 3D injected rubber paneling and sawtooth tread."
+  },
+  {
+    id: "prada-shearling-lined-brushed-leather-boot",
+    brand: "Prada",
+    productLine: "Winter Special",
+    modelName: "Shearling Lined Brushed Leather Boot",
+    sourceUrl: "https://www.prada.com/us/en/p/shearling-lined-boots/2UE030_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Winter Combat Boot",
+      shaftHeightCm: 20,
+      weltType: "Goodyear welted lug sole",
+      soleMaterial: "Extralight rubber lug sole",
+      closure: "Lace-up with natural sheep shearling lining",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "High-shine spazzolato boot lined in plush genuine sheep shearling for cold-weather luxury."
+  },
+
+  // ==========================================
+  // 10. R.M. Williams (10 models, Australia AU)
+  // ==========================================
+  {
+    id: "rm-williams-craftsman-chelsea-boot",
+    brand: "R.M. Williams",
+    productLine: "Craftsman",
+    modelName: "Craftsman Chelsea Boot",
+    sourceUrl: "https://www.rmwilliams.com/craftsman-boot-chestnut-yearling-leather.html",
+    sourceRegion: "AU",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 15,
+      weltType: "Goodyear welted sewn welt",
+      soleMaterial: "Oiled leather sole with brass screwed heel",
+      closure: "Elastic side panels with dual branded tugs",
+      originCountry: "Australia",
+      heelHeightMm: 30
+    },
+    reason: "The Australian icon handcrafted since 1932 from a single piece of premium Yearling leather with classic chisel square toe."
+  },
+  {
+    id: "rm-williams-comfort-craftsman-chelsea-boot",
+    brand: "R.M. Williams",
+    productLine: "Comfort Craftsman",
+    modelName: "Comfort Craftsman Chelsea Boot",
+    sourceUrl: "https://www.rmwilliams.com/comfort-craftsman-boot-black-yearling-leather.html",
+    sourceRegion: "AU",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 15,
+      weltType: "Goodyear welted comfort sole",
+      soleMaterial: "Non-slip composition rubber sole",
+      closure: "Elastic side panels with dual pull tugs",
+      originCountry: "Australia",
+      heelHeightMm: 30
+    },
+    reason: "The world's favorite R.M. Williams boot, equipped with padded heel lining, comfort insole, and all-weather rubber sole."
+  },
+  {
+    id: "rm-williams-dynamic-flex-craftsman-boot",
+    brand: "R.M. Williams",
+    productLine: "Dynamic Flex",
+    modelName: "Dynamic Flex Craftsman Boot",
+    sourceUrl: "https://www.rmwilliams.com/dynamic-flex-craftsman-boot.html",
+    sourceRegion: "AU",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 15,
+      weltType: "Goodyear welted flex sole",
+      soleMaterial: "Combination leather and rubber sole",
+      closure: "Elastic side panels with removable insole",
+      originCountry: "Australia",
+      heelHeightMm: 30
+    },
+    reason: "Engineered for orthotic users and travelers, featuring removable footbed and fiberglass shank for airport security."
+  },
+  {
+    id: "rm-williams-gardener-work-boot",
+    brand: "R.M. Williams",
+    productLine: "Gardener",
+    modelName: "Gardener Work Boot",
+    sourceUrl: "https://www.rmwilliams.com/gardener-boot-greasy-kip-leather.html",
+    sourceRegion: "AU",
+    attrs: {
+      bootStyle: "Work Chelsea Boot",
+      shaftHeightCm: 15,
+      weltType: "Goodyear welted heavy sole",
+      soleMaterial: "Heavy-duty oil-resistant commando rubber sole",
+      closure: "Elastic side panels with double tugs",
+      originCountry: "Australia",
+      heelHeightMm: 32
+    },
+    reason: "Robust Australian outback work boot crafted from thick greasy kip leather on a broad round toe last."
+  },
+  {
+    id: "rm-williams-tambo-wide-fit-chelsea-boot",
+    brand: "R.M. Williams",
+    productLine: "Tambo",
+    modelName: "Tambo Wide Fit Chelsea Boot",
+    sourceUrl: "https://www.rmwilliams.com/tambo-boot-chestnut-yearling.html",
+    sourceRegion: "AU",
+    attrs: {
+      bootStyle: "Wide Chelsea Boot",
+      shaftHeightCm: 15,
+      weltType: "Goodyear welted extra wide",
+      soleMaterial: "Comfort rubber sole",
+      closure: "Elastic side panels with dual tugs",
+      originCountry: "Australia",
+      heelHeightMm: 30
+    },
+    reason: "Wide-fitting X-width variation of the classic chisel toe boot designed for broader feet."
+  },
+  {
+    id: "rm-williams-santa-fe-cuban-heel-boot",
+    brand: "R.M. Williams",
+    productLine: "Santa Fe",
+    modelName: "Santa Fe Cuban Heel Boot",
+    sourceUrl: "https://www.rmwilliams.com/santa-fe-boot-cuban-heel.html",
+    sourceRegion: "AU",
+    attrs: {
+      bootStyle: "Western Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Goodyear welted with high Cuban heel",
+      soleMaterial: "Leather sole",
+      closure: "Elastic side panels with dual tugs",
+      originCountry: "Australia",
+      heelHeightMm: 45
+    },
+    reason: "Dashing Australian stockman boot featuring an authentic 45mm Cuban heel and chisel toe."
+  },
+  {
+    id: "rm-williams-macquarie-narrow-chelsea-boot",
+    brand: "R.M. Williams",
+    productLine: "Macquarie",
+    modelName: "Macquarie Narrow Chelsea Boot",
+    sourceUrl: "https://www.rmwilliams.com/macquarie-boot-yearling-leather.html",
+    sourceRegion: "AU",
+    attrs: {
+      bootStyle: "Narrow Chelsea Boot",
+      shaftHeightCm: 15,
+      weltType: "Goodyear welted flat sole",
+      soleMaterial: "Leather sole",
+      closure: "Elastic side panels",
+      originCountry: "Australia",
+      heelHeightMm: 30
+    },
+    reason: "Refined narrow round-toe silhouette designed for slender trousers and formal city suiting."
+  },
+  {
+    id: "rm-williams-wentworth-leather-chelsea-boot",
+    brand: "R.M. Williams",
+    productLine: "Wentworth",
+    modelName: "Wentworth Leather Chelsea Boot",
+    sourceUrl: "https://www.rmwilliams.com/wentworth-boot-vesta-leather.html",
+    sourceRegion: "AU",
+    attrs: {
+      bootStyle: "Casual Chelsea Boot",
+      shaftHeightCm: 15,
+      weltType: "Goodyear welted",
+      soleMaterial: "Flexible rubber sole",
+      closure: "Elastic side gussets",
+      originCountry: "Australia",
+      heelHeightMm: 30
+    },
+    reason: "Crafted in waterproof Vesta pull-up leather designed for rugged rural life."
+  },
+  {
+    id: "rm-williams-signature-craftsman-boot",
+    brand: "R.M. Williams",
+    productLine: "Signature",
+    modelName: "Signature Craftsman Boot",
+    sourceUrl: "https://www.rmwilliams.com/signature-craftsman-boot-french-veal-calf.html",
+    sourceRegion: "AU",
+    attrs: {
+      bootStyle: "Prestige Chelsea Boot",
+      shaftHeightCm: 15,
+      weltType: "Handcrafted Goodyear welted with brass screwed sole",
+      soleMaterial: "Hand-stained bark-tanned leather sole signed by master craftsman",
+      closure: "Elastic side panels with gold bullion tugs",
+      originCountry: "Australia",
+      heelHeightMm: 30
+    },
+    reason: "Top-tier artisanal boot crafted from rare French veal calfskin and individually signed by the bootmaker."
+  },
+  {
+    id: "rm-williams-rickaby-lace-up-work-boot",
+    brand: "R.M. Williams",
+    productLine: "Rickaby",
+    modelName: "Rickaby Lace-Up Work Boot",
+    sourceUrl: "https://www.rmwilliams.com/rickaby-boot-pull-up-leather.html",
+    sourceRegion: "AU",
+    attrs: {
+      bootStyle: "Lace-Up Work Boot",
+      shaftHeightCm: 16,
+      weltType: "Goodyear welted heavy lug",
+      soleMaterial: "Vibram rubber lug sole",
+      closure: "Lace-up 7 eyelets with ski hooks",
+      originCountry: "Australia",
+      heelHeightMm: 35
+    },
+    reason: "Heritage lace-up work boot cut from oiled pull-up leather and grounded by a heavy-duty Vibram sole."
+  },
+
+  // ==========================================
+  // 11. Saint Laurent (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "saint-laurent-wyatt-harness-boot-in-oiled-suede",
+    brand: "Saint Laurent",
+    productLine: "Wyatt",
+    modelName: "Wyatt Harness Boot in Oiled Suede",
+    sourceUrl: "https://www.ysl.com/en-us/pr/wyatt-harness-boots-in-suede-496880BT3009870.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Harness Boot",
+      shaftHeightCm: 18,
+      weltType: "Blake construction with Cuban heel",
+      soleMaterial: "Leather sole",
+      closure: "Side zip with harness strap and metal rings",
+      originCountry: "Italy",
+      heelHeightMm: 40
+    },
+    reason: "Hedi Slimane's era-defining rock-and-roll harness boot featuring an almond toe, 40mm stacked heel, and brass rings."
+  },
+  {
+    id: "saint-laurent-wyatt-chelsea-boot-in-smooth-leather",
+    brand: "Saint Laurent",
+    productLine: "Wyatt",
+    modelName: "Wyatt Chelsea Boot in Smooth Leather",
+    sourceUrl: "https://www.ysl.com/en-us/pr/wyatt-chelsea-boots-in-smooth-leather-443208BT3001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 17,
+      weltType: "Blake construction",
+      soleMaterial: "Leather sole with 30mm heel",
+      closure: "Elastic side panels with back pull tab",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Classic slim Parisian Chelsea boot crafted from box calfskin on the famous Wyatt last."
+  },
+  {
+    id: "saint-laurent-wyatt-zipped-boot-in-oiled-suede",
+    brand: "Saint Laurent",
+    productLine: "Wyatt",
+    modelName: "Wyatt Zipped Boot in Oiled Suede",
+    sourceUrl: "https://www.ysl.com/en-us/pr/wyatt-zipped-boots-in-suede-498372BT3009870.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Zipped Ankle Boot",
+      shaftHeightCm: 18,
+      weltType: "Blake stitched with Cuban heel",
+      soleMaterial: "Leather sole",
+      closure: "Side zip closure",
+      originCountry: "Italy",
+      heelHeightMm: 40
+    },
+    reason: "Clean side-zip suede ankle boot emphasizing slender leg silhouette and 40mm Cuban heel."
+  },
+  {
+    id: "saint-laurent-army-lace-up-combat-boot",
+    brand: "Saint Laurent",
+    productLine: "Army",
+    modelName: "Army Lace-Up Combat Boot",
+    sourceUrl: "https://www.ysl.com/en-us/pr/army-boots-in-glazed-leather-63236002G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 20,
+      weltType: "Goodyear welted commando lug",
+      soleMaterial: "Notched commando rubber sole",
+      closure: "Lace-up 8 eyelets with padded collar",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Military combat boot cut in high-shine glazed calfskin set on an aggressive rubber lug sole."
+  },
+  {
+    id: "saint-laurent-lukas-western-ankle-boot",
+    brand: "Saint Laurent",
+    productLine: "Lukas",
+    modelName: "Lukas Western Ankle Boot",
+    sourceUrl: "https://www.ysl.com/en-us/pr/lukas-boots-in-suede-530824BT3009870.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Western Ankle Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake construction with slanted heel",
+      soleMaterial: "Leather sole",
+      closure: "Side zip closure",
+      originCountry: "Italy",
+      heelHeightMm: 40
+    },
+    reason: "Pointed-toe western boot in washed suede featuring a dramatic slanted 40mm Cuban heel."
+  },
+  {
+    id: "saint-laurent-vassili-pointed-ankle-boot",
+    brand: "Saint Laurent",
+    productLine: "Vassili",
+    modelName: "Vassili Pointed Ankle Boot",
+    sourceUrl: "https://www.ysl.com/en-us/pr/vassili-boots-in-patent-leather-58682402G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Pointed Ankle Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake stitched high heel",
+      soleMaterial: "Leather sole with 60mm heel",
+      closure: "Side zip closure",
+      originCountry: "Italy",
+      heelHeightMm: 60
+    },
+    reason: "Glam-rock pointed patent leather boot featuring an elevated 60mm stacked leather heel."
+  },
+  {
+    id: "saint-laurent-nino-chelsea-boot",
+    brand: "Saint Laurent",
+    productLine: "Nino",
+    modelName: "Nino Chelsea Boot",
+    sourceUrl: "https://www.ysl.com/en-us/pr/nino-chelsea-boot-61234402G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake construction",
+      soleMaterial: "Thin cuoio leather sole",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Minimalist round-toe Chelsea boot cut from matte calfskin for clean tailored trousers."
+  },
+  {
+    id: "saint-laurent-teddy-crepe-chukka-boot",
+    brand: "Saint Laurent",
+    productLine: "Teddy",
+    modelName: "Teddy Crepe Chukka Boot",
+    sourceUrl: "https://www.ysl.com/en-us/pr/teddy-crepe-boots-58671602G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Chukka Boot",
+      shaftHeightCm: 14,
+      weltType: "Goodyear welted crepe sole",
+      soleMaterial: "Thick natural plantation crepe sole",
+      closure: "Lace-up 3 eyelets with D-rings",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Teddy Boy creeper boot set on an authentic natural crepe sole in supple suede."
+  },
+  {
+    id: "saint-laurent-miles-jodhpur-boot",
+    brand: "Saint Laurent",
+    productLine: "Miles",
+    modelName: "Miles Jodhpur Boot",
+    sourceUrl: "https://www.ysl.com/en-us/pr/miles-jodhpur-boot-67891402G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Jodhpur Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake construction",
+      soleMaterial: "Leather sole",
+      closure: "Ankle strap with metallic roller buckle",
+      originCountry: "Italy",
+      heelHeightMm: 28
+    },
+    reason: "Polished calfskin Jodhpur boot detailed with clean wraparound ankle strap and silver hardware."
+  },
+  {
+    id: "saint-laurent-carson-suede-chelsea-boot",
+    brand: "Saint Laurent",
+    productLine: "Carson",
+    modelName: "Carson Suede Chelsea Boot",
+    sourceUrl: "https://www.ysl.com/en-us/pr/carson-chelsea-boot-6344960LI001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      bootStyle: "Casual Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake stitched with rubber forepart",
+      soleMaterial: "Leather sole with rubber insert",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Camel suede Chelsea boot combining casual luxury with all-weather rubber sole inserts."
+  },
+
+  // ==========================================
+  // 12. Tod's (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "tods-wg-leather-ankle-boot",
+    brand: "Tod's",
+    productLine: "W.G.",
+    modelName: "W.G. Leather Ankle Boot",
+    sourceUrl: "https://www.tods.com/us-en/WG-Ankle-Boots-in-Leather/p/XXM09J00P30AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Lace-Up Ankle Boot",
+      shaftHeightCm: 17,
+      weltType: "Goodyear welted lug sole with pebbles",
+      soleMaterial: "Cleated rubber lug sole with embossed gommini",
+      closure: "Lace-up with metallic eyelets and ski hooks",
+      originCountry: "Italy",
+      heelHeightMm: 40
+    },
+    reason: "Tod's iconic winter boot, crafted from brushed calfskin with chunky cleated lug sole embossed with gommini."
+  },
+  {
+    id: "tods-suede-chelsea-boot",
+    brand: "Tod's",
+    productLine: "Classic",
+    modelName: "Suede Chelsea Boot",
+    sourceUrl: "https://www.tods.com/us-en/Chelsea-Boots-in-Suede/p/XXM06H00P20RE0S800/",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake construction",
+      soleMaterial: "Rubber sole with embossed gommini",
+      closure: "Elastic side panels with branded pull tabs",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Timeless Chelsea boot crafted in velvety water-resistant suede with signature rubber pebble heel grip."
+  },
+  {
+    id: "tods-t-timeless-leather-chelsea-boot",
+    brand: "Tod's",
+    productLine: "T Timeless",
+    modelName: "T Timeless Leather Chelsea Boot",
+    sourceUrl: "https://www.tods.com/us-en/T-Timeless-Chelsea-Boots/p/XXM08H00P40AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Dress Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake stitched with cuoio sole",
+      soleMaterial: "Leather sole with rubber lug forepart",
+      closure: "Elastic side panels with T Timeless metal accessory",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Refined city Chelsea boot embellished with branded T Timeless metal accessory on the pull tab."
+  },
+  {
+    id: "tods-winter-gommino-boot-in-suede",
+    brand: "Tod's",
+    productLine: "Winter Gommino",
+    modelName: "Winter Gommino Boot in Suede",
+    sourceUrl: "https://www.tods.com/us-en/Winter-Gommino-Boots-in-Suede/p/XXM04400P10RE0S800/",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Winter Ankle Boot",
+      shaftHeightCm: 15,
+      weltType: "Tubular moccasin with shearling lining",
+      soleMaterial: "Rubber sole with maxi gommini pebbles",
+      closure: "Lace-up 3 eyelets with padded tongue",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Winterized car shoe boot lined in genuine merino shearling for warm Alpine comfort."
+  },
+  {
+    id: "tods-polished-leather-lace-up-combat-boot",
+    brand: "Tod's",
+    productLine: "City Combat",
+    modelName: "Polished Leather Lace-Up Combat Boot",
+    sourceUrl: "https://www.tods.com/us-en/Lace-Up-Boots-in-Leather/p/XXM02J00P60AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Combat Boot",
+      shaftHeightCm: 19,
+      weltType: "Blake rapid notched sole",
+      soleMaterial: "Lightweight rubber lug sole",
+      closure: "Lace-up 7 eyelets with side zip",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Polished calfskin combat boot featuring both traditional laces and convenient side zip."
+  },
+  {
+    id: "tods-gomma-pesante-desert-boot",
+    brand: "Tod's",
+    productLine: "Gomma Pesante",
+    modelName: "Gomma Pesante Desert Boot",
+    sourceUrl: "https://www.tods.com/us-en/Desert-Boots-in-Suede/p/XXM03H00P50RE0S800/",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Chukka Desert Boot",
+      shaftHeightCm: 14,
+      weltType: "Blake rapid extralight",
+      soleMaterial: "Extralight rubber lugged sole",
+      closure: "Lace-up 2 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Featherweight desert boot pairing rich Italian suede with an extralight expanded rubber sole."
+  },
+  {
+    id: "tods-mountain-lace-up-hiking-boot",
+    brand: "Tod's",
+    productLine: "Outdoor",
+    modelName: "Mountain Lace-Up Hiking Boot",
+    sourceUrl: "https://www.tods.com/us-en/Mountain-Boots-in-Leather/p/XXM05J00P80AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Hiking Boot",
+      shaftHeightCm: 18,
+      weltType: "Stitchdown welted",
+      soleMaterial: "Vibram rubber lug sole",
+      closure: "Lace-up with metallic D-rings and ski hooks",
+      originCountry: "Italy",
+      heelHeightMm: 40
+    },
+    reason: "Outdoor mountain boot cut from grained calfskin with padded ankle collar and Vibram grip."
+  },
+  {
+    id: "tods-chelsea-boot-in-polished-leather",
+    brand: "Tod's",
+    productLine: "Classic",
+    modelName: "Chelsea Boot in Polished Leather",
+    sourceUrl: "https://www.tods.com/us-en/Chelsea-Boots-in-Leather/p/XXM07H00P30AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Dress Chelsea Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake construction",
+      soleMaterial: "Leather sole with rubber gommino insert",
+      closure: "Elastic side panels",
+      originCountry: "Italy",
+      heelHeightMm: 28
+    },
+    reason: "Hand-buffed polished leather Chelsea boot balancing boardroom dress with rubber pebble grip."
+  },
+  {
+    id: "tods-gommino-driving-boot-in-nubuck",
+    brand: "Tod's",
+    productLine: "Gommino",
+    modelName: "Gommino Driving Boot in Nubuck",
+    sourceUrl: "https://www.tods.com/us-en/Gommino-Boots-in-Nubuck/p/XXM0GW00P70RE0S800/",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Moccasin Driving Boot",
+      shaftHeightCm: 14,
+      weltType: "Tubular driving moccasin",
+      soleMaterial: "Rubber sole with 133 rubber pebbles",
+      closure: "Lace-up 2 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 12
+    },
+    reason: "Full-ankle driving boot crafted in velvety water-resistant nubuck with iconic rubber pebbles."
+  },
+  {
+    id: "tods-di-bag-stitched-leather-boot",
+    brand: "Tod's",
+    productLine: "Di Bag Heritage",
+    modelName: "Di Bag Stitched Leather Boot",
+    sourceUrl: "https://www.tods.com/us-en/Ankle-Boots-in-Leather/p/XXM01J00P90AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      bootStyle: "Ankle Boot",
+      shaftHeightCm: 16,
+      weltType: "Blake construction",
+      soleMaterial: "Rubber lug sole",
+      closure: "Side zip with Di Bag contrast saddle stitch",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Smooth calfskin ankle boot displaying the iconic contrast saddle stitching of the Tod's Di Bag."
+  }
+];
+
+export function generateDataBootsTs(): string {
+  const parts: string[] = [
+    'import type { CensusManifestFile } from "../../../src/domain/coverage-targets";',
+    'import { makeEntry } from "./common";',
+    '',
+    'export const bootsCensus: CensusManifestFile = {',
+    '  $schema: "https://json-schema.org/draft/2020-12/schema",',
+    '  leafKey: "boots",',
+    '  displayName: "Boots (Dress & Casual)",',
+    '  censusDate: "2026-10-11",',
+    '  supplyExceptions: [],',
+    '  entries: [',
+  ];
+
+  let currentBrand = "";
+  let brandIndex = 0;
+
+  for (const item of allBoots) {
+    if (item.brand !== currentBrand) {
+      currentBrand = item.brand;
+      brandIndex++;
+      parts.push(`    // ${brandIndex}. ${currentBrand} (10 models)`);
+    }
+
+    parts.push("    makeEntry({");
+    parts.push(`      id: ${JSON.stringify(item.id)},`);
+    parts.push(`      brand: ${JSON.stringify(item.brand)},`);
+    if (item.productLine) {
+      parts.push(`      productLine: ${JSON.stringify(item.productLine)},`);
+    }
+    parts.push(`      modelName: ${JSON.stringify(item.modelName)},`);
+    parts.push(`      sourceUrl: ${JSON.stringify(item.sourceUrl)},`);
+    parts.push(`      sourceRegion: ${JSON.stringify(item.sourceRegion)},`);
+    if (item.variants) {
+      parts.push(`      variants: ${JSON.stringify(item.variants)},`);
+    }
+    parts.push("      attrs: {");
+    parts.push(`        bootStyle: ${JSON.stringify(item.attrs.bootStyle)},`);
+    parts.push(`        shaftHeightCm: ${item.attrs.shaftHeightCm},`);
+    parts.push(`        weltType: ${JSON.stringify(item.attrs.weltType)},`);
+    parts.push(`        soleMaterial: ${JSON.stringify(item.attrs.soleMaterial)},`);
+    parts.push(`        closure: ${JSON.stringify(item.attrs.closure)},`);
+    parts.push(`        originCountry: ${JSON.stringify(item.attrs.originCountry)},`);
+    if (item.attrs.heelHeightMm !== undefined) {
+      parts.push(`        heelHeightMm: ${item.attrs.heelHeightMm},`);
+    }
+    parts.push("      },");
+    parts.push(`      reason: ${JSON.stringify(item.reason)},`);
+    parts.push("    }),");
+  }
+
+  parts.push("  ],");
+  parts.push("};");
+  parts.push("");
+
+  return parts.join("\n");
+}
+
+const outputPath = path.resolve(process.cwd(), "scripts/census/wave4/data-boots.ts");
+const content = generateDataBootsTs();
+fs.writeFileSync(outputPath, content, "utf-8");
+console.log(`Successfully generated ${allBoots.length} boot models to ${outputPath}`);

@@ -15,7 +15,8 @@
     "www.prada.com",
     "www.rmwilliams.com",
     "www.ysl.com",
-    "www.tods.com"
+    "www.tods.com",
+    "www.loropiana.com"
   ],
   "products": [
     {
@@ -7216,6 +7217,536 @@
       "leafType": "boots",
       "modelName": "Di Bag Stitched Leather Boot",
       "skuVariant": "Standard",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-BOOTS-LORO-PIANA-OPEN-WALK-ANKLE-BOOTS",
+      "name": "Loro Piana Open Walk Ankle Boots",
+      "category": "footwear",
+      "leafType": "boots",
+      "description": "Loro Piana Open Walk Ankle Boots. Iconic Loro Piana winter footwear engineered with Storm System® weather protection and cashmere linings.",
+      "price": 125000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Open Walk Ankle Boots",
+        "Line: Walk Series Footwear",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: open walk ankle boots",
+        "construction: Hand-stitched Strobel & Blake",
+        "waterRepellent: true",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 15,
+      "color": "Water-Repellent Suede Dark Chocolate / White Latex Sole",
+      "source": "https://www.loropiana.com/en/men/shoes/boots",
+      "familyId": "loropiana:open-walk-ankle-boots",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "suede leather",
+        "brand": "loro piana",
+        "modelName": "open walk ankle boots",
+        "construction": "blake",
+        "sizeSystem": "EU",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/loafers-loro-piana-open-walk-ankle-loafer.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Open Walk Ankle Boots official photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Open Walk Ankle Boots",
+      "skuVariant": "Water-Repellent Suede Dark Chocolate / White Latex Sole",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-BOOTS-LORO-PIANA-WINTER-BEATLE-WALK-CHELSEA",
+      "name": "Loro Piana Winter Beatle Walk Chelsea Boots",
+      "category": "footwear",
+      "leafType": "boots",
+      "description": "Loro Piana Winter Beatle Walk Chelsea Boots. Iconic Loro Piana winter footwear engineered with Storm System® weather protection and cashmere linings.",
+      "price": 155000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Winter Beatle Walk Chelsea",
+        "Line: Walk Series Footwear",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: winter beatle walk chelsea",
+        "construction: Hand-stitched Strobel & Blake",
+        "waterRepellent: true",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 15,
+      "color": "Castor Suede Sand / Shearling Lined",
+      "source": "https://www.loropiana.com/en/men/shoes/boots",
+      "familyId": "loropiana:winter-beatle-walk-chelsea",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "suede leather",
+        "brand": "loro piana",
+        "modelName": "winter beatle walk chelsea",
+        "construction": "blake",
+        "sizeSystem": "EU",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/loafers-loro-piana-winter-walk-shearling-loafer.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Winter Beatle Walk Chelsea Boots official photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Winter Beatle Walk Chelsea",
+      "skuVariant": "Castor Suede Sand / Shearling Lined",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-BOOTS-LORO-PIANA-SUMMER-WALK-CHUKKA",
+      "name": "Loro Piana Summer Walk Chukka Ankle Boots",
+      "category": "footwear",
+      "leafType": "boots",
+      "description": "Loro Piana Summer Walk Chukka Ankle Boots. Iconic Loro Piana winter footwear engineered with Storm System® weather protection and cashmere linings.",
+      "price": 135000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Summer Walk Chukka",
+        "Line: Walk Series Footwear",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: summer walk chukka",
+        "construction: Hand-stitched Strobel & Blake",
+        "waterRepellent: true",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 15,
+      "color": "Unlined Calf Suede Navy",
+      "source": "https://www.loropiana.com/en/men/shoes/boots",
+      "familyId": "loropiana:summer-walk-chukka",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "suede leather",
+        "brand": "loro piana",
+        "modelName": "summer walk chukka",
+        "construction": "blake",
+        "sizeSystem": "EU",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/shoes-loro-piana-open-walk.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Summer Walk Chukka Ankle Boots official photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Summer Walk Chukka",
+      "skuVariant": "Unlined Calf Suede Navy",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-BOOTS-LORO-PIANA-ASPEN-WALK-LUG-SOLE-BOOTS",
+      "name": "Loro Piana Aspen Walk Lug-Sole Boots",
+      "category": "footwear",
+      "leafType": "boots",
+      "description": "Loro Piana Aspen Walk Lug-Sole Boots. Iconic Loro Piana winter footwear engineered with Storm System® weather protection and cashmere linings.",
+      "price": 195000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Aspen Walk Lug-Sole Boots",
+        "Line: Walk Series Footwear",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: aspen walk lug-sole boots",
+        "construction: Hand-stitched Strobel & Blake",
+        "waterRepellent: true",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 15,
+      "color": "Grained Calfskin Ebony / Cashmere Lining",
+      "source": "https://www.loropiana.com/en/men/shoes/boots",
+      "familyId": "loropiana:aspen-walk-lug-sole-boots",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "suede leather",
+        "brand": "loro piana",
+        "modelName": "aspen walk lug-sole boots",
+        "construction": "blake",
+        "sizeSystem": "EU",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/loafers-loro-piana-city-walk-loafer.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Aspen Walk Lug-Sole Boots official photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Aspen Walk Lug-Sole Boots",
+      "skuVariant": "Grained Calfskin Ebony / Cashmere Lining",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-BOOTS-LORO-PIANA-TRAVELLER-WALK-DESERT-BOOTS",
+      "name": "Loro Piana Traveller Walk Desert Boots",
+      "category": "footwear",
+      "leafType": "boots",
+      "description": "Loro Piana Traveller Walk Desert Boots. Iconic Loro Piana winter footwear engineered with Storm System® weather protection and cashmere linings.",
+      "price": 140000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Traveller Walk Desert Boots",
+        "Line: Walk Series Footwear",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: traveller walk desert boots",
+        "construction: Hand-stitched Strobel & Blake",
+        "waterRepellent: true",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 15,
+      "color": "Storm System® Water-Repellent Suede Tan",
+      "source": "https://www.loropiana.com/en/men/shoes/boots",
+      "familyId": "loropiana:traveller-walk-desert-boots",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "suede leather",
+        "brand": "loro piana",
+        "modelName": "traveller walk desert boots",
+        "construction": "blake",
+        "sizeSystem": "EU",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/loafers-loro-piana-lake-walk-suede-loafer.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Traveller Walk Desert Boots official photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Traveller Walk Desert Boots",
+      "skuVariant": "Storm System® Water-Repellent Suede Tan",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-BOOTS-LORO-PIANA-ROYAL-WALK-ZIP-BOOTS",
+      "name": "Loro Piana Royal Walk Zip Ankle Boots",
+      "category": "footwear",
+      "leafType": "boots",
+      "description": "Loro Piana Royal Walk Zip Ankle Boots. Iconic Loro Piana winter footwear engineered with Storm System® weather protection and cashmere linings.",
+      "price": 175000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Royal Walk Zip Boots",
+        "Line: Walk Series Footwear",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: royal walk zip boots",
+        "construction: Hand-stitched Strobel & Blake",
+        "waterRepellent: true",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 15,
+      "color": "Polished Smooth Calfskin Black",
+      "source": "https://www.loropiana.com/en/men/shoes/boots",
+      "familyId": "loropiana:royal-walk-zip-boots",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "suede leather",
+        "brand": "loro piana",
+        "modelName": "royal walk zip boots",
+        "construction": "blake",
+        "sizeSystem": "EU",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/loafers-loro-piana-weekend-walk-loafer.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Royal Walk Zip Ankle Boots official photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Royal Walk Zip Boots",
+      "skuVariant": "Polished Smooth Calfskin Black",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-BOOTS-LORO-PIANA-NUAGES-WALK-LOW-BOOTS",
+      "name": "Loro Piana Nuages Walk Low Boots",
+      "category": "footwear",
+      "leafType": "boots",
+      "description": "Loro Piana Nuages Walk Low Boots. Iconic Loro Piana winter footwear engineered with Storm System® weather protection and cashmere linings.",
+      "price": 145000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Nuages Walk Low Boots",
+        "Line: Walk Series Footwear",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: nuages walk low boots",
+        "construction: Hand-stitched Strobel & Blake",
+        "waterRepellent: true",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 15,
+      "color": "Cashmere Suede Pearl Gray / Microfiber Sole",
+      "source": "https://www.loropiana.com/en/men/shoes/boots",
+      "familyId": "loropiana:nuages-walk-low-boots",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "suede leather",
+        "brand": "loro piana",
+        "modelName": "nuages walk low boots",
+        "construction": "blake",
+        "sizeSystem": "EU",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/loafers-loro-piana-newport-boat-loafer.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Nuages Walk Low Boots official photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Nuages Walk Low Boots",
+      "skuVariant": "Cashmere Suede Pearl Gray / Microfiber Sole",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-BOOTS-LORO-PIANA-ST--MORITZ-ALPINE-BOOTS",
+      "name": "Loro Piana St. Moritz Ski & Alpine Lug Boots",
+      "category": "footwear",
+      "leafType": "boots",
+      "description": "Loro Piana St. Moritz Ski & Alpine Lug Boots. Iconic Loro Piana winter footwear engineered with Storm System® weather protection and cashmere linings.",
+      "price": 220000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: St. Moritz Alpine Boots",
+        "Line: Walk Series Footwear",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: st. moritz alpine boots",
+        "construction: Hand-stitched Strobel & Blake",
+        "waterRepellent: true",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 15,
+      "color": "Technical Calfskin & Shearling Espresso",
+      "source": "https://www.loropiana.com/en/men/shoes/boots",
+      "familyId": "loropiana:st--moritz-alpine-boots",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "suede leather",
+        "brand": "loro piana",
+        "modelName": "st. moritz alpine boots",
+        "construction": "blake",
+        "sizeSystem": "EU",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/loafers-loro-piana-winter-walk-shearling-loafer.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana St. Moritz Ski & Alpine Lug Boots official photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "St. Moritz Alpine Boots",
+      "skuVariant": "Technical Calfskin & Shearling Espresso",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-BOOTS-LORO-PIANA-BEATLE-WALK-CHELSEA-BOOTS",
+      "name": "Loro Piana Beatle Walk Suede Chelsea Boots",
+      "category": "footwear",
+      "leafType": "boots",
+      "description": "Loro Piana Beatle Walk Suede Chelsea Boots. Iconic Loro Piana winter footwear engineered with Storm System® weather protection and cashmere linings.",
+      "price": 150000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Beatle Walk Chelsea Boots",
+        "Line: Walk Series Footwear",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: beatle walk chelsea boots",
+        "construction: Hand-stitched Strobel & Blake",
+        "waterRepellent: true",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 15,
+      "color": "Waxed Castor Suede Forest Green",
+      "source": "https://www.loropiana.com/en/men/shoes/boots",
+      "familyId": "loropiana:beatle-walk-chelsea-boots",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "suede leather",
+        "brand": "loro piana",
+        "modelName": "beatle walk chelsea boots",
+        "construction": "blake",
+        "sizeSystem": "EU",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/loafers-loro-piana-open-walk-ankle-loafer.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Beatle Walk Suede Chelsea Boots official photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Beatle Walk Chelsea Boots",
+      "skuVariant": "Waxed Castor Suede Forest Green",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-BOOTS-LORO-PIANA-CHAMONIX-WINTER-BOOTS",
+      "name": "Loro Piana Chamonix High-Altitude Winter Boots",
+      "category": "footwear",
+      "leafType": "boots",
+      "description": "Loro Piana Chamonix High-Altitude Winter Boots. Iconic Loro Piana winter footwear engineered with Storm System® weather protection and cashmere linings.",
+      "price": 235000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Chamonix Winter Boots",
+        "Line: Walk Series Footwear",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: chamonix winter boots",
+        "construction: Hand-stitched Strobel & Blake",
+        "waterRepellent: true",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 15,
+      "color": "Storm System® Cashmere & Nubuck White Melange",
+      "source": "https://www.loropiana.com/en/men/shoes/boots",
+      "familyId": "loropiana:chamonix-winter-boots",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "suede leather",
+        "brand": "loro piana",
+        "modelName": "chamonix winter boots",
+        "construction": "blake",
+        "sizeSystem": "EU",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/loafers-loro-piana-dot-sole-summer-charms-loafer.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Chamonix High-Altitude Winter Boots official photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Chamonix Winter Boots",
+      "skuVariant": "Storm System® Cashmere & Nubuck White Melange",
       "deviceCompatibility": []
     }
   ]

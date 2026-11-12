@@ -297,10 +297,14 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   }, []);
   const register = useCallback(async () => {
     if (!current.current?.owner_id) return;
-    await waitForPage(
-      location.pathname + location.search,
-      AbortSignal.timeout(20000),
-    );
+    try {
+      await waitForPage(
+        location.pathname + location.search,
+        AbortSignal.timeout(2000),
+      );
+    } catch {
+      // Non-fatal if page layout is still settling
+    }
     await api("/api/copilot/tabs", context());
   }, [context]);
   useEffect(() => {
@@ -403,12 +407,18 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
   }, [state?.owner_id, register, router]);
   const refresh = useCallback(async () => {
     const epoch = sessionEpoch.current;
+    const owner = current.current?.owner_id;
     try {
       apply(await api<View>("/api/copilot/state"), epoch);
+      setError("");
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Session unavailable");
+      // Opening the assistant before guest entry legitimately returns 401.
+      // Its delayed response must not expire the session ensure() just created.
+      if (!owner && e instanceof ApiFailure && e.status === 401) return;
+      if (!expireSession(e, epoch))
+        setError(e instanceof Error ? e.message : "Session unavailable");
     }
-  }, [apply]);
+  }, [apply, expireSession]);
   useEffect(() => {
     const restore = () => {
       const epoch = sessionEpoch.current;
@@ -520,6 +530,12 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
         )
           return;
         if (
+          event.type === "discovery.progress" && typeof event.text === "string"
+        ) {
+          setActivity(event.text);
+          return;
+        }
+        if (
           event.type === "provider.wait" &&
           typeof event.delay_ms === "number"
         ) {
@@ -562,8 +578,13 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
           event.type === "request.completed" ||
           event.type === "request.failed" ||
           (event.type === "model.finished" && event.has_tools)
-        )
+        ) {
+          setActivity("");
+          if (event.type === "request.completed") {
+            setThinking(false);
+          }
           clearDraft();
+        }
       }),
     [clearDraft],
   );
@@ -749,6 +770,10 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
           epoch,
         );
         apply(view, epoch);
+        if (view.turn?.status !== "awaiting_ui") {
+          setThinking(false);
+          setActivity("");
+        }
         for (let i = 0; view.turn?.status === "awaiting_ui" && i < 12; i++) {
           for (const action of view.actions) {
             view = await executeBrowser(action, abort.signal, reservation);
@@ -762,6 +787,8 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
           );
           apply(view, epoch);
         }
+        setThinking(false);
+        setActivity("");
         if (view.turn?.error) setError(view.turn.error);
       } catch (e) {
         if (expireSession(e, epoch)) return;
@@ -778,6 +805,7 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
           clearDraft();
           activeRequest.current = false;
           setThinking(false);
+          setActivity("");
           controller.current = null;
         }
       }
@@ -946,11 +974,12 @@ export function CopilotProvider({ children }: { children: ReactNode }) {
           epoch,
         );
       } catch (e) {
-        setError(e instanceof Error ? e.message : "Collection update failed");
+        if (!expireSession(e, epoch))
+          setError(e instanceof Error ? e.message : "Collection update failed");
         throw e;
       }
     },
-    [ensure, apply],
+    [ensure, apply, expireSession],
   );
   const safeMutation = (
     collection: "cart" | "wishlist",

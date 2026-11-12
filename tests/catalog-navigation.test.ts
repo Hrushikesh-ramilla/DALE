@@ -4,7 +4,7 @@ import { stageCatalog, publishCatalog } from "../src/server/catalog-publishing";
 import { browseCatalog, catalogSummary } from "../src/server/catalog-store";
 import { closeDatabase } from "../src/server/database";
 import type { CatalogManifestV2 } from "../src/domain/catalog-manifest";
-import { getCategoryLeafTypes, leafTitles } from "../src/domain/departments";
+import { getCategoryLeafTypes, isLeafTypeKey, leafTitles } from "../src/domain/departments";
 
 beforeAll(() => {
   process.env.LOCAL_DATA_DIR = ":memory:";
@@ -16,9 +16,10 @@ afterAll(() => closeDatabase());
 
 it("maps categories to leaf types and provides descriptive titles", () => {
   const storageLeaves = getCategoryLeafTypes("storage");
-  expect(storageLeaves).toContain("portable-ssds");
-  expect(storageLeaves).toContain("internal-ssds");
-  expect(storageLeaves).toContain("hard-drives");
+  // Census targets do not become storefront categories until implemented.
+  expect(storageLeaves).toEqual(["portable-ssds"]);
+  expect(isLeafTypeKey("internal-ssds")).toBe(false);
+  expect(isLeafTypeKey("hard-drives")).toBe(false);
 
   const audioLeaves = getCategoryLeafTypes("audio");
   expect(audioLeaves).toContain("speakers");

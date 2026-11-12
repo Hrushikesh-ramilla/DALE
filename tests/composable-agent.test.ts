@@ -1,4 +1,5 @@
-import { beforeEach, afterEach, expect, it, vi } from "vitest";
+import { beforeAll, afterAll, beforeEach, afterEach, expect, it, vi } from "vitest";
+import { closeDatabase, getDatabase } from "../src/server/database";
 import { resolveDevices } from "../src/domain/device-registry";
 import {
   realModels,
@@ -24,6 +25,13 @@ const input = {
   budget: 8000,
   task: "Find a charger for MacBook Air M1 under $60. Include a cable, normal charging. Use grouping. Show my orders and my cases. The old item is damaged; I want a refund.",
 };
+beforeAll(async () => {
+  process.env.LOCAL_DATA_DIR = ":memory:";
+  process.env.AI_MODE = "fixture";
+  process.env.PAYMENT_MODE = "fixture";
+  await getDatabase();
+}, 60000);
+afterAll(() => closeDatabase());
 beforeEach(() => {
   process.env.LOCAL_DATA_DIR = ":memory:";
   process.env.AI_MODE = "fixture";

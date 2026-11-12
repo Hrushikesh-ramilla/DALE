@@ -501,7 +501,48 @@ export const AppleWatchLogo: FC<LogoProps> = ({ className = "", size = 80, width
   </svg>
 );
 
-// 10h. Samsung Watch
+// 10h. Tudor: Iconic Shield + TUDOR Wordmark
+export const TudorLogo: FC<LogoProps> = ({ className = "", size = 80, width, height, style, ...props }) => (
+  <svg
+    viewBox="0 0 220 80"
+    width={width ?? size * 2.2}
+    height={height ?? size}
+    fill="currentColor"
+    className={className}
+    style={{ overflow: "visible", ...style }}
+    {...props}
+  >
+    {/* Tudor Shield Emblem */}
+    <g transform="translate(110, 22) scale(0.95)">
+      <path
+        d="M-13 -13 L13 -13 L13 0 C13 10.5 0 17 0 17 C0 17 -13 10.5 -13 0 Z"
+        fill="#dc2626"
+      />
+      <path
+        d="M-9.5 -10 L9.5 -10 L9.5 -1 C9.5 7.5 0 12.5 0 12.5 C0 12.5 -9.5 7.5 -9.5 -1 Z"
+        fill="#090d16"
+      />
+      <path
+        d="M-5 -7 L5 -7 L0 -1 Z"
+        fill="#ffffff"
+      />
+    </g>
+    <text
+      x="110"
+      y="65"
+      textAnchor="middle"
+      fontFamily="'Playfair Display', 'Cinzel', 'Times New Roman', serif"
+      fontSize="24"
+      fontWeight="800"
+      letterSpacing="5"
+      fill="currentColor"
+    >
+      TUDOR
+    </text>
+  </svg>
+);
+
+// 10i. Samsung Watch
 export const SamsungWatchLogo: FC<LogoProps> = ({ className = "", size = 80, width, height, style, ...props }) => (
   <svg
     viewBox="0 0 240 80"
@@ -520,7 +561,7 @@ export const SamsungWatchLogo: FC<LogoProps> = ({ className = "", size = 80, wid
       fontSize="28"
       fontWeight="900"
       letterSpacing="4.5"
-      fill="#1428a0"
+      fill="currentColor"
     >
       SAMSUNG
     </text>
@@ -735,16 +776,23 @@ export function WatchBrandLogo({
       return <LonginesLogo {...commonProps} />;
     case "tissot":
       return <TissotLogo {...commonProps} />;
+    case "tudor":
+      return <TudorLogo {...commonProps} />;
     default:
       return (
         <span
           className={`default-brand-wordmark ${className}`}
           style={{
             fontFamily: "'Playfair Display', 'Boska', 'Voska', 'Cormorant Garamond', serif",
-            fontSize: (typeof size === "number" ? size : 80) * 0.45,
+            fontSize: Math.min(18, (typeof size === "number" ? size : 80) * 0.2),
             fontWeight: 700,
-            letterSpacing: "0.1em",
-            overflow: "visible",
+            letterSpacing: "0.15em",
+            maxWidth: "140px",
+            textAlign: "center",
+            display: "inline-block",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
           }}
         >
           {brand.toUpperCase()}

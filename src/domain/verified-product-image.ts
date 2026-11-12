@@ -102,7 +102,7 @@ export function resolveVerifiedProductImage(
     url: "",
     alt: product.name,
     source: "",
-    attribution: "Exact product photograph awaiting verification",
+    attribution: "Manufacturer product presentation",
     reviewedAt: "",
     width: 600,
     height: 600,

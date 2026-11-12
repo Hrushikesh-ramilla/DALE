@@ -1,0 +1,2295 @@
+import fs from "node:fs";
+import path from "node:path";
+
+export interface FormalShoeItem {
+  id: string;
+  brand: string;
+  productLine?: string;
+  modelName: string;
+  sourceUrl: string;
+  sourceRegion: string;
+  variants?: string[];
+  attrs: {
+    weltType: string;
+    lastNumber: string;
+    upperLeather: string;
+    soleMaterial: string;
+    closure: string;
+    originCountry: string;
+    heelHeightMm?: number;
+  };
+  reason: string;
+}
+
+export const allFormalShoes: FormalShoeItem[] = [
+  // ==========================================
+  // 1. Berluti (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "berluti-alessandro-demesure-wholecut-oxford",
+    brand: "Berluti",
+    productLine: "Alessandro",
+    modelName: "Alessandro Demesure Wholecut Oxford",
+    sourceUrl: "https://www.berluti.com/en-us/alessandro-demesure-leather-oxford/S1411-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched bevelled waist",
+      lastNumber: "Demesure",
+      upperLeather: "Patinated Venezia Leather",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 3 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "The foundational Berluti lace-up created by Alessandro Berluti in 1895, cut from a single piece of Venezia leather."
+  },
+  {
+    id: "berluti-alessandro-galet-wholecut-oxford",
+    brand: "Berluti",
+    productLine: "Alessandro",
+    modelName: "Alessandro Galet Wholecut Oxford",
+    sourceUrl: "https://www.berluti.com/en-us/alessandro-galet-leather-oxford/S4152-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched",
+      lastNumber: "Galet",
+      upperLeather: "Scritto Patinated Venezia Leather",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 3 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Wholecut Oxford built on the softer rounded Galet last, inscribed with 18th-century Scritto calligraphy."
+  },
+  {
+    id: "berluti-fast-track-torisio-derby",
+    brand: "Berluti",
+    productLine: "Fast Track",
+    modelName: "Fast Track Torisio Derby",
+    sourceUrl: "https://www.berluti.com/en-us/fast-track-torisio-derby/S5288-V2.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Hybrid athletic welt",
+      lastNumber: "Fast Track",
+      upperLeather: "Venezia Calfskin with Broguing",
+      soleMaterial: "Sculpted running rubber sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Avant-garde luxury hybrid pairing traditional wingtip derby broguing with an athletic running outsole."
+  },
+  {
+    id: "berluti-caractere-eclair-monk-strap",
+    brand: "Berluti",
+    productLine: "Caractere",
+    modelName: "Caractere Eclair Monk Strap",
+    sourceUrl: "https://www.berluti.com/en-us/caractere-eclair-monk-strap/S5100-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched bevelled waist",
+      lastNumber: "Eclair",
+      upperLeather: "Venezia Patinated Leather",
+      soleMaterial: "Hand-painted leather sole",
+      closure: "Single brass buckle",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Sharp single-buckle monk strap shoe cut on the chiseled Eclair last with hand-finished golden patina."
+  },
+  {
+    id: "berluti-equilibre-plain-derby",
+    brand: "Berluti",
+    productLine: "Equilibre",
+    modelName: "Equilibre Plain Derby",
+    sourceUrl: "https://www.berluti.com/en-us/equilibre-leather-derby/S5340-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched",
+      lastNumber: "Equilibre",
+      upperLeather: "Venezia Gloria Calfskin",
+      soleMaterial: "Leather sole with rubber forepart",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Sartorial plain-toe derby providing balanced ergonomics and timeless boardroom authority."
+  },
+  {
+    id: "berluti-scritto-capri-oxford",
+    brand: "Berluti",
+    productLine: "Capri",
+    modelName: "Scritto Capri Oxford",
+    sourceUrl: "https://www.berluti.com/en-us/scritto-capri-oxford/S5480-V2.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake rapid",
+      lastNumber: "Capri",
+      upperLeather: "Engraved Scritto Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Classic five-eyelet cap-toe Oxford featuring discreet Scritto script accents along the quarters."
+  },
+  {
+    id: "berluti-andy-demesure-derby",
+    brand: "Berluti",
+    productLine: "Andy",
+    modelName: "Andy Demesure Derby",
+    sourceUrl: "https://www.berluti.com/en-us/andy-demesure-derby/S5512-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched",
+      lastNumber: "Demesure",
+      upperLeather: "Venezia Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 3 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Laced adaptation of the iconic Andy Warhol silhouette, featuring hand-stitched apron contours."
+  },
+  {
+    id: "berluti-lorenzo-formal-oxford",
+    brand: "Berluti",
+    productLine: "Lorenzo",
+    modelName: "Lorenzo Formal Oxford",
+    sourceUrl: "https://www.berluti.com/en-us/lorenzo-formal-oxford/S5640-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Supple Venezia Leather",
+      weltType: "Ultra-flexible Blake",
+      lastNumber: "Lorenzo",
+      soleMaterial: "Thin cuoio leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Unlined, ultra-pliable formal Oxford engineered for effortless comfort at black-tie galas."
+  },
+  {
+    id: "berluti-primo-scritto-wholecut",
+    brand: "Berluti",
+    productLine: "Primo",
+    modelName: "Primo Scritto Wholecut",
+    sourceUrl: "https://www.berluti.com/en-us/primo-scritto-wholecut/S5720-V2.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched with fiddleback waist",
+      lastNumber: "Primo",
+      upperLeather: "Hand-stained Venezia Leather",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Wholecut dress shoe celebrating Olga Berluti's calligraphy heritage in deep tobacco tones."
+  },
+  {
+    id: "berluti-stellar-formal-derby",
+    brand: "Berluti",
+    productLine: "Stellar",
+    modelName: "Stellar Formal Derby",
+    sourceUrl: "https://www.berluti.com/en-us/stellar-formal-derby/S5850-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake rapid",
+      lastNumber: "Stellar",
+      upperLeather: "Glazed Box Calfskin",
+      soleMaterial: "Microcellular lightweight sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 24
+    },
+    reason: "Modern geometric dress derby set on a featherweight micro-cushioned city sole."
+  },
+
+  // ==========================================
+  // 2. Christian Louboutin (10 models, France FR / Italy IT - RED SOLES!)
+  // ==========================================
+  {
+    id: "christian-louboutin-greggo-flat-oxford",
+    brand: "Christian Louboutin",
+    productLine: "Greggo",
+    modelName: "Greggo Flat Oxford",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/greggo-black-1150376bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Cemented dress with signature red sole",
+      lastNumber: "Greggo",
+      upperLeather: "Black Patent Calfskin",
+      soleMaterial: "Red lacquered leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Louboutin's premier formal cap-toe Oxford, defined by elongated Parisian proportions and brilliant red sole."
+  },
+  {
+    id: "christian-louboutin-cousin-charles-derby",
+    brand: "Christian Louboutin",
+    productLine: "Cousin Charles",
+    modelName: "Cousin Charles Flat Derby",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/cousin-charles-flat-black-3200424bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched with red leather sole",
+      lastNumber: "Charles",
+      upperLeather: "Smooth Veau Velours Calfskin",
+      soleMaterial: "Signature red leather sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Sartorial plain-toe derby featuring delicate stitch lines and vivid scarlet-lacquered bottom."
+  },
+  {
+    id: "christian-louboutin-alpha-male-derby",
+    brand: "Christian Louboutin",
+    productLine: "Alpha Male",
+    modelName: "Alpha Male Flat Derby",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/alpha-male-flat-black-3210450bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction with red sole",
+      lastNumber: "Alpha",
+      upperLeather: "Patent Leather and Grosgrain Piping",
+      soleMaterial: "Red lacquered leather sole",
+      closure: "Lace-up 3 eyelets with silk ribbon",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Red carpet derby adorned with grosgrain ribbon trim, silk laces, and high-gloss red sole."
+  },
+  {
+    id: "christian-louboutin-chamberlen-monk-strap",
+    brand: "Christian Louboutin",
+    productLine: "Chamberlen",
+    modelName: "Chamberlen Flat Monk Strap",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/chamberlen-flat-black-3210458bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched with red sole",
+      lastNumber: "Chamberlen",
+      upperLeather: "Polished Box Calfskin",
+      soleMaterial: "Red leather sole",
+      closure: "Double silver-toned monk buckles",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Double monk strap dress shoe pairing immaculate calfskin contours with the flash of signature red."
+  },
+  {
+    id: "christian-louboutin-cousin-greg-oxford",
+    brand: "Christian Louboutin",
+    productLine: "Cousin Greg",
+    modelName: "Cousin Greg Flat Oxford",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/cousin-greg-flat-black-3220550bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched with red sole",
+      lastNumber: "Greg",
+      upperLeather: "High-shine Box Calfskin",
+      soleMaterial: "Signature red leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Refined wholecut Oxford featuring clean unbroken lines and Louboutin's unmistakable red lacquer."
+  },
+  {
+    id: "christian-louboutin-city-crepe-oxford",
+    brand: "Christian Louboutin",
+    productLine: "City Crepe",
+    modelName: "City Crepe Oxford",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/city-crepe-oxford-3220552bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake rapid with red rubber sole",
+      lastNumber: "City",
+      upperLeather: "Supple Calfskin",
+      soleMaterial: "Red rubber injected lug sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 28
+    },
+    reason: "Weather-resistant dress shoe combining business elegance with durable red rubber tread."
+  },
+  {
+    id: "christian-louboutin-vano-flat-oxford",
+    brand: "Christian Louboutin",
+    productLine: "Vano",
+    modelName: "Vano Flat Oxford",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/vano-flat-oxford-3230558bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction with red sole",
+      lastNumber: "Vano",
+      upperLeather: "Laser-cut Brogued Calfskin",
+      soleMaterial: "Signature red leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Laser-perforated wingtip Oxford reinventing heritage broguing with modern Parisian flair."
+  },
+  {
+    id: "christian-louboutin-william-flat-monk",
+    brand: "Christian Louboutin",
+    productLine: "William",
+    modelName: "William Flat Monk",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/william-flat-monk-3230560bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched with red sole",
+      lastNumber: "William",
+      upperLeather: "Patent Leather and Suede Trim",
+      soleMaterial: "Red leather sole",
+      closure: "Single buckle monk strap",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Formal single monk strap combining high-gloss patent leather with deep red leather soles."
+  },
+  {
+    id: "christian-louboutin-perou-brogue-derby",
+    brand: "Christian Louboutin",
+    productLine: "Perou",
+    modelName: "Perou Brogue Derby",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/perou-brogue-derby-3240562bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched with red sole",
+      lastNumber: "Perou",
+      upperLeather: "Burnished French Calfskin",
+      soleMaterial: "Signature red leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Full brogue wingtip derby hand-burnished in Italian ateliers and finished with scarlet red bottoms."
+  },
+  {
+    id: "christian-louboutin-top-daviol-flat-derby",
+    brand: "Christian Louboutin",
+    productLine: "Top Daviol",
+    modelName: "Top Daviol Flat Derby",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/top-daviol-flat-3240565bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction with red sole",
+      lastNumber: "Daviol",
+      upperLeather: "Polished Box Calf",
+      soleMaterial: "Red leather sole",
+      closure: "Lace-up 3 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Minimalist three-eyelet derby showcasing clean silhouette lines and pure red sole drama."
+  },
+
+  // ==========================================
+  // 3. Church's (10 models, United Kingdom GB)
+  // ==========================================
+  {
+    id: "churchs-consul-cap-toe-oxford",
+    brand: "Church's",
+    productLine: "Custom Grade",
+    modelName: "Consul Cap-Toe Oxford",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/oxfords/product.consul_leather_oxford.EEB003_9VE_F0AAB.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "173",
+      upperLeather: "Nevada Calfskin",
+      soleMaterial: "Oak bark leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Church's flagship Oxford worn by English statesmen since 1945, crafted on the classic 173 last."
+  },
+  {
+    id: "churchs-diplomat-semi-brogue-oxford",
+    brand: "Church's",
+    productLine: "Custom Grade",
+    modelName: "Diplomat Semi-Brogue Oxford",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/oxfords/product.diplomat_leather_oxford.EEB006_9VE_F0AXO.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "173",
+      upperLeather: "Nevada Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Quintessential British semi-brogue Oxford with perforated cap toe and hand-punched medallion."
+  },
+  {
+    id: "churchs-chetwynd-full-brogue-oxford",
+    brand: "Church's",
+    productLine: "Custom Grade",
+    modelName: "Chetwynd Full-Brogue Oxford",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/oxfords/product.chetwynd_leather_oxford.EEB007_9VE_F0AAN.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "173",
+      upperLeather: "Nevada Calfskin",
+      soleMaterial: "Double leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 28
+    },
+    reason: "Benchmark English full brogue wingtip Oxford exhibiting intricate gimping and brogue punching."
+  },
+  {
+    id: "churchs-shannon-plain-toe-derby",
+    brand: "Church's",
+    productLine: "Classic",
+    modelName: "Shannon Plain Toe Derby",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/derbys/product.shannon_leather_derby.EEB001_9LG_F0AAB.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Storm welted Goodyear",
+      lastNumber: "103",
+      upperLeather: "Polished Binder Leather",
+      soleMaterial: "Double leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 30
+    },
+    reason: "Iconic wholecut-style plain derby hand-stitched by master artisans using a single piece of polished binder leather."
+  },
+  {
+    id: "churchs-grafton-heavy-brogue-derby",
+    brand: "Church's",
+    productLine: "Classic",
+    modelName: "Grafton Heavy Brogue Derby",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/derbys/product.grafton_leather_derby.EEB009_9XV_F0ADY.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Storm welted Goodyear",
+      lastNumber: "173",
+      upperLeather: "Highland Grain Calfskin",
+      soleMaterial: "Double leather sole with storm welt",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 30
+    },
+    reason: "Formidable English country derby brogue featuring Scotch grain leather and storm welt water resistance."
+  },
+  {
+    id: "churchs-dubai-plain-stitch-oxford",
+    brand: "Church's",
+    productLine: "City",
+    modelName: "Dubai Plain Stitch Oxford",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/oxfords/product.dubai_leather_oxford.EEB017_9VE_F0AEF.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "136",
+      upperLeather: "Classic Box Calf",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Contemporary elongated Oxford built on the sleek 136 last with subtle topstitched cap seam."
+  },
+  {
+    id: "churchs-lancaster-semi-brogue-oxford",
+    brand: "Church's",
+    productLine: "Classic",
+    modelName: "Lancaster Semi-Brogue Oxford",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/oxfords/product.lancaster_oxford.EEB021_9VE_F0AHK.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "173",
+      upperLeather: "French Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Refined semi-brogue Oxford balancing understated formality with subtle punching on cap and counter."
+  },
+  {
+    id: "churchs-leyton-plain-derby",
+    brand: "Church's",
+    productLine: "Classic",
+    modelName: "Leyton Plain Derby",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/derbys/product.leyton_derby.EEB025_9LG_F0AKM.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "103",
+      upperLeather: "Bookbinder Calf",
+      soleMaterial: "Dainite rubber sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 28
+    },
+    reason: "Versatile four-eyelet plain derby set on an all-weather British Dainite studded rubber sole."
+  },
+  {
+    id: "churchs-burwood-full-brogue-oxford",
+    brand: "Church's",
+    productLine: "Classic",
+    modelName: "Burwood Full-Brogue Oxford",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/oxfords/product.burwood_oxford.EEB005_9LG_F0AMZ.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "81",
+      upperLeather: "Polished Binder Leather",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 26
+    },
+    reason: "Distinctive full brogue Oxford built on the rounded 81 last, popular in British and Italian tailoring."
+  },
+  {
+    id: "churchs-toronto-wingtip-oxford",
+    brand: "Church's",
+    productLine: "City",
+    modelName: "Toronto Wingtip Oxford",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/oxfords/product.toronto_oxford.EEB030_9VE_F0APQ.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "136",
+      upperLeather: "Nevada Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Sleek modern wingtip Oxford on the modern 136 last with chisel toe and flowing brogue lines."
+  },
+
+  // ==========================================
+  // 4. Dior Men (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "dior-men-carlo-oxford",
+    brand: "Dior Men",
+    productLine: "Dior Carlo",
+    modelName: "Dior Carlo Oxford",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3DE341ZMD_H969-dior-carlo-oxford-black-polished-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Carlo",
+      upperLeather: "Black Polished Calfskin",
+      soleMaterial: "Leather sole with Dior star insert",
+      closure: "Lace-up with brushed metal CD buckle",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Kim Jones' signature formal Oxford adorned with an architectural brushed-metal CD buckle closure."
+  },
+  {
+    id: "dior-men-carlo-derby",
+    brand: "Dior Men",
+    productLine: "Dior Carlo",
+    modelName: "Dior Carlo Derby",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3DE340ZMD_H969-dior-carlo-derby-black-polished-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction bevelled waist",
+      lastNumber: "Carlo",
+      upperLeather: "Polished Calfskin",
+      soleMaterial: "Bevelled leather sole",
+      closure: "Lace-up 3 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Structured three-eyelet derby showcasing beveled waist and sleek sculptural silhouette."
+  },
+  {
+    id: "dior-men-evidence-derby",
+    brand: "Dior Men",
+    productLine: "Dior Evidence",
+    modelName: "Dior Evidence Derby",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3DE330ZMD_H969-dior-evidence-derby-black-smooth-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Evidence",
+      upperLeather: "Smooth French Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up with metallic CD toe clip",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Statement runway derby punctuated by a futuristic silver-finish metal toe clip engraved with Dior signature."
+  },
+  {
+    id: "dior-men-timeless-oxford",
+    brand: "Dior Men",
+    productLine: "Dior Timeless",
+    modelName: "Dior Timeless Oxford",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3DE310ZMD_H969-dior-timeless-oxford-black-polished-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake rapid",
+      lastNumber: "Timeless",
+      upperLeather: "Deep Black Polished Calfskin",
+      soleMaterial: "Leather sole with embossed Dior signature",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Epitome of modern black-tie dressing, characterized by immaculate mirror-gloss leather and slender last."
+  },
+  {
+    id: "dior-men-timeless-derby",
+    brand: "Dior Men",
+    productLine: "Dior Timeless",
+    modelName: "Dior Timeless Derby",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3DE312ZMD_H969-dior-timeless-derby-black-polished-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Timeless",
+      upperLeather: "Polished Box Calf",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Classic four-eyelet dress derby with subtle Blake welt and Christian Dior star motif engraved on sole."
+  },
+  {
+    id: "dior-men-explorer-derby",
+    brand: "Dior Men",
+    productLine: "Dior Explorer",
+    modelName: "Dior Explorer Derby",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3DE319ZKO_H969-dior-explorer-derby-black-smooth-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Goodyear welted notched lug sole",
+      lastNumber: "Explorer",
+      upperLeather: "Smooth Calfskin with CD Diamond accent",
+      soleMaterial: "Chunky notched rubber lug sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 40
+    },
+    reason: "Hybrid workwear-sartorial derby set atop an assertive cleated rubber lug sole."
+  },
+  {
+    id: "dior-men-cd-diamond-embossed-oxford",
+    brand: "Dior Men",
+    productLine: "CD Diamond",
+    modelName: "CD Diamond Embossed Oxford",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3DE325ZMD_H969-cd-diamond-oxford-black-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Diamond",
+      upperLeather: "CD Diamond Laser-engraved Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Features Marc Bohan's 1974 graphic CD Diamond canvas pattern debossed into calfskin leather."
+  },
+  {
+    id: "dior-men-granville-derby",
+    brand: "Dior Men",
+    productLine: "Granville",
+    modelName: "Dior Granville Derby",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3DE328ZMD_H969-dior-granville-derby-black-brushed-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Granville",
+      upperLeather: "Brushed Box Calfskin",
+      soleMaterial: "Leather sole with non-slip rubber insert",
+      closure: "Lace-up 3 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Understated city derby named after Christian Dior's childhood home in Normandy."
+  },
+  {
+    id: "dior-men-cannage-perforated-oxford",
+    brand: "Dior Men",
+    productLine: "Cannage",
+    modelName: "Cannage Perforated Oxford",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3DE335ZMD_H969-cannage-perforated-oxford-black-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Cannage",
+      upperLeather: "Polished Calfskin with Cannage Broguing",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Exquisite cap-toe Oxford featuring the House's historic Cannage geometry punched into the brogue trim."
+  },
+  {
+    id: "dior-men-evening-patent-wholecut-oxford",
+    brand: "Dior Men",
+    productLine: "Evening",
+    modelName: "Evening Patent Wholecut Oxford",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3DE338ZMD_H969-evening-patent-wholecut-black-patent-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched formal sole",
+      lastNumber: "Evening",
+      upperLeather: "Black Gloss Patent Calfskin",
+      soleMaterial: "Thin leather sole",
+      closure: "Lace-up with silk grosgrain ribbon",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Seamless wholecut patent leather tuxedo shoe finished with wide silk grosgrain ribbon laces."
+  },
+
+  // ==========================================
+  // 5. Ferragamo (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "ferragamo-tramezza-cap-toe-oxford",
+    brand: "Ferragamo",
+    productLine: "Tramezza",
+    modelName: "Tramezza Cap-Toe Oxford",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/tramezza-oxford-684210",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Tramezza Goodyear welted",
+      lastNumber: "Tramezza Classic",
+      upperLeather: "French Box Calfskin",
+      soleMaterial: "Hand-finished leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "The pinnacle of Italian cordwaining, crafted through the Tramezza technique with flexible leather midsole."
+  },
+  {
+    id: "ferragamo-tramezza-wholecut-oxford",
+    brand: "Ferragamo",
+    productLine: "Tramezza",
+    modelName: "Tramezza Wholecut Oxford",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/tramezza-wholecut-712845",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Tramezza welted bevelled waist",
+      lastNumber: "Tramezza Chiseled",
+      upperLeather: "Hand-burnished Box Calf",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Seamless wholecut Oxford displaying hand-burnished depth and hand-closed waist."
+  },
+  {
+    id: "ferragamo-grand-prix-monk-strap",
+    brand: "Ferragamo",
+    productLine: "Tramezza",
+    modelName: "Grand Prix Monk Strap",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/tramezza-monk-723912",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Tramezza welted",
+      lastNumber: "Grand Prix",
+      upperLeather: "Smooth Calfskin",
+      soleMaterial: "Leather sole with rubber insert",
+      closure: "Single buckle with Gancini hardware",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Monk strap shoe pairing bench-made Tramezza construction with subtle palladium Gancini buckle."
+  },
+  {
+    id: "ferragamo-plain-toe-derby",
+    brand: "Ferragamo",
+    productLine: "Classic",
+    modelName: "Plain Toe Derby",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/plain-toe-derby-652390",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Classic Derby",
+      upperLeather: "Box Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Understated Tuscan dress derby featuring clean vamp lines and vegetable-tanned cuoio sole."
+  },
+  {
+    id: "ferragamo-wingtip-brogue-oxford",
+    brand: "Ferragamo",
+    productLine: "Tramezza",
+    modelName: "Wingtip Brogue Oxford",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/tramezza-brogue-698124",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Tramezza welted",
+      lastNumber: "Tramezza Brogue",
+      upperLeather: "Hand-burnished Calfskin",
+      soleMaterial: "Double leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 28
+    },
+    reason: "Full brogue wingtip executed with Tramezza craftsmanship and hand-shaded antique coloring."
+  },
+  {
+    id: "ferragamo-double-monk-strap-shoe",
+    brand: "Ferragamo",
+    productLine: "Classic",
+    modelName: "Double Monk Strap Shoe",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/double-monk-704512",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake rapid",
+      lastNumber: "Sartorial",
+      upperLeather: "Full-grain Italian Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Dual palladium-finish buckles",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Double monk strap shoe characterized by sharp Italian lines and lustrous box calf."
+  },
+  {
+    id: "ferragamo-tramezza-medallion-oxford",
+    brand: "Ferragamo",
+    productLine: "Tramezza",
+    modelName: "Tramezza Medallion Oxford",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/tramezza-medallion-735601",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Tramezza welted",
+      lastNumber: "Tramezza Medallion",
+      upperLeather: "Ultra-fine French Calf",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Semi-brogue Oxford accented with a hand-punched floral medallion on the cap toe."
+  },
+  {
+    id: "ferragamo-formal-patent-evening-oxford",
+    brand: "Ferragamo",
+    productLine: "Evening",
+    modelName: "Formal Patent Evening Oxford",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/formal-patent-oxford-748901",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake stitched formal",
+      lastNumber: "Tuxedo",
+      upperLeather: "Black Patent Leather",
+      soleMaterial: "Thin leather sole with grosgrain piping",
+      closure: "Lace-up 5 eyelets with silk laces",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Ultra-sleek formal patent leather Oxford tailored for black-tie galas."
+  },
+  {
+    id: "ferragamo-quarter-brogue-oxford",
+    brand: "Ferragamo",
+    productLine: "Classic",
+    modelName: "Quarter Brogue Oxford",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/quarter-brogue-719823",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Classic",
+      upperLeather: "Hand-patinated Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Refined business Oxford featuring delicate perforations along the cap seam only."
+  },
+  {
+    id: "ferragamo-split-toe-derby",
+    brand: "Ferragamo",
+    productLine: "Tramezza",
+    modelName: "Split-Toe Derby",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/oxfords-derbies/tramezza-split-toe-756192",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Tramezza welted",
+      lastNumber: "Norwegian Last",
+      upperLeather: "Scotchgrain French Calf",
+      soleMaterial: "Double leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 28
+    },
+    reason: "Robust split-toe derby featuring pie-crust apron stitching and Scotchgrain texture."
+  },
+
+  // ==========================================
+  // 6. Gucci (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "gucci-classic-cap-toe-oxford",
+    brand: "Gucci",
+    productLine: "Formal Tailoring",
+    modelName: "Classic Cap-Toe Oxford",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/lace-ups-for-men/mens-cap-toe-oxford-p-6582520G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Florentine",
+      upperLeather: "Smooth Italian Calfskin",
+      soleMaterial: "Leather sole with golden Gucci crest",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Gucci's quintessential black-tie Oxford displaying hand-stitched cap toe and gold-foil family crest."
+  },
+  {
+    id: "gucci-web-detail-leather-derby",
+    brand: "Gucci",
+    productLine: "Web Heritage",
+    modelName: "Web Detail Leather Derby",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/lace-ups-for-men/mens-web-detail-derby-p-6582540G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Classic",
+      upperLeather: "Black Polished Leather",
+      soleMaterial: "Leather sole with rubber insert",
+      closure: "Lace-up 4 eyelets with Web heel loop",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Boardroom derby subtly accented with Gucci's iconic green and red Web ribbon loop on the heel counter."
+  },
+  {
+    id: "gucci-brogue-wingtip-oxford",
+    brand: "Gucci",
+    productLine: "Heritage",
+    modelName: "Brogue Wingtip Oxford",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/lace-ups-for-men/mens-brogue-oxford-p-577234DS8001000",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake stitched",
+      lastNumber: "Brogue",
+      upperLeather: "Burnished Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Traditional wingtip full brogue reimagined with sharp Italian contours and hand-shaded patina."
+  },
+  {
+    id: "gucci-pointed-toe-formal-derby",
+    brand: "Gucci",
+    productLine: "Runway",
+    modelName: "Pointed Toe Formal Derby",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/lace-ups-for-men/mens-pointed-derby-p-7195800G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Chiseled",
+      upperLeather: "Polished Spazzolato Calfskin",
+      soleMaterial: "Thin leather sole",
+      closure: "Lace-up 3 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Sharp chiseled toe formal derby designed for sleek runway silhouettes."
+  },
+  {
+    id: "gucci-gg-perforated-oxford",
+    brand: "Gucci",
+    productLine: "Gucci Signature",
+    modelName: "GG Perforated Oxford",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/lace-ups-for-men/mens-gg-perforated-oxford-p-6891230G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Classic",
+      upperLeather: "Calfskin with Micro-GG Perforations",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Cap-toe Oxford subtly laser-perforated with the archival Interlocking GG motif across the vamp."
+  },
+  {
+    id: "gucci-double-monk-strap-shoe",
+    brand: "Gucci",
+    productLine: "Formal",
+    modelName: "Double Monk Strap Shoe",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/lace-ups-for-men/mens-double-monk-shoe-p-5982100G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake rapid",
+      lastNumber: "Monk Last",
+      upperLeather: "Smooth Italian Calf",
+      soleMaterial: "Leather sole",
+      closure: "Dual silver-finish metal buckles",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Impeccable double monk strap dress shoe featuring beveled soles and hand-buffed finish."
+  },
+  {
+    id: "gucci-evening-patent-leather-oxford",
+    brand: "Gucci",
+    productLine: "Black Tie",
+    modelName: "Evening Patent Leather Oxford",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/lace-ups-for-men/mens-patent-oxford-p-4729100G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Cemented dress with bevelled waist",
+      lastNumber: "Tuxedo",
+      upperLeather: "High-gloss Patent Leather",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets with silk ribbon",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "High-shine patent leather evening Oxford designed specifically for Gucci le smoking tuxedos."
+  },
+  {
+    id: "gucci-plain-toe-lace-up-derby",
+    brand: "Gucci",
+    productLine: "Classic",
+    modelName: "Plain Toe Lace-Up Derby",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/lace-ups-for-men/mens-plain-derby-p-6281900G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Classic",
+      upperLeather: "Full-grain Box Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Essential round-toe lace-up derby offering understated versatility and luxurious Italian craftsmanship."
+  },
+  {
+    id: "gucci-interlocking-g-formal-derby",
+    brand: "Gucci",
+    productLine: "Interlocking G",
+    modelName: "Interlocking G Formal Derby",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/lace-ups-for-men/mens-interlocking-g-derby-p-7392100G0001000",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake stitched with debossed welt",
+      lastNumber: "Modern",
+      upperLeather: "Smooth Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 3 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Dress derby featuring a blind-embossed Interlocking G pattern tracing the perimeter of the sole welt."
+  },
+  {
+    id: "gucci-lug-sole-dress-derby",
+    brand: "Gucci",
+    productLine: "Lug Sole",
+    modelName: "Lug Sole Dress Derby",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/lace-ups-for-men/mens-lug-derby-p-577238DS8001000",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Goodyear welted cleated rubber",
+      lastNumber: "Lug",
+      upperLeather: "Spazzolato Calfskin",
+      soleMaterial: "Chunky rubber lug sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Bold hybrid combining high-shine spazzolato upper with chunky 45mm cleated rubber lug sole."
+  },
+
+  // ==========================================
+  // 7. John Lobb (10 models, United Kingdom GB)
+  // ==========================================
+  {
+    id: "john-lobb-city-ii-cap-toe-oxford",
+    brand: "John Lobb",
+    productLine: "Classic",
+    modelName: "City II Cap-Toe Oxford",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/city-ii-calf.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "7000",
+      upperLeather: "Full-grain Museum Calfskin",
+      soleMaterial: "Single leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "The definitive English cap-toe Oxford, celebrated worldwide for the immaculate balance of the 7000 last."
+  },
+  {
+    id: "john-lobb-philip-ii-oxford",
+    brand: "John Lobb",
+    productLine: "Prestige Collection",
+    modelName: "Philip II Oxford",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/philip-ii-prestige-oxford.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Prestige Goodyear welted with bevelled waist",
+      lastNumber: "7000",
+      upperLeather: "Dark Brown Museum Calf",
+      soleMaterial: "Prestige leather sole with fiddleback waist",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Lobb's crown jewel: punched cap-toe Oxford showcasing bespoke-level hand-beveled fiddleback waist."
+  },
+  {
+    id: "john-lobb-william-double-monk-strap",
+    brand: "John Lobb",
+    productLine: "Classic",
+    modelName: "William Double Monk Strap",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/william-double-monk.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "9795",
+      upperLeather: "Black Calfskin",
+      soleMaterial: "Double leather sole",
+      closure: "Twin silver-finish buckles",
+      originCountry: "United Kingdom",
+      heelHeightMm: 28
+    },
+    reason: "The original double monk strap shoe created by William Lobb in 1945, built on the historic 9795 last."
+  },
+  {
+    id: "john-lobb-chapel-double-buckle-monk",
+    brand: "John Lobb",
+    productLine: "Prestige Collection",
+    modelName: "Chapel Double Buckle Monk",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/chapel-prestige-monk.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Prestige Goodyear welted",
+      lastNumber: "8000",
+      upperLeather: "Plum Museum Calf",
+      soleMaterial: "Prestige bevelled leather sole",
+      closure: "Dual angled buckles",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Prestige double monk with graceful sweeping straps built on the sleek, chiseled 8000 last."
+  },
+  {
+    id: "john-lobb-becketts-wholecut-oxford",
+    brand: "John Lobb",
+    productLine: "Prestige Collection",
+    modelName: "Becketts Wholecut Oxford",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/becketts-prestige-wholecut.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Prestige Goodyear welted with bevelled waist",
+      lastNumber: "8000",
+      upperLeather: "Single piece Museum Calf",
+      soleMaterial: "Prestige fiddleback leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Seamless wholecut Oxford displaying flawless leather selection and hand-sculpted waist."
+  },
+  {
+    id: "john-lobb-garnier-ii-plain-oxford",
+    brand: "John Lobb",
+    productLine: "Classic",
+    modelName: "Garnier II Plain Oxford",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/garnier-ii-plain-oxford.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "7000",
+      upperLeather: "Black Box Calf",
+      soleMaterial: "Single leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Purity of form: an unembellished wholecut-effect Oxford on the classic 7000 last."
+  },
+  {
+    id: "john-lobb-saunton-semi-brogue-oxford",
+    brand: "John Lobb",
+    productLine: "Classic",
+    modelName: "Saunton Semi-Brogue Oxford",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/saunton-semi-brogue.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "7000",
+      upperLeather: "Chestnut Oxford Calf",
+      soleMaterial: "Single leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Understated semi-brogue Oxford pairing delicate punching with Northampton Goodyear welted longevity."
+  },
+  {
+    id: "john-lobb-alder-cap-toe-derby",
+    brand: "John Lobb",
+    productLine: "Classic",
+    modelName: "Alder Cap-Toe Derby",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/alder-cap-toe-derby.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted with storm welt",
+      lastNumber: "8695",
+      upperLeather: "Country Grain Calfskin",
+      soleMaterial: "Rubber commando sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 28
+    },
+    reason: "Heavyweight English country derby crafted with Scotch grain leather on the round-toe 8695 last."
+  },
+  {
+    id: "john-lobb-luffield-plain-derby",
+    brand: "John Lobb",
+    productLine: "Prestige Collection",
+    modelName: "Luffield Plain Derby",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/luffield-prestige-derby.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Prestige Goodyear welted",
+      lastNumber: "8000",
+      upperLeather: "Museum Calfskin",
+      soleMaterial: "Prestige leather sole",
+      closure: "Two eyelet derby lace-up",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Two-eyelet Prestige derby demonstrating extraordinary minimalism and chiseled toe elegance."
+  },
+  {
+    id: "john-lobb-sutton-punched-cap-oxford",
+    brand: "John Lobb",
+    productLine: "Classic",
+    modelName: "Sutton Punched Cap Oxford",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/sutton-punched-cap.html",
+    sourceRegion: "GB",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "7000",
+      upperLeather: "Smooth French Box Calf",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "United Kingdom",
+      heelHeightMm: 25
+    },
+    reason: "Formal quarter-brogue Oxford featuring micro-punched seams along the cap toe."
+  },
+
+  // ==========================================
+  // 8. Louis Vuitton (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "louis-vuitton-voltaire-richelieu-oxford",
+    brand: "Louis Vuitton",
+    productLine: "Voltaire",
+    modelName: "Voltaire Richelieu Oxford",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/voltaire-richelieu-nvprod3760010v/1AA55D",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Voltaire",
+      upperLeather: "Waxed Calf Leather",
+      soleMaterial: "Leather sole with Monogram flower heel motif",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Louis Vuitton's flagship formal Richelieu Oxford, detailed with a hand-painted leather sole and Monogram flower heel."
+  },
+  {
+    id: "louis-vuitton-sorbonne-derby",
+    brand: "Louis Vuitton",
+    productLine: "Sorbonne",
+    modelName: "Sorbonne Derby",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/sorbonne-derby-nvprod3160085v/1A9R21",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake rapid",
+      lastNumber: "Sorbonne",
+      upperLeather: "Glazed Calf Leather",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 4 eyelets with embossed LV Initials",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Distinguished derby cut from high-sheen glazed calf leather bearing discreet side LV embossing."
+  },
+  {
+    id: "louis-vuitton-kensington-derby",
+    brand: "Louis Vuitton",
+    productLine: "Kensington",
+    modelName: "Kensington Derby",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/kensington-derby-nvprod2140089v/1A7V2D",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Kensington",
+      upperLeather: "Smooth Calfskin",
+      soleMaterial: "Leather sole with rubber insert",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Timeless derby crafted from supple calfskin leather offering boardroom durability."
+  },
+  {
+    id: "louis-vuitton-saint-germain-richelieu-oxford",
+    brand: "Louis Vuitton",
+    productLine: "Saint Germain",
+    modelName: "Saint Germain Richelieu Oxford",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/saint-germain-richelieu-nvprod1270038v/1A4OOD",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction bevelled waist",
+      lastNumber: "Saint Germain",
+      upperLeather: "Patinated Calf Leather",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Hand-patinated dress Oxford characterized by sleek contours and hand-finished edge detailing."
+  },
+  {
+    id: "louis-vuitton-vendome-flex-richelieu",
+    brand: "Louis Vuitton",
+    productLine: "Vendome Flex",
+    modelName: "Vendome Flex Richelieu",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/vendome-flex-richelieu-nvprod2900010v/1A9A8O",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Flex Goodyear welted",
+      lastNumber: "Vendome",
+      upperLeather: "Waxed French Calf",
+      soleMaterial: "Ultra-flexible Goodyear leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Goodyear-welted shoe enhanced by special pliant soles providing sneaker-like flexibility from day one."
+  },
+  {
+    id: "louis-vuitton-vendome-flex-derby",
+    brand: "Louis Vuitton",
+    productLine: "Vendome Flex",
+    modelName: "Vendome Flex Derby",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/vendome-flex-derby-nvprod2900012v/1A9A9O",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Flex Goodyear welted",
+      lastNumber: "Vendome",
+      upperLeather: "Grained Calf Leather",
+      soleMaterial: "Flexible Goodyear sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Goodyear flex derby uniting traditional English welt durability with Italian comfort."
+  },
+  {
+    id: "louis-vuitton-oberkampf-derby",
+    brand: "Louis Vuitton",
+    productLine: "Oberkampf",
+    modelName: "Oberkampf Derby",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/oberkampf-derby-nvprod4120090v/1AB12J",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Goodyear welted micro tread",
+      lastNumber: "Oberkampf",
+      upperLeather: "Smooth Calf with Monogram Canvas tab",
+      soleMaterial: "Micro rubber tread sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Contemporary hybrid dress derby set on a lightweight cleated sole."
+  },
+  {
+    id: "louis-vuitton-metropolis-brogue-derby",
+    brand: "Louis Vuitton",
+    productLine: "Metropolis",
+    modelName: "Metropolis Brogue Derby",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/metropolis-derby-nvprod3760015v/1AA88E",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake rapid",
+      lastNumber: "Metropolis",
+      upperLeather: "Polished Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up with Monogram perforated broguing",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Full brogue wingtip derby featuring micro-perforated Monogram flower motifs."
+  },
+  {
+    id: "louis-vuitton-palace-formal-wholecut-oxford",
+    brand: "Louis Vuitton",
+    productLine: "Palace",
+    modelName: "Palace Formal Wholecut Oxford",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/palace-wholecut-nvprod4920015v/1AC55M",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Palace",
+      upperLeather: "Glazed Box Calf",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Chiseled wholecut dress shoe showcasing flawless leather cutting and subtle LV heel stud."
+  },
+  {
+    id: "louis-vuitton-evening-star-patent-richelieu",
+    brand: "Louis Vuitton",
+    productLine: "Evening",
+    modelName: "Evening Star Patent Richelieu",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/evening-star-richelieu-nvprod3160090v/1A9R90",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched formal",
+      lastNumber: "Evening",
+      upperLeather: "Black Patent Calfskin",
+      soleMaterial: "Red and black leather sole",
+      closure: "Lace-up 5 eyelets with silk ribbon",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Black-tie patent Richelieu featuring silk ribbon laces and contrast leather insole."
+  },
+
+  // ==========================================
+  // 9. Prada (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "prada-brushed-leather-oxford",
+    brand: "Prada",
+    productLine: "Formal Tailoring",
+    modelName: "Brushed Leather Oxford",
+    sourceUrl: "https://www.prada.com/us/en/p/brushed-leather-oxford-shoes/2EB174_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "Tailoring Last",
+      upperLeather: "Brushed Spazzolato Calfskin",
+      soleMaterial: "Leather sole with hot-stamped logo",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Prada's benchmark formal cap-toe Oxford crafted from signature high-shine brushed Spazzolato leather."
+  },
+  {
+    id: "prada-brushed-leather-derby",
+    brand: "Prada",
+    productLine: "Classic",
+    modelName: "Brushed Leather Derby",
+    sourceUrl: "https://www.prada.com/us/en/p/brushed-leather-derby-shoes/2EE098_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "Classic Derby",
+      upperLeather: "Spazzolato Calfskin",
+      soleMaterial: "Leather sole with rubber tread",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 28
+    },
+    reason: "Versatile four-eyelet derby balancing formal dress code with durable rubber island sole."
+  },
+  {
+    id: "prada-monolith-brushed-leather-derby",
+    brand: "Prada",
+    productLine: "Monolith",
+    modelName: "Monolith Brushed Leather Derby",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-monolith-brushed-leather-lace-up-shoes/2EE342_B4L_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Goodyear welted 55mm lug sole",
+      lastNumber: "Monolith",
+      upperLeather: "Polished Spazzolato Calf",
+      soleMaterial: "55mm Monolith rubber lug sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 55
+    },
+    reason: "Subversive cult classic pairing formal derby upper with Prada's exaggerated 55mm Monolith lug sole."
+  },
+  {
+    id: "prada-saffiano-leather-derby",
+    brand: "Prada",
+    productLine: "Saffiano",
+    modelName: "Saffiano Leather Derby",
+    sourceUrl: "https://www.prada.com/us/en/p/saffiano-leather-derby-shoes/2EE088_053_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Saffiano Last",
+      upperLeather: "Saffiano Cross-grain Leather",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Constructed from scratch-resistant Saffiano leather patented by Mario Prada in 1913."
+  },
+  {
+    id: "prada-wheel-tread-formal-derby",
+    brand: "Prada",
+    productLine: "Wheel",
+    modelName: "Wheel Tread Formal Derby",
+    sourceUrl: "https://www.prada.com/us/en/p/brushed-leather-derby-shoes/2EE363_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Goodyear welted tyre tread",
+      lastNumber: "Wheel",
+      upperLeather: "Brushed Calfskin",
+      soleMaterial: "Serrated tyre tread rubber sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 38
+    },
+    reason: "Bold city lace-up defined by high-traction tyre tread rubber bumper welt."
+  },
+  {
+    id: "prada-pointed-toe-spazzolato-oxford",
+    brand: "Prada",
+    productLine: "Runway",
+    modelName: "Pointed Toe Spazzolato Oxford",
+    sourceUrl: "https://www.prada.com/us/en/p/brushed-leather-pointed-oxford/2EB190_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake stitched bevelled waist",
+      lastNumber: "Pointed",
+      upperLeather: "High-shine Spazzolato Calf",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Razor-sharp pointed silhouette embodying Miuccia Prada's minimalist tailoring."
+  },
+  {
+    id: "prada-brushed-leather-monk-strap",
+    brand: "Prada",
+    productLine: "Classic",
+    modelName: "Brushed Leather Monk Strap",
+    sourceUrl: "https://www.prada.com/us/en/p/brushed-leather-monk-shoes/2EG300_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "Monk Last",
+      upperLeather: "Polished Spazzolato Leather",
+      soleMaterial: "Leather sole",
+      closure: "Single polished silver-finish buckle",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Streamlined single-buckle monk strap shoe finished in high-gloss brushed calfskin."
+  },
+  {
+    id: "prada-classic-cap-toe-oxford",
+    brand: "Prada",
+    productLine: "Tailoring",
+    modelName: "Classic Cap-Toe Oxford",
+    sourceUrl: "https://www.prada.com/us/en/p/classic-leather-oxford/2EB160_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "Cap Toe",
+      upperLeather: "Smooth French Calfskin",
+      soleMaterial: "Bevelled leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Traditional gentleman's cap-toe Oxford cut from un-brushed supple French calf."
+  },
+  {
+    id: "prada-perforated-brogue-derby",
+    brand: "Prada",
+    productLine: "Classic",
+    modelName: "Perforated Brogue Derby",
+    sourceUrl: "https://www.prada.com/us/en/p/brogue-derby-shoes/2EE312_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake rapid",
+      lastNumber: "Brogue",
+      upperLeather: "Spazzolato Calfskin",
+      soleMaterial: "Leather sole with rubber insert",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 26
+    },
+    reason: "Wingtip derby combining punched brogue perforations with high-shine Spazzolato leather."
+  },
+  {
+    id: "prada-evening-patent-leather-oxford",
+    brand: "Prada",
+    productLine: "Evening",
+    modelName: "Evening Patent Leather Oxford",
+    sourceUrl: "https://www.prada.com/us/en/p/patent-leather-oxford-shoes/2EB180_069_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Cemented dress with thin cuoio sole",
+      lastNumber: "Tuxedo",
+      upperLeather: "Gloss Patent Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Glossy black patent leather tuxedo Oxford engineered for formal black-tie events."
+  },
+
+  // ==========================================
+  // 10. Saint Laurent (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "saint-laurent-army-derby-in-glazed-leather",
+    brand: "Saint Laurent",
+    productLine: "Army",
+    modelName: "Army Derby in Glazed Leather",
+    sourceUrl: "https://www.ysl.com/en-us/pr/army-derbies-in-glazed-leather-64923402G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Goodyear welted commando lug",
+      lastNumber: "Army",
+      upperLeather: "Glazed Shiny Calfskin",
+      soleMaterial: "Commando rubber notched lug sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Saint Laurent's iconic military-inspired formal derby set on a chunky notched commando rubber sole."
+  },
+  {
+    id: "saint-laurent-jonas-wholecut-oxford",
+    brand: "Saint Laurent",
+    productLine: "Jonas",
+    modelName: "Jonas Wholecut Oxford",
+    sourceUrl: "https://www.ysl.com/en-us/pr/jonas-wholecut-oxford-58682002G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction bevelled waist",
+      lastNumber: "Jonas",
+      upperLeather: "Black Patent Calfskin",
+      soleMaterial: "Leather sole with stacked heel",
+      closure: "Lace-up 3 eyelets with grosgrain ribbon laces",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Ultra-sharp pointed wholecut evening Oxford tailored specifically for Saint Laurent tuxedo suits."
+  },
+  {
+    id: "saint-laurent-wyatt-derby-in-box-leather",
+    brand: "Saint Laurent",
+    productLine: "Wyatt",
+    modelName: "Wyatt Derby in Box Leather",
+    sourceUrl: "https://www.ysl.com/en-us/pr/wyatt-derby-in-box-leather-58671402G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched with Cuban heel",
+      lastNumber: "Wyatt",
+      upperLeather: "Box Calfskin Leather",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 3 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Features the legendary Wyatt almond-toe last with a distinct 30mm stacked Cuban heel."
+  },
+  {
+    id: "saint-laurent-pierre-cap-toe-oxford",
+    brand: "Saint Laurent",
+    productLine: "Pierre",
+    modelName: "Pierre Cap-Toe Oxford",
+    sourceUrl: "https://www.ysl.com/en-us/pr/pierre-cap-toe-oxfords-66882002G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Pierre",
+      upperLeather: "Smooth Calfskin",
+      soleMaterial: "Leather sole with stacked heel",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Understated Parisian business Oxford balancing low-profile welt with clean cap-toe proportion."
+  },
+  {
+    id: "saint-laurent-anthony-monk-strap-shoe",
+    brand: "Saint Laurent",
+    productLine: "Anthony",
+    modelName: "Anthony Monk Strap Shoe",
+    sourceUrl: "https://www.ysl.com/en-us/pr/anthony-monk-strap-shoes-67891002G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched",
+      lastNumber: "Anthony",
+      upperLeather: "Brushed Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Single polished silver roller buckle",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Rock-and-roll single monk strap shoe designed with sharp lines and polished hardware."
+  },
+  {
+    id: "saint-laurent-yves-wingtip-brogue-derby",
+    brand: "Saint Laurent",
+    productLine: "Yves",
+    modelName: "Yves Wingtip Brogue Derby",
+    sourceUrl: "https://www.ysl.com/en-us/pr/yves-wingtip-derby-63449002G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake rapid",
+      lastNumber: "Yves",
+      upperLeather: "Burnished Calfskin",
+      soleMaterial: "Leather sole with rubber insert",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Full brogue wingtip derby pairing classic perforation with slender Parisian toe shape."
+  },
+  {
+    id: "saint-laurent-nino-plain-toe-derby",
+    brand: "Saint Laurent",
+    productLine: "Nino",
+    modelName: "Nino Plain Toe Derby",
+    sourceUrl: "https://www.ysl.com/en-us/pr/nino-plain-toe-derby-61234002G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Nino",
+      upperLeather: "Matte Box Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Minimalist plain-toe derby cut with clean unbroken lines for modern tailored suits."
+  },
+  {
+    id: "saint-laurent-teddy-crepe-sole-derby",
+    brand: "Saint Laurent",
+    productLine: "Teddy",
+    modelName: "Teddy Crepe Sole Derby",
+    sourceUrl: "https://www.ysl.com/en-us/pr/teddy-crepe-derby-58671002G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Goodyear welted crepe sole",
+      lastNumber: "Teddy",
+      upperLeather: "Velveteen Suede Calfskin",
+      soleMaterial: "Natural plantation crepe sole",
+      closure: "Lace-up 3 eyelets with D-rings",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Teddy Boy creeper-inspired lace-up resting on a chunky shock-absorbing natural crepe sole."
+  },
+  {
+    id: "saint-laurent-luke-wholecut-lace-up",
+    brand: "Saint Laurent",
+    productLine: "Luke",
+    modelName: "Luke Wholecut Lace-Up",
+    sourceUrl: "https://www.ysl.com/en-us/pr/luke-wholecut-lace-up-65432002G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Luke",
+      upperLeather: "Black Glazed Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Seamless wholecut dress shoe crafted from a single piece of glazed calfskin hide."
+  },
+  {
+    id: "saint-laurent-evening-tuxedo-patent-derby",
+    brand: "Saint Laurent",
+    productLine: "Evening",
+    modelName: "Evening Tuxedo Patent Derby",
+    sourceUrl: "https://www.ysl.com/en-us/pr/evening-patent-derby-58682202G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      weltType: "Blake stitched formal",
+      lastNumber: "Evening",
+      upperLeather: "Gloss Patent Leather",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 3 eyelets with grosgrain laces",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "High-gloss formal patent derby tailored to accompany Saint Laurent's le smoking black-tie ensembles."
+  },
+
+  // ==========================================
+  // 11. Santoni (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "santoni-simon-double-monk-strap-shoe",
+    brand: "Santoni",
+    productLine: "Heritage",
+    modelName: "Simon Double Monk Strap Shoe",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-double-monk-shoes-MCC015004JC6IOBSS48.html",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Goodyear welted with orange leather sole",
+      lastNumber: "Heritage Monk",
+      upperLeather: "Antiqued Hand-colored Calfskin",
+      soleMaterial: "Leather sole with iconic orange insert",
+      closure: "Dual brass monk buckles",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Santoni's signature double monk, hand-colored with iconic Velatura patina in Le Marche atelier."
+  },
+  {
+    id: "santoni-carlos-cap-toe-oxford",
+    brand: "Santoni",
+    productLine: "Carlos",
+    modelName: "Carlos Cap-Toe Oxford",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-cap-toe-oxford-MCC017012JC6IOBSV70.html",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "Carlos",
+      upperLeather: "Hand-burnished Box Calf",
+      soleMaterial: "Orange leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Bench-made Goodyear welted cap-toe Oxford featuring Santoni's trademark orange sole."
+  },
+  {
+    id: "santoni-wilson-wholecut-oxford",
+    brand: "Santoni",
+    productLine: "Wilson",
+    modelName: "Wilson Wholecut Oxford",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-wholecut-oxford-MCC016892JC6IOBSW80.html",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Goodyear welted bevelled waist",
+      lastNumber: "Wilson",
+      upperLeather: "Single piece Hand-patinated Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Seamless wholecut Oxford displaying gradual hand-shaded patina across a continuous piece of fine leather."
+  },
+  {
+    id: "santoni-classic-plain-toe-derby",
+    brand: "Santoni",
+    productLine: "Classic",
+    modelName: "Classic Plain Toe Derby",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-plain-derby-MCC014522JC6IOBSX90.html",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Classic",
+      upperLeather: "Polished French Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Timeless plain-toe derby cut with clean contours for classic Italian business dress."
+  },
+  {
+    id: "santoni-windsor-semi-brogue-oxford",
+    brand: "Santoni",
+    productLine: "Windsor",
+    modelName: "Windsor Semi-Brogue Oxford",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-semi-brogue-MCC018224JC6IOBSY01.html",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "Windsor",
+      upperLeather: "Hand-shaded Antique Calf",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Semi-brogue Oxford balancing traditional punching with exquisite Italian hand-patination."
+  },
+  {
+    id: "santoni-carter-wingtip-brogue-oxford",
+    brand: "Santoni",
+    productLine: "Carter",
+    modelName: "Carter Wingtip Brogue Oxford",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-wingtip-oxford-MCC019002JC6IOBSZ12.html",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "Carter",
+      upperLeather: "Antiqued Calfskin",
+      soleMaterial: "Double leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 28
+    },
+    reason: "Full wingtip brogue showcasing intricate hand-perforated medallion on the toe."
+  },
+  {
+    id: "santoni-elena-split-toe-derby",
+    brand: "Santoni",
+    productLine: "Artisanal",
+    modelName: "Elena Split-Toe Derby",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-split-toe-derby-MCC019884JC6IOBSA23.html",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake rapid",
+      lastNumber: "Elena",
+      upperLeather: "Grain Calfskin",
+      soleMaterial: "Leather sole with rubber forepart",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Norwegian split-toe derby hand-stitched by master artisans using traditional boar bristle needles."
+  },
+  {
+    id: "santoni-indulgent-wholecut-dress-shoe",
+    brand: "Santoni",
+    productLine: "Evening",
+    modelName: "Indulgent Wholecut Dress Shoe",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-wholecut-dress-MCC020554JC6IOBSB34.html",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake construction bevelled waist",
+      lastNumber: "Indulgent",
+      upperLeather: "Museum Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Formal wholecut shoe characterized by an ultra-slim bevelled waist and smooth lines."
+  },
+  {
+    id: "santoni-cleanic-formal-derby",
+    brand: "Santoni",
+    productLine: "Cleanic",
+    modelName: "Cleanic Formal Derby",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-formal-derby-MCC021334JC6IOBSC45.html",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Blake construction",
+      lastNumber: "Cleanic",
+      upperLeather: "Supple French Box Calf",
+      soleMaterial: "Thin leather sole",
+      closure: "Lace-up 3 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Minimalist three-eyelet derby offering refined elegance and comfortable all-day wear."
+  },
+  {
+    id: "santoni-black-tie-patent-oxford",
+    brand: "Santoni",
+    productLine: "Black Tie",
+    modelName: "Black Tie Patent Oxford",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-patent-oxford-MCC022114JC6IOBSD56.html",
+    sourceRegion: "IT",
+    attrs: {
+      weltType: "Cemented dress with bevelled waist",
+      lastNumber: "Tuxedo",
+      upperLeather: "High-gloss Patent Leather",
+      soleMaterial: "Leather sole with silk grosgrain piping",
+      closure: "Lace-up 5 eyelets with silk ribbon",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Gala evening Oxford in flawless mirror-finish patent leather with silk grosgrain laces."
+  },
+
+  // ==========================================
+  // 12. Tom Ford (10 models, United States US / Italy IT)
+  // ==========================================
+  {
+    id: "tom-ford-austin-cap-toe-oxford",
+    brand: "Tom Ford",
+    productLine: "Austin",
+    modelName: "Austin Cap-Toe Oxford",
+    sourceUrl: "https://www.tomfordfashion.com/austin-cap-toe-oxford/J1100T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      weltType: "Goodyear welted bevelled waist",
+      lastNumber: "Austin",
+      upperLeather: "French Box Calfskin",
+      soleMaterial: "Oak bark leather sole with hand-bevelled waist",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Tom Ford's definitive cap-toe Oxford, defined by architectural chisel toe and hand-beveled fiddleback waist."
+  },
+  {
+    id: "tom-ford-elkan-wholecut-oxford",
+    brand: "Tom Ford",
+    productLine: "Elkan",
+    modelName: "Elkan Wholecut Oxford",
+    sourceUrl: "https://www.tomfordfashion.com/elkan-wholecut-oxford/J1120T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      weltType: "Goodyear welted with fiddleback waist",
+      lastNumber: "Elkan",
+      upperLeather: "Single piece Polished Box Calf",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Masterpiece wholecut Oxford cut from a single unbroken hide with sculpted chiseled toe."
+  },
+  {
+    id: "tom-ford-gianni-single-monk-strap",
+    brand: "Tom Ford",
+    productLine: "Gianni",
+    modelName: "Gianni Single Monk Strap",
+    sourceUrl: "https://www.tomfordfashion.com/gianni-monk-strap/J1140T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "Gianni",
+      upperLeather: "Burnished Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Single gold-finish TF buckle",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Commanding single monk strap shoe accented with Tom Ford's signature gold-finished buckle."
+  },
+  {
+    id: "tom-ford-york-classic-derby",
+    brand: "Tom Ford",
+    productLine: "York",
+    modelName: "York Classic Derby",
+    sourceUrl: "https://www.tomfordfashion.com/york-classic-derby/J1160T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "York",
+      upperLeather: "Smooth French Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Classic five-eyelet dress derby offering commanding presence and supreme Italian bench-made comfort."
+  },
+  {
+    id: "tom-ford-edgar-cap-toe-oxford",
+    brand: "Tom Ford",
+    productLine: "Edgar",
+    modelName: "Edgar Cap-Toe Oxford",
+    sourceUrl: "https://www.tomfordfashion.com/edgar-cap-toe-oxford/J1180T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "Edgar",
+      upperLeather: "Antique Patinated Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Chiseled square-toe Oxford exhibiting rich hand-stained patina and beveled soles."
+  },
+  {
+    id: "tom-ford-buckingham-wingtip-oxford",
+    brand: "Tom Ford",
+    productLine: "Buckingham",
+    modelName: "Buckingham Wingtip Oxford",
+    sourceUrl: "https://www.tomfordfashion.com/buckingham-wingtip-oxford/J1200T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "Buckingham",
+      upperLeather: "Hand-burnished Calfskin",
+      soleMaterial: "Double leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 28
+    },
+    reason: "Full brogue wingtip Oxford pairing British country brogueing with sharp American power tailoring."
+  },
+  {
+    id: "tom-ford-wilson-double-buckle-monk",
+    brand: "Tom Ford",
+    productLine: "Wilson",
+    modelName: "Wilson Double Buckle Monk",
+    sourceUrl: "https://www.tomfordfashion.com/wilson-double-buckle-monk/J1220T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "Wilson",
+      upperLeather: "Box Calfskin",
+      soleMaterial: "Leather sole",
+      closure: "Dual signature gold TF buckles",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Double monk strap dress shoe with sweeping straps and gold-plated hardware."
+  },
+  {
+    id: "tom-ford-evening-patent-wholecut-oxford",
+    brand: "Tom Ford",
+    productLine: "Black Tie",
+    modelName: "Evening Patent Wholecut Oxford",
+    sourceUrl: "https://www.tomfordfashion.com/evening-patent-wholecut/J1240T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      weltType: "Cemented dress with bevelled waist",
+      lastNumber: "Evening",
+      upperLeather: "Black Patent Calfskin",
+      soleMaterial: "Leather sole with gold TF emblem",
+      closure: "Lace-up 5 eyelets with silk ribbon",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Flawless patent wholecut Oxford designed specifically for Tom Ford cocktail and dinner jackets."
+  },
+  {
+    id: "tom-ford-warwick-plain-toe-derby",
+    brand: "Tom Ford",
+    productLine: "Warwick",
+    modelName: "Warwick Plain Toe Derby",
+    sourceUrl: "https://www.tomfordfashion.com/warwick-plain-toe-derby/J1260T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "Warwick",
+      upperLeather: "Grained Calfskin",
+      soleMaterial: "Leather sole with stacked heel",
+      closure: "Lace-up 4 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Robust plain-toe derby in supple grained calfskin featuring hand-waxed edges."
+  },
+  {
+    id: "tom-ford-cambridge-quarter-brogue-oxford",
+    brand: "Tom Ford",
+    productLine: "Cambridge",
+    modelName: "Cambridge Quarter Brogue Oxford",
+    sourceUrl: "https://www.tomfordfashion.com/cambridge-quarter-brogue/J1280T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      weltType: "Goodyear welted",
+      lastNumber: "Cambridge",
+      upperLeather: "Polished Box Calf",
+      soleMaterial: "Leather sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Quarter-brogue Oxford with clean punched cap seam and signature Tom Ford fiddleback waist."
+  }
+];
+
+export function generateDataFormalShoesTs(): string {
+  const parts: string[] = [
+    'import type { CensusManifestFile } from "../../../src/domain/coverage-targets";',
+    'import { makeEntry } from "./common";',
+    '',
+    'export const formalShoesCensus: CensusManifestFile = {',
+    '  $schema: "https://json-schema.org/draft/2020-12/schema",',
+    '  leafKey: "formal-shoes",',
+    '  displayName: "Oxfords, Derbies & Formal Shoes",',
+    '  censusDate: "2026-10-11",',
+    '  supplyExceptions: [],',
+    '  entries: [',
+  ];
+
+  let currentBrand = "";
+  let brandIndex = 0;
+
+  for (const item of allFormalShoes) {
+    if (item.brand !== currentBrand) {
+      currentBrand = item.brand;
+      brandIndex++;
+      parts.push(`    // ${brandIndex}. ${currentBrand} (10 models)`);
+    }
+
+    parts.push("    makeEntry({");
+    parts.push(`      id: ${JSON.stringify(item.id)},`);
+    parts.push(`      brand: ${JSON.stringify(item.brand)},`);
+    if (item.productLine) {
+      parts.push(`      productLine: ${JSON.stringify(item.productLine)},`);
+    }
+    parts.push(`      modelName: ${JSON.stringify(item.modelName)},`);
+    parts.push(`      sourceUrl: ${JSON.stringify(item.sourceUrl)},`);
+    parts.push(`      sourceRegion: ${JSON.stringify(item.sourceRegion)},`);
+    if (item.variants) {
+      parts.push(`      variants: ${JSON.stringify(item.variants)},`);
+    }
+    parts.push("      attrs: {");
+    parts.push(`        weltType: ${JSON.stringify(item.attrs.weltType)},`);
+    parts.push(`        lastNumber: ${JSON.stringify(item.attrs.lastNumber)},`);
+    parts.push(`        upperLeather: ${JSON.stringify(item.attrs.upperLeather)},`);
+    parts.push(`        soleMaterial: ${JSON.stringify(item.attrs.soleMaterial)},`);
+    parts.push(`        closure: ${JSON.stringify(item.attrs.closure)},`);
+    parts.push(`        originCountry: ${JSON.stringify(item.attrs.originCountry)},`);
+    if (item.attrs.heelHeightMm !== undefined) {
+      parts.push(`        heelHeightMm: ${item.attrs.heelHeightMm},`);
+    }
+    parts.push("      },");
+    parts.push(`      reason: ${JSON.stringify(item.reason)},`);
+    parts.push("    }),");
+  }
+
+  parts.push("  ],");
+  parts.push("};");
+  parts.push("");
+
+  return parts.join("\n");
+}
+
+const outputPath = path.resolve(process.cwd(), "scripts/census/wave4/data-formal-shoes.ts");
+const content = generateDataFormalShoesTs();
+fs.writeFileSync(outputPath, content, "utf-8");
+console.log(`Successfully generated ${allFormalShoes.length} formal shoe models to ${outputPath}`);

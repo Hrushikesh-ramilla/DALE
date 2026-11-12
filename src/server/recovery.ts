@@ -1,4 +1,5 @@
 import { getDatabase } from "./database";
+import { releaseCommitment } from "./group-lifecycle";
 import { recordVerifiedReceipt } from "./webhook-receipts";
 import {
   audit,
@@ -100,6 +101,10 @@ export async function recoverWorkspace(workspaceId: string, now = Date.now()) {
         group.status !== "expired" &&
         Date.parse(group.checkoutExpiresAt || group.expiresAt) <= now
       ) {
+        for (const member of [...group.members]) {
+          const hasPayment = state.orders.some(order => order.quote.groupId === group.id && order.buyerId === member && (order.captureId || state.operations.some(op => op.orderId === order.id && op.kind === "capture" && op.state !== "failed")));
+          if (!hasPayment) releaseCommitment(state, group, member, "commitment_expired", now);
+        }
         group.status = "expired";
         audit(state, actor, "group.expired", group.id);
       }
@@ -157,6 +162,27 @@ export async function recoverWorkspace(workspaceId: string, now = Date.now()) {
           text: "Unpaid approval expired. Review a fresh quote to continue.",
         });
         audit(state, actor, "checkout.expired", order.id);
+      } else if (
+        order.status === "unpaid_cod" &&
+        order.codReservationExpiresAt &&
+        Date.parse(order.codReservationExpiresAt) <= now
+      ) {
+        order.status = "canceled";
+        if (order.quote.groupId) {
+          const group = state.groups.find((g) => g.id === order.quote.groupId);
+          if (group)
+            releaseCommitment(
+              state,
+              group,
+              order.buyerId,
+              "cod_reservation_expired",
+            );
+        }
+        order.events.push({
+          at: new Date(now).toISOString(),
+          text: "Cash-on-delivery reservation expired.",
+        });
+        audit(state, actor, "cod.expired", order.id);
       }
   });
   const beforeProviderScan = await getWorkspace(workspaceId);

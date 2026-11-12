@@ -1,0 +1,2555 @@
+import fs from "node:fs";
+import path from "node:path";
+
+export interface LoaferItem {
+  id: string;
+  brand: string;
+  productLine?: string;
+  modelName: string;
+  sourceUrl: string;
+  sourceRegion: string;
+  variants?: string[];
+  attrs: {
+    upperMaterial: string;
+    soleConstruction: string;
+    hardwareType: string;
+    lining: string;
+    originCountry: string;
+    last?: string;
+    heelHeightMm?: number;
+  };
+  reason: string;
+}
+
+export const allLoafers: LoaferItem[] = [
+  // ==========================================
+  // 1. Berluti (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "berluti-lorenzo-rimini-leather-loafer",
+    brand: "Berluti",
+    productLine: "Lorenzo",
+    modelName: "Lorenzo Rimini Leather Loafer",
+    sourceUrl: "https://www.berluti.com/en-us/lorenzo-rimini-leather-loafer/S5539-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Venezia Calfskin Leather",
+      soleConstruction: "Blake stitched unlined",
+      hardwareType: "None",
+      lining: "Unlined",
+      originCountry: "Italy",
+      last: "Lorenzo",
+      heelHeightMm: 20
+    },
+    reason: "Supremely supple unlined slip-on crafted from patinated Venezia leather."
+  },
+  {
+    id: "berluti-andy-demesure-leather-loafer",
+    brand: "Berluti",
+    productLine: "Andy",
+    modelName: "Andy Demesure Leather Loafer",
+    sourceUrl: "https://www.berluti.com/en-us/andy-demesure-leather-loafer/S1411-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Scritto Patinated Venezia Leather",
+      soleConstruction: "Blake stitched",
+      hardwareType: "None",
+      lining: "Calfskin Leather",
+      originCountry: "Italy",
+      last: "Demesure",
+      heelHeightMm: 25
+    },
+    reason: "Legendary penny loafer created by Olga Berluti for Andy Warhol in 1962."
+  },
+  {
+    id: "berluti-fast-track-slip-on-loafer",
+    brand: "Berluti",
+    productLine: "Fast Track",
+    modelName: "Fast Track Slip-On Loafer",
+    sourceUrl: "https://www.berluti.com/en-us/fast-track-slip-on-leather-sneaker/S5322-V2.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Patinated Venezia Leather",
+      soleConstruction: "Hybrid cemented athletic sole",
+      hardwareType: "None",
+      lining: "Technical mesh and calfskin",
+      originCountry: "Italy",
+      last: "Fast Track",
+      heelHeightMm: 30
+    },
+    reason: "Hybrid luxury loafer blending classic Berluti patinated leather with an athletic outsole."
+  },
+  {
+    id: "berluti-alessio-leather-loafer",
+    brand: "Berluti",
+    productLine: "Alessio",
+    modelName: "Alessio Leather Loafer",
+    sourceUrl: "https://www.berluti.com/en-us/alessio-leather-loafer/S4230-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Venezia Gloria Calfskin",
+      soleConstruction: "Flexible Blake stitched",
+      hardwareType: "None",
+      lining: "Calfskin Leather",
+      originCountry: "Italy",
+      last: "Alessio",
+      heelHeightMm: 22
+    },
+    reason: "Casual formal dress loafer set atop an ultra-lightweight microcellular sole."
+  },
+  {
+    id: "berluti-playtime-venezia-leather-loafer",
+    brand: "Berluti",
+    productLine: "Playtime",
+    modelName: "Playtime Venezia Leather Loafer",
+    sourceUrl: "https://www.berluti.com/en-us/playtime-slip-on-loafer/S5211-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Hand-patinated Venezia Leather",
+      soleConstruction: "Cupsole slip-on",
+      hardwareType: "None",
+      lining: "Supple Calfskin",
+      originCountry: "Italy",
+      last: "Playtime",
+      heelHeightMm: 25
+    },
+    reason: "Slip-on casual skate loafer cut from a single piece of hand-patinated Venezia hide."
+  },
+  {
+    id: "berluti-shadow-knit-slip-on-loafer",
+    brand: "Berluti",
+    productLine: "Shadow",
+    modelName: "Shadow Knit Slip-On Loafer",
+    sourceUrl: "https://www.berluti.com/en-us/shadow-knit-slip-on/S5045-K1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Technical Knit with Venezia Trim",
+      soleConstruction: "Cemented flexible rubber",
+      hardwareType: "None",
+      lining: "Textile and Leather",
+      originCountry: "Italy",
+      last: "Shadow",
+      heelHeightMm: 28
+    },
+    reason: "Contemporary sock-construction loafer accented with patinated leather crest."
+  },
+  {
+    id: "berluti-escale-leather-mule-loafer",
+    brand: "Berluti",
+    productLine: "Escale",
+    modelName: "Escale Leather Mule Loafer",
+    sourceUrl: "https://www.berluti.com/en-us/escale-leather-mule/S5600-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Scritto Engraved Calfskin",
+      soleConstruction: "Backless cemented",
+      hardwareType: "None",
+      lining: "Calfskin Leather",
+      originCountry: "Italy",
+      last: "Escale",
+      heelHeightMm: 15
+    },
+    reason: "Effortless open-back luxury babouche slipper loafer etched with 18th-century Scritto calligraphy."
+  },
+  {
+    id: "berluti-alessandro-infini-loafer",
+    brand: "Berluti",
+    productLine: "Alessandro",
+    modelName: "Alessandro Infini Loafer",
+    sourceUrl: "https://www.berluti.com/en-us/alessandro-infini-loafer/S5800-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Venezia Wholecut Leather",
+      soleConstruction: "Blake stitched bevelled waist",
+      hardwareType: "None",
+      lining: "Full-grain calfskin",
+      originCountry: "Italy",
+      last: "Infini",
+      heelHeightMm: 25
+    },
+    reason: "Wholecut slip-on silhouette displaying seamless Venezia leather patination."
+  },
+  {
+    id: "berluti-stellar-scritto-leather-slip-on",
+    brand: "Berluti",
+    productLine: "Stellar",
+    modelName: "Stellar Scritto Leather Slip-On",
+    sourceUrl: "https://www.berluti.com/en-us/stellar-scritto-leather-slip-on/S5880-V2.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Venezia Leather with Scritto Pattern",
+      soleConstruction: "Blake rapid flexible",
+      hardwareType: "None",
+      lining: "Leather",
+      originCountry: "Italy",
+      last: "Stellar",
+      heelHeightMm: 22
+    },
+    reason: "Modern geometric slip-on loafer showcasing signature Scritto engraving."
+  },
+  {
+    id: "berluti-camden-venezia-leather-loafer",
+    brand: "Berluti",
+    productLine: "Camden",
+    modelName: "Camden Venezia Leather Loafer",
+    sourceUrl: "https://www.berluti.com/en-us/camden-venezia-leather-loafer/S5920-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Venezia Calfskin",
+      soleConstruction: "Goodyear welted lugged",
+      hardwareType: "Polished buckle trim",
+      lining: "Full Leather",
+      originCountry: "Italy",
+      last: "Camden",
+      heelHeightMm: 35
+    },
+    reason: "Substantial city loafer set on a Goodyear welted micro-lug sole for all-weather traction."
+  },
+
+  // ==========================================
+  // 2. Brunello Cucinelli (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "brunello-cucinelli-suede-penny-loafer",
+    brand: "Brunello Cucinelli",
+    productLine: "Sartorial Leisure",
+    modelName: "Suede Penny Loafer",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/loafers/suede-penny-loafer-242MZUCAGW847.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Calfskin Velour Suede",
+      soleConstruction: "Blake stitched",
+      hardwareType: "Slotted penny strap",
+      lining: "Soft calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Refined Italian penny loafer hand-buffed in Solomeo atelier from ultra-soft velour suede."
+  },
+  {
+    id: "brunello-cucinelli-monili-trim-leather-loafer",
+    brand: "Brunello Cucinelli",
+    productLine: "Signature",
+    modelName: "Monili Trim Leather Loafer",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/loafers/monili-trim-loafer-242MZUCB289.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Brushed Calfskin",
+      soleConstruction: "Blake stitched leather sole",
+      hardwareType: "Signature Monili bead band",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Luxurious calfskin slip-on decorated with Cucinelli's signature hand-applied Monili bead embroidery."
+  },
+  {
+    id: "brunello-cucinelli-cashmere-lined-slip-on",
+    brand: "Brunello Cucinelli",
+    productLine: "Winter Leisure",
+    modelName: "Cashmere Lined Slip-On Loafer",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/loafers/cashmere-slip-on-242MZUCX811.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Deerskin Suede",
+      soleConstruction: "Tubular moccasin",
+      hardwareType: "None",
+      lining: "Pure Cashmere Knit",
+      originCountry: "Italy",
+      heelHeightMm: 18
+    },
+    reason: "Indulgent casual moccasin lined in Solomeo pure cashmere for unparalleled warmth and comfort."
+  },
+  {
+    id: "brunello-cucinelli-calfskin-tassel-loafer",
+    brand: "Brunello Cucinelli",
+    productLine: "Formal Footwear",
+    modelName: "Calfskin Tassel Loafer",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/loafers/tassel-loafer-242MZUCT190.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "French Box Calfskin",
+      soleConstruction: "Blake rapid leather sole",
+      hardwareType: "Twin leather tassels",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Sartorial tassel loafer showcasing hand-braided leather lacing and beveled waist."
+  },
+  {
+    id: "brunello-cucinelli-leather-driving-loafer",
+    brand: "Brunello Cucinelli",
+    productLine: "Driver",
+    modelName: "Leather Driving Loafer",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/loafers/driving-loafer-242MZUCV455.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Grained Calfskin",
+      soleConstruction: "Tubular driving moccasin",
+      hardwareType: "Penny strap cut-out",
+      lining: "Breathable calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 10
+    },
+    reason: "Flexible driving shoe equipped with segmented rubber grip studs and hand-stitched vamp apron."
+  },
+  {
+    id: "brunello-cucinelli-light-leather-loafer",
+    brand: "Brunello Cucinelli",
+    productLine: "Lightweight",
+    modelName: "Light Leather Loafer",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/loafers/light-loafer-242MZUCL301.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Buffed Calfskin",
+      soleConstruction: "Ultra-light cemented EVA sole",
+      hardwareType: "None",
+      lining: "Unlined vamp, calf quarter",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Featherweight slip-on combining Solomeo tailoring with modern expanded rubber sole technology."
+  },
+  {
+    id: "brunello-cucinelli-suede-venetian-loafer",
+    brand: "Brunello Cucinelli",
+    productLine: "Leisure",
+    modelName: "Suede Venetian Loafer",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/loafers/venetian-suede-242MZUCW909.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Reverse Calf Suede",
+      soleConstruction: "Blake stitched flexible sole",
+      hardwareType: "None",
+      lining: "Supple unlined suede",
+      originCountry: "Italy",
+      heelHeightMm: 15
+    },
+    reason: "Minimalist Venetian slipper silhouette crafted with clean lines and natural edge finishing."
+  },
+  {
+    id: "brunello-cucinelli-polished-calf-apron-loafer",
+    brand: "Brunello Cucinelli",
+    productLine: "Sartorial",
+    modelName: "Polished Calf Apron Loafer",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/loafers/apron-loafer-242MZUCY550.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Hand-buffed Polished Calf",
+      soleConstruction: "Blake stitched with cuoio sole",
+      hardwareType: "Stitched saddle",
+      lining: "Full leather lining",
+      originCountry: "Italy",
+      heelHeightMm: 24
+    },
+    reason: "Hand-finished saddle apron loafer exhibiting rich tonal depth and hand-waxed edges."
+  },
+  {
+    id: "brunello-cucinelli-woven-leather-penny-loafer",
+    brand: "Brunello Cucinelli",
+    productLine: "Artisanal",
+    modelName: "Woven Leather Penny Loafer",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/loafers/woven-loafer-242MZUCZ118.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Intrecciato Hand-woven Calfskin",
+      soleConstruction: "Blake flexible leather sole",
+      hardwareType: "Slotted penny strap",
+      lining: "Unlined woven construction",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Intricate hand-woven leather penny loafer ensuring exceptional breathability and artisanal prestige."
+  },
+  {
+    id: "brunello-cucinelli-shearling-winter-loafer",
+    brand: "Brunello Cucinelli",
+    productLine: "Winter Special",
+    modelName: "Shearling Lined Winter Loafer",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/loafers/shearling-winter-242MZUCS774.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Oiled Hydrophobic Nubuck",
+      soleConstruction: "Cemented rubber commando sole",
+      hardwareType: "None",
+      lining: "Natural Merino Shearling",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Rugged yet refined winter loafer lined with plush genuine shearling for Alpine resort elegance."
+  },
+
+  // ==========================================
+  // 3. Christian Louboutin (10 models, France FR / Italy IT - RED SOLES!)
+  // ==========================================
+  {
+    id: "christian-louboutin-dandelion-flat-loafer",
+    brand: "Christian Louboutin",
+    productLine: "Dandelion",
+    modelName: "Dandelion Flat Loafer",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/dandelion-black-1150600bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Patent Calfskin Leather",
+      soleConstruction: "Cemented with signature red sole",
+      hardwareType: "Grosgrain piping trim",
+      lining: "Smooth leather",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Maison Louboutin's quintessential sleek Venetian evening loafer boasting the iconic signature scarlet-lacquered red sole."
+  },
+  {
+    id: "christian-louboutin-spooky-flat-spiked-loafer",
+    brand: "Christian Louboutin",
+    productLine: "Spooky",
+    modelName: "Spooky Flat Spiked Loafer",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/spooky-flat-black-1160350bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Soft Velvet with Metal Spikes",
+      soleConstruction: "Blake stitched with red leather sole",
+      hardwareType: "All-over signature tone-on-tone spikes",
+      lining: "Supple leather lining",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Daring evening slip-on embellished with signature Maison metal spikes and high-gloss red sole."
+  },
+  {
+    id: "christian-louboutin-chambeliss-flat-loafer",
+    brand: "Christian Louboutin",
+    productLine: "Chambeliss",
+    modelName: "Chambeliss Flat Loafer",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/chambeliss-flat-black-3200427bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Glazed Calfskin Leather",
+      soleConstruction: "Blake stitched with signature red sole",
+      hardwareType: "Perforated metal welt insert",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Dress loafer accented with a distinctive silver-toned metallic welt border framing the iconic red sole."
+  },
+  {
+    id: "christian-louboutin-rollerboy-spikes-loafer",
+    brand: "Christian Louboutin",
+    productLine: "Rollerboy",
+    modelName: "Rollerboy Spikes Loafer",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/rollerboy-flat-black-1120016bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Velours Suede with Metallic Spikes",
+      soleConstruction: "Blake construction with red sole",
+      hardwareType: "Signature metallic studs",
+      lining: "Red quilted leather insole",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Showstopping runway loafer coated in Louboutin spikes grounded by the lustrous red bottom."
+  },
+  {
+    id: "christian-louboutin-penny-no-limit-loafer",
+    brand: "Christian Louboutin",
+    productLine: "Penny No Limit",
+    modelName: "Penny No Limit Loafer",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/penny-no-limit-black-3230554bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Smooth Calfskin",
+      soleConstruction: "Blake rapid with signature red sole",
+      hardwareType: "Spiked penny keeper strap",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Modern reinterpretation of the traditional penny loafer punctuated with rock-rebel spikes and glossy red sole."
+  },
+  {
+    id: "christian-louboutin-officialito-velvet-loafer",
+    brand: "Christian Louboutin",
+    productLine: "Officialito",
+    modelName: "Officialito Flat Velvet Loafer",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/officialito-flat-blue-3210452u725.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Plush Cotton Velvet",
+      soleConstruction: "Blake stitched with signature red sole",
+      hardwareType: "Hand-embroidered gold bullion crest",
+      lining: "Silk satin lining",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Regal evening slipper featuring an ornate hand-embroidered Maison Louboutin coat of arms above the red sole."
+  },
+  {
+    id: "christian-louboutin-greggo-flat-loafer",
+    brand: "Christian Louboutin",
+    productLine: "Greggo",
+    modelName: "Greggo Flat Loafer",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/greggo-flat-black-1150377bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Polished Veau Velours Calfskin",
+      soleConstruction: "Blake stitched with red leather sole",
+      hardwareType: "None",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Elongated modern silhouette loafer characterized by slender contours and unmistakable red sole flash."
+  },
+  {
+    id: "christian-louboutin-monocling-flat-loafer",
+    brand: "Christian Louboutin",
+    productLine: "Monocling",
+    modelName: "Monocling Flat Loafer",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/monocling-flat-black-3220556bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Box Calfskin Leather",
+      soleConstruction: "Blake stitched with red sole",
+      hardwareType: "Gunmetal eyelet strap detailing",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Architectural loafer with precision cutouts and sleek metallic hardware over signature red leather."
+  },
+  {
+    id: "christian-louboutin-marquees-flat-loafer",
+    brand: "Christian Louboutin",
+    productLine: "Marquees",
+    modelName: "Marquees Flat Loafer",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/marquees-flat-black-3210454bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Suede with Strass Crystal Pave",
+      soleConstruction: "Cemented evening with red sole",
+      hardwareType: "Crystal embellishments",
+      lining: "Kidskin leather",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Gala evening slip-on blanketed with glistening Strass crystals highlighting Louboutin's red sole artistry."
+  },
+  {
+    id: "christian-louboutin-top-v-flat-loafer",
+    brand: "Christian Louboutin",
+    productLine: "Top V",
+    modelName: "Top V Flat Loafer",
+    sourceUrl: "https://us.christianlouboutin.com/us_en/top-v-flat-black-3230678bk01.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Nappa Calfskin",
+      soleConstruction: "Flexible Blake stitched with red sole",
+      hardwareType: "None",
+      lining: "Unlined vamp, soft kidskin collar",
+      originCountry: "Italy",
+      heelHeightMm: 18
+    },
+    reason: "Deep V-cut vamp loafer emphasizing foot ergonomics and signature crimson sole presence."
+  },
+
+  // ==========================================
+  // 4. Church's (10 models, United Kingdom GB)
+  // ==========================================
+  {
+    id: "churchs-pembrey-leather-loafer",
+    brand: "Church's",
+    productLine: "Classic Collection",
+    modelName: "Pembrey Leather Loafer",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/loafers/product.pembrey_leather_loafer.EDC003_9LG_F0AAB.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Bookbinder Fumè Calfskin",
+      soleConstruction: "Goodyear welted",
+      hardwareType: "Classic penny strap",
+      lining: "Full leather lining",
+      originCountry: "United Kingdom",
+      last: "126",
+      heelHeightMm: 25
+    },
+    reason: "Church's quintessential Northampton penny loafer crafted on the 126 last with polished bookbinder finish."
+  },
+  {
+    id: "churchs-oreham-bookbinder-loafer",
+    brand: "Church's",
+    productLine: "Classic",
+    modelName: "Oreham Bookbinder Loafer",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/loafers/product.oreham_loafer.EDC045_9LG_F0AXO.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Polished Binder Leather",
+      soleConstruction: "Goodyear welted with leather sole",
+      hardwareType: "Apron stitch detail",
+      lining: "Calfskin",
+      originCountry: "United Kingdom",
+      last: "72",
+      heelHeightMm: 27
+    },
+    reason: "Structured British slip-on featuring Church's proprietary water-resistant polished binder leather."
+  },
+  {
+    id: "churchs-keats-ii-tassel-loafer",
+    brand: "Church's",
+    productLine: "Heritage",
+    modelName: "Keats II Tassel Loafer",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/loafers/product.keats_ii_tassel_loafer.EDC005_9VE_F0AAN.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Nevada Calfskin",
+      soleConstruction: "Goodyear welted",
+      hardwareType: "Braided tassel lacing",
+      lining: "Full leather",
+      originCountry: "United Kingdom",
+      last: "93",
+      heelHeightMm: 25
+    },
+    reason: "Timeless English tassel loafer built on the comfortable rounded 93 last in rich Nevada calf."
+  },
+  {
+    id: "churchs-tunbridge-penny-loafer",
+    brand: "Church's",
+    productLine: "Heritage",
+    modelName: "Tunbridge Penny Loafer",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/loafers/product.tunbridge_penny_loafer.EDC010_9LG_F0ADY.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Bookbinder Calf",
+      soleConstruction: "Goodyear welted",
+      hardwareType: "Beefroll penny saddle",
+      lining: "Calfskin",
+      originCountry: "United Kingdom",
+      last: "126",
+      heelHeightMm: 25
+    },
+    reason: "Iconic beefroll penny loafer highlighting robust Goodyear welted British shoemaking heritage."
+  },
+  {
+    id: "churchs-darwin-suede-penny-loafer",
+    brand: "Church's",
+    productLine: "Casual Classic",
+    modelName: "Darwin Suede Penny Loafer",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/loafers/product.darwin_suede_loafer.EDC012_9VE_F0AEF.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Castoro Suede Calfskin",
+      soleConstruction: "Goodyear welted with leather sole",
+      hardwareType: "Penny strap",
+      lining: "Unlined for softness",
+      originCountry: "United Kingdom",
+      last: "81",
+      heelHeightMm: 25
+    },
+    reason: "Unlined summer loafer crafted from supple Italian Castoro suede on the round-toe 81 last."
+  },
+  {
+    id: "churchs-coldecott-split-toe-loafer",
+    brand: "Church's",
+    productLine: "City",
+    modelName: "Coldecott Split Toe Loafer",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/loafers/product.coldecott_loafer.EDC020_9XV_F0AHK.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Highland Grain Leather",
+      soleConstruction: "Goodyear welted with Dainite rubber sole",
+      hardwareType: "None",
+      lining: "Full leather",
+      originCountry: "United Kingdom",
+      last: "103",
+      heelHeightMm: 28
+    },
+    reason: "Norwegian split-toe loafer hand-sewn with durable Highland pebble grain and storm welt."
+  },
+  {
+    id: "churchs-willenhall-suede-loafer",
+    brand: "Church's",
+    productLine: "Classic",
+    modelName: "Willenhall Suede Loafer",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/loafers/product.willenhall_loafer.EDC025_9XV_F0AKM.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Velveteen Suede",
+      soleConstruction: "Goodyear welted",
+      hardwareType: "Penny saddle",
+      lining: "Leather",
+      originCountry: "United Kingdom",
+      last: "126",
+      heelHeightMm: 25
+    },
+    reason: "Sophisticated summer penny loafer pairing lush suede with Northampton Goodyear welted longevity."
+  },
+  {
+    id: "churchs-kingsley-2-tassel-loafer",
+    brand: "Church's",
+    productLine: "Classic",
+    modelName: "Kingsley 2 Tassel Loafer",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/loafers/product.kingsley_2_loafer.EDC032_9LG_F0AMZ.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Polished Binder Leather",
+      soleConstruction: "Goodyear welted with double leather sole",
+      hardwareType: "Twin tassels and interlaced collar",
+      lining: "Calfskin",
+      originCountry: "United Kingdom",
+      last: "69",
+      heelHeightMm: 28
+    },
+    reason: "Commanding tassel loafer built on the elongated 69 last with substantial double leather sole."
+  },
+  {
+    id: "churchs-shanghai-6-vintage-loafer",
+    brand: "Church's",
+    productLine: "Shanghai Collection",
+    modelName: "Shanghai 6 Vintage Loafer",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/loafers/product.shanghai_6_loafer.EDC040_9XV_F0APQ.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Glazed Vintage Calf and Linen",
+      soleConstruction: "Hand-distressed Goodyear welt",
+      hardwareType: "Kilties and monk buckle strap",
+      lining: "Leather",
+      originCountry: "United Kingdom",
+      last: "Shanghai",
+      heelHeightMm: 26
+    },
+    reason: "Historical 1929 archive design featuring hand-distressed vintage finish, fringe kiltie, and medallion."
+  },
+  {
+    id: "churchs-sovereign-velvet-slipper-loafer",
+    brand: "Church's",
+    productLine: "Evening",
+    modelName: "Sovereign Velvet Slipper Loafer",
+    sourceUrl: "https://www.church-footwear.com/us/en/men/style/loafers/product.sovereign_slipper.EDC050_9XV_F0ATU.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Royal Cotton Velvet",
+      soleConstruction: "Cemented dress with thin leather sole",
+      hardwareType: "Crown embroidery",
+      lining: "Quilted satin lining",
+      originCountry: "United Kingdom",
+      last: "Sovereign",
+      heelHeightMm: 20
+    },
+    reason: "Opulent formal smoking slipper embroidered with Church's heraldic crest and quilted silk interior."
+  },
+
+  // ==========================================
+  // 5. Ferragamo (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "ferragamo-gancini-bit-loafer",
+    brand: "Ferragamo",
+    productLine: "Tramezza",
+    modelName: "Gancini Bit Loafer",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-drivers/tramezza-gancini-741235",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Box Calfskin Leather",
+      soleConstruction: "Tramezza Goodyear welted",
+      hardwareType: "Gancini metal bit",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Peak of Ferragamo shoemaking, utilizing the Tramezza hand-crafted three-layer sole and iconic Gancini bit."
+  },
+  {
+    id: "ferragamo-grandioso-gancini-loafer",
+    brand: "Ferragamo",
+    productLine: "Classic",
+    modelName: "Grandioso Gancini Loafer",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-drivers/grandioso-642848",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Soft French Calfskin",
+      soleConstruction: "Tubular moccasin with leather sole",
+      hardwareType: "Reversible gold/palladium Gancini bit",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Renowned slip-on featuring an innovative reversible Gancini bit and ultra-flexible tubular construction."
+  },
+  {
+    id: "ferragamo-parigi-driving-loafer",
+    brand: "Ferragamo",
+    productLine: "Driver",
+    modelName: "Parigi Driving Loafer",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-drivers/parigi-driver-547288",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Hammered Pebbled Calfskin",
+      soleConstruction: "Tubular driving moccasin",
+      hardwareType: "Gunmetal Gancini bit",
+      lining: "Breathable leather",
+      originCountry: "Italy",
+      heelHeightMm: 12
+    },
+    reason: "Global standard luxury driving loafer with split rubber sole and pebble traction pads."
+  },
+  {
+    id: "ferragamo-rolo-reversible-bit-loafer",
+    brand: "Ferragamo",
+    productLine: "Rolo",
+    modelName: "Rolo Reversible Bit Loafer",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-drivers/rolo-loafer-700084",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Smooth Calfskin",
+      soleConstruction: "Blake stitched",
+      hardwareType: "Dual-finish Gancini hardware",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Modern boardroom loafer pairing streamlined contours with a versatile two-tone Gancini emblem."
+  },
+  {
+    id: "ferragamo-chris-penny-loafer",
+    brand: "Ferragamo",
+    productLine: "Tramezza",
+    modelName: "Chris Penny Loafer",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-drivers/chris-penny-712390",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Full-grain French Calf",
+      soleConstruction: "Tramezza welted",
+      hardwareType: "Classic slotted strap",
+      lining: "Natural leather",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Bespoke-grade bench-made penny loafer featuring hand-closed aprons and 160 manual production steps."
+  },
+  {
+    id: "ferragamo-david-bit-loafer",
+    brand: "Ferragamo",
+    productLine: "Classic",
+    modelName: "David Bit Loafer",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-drivers/david-bit-672901",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Burnished Calfskin",
+      soleConstruction: "Flexible Blake stitched with rubber island",
+      hardwareType: "Brushed palladium Gancini bit",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Contemporary dress loafer featuring a hybrid leather sole reinforced with non-slip rubber inserts."
+  },
+  {
+    id: "ferragamo-bleeker-venetian-loafer",
+    brand: "Ferragamo",
+    productLine: "Leisure",
+    modelName: "Bleeker Venetian Loafer",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-drivers/bleeker-venetian-734891",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Suede Leather",
+      soleConstruction: "Flexible unlined Blake",
+      hardwareType: "None",
+      lining: "Unlined",
+      originCountry: "Italy",
+      heelHeightMm: 15
+    },
+    reason: "Supple unlined Venetian slipper loafer providing supreme glove-like comfort on warm days."
+  },
+  {
+    id: "ferragamo-boston-suede-tassel-loafer",
+    brand: "Ferragamo",
+    productLine: "Heritage",
+    modelName: "Boston Suede Tassel Loafer",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-drivers/boston-tassel-698712",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Reverse Calf Suede",
+      soleConstruction: "Blake stitched",
+      hardwareType: "Tassel with micro Gancini hardware",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Rich suede tassel loafer accented with subtle miniature Gancini hardware details on the laces."
+  },
+  {
+    id: "ferragamo-front-driving-shoe",
+    brand: "Ferragamo",
+    productLine: "Driver",
+    modelName: "Front Driving Shoe",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-drivers/front-driver-685412",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Hammered Deerskin",
+      soleConstruction: "Tubular moccasin",
+      hardwareType: "Matte Gancini bit",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 12
+    },
+    reason: "Luxuriously soft deerskin driving moccasin engineered for ultimate pedal sensitivity and longevity."
+  },
+  {
+    id: "ferragamo-new-grandioso-bit-loafer",
+    brand: "Ferragamo",
+    productLine: "Tramezza",
+    modelName: "New Grandioso Bit Loafer",
+    sourceUrl: "https://www.ferragamo.com/shop/us/en/men/shoes/loafers-drivers/new-grandioso-755102",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "French Calfskin",
+      soleConstruction: "Tramezza welted",
+      hardwareType: "Ruthenium finished Gancini bit",
+      lining: "Kidskin leather",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Elevated Tramezza execution of the classic Grandioso loafer finished in deep lustrous box calf."
+  },
+
+  // ==========================================
+  // 6. Gucci (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "gucci-1953-horsebit-loafer",
+    brand: "Gucci",
+    productLine: "1953 Collection",
+    modelName: "1953 Horsebit Loafer",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/loafers-for-men/mens-1953-horsebit-loafer-p-307929BLM001000",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Full-grain Classic Calfskin",
+      soleConstruction: "Tubular moccasin with leather sole",
+      hardwareType: "Burnished brass Horsebit",
+      lining: "Leather with 1953 anniversary tag",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "The definitive luxury loafer, first created in 1953, featuring the iconic equestrian Horsebit hardware."
+  },
+  {
+    id: "gucci-brixton-convertible-horsebit-loafer",
+    brand: "Gucci",
+    productLine: "Brixton",
+    modelName: "Brixton Convertible Horsebit Loafer",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/loafers-for-men/mens-brixton-horsebit-loafer-p-407314DLC001000",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Ultra-supple Nappa Leather",
+      soleConstruction: "Blake stitched with collapsible heel",
+      hardwareType: "Antique gold Horsebit",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 15
+    },
+    reason: "Modern icon featuring a pliable fold-down heel counter that converts seamlessly from loafer to mule."
+  },
+  {
+    id: "gucci-jordaan-leather-horsebit-loafer",
+    brand: "Gucci",
+    productLine: "Jordaan",
+    modelName: "Jordaan Leather Horsebit Loafer",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/loafers-for-men/mens-jordaan-leather-loafer-p-406994BLM001000",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Smooth Box Calfskin",
+      soleConstruction: "Blake stitched slim leather sole",
+      hardwareType: "Antique gold Horsebit",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Slimmer, elongated silhouette with narrower toe box and chiseled European profile."
+  },
+  {
+    id: "gucci-web-and-horsebit-leather-loafer",
+    brand: "Gucci",
+    productLine: "Web Heritage",
+    modelName: "Web & Horsebit Leather Loafer",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/loafers-for-men/mens-web-horsebit-loafer-p-6582680G0201000",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Polished Calfskin",
+      soleConstruction: "Blake stitched",
+      hardwareType: "Green and red Web stripe with Horsebit",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Unites two of Gucci's most celebrated house codes: the equestrian Horsebit and green-red-green Web."
+  },
+  {
+    id: "gucci-lug-sole-horsebit-loafer",
+    brand: "Gucci",
+    productLine: "Lug Sole",
+    modelName: "Lug Sole Horsebit Loafer",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/loafers-for-men/mens-lug-sole-loafer-p-577236DS8001000",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Spazzolato Shiny Calfskin",
+      soleConstruction: "Goodyear welted rubber lug sole",
+      hardwareType: "Gold-tone Horsebit",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Contemporary chunky loafer set on a substantial cleated rubber lug sole with embossed bee motif."
+  },
+  {
+    id: "gucci-interlocking-g-penny-loafer",
+    brand: "Gucci",
+    productLine: "Interlocking G",
+    modelName: "Interlocking G Penny Loafer",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/loafers-for-men/mens-interlocking-g-loafer-p-7195820G0V01000",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Smooth Calfskin",
+      soleConstruction: "Blake stitched",
+      hardwareType: "Cut-out Interlocking G saddle",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Classic penny loafer featuring the cut-out Interlocking G logo integrated into the leather saddle."
+  },
+  {
+    id: "gucci-platform-perforated-loafer",
+    brand: "Gucci",
+    productLine: "Platform",
+    modelName: "Platform Perforated Loafer",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/loafers-for-men/mens-platform-loafer-p-739201DH7001000",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Perforated Calfskin",
+      soleConstruction: "Cemented platform sole",
+      hardwareType: "Gold-toned Horsebit",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 50
+    },
+    reason: "Statement runway loafer pairing breathable micro-perforated leather with a dramatic 50mm platform."
+  },
+  {
+    id: "gucci-princetown-leather-slipper",
+    brand: "Gucci",
+    productLine: "Princetown",
+    modelName: "Princetown Leather Slipper",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/mules-for-men/mens-princetown-leather-slipper-p-397749DKHH01063",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Smooth Calfskin",
+      soleConstruction: "Backless slip-on with leather sole",
+      hardwareType: "Horsebit hardware",
+      lining: "Leather insole",
+      originCountry: "Italy",
+      heelHeightMm: 15
+    },
+    reason: "Revolutionary backless loafer mule designed by Alessandro Michele that redefined luxury loungewear."
+  },
+  {
+    id: "gucci-horsebit-driving-loafer",
+    brand: "Gucci",
+    productLine: "Driver",
+    modelName: "Horsebit Driving Loafer",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/loafers-for-men/mens-horsebit-driver-p-4508920G2001000",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Microguccissima Embossed Calfskin",
+      soleConstruction: "Tubular driving moccasin",
+      hardwareType: "Polished Horsebit",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 10
+    },
+    reason: "Classic driving shoe in signature Microguccissima debossed leather with flexible rubber pebble sole."
+  },
+  {
+    id: "gucci-horsebit-velvet-evening-loafer",
+    brand: "Gucci",
+    productLine: "Evening",
+    modelName: "Horsebit Velvet Evening Loafer",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/loafers-for-men/mens-velvet-loafer-p-431063G38001000",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "GG Monogram Jacquard Velvet",
+      soleConstruction: "Blake stitched formal leather sole",
+      hardwareType: "Vintage gold Horsebit",
+      lining: "Floral printed silk lining",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Luxurious tuxedo slipper woven in GG monogram velvet lined with romantic archival floral silk."
+  },
+
+  // ==========================================
+  // 7. Hermès (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "hermes-paris-loafer",
+    brand: "Hermès",
+    productLine: "Paris",
+    modelName: "Paris Loafer",
+    sourceUrl: "https://www.hermes.com/us/en/product/paris-loafer-H172368ZH02410/",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Epsom Calfskin",
+      soleConstruction: "Blake stitched with leather sole",
+      hardwareType: "Silver-plated palladium H buckle",
+      lining: "Hazelnut goatskin lining",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Hermès' definitive gentleman's loafer showcasing the sculpted silver-plated signature H clasp."
+  },
+  {
+    id: "hermes-destin-loafer",
+    brand: "Hermès",
+    productLine: "Destin",
+    modelName: "Destin Loafer",
+    sourceUrl: "https://www.hermes.com/us/en/product/destin-loafer-H212963ZH02410/",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Heritage Box Calfskin",
+      soleConstruction: "Blake stitched",
+      hardwareType: "Palladium Kelly turn-lock buckle",
+      lining: "Natural goatskin",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Iconic slip-on adorned with the legendary Kelly handbag turn-lock buckle across the saddle."
+  },
+  {
+    id: "hermes-irving-driving-loafer",
+    brand: "Hermès",
+    productLine: "Irving",
+    modelName: "Irving Driving Loafer",
+    sourceUrl: "https://www.hermes.com/us/en/product/irving-moccasin-H141251ZH02410/",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Swift Calfskin",
+      soleConstruction: "Tubular driving moccasin",
+      hardwareType: "Enamelled H buckle plaque",
+      lining: "Kidskin",
+      originCountry: "Italy",
+      heelHeightMm: 12
+    },
+    reason: "Supple Swift leather driving shoe featuring contrasting enamelled H hardware and rubber sole pads."
+  },
+  {
+    id: "hermes-ancora-loafer",
+    brand: "Hermès",
+    productLine: "Ancora",
+    modelName: "Ancora Loafer",
+    sourceUrl: "https://www.hermes.com/us/en/product/ancora-loafer-H201419ZH02410/",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Chèvre Mysore Goatskin",
+      soleConstruction: "Blake rapid leather sole",
+      hardwareType: "R.M. saddle stitch detailing",
+      lining: "Goatskin",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Understated saddle loafer hand-sewn with Hermès signature saddle stitch in Chèvre leather."
+  },
+  {
+    id: "hermes-royal-loafer",
+    brand: "Hermès",
+    productLine: "Royal",
+    modelName: "Royal Loafer",
+    sourceUrl: "https://www.hermes.com/us/en/product/royal-loafer-H181373ZH02410/",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Glazed Box Calfskin",
+      soleConstruction: "Blake stitched with cuoio sole",
+      hardwareType: "Palladium metal fringe bar",
+      lining: "Full leather",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Modernized tassel loafer sporting sleek leather fringe and polished palladium metallic bar."
+  },
+  {
+    id: "hermes-dauphin-loafer",
+    brand: "Hermès",
+    productLine: "Dauphin",
+    modelName: "Dauphin Loafer",
+    sourceUrl: "https://www.hermes.com/us/en/product/dauphin-loafer-H212093ZH02410/",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Veau Suede Leather",
+      soleConstruction: "Blake stitched",
+      hardwareType: "Permabrass H buckle",
+      lining: "Goatskin",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Velvety suede loafer illuminated by warm permabrass gold-finished signature H hardware."
+  },
+  {
+    id: "hermes-kennedy-loafer",
+    brand: "Hermès",
+    productLine: "Kennedy",
+    modelName: "Kennedy Loafer",
+    sourceUrl: "https://www.hermes.com/us/en/product/kennedy-loafer-H151424ZH02410/",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Barenia Natural Calfskin",
+      soleConstruction: "Goodyear welted",
+      hardwareType: "Hand-stitched leather saddle",
+      lining: "Calfskin",
+      originCountry: "France",
+      heelHeightMm: 25
+    },
+    reason: "Masterpiece in saddle-stitched Barenia calfskin, developing an unmatched natural honey patina over time."
+  },
+  {
+    id: "hermes-alessandro-loafer",
+    brand: "Hermès",
+    productLine: "Alessandro",
+    modelName: "Alessandro Loafer",
+    sourceUrl: "https://www.hermes.com/us/en/product/alessandro-loafer-H201431ZH02410/",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Supple Veau Calfskin",
+      soleConstruction: "Blake stitched flexible sole",
+      hardwareType: "None",
+      lining: "Unlined vamp",
+      originCountry: "Italy",
+      heelHeightMm: 18
+    },
+    reason: "Minimalist slip-on showcasing Hermès leather purity without external hardware embellishment."
+  },
+  {
+    id: "hermes-tenor-loafer",
+    brand: "Hermès",
+    productLine: "Tenor",
+    modelName: "Tenor Loafer",
+    sourceUrl: "https://www.hermes.com/us/en/product/tenor-loafer-H191404ZH02410/",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Polished French Box Calf",
+      soleConstruction: "Blake stitched with bevelled waist",
+      hardwareType: "Ruthenium geometric metal bar",
+      lining: "Full kidskin",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Formal evening loafer featuring dark ruthenium hardware across an immaculate chiseled vamp."
+  },
+  {
+    id: "hermes-carlotta-clog-loafer",
+    brand: "Hermès",
+    productLine: "Carlotta",
+    modelName: "Carlotta Clog Loafer",
+    sourceUrl: "https://www.hermes.com/us/en/product/carlotta-clog-H211079ZH02410/",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Natural Heritage Calfskin",
+      soleConstruction: "Traditional wooden clog with rubber tread",
+      hardwareType: "Palladium Kelly turn-lock buckle",
+      lining: "Natural leather",
+      originCountry: "Italy",
+      heelHeightMm: 40
+    },
+    reason: "Avant-garde artisanal clog loafer hand-carved from solid beechwood and crowned with Kelly hardware."
+  },
+
+  // ==========================================
+  // 8. John Lobb (10 models, United Kingdom GB)
+  // ==========================================
+  {
+    id: "john-lobb-lopez-loafer",
+    brand: "John Lobb",
+    productLine: "Core Classics",
+    modelName: "Lopez Loafer",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/lopez-museum-calf.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Museum Calfskin",
+      soleConstruction: "Goodyear welted",
+      hardwareType: "Classic penny saddle",
+      lining: "Oak bark leather lining",
+      originCountry: "United Kingdom",
+      last: "4395",
+      heelHeightMm: 25
+    },
+    reason: "John Lobb's iconic penny loafer first introduced in 1950, crafted on the classic 4395 last in Northampton."
+  },
+  {
+    id: "john-lobb-city-ii-loafer",
+    brand: "John Lobb",
+    productLine: "City Series",
+    modelName: "City II Loafer",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/city-ii-loafer-calf.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Full-grain Black Calfskin",
+      soleConstruction: "Goodyear welted",
+      hardwareType: "None",
+      lining: "Calfskin",
+      originCountry: "United Kingdom",
+      last: "7000",
+      heelHeightMm: 25
+    },
+    reason: "Formal slip-on adaptation built with the clean contours of the renowned 7000 last."
+  },
+  {
+    id: "john-lobb-lawry-loafer",
+    brand: "John Lobb",
+    productLine: "Modern Classics",
+    modelName: "Lawry Loafer",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/lawry-suede-loafer.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Velveteen Suede",
+      soleConstruction: "Goodyear welted",
+      hardwareType: "Apron stitch",
+      lining: "Prestige leather lining",
+      originCountry: "United Kingdom",
+      last: "8695",
+      heelHeightMm: 25
+    },
+    reason: "Sophisticated apron loafer combining sleek proportions with bespoke-level finishing."
+  },
+  {
+    id: "john-lobb-haven-slip-on-loafer",
+    brand: "John Lobb",
+    productLine: "Casual Leisure",
+    modelName: "Haven Slip-On Loafer",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/haven-grain-leather.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Grained Calfskin",
+      soleConstruction: "Cemented lightweight plimsoll",
+      hardwareType: "None",
+      lining: "Unlined",
+      originCountry: "United Kingdom",
+      last: "0318",
+      heelHeightMm: 18
+    },
+    reason: "Ultra-flexible unlined seaside walking slip-on loafer crafted with featherweight plimsoll sole."
+  },
+  {
+    id: "john-lobb-callington-penny-loafer",
+    brand: "John Lobb",
+    productLine: "Prestige Collection",
+    modelName: "Callington Penny Loafer",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/callington-calf.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Dark Brown Museum Calf",
+      soleConstruction: "Goodyear welted with bevelled waist",
+      hardwareType: "Hand-stitched penny saddle",
+      lining: "Full prestige leather",
+      originCountry: "United Kingdom",
+      last: "0015",
+      heelHeightMm: 25
+    },
+    reason: "Prestige collection penny loafer featuring hand-stitched apron and fiddleback waist."
+  },
+  {
+    id: "john-lobb-bath-tassel-loafer",
+    brand: "John Lobb",
+    productLine: "Core Classics",
+    modelName: "Bath Tassel Loafer",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/bath-tassel-calf.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Full-grain Box Calf",
+      soleConstruction: "Goodyear welted",
+      hardwareType: "Woven leather collar with twin tassels",
+      lining: "Calfskin",
+      originCountry: "United Kingdom",
+      last: "7000",
+      heelHeightMm: 25
+    },
+    reason: "Quintessential English tassel loafer with woven leather lacing around the collar on the 7000 last."
+  },
+  {
+    id: "john-lobb-thorne-apron-loafer",
+    brand: "John Lobb",
+    productLine: "Modern Classics",
+    modelName: "Thorne Apron Loafer",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/thorne-apron-loafers.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Suede / Calfskin blend",
+      soleConstruction: "Goodyear welted",
+      hardwareType: "Split apron stitch",
+      lining: "Leather",
+      originCountry: "United Kingdom",
+      last: "8695",
+      heelHeightMm: 25
+    },
+    reason: "Elegantly proportioned hand-stitched apron penny loafer on the rounded 8695 last."
+  },
+  {
+    id: "john-lobb-penzance-driving-loafer",
+    brand: "John Lobb",
+    productLine: "Driving Collection",
+    modelName: "Penzance Driving Loafer",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/penzance-driving-shoe.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Soft Hydro Suede",
+      soleConstruction: "Tubular moccasin",
+      hardwareType: "None",
+      lining: "Supple kidskin",
+      originCountry: "United Kingdom",
+      last: "Casual",
+      heelHeightMm: 12
+    },
+    reason: "Refined driving loafer featuring hand-stitched moccasin vamp and studded grip sole."
+  },
+  {
+    id: "john-lobb-hendra-split-toe-loafer",
+    brand: "John Lobb",
+    productLine: "Country Classic",
+    modelName: "Hendra Split-Toe Loafer",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/hendra-split-toe-loafer.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Willow Grain Calfskin",
+      soleConstruction: "Goodyear welted with storm welt",
+      hardwareType: "None",
+      lining: "Leather",
+      originCountry: "United Kingdom",
+      last: "0215",
+      heelHeightMm: 28
+    },
+    reason: "Rugged split-toe apron loafer hand-sewn with boar bristle needlework in willow grain calf."
+  },
+  {
+    id: "john-lobb-truro-penny-loafer",
+    brand: "John Lobb",
+    productLine: "Flex Collection",
+    modelName: "Truro Penny Loafer",
+    sourceUrl: "https://www.johnlobb.com/en_us/mens-shoes/truro-flex-penny.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperMaterial: "Tensile Calfskin Suede",
+      soleConstruction: "Goodyear flex welt with oiled leather sole",
+      hardwareType: "Classic penny saddle",
+      lining: "Unlined vamp",
+      originCountry: "United Kingdom",
+      last: "4395",
+      heelHeightMm: 22
+    },
+    reason: "Innovative Goodyear flex construction offering immediate pliancy without break-in period."
+  },
+
+  // ==========================================
+  // 9. Loro Piana (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "loro-piana-summer-walk-loafer",
+    brand: "Loro Piana",
+    productLine: "White Sole",
+    modelName: "Summer Walk Loafer",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/loafers/summer-walk-loafer-FAL5952",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Water-repellent Calfskin Suede",
+      soleConstruction: "Cemented moccasin with white rubber sole",
+      hardwareType: "None",
+      lining: "Unlined calfskin insole",
+      originCountry: "Italy",
+      heelHeightMm: 18
+    },
+    reason: "The global benchmark in quiet luxury leisurewear, defined by its water-repellent suede and white latex sole."
+  },
+  {
+    id: "loro-piana-open-walk-ankle-loafer",
+    brand: "Loro Piana",
+    productLine: "White Sole",
+    modelName: "Open Walk Ankle Loafer",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/loafers/open-walk-ankle-loafer-FAM1697",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Waxed Suede",
+      soleConstruction: "Patented elastic slip-on with white sole",
+      hardwareType: "Concealed elastic tongue bands",
+      lining: "Full calfskin lining",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Iconic slip-on ankle boot loafer equipped with patented concealed elastics under the tongue."
+  },
+  {
+    id: "loro-piana-seaside-walk-loafer",
+    brand: "Loro Piana",
+    productLine: "White Sole",
+    modelName: "Seaside Walk Loafer",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/loafers/seaside-walk-loafer-FAM3420",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Washed Pure Linen and Calfskin",
+      soleConstruction: "Flexible unlined white sole",
+      hardwareType: "None",
+      lining: "Unlined",
+      originCountry: "Italy",
+      heelHeightMm: 15
+    },
+    reason: "Lightweight seaside loafer pairing breathable Mediterranean linen with soft nappa trims."
+  },
+  {
+    id: "loro-piana-dot-sole-summer-charms-loafer",
+    brand: "Loro Piana",
+    productLine: "Charms",
+    modelName: "Dot Sole Summer Charms Loafer",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/loafers/summer-charms-loafer-FAL8210",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Goatskin Suede",
+      soleConstruction: "Tubular moccasin with dotted sole",
+      hardwareType: "Miniature My Charms silver pendants",
+      lining: "Supple kidskin",
+      originCountry: "Italy",
+      heelHeightMm: 15
+    },
+    reason: "Signature driving moccasin embellished with iconic metallic My Charms pendants."
+  },
+  {
+    id: "loro-piana-winter-walk-shearling-loafer",
+    brand: "Loro Piana",
+    productLine: "Winter Sole",
+    modelName: "Winter Walk Shearling Loafer",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/loafers/winter-walk-loafer-FAM4829",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Oiled Water-repellent Suede",
+      soleConstruction: "Cemented insulated white sole",
+      hardwareType: "None",
+      lining: "Genuine Beaver Fur / Merino Shearling",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Winterized interpretation of the Summer Walk lined in plush shearling for freezing conditions."
+  },
+  {
+    id: "loro-piana-babouche-charms-walk",
+    brand: "Loro Piana",
+    productLine: "Charms",
+    modelName: "Babouche Charms Walk",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/loafers/babouche-charms-FAL1103",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Ultra-soft Velvet Suede",
+      soleConstruction: "Collapsible heel babouche",
+      hardwareType: "My Charms padlock pendants",
+      lining: "Unlined",
+      originCountry: "Italy",
+      heelHeightMm: 12
+    },
+    reason: "Casual babouche slipper featuring a fold-down heel counter and signature charms."
+  },
+  {
+    id: "loro-piana-newport-boat-loafer",
+    brand: "Loro Piana",
+    productLine: "Nautical",
+    modelName: "Newport Boat Loafer",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/loafers/newport-boat-shoe-FAM7721",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Waterproof Treated Calfskin",
+      soleConstruction: "Traditional moccasin stitch",
+      hardwareType: "Satin finish eyelets",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 18
+    },
+    reason: "High-performance deck shoe engineered with non-marking siped soles for competitive sailing."
+  },
+  {
+    id: "loro-piana-weekend-walk-loafer",
+    brand: "Loro Piana",
+    productLine: "White Sole",
+    modelName: "Weekend Walk Loafer",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/loafers/weekend-walk-FAM9012",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Grained Deerskin",
+      soleConstruction: "Blake flexible with latex sole",
+      hardwareType: "Penny strap cut-out",
+      lining: "Soft nappa",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Substantial weekend moccasin crafted from buttery grained deerskin and natural rubber."
+  },
+  {
+    id: "loro-piana-city-walk-loafer",
+    brand: "Loro Piana",
+    productLine: "City",
+    modelName: "City Walk Loafer",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/loafers/city-walk-loafer-FAM6102",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Smooth French Box Calf",
+      soleConstruction: "Blake stitched technical thin sole",
+      hardwareType: "Saddle penny band",
+      lining: "Full leather",
+      originCountry: "Italy",
+      heelHeightMm: 24
+    },
+    reason: "Urban business loafer uniting Sartorial refinement with technical micro-cellular sole cushioning."
+  },
+  {
+    id: "loro-piana-lake-walk-suede-loafer",
+    brand: "Loro Piana",
+    productLine: "White Sole",
+    modelName: "Lake Walk Suede Loafer",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/loafers/lake-walk-loafer-FAM5531",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Cashfur and Water-repellent Suede",
+      soleConstruction: "Tubular moccasin",
+      hardwareType: "None",
+      lining: "Cashfur (Cashmere/Silk blend)",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Ultra-soft lakeside loafer featuring Loro Piana's exclusive Cashfur shearling-alternative lining."
+  },
+
+  // ==========================================
+  // 10. Louis Vuitton (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "louis-vuitton-major-loafer",
+    brand: "Louis Vuitton",
+    productLine: "Major",
+    modelName: "Major Loafer",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/major-loafer-nvprod1270034v/1A4OLB",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Glazed Calf Leather",
+      soleConstruction: "Blake construction with leather/rubber sole",
+      hardwareType: "Silver-color LV Initials accessory",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "A cornerstone of the Louis Vuitton shoe collection, featuring hand-stitched vamp and metal LV Initials."
+  },
+  {
+    id: "louis-vuitton-monte-carlo-moccasin",
+    brand: "Louis Vuitton",
+    productLine: "Monte Carlo",
+    modelName: "Monte Carlo Moccasin",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/monte-carlo-moccasin-nvprod760081v/1A3K26",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Grained Calf Leather",
+      soleConstruction: "Tubular moccasin with rubber pads",
+      hardwareType: "Golden LV Initials buckle",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 12
+    },
+    reason: "Classic car shoe design featuring tubular construction and flexible large rubber driving pads."
+  },
+  {
+    id: "louis-vuitton-hockenheim-moccasin",
+    brand: "Louis Vuitton",
+    productLine: "Hockenheim",
+    modelName: "Hockenheim Moccasin",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/hockenheim-moccasin-nvprod100062v/1A3G5E",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Monogram Canvas and Calfskin",
+      soleConstruction: "Tubular driving moccasin",
+      hardwareType: "Enamelled LV Initials buckle",
+      lining: "Supple leather",
+      originCountry: "Italy",
+      heelHeightMm: 12
+    },
+    reason: "Iconic driving shoe rendered in Louis Vuitton's historic Monogram canvas."
+  },
+  {
+    id: "louis-vuitton-estate-loafer",
+    brand: "Louis Vuitton",
+    productLine: "Estate",
+    modelName: "Estate Loafer",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/estate-loafer-nvprod3760021v/1AA55D",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Supple Grained Calf Leather",
+      soleConstruction: "Blake rapid ultra-light rubber sole",
+      hardwareType: "Tonal metal LV Initials accessory",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Ultra-lightweight summer slip-on set on a microcellular rubber outsole with subtle branding."
+  },
+  {
+    id: "louis-vuitton-lv-driver-moccasin",
+    brand: "Louis Vuitton",
+    productLine: "LV Driver",
+    modelName: "LV Driver Moccasin",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/lv-driver-moccasin-nvprod3520023v/1AA8K9",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Monogram Grained Calf Leather",
+      soleConstruction: "Tubular moccasin with Monogram flower rubber pads",
+      hardwareType: "LV Initials lace tips",
+      lining: "Unlined",
+      originCountry: "Italy",
+      heelHeightMm: 12
+    },
+    reason: "First driving shoe created by Virgil Abloh, featuring colourful Monogram flower rubber pads on the outsole."
+  },
+  {
+    id: "louis-vuitton-saint-germain-loafer",
+    brand: "Louis Vuitton",
+    productLine: "Saint Germain",
+    modelName: "Saint Germain Loafer",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/saint-germain-loafer-nvprod2140081v/1A7V0B",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Waxed Calf Leather",
+      soleConstruction: "Blake construction with leather sole",
+      hardwareType: "None",
+      lining: "Full leather",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Sophisticated formal loafer displaying hand-buffed patina and chiseled toe."
+  },
+  {
+    id: "louis-vuitton-slay-mule-loafer",
+    brand: "Louis Vuitton",
+    productLine: "Slay",
+    modelName: "Slay Mule Loafer",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/slay-mule-loafer-nvprod4920012v/1AC22K",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Glazed Calfskin",
+      soleConstruction: "Backless mule with chunky tread",
+      hardwareType: "Monogram floral metal buckle",
+      lining: "Padded leather",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Runway mule silhouette combining traditional dress loafer vamp with an exaggerated treaded outsole."
+  },
+  {
+    id: "louis-vuitton-academy-loafer",
+    brand: "Louis Vuitton",
+    productLine: "Academy",
+    modelName: "Academy Loafer",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/academy-loafer-nvprod2400030v/1A866V",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Brushed Calfskin and Monogram Canvas",
+      soleConstruction: "Goodyear welted platform lug sole",
+      hardwareType: "LV gold-color chain accessory",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 45
+    },
+    reason: "Boyish college loafer pairing chunky multi-layered micro sole with golden LV signature chain."
+  },
+  {
+    id: "louis-vuitton-upper-east-loafer",
+    brand: "Louis Vuitton",
+    productLine: "Upper East",
+    modelName: "Upper East Loafer",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/upper-east-loafer-nvprod3160081v/1A9R0E",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Supple Calf Leather",
+      soleConstruction: "Blake stitched with thin leather sole",
+      hardwareType: "Golden LV Twist lock accessory",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Understated city loafer accented with the emblematic LV Twist lock hardware from Maison leather goods."
+  },
+  {
+    id: "louis-vuitton-lv-pacific-loafer",
+    brand: "Louis Vuitton",
+    productLine: "LV Pacific",
+    modelName: "LV Pacific Loafer",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/lv-pacific-loafer-nvprod4120092v/1AB32K",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Damier Embossed Suede",
+      soleConstruction: "Cemented slip-on rubber cupsole",
+      hardwareType: "Damier engraved metal bar",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Sporty casual slip-on showcasing the Damier pattern embossed into velvety Italian calf suede."
+  },
+
+  // ==========================================
+  // 11. Prada (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "prada-chocolate-brushed-leather-loafer",
+    brand: "Prada",
+    productLine: "Chocolate",
+    modelName: "Chocolate Brushed Leather Loafer",
+    sourceUrl: "https://www.prada.com/us/en/p/chocolate-brushed-leather-loafers/2DE127_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Brushed Spazzolato Leather",
+      soleConstruction: "Goodyear welted monobloc rubber sole",
+      hardwareType: "Enamelled metal triangle logo",
+      lining: "Full leather lining",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "The quintessential modern luxury loafer, instantly recognized by its rounded silhouette and enamelled metal triangle logo."
+  },
+  {
+    id: "prada-monolith-brushed-leather-loafer",
+    brand: "Prada",
+    productLine: "Monolith",
+    modelName: "Monolith Brushed Leather Loafer",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-monolith-brushed-leather-loafers/2DE129_B4L_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Brushed Calfskin",
+      soleConstruction: "Goodyear welted with 55mm lug sole",
+      hardwareType: "Enamelled metal triangle logo",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 55
+    },
+    reason: "Iconic chunky platform loafer boasting Prada's signature 55mm lugged Monolith rubber tread."
+  },
+  {
+    id: "prada-triangle-logo-suede-loafer",
+    brand: "Prada",
+    productLine: "Classic",
+    modelName: "Triangle Logo Suede Loafer",
+    sourceUrl: "https://www.prada.com/us/en/p/suede-loafers/2DE135_008_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Velour Suede Calfskin",
+      soleConstruction: "Blake stitched leather sole",
+      hardwareType: "Tonal metal triangle logo",
+      lining: "Supple leather",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Understated soft suede loafer pairing artisanal Italian stitching with tone-on-tone triangle plaque."
+  },
+  {
+    id: "prada-saffiano-leather-penny-loafer",
+    brand: "Prada",
+    productLine: "Saffiano",
+    modelName: "Saffiano Leather Penny Loafer",
+    sourceUrl: "https://www.prada.com/us/en/p/saffiano-leather-loafers/2DE072_053_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Saffiano Cross-grain Leather",
+      soleConstruction: "Blake stitched",
+      hardwareType: "Slotted penny band with metal logo",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Crafted from Prada's scratch-resistant cross-hatch Saffiano leather patented by Mario Prada in 1913."
+  },
+  {
+    id: "prada-spazzolato-pointed-loafer",
+    brand: "Prada",
+    productLine: "Runway",
+    modelName: "Spazzolato Pointed Loafer",
+    sourceUrl: "https://www.prada.com/us/en/p/brushed-leather-pointed-loafers/2DE141_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "High-shine Spazzolato Calfskin",
+      soleConstruction: "Cemented sharp chiseled last",
+      hardwareType: "Miniature triangle rivet",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Sharp pointed-toe formal silhouette displaying high-shine polished binder leather."
+  },
+  {
+    id: "prada-driver-suede-loafer",
+    brand: "Prada",
+    productLine: "Driver",
+    modelName: "Driver Suede Loafer",
+    sourceUrl: "https://www.prada.com/us/en/p/suede-driving-shoes/2DD164_008_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Water-resistant Calf Suede",
+      soleConstruction: "Tubular driving moccasin",
+      hardwareType: "Enamelled triangle logo on strap",
+      lining: "Unlined vamp",
+      originCountry: "Italy",
+      heelHeightMm: 12
+    },
+    reason: "Featherweight driving shoe featuring segmented rubber tread pads and unmistakable triangle branding."
+  },
+  {
+    id: "prada-re-nylon-brushed-leather-loafer",
+    brand: "Prada",
+    productLine: "Re-Nylon",
+    modelName: "Re-Nylon Brushed Leather Loafer",
+    sourceUrl: "https://www.prada.com/us/en/p/re-nylon-and-brushed-leather-loafers/2DE131_3LFV_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Regenerated Re-Nylon and Brushed Calf",
+      soleConstruction: "Hybrid expanded rubber sole",
+      hardwareType: "Enamelled metal triangle logo",
+      lining: "Re-Nylon and leather",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Innovative hybrid merging sustainable ocean-regenerated nylon fabric with glossy spazzolato leather."
+  },
+  {
+    id: "prada-downtown-slip-on-loafer",
+    brand: "Prada",
+    productLine: "Downtown",
+    modelName: "Downtown Slip-On Loafer",
+    sourceUrl: "https://www.prada.com/us/en/p/leather-slip-on-loafers/2DE149_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Soft Nappa Leather",
+      soleConstruction: "Blake construction with flexible sole",
+      hardwareType: "None",
+      lining: "Nappa leather",
+      originCountry: "Italy",
+      heelHeightMm: 18
+    },
+    reason: "Casual deconstructed slipper loafer offering effortless slip-on flexibility."
+  },
+  {
+    id: "prada-brushed-leather-tassel-loafer",
+    brand: "Prada",
+    productLine: "Classic",
+    modelName: "Brushed Leather Tassel Loafer",
+    sourceUrl: "https://www.prada.com/us/en/p/brushed-leather-tassel-loafers/2DE118_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Brushed Spazzolato Leather",
+      soleConstruction: "Blake stitched with cuoio sole",
+      hardwareType: "Double tassels with micro metal logo",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Sartorial tassel loafer balancing historic British tailoring cues with Italian edge."
+  },
+  {
+    id: "prada-wheel-saffiano-tread-loafer",
+    brand: "Prada",
+    productLine: "Wheel",
+    modelName: "Wheel Saffiano Tread Loafer",
+    sourceUrl: "https://www.prada.com/us/en/p/saffiano-leather-tread-loafers/2DE144_053_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Saffiano Leather",
+      soleConstruction: "Goodyear welted tyre tread rubber sole",
+      hardwareType: "Metal lettering logo",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 40
+    },
+    reason: "Sporty industrial loafer resting on a motocross-inspired notched tyre tread outsole."
+  },
+
+  // ==========================================
+  // 12. Saint Laurent (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "saint-laurent-le-loafer-monogram-penny-loafer",
+    brand: "Saint Laurent",
+    productLine: "Le Loafer",
+    modelName: "Le Loafer Monogram Penny Loafer",
+    sourceUrl: "https://www.ysl.com/en-us/pr/le-loafer-monogram-penny-slippers-in-smooth-leather-63449402G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Smooth Box Calfskin",
+      soleConstruction: "Blake construction with leather sole",
+      hardwareType: "Cassandre YSL metal monogram on saddle",
+      lining: "Full leather lining",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Saint Laurent's quintessential slip-on, hallmarked by the metal Cassandre monogram embedded in the penny strap."
+  },
+  {
+    id: "saint-laurent-pierre-tassel-loafer",
+    brand: "Saint Laurent",
+    productLine: "Pierre",
+    modelName: "Pierre Tassel Loafer",
+    sourceUrl: "https://www.ysl.com/en-us/pr/pierre-tassel-loafers-in-leather-66882102G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Polished Calfskin",
+      soleConstruction: "Blake stitched with stacked leather heel",
+      hardwareType: "Twin leather tassels",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Elegant rock-and-roll tassel loafer with low-profile profile and beveled leather sole."
+  },
+  {
+    id: "saint-laurent-adrian-buckle-loafer",
+    brand: "Saint Laurent",
+    productLine: "Adrian",
+    modelName: "Adrian Buckle Loafer",
+    sourceUrl: "https://www.ysl.com/en-us/pr/adrian-buckle-loafers-in-leather-67891202G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Brushed Calfskin",
+      soleConstruction: "Blake construction",
+      hardwareType: "Engraved Western metal buckle",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Western-inflected loafer highlighted by an ornate silver-toned metal buckle strap."
+  },
+  {
+    id: "saint-laurent-teddy-loafer",
+    brand: "Saint Laurent",
+    productLine: "Teddy",
+    modelName: "Teddy Loafer",
+    sourceUrl: "https://www.ysl.com/en-us/pr/teddy-crepe-sole-loafers-in-suede-58671202G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Velveteen Calf Suede",
+      soleConstruction: "Goodyear welted on natural crepe sole",
+      hardwareType: "Penny saddle cut-out",
+      lining: "Unlined suede",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Teddy Boy-inspired creeper loafer set upon a thick shock-absorbing natural plantation crepe sole."
+  },
+  {
+    id: "saint-laurent-army-buckle-loafer",
+    brand: "Saint Laurent",
+    productLine: "Army",
+    modelName: "Army Buckle Loafer",
+    sourceUrl: "https://www.ysl.com/en-us/pr/army-buckle-loafer-in-leather-64512902G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Glazed Polished Leather",
+      soleConstruction: "Goodyear welted rubber commando lug sole",
+      hardwareType: "Silver roller buckle",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Tough military-inspired loafer grounded by an aggressive notched commando lug sole."
+  },
+  {
+    id: "saint-laurent-glenn-suede-penny-loafer",
+    brand: "Saint Laurent",
+    productLine: "Glenn",
+    modelName: "Glenn Suede Penny Loafer",
+    sourceUrl: "https://www.ysl.com/en-us/pr/glenn-suede-penny-loafers-6344940LI001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Oiled Velour Suede",
+      soleConstruction: "Blake stitched with slim leather sole",
+      hardwareType: "Penny strap cut-out",
+      lining: "Supple kidskin",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Sleek Parisian suede slip-on designed for effortless evening tailoring."
+  },
+  {
+    id: "saint-laurent-jonas-slip-on-evening-loafer",
+    brand: "Saint Laurent",
+    productLine: "Jonas",
+    modelName: "Jonas Slip-On Evening Loafer",
+    sourceUrl: "https://www.ysl.com/en-us/pr/jonas-patent-evening-loafer-58682102G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Patent Calfskin",
+      soleConstruction: "Blake rapid formal sole",
+      hardwareType: "Silk grosgrain trim",
+      lining: "Silk satin and leather",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Pointed-toe formal patent leather pump loafer tailored for Saint Laurent le smoking tuxedos."
+  },
+  {
+    id: "saint-laurent-solferino-loafer",
+    brand: "Saint Laurent",
+    productLine: "Solferino",
+    modelName: "Solferino Loafer",
+    sourceUrl: "https://www.ysl.com/en-us/pr/solferino-leather-loafer-69012402G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Box Calfskin",
+      soleConstruction: "Blake construction",
+      hardwareType: "Antique gold square buckle",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Structured luxury slip-on adorned with an archival square gold buckle across the instep."
+  },
+  {
+    id: "saint-laurent-anthony-studded-loafer",
+    brand: "Saint Laurent",
+    productLine: "Anthony",
+    modelName: "Anthony Studded Loafer",
+    sourceUrl: "https://www.ysl.com/en-us/pr/anthony-studded-loafer-67890102G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Polished Spazzolato Calf",
+      soleConstruction: "Blake stitched",
+      hardwareType: "Micro silver stud trim",
+      lining: "Full leather",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Subtly rebellious dress loafer lined with precision miniature silver stud trim around the collar."
+  },
+  {
+    id: "saint-laurent-wyatt-slip-on-loafer",
+    brand: "Saint Laurent",
+    productLine: "Wyatt",
+    modelName: "Wyatt Slip-On Loafer",
+    sourceUrl: "https://www.ysl.com/en-us/pr/wyatt-slip-on-loafer-58671202G001000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperMaterial: "Oiled Calfskin",
+      soleConstruction: "Blake stitched with stacked Cuban heel",
+      hardwareType: "None",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 30
+    },
+    reason: "Features the iconic Wyatt last with a 30mm stacked Cuban heel and almond toe."
+  },
+
+  // ==========================================
+  // 13. Santoni (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "santoni-double-buckle-monk-loafer",
+    brand: "Santoni",
+    productLine: "Heritage",
+    modelName: "Double Buckle Monk Loafer",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-double-buckle-shoes-MCC015004JC6IOBSS48.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Hand-patinated Antique Calfskin",
+      soleConstruction: "Goodyear welted with orange leather sole",
+      hardwareType: "Dual brass monk buckles",
+      lining: "Full leather lining",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Santoni's signature double-buckle silhouette, hand-colored with iconic Velatura patina in Le Marche atelier."
+  },
+  {
+    id: "santoni-cleanic-penny-loafer",
+    brand: "Santoni",
+    productLine: "Cleanic",
+    modelName: "Cleanic Penny Loafer",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-penny-loafer-MCC015894JC6IOBST50.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Burnished Calfskin",
+      soleConstruction: "Blake stitched slim leather sole",
+      hardwareType: "Slotted penny strap",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Minimalist Italian penny loafer characterized by hand-dyed gradients and refined contours."
+  },
+  {
+    id: "santoni-gelled-soft-penny-loafer",
+    brand: "Santoni",
+    productLine: "Easy",
+    modelName: "Gelled Soft Penny Loafer",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-soft-loafer-MCC016234JC6IOBSU60.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Ultra-supple Deerskin",
+      soleConstruction: "Tubular moccasin with memory foam",
+      hardwareType: "None",
+      lining: "Unlined",
+      originCountry: "Italy",
+      heelHeightMm: 15
+    },
+    reason: "Extraordinarily flexible deerskin loafer boasting gel memory-foam insoles for cloud-like wear."
+  },
+  {
+    id: "santoni-carlos-tassel-loafer",
+    brand: "Santoni",
+    productLine: "Carlos",
+    modelName: "Carlos Tassel Loafer",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-tassel-loafer-MCC017012JC6IOBSV70.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Hand-burnished Box Calf",
+      soleConstruction: "Goodyear welted",
+      hardwareType: "Hand-plaited leather tassels",
+      lining: "Orange calfskin lining",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Bench-made Goodyear welted tassel loafer featuring Santoni's trademark orange leather insole and sole bottom."
+  },
+  {
+    id: "santoni-polished-calf-driver",
+    brand: "Santoni",
+    productLine: "Driver",
+    modelName: "Polished Calf Driver",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-driving-shoes-MCC014522JC6IOBSW80.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Hand-dyed French Calf",
+      soleConstruction: "Tubular driving moccasin",
+      hardwareType: "Penny saddle",
+      lining: "Soft calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 12
+    },
+    reason: "Hand-burnished driving shoe designed with ergonomic rubber pebble treads and contrast apron stitching."
+  },
+  {
+    id: "santoni-fox-split-toe-loafer",
+    brand: "Santoni",
+    productLine: "Artisanal",
+    modelName: "Fox Split-Toe Loafer",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-split-toe-loafer-MCC018224JC6IOBSX90.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Patinated Calfskin",
+      soleConstruction: "Blake rapid leather sole",
+      hardwareType: "Hand-stitched split toe",
+      lining: "Full leather",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Split-toe apron loafer highlighting intricate pie-crust apron stitching executed by master artisans."
+  },
+  {
+    id: "santoni-easy-casual-suede-loafer",
+    brand: "Santoni",
+    productLine: "Easy Casual",
+    modelName: "Easy Casual Suede Loafer",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-suede-loafer-MCC019002JC6IOBSY01.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Calf Suede Velour",
+      soleConstruction: "Unlined moccasin with natural rubber sole",
+      hardwareType: "None",
+      lining: "Unlined",
+      originCountry: "Italy",
+      heelHeightMm: 18
+    },
+    reason: "Effortless Italian summer slip-on set on a flexible natural crepe rubber sole."
+  },
+  {
+    id: "santoni-indulgent-venetian-loafer",
+    brand: "Santoni",
+    productLine: "Evening",
+    modelName: "Indulgent Venetian Loafer",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-venetian-loafer-MCC019884JC6IOBSZ12.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Velvet Calfskin",
+      soleConstruction: "Cemented slip-on with bevelled waist",
+      hardwareType: "None",
+      lining: "Silk satin lining",
+      originCountry: "Italy",
+      heelHeightMm: 20
+    },
+    reason: "Formal evening slip-on featuring clean Venetian lines and satin interior piping."
+  },
+  {
+    id: "santoni-club-goodyear-penny-loafer",
+    brand: "Santoni",
+    productLine: "Club",
+    modelName: "Club Goodyear Penny Loafer",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-goodyear-loafer-MCC020554JC6IOBSA23.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "French Box Calf",
+      soleConstruction: "Goodyear welted with orange welt thread",
+      hardwareType: "Penny saddle",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 28
+    },
+    reason: "Substantial welted penny loafer engineered for decades of wear and resoling."
+  },
+  {
+    id: "santoni-windsor-brogue-loafer",
+    brand: "Santoni",
+    productLine: "Windsor",
+    modelName: "Windsor Brogue Loafer",
+    sourceUrl: "https://www.santonishoes.com/en-us/mens-brogue-loafer-MCC021334JC6IOBSB34.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Hand-patinated Polished Leather",
+      soleConstruction: "Blake stitched leather sole",
+      hardwareType: "Brogue punched medallion",
+      lining: "Full leather",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Decorative brogue-perforated slip-on showcasing meticulous medallion punching on the toe."
+  },
+
+  // ==========================================
+  // 14. Tod's (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "tods-gommino-driving-shoes-in-suede",
+    brand: "Tod's",
+    productLine: "Gommino",
+    modelName: "Gommino Driving Shoes in Suede",
+    sourceUrl: "https://www.tods.com/us-en/Gommino-Driving-Shoes-in-Suede/p/XXM0GW05470RE0S800/",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Velveteen Calfskin Suede",
+      soleConstruction: "Tubular moccasin with rubber pebble sole",
+      hardwareType: "Front tie lace with metallic aglets",
+      lining: "Smooth leather lining",
+      originCountry: "Italy",
+      heelHeightMm: 10
+    },
+    reason: "The quintessential Italian driving shoe invented by Diego Della Valle, defined by 133 signature rubber pebbles on sole and heel."
+  },
+  {
+    id: "tods-gommino-leather-bit-driving-shoes",
+    brand: "Tod's",
+    productLine: "Gommino",
+    modelName: "Gommino Leather Bit Driving Shoes",
+    sourceUrl: "https://www.tods.com/us-en/Gommino-Driving-Shoes-in-Leather/p/XXM0GW0001006EB999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Brushed Calfskin",
+      soleConstruction: "Tubular moccasin with rubber pebbles",
+      hardwareType: "T Timeless metal buckle",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 10
+    },
+    reason: "Handcrafted driving moccasin embellished with Tod's signature T Timeless metal accessory."
+  },
+  {
+    id: "tods-timeless-loafer-in-leather",
+    brand: "Tod's",
+    productLine: "T Timeless",
+    modelName: "Timeless Loafer in Leather",
+    sourceUrl: "https://www.tods.com/us-en/Loafers-in-Leather/p/XXM51K00010AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Semi-glossy Spazzolato Calfskin",
+      soleConstruction: "Blake construction with leather sole",
+      hardwareType: "Branded T Timeless metal buckle",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Sartorial dress loafer finished in lustrous semi-glossy leather and branded T Timeless buckle."
+  },
+  {
+    id: "tods-city-gommino-loafer",
+    brand: "Tod's",
+    productLine: "City Gommino",
+    modelName: "City Gommino Loafer",
+    sourceUrl: "https://www.tods.com/us-en/City-Gommino-in-Leather/p/XXM42C0005006ES800/",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Full-grain Hammered Calfskin",
+      soleConstruction: "Tubular moccasin with full rubber island sole",
+      hardwareType: "Penny saddle cut-out",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 15
+    },
+    reason: "Evolution of the driving shoe featuring an integrated city rubber sole for urban pavement durability."
+  },
+  {
+    id: "tods-kate-loafer-in-suede",
+    brand: "Tod's",
+    productLine: "Kate",
+    modelName: "Kate Loafer in Suede",
+    sourceUrl: "https://www.tods.com/us-en/Kate-Loafer-in-Suede/p/XXW08J0EY40RE0B999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Silky Calfskin Suede",
+      soleConstruction: "Blake stitched with cuoio sole",
+      hardwareType: "Oversized Kate chain accessory",
+      lining: "Kidskin",
+      originCountry: "Italy",
+      heelHeightMm: 22
+    },
+    reason: "Distinguished by the bold interlocking Kate chain hardware across the saddle."
+  },
+  {
+    id: "tods-wg-lug-sole-loafer",
+    brand: "Tod's",
+    productLine: "W.G.",
+    modelName: "W.G. Lug Sole Loafer",
+    sourceUrl: "https://www.tods.com/us-en/WG-Loafers-in-Leather/p/XXM08H0FO30AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Brushed Box Calfskin",
+      soleConstruction: "Goodyear welted rubber lug sole",
+      hardwareType: "Slotted penny strap",
+      lining: "Leather",
+      originCountry: "Italy",
+      heelHeightMm: 40
+    },
+    reason: "Chunky outdoor-inspired loafer set on a heavy cleated rubber lug sole with embossed maxi gommini."
+  },
+  {
+    id: "tods-t-timeless-penny-loafer",
+    brand: "Tod's",
+    productLine: "T Timeless",
+    modelName: "T Timeless Penny Loafer",
+    sourceUrl: "https://www.tods.com/us-en/Loafers-in-Leather/p/XXM06H0ES50002B999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Hand-buffed Calfskin",
+      soleConstruction: "Blake stitched with leather/rubber sole",
+      hardwareType: "Slotted penny saddle with miniature T rivet",
+      lining: "Calfskin",
+      originCountry: "Italy",
+      heelHeightMm: 25
+    },
+    reason: "Timeless gentleman's penny loafer featuring hand-stitched apron and understated micro T rivet."
+  },
+  {
+    id: "tods-gomma-pesante-loafer",
+    brand: "Tod's",
+    productLine: "Gomma Pesante",
+    modelName: "Gomma Pesante Loafer",
+    sourceUrl: "https://www.tods.com/us-en/Gomma-Pesante-Loafer/p/XXM03H0EP80AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Semi-glossy Calfskin",
+      soleConstruction: "Blake rapid with extralight lugged sole",
+      hardwareType: "Penny strap cut-out",
+      lining: "Full leather",
+      originCountry: "Italy",
+      heelHeightMm: 35
+    },
+    reason: "Featherweight chunky loafer sporting extralight expanded rubber sole and glossy bookbinder finish."
+  },
+  {
+    id: "tods-di-bag-inspired-slipper-loafer",
+    brand: "Tod's",
+    productLine: "Di Bag Heritage",
+    modelName: "Di Bag Inspired Slipper Loafer",
+    sourceUrl: "https://www.tods.com/us-en/Slipper-Loafer-in-Leather/p/XXM05H0ER20AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Ultra-soft Nappa Calfskin",
+      soleConstruction: "Flexible deconstructed slip-on",
+      hardwareType: "None",
+      lining: "Unlined",
+      originCountry: "Italy",
+      heelHeightMm: 15
+    },
+    reason: "Deconstructed slipper borrowing the artisanal saddle stitching cues of the iconic Tod's Di Bag."
+  },
+  {
+    id: "tods-bubble-gommino-loafer",
+    brand: "Tod's",
+    productLine: "Bubble Gommino",
+    modelName: "Bubble Gommino Loafer",
+    sourceUrl: "https://www.tods.com/us-en/Bubble-Gommino-Driving-Shoes/p/XXM0GW0CT60002B999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperMaterial: "Velveteen Nubuck Leather",
+      soleConstruction: "Tubular moccasin with oversized gommini",
+      hardwareType: "T Timeless metal buckle",
+      lining: "Soft kidskin",
+      originCountry: "Italy",
+      heelHeightMm: 15
+    },
+    reason: "Playful modern evolution of the classic car shoe featuring oversized contrasting rubber bubble studs."
+  }
+];
+
+export function generateDataLoafersTs(): string {
+  const parts: string[] = [
+    'import type { CensusManifestFile } from "../../../src/domain/coverage-targets";',
+    'import { makeEntry } from "./common";',
+    '',
+    'export const loafersCensus: CensusManifestFile = {',
+    '  $schema: "https://json-schema.org/draft/2020-12/schema",',
+    '  leafKey: "loafers",',
+    '  displayName: "Luxury & Heritage Loafers",',
+    '  censusDate: "2026-10-11",',
+    '  supplyExceptions: [],',
+    '  entries: [',
+  ];
+
+  let currentBrand = "";
+  let brandIndex = 0;
+
+  for (const item of allLoafers) {
+    if (item.brand !== currentBrand) {
+      currentBrand = item.brand;
+      brandIndex++;
+      parts.push(`    // ${brandIndex}. ${currentBrand} (10 models)`);
+    }
+
+    parts.push("    makeEntry({");
+    parts.push(`      id: ${JSON.stringify(item.id)},`);
+    parts.push(`      brand: ${JSON.stringify(item.brand)},`);
+    if (item.productLine) {
+      parts.push(`      productLine: ${JSON.stringify(item.productLine)},`);
+    }
+    parts.push(`      modelName: ${JSON.stringify(item.modelName)},`);
+    parts.push(`      sourceUrl: ${JSON.stringify(item.sourceUrl)},`);
+    parts.push(`      sourceRegion: ${JSON.stringify(item.sourceRegion)},`);
+    if (item.variants) {
+      parts.push(`      variants: ${JSON.stringify(item.variants)},`);
+    }
+    parts.push("      attrs: {");
+    parts.push(`        upperMaterial: ${JSON.stringify(item.attrs.upperMaterial)},`);
+    parts.push(`        soleConstruction: ${JSON.stringify(item.attrs.soleConstruction)},`);
+    parts.push(`        hardwareType: ${JSON.stringify(item.attrs.hardwareType)},`);
+    parts.push(`        lining: ${JSON.stringify(item.attrs.lining)},`);
+    parts.push(`        originCountry: ${JSON.stringify(item.attrs.originCountry)},`);
+    if (item.attrs.last) {
+      parts.push(`        last: ${JSON.stringify(item.attrs.last)},`);
+    }
+    if (item.attrs.heelHeightMm !== undefined) {
+      parts.push(`        heelHeightMm: ${item.attrs.heelHeightMm},`);
+    }
+    parts.push("      },");
+    parts.push(`      reason: ${JSON.stringify(item.reason)},`);
+    parts.push("    }),");
+  }
+
+  parts.push("  ],");
+  parts.push("};");
+  parts.push("");
+
+  return parts.join("\n");
+}
+
+const outputPath = path.resolve(process.cwd(), "scripts/census/wave4/data-loafers.ts");
+const content = generateDataLoafersTs();
+fs.writeFileSync(outputPath, content, "utf-8");
+console.log(`Successfully generated ${allLoafers.length} loafer models to ${outputPath}`);

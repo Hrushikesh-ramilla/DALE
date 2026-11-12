@@ -979,16 +979,24 @@ body:has(.home-opening) .site-header .brand {
     padding: 10px 16px;
   }
 }
-/* Bare wordmark; contrast follows the underlying storefront surface. */
+/* Protected luxury wordmark capsule; contrast and glass follow the underlying storefront surface. */
 .site-header .brand {
-  background: none;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-  padding: 8px 0;
+  display: inline-flex;
+  align-items: center;
+  background: rgba(18, 18, 16, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 8px 16px;
   color: #eeece3;
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 .app-shell:has(.editorial-hero) .site-header .brand {
+  background: rgba(239, 237, 229, 0.88);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
   color: #292d24;
 }
 .navigation-sheet::before {
@@ -1296,6 +1304,8 @@ body:has(.home-opening) .site-header .brand {
   line-height: 1.6;
 }
 .dale-messages-feed {
+  position: relative;
+  scroll-padding-top: 16px;
   padding: 24px;
   gap: 18px;
   scrollbar-color: #999d8c transparent;
@@ -1487,3 +1497,36 @@ body:has(.home-opening) .site-header .brand {
   border-left: 2px solid #b0947d;
   padding-left: 10px;
 }
+
+/* Manual storefront controls remain readable and reachable on narrow screens. */
+.concierge-page { color: inherit; min-width: 0; }
+.concierge-page form label { min-width: 0; max-width: 100%; }
+.concierge-page input, .concierge-page select { max-width: 100%; }
+.site-header .navigation-sheet nav > a { display: block; padding: 12px 0; }
+@media (max-width: 480px) {
+  .concierge-page { padding: 1.5rem 1rem; }
+  .concierge-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Product facts and purchase prices must remain legible on the dark storefront. */
+.pdp-page .pdp-title, .pdp-page .pdp-price-value,
+.pdp-page .editorial-breadcrumbs .current { color: var(--ink); }
+.pdp-page .pdp-desc, .pdp-page .pdp-brand-tag,
+.pdp-page .pdp-price-meta, .pdp-page .editorial-breadcrumbs { color: #bbb8ae; }
+.pdp-page .editorial-breadcrumbs a:hover { color: var(--ink); }
+.pdp-page .pdp-specs-table th { background: #20201f; color: #ccc9c0; }
+.pdp-page .pdp-specs-table td { color: var(--ink); }
+.pdp-page .pdp-specs-table { table-layout: fixed; overflow-wrap: anywhere; }
+.concierge-product-art { height: 200px; overflow: hidden; }
+
+.dale-decision-card { padding: 16px; margin: 12px 0 20px; border: 1px solid #8a8d7b; border-radius: 6px; background: #f0eee6; color: #292f24; overflow-wrap: anywhere; }
+.dale-decision-card header, .dale-decision-card label { display: grid; gap: 6px; }
+.dale-decision-card h3 { font-size: 18px; line-height: 1.25; margin: 14px 0 8px; }
+.dale-decision-card p, .dale-decision-card li { font-size: 13px; line-height: 1.5; }
+.dale-decision-card small { display: block; font-size: 11px; line-height: 1.5; }
+.dale-decision-card select { width: 100%; min-width: 0; padding: 8px; background: #fff; color: #292f24; }
+.dale-decision-group { padding: 10px; background: #e1e3d7; border-left: 3px solid #59634d; }
+.dale-decision-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin: 12px 0; }
+.dale-decision-actions button { padding: 10px; background: #292f24; color: #f5f4ed; border-radius: 4px; }
+.dale-decision-actions button:disabled { opacity: .55; }
+.dale-decision-card :focus-visible { outline: 2px solid #292f24; outline-offset: 3px; }

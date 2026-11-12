@@ -115,7 +115,7 @@ export function resolveClothingImage(product: ProductQuery): ProductImageResolut
 
     // Fendi
     if (brandLower.includes("fendi") || fullText.includes("fendi")) {
-      return makeImg("suits-fendi.webp", "Fendi Tailored Single-Breasted Wool Suit", "Fendi");
+      return makeImg("suits-fendi-tailored-single-breasted-wool-twill-two-button-suit.webp", "Fendi Tailored Single-Breasted Wool Twill Suit", "Fendi");
     }
 
     // Balenciaga

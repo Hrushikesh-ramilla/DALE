@@ -12,6 +12,8 @@ import { tools } from "./tools";
 import { basket, basketInput } from "./shopping";
 import { changeConcierge, readConcierge, ownerKey } from "./store";
 import { productDetails, hybridSearch } from "./retrieval";
+import { discoveryInput } from "@/domain/shopping-decision";
+import { prepareShoppingDecision, shoppingDecision } from "./decisions";
 
 // Reuse customer services, not the former conversation router or tool discovery prompt.
 const serviceNames = new Set([
@@ -96,6 +98,16 @@ const definitions = [
       "Undo the most recent agent cart/wishlist change only if the basket still has expected_revision from current account context. Does not undo payments or submitted customer workflows.",
     schema: undo,
   },
+  {
+    name: "prepare_shopping_decision",
+    description: "Find and save an evidence-backed decision for a shopping request. This performs actual catalog retrieval with code-enforced constraints, never a purchase/cart mutation. Required purpose and exact constraints must preserve every customer requirement; prices are USD cents. Use group_savings=true only when the customer explicitly wants group savings. Missing budget, uncertain compatibility or unrecorded mandatory facts belong in unknown_requirements, never guesses. For corrections use the version from get_shopping_decision. Returned conditional group amounts are NOT unlocked prices.",
+    schema: discoveryInput.safeExtend({ budget_quote: discoveryInput.shape.budget_quote.removeDefault().describe("Copy the exact budget phrase from the customer's latest message, such as '$410', '410 USD' or '41000 cents'. Use null only if no budget was stated. It must be verbatim and match constraints.max_price; never quote a product price as the customer's budget.") }),
+  },
+  {
+    name: "get_shopping_decision",
+    description: "Read this customer's latest saved decision and requirement version, or an owned decision ID. Includes current/stale status. Read before changing an existing decision; stale decisions cannot approve purchases.",
+    schema: z.object({ id: z.string().uuid().optional() }).strict(),
+  },
 ] as const;
 export const websiteTools: ToolDeclaration[] = [
   ...definitions
@@ -140,6 +152,11 @@ export async function websiteTool(
   signal?: AbortSignal,
 ): Promise<unknown> {
   signal?.throwIfAborted();
+  if (name === "prepare_shopping_decision") return prepareShoppingDecision(actor, raw, signal);
+  if (name === "get_shopping_decision") {
+    const input = z.object({ id: z.string().uuid().optional() }).strict().parse(raw);
+    return shoppingDecision(actor, input.id);
+  }
   if (name === "open_catalog_products") {
     if (process.env.CONCIERGE_COMPOSED_LISTINGS === "false")
       throw new Error("Composed listing navigation is disabled.");

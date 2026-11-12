@@ -5,6 +5,7 @@ import {
   ownedCase,
   type Actor,
 } from "./state";
+import { releaseCommitment } from "./group-lifecycle";
 export async function cancelFulfillment(
   actor: Actor,
   orderId: string,
@@ -38,6 +39,8 @@ export async function cancelFulfillment(
       order.quote.invalidatedAt = at;
       const quote = state.quotes.find((q) => q.id === order.quote.id);
       if (quote) quote.invalidatedAt = at;
+      const group = state.groups.find(g => g.id === order.quote.groupId);
+      if (group) releaseCommitment(state, group, order.buyerId, "unpaid_order_canceled");
     }
     order.events.push({
       at,

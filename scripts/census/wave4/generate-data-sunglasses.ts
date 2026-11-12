@@ -1,0 +1,2805 @@
+import fs from "node:fs";
+import path from "node:path";
+
+export interface SunglassesItem {
+  id: string;
+  brand: string;
+  productLine?: string;
+  modelName: string;
+  sourceUrl: string;
+  sourceRegion: string;
+  variants?: string[];
+  attrs: {
+    frameShape: string;
+    frameMaterial: string;
+    lensWidthMm: number;
+    bridgeMm: number;
+    templeMm: number;
+    polarization: boolean;
+    uvProtection: string;
+    originCountry: string;
+  };
+  reason: string;
+}
+
+export const allSunglasses: SunglassesItem[] = [
+  // ==========================================
+  // 1. Cartier (10 models, France FR / Japan JP)
+  // ==========================================
+  {
+    id: "cartier-panthere-de-cartier-sunglasses",
+    brand: "Cartier",
+    productLine: "Panthère de Cartier",
+    modelName: "Panthère de Cartier Sunglasses",
+    sourceUrl: "https://www.cartier.com/en-us/eyewear/sunglasses/panthere-de-cartier-sunglasses-ESW00560.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Pilot / Aviator",
+      frameMaterial: "Smooth Golden-Finish Metal",
+      lensWidthMm: 60,
+      bridgeMm: 14,
+      templeMm: 140,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "France"
+    },
+    reason: "Jewelry icon featuring three-dimensional sculpted Panthère heads biting the lens corners in gleaming gold finish."
+  },
+  {
+    id: "cartier-santos-de-cartier-aviator-sunglasses",
+    brand: "Cartier",
+    productLine: "Santos de Cartier",
+    modelName: "Santos de Cartier Aviator Sunglasses",
+    sourceUrl: "https://www.cartier.com/en-us/eyewear/sunglasses/santos-de-cartier-sunglasses-ESW00412.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Aviator",
+      frameMaterial: "Brushed Platinum Finish Metal with Calfskin Bridge",
+      lensWidthMm: 61,
+      bridgeMm: 16,
+      templeMm: 135,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "France"
+    },
+    reason: "Homage to the 1904 Alberto Santos-Dumont aviator watch, displaying signature Santos visible screw rivets."
+  },
+  {
+    id: "cartier-premiere-de-cartier-rectangular",
+    brand: "Cartier",
+    productLine: "Première de Cartier",
+    modelName: "Première de Cartier Rectangular Sunglasses",
+    sourceUrl: "https://www.cartier.com/en-us/eyewear/sunglasses/premiere-de-cartier-sunglasses-ESW00340.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Rectangular",
+      frameMaterial: "Vintage Gold Finish Metal and Acetate",
+      lensWidthMm: 56,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "France"
+    },
+    reason: "Sophisticated rectangular silhouette hallmarked by the godron motif and C de Cartier hinge signature."
+  },
+  {
+    id: "cartier-signature-c-de-cartier-sunglasses",
+    brand: "Cartier",
+    productLine: "Signature C",
+    modelName: "Signature C de Cartier Sunglasses",
+    sourceUrl: "https://www.cartier.com/en-us/eyewear/sunglasses/signature-c-de-cartier-sunglasses-ESW00510.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Square Rimless",
+      frameMaterial: "Precious Wood and Gold-finish Metal",
+      lensWidthMm: 58,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "France"
+    },
+    reason: "Ultra-luxury rimless eyewear crafted with rare Bubinga wood temples and precious golden C hinge monogram."
+  },
+  {
+    id: "cartier-trinity-de-cartier-oval-sunglasses",
+    brand: "Cartier",
+    productLine: "Trinity de Cartier",
+    modelName: "Trinity de Cartier Oval Sunglasses",
+    sourceUrl: "https://www.cartier.com/en-us/eyewear/sunglasses/trinity-de-cartier-sunglasses-ESW00290.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Oval",
+      frameMaterial: "Three-gold Finish Metal (Yellow, White, Pink Gold)",
+      lensWidthMm: 54,
+      bridgeMm: 19,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "France"
+    },
+    reason: "Celebrating Louis Cartier's 1924 Trinity ring with three intertwined gold bands encircling the temples."
+  },
+  {
+    id: "cartier-piccadilly-rimless-sunglasses",
+    brand: "Cartier",
+    productLine: "Piccadilly",
+    modelName: "Piccadilly Rimless Sunglasses",
+    sourceUrl: "https://www.cartier.com/en-us/eyewear/sunglasses/piccadilly-sunglasses-ESW00188.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Rectangular Rimless",
+      frameMaterial: "Smooth Golden Metal with Faceted Lenses",
+      lensWidthMm: 58,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 2)",
+      originCountry: "France"
+    },
+    reason: "Legendary hip-hop and royal favorite rimless glasses with diamond-cut beveled lens edges."
+  },
+  {
+    id: "cartier-panthere-wild-cat-eye-sunglasses",
+    brand: "Cartier",
+    productLine: "Panthère de Cartier",
+    modelName: "Panthère Wild Cat-Eye Sunglasses",
+    sourceUrl: "https://www.cartier.com/en-us/eyewear/sunglasses/panthere-wild-cat-eye-ESW00595.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Cat-Eye",
+      frameMaterial: "Black Composite and Golden Metal",
+      lensWidthMm: 55,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Feminine feline cat-eye sunglasses framed in black composite with sculpted golden panther claws."
+  },
+  {
+    id: "cartier-santos-classic-pilot-sunglasses",
+    brand: "Cartier",
+    productLine: "Santos de Cartier",
+    modelName: "Santos Classic Pilot Sunglasses",
+    sourceUrl: "https://www.cartier.com/en-us/eyewear/sunglasses/santos-classic-pilot-ESW00450.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Pilot",
+      frameMaterial: "Champagne Golden Metal and Removable Leather Sweatbar",
+      lensWidthMm: 60,
+      bridgeMm: 15,
+      templeMm: 140,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "France"
+    },
+    reason: "Aviator pilot frame featuring genuine calfskin leather sweatbar secured with Santos screws."
+  },
+  {
+    id: "cartier-double-c-de-cartier-geometric",
+    brand: "Cartier",
+    productLine: "Double C",
+    modelName: "Double C de Cartier Geometric Sunglasses",
+    sourceUrl: "https://www.cartier.com/en-us/eyewear/sunglasses/double-c-sunglasses-ESW00612.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Hexagonal / Geometric",
+      frameMaterial: "Platinum Finish Titanium",
+      lensWidthMm: 57,
+      bridgeMm: 17,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Contemporary hexagonal titanium frame laser-engraved with the interlocking Double C logo."
+  },
+  {
+    id: "cartier-premiere-de-cartier-pilot-sunglasses",
+    brand: "Cartier",
+    productLine: "Première de Cartier",
+    modelName: "Première de Cartier Pilot Sunglasses",
+    sourceUrl: "https://www.cartier.com/en-us/eyewear/sunglasses/premiere-pilot-sunglasses-ESW00388.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Teardrop Pilot",
+      frameMaterial: "Ultra-lightweight Titanium with Cartier Red Enamel",
+      lensWidthMm: 59,
+      bridgeMm: 15,
+      templeMm: 145,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Featherweight Japanese titanium construction accented with signature Cartier burgundy enamel."
+  },
+
+  // ==========================================
+  // 2. Celine (10 models, France FR / Italy IT - TRIOMPHE ICONS!)
+  // ==========================================
+  {
+    id: "celine-triomphe-01-sunglasses",
+    brand: "Celine",
+    productLine: "Triomphe",
+    modelName: "Triomphe 01 Sunglasses",
+    sourceUrl: "https://www.celine.com/en-us/celine-shop-women/eyewear/sunglasses/triomphe-01-sunglasses-in-acetate-4S194CPLB.38NO.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Oval",
+      frameMaterial: "Glossy Italian Acetate",
+      lensWidthMm: 52,
+      bridgeMm: 22,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Hedi Slimane's era-defining oval silhouette, adorned with the iconic gold-finish Triomphe metal emblem."
+  },
+  {
+    id: "celine-triomphe-metal-01-oval-sunglasses",
+    brand: "Celine",
+    productLine: "Triomphe Metal",
+    modelName: "Triomphe Metal 01 Oval Sunglasses",
+    sourceUrl: "https://www.celine.com/en-us/celine-shop-women/eyewear/sunglasses/triomphe-metal-01-sunglasses-in-metal-4S248CMLB.35SG.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Oval",
+      frameMaterial: "Ultra-slim Gold-tone Metal Wire",
+      lensWidthMm: 53,
+      bridgeMm: 20,
+      templeMm: 135,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Slender gold metal wire frame featuring the openwork Triomphe motif directly integrated into the hinges."
+  },
+  {
+    id: "celine-bold-3-dots-rectangular-sunglasses",
+    brand: "Celine",
+    productLine: "Bold 3 Dots",
+    modelName: "Bold 3 Dots Rectangular Sunglasses",
+    sourceUrl: "https://www.celine.com/en-us/celine-shop-women/eyewear/sunglasses/bold-3-dots-sunglasses-in-acetate-4S218CPLB.38NO.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Rectangular",
+      frameMaterial: "Thick Hand-polished Acetate",
+      lensWidthMm: 53,
+      bridgeMm: 19,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Thick architectural acetate frame hallmarked by Celine's signature trio of metallic dot rivets."
+  },
+  {
+    id: "celine-triomphe-cat-eye-sunglasses",
+    brand: "Celine",
+    productLine: "Triomphe",
+    modelName: "Triomphe Cat-Eye Sunglasses",
+    sourceUrl: "https://www.celine.com/en-us/celine-shop-women/eyewear/sunglasses/triomphe-cat-eye-sunglasses-in-acetate-4S224CPLB.38NO.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Cat-Eye",
+      frameMaterial: "Beveled Acetate",
+      lensWidthMm: 54,
+      bridgeMm: 17,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Sharp upswept cat-eye frame accented with golden Triomphe hinges, radiating Parisian attitude."
+  },
+  {
+    id: "celine-monochroms-01-rectangular-sunglasses",
+    brand: "Celine",
+    productLine: "Monochroms",
+    modelName: "Monochroms 01 Rectangular Sunglasses",
+    sourceUrl: "https://www.celine.com/en-us/celine-shop-women/eyewear/sunglasses/monochroms-01-sunglasses-in-acetate-4S198CPLB.38NO.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Rectangular Flat Top",
+      frameMaterial: "Heavy Black Acetate",
+      lensWidthMm: 56,
+      bridgeMm: 16,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Bold streetwear-inspired rectangular frame bearing prominent white CELINE logo lettering on wide temples."
+  },
+  {
+    id: "celine-metal-frame-aviator-sunglasses",
+    brand: "Celine",
+    productLine: "Metal Frame",
+    modelName: "Metal Frame Aviator Sunglasses",
+    sourceUrl: "https://www.celine.com/en-us/celine-shop-women/eyewear/sunglasses/metal-frame-aviator-sunglasses-in-metal-4S205CMLB.35SG.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Aviator Double Bridge",
+      frameMaterial: "Gold-tone Metal",
+      lensWidthMm: 60,
+      bridgeMm: 14,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "70s rock-star double bridge aviator featuring fine wireframe construction and green mineral lenses."
+  },
+  {
+    id: "celine-triomphe-square-sunglasses",
+    brand: "Celine",
+    productLine: "Triomphe",
+    modelName: "Triomphe Square Sunglasses",
+    sourceUrl: "https://www.celine.com/en-us/celine-shop-women/eyewear/sunglasses/triomphe-square-sunglasses-in-acetate-4S230CPLB.19DT.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Oversized Square",
+      frameMaterial: "Dark Havana Tortoiseshell Acetate",
+      lensWidthMm: 55,
+      bridgeMm: 19,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Oversized square silhouette cut in rich Havana acetate with golden Triomphe signatures."
+  },
+  {
+    id: "celine-edge-butterfly-sunglasses",
+    brand: "Celine",
+    productLine: "Edge",
+    modelName: "Edge Butterfly Sunglasses",
+    sourceUrl: "https://www.celine.com/en-us/celine-shop-women/eyewear/sunglasses/edge-butterfly-sunglasses-4S210CPLB.38NO.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Butterfly",
+      frameMaterial: "Faceted Acetate",
+      lensWidthMm: 56,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Geometric butterfly silhouette sculpted with beveled edges and smoky gradient lenses."
+  },
+  {
+    id: "celine-triomphe-round-metal-sunglasses",
+    brand: "Celine",
+    productLine: "Triomphe Metal",
+    modelName: "Triomphe Round Metal Sunglasses",
+    sourceUrl: "https://www.celine.com/en-us/celine-shop-women/eyewear/sunglasses/triomphe-round-metal-sunglasses-4S252CMLB.35SG.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Round Panto",
+      frameMaterial: "Gold-tone Metal and Acetate Rim",
+      lensWidthMm: 50,
+      bridgeMm: 21,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Vintage intellectual round panto shape with subtle Triomphe temple branding."
+  },
+  {
+    id: "celine-shadow-flat-top-sunglasses",
+    brand: "Celine",
+    productLine: "Shadow",
+    modelName: "Shadow Flat-Top Sunglasses",
+    sourceUrl: "https://www.celine.com/en-us/celine-shop-women/eyewear/sunglasses/shadow-sunglasses-in-acetate-4S046CPLB.38NO.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Flat Top Oversized",
+      frameMaterial: "Two-tone Acetate (Black and Tortoise)",
+      lensWidthMm: 59,
+      bridgeMm: 15,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Phoebe Philo's legendary flat-top D-frame classic, seamlessly fusing black acetate brow with tortoiseshell base."
+  },
+
+  // ==========================================
+  // 3. Chanel (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "chanel-shield-sunglasses-lambskin-temples",
+    brand: "Chanel",
+    productLine: "Shield",
+    modelName: "Shield Sunglasses with Lambskin Temples",
+    sourceUrl: "https://www.chanel.com/us/eyewear/p/A71368X08101S0114/shield-sunglasses-metal-lambskin/",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Sport Shield",
+      frameMaterial: "Titanium Metal and Quilted Lambskin Leather",
+      lensWidthMm: 65,
+      bridgeMm: 12,
+      templeMm: 135,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Wraparound shield silhouette featuring quilted black lambskin leather hand-stitched onto the temples."
+  },
+  {
+    id: "chanel-butterfly-sunglasses-with-pearl-detail",
+    brand: "Chanel",
+    productLine: "Pearl",
+    modelName: "Butterfly Sunglasses with Pearl Detail",
+    sourceUrl: "https://www.chanel.com/us/eyewear/p/A71420X02081S1515/butterfly-sunglasses-acetate-glass-pearl/",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Butterfly",
+      frameMaterial: "Acetate with Genuine Glass Pearl Inlays",
+      lensWidthMm: 56,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Mademoiselle Chanel's beloved faux-pearls transformed into glowing glass pearl insets flanking the CC hinge."
+  },
+  {
+    id: "chanel-square-sunglasses-with-quilted-chain",
+    brand: "Chanel",
+    productLine: "Chain",
+    modelName: "Square Sunglasses with Quilted Chain",
+    sourceUrl: "https://www.chanel.com/us/eyewear/p/A71380X02570S0114/square-sunglasses-acetate-metal-leather/",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Square",
+      frameMaterial: "Acetate with Leather-interlaced Metal Chain",
+      lensWidthMm: 54,
+      bridgeMm: 19,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Iconic temples woven with the gold metal and black leather chain borrowed from the 2.55 handbag strap."
+  },
+  {
+    id: "chanel-pantos-sunglasses-with-tweed-fabric",
+    brand: "Chanel",
+    productLine: "Tweed",
+    modelName: "Pantos Sunglasses with Tweed Fabric",
+    sourceUrl: "https://www.chanel.com/us/eyewear/p/A71450X09950S1616/pantos-sunglasses-acetate-tweed/",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Round Pantos",
+      frameMaterial: "Acetate with Embedded Maison Lesage Tweed",
+      lensWidthMm: 51,
+      bridgeMm: 21,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Features genuine Lesage woven tweed encapsulated within translucent Italian crystal acetate."
+  },
+  {
+    id: "chanel-cat-eye-sunglasses-with-ribbon-cc",
+    brand: "Chanel",
+    productLine: "Ribbon",
+    modelName: "Cat-Eye Sunglasses with Ribbon CC",
+    sourceUrl: "https://www.chanel.com/us/eyewear/p/A71390X06081S0128/cat-eye-sunglasses-acetate-metal/",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Cat-Eye",
+      frameMaterial: "Gloss Black Acetate",
+      lensWidthMm: 55,
+      bridgeMm: 17,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Upswept feminine silhouette highlighted by a delicate gold-toned metal ribbon knot forming the CC logo."
+  },
+  {
+    id: "chanel-rectangular-quilted-acetate-sunglasses",
+    brand: "Chanel",
+    productLine: "Quilted",
+    modelName: "Rectangular Quilted Acetate Sunglasses",
+    sourceUrl: "https://www.chanel.com/us/eyewear/p/A71400X08101S2214/rectangular-sunglasses-acetate/",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Rectangular",
+      frameMaterial: "Molded Diamond-Quilted Acetate",
+      lensWidthMm: 54,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Sculpted with 3D diamond matelassé quilting along the temples echoing the Classic Flap bag."
+  },
+  {
+    id: "chanel-oval-sunglasses-with-strass-crystals",
+    brand: "Chanel",
+    productLine: "Strass",
+    modelName: "Oval Sunglasses with Strass Crystals",
+    sourceUrl: "https://www.chanel.com/us/eyewear/p/A71410X02081S1614/oval-sunglasses-acetate-strass/",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Slender Oval",
+      frameMaterial: "Black Acetate with Pavé Strass Crystals",
+      lensWidthMm: 52,
+      bridgeMm: 20,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Gala evening eyewear featuring pavé Strass crystals encrusting the signature interlocking CC emblem."
+  },
+  {
+    id: "chanel-pilot-sunglasses-lambskin-bridge",
+    brand: "Chanel",
+    productLine: "Pilot",
+    modelName: "Pilot Sunglasses with Lambskin Bridge",
+    sourceUrl: "https://www.chanel.com/us/eyewear/p/A71370X08101S0116/pilot-sunglasses-metal-lambskin/",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Pilot Aviator",
+      frameMaterial: "Gold-plated Metal and Quilted Leather Bridge",
+      lensWidthMm: 59,
+      bridgeMm: 14,
+      templeMm: 140,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Aviator pilot frame accented with a hand-stitched quilted lambskin leather brow bar."
+  },
+  {
+    id: "chanel-round-metal-sunglasses-chain-strap",
+    brand: "Chanel",
+    productLine: "Chain Jewelry",
+    modelName: "Round Metal Sunglasses with Chain Strap",
+    sourceUrl: "https://www.chanel.com/us/eyewear/p/A71430X02570S0118/round-sunglasses-metal-chain/",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Round",
+      frameMaterial: "Gold-tone Metal with Detachable Chain Necklace",
+      lensWidthMm: 52,
+      bridgeMm: 20,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Round metal frames equipped with a detachable jewelry-grade CC chain that drapes as a necklace."
+  },
+  {
+    id: "chanel-oversized-square-acetate-sunglasses",
+    brand: "Chanel",
+    productLine: "Classic",
+    modelName: "Oversized Square Acetate Sunglasses",
+    sourceUrl: "https://www.chanel.com/us/eyewear/p/A71350X08101S0114/square-sunglasses-acetate/",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Oversized Square",
+      frameMaterial: "Deep Black Handcrafted Acetate",
+      lensWidthMm: 57,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Bold dramatic square frame hallmarked by vintage gold-finish interlocking CC logos."
+  },
+
+  // ==========================================
+  // 4. Dior (10 models, France FR / Italy IT - DIORCLUB & BLACKSUIT)
+  // ==========================================
+  {
+    id: "dior-diorclub-m1u-shield-sunglasses",
+    brand: "Dior",
+    productLine: "DiorClub",
+    modelName: "DiorClub M1U Shield Sunglasses",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/CLUBM1UXR_10A0-diorclub-m1u-sunglasses-shiny-black-dior-oblique-mirrored-lens",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Sport Shield Visor",
+      frameMaterial: "Matte and Gloss Acetate with Mirrored Lens",
+      lensWidthMm: 140,
+      bridgeMm: 0,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Single-lens wraparound mask shield emblazoned with silver-tone Dior Oblique monogram mirror coating."
+  },
+  {
+    id: "dior-diorpacific-s1u-rectangular-sunglasses",
+    brand: "Dior",
+    productLine: "DiorPacific",
+    modelName: "DiorPacific S1U Rectangular Sunglasses",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/DPACS1UXR_10A0-diorpacific-s1u-sunglasses-shiny-black-acetate",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Rectangular",
+      frameMaterial: "Thick Acetate with Gold Star Rivets",
+      lensWidthMm: 53,
+      bridgeMm: 17,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Bold rectangular acetate frame adorned with gold-finish star rivets and Christian Dior lettering on wide temples."
+  },
+  {
+    id: "dior-diorblacksuit-s3i-square-sunglasses",
+    brand: "Dior",
+    productLine: "DiorBlackSuit",
+    modelName: "DiorBlackSuit S3I Square Sunglasses",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/SUITS3IXR_10A0-diorblacksuit-s3i-sunglasses-black-acetate",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Square",
+      frameMaterial: "High-density Black Acetate",
+      lensWidthMm: 54,
+      bridgeMm: 19,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Kim Jones' signature tailoring eyewear, defined by the discreet metal hinge evoking Dior Men suit lapel stitching."
+  },
+  {
+    id: "dior-missdior-b1u-butterfly-sunglasses",
+    brand: "Dior",
+    productLine: "MissDior",
+    modelName: "MissDior B1U Butterfly Sunglasses",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/MISB1UXR_10A0-missdior-b1u-sunglasses-black-acetate",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Butterfly",
+      frameMaterial: "Beveled Acetate",
+      lensWidthMm: 55,
+      bridgeMm: 17,
+      templeMm: 135,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "1950s New Look-inspired butterfly silhouette featuring delicate CD metallic logo plates."
+  },
+  {
+    id: "dior-30montaigne-s2u-square-sunglasses",
+    brand: "Dior",
+    productLine: "30Montaigne",
+    modelName: "30Montaigne S2U Square Sunglasses",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/30MNTGS2U_10A0-30montaigne-s2u-sunglasses-shiny-black",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Oversized Square",
+      frameMaterial: "Acetate with Functional Metal CD Hinge",
+      lensWidthMm: 56,
+      bridgeMm: 16,
+      templeMm: 135,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Oversized graphic square frame integrating the functional golden CD clasp from the 30 Montaigne bag."
+  },
+  {
+    id: "dior-diormidnight-s1i-cat-eye-sunglasses",
+    brand: "Dior",
+    productLine: "DiorMidnight",
+    modelName: "DiorMidnight S1I Cat-Eye Sunglasses",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/MIDNS1IXR_10A0-diormidnight-s1i-sunglasses-black-acetate",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Geometric Cat-Eye",
+      frameMaterial: "Faceted Black Acetate",
+      lensWidthMm: 53,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Architectural cat-eye silhouette cut with faceted volume and Christian Dior Paris gold script."
+  },
+  {
+    id: "dior-cd-diamond-s2i-rectangular-sunglasses",
+    brand: "Dior",
+    productLine: "CD Diamond",
+    modelName: "CD Diamond S2I Rectangular Sunglasses",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/DIAMS2IXR_10A0-cd-diamond-s2i-sunglasses-crystal-and-black",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Rectangular",
+      frameMaterial: "Translucent Acetate with Diamond Core Wire",
+      lensWidthMm: 54,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Translucent temples revealing the custom engraved CD Diamond metal wire core running inside."
+  },
+  {
+    id: "dior-lady-9522-m1i-shield-sunglasses",
+    brand: "Dior",
+    productLine: "Lady 95.22",
+    modelName: "Lady 95.22 M1I Shield Sunglasses",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/LADYM1IXR_10A0-lady-95-22-m1i-sunglasses-black-acetate",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Curved Shield",
+      frameMaterial: "Acetate with Cannage Quilted Temples",
+      lensWidthMm: 62,
+      bridgeMm: 14,
+      templeMm: 135,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "High-fashion visor showcasing the Macro-cannage motif sculpted along the curved temples."
+  },
+  {
+    id: "dior-diorsignature-b1u-cat-eye-sunglasses",
+    brand: "Dior",
+    productLine: "DiorSignature",
+    modelName: "DiorSignature B1U Cat-Eye Sunglasses",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/DSIGB1UXR_10A0-diorsignature-b1u-sunglasses-black-acetate",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Cat-Eye",
+      frameMaterial: "Beveled Black Acetate",
+      lensWidthMm: 55,
+      bridgeMm: 16,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Statement cat-eye design bearing Christian Dior Paris gold-leaf lettering flanked by gold metal lines."
+  },
+  {
+    id: "dior-wildior-s2u-geometric-sunglasses",
+    brand: "Dior",
+    productLine: "WilDior",
+    modelName: "WilDior S2U Geometric Sunglasses",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/WILDS2UXR_10A0-wildior-s2u-sunglasses-translucent-smoke",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Octagonal / Geometric",
+      frameMaterial: "Translucent Smoke Acetate",
+      lensWidthMm: 54,
+      bridgeMm: 19,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Modernized retro octagonal shape in crystal smoke acetate featuring tonal Christian Dior branding."
+  },
+
+  // ==========================================
+  // 5. DITA (10 models, United States US / Japan JP)
+  // ==========================================
+  {
+    id: "dita-flight-006-aviator-sunglasses",
+    brand: "DITA",
+    productLine: "Flight",
+    modelName: "Flight.006 Aviator Sunglasses",
+    sourceUrl: "https://dita.com/products/flight-006",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Aviator / Navigator",
+      frameMaterial: "Japanese Titanium and Acetate Brow Inlays",
+      lensWidthMm: 52,
+      bridgeMm: 22,
+      templeMm: 144,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3 with AR coating)",
+      originCountry: "Japan"
+    },
+    reason: "Worn by Tony Stark in Avengers: Infinity War, crafted with diamond-pattern pressed bridge and custom titanium core."
+  },
+  {
+    id: "dita-grandmaster-six-sunglasses",
+    brand: "DITA",
+    productLine: "Grandmaster",
+    modelName: "Grandmaster-Six Sunglasses",
+    sourceUrl: "https://dita.com/products/grandmaster-six",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Oversized Square",
+      frameMaterial: "Japanese Acetate with 18K Gold Plated Titanium",
+      lensWidthMm: 58,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Tribute to 1970s hip-hop culture, constructed with custom titanium hex screws and 18-karat gold-plated hinges."
+  },
+  {
+    id: "dita-mach-six-sunglasses",
+    brand: "DITA",
+    productLine: "Mach",
+    modelName: "Mach-Six Sunglasses",
+    sourceUrl: "https://dita.com/products/mach-six",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Aviator",
+      frameMaterial: "Titanium Lens Rim with Step-down Brow Bar",
+      lensWidthMm: 62,
+      bridgeMm: 12,
+      templeMm: 130,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Supercar-inspired aviator featuring a forked dual-action titanium brow bar and floating lens design."
+  },
+  {
+    id: "dita-statesman-six-browline-sunglasses",
+    brand: "DITA",
+    productLine: "Statesman",
+    modelName: "Statesman-Six Browline Sunglasses",
+    sourceUrl: "https://dita.com/products/statesman-six",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Browline Clubmaster",
+      frameMaterial: "Japanese Acetate Brow with Diamond-pressed Titanium",
+      lensWidthMm: 55,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Hollywood Golden Age browline silhouette elevated with Japanese hand-etched diamond coin-edge pressed titanium."
+  },
+  {
+    id: "dita-subsystem-rectangular-sunglasses",
+    brand: "DITA",
+    productLine: "Subsystem",
+    modelName: "Subsystem Rectangular Sunglasses",
+    sourceUrl: "https://dita.com/products/subsystem",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Rectangular",
+      frameMaterial: "Ultra-dense 8mm Japanese Acetate",
+      lensWidthMm: 54,
+      bridgeMm: 19,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Substantial 8mm beveled Japanese acetate rectangular frame with exposed titanium core wire."
+  },
+  {
+    id: "dita-believer-round-sunglasses",
+    brand: "DITA",
+    productLine: "Believer",
+    modelName: "Believer Round Sunglasses",
+    sourceUrl: "https://dita.com/products/believer",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Round",
+      frameMaterial: "Ultra-thin Titanium Wire",
+      lensWidthMm: 52,
+      bridgeMm: 20,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Featherweight Japanese titanium wire frame featuring exposed mechanical rim-lock system."
+  },
+  {
+    id: "dita-decade-two-aviator-sunglasses",
+    brand: "DITA",
+    productLine: "Decade",
+    modelName: "Decade-Two Aviator Sunglasses",
+    sourceUrl: "https://dita.com/products/decade-two",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Aviator",
+      frameMaterial: "Titanium with Mesh Metal Bridge Detail",
+      lensWidthMm: 62,
+      bridgeMm: 12,
+      templeMm: 136,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "20th-anniversary celebration aviator boasting laser-etched metal mesh bridge inserts."
+  },
+  {
+    id: "dita-grand-evo-one-sunglasses",
+    brand: "DITA",
+    productLine: "Grand-Evo",
+    modelName: "Grand-Evo One Sunglasses",
+    sourceUrl: "https://dita.com/products/grand-evo-one",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Rimless Shield",
+      frameMaterial: "Rimless Titanium Chassis with Floating Lens",
+      lensWidthMm: 64,
+      bridgeMm: 13,
+      templeMm: 134,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Rimless engineering marvel featuring floating lenses mounted on sculpted titanium temples."
+  },
+  {
+    id: "dita-initiator-square-sunglasses",
+    brand: "DITA",
+    productLine: "Initiator",
+    modelName: "Initiator Square Sunglasses",
+    sourceUrl: "https://dita.com/products/initiator",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Navigator Square",
+      frameMaterial: "Dual-tone Titanium and Acetate Inserts",
+      lensWidthMm: 55,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Navigator frame combining contrasting titanium finishes with hand-polished Japanese acetate brow."
+  },
+  {
+    id: "dita-sekton-geometric-sunglasses",
+    brand: "DITA",
+    productLine: "Sekton",
+    modelName: "Sekton Geometric Sunglasses",
+    sourceUrl: "https://dita.com/products/sekton",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Hexagonal Geometric",
+      frameMaterial: "Handcrafted Acetate with 5-barrel Hinge Plate",
+      lensWidthMm: 53,
+      bridgeMm: 20,
+      templeMm: 148,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Sculpted oversized acetate sunglasses with exposed five-barrel titanium hinge plates."
+  },
+
+  // ==========================================
+  // 6. Gucci (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "gucci-gg0061s-round-metal-sunglasses",
+    brand: "Gucci",
+    productLine: "Web Heritage",
+    modelName: "GG0061S Round Metal Sunglasses",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/accessories-for-men/eyewear-for-men/sunglasses-for-men/round-sunglasses-p-GG0061S001",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Round",
+      frameMaterial: "Metal with Green and Red Web Enamel Rim",
+      lensWidthMm: 56,
+      bridgeMm: 22,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Round metal sunglasses featuring hand-painted green and red Web enamel rims and Interlocking GG temples."
+  },
+  {
+    id: "gucci-gg0034s-square-acetate-sunglasses",
+    brand: "Gucci",
+    productLine: "Classic Web",
+    modelName: "GG0034S Square Acetate Sunglasses",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/accessories-for-men/eyewear-for-men/sunglasses-for-men/square-sunglasses-p-GG0034S001",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Square",
+      frameMaterial: "Black Acetate with Sylvie Web Temples",
+      lensWidthMm: 54,
+      bridgeMm: 20,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Oversized square frame with green and red Web fabric insert embedded inside transparent temples."
+  },
+  {
+    id: "gucci-gg0010s-aviator-sunglasses",
+    brand: "Gucci",
+    productLine: "Aviator",
+    modelName: "GG0010S Aviator Sunglasses",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/accessories-for-men/eyewear-for-men/sunglasses-for-men/aviator-sunglasses-p-GG0010S001",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Aviator Pilot",
+      frameMaterial: "Gold-tone Metal with Rubberized Web Temple Tips",
+      lensWidthMm: 58,
+      bridgeMm: 16,
+      templeMm: 145,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Classic pilot sunglasses equipped with polarized lenses and rubberized Web tips."
+  },
+  {
+    id: "gucci-gg0811s-cat-eye-acetate-sunglasses",
+    brand: "Gucci",
+    productLine: "Running G",
+    modelName: "GG0811S Cat-Eye Acetate Sunglasses",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/accessories-for-men/eyewear-for-men/sunglasses-for-men/cat-eye-sunglasses-p-GG0811S001",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Cat-Eye",
+      frameMaterial: "Beveled Gloss Black Acetate",
+      lensWidthMm: 53,
+      bridgeMm: 21,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Thick beveled cat-eye frame accented with golden Running G logo on wide temples."
+  },
+  {
+    id: "gucci-gg0396s-rectangular-metal-sunglasses",
+    brand: "Gucci",
+    productLine: "Retro Metal",
+    modelName: "GG0396S Rectangular Metal Sunglasses",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/accessories-for-men/eyewear-for-men/sunglasses-for-men/rectangular-metal-sunglasses-p-GG0396S001",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Narrow Rectangular",
+      frameMaterial: "Ultra-slim Gold-plated Metal Wire",
+      lensWidthMm: 56,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 2)",
+      originCountry: "Japan"
+    },
+    reason: "Ultra-slim 1980s retro rectangular wireframe with subtle Interlocking G temple charms."
+  },
+  {
+    id: "gucci-gg0418s-oversized-square-sunglasses",
+    brand: "Gucci",
+    productLine: "Hollywood Forever",
+    modelName: "GG0418S Oversized Square Sunglasses",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/accessories-for-men/eyewear-for-men/sunglasses-for-men/oversized-square-sunglasses-p-GG0418S001",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Oversized Square",
+      frameMaterial: "Heavy Black Acetate with Gold GG Emblem",
+      lensWidthMm: 54,
+      bridgeMm: 20,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Bold 1970s oversized square sunglasses featuring prominent gold GG temple plaque."
+  },
+  {
+    id: "gucci-gg0226s-rimless-star-sunglasses",
+    brand: "Gucci",
+    productLine: "Runway Shield",
+    modelName: "GG0226S Rimless Star Sunglasses",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/accessories-for-men/eyewear-for-men/sunglasses-for-men/rimless-sunglasses-p-GG0226S001",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Rimless Square Shield",
+      frameMaterial: "Gold-tone Metal with Star Rivets",
+      lensWidthMm: 60,
+      bridgeMm: 15,
+      templeMm: 130,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 2)",
+      originCountry: "Japan"
+    },
+    reason: "Rimless gradient shield glasses anchored with star-shaped screws and GG logo fork temples."
+  },
+  {
+    id: "gucci-gg1022s-geometric-acetate-sunglasses",
+    brand: "Gucci",
+    productLine: "Geometric",
+    modelName: "GG1022S Geometric Acetate Sunglasses",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/accessories-for-men/eyewear-for-men/sunglasses-for-men/geometric-sunglasses-p-GG1022S001",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Hexagonal Geometric",
+      frameMaterial: "Beveled Black Acetate",
+      lensWidthMm: 54,
+      bridgeMm: 19,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Sharp hexagonal geometric silhouette displaying gold Gucci lettering on thick temples."
+  },
+  {
+    id: "gucci-gg0053s-square-web-sunglasses",
+    brand: "Gucci",
+    productLine: "Web Heritage",
+    modelName: "GG0053S Square Web Sunglasses",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/accessories-for-men/eyewear-for-men/sunglasses-for-men/square-web-sunglasses-p-GG0053S001",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Square",
+      frameMaterial: "Havana Tortoiseshell Acetate with Web Stripe",
+      lensWidthMm: 54,
+      bridgeMm: 25,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Chunky tortoiseshell square frame featuring the signature Sylvie web stripe."
+  },
+  {
+    id: "gucci-gg0528s-navigator-metal-sunglasses",
+    brand: "Gucci",
+    productLine: "Navigator",
+    modelName: "GG0528S Navigator Metal Sunglasses",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/accessories-for-men/eyewear-for-men/sunglasses-for-men/navigator-sunglasses-p-GG0528S001",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Navigator",
+      frameMaterial: "Double Bridge Metal with Micro-GG Engraving",
+      lensWidthMm: 63,
+      bridgeMm: 14,
+      templeMm: 145,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Masculine double-bridge navigator sunglasses engraved with micro-GG pattern along the brow."
+  },
+
+  // ==========================================
+  // 7. Oliver Peoples (10 models, United States US / Italy IT / Japan JP)
+  // ==========================================
+  {
+    id: "oliver-peoples-gregory-peck-sun",
+    brand: "Oliver Peoples",
+    productLine: "Gregory Peck",
+    modelName: "Gregory Peck Sun",
+    sourceUrl: "https://www.oliverpeoples.com/usa/0OV5217S--1483R5",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Round Panto",
+      frameMaterial: "Handcrafted Acetate with Keyhole Bridge",
+      lensWidthMm: 47,
+      bridgeMm: 23,
+      templeMm: 150,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3 Barberini Glass)",
+      originCountry: "Italy"
+    },
+    reason: "Inspired by the frame worn by Gregory Peck as Atticus Finch in To Kill a Mockingbird."
+  },
+  {
+    id: "oliver-peoples-omalley-sun",
+    brand: "Oliver Peoples",
+    productLine: "O'Malley",
+    modelName: "O'Malley Sun",
+    sourceUrl: "https://www.oliverpeoples.com/usa/0OV5183S--1005P1",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Round",
+      frameMaterial: "Custom Cellulose Acetate",
+      lensWidthMm: 48,
+      bridgeMm: 22,
+      templeMm: 145,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3 Polarized Glass)",
+      originCountry: "Italy"
+    },
+    reason: "Brand-defining 1988 silhouette named after former LA Dodgers president Peter O'Malley."
+  },
+  {
+    id: "oliver-peoples-fairmont-sun",
+    brand: "Oliver Peoples",
+    productLine: "Fairmont",
+    modelName: "Fairmont Sun",
+    sourceUrl: "https://www.oliverpeoples.com/usa/0OV5219S--100552",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Slim Rectangular",
+      frameMaterial: "Handcrafted Italian Acetate",
+      lensWidthMm: 49,
+      bridgeMm: 21,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Vintage-inspired tailored rectangular frame with functional hand-inlaid hinge pins."
+  },
+  {
+    id: "oliver-peoples-sheldrake-sun",
+    brand: "Oliver Peoples",
+    productLine: "Sheldrake",
+    modelName: "Sheldrake Sun",
+    sourceUrl: "https://www.oliverpeoples.com/usa/0OV5036S--100552",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Rounded Square",
+      frameMaterial: "Thick Acetate with Keyhole Bridge",
+      lensWidthMm: 47,
+      bridgeMm: 22,
+      templeMm: 145,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Intellectual silhouette influenced by Andy Warhol, displaying prominent keyhole bridge."
+  },
+  {
+    id: "oliver-peoples-finley-vintage-sun",
+    brand: "Oliver Peoples",
+    productLine: "Finley",
+    modelName: "Finley Vintage Sun",
+    sourceUrl: "https://www.oliverpeoples.com/usa/0OV5397SU--1669R5",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Square",
+      frameMaterial: "Acetate with Filigree Feather Core Wire",
+      lensWidthMm: 49,
+      bridgeMm: 20,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Refined 1993 archival design featuring custom engraved filigree feather metal core wire."
+  },
+  {
+    id: "oliver-peoples-cassavetes-sun",
+    brand: "Oliver Peoples",
+    productLine: "Cassavetes",
+    modelName: "Cassavetes Sun",
+    sourceUrl: "https://www.oliverpeoples.com/usa/0OV5458SU--100552",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "70s Aviator",
+      frameMaterial: "Rich Havana Tortoise Acetate with Double Bridge",
+      lensWidthMm: 52,
+      bridgeMm: 19,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "1970s film-director inspired double-bridge acetate aviator named after John Cassavetes."
+  },
+  {
+    id: "oliver-peoples-oliver-sun",
+    brand: "Oliver Peoples",
+    productLine: "Oliver",
+    modelName: "Oliver Sun",
+    sourceUrl: "https://www.oliverpeoples.com/usa/0OV5393SU--100552",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Square",
+      frameMaterial: "Beveled Acetate with Dual Pins",
+      lensWidthMm: 51,
+      bridgeMm: 19,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Core square silhouette embodying classic mid-century Southern California aesthetic."
+  },
+  {
+    id: "oliver-peoples-clifton-aviator-sunglasses",
+    brand: "Oliver Peoples",
+    productLine: "Clifton",
+    modelName: "Clifton Aviator Sunglasses",
+    sourceUrl: "https://www.oliverpeoples.com/usa/0OV1150S--503552",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Teardrop Aviator",
+      frameMaterial: "Titanium Metal with Feather Filigree",
+      lensWidthMm: 58,
+      bridgeMm: 15,
+      templeMm: 140,
+      polarization: true,
+      uvProtection: "100% UV Protection (VFX Polarized Glass)",
+      originCountry: "Japan"
+    },
+    reason: "Featherweight Japanese titanium teardrop pilot frame with proprietary VFX polarized glass lenses."
+  },
+  {
+    id: "oliver-peoples-bernardo-square-sunglasses",
+    brand: "Oliver Peoples",
+    productLine: "Bernardo",
+    modelName: "Bernardo Square Sunglasses",
+    sourceUrl: "https://www.oliverpeoples.com/usa/0OV5189S--1005N5",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Square",
+      frameMaterial: "Handcrafted Acetate",
+      lensWidthMm: 54,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Masculine, squared 1960s silhouette detailed with hand-set custom hinges."
+  },
+  {
+    id: "oliver-peoples-benedict-pilot-sunglasses",
+    brand: "Oliver Peoples",
+    productLine: "Benedict",
+    modelName: "Benedict Pilot Sunglasses",
+    sourceUrl: "https://www.oliverpeoples.com/usa/0OV1002S--503552",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Modified Pilot",
+      frameMaterial: "Titanium Wire with Straight Brow Bar",
+      lensWidthMm: 59,
+      bridgeMm: 16,
+      templeMm: 135,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3 Polarized)",
+      originCountry: "Japan"
+    },
+    reason: "Modernized pilot frame featuring straight top bar and silicone temple pads."
+  },
+
+  // ==========================================
+  // 8. Persol (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "persol-649-original-sunglasses",
+    brand: "Persol",
+    productLine: "Icons",
+    modelName: "649 Original Sunglasses",
+    sourceUrl: "https://www.persol.com/usa/0PO0649--24-31",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Pilot Panto",
+      frameMaterial: "Handcrafted Acetate with Meflecto Flexible Temples",
+      lensWidthMm: 54,
+      bridgeMm: 20,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3 Barberini Crystal)",
+      originCountry: "Italy"
+    },
+    reason: "Created in 1957 for Turin tram drivers, made legendary by Marcello Mastroianni with Victor U-bridge and Silver Arrow."
+  },
+  {
+    id: "persol-714-folding-sunglasses",
+    brand: "Persol",
+    productLine: "Steve McQueen",
+    modelName: "714 Folding Sunglasses",
+    sourceUrl: "https://www.persol.com/usa/0PO0714--24-31",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Folding Aviator",
+      frameMaterial: "Handcrafted Acetate with 10-piece Folding System",
+      lensWidthMm: 54,
+      bridgeMm: 21,
+      templeMm: 140,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3 Barberini Glass)",
+      originCountry: "Italy"
+    },
+    reason: "The world's first folding sunglasses, immortalized by Steve McQueen in The Thomas Crown Affair."
+  },
+  {
+    id: "persol-3019s-square-sunglasses",
+    brand: "Persol",
+    productLine: "Classic",
+    modelName: "3019S Square Sunglasses",
+    sourceUrl: "https://www.persol.com/usa/0PO3019S--95-31",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Square",
+      frameMaterial: "Italian Acetate with Keyhole Bridge",
+      lensWidthMm: 52,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Square acetate sunglasses featuring keyhole bridge, Supreme Silver Arrow, and Meflecto flexibility."
+  },
+  {
+    id: "persol-3092sm-round-sunglasses",
+    brand: "Persol",
+    productLine: "Vintage",
+    modelName: "3092SM Round Sunglasses",
+    sourceUrl: "https://www.persol.com/usa/0PO3092SM--900656",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Round Panto",
+      frameMaterial: "Acetate with Slim Profile",
+      lensWidthMm: 50,
+      bridgeMm: 19,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 2 Crystal Lenses)",
+      originCountry: "Italy"
+    },
+    reason: "Vintage panto silhouette pairing slim acetate rims with pure Barberini crystal lenses."
+  },
+  {
+    id: "persol-3268s-rectangular-sunglasses",
+    brand: "Persol",
+    productLine: "Modern Classic",
+    modelName: "3268S Rectangular Sunglasses",
+    sourceUrl: "https://www.persol.com/usa/0PO3268S--95-58",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Rectangular",
+      frameMaterial: "Acetate with Meflecto Stem System",
+      lensWidthMm: 53,
+      bridgeMm: 20,
+      templeMm: 145,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3 Polarized)",
+      originCountry: "Italy"
+    },
+    reason: "Masculine rectangular frame offering pressure-free comfort via Meflecto flexible temple stems."
+  },
+  {
+    id: "persol-3225s-navigator-sunglasses",
+    brand: "Persol",
+    productLine: "Navigator",
+    modelName: "3225S Navigator Sunglasses",
+    sourceUrl: "https://www.persol.com/usa/0PO3225S--95-31",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Navigator Double Bridge",
+      frameMaterial: "Acetate with Double Keyhole Bridge",
+      lensWidthMm: 56,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Boxy masculine navigator frame highlighting Persol's distinctive double bridge."
+  },
+  {
+    id: "persol-3199s-browline-sunglasses",
+    brand: "Persol",
+    productLine: "Browline",
+    modelName: "3199S Browline Sunglasses",
+    sourceUrl: "https://www.persol.com/usa/0PO3199S--24-31",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Browline / Clubmaster",
+      frameMaterial: "Acetate Brow with Metal Rim Chassis",
+      lensWidthMm: 53,
+      bridgeMm: 20,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Italian interpretation of the 50s browline frame with dual Silver Arrow hinges."
+  },
+  {
+    id: "persol-2422sj-round-metal-sunglasses",
+    brand: "Persol",
+    productLine: "Metal Collection",
+    modelName: "2422SJ Round Metal Sunglasses",
+    sourceUrl: "https://www.persol.com/usa/0PO2422SJ--106251",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Round Metal Wire",
+      frameMaterial: "Guilloché Metal with Acetate Accents",
+      lensWidthMm: 51,
+      bridgeMm: 20,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 2)",
+      originCountry: "Italy"
+    },
+    reason: "Delicate round wireframe engraved with guilloché detailing along the metal rims."
+  },
+  {
+    id: "persol-3272s-oval-sunglasses",
+    brand: "Persol",
+    productLine: "Modern",
+    modelName: "3272S Oval Sunglasses",
+    sourceUrl: "https://www.persol.com/usa/0PO3272S--95-48",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Oval",
+      frameMaterial: "Beveled Acetate",
+      lensWidthMm: 51,
+      bridgeMm: 21,
+      templeMm: 145,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Contemporary slim oval sunglasses equipped with polarized Barberini crystal optics."
+  },
+  {
+    id: "persol-9649s-slim-aviator-sunglasses",
+    brand: "Persol",
+    productLine: "Icons",
+    modelName: "9649S Slim Aviator Sunglasses",
+    sourceUrl: "https://www.persol.com/usa/0PO9649S--95-31",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Pilot Panto Slim",
+      frameMaterial: "Slimmed-down Italian Acetate",
+      lensWidthMm: 55,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Lighter, slimmer evolution of the legendary 649 frame providing identical iconic styling at reduced weight."
+  },
+
+  // ==========================================
+  // 9. Prada (10 models, Italy IT - SYMBOLE & LINEA ROSSA)
+  // ==========================================
+  {
+    id: "prada-symbole-rectangular-sunglasses",
+    brand: "Prada",
+    productLine: "Prada Symbole",
+    modelName: "Prada Symbole Rectangular Sunglasses",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-symbole-sunglasses/0PR_17WS_E1AB_F05S0_C_049",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Faceted Rectangular",
+      frameMaterial: "Thick Hand-faceted Acetate",
+      lensWidthMm: 49,
+      bridgeMm: 20,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Viral runway icon, characterized by thick, multi-faceted geometric acetate temples bearing the 3D triangle logo."
+  },
+  {
+    id: "prada-runway-geometric-sunglasses",
+    brand: "Prada",
+    productLine: "Runway",
+    modelName: "Prada Runway Geometric Sunglasses",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-runway-sunglasses/0PR_14YS_E1AB_F05S0_C_053",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Hexagonal / Geometric",
+      frameMaterial: "Faceted Acetate",
+      lensWidthMm: 53,
+      bridgeMm: 19,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Futuristic hexagonal silhouette sculpted with sharp beveled facets and bold temples."
+  },
+  {
+    id: "prada-linea-rossa-impavid-shield",
+    brand: "Prada",
+    productLine: "Prada Linea Rossa",
+    modelName: "Prada Linea Rossa Impavid Shield",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-linea-rossa-impavid-sunglasses/0PS_03QS_EDG1A1_C_039",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Wraparound Shield",
+      frameMaterial: "Nylon Fiber with Rubber Injections and Red Stripe",
+      lensWidthMm: 139,
+      bridgeMm: 0,
+      templeMm: 125,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3 Hydrophobic)",
+      originCountry: "Italy"
+    },
+    reason: "Active high-performance shield bearing the legendary red Prada Linea Rossa logo stripe."
+  },
+  {
+    id: "prada-monochrome-square-sunglasses",
+    brand: "Prada",
+    productLine: "Prada Monochrome",
+    modelName: "Prada Monochrome Square Sunglasses",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-monochrome-sunglasses/0PR_19WS_E1AB_F05S0_C_052",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Square",
+      frameMaterial: "Glossy Italian Acetate",
+      lensWidthMm: 52,
+      bridgeMm: 21,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Square frame featuring tonal Prada lettering matching the color of the acetate."
+  },
+  {
+    id: "prada-cinema-aviator-sunglasses",
+    brand: "Prada",
+    productLine: "Cinema",
+    modelName: "Prada Cinema Aviator Sunglasses",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-cin%C3%A9ma-sunglasses/0PR_62SS_E1AB_F05S0_C_053",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Aviator Double Bridge",
+      frameMaterial: "Gold Metal Wire with Acetate Brow Inserts",
+      lensWidthMm: 53,
+      bridgeMm: 20,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 2)",
+      originCountry: "Italy"
+    },
+    reason: "Double bridge aviator combining delicate metal framework with dark acetate brows."
+  },
+  {
+    id: "prada-symbole-cat-eye-sunglasses",
+    brand: "Prada",
+    productLine: "Prada Symbole",
+    modelName: "Prada Symbole Cat-Eye Sunglasses",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-symbole-cat-eye-sunglasses/0PR_23YS_E1AB_F05S0_C_051",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Faceted Cat-Eye",
+      frameMaterial: "Hand-faceted Acetate",
+      lensWidthMm: 51,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Sharply upswept cat-eye interpretation of the faceted Symbole design with 3D logo."
+  },
+  {
+    id: "prada-linea-rossa-polarized-navigator",
+    brand: "Prada",
+    productLine: "Prada Linea Rossa",
+    modelName: "Prada Linea Rossa Polarized Navigator",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-linea-rossa-sunglasses/0PS_54IS_E1AB_F05S0_C_065",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Navigator",
+      frameMaterial: "Rubberized Metal with Red Linea Rossa Stripe",
+      lensWidthMm: 65,
+      bridgeMm: 14,
+      templeMm: 130,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3 Polarized)",
+      originCountry: "Italy"
+    },
+    reason: "Equestrian and sailing navigator sunglasses equipped with polarized lenses and red rubber logo."
+  },
+  {
+    id: "prada-triangle-logo-oval-sunglasses",
+    brand: "Prada",
+    productLine: "Classic",
+    modelName: "Prada Triangle Logo Oval Sunglasses",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-oval-sunglasses/0PR_26YS_E1AB_F05S0_C_055",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Oval",
+      frameMaterial: "Curved Black Acetate",
+      lensWidthMm: 55,
+      bridgeMm: 19,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Softly curved oval acetate frame hallmarked by the enamelled metal triangle emblem."
+  },
+  {
+    id: "prada-minimal-baroque-round-sunglasses",
+    brand: "Prada",
+    productLine: "Minimal Baroque",
+    modelName: "Prada Minimal Baroque Round Sunglasses",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-minimal-baroque-sunglasses/0PR_27NS_E1AB_F05S0_C_055",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Oversized Round",
+      frameMaterial: "Curvilinear Sculpted Acetate Scrollwork",
+      lensWidthMm: 55,
+      bridgeMm: 22,
+      templeMm: 135,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 2)",
+      originCountry: "Italy"
+    },
+    reason: "Historical 2011 runway showstopper with theatrical Rococo scrollwork temples."
+  },
+  {
+    id: "prada-panthos-metal-sunglasses",
+    brand: "Prada",
+    productLine: "Metal Collection",
+    modelName: "Prada Panthos Metal Sunglasses",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-panthos-sunglasses/0PR_55WS_E1AB_F05S0_C_054",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Round Panthos",
+      frameMaterial: "Titanium Metal Double Bridge",
+      lensWidthMm: 54,
+      bridgeMm: 19,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Featherweight Japanese titanium panthos frame with double bridge and laser-engraved Prada logo."
+  },
+
+  // ==========================================
+  // 10. Ray-Ban (10 models, United States US / Italy IT)
+  // ==========================================
+  {
+    id: "ray-ban-original-wayfarer-classic-rb2140",
+    brand: "Ray-Ban",
+    productLine: "Wayfarer",
+    modelName: "Original Wayfarer Classic RB2140",
+    sourceUrl: "https://www.ray-ban.com/usa/sunglasses/RB2140%20MALE%20original%20wayfarer%20classic-black/805289126577",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Square Wayfarer",
+      frameMaterial: "Acetate with Signature Pantoscopic Forward Tilt",
+      lensWidthMm: 50,
+      bridgeMm: 22,
+      templeMm: 150,
+      polarization: false,
+      uvProtection: "100% UV Protection (G-15 Green Crystal Glass)",
+      originCountry: "Italy"
+    },
+    reason: "The most recognizable sunglasses in history, designed in 1952 by Raymond Stegeman with forward pantoscopic angle."
+  },
+  {
+    id: "ray-ban-aviator-classic-rb3025",
+    brand: "Ray-Ban",
+    productLine: "Aviator",
+    modelName: "Aviator Classic RB3025",
+    sourceUrl: "https://www.ray-ban.com/usa/sunglasses/RB3025%20MALE%20aviator%20classic-gold/805289602057",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Teardrop Pilot",
+      frameMaterial: "Gold Monel Metal Wire",
+      lensWidthMm: 58,
+      bridgeMm: 14,
+      templeMm: 135,
+      polarization: false,
+      uvProtection: "100% UV Protection (G-15 Green Mineral Glass)",
+      originCountry: "Italy"
+    },
+    reason: "Originally created in 1937 for US military aviators to protect pilots from high-altitude glare."
+  },
+  {
+    id: "ray-ban-clubmaster-classic-rb3016",
+    brand: "Ray-Ban",
+    productLine: "Clubmaster",
+    modelName: "Clubmaster Classic RB3016",
+    sourceUrl: "https://www.ray-ban.com/usa/sunglasses/RB3016%20MALE%20clubmaster%20classic-black/805289653653",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Browline",
+      frameMaterial: "Black Acetate Brow with Gold Metal Rim Chassis",
+      lensWidthMm: 51,
+      bridgeMm: 21,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (G-15 Crystal Glass)",
+      originCountry: "Italy"
+    },
+    reason: "Retro browline design inspired by 1950s intellectuals and counter-culture leaders."
+  },
+  {
+    id: "ray-ban-round-metal-rb3447",
+    brand: "Ray-Ban",
+    productLine: "Round Metal",
+    modelName: "Round Metal RB3447",
+    sourceUrl: "https://www.ray-ban.com/usa/sunglasses/RB3447%20UNISEX%20round%20metal-gold/805289439899",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Round",
+      frameMaterial: "Tubular Gold Metal Wire with Curved Brow Bar",
+      lensWidthMm: 50,
+      bridgeMm: 21,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (G-15 Crystal)",
+      originCountry: "Italy"
+    },
+    reason: "1960s counter-culture icon worn by legendary musicians, featuring curved brow bar and crystal lenses."
+  },
+  {
+    id: "ray-ban-justin-rb4165",
+    brand: "Ray-Ban",
+    productLine: "Justin",
+    modelName: "Justin RB4165",
+    sourceUrl: "https://www.ray-ban.com/usa/sunglasses/RB4165%20MALE%20justin%20classic-black/805289526292",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Rectangular Wayfarer",
+      frameMaterial: "Rubberized Matte Nylon",
+      lensWidthMm: 55,
+      bridgeMm: 16,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Grey Gradient Polycarbonate)",
+      originCountry: "Italy"
+    },
+    reason: "Fresh modern evolution of the Wayfarer with rubberized matte finish and gradient lenses."
+  },
+  {
+    id: "ray-ban-erika-rb4171",
+    brand: "Ray-Ban",
+    productLine: "Erika",
+    modelName: "Erika RB4171",
+    sourceUrl: "https://www.ray-ban.com/usa/sunglasses/RB4171%20FEMALE%20erika%20classic-black/805289742463",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Round Oversized",
+      frameMaterial: "Soft Rubberized Nylon with Ultra-thin Metal Temples",
+      lensWidthMm: 54,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Grey Gradient)",
+      originCountry: "Italy"
+    },
+    reason: "Vintage-inspired oversized round sunglasses featuring soft-touch nylon and metal wire temples."
+  },
+  {
+    id: "ray-ban-hexagonal-flat-lenses-rb3548n",
+    brand: "Ray-Ban",
+    productLine: "Hexagonal",
+    modelName: "Hexagonal Flat Lenses RB3548N",
+    sourceUrl: "https://www.ray-ban.com/usa/sunglasses/RB3548N%20UNISEX%20hexagonal%20flat%20lenses-gold/8053672611564",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Hexagonal",
+      frameMaterial: "Gold Metal Wire with Flat Crystal Lenses",
+      lensWidthMm: 51,
+      bridgeMm: 21,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Evolution of the Round Metal frame featuring geometric hexagonal profile and flat glass lenses."
+  },
+  {
+    id: "ray-ban-predator-2-rb2027",
+    brand: "Ray-Ban",
+    productLine: "Predator",
+    modelName: "Predator 2 RB2027",
+    sourceUrl: "https://www.ray-ban.com/usa/sunglasses/RB2027%20MALE%20predator%202-black/805289004561",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Wraparound Sport Rectangular",
+      frameMaterial: "Matte Black Nylon Wrap",
+      lensWidthMm: 62,
+      bridgeMm: 19,
+      templeMm: 130,
+      polarization: true,
+      uvProtection: "100% UV Protection (Polarized G-15)",
+      originCountry: "Italy"
+    },
+    reason: "Iconic Men in Black wraparound sunglasses engineered for full peripheral protection."
+  },
+  {
+    id: "ray-ban-new-wayfarer-rb2132",
+    brand: "Ray-Ban",
+    productLine: "New Wayfarer",
+    modelName: "New Wayfarer RB2132",
+    sourceUrl: "https://www.ray-ban.com/usa/sunglasses/RB2132%20MALE%20new%20wayfarer%20classic-black/805289052432",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Square Rectangular",
+      frameMaterial: "Nylon Propionate with Less Pantoscopic Tilt",
+      lensWidthMm: 55,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: true,
+      uvProtection: "100% UV Protection (Polarized Green)",
+      originCountry: "Italy"
+    },
+    reason: "Easier-to-wear modern adaptation of the classic Wayfarer with smaller frame and softer eye shape."
+  },
+  {
+    id: "ray-ban-caravan-rb3136",
+    brand: "Ray-Ban",
+    productLine: "Caravan",
+    modelName: "Caravan RB3136",
+    sourceUrl: "https://www.ray-ban.com/usa/sunglasses/RB3136%20MALE%20caravan-gold/805289004127",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Geometric Square Aviator",
+      frameMaterial: "Monel Metal with Double Brow Bar",
+      lensWidthMm: 58,
+      bridgeMm: 15,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (G-15 Crystal)",
+      originCountry: "Italy"
+    },
+    reason: "Streamlined geometric square metal aviator alternative launched in 1957, beloved by Robert De Niro in Taxi Driver."
+  },
+
+  // ==========================================
+  // 11. Saint Laurent (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "saint-laurent-sl-m94-cat-eye-sunglasses",
+    brand: "Saint Laurent",
+    productLine: "SL M94",
+    modelName: "SL M94 Cat-Eye Sunglasses",
+    sourceUrl: "https://www.ysl.com/en-us/pr/sl-m94-671762Y99011000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Cat-Eye",
+      frameMaterial: "Gloss Black Acetate with YSL Monogram Hinge",
+      lensWidthMm: 53,
+      bridgeMm: 19,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Iconic modern Saint Laurent cat-eye frame featuring the interlocking gold YSL Cassandre monogram embedded in the hinge."
+  },
+  {
+    id: "saint-laurent-sl-51-square-sunglasses",
+    brand: "Saint Laurent",
+    productLine: "SL 51",
+    modelName: "SL 51 Square Sunglasses",
+    sourceUrl: "https://www.ysl.com/en-us/pr/sl-51-420000Y99011000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Square",
+      frameMaterial: "Hand-polished Acetate with Metal Corner Angles",
+      lensWidthMm: 50,
+      bridgeMm: 22,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Hedi Slimane's definitive square silhouette featuring subtle metal corner angles on the frame front."
+  },
+  {
+    id: "saint-laurent-sl-276-mica-cat-eye-sunglasses",
+    brand: "Saint Laurent",
+    productLine: "Mica",
+    modelName: "SL 276 Mica Cat-Eye Sunglasses",
+    sourceUrl: "https://www.ysl.com/en-us/pr/sl-276-mica-560035Y99011000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Sharp Architectural Cat-Eye",
+      frameMaterial: "Handcrafted Acetate",
+      lensWidthMm: 53,
+      bridgeMm: 16,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "The cult-favorite Mica frame, distinguished by its angular geometric cat-eye browline."
+  },
+  {
+    id: "saint-laurent-sl-461-square-acetate-sunglasses",
+    brand: "Saint Laurent",
+    productLine: "SL 461",
+    modelName: "SL 461 Square Acetate Sunglasses",
+    sourceUrl: "https://www.ysl.com/en-us/pr/sl-461-660309Y99011000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Flat Top Square",
+      frameMaterial: "Heavy Black Acetate",
+      lensWidthMm: 54,
+      bridgeMm: 19,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Substantial flat-top square sunglasses bearing laser-engraved Saint Laurent lettering on temples."
+  },
+  {
+    id: "saint-laurent-sl-302-lisa-geometric-sunglasses",
+    brand: "Saint Laurent",
+    productLine: "Lisa",
+    modelName: "SL 302 Lisa Geometric Sunglasses",
+    sourceUrl: "https://www.ysl.com/en-us/pr/sl-302-lisa-572238Y99011000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Hexagonal Wireframe",
+      frameMaterial: "Ultra-thin Silver Metal Wire",
+      lensWidthMm: 55,
+      bridgeMm: 17,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 2)",
+      originCountry: "Italy"
+    },
+    reason: "Delicate hexagonal geometric wireframe with mineral glass lenses."
+  },
+  {
+    id: "saint-laurent-sl-m103-oval-sunglasses",
+    brand: "Saint Laurent",
+    productLine: "SL M103",
+    modelName: "SL M103 Oval Sunglasses",
+    sourceUrl: "https://www.ysl.com/en-us/pr/sl-m103-705700Y99011000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Oval",
+      frameMaterial: "Curved Black Acetate with YSL Monogram",
+      lensWidthMm: 54,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Curved 90s-inspired oval sunglasses featuring prominent YSL Cassandre logo on temples."
+  },
+  {
+    id: "saint-laurent-sl-574-rectangular-sunglasses",
+    brand: "Saint Laurent",
+    productLine: "SL 574",
+    modelName: "SL 574 Rectangular Sunglasses",
+    sourceUrl: "https://www.ysl.com/en-us/pr/sl-574-733912Y99011000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Narrow Rectangular",
+      frameMaterial: "Beveled Acetate",
+      lensWidthMm: 53,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Low-profile rectangular acetate frame channeling 1990s minimalist rock style."
+  },
+  {
+    id: "saint-laurent-sl-108-aviator-metal-sunglasses",
+    brand: "Saint Laurent",
+    productLine: "SL 108",
+    modelName: "SL 108 Aviator Metal Sunglasses",
+    sourceUrl: "https://www.ysl.com/en-us/pr/sl-108-461742Y99011000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Teardrop Aviator",
+      frameMaterial: "Matte Black Metal Wire Double Bridge",
+      lensWidthMm: 59,
+      bridgeMm: 14,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Minimalist pilot sunglasses executed with ultra-thin matte black metal wire."
+  },
+  {
+    id: "saint-laurent-sl-402-shield-sunglasses",
+    brand: "Saint Laurent",
+    productLine: "SL 402",
+    modelName: "SL 402 Shield Sunglasses",
+    sourceUrl: "https://www.ysl.com/en-us/pr/sl-402-635970Y99011000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Flat Brow Shield",
+      frameMaterial: "Monobloc Acetate with Flush Shield Lens",
+      lensWidthMm: 142,
+      bridgeMm: 0,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Futuristic flat-brow mask shield integrating continuous dark lenses into an acetate bridge."
+  },
+  {
+    id: "saint-laurent-sl-557-shade-round-sunglasses",
+    brand: "Saint Laurent",
+    productLine: "Shade",
+    modelName: "SL 557 Shade Round Sunglasses",
+    sourceUrl: "https://www.ysl.com/en-us/pr/sl-557-shade-718912Y99011000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Oversized Round",
+      frameMaterial: "Thick Hand-polished Acetate",
+      lensWidthMm: 53,
+      bridgeMm: 21,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Dramatic thick-rimmed round sunglasses offering dark panoramic shade."
+  },
+
+  // ==========================================
+  // 12. Tom Ford (10 models, United States US / Italy IT)
+  // ==========================================
+  {
+    id: "tom-ford-tf0237-snowdon-sunglasses",
+    brand: "Tom Ford",
+    productLine: "Snowdon",
+    modelName: "TF0237 Snowdon Sunglasses",
+    sourceUrl: "https://www.tomfordfashion.com/snowdon-sunglasses/FT0237.html",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Wayfarer Square",
+      frameMaterial: "Heavy Handcrafted Italian Acetate",
+      lensWidthMm: 52,
+      bridgeMm: 20,
+      templeMm: 145,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3 Polarized)",
+      originCountry: "Italy"
+    },
+    reason: "Immortalized by Daniel Craig as James Bond in Spectre, boasting substantial thick acetate and gold T temples."
+  },
+  {
+    id: "tom-ford-tf0035-charles-aviator-sunglasses",
+    brand: "Tom Ford",
+    productLine: "Charles",
+    modelName: "TF0035 Charles Aviator Sunglasses",
+    sourceUrl: "https://www.tomfordfashion.com/charles-sunglasses/FT0035.html",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Teardrop Aviator",
+      frameMaterial: "Rose Gold Finish Metal with Crisscross Bridge",
+      lensWidthMm: 62,
+      bridgeMm: 12,
+      templeMm: 130,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Tom Ford's signature aviator featuring figure-eight infinity crisscross front bridge and metal T hinges."
+  },
+  {
+    id: "tom-ford-tf0546-miranda-butterfly-sunglasses",
+    brand: "Tom Ford",
+    productLine: "Miranda",
+    modelName: "TF0546 Miranda Butterfly Sunglasses",
+    sourceUrl: "https://www.tomfordfashion.com/miranda-sunglasses/FT0546.html",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Open Butterfly",
+      frameMaterial: "Sculpted Metal Wire with Cutaway Floating Lenses",
+      lensWidthMm: 68,
+      bridgeMm: 10,
+      templeMm: 115,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 2 Gradient)",
+      originCountry: "Italy"
+    },
+    reason: "Dramatic open-frame butterfly silhouette with signature cutaways between the frame and floating lenses."
+  },
+  {
+    id: "tom-ford-tf0690-sye-aviator-sunglasses",
+    brand: "Tom Ford",
+    productLine: "Sye",
+    modelName: "TF0690 Sye Aviator Sunglasses",
+    sourceUrl: "https://www.tomfordfashion.com/sye-sunglasses/FT0690.html",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Square Aviator",
+      frameMaterial: "Gold-tone Metal with Acetate Sweatbar",
+      lensWidthMm: 59,
+      bridgeMm: 14,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Squared aviator with double brow bar and Tom Ford signature metal T insert."
+  },
+  {
+    id: "tom-ford-tf0803-wyatt-cat-eye-sunglasses",
+    brand: "Tom Ford",
+    productLine: "Wyatt",
+    modelName: "TF0803 Wyatt Cat-Eye Sunglasses",
+    sourceUrl: "https://www.tomfordfashion.com/wyatt-cat-eye/FT0803.html",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Architectural Cat-Eye",
+      frameMaterial: "Hand-beveled Italian Acetate",
+      lensWidthMm: 55,
+      bridgeMm: 20,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "1950s cinematic cat-eye frame punctuated by rose-gold T temple hardware."
+  },
+  {
+    id: "tom-ford-tf0751-dax-rectangular-sunglasses",
+    brand: "Tom Ford",
+    productLine: "Dax",
+    modelName: "TF0751 Dax Rectangular Sunglasses",
+    sourceUrl: "https://www.tomfordfashion.com/dax-sunglasses/FT0751.html",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Low-profile Rectangular",
+      frameMaterial: "Dense Block Acetate",
+      lensWidthMm: 50,
+      bridgeMm: 21,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Dense block-acetate rectangular sunglasses providing commanding presence."
+  },
+  {
+    id: "tom-ford-tf0879-bailey-round-sunglasses",
+    brand: "Tom Ford",
+    productLine: "Bailey",
+    modelName: "TF0879 Bailey Round Sunglasses",
+    sourceUrl: "https://www.tomfordfashion.com/bailey-sunglasses/FT0879.html",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Round Panto",
+      frameMaterial: "Acetate with Keyhole Bridge and Metal T",
+      lensWidthMm: 51,
+      bridgeMm: 20,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Vintage panto silhouette featuring tailored keyhole bridge and signature T logo."
+  },
+  {
+    id: "tom-ford-tf0935-eric-navigator-sunglasses",
+    brand: "Tom Ford",
+    productLine: "Eric",
+    modelName: "TF0935 Eric Navigator Sunglasses",
+    sourceUrl: "https://www.tomfordfashion.com/eric-navigator/FT0935.html",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Square Navigator",
+      frameMaterial: "Acetate with Metal Top Bar",
+      lensWidthMm: 56,
+      bridgeMm: 17,
+      templeMm: 145,
+      polarization: true,
+      uvProtection: "100% UV Protection (Category 3 Polarized)",
+      originCountry: "Italy"
+    },
+    reason: "Bold navigator frame with flat top metal bar and polarized lenses."
+  },
+  {
+    id: "tom-ford-tf0590-bryan-square-sunglasses",
+    brand: "Tom Ford",
+    productLine: "Bryan",
+    modelName: "TF0590 Bryan Square Sunglasses",
+    sourceUrl: "https://www.tomfordfashion.com/bryan-sunglasses/FT0590.html",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Flat Top Square",
+      frameMaterial: "Black Acetate with Metallic T Inserts",
+      lensWidthMm: 51,
+      bridgeMm: 21,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Modern flat-top square sunglasses featuring polished metal T hinges."
+  },
+  {
+    id: "tom-ford-tf0714-rhett-oversized-sunglasses",
+    brand: "Tom Ford",
+    productLine: "Rhett",
+    modelName: "TF0714 Rhett Oversized Sunglasses",
+    sourceUrl: "https://www.tomfordfashion.com/rhett-sunglasses/FT0714.html",
+    sourceRegion: "US",
+    attrs: {
+      frameShape: "Oversized Geometric",
+      frameMaterial: "70s Havana Acetate",
+      lensWidthMm: 55,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 2 Gradient)",
+      originCountry: "Italy"
+    },
+    reason: "Bold 70s geometric oversized acetate frame with gradient lenses."
+  },
+
+  // ==========================================
+  // 13. Versace (10 models, Italy IT - MEDUSA BIGGIE ICONS!)
+  // ==========================================
+  {
+    id: "versace-ve4361-medusa-biggie-sunglasses",
+    brand: "Versace",
+    productLine: "Medusa Biggie",
+    modelName: "VE4361 Medusa Biggie Sunglasses",
+    sourceUrl: "https://www.versace.com/us/en/men/accessories/eyewear/sunglasses/medusa-biggie-sunglasses-black/GB4361-GB18753.html",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Low-Profile Hexagonal Rectangular",
+      frameMaterial: "Glossy Black Nylon and Gold-tone Metal Medallion",
+      lensWidthMm: 53,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Iconic hip-hop silhouette immortalized by The Notorious B.I.G., featuring wide temples and golden Medusa medallions."
+  },
+  {
+    id: "versace-ve2199-medusa-pilot-sunglasses",
+    brand: "Versace",
+    productLine: "Medusa Pilot",
+    modelName: "VE2199 Medusa Pilot Sunglasses",
+    sourceUrl: "https://www.versace.com/us/en/men/accessories/eyewear/sunglasses/medusa-pilot-sunglasses-gold/GB2199-10028756.html",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Rimless Shield Aviator",
+      frameMaterial: "Gold Metal Wire with Medusa Rivets",
+      lensWidthMm: 56,
+      bridgeMm: 15,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Rimless aviator detailed with miniature Medusa studs holding the lenses."
+  },
+  {
+    id: "versace-ve4395-medusa-halo-sunglasses",
+    brand: "Versace",
+    productLine: "Medusa Halo",
+    modelName: "VE4395 Medusa Halo Sunglasses",
+    sourceUrl: "https://www.versace.com/us/en/men/accessories/eyewear/sunglasses/medusa-halo-sunglasses/GB4395-GB18754.html",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Cat-Eye Rectangular",
+      frameMaterial: "Acetate with Openwork Gold Medusa Halo",
+      lensWidthMm: 54,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Cat-eye rectangular silhouette featuring circular openwork golden Medusa halo medallions."
+  },
+  {
+    id: "versace-ve2207-greca-navigator-sunglasses",
+    brand: "Versace",
+    productLine: "Greca",
+    modelName: "VE2207 Greca Navigator Sunglasses",
+    sourceUrl: "https://www.versace.com/us/en/men/accessories/eyewear/sunglasses/greca-navigator-sunglasses/GB2207-10028760.html",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Navigator",
+      frameMaterial: "Gold Metal with Laser-engraved Greca Pattern",
+      lensWidthMm: 60,
+      bridgeMm: 15,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Double bridge navigator sunglasses engraved with the iconic Greca Greek key motif along the brow and temples."
+  },
+  {
+    id: "versace-ve4435-maxi-medusa-rectangular-sunglasses",
+    brand: "Versace",
+    productLine: "Maxi Medusa",
+    modelName: "VE4435 Maxi Medusa Rectangular Sunglasses",
+    sourceUrl: "https://www.versace.com/us/en/men/accessories/eyewear/sunglasses/maxi-medusa-sunglasses/GB4435-GB18755.html",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Chunky Rectangular",
+      frameMaterial: "Heavy Beveled Acetate",
+      lensWidthMm: 55,
+      bridgeMm: 19,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Chunky beveled acetate sunglasses equipped with an oversized gold-tone Medusa emblem."
+  },
+  {
+    id: "versace-ve4402-tribute-butterfly-sunglasses",
+    brand: "Versace",
+    productLine: "Tribute",
+    modelName: "VE4402 Tribute Butterfly Sunglasses",
+    sourceUrl: "https://www.versace.com/us/en/men/accessories/eyewear/sunglasses/tribute-butterfly-sunglasses/GB4402-GB18756.html",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Oversized Butterfly",
+      frameMaterial: "Black Acetate with Tribute Medusa Medallion",
+      lensWidthMm: 56,
+      bridgeMm: 17,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Dramatic oversized butterfly silhouette paying homage to Gianni Versace's 1990s runway spectacles."
+  },
+  {
+    id: "versace-ve2220-greca-shield-sunglasses",
+    brand: "Versace",
+    productLine: "Greca Shield",
+    modelName: "VE2220 Greca Shield Sunglasses",
+    sourceUrl: "https://www.versace.com/us/en/men/accessories/eyewear/sunglasses/greca-shield-sunglasses/GB2220-10028741.html",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Wraparound Shield",
+      frameMaterial: "Gold Metal Top Bar with Greca Motif",
+      lensWidthMm: 141,
+      bridgeMm: 0,
+      templeMm: 125,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3 Mirrored)",
+      originCountry: "Italy"
+    },
+    reason: "Ultra-bold wraparound shield lens crowned with laser-cut Greca pattern top bar."
+  },
+  {
+    id: "versace-ve4388-hexagonal-medusa-sunglasses",
+    brand: "Versace",
+    productLine: "Medusa Geometric",
+    modelName: "VE4388 Hexagonal Medusa Sunglasses",
+    sourceUrl: "https://www.versace.com/us/en/men/accessories/eyewear/sunglasses/hexagonal-medusa-sunglasses/GB4388-GB18757.html",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Hexagonal",
+      frameMaterial: "Faceted Black Acetate with Gold Hardware",
+      lensWidthMm: 54,
+      bridgeMm: 19,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Faceted hexagonal frame adorned with signature gold Medusa temple hardware."
+  },
+  {
+    id: "versace-ve2235-medusa-infinity-sunglasses",
+    brand: "Versace",
+    productLine: "Medusa Infinity",
+    modelName: "VE2235 Medusa Infinity Sunglasses",
+    sourceUrl: "https://www.versace.com/us/en/men/accessories/eyewear/sunglasses/medusa-infinity-sunglasses/GB2235-10028760.html",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Rimless Aviator",
+      frameMaterial: "Gold Metal Wire with Floating Lens Construction",
+      lensWidthMm: 60,
+      bridgeMm: 14,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Rimless floating lens silhouette anchored by central golden Medusa stud on the bridge."
+  },
+  {
+    id: "versace-ve4393-oval-medusa-biggie-sunglasses",
+    brand: "Versace",
+    productLine: "Medusa Biggie",
+    modelName: "VE4393 Oval Medusa Biggie Sunglasses",
+    sourceUrl: "https://www.versace.com/us/en/men/accessories/eyewear/sunglasses/oval-medusa-biggie/GB4393-GB18751.html",
+    sourceRegion: "IT",
+    attrs: {
+      frameShape: "Elongated Oval",
+      frameMaterial: "Glossy Acetate with Gold Medusa Biggie Medallion",
+      lensWidthMm: 51,
+      bridgeMm: 20,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Sleek elongated oval interpretation of the iconic 90s Medusa Biggie hardware."
+  },
+
+  // ==========================================
+  // 14. Balenciaga (10 models, France FR / Italy IT / Japan JP)
+  // ==========================================
+  {
+    id: "balenciaga-bat-rectangle-sunglasses",
+    brand: "Balenciaga",
+    productLine: "Bat",
+    modelName: "Bat Rectangle Sunglasses",
+    sourceUrl: "https://www.balenciaga.com/en-us/bat-rectangle-sunglasses-black-695333T00071000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Extreme Aerodynamic Wrap",
+      frameMaterial: "Bio-based Nylon with Pointed Temple Tips",
+      lensWidthMm: 60,
+      bridgeMm: 15,
+      templeMm: 125,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Extreme aerodynamic wraparound design with bat-wing contours and white laser-engraved Balenciaga logo."
+  },
+  {
+    id: "balenciaga-swift-oval-sunglasses",
+    brand: "Balenciaga",
+    productLine: "Swift",
+    modelName: "Swift Oval Sunglasses",
+    sourceUrl: "https://www.balenciaga.com/en-us/swift-oval-sunglasses-black-671762T00071000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Futuristic Oval Wrap",
+      frameMaterial: "Bio-based Injected Nylon",
+      lensWidthMm: 68,
+      bridgeMm: 16,
+      templeMm: 115,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Alien-inspired organic wraparound sunglasses favored by Kim Kardashian and Justin Bieber."
+  },
+  {
+    id: "balenciaga-dynasty-rectangular-sunglasses",
+    brand: "Balenciaga",
+    productLine: "Dynasty",
+    modelName: "Dynasty Rectangular Sunglasses",
+    sourceUrl: "https://www.balenciaga.com/en-us/dynasty-rectangular-sunglasses-black-705700T00071000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Rectangular",
+      frameMaterial: "Thick Acetate with Openwork Vintage Gold BB Hinge",
+      lensWidthMm: 53,
+      bridgeMm: 19,
+      templeMm: 135,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Runway favorite featuring thick square acetate and bold openwork vintage gold BB logo hardware on the temples."
+  },
+  {
+    id: "balenciaga-bb0096s-rectangular-sunglasses",
+    brand: "Balenciaga",
+    productLine: "Minimalist",
+    modelName: "BB0096S Rectangular Sunglasses",
+    sourceUrl: "https://www.balenciaga.com/en-us/bb0096s-sunglasses-black-570533T00071000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Narrow Rectangular",
+      frameMaterial: "Ultra-slim Handcrafted Acetate",
+      lensWidthMm: 51,
+      bridgeMm: 18,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Sleek narrow 1990s rectangular sunglasses with bold white Balenciaga logo on temples."
+  },
+  {
+    id: "balenciaga-mono-cat-shield-sunglasses",
+    brand: "Balenciaga",
+    productLine: "Mono Cat",
+    modelName: "Mono Cat Shield Sunglasses",
+    sourceUrl: "https://www.balenciaga.com/en-us/mono-cat-sunglasses-black-621644T00071000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Monolens Cat Shield",
+      frameMaterial: "Rimless Continuous Nylon Shield with Raw Top Edge",
+      lensWidthMm: 145,
+      bridgeMm: 0,
+      templeMm: 125,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Single continuous curved nylon visor with raw razor-cut top edge and minimalist logo."
+  },
+  {
+    id: "balenciaga-ski-cat-eye-sunglasses",
+    brand: "Balenciaga",
+    productLine: "Ski",
+    modelName: "Ski Cat-Eye Sunglasses",
+    sourceUrl: "https://www.balenciaga.com/en-us/ski-cat-sunglasses-black-658250T00071000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Aerodynamic Ski Cat-Eye",
+      frameMaterial: "Injected Polyurethane with Integrated Nose Pads",
+      lensWidthMm: 65,
+      bridgeMm: 14,
+      templeMm: 125,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3 Mirrored)",
+      originCountry: "Italy"
+    },
+    reason: "Winter sportswear-inspired aerodynamic cat-eye goggle silhouette with mirrored flash."
+  },
+  {
+    id: "balenciaga-led-frame-sunglasses",
+    brand: "Balenciaga",
+    productLine: "LED Frame",
+    modelName: "LED Frame Sunglasses",
+    sourceUrl: "https://www.balenciaga.com/en-us/led-frame-sunglasses-black-621648T00071000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Thick Rectangular",
+      frameMaterial: "High-tech Nylon with Multi-color Illuminating LED Temples",
+      lensWidthMm: 55,
+      bridgeMm: 18,
+      templeMm: 145,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Wearable technology marvel featuring USB-rechargeable multi-colored LED Balenciaga logos lighting up the temples."
+  },
+  {
+    id: "balenciaga-wire-cat-metal-sunglasses",
+    brand: "Balenciaga",
+    productLine: "Wire Cat",
+    modelName: "Wire Cat Metal Sunglasses",
+    sourceUrl: "https://www.balenciaga.com/en-us/wire-cat-sunglasses-black-719580T00071000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Curved Visor Cat-Eye",
+      frameMaterial: "Ultra-thin Rimless Metal Wire",
+      lensWidthMm: 62,
+      bridgeMm: 13,
+      templeMm: 135,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Japan"
+    },
+    reason: "Delicate rimless metal wire frame supporting curved visor lenses in an insectoid silhouette."
+  },
+  {
+    id: "balenciaga-hourglass-rectangular-sunglasses",
+    brand: "Balenciaga",
+    productLine: "Hourglass",
+    modelName: "Hourglass Rectangular Sunglasses",
+    sourceUrl: "https://www.balenciaga.com/en-us/hourglass-sunglasses-black-668820T00071000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "Curvilinear Rectangular",
+      frameMaterial: "Hand-sculpted Acetate echoing Hourglass Bag Base",
+      lensWidthMm: 52,
+      bridgeMm: 20,
+      templeMm: 140,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Sculpted with the distinct concave bottom curve echoing the base of the iconic Hourglass handbag."
+  },
+  {
+    id: "balenciaga-wrap-2-0-shield-sunglasses",
+    brand: "Balenciaga",
+    productLine: "Wrap",
+    modelName: "Wrap 2.0 Shield Sunglasses",
+    sourceUrl: "https://www.balenciaga.com/en-us/wrap-2.0-sunglasses-black-739210T00071000.html",
+    sourceRegion: "FR",
+    attrs: {
+      frameShape: "High-Curve Wraparound Shield",
+      frameMaterial: "Bio-based Nylon with Panoramic Lens",
+      lensWidthMm: 140,
+      bridgeMm: 0,
+      templeMm: 120,
+      polarization: false,
+      uvProtection: "100% UV Protection (Category 3)",
+      originCountry: "Italy"
+    },
+    reason: "Panoramic bio-nylon sport shield engineered with extreme wrap curvature for total peripheral shielding."
+  }
+];
+
+export function generateDataSunglassesTs(): string {
+  const parts: string[] = [
+    'import type { CensusManifestFile } from "../../../src/domain/coverage-targets";',
+    'import { makeEntry } from "./common";',
+    '',
+    'export const sunglassesCensus: CensusManifestFile = {',
+    '  $schema: "https://json-schema.org/draft/2020-12/schema",',
+    '  leafKey: "sunglasses",',
+    '  displayName: "Sunglasses & Eyewear",',
+    '  censusDate: "2026-10-11",',
+    '  supplyExceptions: [],',
+    '  entries: [',
+  ];
+
+  let currentBrand = "";
+  let brandIndex = 0;
+
+  for (const item of allSunglasses) {
+    if (item.brand !== currentBrand) {
+      currentBrand = item.brand;
+      brandIndex++;
+      parts.push(`    // ${brandIndex}. ${currentBrand} (10 models)`);
+    }
+
+    parts.push("    makeEntry({");
+    parts.push(`      id: ${JSON.stringify(item.id)},`);
+    parts.push(`      brand: ${JSON.stringify(item.brand)},`);
+    if (item.productLine) {
+      parts.push(`      productLine: ${JSON.stringify(item.productLine)},`);
+    }
+    parts.push(`      modelName: ${JSON.stringify(item.modelName)},`);
+    parts.push(`      sourceUrl: ${JSON.stringify(item.sourceUrl)},`);
+    parts.push(`      sourceRegion: ${JSON.stringify(item.sourceRegion)},`);
+    if (item.variants) {
+      parts.push(`      variants: ${JSON.stringify(item.variants)},`);
+    }
+    parts.push("      attrs: {");
+    parts.push(`        frameShape: ${JSON.stringify(item.attrs.frameShape)},`);
+    parts.push(`        frameMaterial: ${JSON.stringify(item.attrs.frameMaterial)},`);
+    const bridgeMmVal = item.attrs.bridgeMm > 0 ? item.attrs.bridgeMm : 1;
+    const polarizationVal = item.attrs.polarization ? "Polarized" : "Non-Polarized";
+    parts.push(`        lensWidthMm: ${item.attrs.lensWidthMm},`);
+    parts.push(`        bridgeMm: ${bridgeMmVal},`);
+    parts.push(`        templeMm: ${item.attrs.templeMm},`);
+    parts.push(`        polarization: ${JSON.stringify(polarizationVal)},`);
+    parts.push(`        uvProtection: ${JSON.stringify(item.attrs.uvProtection)},`);
+    parts.push(`        originCountry: ${JSON.stringify(item.attrs.originCountry)},`);
+    parts.push("      },");
+    parts.push(`      reason: ${JSON.stringify(item.reason)},`);
+    parts.push("    }),");
+  }
+
+  parts.push("  ],");
+  parts.push("};");
+  parts.push("");
+
+  return parts.join("\n");
+}
+
+const outputPath = path.resolve(process.cwd(), "scripts/census/wave4/data-sunglasses.ts");
+const content = generateDataSunglassesTs();
+fs.writeFileSync(outputPath, content, "utf-8");
+console.log(`Successfully generated ${allSunglasses.length} sunglasses models to ${outputPath}`);

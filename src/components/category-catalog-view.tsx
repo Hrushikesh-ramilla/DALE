@@ -29,6 +29,80 @@ import { useStore } from "./store-context";
 import { useCopilot } from "./copilot/copilot-context";
 import { formatMoney } from "@/domain/money";
 import type { CategoryBrandSummary } from "@/server/catalog-store";
+import type { Product } from "@/domain/catalog";
+
+function BrandHeroPhotograph({
+  src,
+  alt,
+  fallbackProduct,
+  brandName,
+}: {
+  src?: string;
+  alt: string;
+  fallbackProduct?: Product;
+  brandName: string;
+}) {
+  const [hasError, setHasError] = useState(false);
+
+  if (src && !hasError) {
+    return (
+      <Image
+        src={src}
+        alt={alt}
+        width={360}
+        height={240}
+        unoptimized
+        className="brand-hero-img"
+        onError={() => setHasError(true)}
+      />
+    );
+  }
+
+  if (fallbackProduct) {
+    return <ProductArt product={fallbackProduct} compact />;
+  }
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "6px",
+        color: "#cbd5e1",
+      }}
+    >
+      <div
+        style={{
+          width: "48px",
+          height: "48px",
+          borderRadius: "50%",
+          border: "1px solid rgba(255,255,255,0.15)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontFamily: "'Playfair Display', 'Cinzel', serif",
+          fontSize: "18px",
+          fontWeight: 600,
+          background: "radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 80%)",
+        }}
+      >
+        {brandName.slice(0, 2).toUpperCase()}
+      </div>
+      <span
+        style={{
+          fontSize: "11px",
+          letterSpacing: "0.1em",
+          textTransform: "uppercase",
+          opacity: 0.7,
+        }}
+      >
+        {brandName}
+      </span>
+    </div>
+  );
+}
 
 function getSmartChipsForLeaf(leaf: LeafTypeKey): string[] {
   switch (leaf) {
@@ -495,22 +569,12 @@ function CategoryCatalogContent({
                   <div className="brand-preview-visual">
                     <div className="brand-preview-stage-dome" />
                     <div className="brand-preview-shadow" />
-                    {brand.heroImage ? (
-                      <Image
-                        src={brand.heroImage}
-                        alt={`${brand.name} ${title}`}
-                        width={360}
-                        height={240}
-                        quality={90}
-                        className="brand-hero-img"
-                      />
-                    ) : brand.sampleProduct ? (
-                      <ProductArt product={brand.sampleProduct} compact />
-                    ) : (
-                      <div style={{ color: "#94a3b8", fontSize: 13 }}>
-                        {brand.name}
-                      </div>
-                    )}
+                    <BrandHeroPhotograph
+                      src={brand.heroImage}
+                      alt={`${brand.name} ${title}`}
+                      fallbackProduct={brand.sampleProduct}
+                      brandName={brand.name}
+                    />
                   </div>
 
                   <div className="card-bottom-row">

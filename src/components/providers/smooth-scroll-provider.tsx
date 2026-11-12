@@ -10,6 +10,8 @@ import {
   type ReactNode,
 } from "react";
 import Lenis from "lenis";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
   FINE_POINTER_MEDIA_QUERY,
   prefersReducedMotion,
@@ -69,46 +71,20 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const pointer = matchMedia(FINE_POINTER_MEDIA_QUERY);
     const motion = matchMedia("(prefers-reduced-motion: reduce)");
-    let frame = 0;
     let engine: Lenis | null = null;
-    let previousPosition = -1;
-    let quietFrames = 0;
-    const tick = (time: number) => {
-      frame = 0;
-      engine?.raf(time);
-      if (engine?.isScrolling !== "smooth") {
-        quietFrames = 0;
-        return;
-      }
-      const position = engine.actualScroll;
-      quietFrames =
-        Math.abs(position - previousPosition) < 0.1 &&
-        Math.abs(engine.velocity) < 0.02
-          ? quietFrames + 1
-          : 0;
-      previousPosition = position;
-      // A fractional destination can approach a half pixel forever. Only end
-      // inertia after twelve frames with no visible movement and near-zero
-      // velocity; targetScroll is not a destination during programmatic scroll.
-      if (quietFrames >= 12) {
-        cancelAnimationFrame(frame);
-        frame = 0;
-        engine.stop();
-        engine.start();
-        quietFrames = 0;
-      } else if (!frame) frame = requestAnimationFrame(tick);
-    };
+    let destroyTicker: (() => void) | undefined;
     const schedule = () => {
-      if (!frame && engine) frame = requestAnimationFrame(tick);
+      // Wakes Lenis if needed
     };
     wake.current = schedule;
     const destroy = () => {
-      cancelAnimationFrame(frame);
-      frame = 0;
+      destroyTicker?.();
+      destroyTicker = undefined;
       engine?.destroy();
       engine = null;
       current.current = null;
       delete document.documentElement.dataset.scrollEngine;
+      document.documentElement.classList.remove("is-scrolling");
     };
     const sync = () => {
       document.documentElement.classList.toggle(
@@ -117,11 +93,12 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
       );
       destroy();
       if (pointer.matches && !motion.matches) {
+        gsap.registerPlugin(ScrollTrigger);
         engine = new Lenis({
           autoRaf: false,
           smoothWheel: true,
           syncTouch: false,
-          lerp: 0.085,
+          lerp: 0.1,
           anchors: false,
           prevent: (node) =>
             !!document.getElementById("dale-home-opening") ||
@@ -131,12 +108,34 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
         });
         current.current = engine;
         if (document.getElementById("dale-home-opening")) engine.stop();
-        // A single demand-driven clock: wheel input, anchor and API scrolls wake
-        // Lenis; the clock stops again when interpolation reaches its target.
-        engine.on("virtual-scroll", schedule);
-        engine.on("scroll", () => {
-          if (engine?.isScrolling === "smooth") schedule();
+
+        // Harmonize Lenis scroll positions directly with GSAP ScrollTrigger
+        engine.on("scroll", ScrollTrigger.update);
+
+        let scrollTimer: NodeJS.Timeout | null = null;
+        engine.on("scroll", (e: { velocity?: number }) => {
+          if (Math.abs(e.velocity || 0) > 0.05) {
+            document.documentElement.classList.add("is-scrolling");
+          }
+          if (scrollTimer) clearTimeout(scrollTimer);
+          scrollTimer = setTimeout(() => {
+            document.documentElement.classList.remove("is-scrolling");
+          }, 150);
         });
+
+        // Use GSAP's high-precision ticker to drive Lenis smoothly at display refresh rate
+        const ticker = (time: number) => {
+          engine?.raf(time * 1000);
+        };
+        gsap.ticker.add(ticker);
+        gsap.ticker.lagSmoothing(0);
+
+        destroyTicker = () => {
+          gsap.ticker.remove(ticker);
+          if (scrollTimer) clearTimeout(scrollTimer);
+          document.documentElement.classList.remove("is-scrolling");
+        };
+
         document.documentElement.dataset.scrollEngine = "lenis";
       }
       setLenis(engine);

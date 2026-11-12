@@ -133,7 +133,25 @@ Docker Compose is available via `docker compose up --build`; use the matching en
 
 </details>
 
+## Customer Storefront Qualification (Milestones M0–M7 Complete)
+
+The customer storefront is fully implemented and qualified through real persisted domain services, API contracts, and responsive UI components across Milestones M0 through M7:
+
+- **Verified Release Identity:** `v1.0-m7-customer-storefront-final` (Next.js 16 standalone production build, 42 static pages, 0 type errors, 0 scoped lint errors).
+- **Supported Customer Flows:**
+  1. **AI Discovery & Shopping Decisions:** Natural conversational brief intake, grounded catalog retrieval, hard budget anchoring, and versioned decision cards with conditional group saving calculations.
+  2. **Independent Buying Circles:** Multi-buyer group coordination with shareable links, strict isolation of private shopper data, explicit opt-in consent, aggregate-only counters, and atomic stock reservation at threshold.
+  3. **Dual Payment Paths:**
+     - **PayPal Sandbox:** Full SDK button flow, cryptographic webhook validation, idempotent captures, and itemized receipt breakdown.
+     - **Cash on Delivery (COD):** Typed `unpaid_cod` order lifecycle, zero payment-provider calls, stock reservations with customer cancellation, and full status persistence across restarts.
+  4. **Customer Return & Evidence Submission:** Problem reporting on eligible paid orders, byte-level file validation (PNG/JPEG/WebP up to 4MB), hash-backed provenance, bounded AI findings disclosure (`rules` vs `live` vs `unavailable`), and an awaiting merchant review timeline.
+- **Five-Minute Customer Rehearsal:** Automated full customer journey script (`npm run rehearse:customer`) qualified across 3 consecutive qualifying runs (0.94s, 0.21s, 0.20s), comfortably within the 300-second target budget.
+- **Seller Boundary Notice:** The customer storefront ends strictly at "Awaiting merchant review". Buyers are never granted seller/reviewer privileges or resolution actions to bridge unfinished workflows. The seller portal, reviewer arbitration, and live return shipping/refunds remain deferred to the subsequent seller phase.
+
 ## Technical record
+
+- [Customer storefront implementation plan](docs/CUSTOMER-STOREFRONT-IMPLEMENTATION-PLAN.md) — current scope, milestone acceptance and release gates; [progress ledger](docs/CUSTOMER-STOREFRONT-PROGRESS.md) records implementation evidence and next steps.
+- [M0 baseline and failure inventory](docs/M0-BASELINE.md) — verified clean startup, completed regression results, corrective retests and explicit remaining exceptions.
 
 - [Architecture](docs/ARCHITECTURE.md) — agent, retrieval, persistence and website actions.
 - [Development](docs/DEVELOPMENT.md) — local setup, private configuration and verification.

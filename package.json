@@ -33,6 +33,7 @@
     "prepare:restart": "tsx scripts/prepare-restart.ts",
     "verify:queue": "tsx scripts/verify-queue.ts",
     "verify:scenarios": "tsx scripts/verify-scenarios.ts",
+    "rehearse:customer": "tsx scripts/rehearse-customer-journey.ts",
     "package:release": "node scripts/package-release.mjs",
     "format": "prettier --write src scripts tests e2e *.ts *.mjs *.json",
     "catalog:release": "tsx scripts/catalog-release.ts",

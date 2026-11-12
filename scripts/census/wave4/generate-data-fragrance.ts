@@ -1,0 +1,4127 @@
+// Complete builder script for all 22 perfume brands (220 models total)
+import fs from "node:fs";
+import path from "node:path";
+
+export interface FragranceItem {
+  id: string;
+  brand: string;
+  modelName: string;
+  sourceUrl: string;
+  sourceRegion: string;
+  variants: string[];
+  attrs: {
+    concentration: string;
+    volumeMl: number;
+    olfactoryFamily: string;
+    perfumer: string;
+    topNotes: string;
+    heartNotes: string;
+    baseNotes: string;
+  };
+  reason: string;
+}
+
+export const allPerfumes: FragranceItem[] = [
+  // ==========================================
+  // 1. Amouage (10 models, Oman OM)
+  // ==========================================
+  {
+    id: "amouage-interlude-man",
+    brand: "Amouage",
+    modelName: "Interlude Man Eau de Parfum",
+    sourceUrl: "https://amouage.com/products/interlude-man-100ml",
+    sourceRegion: "OM",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "spicy woody amber",
+      perfumer: "Pierre Negrin",
+      topNotes: "Bergamot, Oregano, Pimento Berry Oil",
+      heartNotes: "Amber, Frankincense, Cistus, Opoponax",
+      baseNotes: "Leather, Agarwood Smoke, Patchouli, Sandalwood"
+    },
+    reason: "Renowned 'Blue Beast' harmonic spicy amber radiating royal Omani frankincense."
+  },
+  {
+    id: "amouage-reflection-man",
+    brand: "Amouage",
+    modelName: "Reflection Man Eau de Parfum",
+    sourceUrl: "https://amouage.com/products/reflection-man-100ml",
+    sourceRegion: "OM",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody floral musk",
+      perfumer: "Lucas Sieuzac",
+      topNotes: "Rosemary, Red Pepper Berries, Bitter Orange Leaves",
+      heartNotes: "Neroli, Orris, Jasmine, Ylang-Ylang",
+      baseNotes: "Vetiver, Cedarwood, Sandalwood, Patchouli"
+    },
+    reason: "Sophisticated floral woody composition of sublime refinement and masculine elegance."
+  },
+  {
+    id: "amouage-jubilation-xxv-man",
+    brand: "Amouage",
+    modelName: "Jubilation XXV Man Eau de Parfum",
+    sourceUrl: "https://amouage.com/products/jubilation-xxv-man",
+    sourceRegion: "OM",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental fougère",
+      perfumer: "Bertrand Duchaufour",
+      topNotes: "Labdanum Ciste, Coriander, Orange, Davana, Frankincense, Blackberry",
+      heartNotes: "Honey, Bay, Cinnamon, Orchid, Rose, Clove, Celery Seeds, Guaiac Wood",
+      baseNotes: "Patchouli, Opoponax, Myrrh, Atlas Cedarwood, Musk, Moss, Ambergris, Oud Wood, Immortelle"
+    },
+    reason: "Celebratory masterpiece celebrating Sultanate royal heritage through resinous blackberry and incense."
+  },
+  {
+    id: "amouage-guidance",
+    brand: "Amouage",
+    modelName: "Guidance Eau de Parfum",
+    sourceUrl: "https://amouage.com/products/100ml-guidance",
+    sourceRegion: "OM",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "floral amber gourmand",
+      perfumer: "Quentin Bisch",
+      topNotes: "Pear, Frankincense, Hazelnut",
+      heartNotes: "Saffron, Rose, Jasmine Sambac, Osmanthus",
+      baseNotes: "Cistus, Sandalwood, Akigalawood, Ambergris, Vanilla"
+    },
+    reason: "Modern icon designed by Quentin Bisch uniting delicate pear, hazelnut and ethereal frankincense."
+  },
+  {
+    id: "amouage-epic-man",
+    brand: "Amouage",
+    modelName: "Epic Man Eau de Parfum",
+    sourceUrl: "https://amouage.com/products/epic-man-100ml",
+    sourceRegion: "OM",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental woody",
+      perfumer: "Randa Hammami",
+      topNotes: "Pink Pepper Berry, Frankincense, Cumin, Cardamom, Saffron, Mace, Nutmeg, Myrtle",
+      heartNotes: "Geranium, Myrrh",
+      baseNotes: "Oud, Sandalwood, Patchouli, Leather, Cedarwood, Musk"
+    },
+    reason: "Evocation of the Silk Road laden with spices, rare frankincense and opulent oud."
+  },
+  {
+    id: "amouage-honour-man",
+    brand: "Amouage",
+    modelName: "Honour Man Eau de Parfum",
+    sourceUrl: "https://amouage.com/products/honour-man",
+    sourceRegion: "OM",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "spicy woody",
+      perfumer: "Nathalie Feisthauer",
+      topNotes: "Pink Pepper, Black Pepper",
+      heartNotes: "Geranium, Elemi, Nutmeg",
+      baseNotes: "Patchouli, Frankincense, Vetiver, Cedarwood, Musk, Tonka Bean"
+    },
+    reason: "Poetic tribute to Madame Butterfly capturing dramatic tension with fiery pepper and sacred resins."
+  },
+  {
+    id: "amouage-dia-man",
+    brand: "Amouage",
+    modelName: "Dia Man Eau de Parfum",
+    sourceUrl: "https://amouage.com/products/dia-man",
+    sourceRegion: "OM",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody chypre",
+      perfumer: "Jean-Claude Ellena",
+      topNotes: "Cistus, Bigarade, Cardamom, Frankincense, Labdanum",
+      heartNotes: "Peony, Plum, Orris, Ylang-Ylang",
+      baseNotes: "Leather, Amber, Patchouli, Vetiver, Rosewood"
+    },
+    reason: "Subtle chypre masterpiece of radiant day-wear composed by legendary perfumer Jean-Claude Ellena."
+  },
+  {
+    id: "amouage-gold-man",
+    brand: "Amouage",
+    modelName: "Gold Man Eau de Parfum",
+    sourceUrl: "https://amouage.com/products/gold-man",
+    sourceRegion: "OM",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "dry floral woody",
+      perfumer: "Guy Robert",
+      topNotes: "Rose, Lily of the Valley, Silver Frankincense",
+      heartNotes: "Myrrh, Orris, Jasmine",
+      baseNotes: "Ambergris, Civet, Musk, Cedarwood, Sandalwood, Patchouli, Oakmoss"
+    },
+    reason: "Historic inaugural Guy Robert formulation crafted as the ultimate jewel of Arabian haute perfumery."
+  },
+  {
+    id: "amouage-enclave",
+    brand: "Amouage",
+    modelName: "Enclave Eau de Parfum",
+    sourceUrl: "https://amouage.com/products/enclave",
+    sourceRegion: "OM",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental fougère minty",
+      perfumer: "Julien Rasquinet",
+      topNotes: "Cardamom Oil, Spearmint Oil, Pink Pepper CO2, Cinnamon Bark Oil",
+      heartNotes: "Rose Absolute, Patchouli Heart, Olibanum Oil, Vetiver Oil",
+      baseNotes: "Saffiano, AmberXtreme, Labdanum Resinoid"
+    },
+    reason: "Breathtaking contrast portraying the sunset fjords of Musandam with cool mint and warm amber."
+  },
+  {
+    id: "amouage-royal-tobacco",
+    brand: "Amouage",
+    modelName: "Royal Tobacco Extrait de Parfum",
+    sourceUrl: "https://amouage.com/products/opus-xiv-royal-tobacco",
+    sourceRegion: "OM",
+    variants: ["100ml"],
+    attrs: {
+      concentration: "extrait de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "amber aromatic tobacco",
+      perfumer: "Cécile Zarokian",
+      topNotes: "Frankincense Oil, Elemi, Cardamom, Anise, Basil, Bergamot",
+      heartNotes: "Tobacco Absolute, Licorice Root, Lavender, Prunol, Fenugreek, Orange Blossom, Osmanthus, Rose",
+      baseNotes: "Frankincense Resinoid, Peru Balsam, Benzoin, Labdanum, Myrrh, Birch Tar, Tonka Bean, Vanilla, Vetiver, Guaiac Wood, Oud Assafi, Musks"
+    },
+    reason: "Virtuoso Opus XIV composition melding Cuban tobacco absolute and Royal Hojari frankincense."
+  },
+
+  // ==========================================
+  // 2. Chanel (10 models, France FR)
+  // ==========================================
+  {
+    id: "chanel-bleu-de-chanel-parfum",
+    brand: "Chanel",
+    modelName: "Bleu de Chanel Parfum",
+    sourceUrl: "https://www.chanel.com/us/fragrance/p/107180/bleu-de-chanel-parfum-spray/",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "150ml"],
+    attrs: {
+      concentration: "parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Olivier Polge",
+      topNotes: "Lemon Zest, Bergamot, Mint, Artemisia",
+      heartNotes: "Lavender, Pineapple, Geranium, Green Notes",
+      baseNotes: "New Caledonian Sandalwood, Cedar, Amberwood, Iso E Super, Tonka Bean"
+    },
+    reason: "The deepest and most intense expression of Bleu de Chanel, rich in precious New Caledonian sandalwood."
+  },
+  {
+    id: "chanel-bleu-de-chanel-edp",
+    brand: "Chanel",
+    modelName: "Bleu de Chanel Eau de Parfum",
+    sourceUrl: "https://www.chanel.com/us/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "150ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Jacques Polge",
+      topNotes: "Grapefruit, Lemon, Mint, Pink Pepper, Bergamot, Aldehydes, Coriander",
+      heartNotes: "Ginger, Nutmeg, Jasmine, Melon",
+      baseNotes: "Incense, Amber, Cedar, Sandalwood, Patchouli, Amberwood, Labdanum"
+    },
+    reason: "Sensual amber-infused aromatic woody pillar defining modern masculine elegance."
+  },
+  {
+    id: "chanel-allure-homme-sport-eau-extreme",
+    brand: "Chanel",
+    modelName: "Allure Homme Sport Eau Extrême",
+    sourceUrl: "https://www.chanel.com/us/fragrance/p/123560/allure-homme-sport-eau-extreme-eau-de-parfum-spray/",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "150ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "aromatic woody musk",
+      perfumer: "Jacques Polge",
+      topNotes: "Mandarin Orange, Mint, Cypress, Sage",
+      heartNotes: "Black Pepper",
+      baseNotes: "Tonka Bean, Musk, Sandalwood, Cedar"
+    },
+    reason: "Dynamic athletic pulse fusing tingling mint, tart mandarin and enveloping Venezuelan tonka bean."
+  },
+  {
+    id: "chanel-coco-mademoiselle-edp",
+    brand: "Chanel",
+    modelName: "Coco Mademoiselle Eau de Parfum",
+    sourceUrl: "https://www.chanel.com/us/fragrance/p/116520/coco-mademoiselle-eau-de-parfum-spray/",
+    sourceRegion: "FR",
+    variants: ["35ml", "50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "fresh oriental chypre",
+      perfumer: "Jacques Polge",
+      topNotes: "Orange, Mandarin Orange, Bergamot, Orange Blossom",
+      heartNotes: "Turkish Rose, Jasmine, Mimosa, Ylang-Ylang",
+      baseNotes: "Patchouli, White Musk, Vanilla, Vetiver, Tonka Bean, Opoponax"
+    },
+    reason: "Audacious modern chypre oriental capturing the irrepressible spirit of young Gabrielle Chanel."
+  },
+  {
+    id: "chanel-no-5-edp",
+    brand: "Chanel",
+    modelName: "Chanel No. 5 Eau de Parfum",
+    sourceUrl: "https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/",
+    sourceRegion: "FR",
+    variants: ["35ml", "50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "aldehyde floral",
+      perfumer: "Jacques Polge",
+      topNotes: "Aldehydes, Ylang-Ylang, Neroli, Bergamot, Peach",
+      heartNotes: "Iris, Jasmine, Rose, Lily of the Valley",
+      baseNotes: "Sandalwood, Vanilla, Oakmoss, Vetiver, Patchouli"
+    },
+    reason: "The timeless epitome of feminine perfumery reimagined by Jacques Polge in 1986."
+  },
+  {
+    id: "chanel-chance-eau-tendre-edp",
+    brand: "Chanel",
+    modelName: "Chance Eau Tendre Eau de Parfum",
+    sourceUrl: "https://www.chanel.com/us/fragrance/p/126260/chance-eau-tendre-eau-de-parfum-spray/",
+    sourceRegion: "FR",
+    variants: ["35ml", "50ml", "100ml", "150ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "floral fruity",
+      perfumer: "Olivier Polge",
+      topNotes: "Quince, Grapefruit",
+      heartNotes: "Rose Essence, Jasmine Absolute",
+      baseNotes: "White Musk"
+    },
+    reason: "Radiant, enveloping floral-fruity poetry created by Olivier Polge with intense jasmine and rose."
+  },
+  {
+    id: "chanel-coromandel-les-exclusifs",
+    brand: "Chanel",
+    modelName: "Coromandel Les Exclusifs de Chanel",
+    sourceUrl: "https://www.chanel.com/us/fragrance/p/122040/coromandel-les-exclusifs-de-chanel-eau-de-parfum/",
+    sourceRegion: "FR",
+    variants: ["75ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 75,
+      olfactoryFamily: "oriental woody amber",
+      perfumer: "Jacques Polge & Christopher Sheldrake",
+      topNotes: "Bitter Orange, Neroli, Citruses",
+      heartNotes: "Patchouli, Orris Root, Rose, Jasmine",
+      baseNotes: "White Chocolate, Benzoin, Amber, Olibanum, Incense, Woody Notes, Musk"
+    },
+    reason: "Opulent amber patchouli composition inspired by the exquisite Chinese lacquer screens in Mademoiselle's apartment."
+  },
+  {
+    id: "chanel-sycomore-les-exclusifs",
+    brand: "Chanel",
+    modelName: "Sycomore Les Exclusifs de Chanel",
+    sourceUrl: "https://www.chanel.com/us/fragrance/p/122060/sycomore-les-exclusifs-de-chanel-eau-de-parfum/",
+    sourceRegion: "FR",
+    variants: ["75ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 75,
+      olfactoryFamily: "woody smoky",
+      perfumer: "Jacques Polge & Christopher Sheldrake",
+      topNotes: "Pink Pepper, Spices",
+      heartNotes: "Juniper, Cypress",
+      baseNotes: "Vetiver, Sandalwood, Tobacco, Cedar, Violet"
+    },
+    reason: "Aristocratic smoky vetiver fragrance evocative of majestic autumn woodlands and noble quietude."
+  },
+  {
+    id: "chanel-platinum-egoiste",
+    brand: "Chanel",
+    modelName: "Platinum Égoïste Eau de Toilette",
+    sourceUrl: "https://www.chanel.com/us/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "fougère green aromatic",
+      perfumer: "Jacques Polge",
+      topNotes: "Rosemary, Lavender, Neroli, Petitgrain",
+      heartNotes: "Galbanum, Clary Sage, Geranium, Jasmine",
+      baseNotes: "Oakmoss, Vetiver, Cedar, Sandalwood, Amber"
+    },
+    reason: "Brilliant, extroverted fougère green accord created for the charismatic, unapologetic man."
+  },
+  {
+    id: "chanel-antaeus",
+    brand: "Chanel",
+    modelName: "Antaeus Eau de Toilette",
+    sourceUrl: "https://www.chanel.com/us/fragrance/p/118460/antaeus-eau-de-toilette-spray/",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody leather chypre",
+      perfumer: "Jacques Polge",
+      topNotes: "Myrrh, Clary Sage, Coriander, Bergamot, Lime, Amalfi Lemon",
+      heartNotes: "Rose, Thyme, Basil, Jasmine",
+      baseNotes: "Castoreum, Leather, Oakmoss, Patchouli, French Labdanum"
+    },
+    reason: "Legendary powerhouse leather chypre celebrating the mythological hero of indomitable terrestrial strength."
+  },
+
+  // ==========================================
+  // 3. Creed (10 models, France FR)
+  // ==========================================
+  {
+    id: "creed-aventus",
+    brand: "Creed",
+    modelName: "Aventus Eau de Parfum",
+    sourceUrl: "https://creedboutique.com/products/aventus",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "fruity chypre",
+      perfumer: "Jean-Christophe Hérault & Erwin Creed",
+      topNotes: "Lemon, Pink Pepper, Apple, Bergamot, Blackcurrant",
+      heartNotes: "Pineapple, Jasmine, Patchouli",
+      baseNotes: "Birch, Ambergris, Cedarwood, Oakmoss, Musk"
+    },
+    reason: "Iconic flagship chypre fruité fragrance from the House of Creed celebrating strength, power and success."
+  },
+  {
+    id: "creed-silver-mountain-water",
+    brand: "Creed",
+    modelName: "Silver Mountain Water Eau de Parfum",
+    sourceUrl: "https://creedboutique.com/products/silver-mountain-water",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "fresh citrus",
+      perfumer: "Olivier Creed",
+      topNotes: "Bergamot, Mandarin, Neroli",
+      heartNotes: "Green Tea, Blackcurrant Bud",
+      baseNotes: "Sandalwood, Musk"
+    },
+    reason: "Signature alpine fresh fragrance inspired by the exhilarating crispness of Swiss mountain streams."
+  },
+  {
+    id: "creed-green-irish-tweed",
+    brand: "Creed",
+    modelName: "Green Irish Tweed Eau de Parfum",
+    sourceUrl: "https://creedboutique.com/products/green-irish-tweed",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "fougère aromatic",
+      perfumer: "Pierre Bourdon & Olivier Creed",
+      topNotes: "Lemon, Peppermint, Verbena",
+      heartNotes: "Violet Leaves, Geranium",
+      baseNotes: "Florentine Iris, Sandalwood, Ambergris"
+    },
+    reason: "Classic countryside fougère created by Pierre Bourdon for gentlemen of distinction."
+  },
+  {
+    id: "creed-millesime-imperial",
+    brand: "Creed",
+    modelName: "Millésime Impérial Eau de Parfum",
+    sourceUrl: "https://creedboutique.com/products/millesime-imperial",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "marine citrus",
+      perfumer: "Olivier Creed",
+      topNotes: "Fruit Notes, Sea Salt",
+      heartNotes: "Sicilian Lemon, Bergamot, Iris, Mandarin",
+      baseNotes: "Marine Notes, Musk, Woody Notes"
+    },
+    reason: "Warm and salty marine composition celebrating royal heritage and sun-drenched Mediterranean shores."
+  },
+  {
+    id: "creed-virgin-island-water",
+    brand: "Creed",
+    modelName: "Virgin Island Water Eau de Parfum",
+    sourceUrl: "https://creedboutique.com/products/virgin-island-water",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "tropical citrus",
+      perfumer: "Olivier Creed & Erwin Creed",
+      topNotes: "Lime, Coconut, Mandarin, Bergamot",
+      heartNotes: "Ginger, Ylang-Ylang, Jasmine, Hibiscus",
+      baseNotes: "White Rum, Sugar Cane, Musk"
+    },
+    reason: "Caribbean voyage inspired tropical scent featuring refreshing coconut, zesty lime and white rum."
+  },
+  {
+    id: "creed-royal-oud",
+    brand: "Creed",
+    modelName: "Royal Oud Eau de Parfum",
+    sourceUrl: "https://creedboutique.com/products/royal-oud",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody amber",
+      perfumer: "Julien Rasquinet",
+      topNotes: "Lemon, Pink Pepper, Bergamot",
+      heartNotes: "Cedarwood, Galbanum, Angelica",
+      baseNotes: "Indian Oud, Sandalwood, Musk"
+    },
+    reason: "Regal spicy wood composition by Julien Rasquinet built around subtle, aristocratic oud and cedarwood."
+  },
+  {
+    id: "creed-viking",
+    brand: "Creed",
+    modelName: "Viking Eau de Parfum",
+    sourceUrl: "https://creedboutique.com/products/viking",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Olivier Creed",
+      topNotes: "Calabrian Bergamot, Sicilian Lemon, Pink Pepper",
+      heartNotes: "Peppercorn, Bulgarian Rose, Peppermint",
+      baseNotes: "Indian Sandalwood, Haitian Vetiver, Patchouli"
+    },
+    reason: "Fiery spicy men's scent celebrating fearless voyages of exploration through pink pepper and peppermint."
+  },
+  {
+    id: "creed-original-vetiver",
+    brand: "Creed",
+    modelName: "Original Vetiver Eau de Parfum",
+    sourceUrl: "https://creedboutique.com/products/original-vetiver",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "fresh green woody",
+      perfumer: "Olivier Creed & Erwin Creed",
+      topNotes: "Ginger, Mandarin, Bergamot",
+      heartNotes: "Vetiver Leaves, White Pepper, Coriander",
+      baseNotes: "Mysore Sandalwood, Vetiver Roots, Ambergris"
+    },
+    reason: "Infusion of vetiver leaves and roots delivering fresh sparkling greenness and comforting clean warmth."
+  },
+  {
+    id: "creed-aventus-cologne",
+    brand: "Creed",
+    modelName: "Aventus Cologne Eau de Parfum",
+    sourceUrl: "https://creedboutique.com/products/aventus-cologne",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "citrus aromatic",
+      perfumer: "Olivier Creed",
+      topNotes: "Mandarin, Ginger, Pink Peppercorn",
+      heartNotes: "Vetiver, Patchouli, Pineapple",
+      baseNotes: "Birch, Styrax, Musk"
+    },
+    reason: "Lighter, more urban cologne interpretation of the iconic Aventus profile with crisp ginger and mandarin."
+  },
+  {
+    id: "creed-carmina",
+    brand: "Creed",
+    modelName: "Carmina Eau de Parfum",
+    sourceUrl: "https://creedboutique.com/products/carmina",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "floral amber",
+      perfumer: "Olivier Creed",
+      topNotes: "Black Cherry, Saffron, Pink Pepper",
+      heartNotes: "Rose de Mai, Violet, Cashmere Wood",
+      baseNotes: "Frankincense, Amber, Myrrh, Musk"
+    },
+    reason: "Sensual feminine floral amber highlighted by bold dark cherry, rare saffron and sumptuous Rose de Mai."
+  },
+
+  // ==========================================
+  // 4. Dior (10 models, France FR)
+  // ==========================================
+  {
+    id: "dior-sauvage-elixir",
+    brand: "Dior",
+    modelName: "Sauvage Elixir",
+    sourceUrl: "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0998004.html",
+    sourceRegion: "FR",
+    variants: ["60ml", "100ml"],
+    attrs: {
+      concentration: "elixir",
+      volumeMl: 60,
+      olfactoryFamily: "aromatic spicy",
+      perfumer: "François Demachy",
+      topNotes: "Nutmeg, Cinnamon, Cardamom, Grapefruit",
+      heartNotes: "Lavender Essence",
+      baseNotes: "Licorice, Sandalwood, Amber, Patchouli, Haitian Vetiver"
+    },
+    reason: "Ultra-concentrated nighttime elixir laced with heady spices and tailor-made Nyons lavender."
+  },
+  {
+    id: "dior-sauvage-edp",
+    brand: "Dior",
+    modelName: "Sauvage Eau de Parfum",
+    sourceUrl: "https://www.dior.com/en_us/beauty/products/sauvage-eau-de-parfum-Y0785220.html",
+    sourceRegion: "FR",
+    variants: ["60ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "citrus woody ambery",
+      perfumer: "François Demachy",
+      topNotes: "Calabrian Bergamot",
+      heartNotes: "Sichuan Pepper, Lavender, Star Anise, Nutmeg",
+      baseNotes: "Ambroxan, Papua New Guinean Vanilla"
+    },
+    reason: "The magic hour in the desert captured with juicy bergamot, sensual vanilla and radiant ambroxan."
+  },
+  {
+    id: "dior-homme-intense",
+    brand: "Dior",
+    modelName: "Dior Homme Intense Eau de Parfum",
+    sourceUrl: "https://www.dior.com/en_us/beauty/products/dior-homme-intense-Y0479200.html",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "150ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody floral musk",
+      perfumer: "François Demachy",
+      topNotes: "Tuscan Iris, Lavender",
+      heartNotes: "Ambrette Seeds, Pear Accord",
+      baseNotes: "Virginia Cedar, Vetiver"
+    },
+    reason: "The quintessential powdery iris evening fragrance exuding aristocratic sophistication."
+  },
+  {
+    id: "dior-fahrenheit",
+    brand: "Dior",
+    modelName: "Fahrenheit Eau de Toilette",
+    sourceUrl: "https://www.dior.com/en_us/beauty/products/fahrenheit-Y0067001.html",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "leather woody floral",
+      perfumer: "Jean-Louis Sieuzac & Maurice Roger",
+      topNotes: "Nutmeg Flower, Lavender, Cedar, Chamomile, Mandarin Orange, Hawthorn, Bergamot, Lemon",
+      heartNotes: "Violet Leaf, Nutmeg, Cedar, Sandalwood, Carnation, Honeysuckle, Jasmine, Lily of the Valley",
+      baseNotes: "Leather, Vetiver, Musk, Amber, Patchouli, Tonka Bean"
+    },
+    reason: "Revolutionary gasoline-leather violet accord that redefined masculine perfumery in 1988."
+  },
+  {
+    id: "dior-gris-dior",
+    brand: "Dior",
+    modelName: "Gris Dior (La Collection Privée)",
+    sourceUrl: "https://www.dior.com/en_us/beauty/products/gris-dior-Y0959160.html",
+    sourceRegion: "FR",
+    variants: ["40ml", "125ml", "250ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "chypre floral",
+      perfumer: "François Demachy",
+      topNotes: "Bergamot, Grapefruit",
+      heartNotes: "Rose, Jasmine, Orange Blossom, Strawberry",
+      baseNotes: "Patchouli, Oakmoss, Amber, Cedar, Sandalwood"
+    },
+    reason: "Masterpiece modern chypre translating the iconic Dior gray couture hue into scent."
+  },
+  {
+    id: "dior-ambre-nuit",
+    brand: "Dior",
+    modelName: "Ambre Nuit (La Collection Privée)",
+    sourceUrl: "https://www.dior.com/en_us/beauty/products/ambre-nuit-Y0907150.html",
+    sourceRegion: "FR",
+    variants: ["40ml", "125ml", "250ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "oriental amber floral",
+      perfumer: "François Demachy",
+      topNotes: "Bergamot, Grapefruit",
+      heartNotes: "Damascena Rose, Pink Pepper",
+      baseNotes: "Ambergris, Guaiac Wood, Cedar, Patchouli"
+    },
+    reason: "Nocturnal encounter between voluptuous rose and deep golden ambergris."
+  },
+  {
+    id: "dior-oud-ispahan",
+    brand: "Dior",
+    modelName: "Oud Ispahan (La Collection Privée)",
+    sourceUrl: "https://www.dior.com/en_us/beauty/products/oud-ispahan-Y0959180.html",
+    sourceRegion: "FR",
+    variants: ["40ml", "125ml", "250ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "oriental floral oud",
+      perfumer: "François Demachy",
+      topNotes: "Labdanum",
+      heartNotes: "Rose, Patchouli, Saffron",
+      baseNotes: "Agarwood (Oud), Sandalwood, Cedar"
+    },
+    reason: "Fascinating journey along oriental palaces pairing intense Damascena rose with smoky oud."
+  },
+  {
+    id: "dior-bois-dargent",
+    brand: "Dior",
+    modelName: "Bois d'Argent (La Collection Privée)",
+    sourceUrl: "https://www.dior.com/en_us/beauty/products/bois-dargent-Y0959140.html",
+    sourceRegion: "FR",
+    variants: ["40ml", "125ml", "250ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "woody powdery floral",
+      perfumer: "Annick Ménardo",
+      topNotes: "Iris, Cypress, Juniper Berries",
+      heartNotes: "Myrrh, Patchouli",
+      baseNotes: "Resins, Amber, Vanilla, Musk, Leather, Woody Notes, Honey"
+    },
+    reason: "Cult classic silver wood combining powdery Florentine iris pallida with mystical incense and myrrh."
+  },
+  {
+    id: "dior-miss-dior-edp",
+    brand: "Dior",
+    modelName: "Miss Dior Eau de Parfum",
+    sourceUrl: "https://www.dior.com/en_us/beauty/products/miss-dior-eau-de-parfum-Y0996347.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "floral bouquet",
+      perfumer: "François Demachy",
+      topNotes: "Lily-of-the-Valley, Peony, Iris",
+      heartNotes: "Centifolia Rose, Peach, Apricot",
+      baseNotes: "Vanilla, Tonka Bean, Musk, Benzoin, Sandalwood"
+    },
+    reason: "A milléfiori floral explosion celebrating Christian Dior's love for vibrant Grasse blooms."
+  },
+  {
+    id: "dior-jadore-lor",
+    brand: "Dior",
+    modelName: "J'adore l'Or Essence de Parfum",
+    sourceUrl: "https://www.dior.com/en_us/beauty/products/jadore-lor-Y0997096.html",
+    sourceRegion: "FR",
+    variants: ["50ml"],
+    attrs: {
+      concentration: "essence de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "solar floral",
+      perfumer: "Francis Kurkdjian",
+      topNotes: "Orange Blossom Absolute",
+      heartNotes: "Grandiflorum Jasmine Absolute, Centifolia Rose Absolute",
+      baseNotes: "Solar Floral Notes, Vanilla"
+    },
+    reason: "Pure liquid gold floral essence recomposed by Francis Kurkdjian for Maison Dior."
+  },
+
+  // ==========================================
+  // 5. Dolce & Gabbana (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "dg-light-blue-pour-homme",
+    brand: "Dolce & Gabbana",
+    modelName: "Light Blue Pour Homme Eau de Toilette",
+    sourceUrl: "https://www.dolcegabbana.com/en/beauty/fragrances/men/light-blue-pour-homme",
+    sourceRegion: "IT",
+    variants: ["75ml", "125ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 125,
+      olfactoryFamily: "citrus aromatic",
+      perfumer: "Alberto Morillas",
+      topNotes: "Sicilian Mandarin, Grapefruit, Bergamot, Juniper",
+      heartNotes: "Rosemary, Sichuan Pepper, Rosewood",
+      baseNotes: "Musk, Incense, Oakmoss"
+    },
+    reason: "Pure Mediterranean seduction capturing the crystalline waters and sea breeze of Capri."
+  },
+  {
+    id: "dg-light-blue-pour-femme",
+    brand: "Dolce & Gabbana",
+    modelName: "Light Blue Eau de Toilette",
+    sourceUrl: "https://www.dolcegabbana.com/en/beauty/fragrances/women/light-blue",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "citrus floral woody",
+      perfumer: "Olivier Cresp",
+      topNotes: "Sicilian Lemon, Apple, Cedar, Bellflower",
+      heartNotes: "Bamboo, Jasmine, White Rose",
+      baseNotes: "Cedarwood, Musk, Amber"
+    },
+    reason: "Olivier Cresp's legendary joyful creation capturing the joy of living on a Sicilian summer day."
+  },
+  {
+    id: "dg-the-one-for-men-edp",
+    brand: "Dolce & Gabbana",
+    modelName: "The One for Men Eau de Parfum",
+    sourceUrl: "https://www.dolcegabbana.com/en/beauty/fragrances/men/the-one-for-men-edp",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml", "150ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental spicy",
+      perfumer: "Olivier Polge",
+      topNotes: "Grapefruit, Coriander, Basil",
+      heartNotes: "Cardamom, Ginger, Orange Blossom",
+      baseNotes: "Amber, Tobacco, Cedarwood"
+    },
+    reason: "The quintessential charismatic gentleman's scent pairing rich spiced tobacco with warm amber."
+  },
+  {
+    id: "dg-the-one-for-women-edp",
+    brand: "Dolce & Gabbana",
+    modelName: "The One Eau de Parfum",
+    sourceUrl: "https://www.dolcegabbana.com/en/beauty/fragrances/women/the-one",
+    sourceRegion: "IT",
+    variants: ["50ml", "75ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 75,
+      olfactoryFamily: "oriental floral",
+      perfumer: "Christine Nagel",
+      topNotes: "Peach, Lychee, Mandarin Orange, Bergamot",
+      heartNotes: "Lily, Plum, Jasmine, Lily of the Valley",
+      baseNotes: "Vanilla, Amber, Musk, Vetiver"
+    },
+    reason: "Sumptuous golden diva bouquet composed by Christine Nagel highlighting Madonna lily and rich vanilla."
+  },
+  {
+    id: "dg-k-by-dolce-gabbana-edp",
+    brand: "Dolce & Gabbana",
+    modelName: "K by Dolce & Gabbana Eau de Parfum",
+    sourceUrl: "https://www.dolcegabbana.com/en/beauty/fragrances/men/k-edp",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml", "150ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody spicy",
+      perfumer: "Daphné Bugey & Nathalie Lorson",
+      topNotes: "Blood Orange, Juniper Berries, Pimento, Lemon, Cardamom",
+      heartNotes: "Fig Nectar, Geranium, Clary Sage, Lavender",
+      baseNotes: "Patchouli, Cedarwood, Cypriol Oil, Vetiver"
+    },
+    reason: "Majestic regal fragrance capturing the passionate Tuscan sun with fiery chili pimento and fig nectar."
+  },
+  {
+    id: "dg-q-by-dolce-gabbana-edp",
+    brand: "Dolce & Gabbana",
+    modelName: "Q by Dolce & Gabbana Eau de Parfum",
+    sourceUrl: "https://www.dolcegabbana.com/en/beauty/fragrances/women/q-edp",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody fruity",
+      perfumer: "Daphné Bugey",
+      topNotes: "Sicilian Lemon, Red Orange, Jasmine Petals",
+      heartNotes: "Cherry, Heliotrope",
+      baseNotes: "Cedarwood, Crystal Musk"
+    },
+    reason: "Sensual feminine crown featuring crisp sparkling Sicilian citrus accented with seductive dark cherry."
+  },
+  {
+    id: "dg-devotion-edp",
+    brand: "Dolce & Gabbana",
+    modelName: "Devotion Eau de Parfum",
+    sourceUrl: "https://www.dolcegabbana.com/en/beauty/fragrances/women/devotion",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "amber gourmand",
+      perfumer: "Olivier Cresp",
+      topNotes: "Candied Citrus, Candied Lemon",
+      heartNotes: "Orange Blossom, Panettone Accord",
+      baseNotes: "Madagascar Vanilla"
+    },
+    reason: "Olivier Cresp's enchanting gourmand devotion sealed with the Sacred Heart, celebrating Italian panettone and candied lemon."
+  },
+  {
+    id: "dg-light-blue-eau-intense-pour-homme",
+    brand: "Dolce & Gabbana",
+    modelName: "Light Blue Eau Intense Pour Homme",
+    sourceUrl: "https://www.dolcegabbana.com/en/beauty/fragrances/men/light-blue-eau-intense-pour-homme",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody aquatic",
+      perfumer: "Alberto Morillas",
+      topNotes: "Grapefruit, Mandarin Orange",
+      heartNotes: "Sea Water, Juniper",
+      baseNotes: "Musk, Amberwood"
+    },
+    reason: " Alberto Morillas' exhilarating high-contrast marine explosion plunging into the deep blue Mediterranean."
+  },
+  {
+    id: "dg-the-one-luminous-night",
+    brand: "Dolce & Gabbana",
+    modelName: "The One Luminous Night Exclusive Edition",
+    sourceUrl: "https://www.dolcegabbana.com/en/beauty/fragrances/men/the-one-luminous-night",
+    sourceRegion: "IT",
+    variants: ["100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental spicy",
+      perfumer: "Jean-Christophe Hérault",
+      topNotes: "Black Pepper, Basil, Bergamot",
+      heartNotes: "Dates, Sage, Geranium",
+      baseNotes: "Amber, Incense, Sandalwood"
+    },
+    reason: "Enigmatic nocturnal portrait of desert stars blending sweet date accord with warm frankincense."
+  },
+  {
+    id: "dg-velvet-desert-oud",
+    brand: "Dolce & Gabbana",
+    modelName: "Velvet Desert Oud Eau de Parfum",
+    sourceUrl: "https://www.dolcegabbana.com/en/beauty/fragrances/exclusive/velvet-desert-oud",
+    sourceRegion: "IT",
+    variants: ["100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental woody",
+      perfumer: "Alberto Morillas",
+      topNotes: "Incense",
+      heartNotes: "Agarwood (Oud), Amber",
+      baseNotes: "Musk, Woody Notes"
+    },
+    reason: "Prestige Velvet Collection creation capturing the hypnotic mystery of desert dunes with dark smoky oud."
+  },
+
+  // ==========================================
+  // 6. Giorgio Armani (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "armani-acqua-di-gio-parfum",
+    brand: "Giorgio Armani",
+    modelName: "Acqua di Giò Parfum",
+    sourceUrl: "https://www.armani.com/en-us/experience/giorgio-armani/acqua-di-gio-parfum",
+    sourceRegion: "IT",
+    variants: ["40ml", "75ml", "125ml"],
+    attrs: {
+      concentration: "parfum",
+      volumeMl: 75,
+      olfactoryFamily: "woody aquatic",
+      perfumer: "Alberto Morillas",
+      topNotes: "Marine Notes, Bergamot",
+      heartNotes: "Rosemary, Clary Sage, Geranium",
+      baseNotes: "Olibanum, Patchouli"
+    },
+    reason: "Alberto Morillas' intense new signature combining sea mineral freshness with mystical incense."
+  },
+  {
+    id: "armani-acqua-di-gio-profondo",
+    brand: "Giorgio Armani",
+    modelName: "Acqua di Giò Profondo Eau de Parfum",
+    sourceUrl: "https://www.armani.com/en-us/experience/giorgio-armani/acqua-di-gio-profondo",
+    sourceRegion: "IT",
+    variants: ["40ml", "75ml", "125ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 75,
+      olfactoryFamily: "aromatic fougère aquatic",
+      perfumer: "Alberto Morillas",
+      topNotes: "Marine Notes, Aquozone, Green Mandarin, Bergamot",
+      heartNotes: "Rosemary, Lavender, Cypress, Mastic",
+      baseNotes: "Mineral Accord, Musk, Patchouli, Amber"
+    },
+    reason: "Deep dive into the boundless blue ocean powered by high-tech Aquozone and crystalline mineral musk."
+  },
+  {
+    id: "armani-code-parfum",
+    brand: "Giorgio Armani",
+    modelName: "Armani Code Parfum",
+    sourceUrl: "https://www.armani.com/en-us/experience/giorgio-armani/armani-code-parfum",
+    sourceRegion: "IT",
+    variants: ["50ml", "75ml", "125ml"],
+    attrs: {
+      concentration: "parfum",
+      volumeMl: 75,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Antoine Maisondieu",
+      topNotes: "Bergamot, Bergamot Leaf",
+      heartNotes: "Iris, Orris, Clary Sage, Aldehydes",
+      baseNotes: "Tonka Bean, Cedarwood"
+    },
+    reason: "Modern reinterpretation of the seductive Code code centered on noble Moroccan iris and roasted tonka."
+  },
+  {
+    id: "armani-si-eau-de-parfum-intense",
+    brand: "Giorgio Armani",
+    modelName: "Sì Eau de Parfum Intense",
+    sourceUrl: "https://www.armani.com/en-us/experience/giorgio-armani/si-edp-intense",
+    sourceRegion: "IT",
+    variants: ["30ml", "50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "chypre ambery",
+      perfumer: "Julie Massé",
+      topNotes: "Blackcurrant Nectar",
+      heartNotes: "Damascena Rose, Davana",
+      baseNotes: "Bourbon Vanilla, Black Tea, Patchouli"
+    },
+    reason: "Uncompromising statement of feminine empowerment radiating luscious blackcurrant and warm black tea."
+  },
+  {
+    id: "armani-stronger-with-you-intensely",
+    brand: "Giorgio Armani",
+    modelName: "Emporio Armani Stronger With You Intensely",
+    sourceUrl: "https://www.armani.com/en-us/experience/emporio-armani/stronger-with-you-intensely",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental fougère gourmand",
+      perfumer: "Cécile Matton",
+      topNotes: "Pink Pepper, Juniper, Violet",
+      heartNotes: "Toffee, Cinnamon, Lavender, Sage",
+      baseNotes: "Vanilla, Tonka Bean, Amber, Suede"
+    },
+    reason: "Addictive gourmand declaration of passionate love rich with toffee, warm cinnamon and sweet vanilla."
+  },
+  {
+    id: "armani-my-way-parfum",
+    brand: "Giorgio Armani",
+    modelName: "My Way Parfum",
+    sourceUrl: "https://www.armani.com/en-us/experience/giorgio-armani/my-way-parfum",
+    sourceRegion: "IT",
+    variants: ["30ml", "50ml", "90ml"],
+    attrs: {
+      concentration: "parfum",
+      volumeMl: 90,
+      olfactoryFamily: "floral woody powdery",
+      perfumer: "Carlos Benaïm",
+      topNotes: "Orange Blossom, Bitter Orange, Calabrian Bergamot",
+      heartNotes: "Iris Pallida, Indian Tuberose, Ambrette",
+      baseNotes: "White Musk, Bourbon Vanilla, Cedarwood"
+    },
+    reason: "Luminous olfactory voyage composed by Carlos Benaïm marrying sustainable tuberose with French iris pallida."
+  },
+  {
+    id: "armani-prive-rose-darabie",
+    brand: "Giorgio Armani",
+    modelName: "Armani Privé Rose d'Arabie",
+    sourceUrl: "https://www.armani.com/en-us/experience/armani-prive/rose-darabie",
+    sourceRegion: "IT",
+    variants: ["100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental floral",
+      perfumer: "Fabrice Pellegrin",
+      topNotes: "Saffron, Cardamom",
+      heartNotes: "Damascena Rose, Patchouli",
+      baseNotes: "Agarwood (Oud), Golden Amber, Vanilla"
+    },
+    reason: "Haute Couture tribute to the Thousand and One Nights elevating Damascus rose into pure golden velvet."
+  },
+  {
+    id: "armani-prive-rouge-malachite",
+    brand: "Giorgio Armani",
+    modelName: "Armani Privé Rouge Malachite",
+    sourceUrl: "https://www.armani.com/en-us/experience/armani-prive/rouge-malachite",
+    sourceRegion: "IT",
+    variants: ["100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental floral",
+      perfumer: "Pascal Gaurin",
+      topNotes: "Tuberose, Pink Pepper, Clary Sage",
+      heartNotes: "Tuberose, Orange Blossom, Ylang-Ylang, Jasmine Sambac, Cashmeran, Benzoin",
+      baseNotes: "Tuberose, Amber"
+    },
+    reason: "Carnal celebration of Russian passion centered on a radiant, opulent tuberose heartbeat."
+  },
+  {
+    id: "armani-prive-the-yulong",
+    brand: "Giorgio Armani",
+    modelName: "Armani Privé Thé Yulong",
+    sourceUrl: "https://www.armani.com/en-us/experience/armani-prive/the-yulong",
+    sourceRegion: "IT",
+    variants: ["100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "aromatic green citrus",
+      perfumer: "Julie Massé",
+      topNotes: "Mandarin Orange, Petitgrain, Cardamom",
+      heartNotes: "Green Tea, Black Tea, Jasmine, Orange Blossom",
+      baseNotes: "Vetiver, Ambrette, Iris"
+    },
+    reason: "Sensory journey across the Chinese Yulong Snow Mountain contrasting smoky black tea and vivid green tea."
+  },
+  {
+    id: "armani-acqua-di-gio-eau-de-toilette",
+    brand: "Giorgio Armani",
+    modelName: "Acqua di Giò Eau de Toilette",
+    sourceUrl: "https://www.armani.com/en-us/experience/giorgio-armani/acqua-di-gio-edt",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "aquatic aromatic",
+      perfumer: "Alberto Morillas & Annick Ménardo",
+      topNotes: "Lime, Lemon, Bergamot, Jasmine, Orange, Mandarin, Neroli",
+      heartNotes: "Sea Notes, Jasmine, Calone, Peach, Freesia, Rosemary, Hiacynth, Cyclamen, Violet, Coriander, Nutmeg, Rose",
+      baseNotes: "White Musk, Cedar, Oakmoss, Patchouli, Amber"
+    },
+    reason: "The best-selling men's fragrance in history capturing the sun and sea breezes of Pantelleria island."
+  },
+
+  // ==========================================
+  // 7. Guerlain (10 models, France FR)
+  // ==========================================
+  {
+    id: "guerlain-lhomme-ideal-edp",
+    brand: "Guerlain",
+    modelName: "L'Homme Idéal Eau de Parfum",
+    sourceUrl: "https://www.guerlain.com/us/en-us/fragrance/men/lhomme-ideal-edp",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody oriental",
+      perfumer: "Thierry Wasser & Delphine Jelk",
+      topNotes: "Almond, Spices, Lavender, Bergamot, Rosemary, Thyme",
+      heartNotes: "Cherry, Vanilla, Incense, Bulgarian Rose",
+      baseNotes: "Leather, Tonka Bean, Sandalwood"
+    },
+    reason: "Magnetic blend of intoxicating almond and luscious cherry over a tailored masculine leather base."
+  },
+  {
+    id: "guerlain-shalimar-edp",
+    brand: "Guerlain",
+    modelName: "Shalimar Eau de Parfum",
+    sourceUrl: "https://www.guerlain.com/us/en-us/fragrance/women/shalimar-edp",
+    sourceRegion: "FR",
+    variants: ["50ml", "90ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "oriental amber",
+      perfumer: "Jacques Guerlain",
+      topNotes: "Citruses, Bergamot, Lemon, Cedar, Mandarin Orange",
+      heartNotes: "Iris, Jasmine, Rose, Patchouli, Vetiver",
+      baseNotes: "Vanilla, Incense, Leather, Opoponax, Civet, Sandalwood, Tonka Bean, Musk"
+    },
+    reason: "The historic mother of all ambers created in 1925 commemorating Emperor Shah Jahan's eternal love."
+  },
+  {
+    id: "guerlain-habit-rouge-rouge-prive",
+    brand: "Guerlain",
+    modelName: "Habit Rouge Rouge Privé",
+    sourceUrl: "https://www.guerlain.com/us/en-us/fragrance/men/habit-rouge-rouge-prive",
+    sourceRegion: "FR",
+    variants: ["100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "amber woody leather",
+      perfumer: "Delphine Jelk",
+      topNotes: "Bergamot, Ginger",
+      heartNotes: "Orange Blossom, Iris",
+      baseNotes: "Leather, Patchouli, Vanilla"
+    },
+    reason: "Modern prestige extrait rendition of Habit Rouge combining equestrian leather with liqueur-like vanilla."
+  },
+  {
+    id: "guerlain-mon-guerlain-edp",
+    brand: "Guerlain",
+    modelName: "Mon Guerlain Eau de Parfum",
+    sourceUrl: "https://www.guerlain.com/us/en-us/fragrance/women/mon-guerlain-edp",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental floral",
+      perfumer: "Thierry Wasser & Delphine Jelk",
+      topNotes: "Carla Lavender, Bergamot",
+      heartNotes: "Jasmine Sambac, Iris, Rose",
+      baseNotes: "Tahitian Vanilla, Coumarin, Australian Sandalwood, Benzoin, White Musk, Patchouli"
+    },
+    reason: "Tribute to modern femininity pairing Provencal Carla lavender with sumptuous Tahitian vanilla."
+  },
+  {
+    id: "guerlain-vetiver-edt",
+    brand: "Guerlain",
+    modelName: "Vétiver Eau de Toilette",
+    sourceUrl: "https://www.guerlain.com/us/en-us/fragrance/men/vetiver-edt",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Jean-Paul Guerlain",
+      topNotes: "Bergamot, Tobacco, Lemon, Nutmeg, Neroli, Coriander, Mandarin",
+      heartNotes: "Vetiver, Pepper, Carnation, Sage, Orris Root, Sandalwood",
+      baseNotes: "Vetiver, Oakmoss, Leather, Civet, Myrrh, Tonka Bean, Amber"
+    },
+    reason: "The foundational reference vetiver fragrance of the 20th century created by Jean-Paul Guerlain."
+  },
+  {
+    id: "guerlain-tobacco-honey",
+    brand: "Guerlain",
+    modelName: "Tobacco Honey (L'Art & La Matière)",
+    sourceUrl: "https://www.guerlain.com/us/en-us/fragrance/lart-et-la-matiere/tobacco-honey",
+    sourceRegion: "FR",
+    variants: ["100ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "amber woody gourmand",
+      perfumer: "Delphine Jelk",
+      topNotes: "Honey, Cloves, Anise",
+      heartNotes: "Tobacco, Tonka Bean, Vanilla, Sesame",
+      baseNotes: "Oud, Sandalwood"
+    },
+    reason: "Opulent L'Art & La Matière creation drowning dry tobacco leaves in golden nectar and roasted sesame."
+  },
+  {
+    id: "guerlain-spiriteuse-double-vanille",
+    brand: "Guerlain",
+    modelName: "Spiritueuse Double Vanille (L'Art & La Matière)",
+    sourceUrl: "https://www.guerlain.com/us/en-us/fragrance/lart-et-la-matiere/spiritueuse-double-vanille",
+    sourceRegion: "FR",
+    variants: ["100ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental vanilla",
+      perfumer: "Jean-Paul Guerlain",
+      topNotes: "Pink Pepper, Incense, Bergamot",
+      heartNotes: "Cedar, Ylang-Ylang, Bulgarian Rose, Jasmine",
+      baseNotes: "Madagascar Vanilla, Benzoin"
+    },
+    reason: "The gold standard of vanilla perfumery evoking old oak casks soaked in mature rum."
+  },
+  {
+    id: "guerlain-neroli-outrenoir",
+    brand: "Guerlain",
+    modelName: "Néroli Outrenoir (L'Art & La Matière)",
+    sourceUrl: "https://www.guerlain.com/us/en-us/fragrance/lart-et-la-matiere/neroli-outrenoir",
+    sourceRegion: "FR",
+    variants: ["100ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "citrus aromatic woody",
+      perfumer: "Thierry Wasser & Delphine Jelk",
+      topNotes: "Petitgrain, Bergamot, Tangerine, Lemon, Grapefruit",
+      heartNotes: "Tea, Neroli, Orange Blossom, Smoke, Earthy Notes",
+      baseNotes: "Vanilla, Myrrh, Benzoin, Ambrette, Oakmoss"
+    },
+    reason: "Chiaroscuro contrast setting radiant orange blossom against dark, smoky black tea."
+  },
+  {
+    id: "guerlain-mitsouko-edp",
+    brand: "Guerlain",
+    modelName: "Mitsouko Eau de Parfum",
+    sourceUrl: "https://www.guerlain.com/us/en-us/fragrance/heritage/mitsouko-edp",
+    sourceRegion: "FR",
+    variants: ["75ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 75,
+      olfactoryFamily: "chypre fruity",
+      perfumer: "Jacques Guerlain",
+      topNotes: "Bergamot, Citruses, Jasmine, Rose",
+      heartNotes: "Peach, Lilac, Jasmine, Ylang-Ylang, Rose",
+      baseNotes: "Oakmoss, Spices, Cinnamon, Vetiver, Amber"
+    },
+    reason: "Monumental 1919 fruity chypre balancing velvety peach skin with austere green oakmoss."
+  },
+  {
+    id: "guerlain-aqua-allegoria-mandarine-basilic-forte",
+    brand: "Guerlain",
+    modelName: "Aqua Allegoria Forte Mandarine Basilic",
+    sourceUrl: "https://www.guerlain.com/us/en-us/fragrance/aqua-allegoria/mandarine-basilic-forte",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 75,
+      olfactoryFamily: "citrus aromatic",
+      perfumer: "Delphine Jelk",
+      topNotes: "Mandarin Orange, Basil, Cassis",
+      heartNotes: "Orange Blossom, Honey, Bulgarian Rose, Anise",
+      baseNotes: "Vanilla, Sandalwood"
+    },
+    reason: "Golden sunset over Mediterranean citrus orchards enriched with sun-drenched Italian mandarin and organic vanilla."
+  },
+
+  // ==========================================
+  // 8. Hermès (10 models, France FR)
+  // ==========================================
+  {
+    id: "hermes-terre-dhermes-parfum",
+    brand: "Hermès",
+    modelName: "Terre d'Hermès Parfum",
+    sourceUrl: "https://www.hermes.com/us/en/product/terre-d-hermes-parfum-V20300/",
+    sourceRegion: "FR",
+    variants: ["75ml", "200ml"],
+    attrs: {
+      concentration: "parfum",
+      volumeMl: 75,
+      olfactoryFamily: "woody chypre",
+      perfumer: "Jean-Claude Ellena",
+      topNotes: "Orange, Grapefruit",
+      heartNotes: "Flint Accord, Pepper, Geranium",
+      baseNotes: "Woody Notes, Oakmoss, Benzoin"
+    },
+    reason: "Mineral and woody density anchoring man to the creative power of raw earth."
+  },
+  {
+    id: "hermes-terre-dhermes-eau-givree",
+    brand: "Hermès",
+    modelName: "Terre d'Hermès Eau Givrée",
+    sourceUrl: "https://www.hermes.com/us/en/product/terre-d-hermes-eau-givree-eau-de-parfum-V109968V0/",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "citrus aromatic",
+      perfumer: "Christine Nagel",
+      topNotes: "Citron",
+      heartNotes: "Juniper Berries, Timur Pepper",
+      baseNotes: "Woody Notes, Mineral Notes"
+    },
+    reason: "Frosty breath of glacial air meeting the subterranean warmth of mineral earth."
+  },
+  {
+    id: "hermes-h24-edp",
+    brand: "Hermès",
+    modelName: "H24 Eau de Parfum",
+    sourceUrl: "https://www.hermes.com/us/en/product/h24-eau-de-parfum-V109673V0/",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody aromatic green",
+      perfumer: "Christine Nagel",
+      topNotes: "Clary Sage",
+      heartNotes: "Oakmoss, Narcissus",
+      baseNotes: "Rosewood, Sclarene Molecule"
+    },
+    reason: "Contemporary masculine expression exploring botanical energy and high-tech metallic notes."
+  },
+  {
+    id: "hermes-twilly-dhermes",
+    brand: "Hermès",
+    modelName: "Twilly d'Hermès Eau de Parfum",
+    sourceUrl: "https://www.hermes.com/us/en/product/twilly-d-hermes-eau-de-parfum-V37609/",
+    sourceRegion: "FR",
+    variants: ["30ml", "50ml", "85ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 85,
+      olfactoryFamily: "floral spicy",
+      perfumer: "Christine Nagel",
+      topNotes: "Ginger, Bitter Orange, Bergamot",
+      heartNotes: "Tuberose, Orange Blossom, Jasmine",
+      baseNotes: "Sandalwood, Vanilla"
+    },
+    reason: "Impertinent youth spun with scorching ginger, carnal tuberose and tender sandalwood."
+  },
+  {
+    id: "hermes-un-jardin-sur-le-nil",
+    brand: "Hermès",
+    modelName: "Un Jardin sur le Nil Eau de Toilette",
+    sourceUrl: "https://www.hermes.com/us/en/product/un-jardin-sur-le-nil-eau-de-toilette-V20272/",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "floral fruity green",
+      perfumer: "Jean-Claude Ellena",
+      topNotes: "Green Mango, Grapefruit, Tomato, Carrot",
+      heartNotes: "Calamus, Lotus, Sycamore, Peony, Hyacinth",
+      baseNotes: "Incense, Iris, Cinnamon, Musk, Labdanum"
+    },
+    reason: "Stroll along the island gardens of Aswan filled with tart green mango and blooming lotus."
+  },
+  {
+    id: "hermes-eau-de-citron-noir",
+    brand: "Hermès",
+    modelName: "Eau de Citron Noir Eau de Cologne",
+    sourceUrl: "https://www.hermes.com/us/en/product/eau-de-citron-noir-eau-de-cologne-V38384/",
+    sourceRegion: "FR",
+    variants: ["100ml", "200ml"],
+    attrs: {
+      concentration: "eau de cologne",
+      volumeMl: 100,
+      olfactoryFamily: "citrus woody smoky",
+      perfumer: "Christine Nagel",
+      topNotes: "Lemon, Calabrian Bergamot",
+      heartNotes: "Black Lime, Black Tea",
+      baseNotes: "Guaiac Wood, Smoke, Cedar"
+    },
+    reason: "Surprising nocturnal twist on cologne introducing Middle Eastern dried black lemon."
+  },
+  {
+    id: "hermes-ambre-narguile",
+    brand: "Hermès",
+    modelName: "Ambre Narguilé (Hermessence)",
+    sourceUrl: "https://www.hermes.com/us/en/product/ambre-narguile-eau-de-toilette-V20738/",
+    sourceRegion: "FR",
+    variants: ["100ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "amber gourmand",
+      perfumer: "Jean-Claude Ellena",
+      topNotes: "Honey, Cinnamon, Rum",
+      heartNotes: "Blonde Tobacco, Sesame, Caramel",
+      baseNotes: "Vanilla, Benzoin, Tonka Bean, Labdanum"
+    },
+    reason: "The definitive spiced honey and hookah tobacco accord composed with watercolor delicacy."
+  },
+  {
+    id: "hermes-poivre-samarcande",
+    brand: "Hermès",
+    modelName: "Poivre Samarcande (Hermessence)",
+    sourceUrl: "https://www.hermes.com/us/en/product/poivre-samarcande-eau-de-toilette-V20743/",
+    sourceRegion: "FR",
+    variants: ["100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody spicy",
+      perfumer: "Jean-Claude Ellena",
+      topNotes: "Black Pepper, Chili Pepper",
+      heartNotes: "Caraway, Paprika",
+      baseNotes: "Oak, Cedarwood, Patchouli, Moss"
+    },
+    reason: "Tribute to ancient Samarkand trading caravans balancing biting pepper against ancient oakwood."
+  },
+  {
+    id: "hermes-osmanthe-yunnan",
+    brand: "Hermès",
+    modelName: "Osmanthe Yunnan (Hermessence)",
+    sourceUrl: "https://www.hermes.com/us/en/product/osmanthe-yunnan-eau-de-toilette-V20745/",
+    sourceRegion: "FR",
+    variants: ["100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "floral fruity tea",
+      perfumer: "Jean-Claude Ellena",
+      topNotes: "Yunnan Red Tea, Orange",
+      heartNotes: "Osmanthes Blossom, Freesia",
+      baseNotes: "Apricot, Leather"
+    },
+    reason: "Poetic encounter in the Forbidden City linking velvet osmanthus petals with refined Chinese tea."
+  },
+  {
+    id: "hermes-voyage-dhermes",
+    brand: "Hermès",
+    modelName: "Voyage d'Hermès Parfum",
+    sourceUrl: "https://www.hermes.com/us/en/product/voyage-d-hermes-parfum-V20421/",
+    sourceRegion: "FR",
+    variants: ["35ml", "100ml"],
+    attrs: {
+      concentration: "parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody floral musk",
+      perfumer: "Jean-Claude Ellena",
+      topNotes: "Cardamom, Lemon, Spices, Juniper",
+      heartNotes: "Tea, Green Notes, Floral Notes, Hedione",
+      baseNotes: "Woody Notes, Amber, Cedar, White Musk"
+    },
+    reason: "Invitation to wander across horizons propelled by sparkling cardamom and contemplative tea notes."
+  },
+
+  // ==========================================
+  // 9. Initio (Initio Parfums Privés) (10 models, France FR)
+  // ==========================================
+  {
+    id: "initio-oud-for-greatness",
+    brand: "Initio",
+    modelName: "Oud for Greatness Eau de Parfum",
+    sourceUrl: "https://us.initioparfums.com/products/oud-for-greatness",
+    sourceRegion: "FR",
+    variants: ["90ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "woody spicy oriental",
+      perfumer: "Alberto Morillas",
+      topNotes: "Saffron, Nutmeg, Lavender",
+      heartNotes: "Natural Agarwood (Oud)",
+      baseNotes: "Patchouli, Musk"
+    },
+    reason: "Sacred geometry distilled into powerful natural oud, royal saffron and invigorating lavender."
+  },
+  {
+    id: "initio-side-effect",
+    brand: "Initio",
+    modelName: "Side Effect Eau de Parfum",
+    sourceUrl: "https://us.initioparfums.com/products/side-effect",
+    sourceRegion: "FR",
+    variants: ["90ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "oriental warm spicy",
+      perfumer: "Alberto Morillas",
+      topNotes: "Rum, Cinnamon, Saffron",
+      heartNotes: "Tobacco, Vanilla, Hedione",
+      baseNotes: "Leather, Sandalwood, Woody Notes"
+    },
+    reason: "Intoxicating aphrodisiac cocktail blending aged rum, cinnamon bark and rich pipe tobacco."
+  },
+  {
+    id: "initio-atomic-rose",
+    brand: "Initio",
+    modelName: "Atomic Rose Eau de Parfum",
+    sourceUrl: "https://us.initioparfums.com/products/atomic-rose",
+    sourceRegion: "FR",
+    variants: ["90ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "oriental floral",
+      perfumer: "Alberto Morillas",
+      topNotes: "Italian Bergamot, Pink Pepper, Hedione",
+      heartNotes: "Bulgarian Rose, Turkish Rose, Egyptian Jasmine",
+      baseNotes: "Madagascar Vanilla, Amber"
+    },
+    reason: "Explosive floral shockwave pairing multi-faceted Damascena roses with luminous Hedione HC."
+  },
+  {
+    id: "initio-musk-therapy",
+    brand: "Initio",
+    modelName: "Musk Therapy Extrait de Parfum",
+    sourceUrl: "https://us.initioparfums.com/products/musk-therapy",
+    sourceRegion: "FR",
+    variants: ["90ml"],
+    attrs: {
+      concentration: "extrait de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "woody floral musk",
+      perfumer: "Alberto Morillas",
+      topNotes: "Bergamot, Mandarin Orange",
+      heartNotes: "White Magnolia, Blackcurrant, Hedione",
+      baseNotes: "White Musk, Natural White Sandalwood"
+    },
+    reason: "Hedonistic peace machine harnessing velvety white sandalwood and mood-elevating white musks."
+  },
+  {
+    id: "initio-rehab",
+    brand: "Initio",
+    modelName: "Rehab Extrait de Parfum",
+    sourceUrl: "https://us.initioparfums.com/products/rehab",
+    sourceRegion: "FR",
+    variants: ["90ml"],
+    attrs: {
+      concentration: "extrait de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "woody aromatic fougère",
+      perfumer: "Alberto Morillas",
+      topNotes: "Bergamot, Lavender",
+      heartNotes: "Black Pepper, Tobacco, Cedarwood",
+      baseNotes: "Sandalwood, Guaiac Wood, Patchouli, Vanilla, Musk"
+    },
+    reason: "Pure sensory return to ecstasy combining French lavender with creamy Mysore sandalwood."
+  },
+  {
+    id: "initio-psychedelic-love",
+    brand: "Initio",
+    modelName: "Psychedelic Love Eau de Parfum",
+    sourceUrl: "https://us.initioparfums.com/products/psychedelic-love",
+    sourceRegion: "FR",
+    variants: ["90ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "floral powdery gourmand",
+      perfumer: "Alberto Morillas",
+      topNotes: "Ylang-Ylang, Bergamot",
+      heartNotes: "Heliotrope, Hedione, Bulgarian Rose",
+      baseNotes: "Myrrh, Sandalwood, Patchouli"
+    },
+    reason: "Narcotic addiction triggered by psychoactive heliotropin and sensual creamy myrrh."
+  },
+  {
+    id: "initio-paragon",
+    brand: "Initio",
+    modelName: "Paragon Extrait de Parfum",
+    sourceUrl: "https://us.initioparfums.com/products/paragon",
+    sourceRegion: "FR",
+    variants: ["90ml"],
+    attrs: {
+      concentration: "extrait de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Alberto Morillas",
+      topNotes: "Bergamot, White Sage, Lavender",
+      heartNotes: "Plum, Palo Santo, Black Pepper",
+      baseNotes: "Sandalwood, Agarwood (Oud)"
+    },
+    reason: "Sacred cleansing ceremony centering on protective Palo Santo and purifying white sage."
+  },
+  {
+    id: "initio-narcotic-delight",
+    brand: "Initio",
+    modelName: "Narcotic Delight Eau de Parfum",
+    sourceUrl: "https://us.initioparfums.com/products/narcotic-delight",
+    sourceRegion: "FR",
+    variants: ["90ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "amber spicy gourmand",
+      perfumer: "Alberto Morillas",
+      topNotes: "Cherry, Pink Pepper, Black Pepper",
+      heartNotes: "Cognac, Hedione",
+      baseNotes: "Tobacco, Vanilla"
+    },
+    reason: "Provocative juice laced with juicy black cherry, aged cognac and smokey blonde tobacco."
+  },
+  {
+    id: "initio-blessed-baraka",
+    brand: "Initio",
+    modelName: "Blessed Baraka Eau de Parfum",
+    sourceUrl: "https://us.initioparfums.com/products/blessed-baraka",
+    sourceRegion: "FR",
+    variants: ["90ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "oriental amber",
+      perfumer: "Alberto Morillas",
+      topNotes: "White Flowers",
+      heartNotes: "Sandalwood, Spices",
+      baseNotes: "Amber, Musk, Vanilla"
+    },
+    reason: "Solar energy talisman channeling divine blessings through radiant white amber and musk."
+  },
+  {
+    id: "initio-oud-for-happiness",
+    brand: "Initio",
+    modelName: "Oud for Happiness Eau de Parfum",
+    sourceUrl: "https://us.initioparfums.com/products/oud-for-happiness",
+    sourceRegion: "FR",
+    variants: ["90ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "woody spicy citrus",
+      perfumer: "Alberto Morillas",
+      topNotes: "Bergamot, Ginger",
+      heartNotes: "Agarwood (Oud), Cedarwood, Licorice",
+      baseNotes: "Vanilla, Musk, Herbal Notes"
+    },
+    reason: "Euphoric portal of relaxation fueled by zesty ginger, fresh herbs and peaceful natural oud."
+  },
+
+  // ==========================================
+  // 10. Jean Paul Gaultier (JPG) (10 models, France FR)
+  // ==========================================
+  {
+    id: "jpg-le-male-edt",
+    brand: "Jean Paul Gaultier",
+    modelName: "Le Male Eau de Toilette",
+    sourceUrl: "https://www.jeanpaulgaultier.com/us/en/fragrances/men/le-male-edt",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 125,
+      olfactoryFamily: "oriental fougère",
+      perfumer: "Francis Kurkdjian",
+      topNotes: "Lavender, Mint, Cardamom, Bergamot, Artemisia",
+      heartNotes: "Cinnamon, Orange Blossom, Caraway",
+      baseNotes: "Vanilla, Tonka Bean, Amber, Sandalwood, Cedarwood"
+    },
+    reason: "Francis Kurkdjian's 1995 legendary breakthrough establishing the sailor silhouette and barbershop vanilla fougère."
+  },
+  {
+    id: "jpg-le-male-le-parfum",
+    brand: "Jean Paul Gaultier",
+    modelName: "Le Male Le Parfum",
+    sourceUrl: "https://www.jeanpaulgaultier.com/us/en/fragrances/men/le-male-le-parfum",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "oriental woody amber",
+      perfumer: "Quentin Bisch & Nathalie Gracia-Cetto",
+      topNotes: "Cardamom",
+      heartNotes: "Lavender, Iris",
+      baseNotes: "Vanilla, Oriental Notes, Woodsy Notes"
+    },
+    reason: "The officer in black taking the helm with spicy cardamom, sophisticated iris and luscious vanilla."
+  },
+  {
+    id: "jpg-le-male-elixir",
+    brand: "Jean Paul Gaultier",
+    modelName: "Le Male Elixir Parfum",
+    sourceUrl: "https://www.jeanpaulgaultier.com/us/en/fragrances/men/le-male-elixir",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "parfum",
+      volumeMl: 125,
+      olfactoryFamily: "oriental aromatic gourmand",
+      perfumer: "Quentin Bisch",
+      topNotes: "Lavender, Mint",
+      heartNotes: "Vanilla, Benzoin",
+      baseNotes: "Honey, Tonka Bean, Tobacco"
+    },
+    reason: "Quentin Bisch's scorched-gold addiction infused with burning tonka, wild honey and golden tobacco."
+  },
+  {
+    id: "jpg-ultra-male",
+    brand: "Jean Paul Gaultier",
+    modelName: "Ultra Male Eau de Toilette Intense",
+    sourceUrl: "https://www.jeanpaulgaultier.com/us/en/fragrances/men/ultra-male",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "eau de toilette intense",
+      volumeMl: 125,
+      olfactoryFamily: "oriental fougère fruity",
+      perfumer: "Francis Kurkdjian",
+      topNotes: "Pear, Lavender, Mint, Bergamot, Lemon",
+      heartNotes: "Cinnamon, Caraway, Clary Sage",
+      baseNotes: "Black Vanilla Husk, Amber, Patchouli, Cedarwood"
+    },
+    reason: "Francis Kurkdjian's potent clubbing weapon highlighting juicy black pear, spicy cinnamon and deep vanilla."
+  },
+  {
+    id: "jpg-le-beau-le-parfum",
+    brand: "Jean Paul Gaultier",
+    modelName: "Le Beau Le Parfum",
+    sourceUrl: "https://www.jeanpaulgaultier.com/us/en/fragrances/men/le-beau-le-parfum",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "woody oriental tropical",
+      perfumer: "Quentin Bisch & Sonia Constant",
+      topNotes: "Pineapple, Iris, Cypress, Ginger",
+      heartNotes: "Coconut, Woodsy Notes",
+      baseNotes: "Tonka Bean, Sandalwood, Amber, Ambergris"
+    },
+    reason: "Temptation in the Garden of Gaultier led by succulent roasted coconut, fresh pineapple and creamy tonka."
+  },
+  {
+    id: "jpg-scandal-pour-homme",
+    brand: "Jean Paul Gaultier",
+    modelName: "Scandal Pour Homme Eau de Toilette",
+    sourceUrl: "https://www.jeanpaulgaultier.com/us/en/fragrances/men/scandal-pour-homme",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "150ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody oriental gourmand",
+      perfumer: "Quentin Bisch, Christophe Raynaud & Nathalie Gracia-Cetto",
+      topNotes: "Clary Sage, Mandarin Orange",
+      heartNotes: "Caramel, Tonka Bean",
+      baseNotes: "Vetiver"
+    },
+    reason: "The boxing ring champion with a knock-out punch of roasted brown caramel and earthy vetiver."
+  },
+  {
+    id: "jpg-scandal-pour-femme-edp",
+    brand: "Jean Paul Gaultier",
+    modelName: "Scandal Eau de Parfum",
+    sourceUrl: "https://www.jeanpaulgaultier.com/us/en/fragrances/women/scandal",
+    sourceRegion: "FR",
+    variants: ["50ml", "80ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 80,
+      olfactoryFamily: "chypre honey floral",
+      perfumer: "Daphné Bugey, Fabrice Pellegrin & Christophe Raynaud",
+      topNotes: "Blood Orange, Mandarin Orange",
+      heartNotes: "Honey, Gardenia, Orange Blossom, Jasmine, Peach",
+      baseNotes: "Beeswax, Caramel, Patchouli, Licorice"
+    },
+    reason: "Irresistibly sensual gourmand scandal drowning white gardenias in decadent gourmet honey."
+  },
+  {
+    id: "jpg-la-belle-le-parfum",
+    brand: "Jean Paul Gaultier",
+    modelName: "La Belle Le Parfum",
+    sourceUrl: "https://www.jeanpaulgaultier.com/us/en/fragrances/women/la-belle-le-parfum",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum intense",
+      volumeMl: 100,
+      olfactoryFamily: "oriental gourmand",
+      perfumer: "Quentin Bisch & Sonia Constant",
+      topNotes: "Pear",
+      heartNotes: "Tonka Bean, Jasmine",
+      baseNotes: "Vanilla"
+    },
+    reason: "Original sin re-imagined by Quentin Bisch with caramelized green pear and voluptuous vanilla pod."
+  },
+  {
+    id: "jpg-classique-edt",
+    brand: "Jean Paul Gaultier",
+    modelName: "Classique Eau de Toilette",
+    sourceUrl: "https://www.jeanpaulgaultier.com/us/en/fragrances/women/classique-edt",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "oriental floral",
+      perfumer: "Jacques Cavallier",
+      topNotes: "Orange Blossom, Star Anise, Rose, Mandarin Orange, Pear, Bergamot",
+      heartNotes: "Ylang-Ylang, Ginger, Orchid, Iris, Tuberose, Plum",
+      baseNotes: "Vanilla, Amber, Musk, Cinnamon, Sandalwood"
+    },
+    reason: "Jacques Cavallier's 1993 hourglass corset creation celebrating intoxicating orange blossom and vintage rice powder."
+  },
+  {
+    id: "jpg-divine-edp",
+    brand: "Jean Paul Gaultier",
+    modelName: "Gaultier Divine Eau de Parfum",
+    sourceUrl: "https://www.jeanpaulgaultier.com/us/en/fragrances/women/gaultier-divine",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "solar marine floral",
+      perfumer: "Quentin Bisch",
+      topNotes: "Calypsone, Red Berries, Bergamot",
+      heartNotes: "Lily, Ylang-Ylang, Jasmine",
+      baseNotes: "Meringue, Musk, Patchouli"
+    },
+    reason: "Quentin Bisch's divine goddess pairing salty sea breezes with sweet crisp meringue and golden lilies."
+  },
+
+  // ==========================================
+  // 11. Kilian (Kilian Paris) (10 models, France FR)
+  // ==========================================
+  {
+    id: "kilian-angels-share",
+    brand: "Kilian",
+    modelName: "Angels' Share Eau de Parfum",
+    sourceUrl: "https://www.bykilian.com/product/angels-share",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "amber gourmand",
+      perfumer: "Benoist Lapouza",
+      topNotes: "Cognac",
+      heartNotes: "Cinnamon, Tonka Bean, Oak",
+      baseNotes: "Praline, Vanilla, Sandalwood"
+    },
+    reason: "Hennessy cognac heritage distilled into an intoxicating blend of aged oak, cinnamon and praline."
+  },
+  {
+    id: "kilian-black-phantom",
+    brand: "Kilian",
+    modelName: "Black Phantom Memento Mori",
+    sourceUrl: "https://www.bykilian.com/product/black-phantom",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "gourmand woody",
+      perfumer: "Sidonie Lancesseur",
+      topNotes: "Rum, Sugar Cane",
+      heartNotes: "Dark Chocolate, Coffee, Caramel, Almond",
+      baseNotes: "Heliotrope, Sandalwood"
+    },
+    reason: "Pirate ship galleon feast featuring Martinique rum, bitter black coffee and lethal cane sugar."
+  },
+  {
+    id: "kilian-love-dont-be-shy",
+    brand: "Kilian",
+    modelName: "Love, Don't Be Shy Eau de Parfum",
+    sourceUrl: "https://www.bykilian.com/product/love-dont-be-shy",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "floral gourmand",
+      perfumer: "Calice Becker",
+      topNotes: "Neroli, Bergamot, Pink Pepper, Coriander",
+      heartNotes: "Orange Blossom, Honeysuckle, Jasmine, Marshmallow, Iris, Rose",
+      baseNotes: "Sugar, Vanilla, Caramel, Musk, Civet, Labdanum"
+    },
+    reason: "Sensual guilty pleasure evoking sweet marshmallow confectionery and seductive orange blossom."
+  },
+  {
+    id: "kilian-straight-to-heaven",
+    brand: "Kilian",
+    modelName: "Straight to Heaven White Cristal",
+    sourceUrl: "https://www.bykilian.com/product/straight-to-heaven",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "woody spicy",
+      perfumer: "Sidonie Lancesseur",
+      topNotes: "Dark Rum, Dried Fruits",
+      heartNotes: "Nutmeg, Hedione, Jasmine",
+      baseNotes: "Cedarwood, Indonesian Patchouli, Amber, White Musk, Vanilla"
+    },
+    reason: "Smoldering Caribbean night drenched in aged dark rum, Indonesian patchouli and cedar."
+  },
+  {
+    id: "kilian-vodka-on-the-rocks",
+    brand: "Kilian",
+    modelName: "Vodka on the Rocks Eau de Parfum",
+    sourceUrl: "https://www.bykilian.com/product/vodka-on-the-rocks",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "aromatic fresh",
+      perfumer: "Sidonie Lancesseur",
+      topNotes: "Cardamom, Coriander, Aldehydes",
+      heartNotes: "Rhubarb, Lily of the Valley, Pink Rose",
+      baseNotes: "Ambroxan, Oakmoss, Sandalwood"
+    },
+    reason: "Crisp iced vodka recreating cold steam rising from crushed ice in a crystal tumbler."
+  },
+  {
+    id: "kilian-moonlight-in-heaven",
+    brand: "Kilian",
+    modelName: "Moonlight in Heaven Eau de Parfum",
+    sourceUrl: "https://www.bykilian.com/product/moonlight-in-heaven",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "fruity aromatic",
+      perfumer: "Calice Becker",
+      topNotes: "Grapefruit, Lemon, Pink Pepper",
+      heartNotes: "Mango, Coconut, Rice",
+      baseNotes: "Tonka Bean, Vetiver"
+    },
+    reason: "Secret tropical escape blending creamy coconut milk, sticky rice and fresh sliced mango."
+  },
+  {
+    id: "kilian-intoxicated",
+    brand: "Kilian",
+    modelName: "Intoxicated Eau de Parfum",
+    sourceUrl: "https://www.bykilian.com/product/intoxicated",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "warm spicy aromatic",
+      perfumer: "Calice Becker",
+      topNotes: "Cardamom",
+      heartNotes: "Turkish Coffee, Cinnamon, Nutmeg",
+      baseNotes: "Caramelized Sugar, Vanilla"
+    },
+    reason: "Steaming cup of traditional Turkish coffee infused with fresh crushed green cardamom pods."
+  },
+  {
+    id: "kilian-rolling-in-love",
+    brand: "Kilian",
+    modelName: "Rolling in Love Eau de Parfum",
+    sourceUrl: "https://www.bykilian.com/product/rolling-in-love",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "oriental floral musk",
+      perfumer: "Pascal Gaurin",
+      topNotes: "Almond Milk, Ambrette",
+      heartNotes: "Iris, Freesia",
+      baseNotes: "Tuberose, Vanilla, Tonka Bean, Musk"
+    },
+    reason: "Intimate skin-on-skin cocoon celebrating creamy almond milk, white iris and musk."
+  },
+  {
+    id: "kilian-apple-brandy",
+    brand: "Kilian",
+    modelName: "Apple Brandy on the Rocks",
+    sourceUrl: "https://www.bykilian.com/product/apple-brandy-on-the-rocks",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "fruity woody aromatic",
+      perfumer: "Sidonie Lancesseur",
+      topNotes: "Cardamom, Bergamot",
+      heartNotes: "Apple, Rum, Brandy, Pineapple, Vanilla, Moss",
+      baseNotes: "Ambroxan, Cedarwood"
+    },
+    reason: "New York nightlife energy pairing crisp iced apple brandy with smoky oak barrels."
+  },
+  {
+    id: "kilian-smoking-hot",
+    brand: "Kilian",
+    modelName: "Smoking Hot Eau de Parfum",
+    sourceUrl: "https://www.bykilian.com/product/smoking-hot",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "smoky woody gourmand",
+      perfumer: "Mathieu Nardin",
+      topNotes: "Apple Hookah, Cinnamon Bark",
+      heartNotes: "Kentucky Tobacco Absolute, Oakmoss",
+      baseNotes: "Bourbon Vanilla, Orcanox"
+    },
+    reason: "Sultry cocktail blending caramelized apple shisha smoke with Kentucky cured tobacco."
+  },
+
+  // ==========================================
+  // 12. Maison Francis Kurkdjian (MFK) (10 models, France FR)
+  // ==========================================
+  {
+    id: "mfk-baccarat-rouge-540-edp",
+    brand: "Maison Francis Kurkdjian",
+    modelName: "Baccarat Rouge 540 Eau de Parfum",
+    sourceUrl: "https://www.franciskurkdjian.com/us-en/p/baccarat-rouge-540-eau-de-parfum-RA14232.html",
+    sourceRegion: "FR",
+    variants: ["35ml", "70ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 70,
+      olfactoryFamily: "woody amber",
+      perfumer: "Francis Kurkdjian",
+      topNotes: "Jasmine, Saffron",
+      heartNotes: "Cedarwood",
+      baseNotes: "Ambergris Accord, Fir Resin"
+    },
+    reason: "Global phenomenon fusing glowing ambergris, aerial saffron and freshly cut cedarwood."
+  },
+  {
+    id: "mfk-baccarat-rouge-540-extrait",
+    brand: "Maison Francis Kurkdjian",
+    modelName: "Baccarat Rouge 540 Extrait de Parfum",
+    sourceUrl: "https://www.franciskurkdjian.com/us-en/p/baccarat-rouge-540-extrait-de-parfum-RA14233.html",
+    sourceRegion: "FR",
+    variants: ["35ml", "70ml", "200ml"],
+    attrs: {
+      concentration: "extrait de parfum",
+      volumeMl: 70,
+      olfactoryFamily: "woody amber floral",
+      perfumer: "Francis Kurkdjian",
+      topNotes: "Grandiflorum Jasmine from Egypt, Bitter Almond from Morocco",
+      heartNotes: "Cedarwood",
+      baseNotes: "Ambergris Accord, Woody Musk"
+    },
+    reason: "Concentrated pinnacle of radiance featuring bitter almond from Morocco and Egyptian jasmine."
+  },
+  {
+    id: "mfk-grand-soir",
+    brand: "Maison Francis Kurkdjian",
+    modelName: "Grand Soir Eau de Parfum",
+    sourceUrl: "https://www.franciskurkdjian.com/us-en/p/grand-soir-eau-de-parfum-RA122521.html",
+    sourceRegion: "FR",
+    variants: ["35ml", "70ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 70,
+      olfactoryFamily: "amber",
+      perfumer: "Francis Kurkdjian",
+      topNotes: "Spanish Labdanum",
+      heartNotes: "Benzoin from Siam, Tonka Bean from Brazil",
+      baseNotes: "Vanilla, Deep Amber Accord"
+    },
+    reason: "Dress in Parisian nighttime elegance with warm Siam benzoin, Brazilian tonka and deep vanilla."
+  },
+  {
+    id: "mfk-oud-satin-mood",
+    brand: "Maison Francis Kurkdjian",
+    modelName: "Oud Satin Mood Eau de Parfum",
+    sourceUrl: "https://www.franciskurkdjian.com/us-en/p/oud-satin-mood-eau-de-parfum-RA122221.html",
+    sourceRegion: "FR",
+    variants: ["35ml", "70ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 70,
+      olfactoryFamily: "oriental floral woody",
+      perfumer: "Francis Kurkdjian",
+      topNotes: "Violet Accord",
+      heartNotes: "Damascena Rose from Turkey, Centifolia Rose from Tunisia",
+      baseNotes: "Natural Oud from Laos, Amber Vanilla Accord"
+    },
+    reason: "Flowing satin drapery woven from precious Laotian oud, violet nectar and Turkish roses."
+  },
+  {
+    id: "mfk-aqua-universalis-forte",
+    brand: "Maison Francis Kurkdjian",
+    modelName: "Aqua Universalis Forte",
+    sourceUrl: "https://www.franciskurkdjian.com/us-en/p/aqua-universalis-forte-eau-de-parfum-RA11122.html",
+    sourceRegion: "FR",
+    variants: ["70ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 70,
+      olfactoryFamily: "citrus floral musky",
+      perfumer: "Francis Kurkdjian",
+      topNotes: "Calabrian Bergamot, Sicilian Lemon",
+      heartNotes: "White Flowers, Egyptian Jasmine, Moroccan Rose",
+      baseNotes: "Light Musks, Wood"
+    },
+    reason: "Luminous solar boost of the quintessential clean wardrobe scent with jasmine and rose."
+  },
+  {
+    id: "mfk-724",
+    brand: "Maison Francis Kurkdjian",
+    modelName: "724 Eau de Parfum",
+    sourceUrl: "https://www.franciskurkdjian.com/us-en/p/724-eau-de-parfum-RA12352.html",
+    sourceRegion: "FR",
+    variants: ["35ml", "70ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 70,
+      olfactoryFamily: "musky floral",
+      perfumer: "Francis Kurkdjian",
+      topNotes: "Aldehydes, Calabrian Bergamot",
+      heartNotes: "Egyptian Jasmine, Sweet Pea, Mock Orange",
+      baseNotes: "White Sandalwood, White Musks"
+    },
+    reason: "Pulsing urban vibration inspired by New York skylines and freshly laundered white linen."
+  },
+  {
+    id: "mfk-gentle-fluidity-silver",
+    brand: "Maison Francis Kurkdjian",
+    modelName: "Gentle Fluidity Silver",
+    sourceUrl: "https://www.franciskurkdjian.com/us-en/p/gentle-fluidity-silver-eau-de-parfum-RA12282.html",
+    sourceRegion: "FR",
+    variants: ["70ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 70,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Francis Kurkdjian",
+      topNotes: "Juniper Berries, Nutmeg",
+      heartNotes: "Coriander Seeds",
+      baseNotes: "Amber Woods, Vanilla, Musk"
+    },
+    reason: "Cool metallic rush balancing chilled gin juniper berries with dry ambery woods."
+  },
+  {
+    id: "mfk-gentle-fluidity-gold",
+    brand: "Maison Francis Kurkdjian",
+    modelName: "Gentle Fluidity Gold",
+    sourceUrl: "https://www.franciskurkdjian.com/us-en/p/gentle-fluidity-gold-eau-de-parfum-RA12292.html",
+    sourceRegion: "FR",
+    variants: ["70ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 70,
+      olfactoryFamily: "oriental musky",
+      perfumer: "Francis Kurkdjian",
+      topNotes: "Juniper Berries, Nutmeg",
+      heartNotes: "Coriander Seeds",
+      baseNotes: "Vanilla, Amber Woods, Musk"
+    },
+    reason: "Generous enveloping cloud of Madagascar vanilla and golden musks using identical notes to Silver."
+  },
+  {
+    id: "mfk-amyris-homme-extrait",
+    brand: "Maison Francis Kurkdjian",
+    modelName: "Amyris Homme Extrait de Parfum",
+    sourceUrl: "https://www.franciskurkdjian.com/us-en/p/amyris-homme-extrait-de-parfum-RA12163.html",
+    sourceRegion: "FR",
+    variants: ["70ml"],
+    attrs: {
+      concentration: "extrait de parfum",
+      volumeMl: 70,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Francis Kurkdjian",
+      topNotes: "Mandarin Blossom, Rosemary",
+      heartNotes: "Amyris from Jamaica, Iris from Florence",
+      baseNotes: "Tonka Bean, Cinnamon, Vanilla"
+    },
+    reason: "Sunlit meeting of luminous Jamaican amyris wood and aristocratic Florentine iris."
+  },
+  {
+    id: "mfk-petit-matin",
+    brand: "Maison Francis Kurkdjian",
+    modelName: "Petit Matin Eau de Parfum",
+    sourceUrl: "https://www.franciskurkdjian.com/us-en/p/petit-matin-eau-de-parfum-RA122421.html",
+    sourceRegion: "FR",
+    variants: ["70ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 70,
+      olfactoryFamily: "citrus floral",
+      perfumer: "Francis Kurkdjian",
+      topNotes: "Litsea Cubeba, Calabrian Lemon",
+      heartNotes: "Lavandin, Orange Blossom, Hawthorn",
+      baseNotes: "Musk, Ambroxan"
+    },
+    reason: "Dawn light in Paris capturing empty cobblestone streets with litsea cubeba and orange blossom."
+  },
+
+  // ==========================================
+  // 13. Maison Margiela (REPLICA) (10 models, France FR)
+  // ==========================================
+  {
+    id: "margiela-jazz-club",
+    brand: "Maison Margiela",
+    modelName: "Replica Jazz Club Eau de Toilette",
+    sourceUrl: "https://www.maisonmargiela-fragrances.us/fragrances/replica-jazz-club/MM001.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "oriental woody boozy",
+      perfumer: "Aliénor Massenet",
+      topNotes: "Pink Pepper, Neroli, Lemon",
+      heartNotes: "Rum, Clary Sage, Java Vetiver",
+      baseNotes: "Tobacco Leaf, Vanilla Bean, Styrax"
+    },
+    reason: "Brooklyn 2013 jazz club atmosphere captured with spiced rum cocktails and cigar smoke."
+  },
+  {
+    id: "margiela-by-the-fireplace",
+    brand: "Maison Margiela",
+    modelName: "Replica By the Fireplace Eau de Toilette",
+    sourceUrl: "https://www.maisonmargiela-fragrances.us/fragrances/replica-by-the-fireplace/MM002.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody amber gourmand",
+      perfumer: "Marie Salamagne",
+      topNotes: "Cloves, Pink Pepper, Orange Blossom",
+      heartNotes: "Chestnut, Guaiac Wood, Juniper",
+      baseNotes: "Vanilla, Peru Balsam, Cashmeran"
+    },
+    reason: "Chamonix 1971 memory of crackling hearth fires and roasting sweet chestnuts."
+  },
+  {
+    id: "margiela-beach-walk",
+    brand: "Maison Margiela",
+    modelName: "Replica Beach Walk Eau de Toilette",
+    sourceUrl: "https://www.maisonmargiela-fragrances.us/fragrances/replica-beach-walk/MM003.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "solar floral",
+      perfumer: "Jacques Cavallier & Marie Salamagne",
+      topNotes: "Bergamot, Pink Pepper, Lemon",
+      heartNotes: "Coconut Milk, Ylang-Ylang, Heliotrope",
+      baseNotes: "Musk, Benzoin, Cedar"
+    },
+    reason: "Calvi 1972 seaside memory of salt air, suntan lotion, warm sand and coconut."
+  },
+  {
+    id: "margiela-sailing-day",
+    brand: "Maison Margiela",
+    modelName: "Replica Sailing Day Eau de Toilette",
+    sourceUrl: "https://www.maisonmargiela-fragrances.us/fragrances/replica-sailing-day/MM004.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "marine aquatic",
+      perfumer: "Fabrice Pellegrin",
+      topNotes: "Sea Notes, Aldehydes, Red Pepper, Coriander",
+      heartNotes: "Juniper, Salicylate, Iris, Rose",
+      baseNotes: "Seaweed, Ambergris, Amberwood, Cedar"
+    },
+    reason: "Paros 2001 ocean breeze carrying refreshing sea spray and salty deep-sea red algae."
+  },
+  {
+    id: "margiela-lazy-sunday-morning",
+    brand: "Maison Margiela",
+    modelName: "Replica Lazy Sunday Morning Eau de Toilette",
+    sourceUrl: "https://www.maisonmargiela-fragrances.us/fragrances/replica-lazy-sunday-morning/MM005.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "floral musky",
+      perfumer: "Louise Turner",
+      topNotes: "Aldehydes, Lily of the Valley, Pear",
+      heartNotes: "Rose, Iris, Orange Blossom",
+      baseNotes: "White Musk, Ambrette, Indonesian Patchouli Leaf"
+    },
+    reason: "Florence 2003 gentle morning light filtering through freshly washed white cotton sheets."
+  },
+  {
+    id: "margiela-coffee-break",
+    brand: "Maison Margiela",
+    modelName: "Replica Coffee Break Eau de Toilette",
+    sourceUrl: "https://www.maisonmargiela-fragrances.us/fragrances/replica-coffee-break/MM006.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "oriental fougère gourmand",
+      perfumer: "Jacques Cavallier",
+      topNotes: "Pepper, Orange Blossom, Patchouli",
+      heartNotes: "Lavender, Coffee, Milk, Tonka Bean, Siam Benzoin, Cypriol",
+      baseNotes: "Vanilla, Cedar, Vetiver"
+    },
+    reason: "Stockholm 2007 cozy café respite blending creamy roasted coffee with aromatic lavender."
+  },
+  {
+    id: "margiela-whispers-in-the-library",
+    brand: "Maison Margiela",
+    modelName: "Replica Whispers in the Library Eau de Toilette",
+    sourceUrl: "https://www.maisonmargiela-fragrances.us/fragrances/replica-whispers-in-the-library/MM007.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody oriental",
+      perfumer: "Marie Salamagne",
+      topNotes: "Pepper, Orange Blossom, Patchouli",
+      heartNotes: "Cypriol Oil, Tonka Bean",
+      baseNotes: "Cedar, Vanilla, Precious Woods"
+    },
+    reason: "Oxford 1997 quiet study sanctuary among waxed wood desks and ancient vanilla-scented book parchment."
+  },
+  {
+    id: "margiela-under-the-lemon-trees",
+    brand: "Maison Margiela",
+    modelName: "Replica Under the Lemon Trees Eau de Toilette",
+    sourceUrl: "https://www.maisonmargiela-fragrances.us/fragrances/replica-under-the-lemon-trees/MM008.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "citrus green",
+      perfumer: "Violaine Collas",
+      topNotes: "Lime, Petitgrain, Cardamom",
+      heartNotes: "Green Tea, Mate, Coriander",
+      baseNotes: "White Musk, Cedar, Rockrose"
+    },
+    reason: "Palermo 1987 afternoon nap beneath fragrant lemon groves alive with green tea and cedar."
+  },
+  {
+    id: "margiela-autumn-vibes",
+    brand: "Maison Margiela",
+    modelName: "Replica Autumn Vibes Eau de Toilette",
+    sourceUrl: "https://www.maisonmargiela-fragrances.us/fragrances/replica-autumn-vibes/MM009.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody spicy",
+      perfumer: "Fanny Bal",
+      topNotes: "Cardamom, Pink Pepper",
+      heartNotes: "Nutmeg, Maple, Carrot Seeds",
+      baseNotes: "Cedar, Moss"
+    },
+    reason: "Montreal 2018 forest walk amidst crunchy falling leaves, golden acorns and red cedar."
+  },
+  {
+    id: "margiela-when-the-rain-stops",
+    brand: "Maison Margiela",
+    modelName: "Replica When the Rain Stops Eau de Toilette",
+    sourceUrl: "https://www.maisonmargiela-fragrances.us/fragrances/replica-when-the-rain-stops/MM010.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody aquatic floral",
+      perfumer: "Fanny Bal",
+      topNotes: "Rain Notes, Green Notes, Bergamot",
+      heartNotes: "Watery Notes, Turkish Rose, Jasmine",
+      baseNotes: "Pine Tree, Moss, Patchouli"
+    },
+    reason: "Dublin 2017 peaceful afternoon when sunlight breaks through raindrops on wet pine needles."
+  },
+
+  // ==========================================
+  // 14. Paco Rabanne (Rabanne) (10 models, France FR)
+  // ==========================================
+  {
+    id: "rabanne-1-million-edt",
+    brand: "Paco Rabanne",
+    modelName: "1 Million Eau de Toilette",
+    sourceUrl: "https://www.rabanne.com/us/en/fragrance/men/1-million-edt",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody spicy leather",
+      perfumer: "Christophe Raynaud, Olivier Pescheux & Michel Girard",
+      topNotes: "Blood Mandarin, Grapefruit, Mint",
+      heartNotes: "Cinnamon, Spicy Notes, Rose",
+      baseNotes: "Amber, Leather, Woody Notes, Indian Patchouli"
+    },
+    reason: "Global gold ingot cultural icon exploding with blood mandarin, warm cinnamon and blond leather."
+  },
+  {
+    id: "rabanne-1-million-elixir",
+    brand: "Paco Rabanne",
+    modelName: "1 Million Elixir Parfum Intense",
+    sourceUrl: "https://www.rabanne.com/us/en/fragrance/men/1-million-elixir",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "parfum intense",
+      volumeMl: 100,
+      olfactoryFamily: "amber woody",
+      perfumer: "Christophe Raynaud & Quentin Bisch",
+      topNotes: "Apple, Davana",
+      heartNotes: "Damascena Rose, Osmanthus, Cedar",
+      baseNotes: "Vanilla Absolute, Tonka Bean, Patchouli"
+    },
+    reason: "Supreme concentration blending handcrafted Damascena rose, apricot osmanthus and rich vanilla."
+  },
+  {
+    id: "rabanne-1-million-royal",
+    brand: "Paco Rabanne",
+    modelName: "1 Million Royal Parfum",
+    sourceUrl: "https://www.rabanne.com/us/en/fragrance/men/1-million-royal",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "parfum",
+      volumeMl: 100,
+      olfactoryFamily: "amber woody aromatic",
+      perfumer: "Quentin Bisch & Christophe Raynaud",
+      topNotes: "Cardamom, Tangerine, Bergamot",
+      heartNotes: "Lavender, Sage, Violet Leaf",
+      baseNotes: "Benzoin, Cedar, Patchouli"
+    },
+    reason: "Defiant royal energy powered by electrifying lavender, energizing cardamom and creamy benzoin."
+  },
+  {
+    id: "rabanne-invictus-edt",
+    brand: "Paco Rabanne",
+    modelName: "Invictus Eau de Toilette",
+    sourceUrl: "https://www.rabanne.com/us/en/fragrance/men/invictus-edt",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody aquatic",
+      perfumer: "Anne Flipo, Dominique Ropion, Olivier Polge & Véronique Nyberg",
+      topNotes: "Sea Notes, Grapefruit, Mandarin Orange",
+      heartNotes: "Bay Leaf, Jasmine",
+      baseNotes: "Ambergris, Guaiac Wood, Oakmoss, Patchouli"
+    },
+    reason: "Trophy of victory delivering a clash of biting marine citrus and heroic amber wood."
+  },
+  {
+    id: "rabanne-invictus-victory-elixir",
+    brand: "Paco Rabanne",
+    modelName: "Invictus Victory Elixir Parfum Intense",
+    sourceUrl: "https://www.rabanne.com/us/en/fragrance/men/invictus-victory-elixir",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "parfum intense",
+      volumeMl: 100,
+      olfactoryFamily: "amber spicy woody",
+      perfumer: "Anne Flipo & Nicolas Beaulieu",
+      topNotes: "Lavender, Cardamom, Black Pepper",
+      heartNotes: "Incense, Patchouli",
+      baseNotes: "Vanilla, Tonka Bean"
+    },
+    reason: "Dark triumph combining aromatic Provencal lavender with rich smoky incense and tonka bean."
+  },
+  {
+    id: "rabanne-phantom-edt",
+    brand: "Paco Rabanne",
+    modelName: "Phantom Eau de Toilette",
+    sourceUrl: "https://www.rabanne.com/us/en/fragrance/men/phantom-edt",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "150ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Anne Flipo, Dominique Ropion, Loc Dong & Juliette Karagueuzoglou",
+      topNotes: "Lavender, Lemon Zest, Amalfi Lemon",
+      heartNotes: "Lavender, Smoke, Apple, Earthy Notes, Patchouli",
+      baseNotes: "Vanilla, Lavender, Vetiver"
+    },
+    reason: "Connected futuristic robot fragrance clashing energizing lemon with creamy addictive lavender."
+  },
+  {
+    id: "rabanne-phantom-parfum",
+    brand: "Paco Rabanne",
+    modelName: "Phantom Parfum",
+    sourceUrl: "https://www.rabanne.com/us/en/fragrance/men/phantom-parfum",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml", "150ml"],
+    attrs: {
+      concentration: "parfum",
+      volumeMl: 100,
+      olfactoryFamily: "amber aromatic",
+      perfumer: "Juliette Karagueuzoglou, Anne Flipo & Dominique Ropion",
+      topNotes: "Cardamom, Bergamot, Lemon, Rhubarb",
+      heartNotes: "Lavender, Patchouli, Cedarwood, Geranium",
+      baseNotes: "Vanilla, Tolu Balsam, Haitian Vetiver"
+    },
+    reason: "Darker nocturnal side of the robot powered by spicy cardamom, French lavender and seductive vanilla."
+  },
+  {
+    id: "rabanne-olympea-edp",
+    brand: "Paco Rabanne",
+    modelName: "Olympéa Eau de Parfum",
+    sourceUrl: "https://www.rabanne.com/us/en/fragrance/women/olympea-edp",
+    sourceRegion: "FR",
+    variants: ["50ml", "80ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 80,
+      olfactoryFamily: "oriental floral salty",
+      perfumer: "Loc Dong, Anne Flipo & Dominique Ropion",
+      topNotes: "Water Jasmine, Green Mandarin, Ginger Flower",
+      heartNotes: "Salt, Vanilla",
+      baseNotes: "Ambergris, Cashmere Wood, Sandalwood"
+    },
+    reason: "Modern Cleopatra divinity contrasting mouth-watering salted vanilla with sensual water jasmine."
+  },
+  {
+    id: "rabanne-fame-edp",
+    brand: "Paco Rabanne",
+    modelName: "Fame Eau de Parfum",
+    sourceUrl: "https://www.rabanne.com/us/en/fragrance/women/fame-edp",
+    sourceRegion: "FR",
+    variants: ["50ml", "80ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 80,
+      olfactoryFamily: "fruity floral woody",
+      perfumer: "Dora Baghriche, Marie Salamagne, Alberto Morillas & Fabrice Pellegrin",
+      topNotes: "Mango, Bergamot",
+      heartNotes: "Jasmine, Olibanum",
+      baseNotes: "Vanilla, Sandalwood"
+    },
+    reason: "Parisian it-girl essence in chainmail dress blending luscious tropical mango with airy frankincense."
+  },
+  {
+    id: "rabanne-pure-xs-pour-homme",
+    brand: "Paco Rabanne",
+    modelName: "Pure XS Eau de Toilette",
+    sourceUrl: "https://www.rabanne.com/us/en/fragrance/men/pure-xs",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "aromatic spicy oriental",
+      perfumer: "Anne Flipo, Caroline Dumur & Bruno Jovanovic",
+      topNotes: "Ginger, Thyme, Grapefruit, Bergamot, Green Accord",
+      heartNotes: "Vanilla, Liquor, Cinnamon, Leather, Apple",
+      baseNotes: "Myrrh, Sugar, Cedar, Woody Notes, Cashmeran, Patchouli"
+    },
+    reason: "Electric magnetic contrast triggering chills and burning desire through icy ginger and hot vanilla."
+  },
+
+  // ==========================================
+  // 15. Parfums de Marly (10 models, France FR)
+  // ==========================================
+  {
+    id: "pdm-layton",
+    brand: "Parfums de Marly",
+    modelName: "Layton Eau de Parfum",
+    sourceUrl: "https://us.parfums-de-marly.com/products/layton",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "oriental floral",
+      perfumer: "Hamid Merati-Kashani",
+      topNotes: "Apple, Bergamot, Lavender",
+      heartNotes: "Jasmine, Violet, Geranium",
+      baseNotes: "Vanilla, Pepper, Guaiac Wood, Patchouli"
+    },
+    reason: "Addictive royal court blend of crisp apple, sensual vanilla and precious guaiac wood."
+  },
+  {
+    id: "pdm-herod",
+    brand: "Parfums de Marly",
+    modelName: "Herod Eau de Parfum",
+    sourceUrl: "https://us.parfums-de-marly.com/products/herod",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "woody gourmand",
+      perfumer: "Olivier Pescheux",
+      topNotes: "Cinnamon, Pepperwood",
+      heartNotes: "Tobacco Leaf, Incense, Cistus, Osmanthus",
+      baseNotes: "Vanilla Pod, Musk, Patchouli, Cedarwood"
+    },
+    reason: "Masterpiece smoky vanilla and cured tobacco leaf celebrating the victorious 18th-century stallion."
+  },
+  {
+    id: "pdm-pegasus",
+    brand: "Parfums de Marly",
+    modelName: "Pegasus Eau de Parfum",
+    sourceUrl: "https://us.parfums-de-marly.com/products/pegasus",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "oriental fougère",
+      perfumer: "Hamid Merati-Kashani",
+      topNotes: "Cypress, Bergamot, Heliotrope",
+      heartNotes: "Jasmine, Lavender, Bitter Almond",
+      baseNotes: "Vanilla, Amber, Sandalwood"
+    },
+    reason: "Distinctive metallic almond fougère radiating chivalric sophistication and poise."
+  },
+  {
+    id: "pdm-carlisle",
+    brand: "Parfums de Marly",
+    modelName: "Carlisle Eau de Parfum",
+    sourceUrl: "https://us.parfums-de-marly.com/products/carlisle",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "floral spicy woody",
+      perfumer: "Quentin Bisch",
+      topNotes: "Green Apple, Nutmeg",
+      heartNotes: "Tonka Bean, Osmanthus, Rose, Davana",
+      baseNotes: "Vanilla, Patchouli, Opoponax Resinoid"
+    },
+    reason: "Warm and deep wave of spiced nutmeg, rich tonka and golden vanilla."
+  },
+  {
+    id: "pdm-greenley",
+    brand: "Parfums de Marly",
+    modelName: "Greenley Eau de Parfum",
+    sourceUrl: "https://us.parfums-de-marly.com/products/greenley",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "citrus woody",
+      perfumer: "Olivier Pescheux",
+      topNotes: "Sicilian Bergamot, Mandarin, Green Apple, Cashmeran",
+      heartNotes: "Cedarwood, Petitgrain, Violet, Pomarose",
+      baseNotes: "Oakmoss, Musk, Amberwood Accord"
+    },
+    reason: "Vibrant splash of crisp green apple, petitgrain and noble oakmoss in the gardens of Marly."
+  },
+  {
+    id: "pdm-sedley",
+    brand: "Parfums de Marly",
+    modelName: "Sedley Eau de Parfum",
+    sourceUrl: "https://us.parfums-de-marly.com/products/sedley",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Olivier Cresp & Hamid Merati-Kashani",
+      topNotes: "Bergamot, Spearmint, Watery Accord",
+      heartNotes: "Geranium, Bourbon Geranium, Lavender",
+      baseNotes: "Sandalwood, Incense, White Musk, Cedarwood"
+    },
+    reason: "Crisp aquatic energy driven by spearmint, sparkling citrus and clean woody musk."
+  },
+  {
+    id: "pdm-delina",
+    brand: "Parfums de Marly",
+    modelName: "Delina Eau de Parfum",
+    sourceUrl: "https://us.parfums-de-marly.com/products/delina",
+    sourceRegion: "FR",
+    variants: ["75ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 75,
+      olfactoryFamily: "floral woody",
+      perfumer: "Quentin Bisch",
+      topNotes: "Rhubarb, Lychee, Bergamot",
+      heartNotes: "Turkish Rose, Peony, Vanilla",
+      baseNotes: "Cashmeran, Musk, Vetiver, Cedarwood"
+    },
+    reason: "Sensational floral bouquet crafted by Quentin Bisch starring Turkish rose, tart rhubarb and lychee."
+  },
+  {
+    id: "pdm-haltane",
+    brand: "Parfums de Marly",
+    modelName: "Haltane Eau de Parfum",
+    sourceUrl: "https://us.parfums-de-marly.com/products/haltane",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Hamid Merati-Kashani",
+      topNotes: "Bergamot, Lavender, Clary Sage",
+      heartNotes: "Saffron, Cedarwood, Praline, Elder Wood",
+      baseNotes: "Patchouli, Vetiver, Musk, Leather, Agarwood"
+    },
+    reason: "Daring contrast between traditional woods and an ultra-modern sweet praline accord."
+  },
+  {
+    id: "pdm-althair",
+    brand: "Parfums de Marly",
+    modelName: "Althaïr Eau de Parfum",
+    sourceUrl: "https://us.parfums-de-marly.com/products/althair",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "amber woody gourmand",
+      perfumer: "Hamid Merati-Kashani & Ilias Ermenidis",
+      topNotes: "Cardamom, Cinnamon, Orange Blossom, Bergamot",
+      heartNotes: "Bourbon Vanilla, Elemi",
+      baseNotes: "Praline, Musk, Ambroxan, Guaiac Wood"
+    },
+    reason: "Sublime exploration of majestic Bourbon vanilla balanced with warm cinnamon and caramelized praline."
+  },
+  {
+    id: "pdm-valaya",
+    brand: "Parfums de Marly",
+    modelName: "Valaya Eau de Parfum",
+    sourceUrl: "https://us.parfums-de-marly.com/products/valaya",
+    sourceRegion: "FR",
+    variants: ["75ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 75,
+      olfactoryFamily: "floral musky woody",
+      perfumer: "Quentin Bisch",
+      topNotes: "Aldehydes, White Peach, Bergamot, Mandarin",
+      heartNotes: "Orange Blossom, Petalia, Lily of the Valley, Vetiver, Mahonial",
+      baseNotes: "Musk, Ambroxan, Akigalawood, Vanilla"
+    },
+    reason: "Quentin Bisch's pure sensory touch of lightweight cotton veil caressing feminine skin."
+  },
+
+  // ==========================================
+  // 16. Prada (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "prada-luna-rossa-black",
+    brand: "Prada",
+    modelName: "Luna Rossa Black Eau de Parfum",
+    sourceUrl: "https://www.prada.com/us/en/men/fragrances/luna-rossa/product.luna-rossa-black-edp.html",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental woody ambery",
+      perfumer: "Daniela Andrier",
+      topNotes: "Bergamot",
+      heartNotes: "Angelica, Patchouli",
+      baseNotes: "Coumarin, Amber, Musk"
+    },
+    reason: "Nocturnal city immersion driven by warm coumarin, angelic musk and dark patchouli."
+  },
+  {
+    id: "prada-luna-rossa-ocean-edp",
+    brand: "Prada",
+    modelName: "Luna Rossa Ocean Eau de Parfum",
+    sourceUrl: "https://www.prada.com/us/en/men/fragrances/luna-rossa/product.luna-rossa-ocean-edp.html",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody amber",
+      perfumer: "Anne Flipo & Carlos Benaïm",
+      topNotes: "Grapefruit",
+      heartNotes: "Incense, Woody Notes",
+      baseNotes: "Vanilla, Amber Xtreme"
+    },
+    reason: "Technological exploration beyond boundaries marrying tart grapefruit, smoky frankincense and rich vanilla."
+  },
+  {
+    id: "prada-lhomme-prada-edt",
+    brand: "Prada",
+    modelName: "L'Homme Prada Eau de Toilette",
+    sourceUrl: "https://www.prada.com/us/en/men/fragrances/lhomme/product.lhomme-prada-edt.html",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml", "150ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody chypre floral",
+      perfumer: "Daniela Andrier",
+      topNotes: "Neroli, Black Pepper, Cardamom, Carrot Seeds",
+      heartNotes: "Iris, Violet, Geranium, Mate",
+      baseNotes: "Amber, Cedar, Sandalwood, Patchouli"
+    },
+    reason: "The gold standard of luxury office wear pairing soapy clean neroli with aristocratic Tuscan iris."
+  },
+  {
+    id: "prada-lhomme-prada-intense",
+    brand: "Prada",
+    modelName: "L'Homme Prada Intense",
+    sourceUrl: "https://www.prada.com/us/en/men/fragrances/lhomme/product.lhomme-prada-intense.html",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental woody amber",
+      perfumer: "Daniela Andrier",
+      topNotes: "Iris",
+      heartNotes: "Amber, Patchouli",
+      baseNotes: "Tonka Bean, Leather, Sandalwood"
+    },
+    reason: "Multi-layered nocturnal intensity deepening iris with rich amber, leather and tonka bean."
+  },
+  {
+    id: "prada-paradoxe-edp",
+    brand: "Prada",
+    modelName: "Prada Paradoxe Eau de Parfum",
+    sourceUrl: "https://www.prada.com/us/en/women/fragrances/prada-paradoxe/product.paradoxe-edp.html",
+    sourceRegion: "IT",
+    variants: ["30ml", "50ml", "90ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "floral amber",
+      perfumer: "Nadège Le Garlantezec, Antoine Maisondieu & Shyamala Maisondieu",
+      topNotes: "Pear, Tangerine, Calabrian Bergamot",
+      heartNotes: "Orange Blossom, Neroli Essence, Jasmine Sambac",
+      baseNotes: "Bourbon Vanilla, White Musk (Serenolide), Amber (Ambrofix), Benzoin"
+    },
+    reason: "Avant-garde feminine icon reinventing floral freshness with bio-converted amber and Serenolide musk."
+  },
+  {
+    id: "prada-paradoxe-intense",
+    brand: "Prada",
+    modelName: "Prada Paradoxe Intense",
+    sourceUrl: "https://www.prada.com/us/en/women/fragrances/prada-paradoxe/product.paradoxe-intense.html",
+    sourceRegion: "IT",
+    variants: ["30ml", "50ml", "90ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "floral ambery woody",
+      perfumer: "Nadège Le Garlantezec, Shyamala Maisondieu & Antoine Maisondieu",
+      topNotes: "Pear, Neroli, Bergamot",
+      heartNotes: "Moss, Jasmine, Neroli Essence",
+      baseNotes: "Bourbon Vanilla, Vanilla, Amber, Serenolide"
+    },
+    reason: "Intensified floral paradox augmented by earthy moss and an infusion of warm Bourbon vanilla."
+  },
+  {
+    id: "prada-infusion-diris",
+    brand: "Prada",
+    modelName: "Les Infusions de Prada Infusion d'Iris",
+    sourceUrl: "https://www.prada.com/us/en/women/fragrances/les-infusions/product.infusion-diris.html",
+    sourceRegion: "IT",
+    variants: ["100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "floral woody musk",
+      perfumer: "Daniela Andrier",
+      topNotes: "African Orange Flower, Neroli, Mandarin Orange",
+      heartNotes: "Iris, Galbanum, Mastic (Lentisque)",
+      baseNotes: "Incense, Virginia Cedar, Benzoin, Vetiver"
+    },
+    reason: "Daniela Andrier's poetic masterpiece capturing the whisper of precious iris immersed in clean water."
+  },
+  {
+    id: "prada-candy-edp",
+    brand: "Prada",
+    modelName: "Prada Candy Eau de Parfum",
+    sourceUrl: "https://www.prada.com/us/en/women/fragrances/prada-candy/product.prada-candy-edp.html",
+    sourceRegion: "IT",
+    variants: ["30ml", "50ml", "80ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 80,
+      olfactoryFamily: "amber gourmand",
+      perfumer: "Daniela Andrier",
+      topNotes: "Caramel",
+      heartNotes: "Powdery Notes, Musk",
+      baseNotes: "Benzoin, Vanilla"
+    },
+    reason: "Joyful high-fashion indulgence bursting with silky caramel, powdery cocktail notes and noble Laos benzoin."
+  },
+  {
+    id: "prada-luna-rossa-carbon",
+    brand: "Prada",
+    modelName: "Luna Rossa Carbon Eau de Toilette",
+    sourceUrl: "https://www.prada.com/us/en/men/fragrances/luna-rossa/product.luna-rossa-carbon.html",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml", "150ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "aromatic fougère mineral",
+      perfumer: "Daniela Andrier",
+      topNotes: "Bergamot, Pepper",
+      heartNotes: "Lavender, Soil Tincture, Watery Notes, Metallic Notes, Coal",
+      baseNotes: "Patchouli, Ambroxan"
+    },
+    reason: "Mineral strength forged in carbon fiber and steam-distilled botanicals with crunchy metallic lavender."
+  },
+  {
+    id: "prada-amber-pour-homme",
+    brand: "Prada",
+    modelName: "Prada Amber Pour Homme",
+    sourceUrl: "https://www.prada.com/us/en/men/fragrances/prada-amber/product.amber-pour-homme.html",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "oriental fougère soapy",
+      perfumer: "Daniela Andrier",
+      topNotes: "Neroli, Cardamom, Bergamot, Mandarin Orange",
+      heartNotes: "Myrrh, Musk, Orange Blossom, Geranium, Vetiver",
+      baseNotes: "Saffron, Vanilla, Labdanum, Leather, Tonka Bean, Sandalwood, Patchouli"
+    },
+    reason: "Impeccable Italian barbershop soap luxury constructed around rich amber, myrrh and Spanish saffron."
+  },
+
+  // ==========================================
+  // 17. Serge Lutens (10 models, France FR)
+  // ==========================================
+  {
+    id: "serge-lutens-chergui",
+    brand: "Serge Lutens",
+    modelName: "Chergui Eau de Parfum",
+    sourceUrl: "https://www.sergelutens.com/products/chergui-eau-de-parfum",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental spicy",
+      perfumer: "Christopher Sheldrake",
+      topNotes: "Honey, Hay, Spices",
+      heartNotes: "Tobacco Leaf, Amber, Iris",
+      baseNotes: "Sandalwood, Musk, Rose, Incense"
+    },
+    reason: "Fiery Moroccan desert wind crystallizing immortelle, golden honey and dried tobacco leaves."
+  },
+  {
+    id: "serge-lutens-ambre-sultan",
+    brand: "Serge Lutens",
+    modelName: "Ambre Sultan Eau de Parfum",
+    sourceUrl: "https://www.sergelutens.com/products/ambre-sultan-eau-de-parfum",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental amber",
+      perfumer: "Christopher Sheldrake",
+      topNotes: "Coriander, Bay Leaf, Oregano",
+      heartNotes: "Myrrh, Angelica, Resins",
+      baseNotes: "Amber, Sandalwood, Patchouli, Benzoin, Vanilla"
+    },
+    reason: "The archetypal raw resinous amber founded upon fragrant Moroccan resins bought in the souks of Marrakech."
+  },
+  {
+    id: "serge-lutens-feminite-du-bois",
+    brand: "Serge Lutens",
+    modelName: "Féminité du Bois Eau de Parfum",
+    sourceUrl: "https://www.sergelutens.com/products/feminite-du-bois-eau-de-parfum",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody fruity",
+      perfumer: "Christopher Sheldrake & Pierre Bourdon",
+      topNotes: "Virginia Cedar, Plum, Cinnamon, Peach",
+      heartNotes: "Clove, Ginger, Violet, Ylang-Ylang, Rose, Orange Blossom",
+      baseNotes: "Vanilla, Sandalwood, Benzoin, Musk"
+    },
+    reason: "Historic 1992 revolution that dared to make Atlas cedarwood the heart of feminine perfumery."
+  },
+  {
+    id: "serge-lutens-la-fille-de-berlin",
+    brand: "Serge Lutens",
+    modelName: "La Fille de Berlin Eau de Parfum",
+    sourceUrl: "https://www.sergelutens.com/products/la-fille-de-berlin-eau-de-parfum",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental floral",
+      perfumer: "Christopher Sheldrake",
+      topNotes: "Rose, Geranium",
+      heartNotes: "Palmarosa, Pepper",
+      baseNotes: "Patchouli, Moss, Honey"
+    },
+    reason: "A rose with thorny courage stained like crimson snow on the boulevards of Berlin."
+  },
+  {
+    id: "serge-lutens-santal-majuscule",
+    brand: "Serge Lutens",
+    modelName: "Santal Majuscule Eau de Parfum",
+    sourceUrl: "https://www.sergelutens.com/products/santal-majuscule-eau-de-parfum",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody oriental",
+      perfumer: "Christopher Sheldrake",
+      topNotes: "Bitter Cacao",
+      heartNotes: "Damascena Rose",
+      baseNotes: "Sandalwood"
+    },
+    reason: "Sandalwood written with a capital letter, enveloped in dark bitter cacao and velvety rose."
+  },
+  {
+    id: "serge-lutens-fleurs-doranger",
+    brand: "Serge Lutens",
+    modelName: "Fleurs d'Oranger Eau de Parfum",
+    sourceUrl: "https://www.sergelutens.com/products/fleurs-doranger-eau-de-parfum",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "floral",
+      perfumer: "Christopher Sheldrake",
+      topNotes: "Orange Blossom, White Jasmine",
+      heartNotes: "Tuberose, White Rose, Cumin",
+      baseNotes: "Citrus Peel, Hibiscus Seeds, Woody Notes"
+    },
+    reason: "Carnal, sun-drenched orange blossom laced with warm cumin and intoxicating white tuberose."
+  },
+  {
+    id: "serge-lutens-lorpheline",
+    brand: "Serge Lutens",
+    modelName: "L'Orpheline Eau de Parfum",
+    sourceUrl: "https://www.sergelutens.com/products/lorpheline-eau-de-parfum",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental woody musk",
+      perfumer: "Christopher Sheldrake",
+      topNotes: "Incense",
+      heartNotes: "Castoreum, Pepper",
+      baseNotes: "Musk, Woody Notes"
+    },
+    reason: "Contemplative veil of silver frankincense and ethereal white musks rising from fragile ashes."
+  },
+  {
+    id: "serge-lutens-cuir-mauresque",
+    brand: "Serge Lutens",
+    modelName: "Cuir Mauresque Eau de Parfum",
+    sourceUrl: "https://www.sergelutens.com/products/cuir-mauresque-eau-de-parfum",
+    sourceRegion: "FR",
+    variants: ["100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "leather amber",
+      perfumer: "Christopher Sheldrake",
+      topNotes: "Cinnamon, Nutmeg, Clove",
+      heartNotes: "Orange Blossom, Cedar, Incense",
+      baseNotes: "Moorish Leather, Civet, Amber, Myrrh"
+    },
+    reason: "Moorish leather craftsmanship infused with orange blossom water, cinnamon and ancient resins."
+  },
+  {
+    id: "serge-lutens-un-bois-vanille",
+    brand: "Serge Lutens",
+    modelName: "Un Bois Vanille Eau de Parfum",
+    sourceUrl: "https://www.sergelutens.com/products/un-bois-vanille-eau-de-parfum",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "amber gourmand",
+      perfumer: "Christopher Sheldrake",
+      topNotes: "Coconut Milk, Black Licorice",
+      heartNotes: "Beeswax, Bitter Almond, Tonka Bean",
+      baseNotes: "Vanilla, Sandalwood, Benzoin, Guaiac Wood"
+    },
+    reason: "Enchanted Aztec forest where black vanilla pods infuse with toasted coconut and smoky sandalwood."
+  },
+  {
+    id: "serge-lutens-five-oclock-au-gingembre",
+    brand: "Serge Lutens",
+    modelName: "Five O'Clock Au Gingembre",
+    sourceUrl: "https://www.sergelutens.com/products/five-oclock-au-gingembre-eau-de-parfum",
+    sourceRegion: "FR",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental spicy",
+      perfumer: "Christopher Sheldrake",
+      topNotes: "Tea, Bergamot",
+      heartNotes: "Ginger, Cinnamon, Woodsy Notes",
+      baseNotes: "Cacao, Honey, Amber, Patchouli, Pepper"
+    },
+    reason: "Ceremonious afternoon tea featuring candied ginger biscuits, dark honey and bergamot tea."
+  },
+
+  // ==========================================
+  // 18. Tom Ford (10 models, USA US)
+  // ==========================================
+  {
+    id: "tom-ford-oud-wood",
+    brand: "Tom Ford",
+    modelName: "Oud Wood Eau de Parfum",
+    sourceUrl: "https://www.tomfordbeauty.com/product/oud-wood",
+    sourceRegion: "US",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "woody amber",
+      perfumer: "Richard Herpin",
+      topNotes: "Rosewood, Cardamom, Chinese Pepper",
+      heartNotes: "Oud Wood, Sandalwood, Vetiver",
+      baseNotes: "Tonka Bean, Vanilla, Amber"
+    },
+    reason: "Masterpiece smoky blend of rare oud wood, exotic cardamom and sensual amber."
+  },
+  {
+    id: "tom-ford-tobacco-vanille",
+    brand: "Tom Ford",
+    modelName: "Tobacco Vanille Eau de Parfum",
+    sourceUrl: "https://www.tomfordbeauty.com/product/tobacco-vanille",
+    sourceRegion: "US",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "warm gourmand",
+      perfumer: "Olivier Gillotin",
+      topNotes: "Tobacco Leaf, Spicy Notes",
+      heartNotes: "Tonka Bean, Tobacco Blossom, Vanilla, Cacao",
+      baseNotes: "Dry Fruit Accord, Rich Wood Sap"
+    },
+    reason: "Opulent English gentleman's club aroma steeped in spiced tobacco, rich vanilla and dried fruits."
+  },
+  {
+    id: "tom-ford-tuscan-leather",
+    brand: "Tom Ford",
+    modelName: "Tuscan Leather Eau de Parfum",
+    sourceUrl: "https://www.tomfordbeauty.com/product/tuscan-leather",
+    sourceRegion: "US",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "leather",
+      perfumer: "Harry Frémont & Jacques Cavallier",
+      topNotes: "Saffron, Raspberry, Thyme",
+      heartNotes: "Olibanum, Night Blooming Jasmine",
+      baseNotes: "Black Suede, Leather, Amberwood"
+    },
+    reason: "Raw yet refined artisanal leather accented with bittersweet raspberry and Tuscan saffron."
+  },
+  {
+    id: "tom-ford-lost-cherry",
+    brand: "Tom Ford",
+    modelName: "Lost Cherry Eau de Parfum",
+    sourceUrl: "https://www.tomfordbeauty.com/product/lost-cherry",
+    sourceRegion: "US",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "fruity gourmand",
+      perfumer: "Louise Turner",
+      topNotes: "Black Cherry, Cherry Liqueur, Bitter Almond",
+      heartNotes: "Griotte Syrup, Turkish Rose, Jasmine Sambac",
+      baseNotes: "Peru Balsam, Roasted Tonka, Sandalwood, Vetiver"
+    },
+    reason: "Decadent gourmand scent capturing ripe black cherries dripping in cherry liqueur and bitter almond."
+  },
+  {
+    id: "tom-ford-neroli-portofino",
+    brand: "Tom Ford",
+    modelName: "Neroli Portofino Eau de Parfum",
+    sourceUrl: "https://www.tomfordbeauty.com/product/neroli-portofino",
+    sourceRegion: "US",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "fresh citrus",
+      perfumer: "Rodrigo Flores-Roux",
+      topNotes: "Tunisian Neroli, Italian Bergamot, Sicilian Lemon",
+      heartNotes: "Yellow Mandarin, Orange Flower",
+      baseNotes: "Lavender, Herbal Notes, Amber"
+    },
+    reason: "Crisp Italian Riviera breeze with sparkling citrus oils, orange flower and radiant amber."
+  },
+  {
+    id: "tom-ford-soleil-blanc",
+    brand: "Tom Ford",
+    modelName: "Soleil Blanc Eau de Parfum",
+    sourceUrl: "https://www.tomfordbeauty.com/product/soleil-blanc",
+    sourceRegion: "US",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "solar floral",
+      perfumer: "Nathalie Gracia-Cetto",
+      topNotes: "Bergamot, Cardamom, Pink Pepper, Pistachio",
+      heartNotes: "Ylang-Ylang, Tuberose, Jasmine",
+      baseNotes: "Benzoin, Amber, Tonka Bean, Coconut Milk"
+    },
+    reason: "Unexpected solar amber floral bouquet alive with creamy coconut milk and sunlit pistachio."
+  },
+  {
+    id: "tom-ford-bitter-peach",
+    brand: "Tom Ford",
+    modelName: "Bitter Peach Eau de Parfum",
+    sourceUrl: "https://www.tomfordbeauty.com/product/bitter-peach",
+    sourceRegion: "US",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "fruity floral amber",
+      perfumer: "Laurent Le Guernec",
+      topNotes: "Pêche de Vigne, Blood Orange, Cardamom",
+      heartNotes: "Heliotrope, Davana, Rum Absolute, Cognac",
+      baseNotes: "Patchouli, Sandalwood, Vanilla, Tonka Bean"
+    },
+    reason: "Sensual nectarous peach laced with rich rum, blood orange and hypnotic Indonesian patchouli."
+  },
+  {
+    id: "tom-ford-black-orchid",
+    brand: "Tom Ford",
+    modelName: "Black Orchid Eau de Parfum",
+    sourceUrl: "https://www.tomfordbeauty.com/product/black-orchid",
+    sourceRegion: "US",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "floral amber",
+      perfumer: "David Apel & Pierre Negrin",
+      topNotes: "Black Truffle, Ylang-Ylang, Bergamot, Blackcurrant",
+      heartNotes: "Black Orchid, Spices, Floral Notes",
+      baseNotes: "Patchouli, Incense, Vetiver, Vanilla"
+    },
+    reason: "Luxurious breakthrough scent of elusive black orchid petals, earthy black truffle and dark patchouli."
+  },
+  {
+    id: "tom-ford-grey-vetiver",
+    brand: "Tom Ford",
+    modelName: "Grey Vetiver Parfum",
+    sourceUrl: "https://www.tomfordbeauty.com/product/grey-vetiver",
+    sourceRegion: "US",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "parfum",
+      volumeMl: 50,
+      olfactoryFamily: "woody spicy",
+      perfumer: "Harry Frémont",
+      topNotes: "Orange Blossom, Grapefruit",
+      heartNotes: "Saffron, Nutmeg, Pimento",
+      baseNotes: "Haitian Vetiver, Woody Notes"
+    },
+    reason: "Impeccable tailored elegance capturing the silvery essence of Haitian vetiver with sunlit saffron."
+  },
+  {
+    id: "tom-ford-ebene-fume",
+    brand: "Tom Ford",
+    modelName: "Ébène Fumé Eau de Parfum",
+    sourceUrl: "https://www.tomfordbeauty.com/product/ebene-fume",
+    sourceRegion: "US",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 50,
+      olfactoryFamily: "woody amber meditative",
+      perfumer: "Rodrigo Flores-Roux",
+      topNotes: "Palo Santo Smoke, Incense, Black Pepper, Violet Leaf",
+      heartNotes: "Leather, Labdanum, Cade Oil, Papyrus, Rose",
+      baseNotes: "Ebony Wood, Guaiac Wood, Resins"
+    },
+    reason: "Purifying meditation pairing the sacred smoke of Palo Santo with warm ebony wood."
+  },
+
+  // ==========================================
+  // 19. Valentino (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "valentino-born-in-roma-uomo-edt",
+    brand: "Valentino",
+    modelName: "Born in Roma Uomo Eau de Toilette",
+    sourceUrl: "https://www.valentino.com/en-us/fragrances/born-in-roma-uomo-edt",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Antoine Maisondieu & Guillaume Flavigny",
+      topNotes: "Mineral Salt, Violet Leaf",
+      heartNotes: "Ginger, Clary Sage",
+      baseNotes: "Smoked Vetiver, Woody Notes"
+    },
+    reason: "Roman punk elegance featuring mineral salt accords, violet leaf and modern smoked vetiver."
+  },
+  {
+    id: "valentino-born-in-roma-uomo-intense",
+    brand: "Valentino",
+    modelName: "Born in Roma Uomo Intense",
+    sourceUrl: "https://www.valentino.com/en-us/fragrances/born-in-roma-uomo-intense",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "amber fougère",
+      perfumer: "Guillaume Flavigny & Antoine Maisondieu",
+      topNotes: "Vanilla Infusion",
+      heartNotes: "Lavandin",
+      baseNotes: "Smoked Vetiver"
+    },
+    reason: "Magnetic sunset celebration over Rome burning with seductive Bourbon vanilla and lavender."
+  },
+  {
+    id: "valentino-born-in-roma-donna-edp",
+    brand: "Valentino",
+    modelName: "Born in Roma Donna Eau de Parfum",
+    sourceUrl: "https://www.valentino.com/en-us/fragrances/born-in-roma-donna-edp",
+    sourceRegion: "IT",
+    variants: ["30ml", "50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "floral oriental",
+      perfumer: "Honorine Blanc & Amandine Clerc-Marie",
+      topNotes: "Blackcurrant, Pink Pepper, Bergamot",
+      heartNotes: "Jasmine Sambac, Jasmine, Jasmine Tea",
+      baseNotes: "Bourbon Vanilla, Cashmeran, Guaiac Wood"
+    },
+    reason: "Couture tribute to Roman street culture combining a trio of jasmine flowers with warm Bourbon vanilla."
+  },
+  {
+    id: "valentino-born-in-roma-donna-intense",
+    brand: "Valentino",
+    modelName: "Born in Roma Donna Intense",
+    sourceUrl: "https://www.valentino.com/en-us/fragrances/born-in-roma-donna-intense",
+    sourceRegion: "IT",
+    variants: ["30ml", "50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "floral amber",
+      perfumer: "Amandine Clerc-Marie & Honorine Blanc",
+      topNotes: "Bourbon Vanilla, Bergamot",
+      heartNotes: "Jasmine",
+      baseNotes: "Benzoin"
+    },
+    reason: "Hypnotic night in the Eternal City deepening radiant jasmine with intense solar vanilla and benzoin."
+  },
+  {
+    id: "valentino-born-in-roma-uomo-coral-fantasy",
+    brand: "Valentino",
+    modelName: "Born in Roma Uomo Coral Fantasy",
+    sourceUrl: "https://www.valentino.com/en-us/fragrances/born-in-roma-uomo-coral-fantasy",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody fruity aromatic",
+      perfumer: "Nicolas Beaulieu & Jean-Christophe Hérault",
+      topNotes: "Red Apple, Cardamom, Calabrian Bergamot",
+      heartNotes: "Bourbon Geranium, Clary Sage, Lavender",
+      baseNotes: "Tobacco, Patchouli, Vetiver"
+    },
+    reason: "Golden hour energy over the Roman skyline firing crisp red apple with aromatic smoky tobacco."
+  },
+  {
+    id: "valentino-uomo-intense-edp",
+    brand: "Valentino",
+    modelName: "Valentino Uomo Intense Eau de Parfum",
+    sourceUrl: "https://www.valentino.com/en-us/fragrances/valentino-uomo-intense",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental woody leather",
+      perfumer: "Sophie Labbé",
+      topNotes: "Mandarin Orange, Clary Sage",
+      heartNotes: "Iris, Tonka Bean",
+      baseNotes: "Black Leather, Vanilla"
+    },
+    reason: "Sophie Labbé's beloved creation fusing powdery Florentine iris with black leather and tonka bean."
+  },
+  {
+    id: "valentino-voce-viva-edp",
+    brand: "Valentino",
+    modelName: "Voce Viva Eau de Parfum",
+    sourceUrl: "https://www.valentino.com/en-us/fragrances/voce-viva",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "floral woody",
+      perfumer: "Honorine Blanc & Amandine Clerc-Marie",
+      topNotes: "Italian Bergamot, Mandarin Orange, Ginger",
+      heartNotes: "Orange Blossom, Golden Gardenia",
+      baseNotes: "Crystal Moss, Vanilla, Tonka Bean, Sandalwood, Musk"
+    },
+    reason: "Ode to women's multi-faceted voice contrasting golden Italian citrus with unexpected crystal moss."
+  },
+  {
+    id: "valentino-voce-viva-intensa",
+    brand: "Valentino",
+    modelName: "Voce Viva Intensa Eau de Parfum",
+    sourceUrl: "https://www.valentino.com/en-us/fragrances/voce-viva-intensa",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "floral woody amber",
+      perfumer: "Honorine Blanc & Amandine Clerc-Marie",
+      topNotes: "Bourbon Mandarin, Bergamot",
+      heartNotes: "Orange Blossom, Jasmine Sambac",
+      baseNotes: "Bourbon Vanilla, Crystal Moss"
+    },
+    reason: "Amplified celebration of charisma highlighting voluptuous jasmine sambac and rich Bourbon vanilla."
+  },
+  {
+    id: "valentino-uomo-born-in-roma-green-stravaganza",
+    brand: "Valentino",
+    modelName: "Born in Roma Uomo Green Stravaganza",
+    sourceUrl: "https://www.valentino.com/en-us/fragrances/born-in-roma-green-stravaganza",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Nathalie Lorson & Olivier Cresp",
+      topNotes: "Calabrian Bergamot",
+      heartNotes: "Coffee Accord",
+      baseNotes: "Vetiver"
+    },
+    reason: "Daring Roman garden adventure featuring refreshing bergamot awakened by a shot of espresso."
+  },
+  {
+    id: "valentino-donna-born-in-roma-green-stravaganza",
+    brand: "Valentino",
+    modelName: "Born in Roma Donna Green Stravaganza",
+    sourceUrl: "https://www.valentino.com/en-us/fragrances/born-in-roma-donna-green-stravaganza",
+    sourceRegion: "IT",
+    variants: ["30ml", "50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "floral ambery",
+      perfumer: "Nathalie Lorson & Olivier Cresp",
+      topNotes: "Lapsang Souchong Tea Accord",
+      heartNotes: "Jasmine Absolute",
+      baseNotes: "Vanilla Extract"
+    },
+    reason: "Sensual Roman journey infusing smoky Lapsang Souchong tea with luminous solar jasmine."
+  },
+
+  // ==========================================
+  // 20. Versace (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "versace-eros-edt",
+    brand: "Versace",
+    modelName: "Eros Eau de Toilette",
+    sourceUrl: "https://www.versace.com/us/en/fragrances/men/eros-edt",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "aromatic fougère",
+      perfumer: "Aurelien Guichard",
+      topNotes: "Mint Leaves, Green Apple, Italian Lemon Zest",
+      heartNotes: "Tonka Bean, Ambroxan, Geranium Flower",
+      baseNotes: "Madagascar Vanilla, Virginian Cedar, Atlas Cedar, Vetiver, Oakmoss"
+    },
+    reason: "Mythological Greek god of passion armed with luminous mint, tart green apple and sensual tonka."
+  },
+  {
+    id: "versace-eros-edp",
+    brand: "Versace",
+    modelName: "Eros Eau de Parfum",
+    sourceUrl: "https://www.versace.com/us/en/fragrances/men/eros-edp",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody oriental",
+      perfumer: "Aurelien Guichard",
+      topNotes: "Mint, Candy Apple, Lemon, Mandarin Orange",
+      heartNotes: "Ambroxan, Geranium, Clary Sage",
+      baseNotes: "Vanilla, Leather, Sandalwood, Cedar, Patchouli, Bitter Orange"
+    },
+    reason: "Deeper masculine intensity intensifying the iconic Eros DNA with candy apple, leather and cedar."
+  },
+  {
+    id: "versace-eros-flame",
+    brand: "Versace",
+    modelName: "Eros Flame Eau de Parfum",
+    sourceUrl: "https://www.versace.com/us/en/fragrances/men/eros-flame",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody spicy",
+      perfumer: "Olivier Pescheux",
+      topNotes: "Mandarin Orange, Black Pepper, Chinotto, Lemon, Rosemary",
+      heartNotes: "Pepperwood, Geranium, Rose",
+      baseNotes: "Vanilla, Tonka Bean, Texas Cedar, Sandalwood, Patchouli, Oakmoss"
+    },
+    reason: "Fiery passion striking contrasts between cold Italian chinotto citrus and scorching black pepper."
+  },
+  {
+    id: "versace-dylan-blue-pour-homme",
+    brand: "Versace",
+    modelName: "Pour Homme Dylan Blue Eau de Toilette",
+    sourceUrl: "https://www.versace.com/us/en/fragrances/men/dylan-blue",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "aromatic fougère aquatic",
+      perfumer: "Alberto Morillas",
+      topNotes: "Calabrian Bergamot, Water Notes, Grapefruit, Fig Leaf",
+      heartNotes: "Ambroxan, Black Pepper, Patchouli, Violet Leaf, Papyrus",
+      baseNotes: "Incense, Musk, Tonka Bean, Saffron"
+    },
+    reason: "Alberto Morillas' modern Mediterranean masterpiece combining mineral freshness with incense."
+  },
+  {
+    id: "versace-pour-homme-edt",
+    brand: "Versace",
+    modelName: "Versace Pour Homme Eau de Toilette",
+    sourceUrl: "https://www.versace.com/us/en/fragrances/men/versace-pour-homme",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "aromatic fougère fresh",
+      perfumer: "Alberto Morillas",
+      topNotes: "Lemon, Neroli, Bergamot, Rose de Mai",
+      heartNotes: "Hyacinth, Cedar, Clary Sage, Geranium",
+      baseNotes: "Tonka Bean, Musk, Amber"
+    },
+    reason: "Alberto Morillas' quintessential fresh office classic glowing with Diamante citron and neroli."
+  },
+  {
+    id: "versace-eau-fraiche",
+    brand: "Versace",
+    modelName: "Versace Man Eau Fraîche",
+    sourceUrl: "https://www.versace.com/us/en/fragrances/men/eau-fraiche",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody aquatic",
+      perfumer: "Olivier Cresp",
+      topNotes: "Lemon, Bergamot, Carambola (Star Fruit), Cardamom, Brazilian Rosewood",
+      heartNotes: "Cedar, Tarragon, Sage, Pepper",
+      baseNotes: "Musk, Woody Notes, Saffron, Amber, Sycamore"
+    },
+    reason: "Olivier Cresp's sparkling aquatic gem driven by unusual exotic carambola and chilled Mediterranean lemon."
+  },
+  {
+    id: "versace-bright-crystal-edt",
+    brand: "Versace",
+    modelName: "Bright Crystal Eau de Toilette",
+    sourceUrl: "https://www.versace.com/us/en/fragrances/women/bright-crystal",
+    sourceRegion: "IT",
+    variants: ["50ml", "90ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 90,
+      olfactoryFamily: "floral fruity aquatic",
+      perfumer: "Alberto Morillas",
+      topNotes: "Yuzu, Pomegranate, Ice Accord",
+      heartNotes: "Peony, Lotus, Magnolia",
+      baseNotes: "Musk, Mahogany, Amber"
+    },
+    reason: "Alberto Morillas' sparkling jewel of transparent beauty showcasing chilled yuzu and dewy peony."
+  },
+  {
+    id: "versace-crystal-noir-edp",
+    brand: "Versace",
+    modelName: "Crystal Noir Eau de Parfum",
+    sourceUrl: "https://www.versace.com/us/en/fragrances/women/crystal-noir",
+    sourceRegion: "IT",
+    variants: ["50ml", "90ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "oriental floral",
+      perfumer: "Antoine Lie",
+      topNotes: "Pepper, Ginger, Cardamom",
+      heartNotes: "Coconut, Gardenia, Orange Blossom, Peony",
+      baseNotes: "Sandalwood, Musk, Amber"
+    },
+    reason: "Mysterious couture evening jewel starring intoxicating creamy coconut and lush gardenia."
+  },
+  {
+    id: "versace-eros-pour-femme-edp",
+    brand: "Versace",
+    modelName: "Eros Pour Femme Eau de Parfum",
+    sourceUrl: "https://www.versace.com/us/en/fragrances/women/eros-pour-femme",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "floral woody musk",
+      perfumer: "Alberto Morillas, Olivier Cresp & Nathalie Lorson",
+      topNotes: "Sicilian Lemon, Pomegranate, Calabrian Bergamot",
+      heartNotes: "Lemon Blossom, Jasmine Sambac, Jasmine, Peony",
+      baseNotes: "Musk, Ambroxan, Woodsy Notes, Sandalwood"
+    },
+    reason: "Primordial power of woman capturing seductive love with Sicilian lemon and Sambac jasmine."
+  },
+  {
+    id: "versace-dylan-purple",
+    brand: "Versace",
+    modelName: "Dylan Purple Eau de Parfum",
+    sourceUrl: "https://www.versace.com/us/en/fragrances/women/dylan-purple",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "floral fruity",
+      perfumer: "Christophe Raynaud",
+      topNotes: "Pear, Bitter Orange, Bergamot",
+      heartNotes: "Freesia, Pomarose, Mahonial",
+      baseNotes: "Ambroxan, Iso E Super, Virginia Cedar, Belambre, Sylkolide"
+    },
+    reason: "Purple sunset invitation to an endless Italian summer with sparkling pear and purple freesia."
+  },
+
+  // ==========================================
+  // 21. Bvlgari (Bulgari) (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "bvlgari-man-in-black-edp",
+    brand: "Bvlgari",
+    modelName: "Bvlgari Man in Black Eau de Parfum",
+    sourceUrl: "https://www.bulgari.com/en-us/fragrances/men/bvlgari-man-in-black-edp",
+    sourceRegion: "IT",
+    variants: ["60ml", "100ml", "150ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "oriental spicy leather",
+      perfumer: "Alberto Morillas",
+      topNotes: "Spiced Rum, Tobacco, Spices",
+      heartNotes: "Leather, Iris, Tuberose",
+      baseNotes: "Tonka Bean, Guaiac Wood, Benzoin"
+    },
+    reason: "Alberto Morillas' tribute to Vulcan, the god of fire, blazing with spiced rum, iris and dark leather."
+  },
+  {
+    id: "bvlgari-man-wood-essence",
+    brand: "Bvlgari",
+    modelName: "Bvlgari Man Wood Essence",
+    sourceUrl: "https://www.bulgari.com/en-us/fragrances/men/bvlgari-man-wood-essence",
+    sourceRegion: "IT",
+    variants: ["60ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody aromatic",
+      perfumer: "Alberto Morillas",
+      topNotes: "Citruses with Sugar, Lemon Zest, Coriander Leaf",
+      heartNotes: "Cypress, Cedar, Vetiver",
+      baseNotes: "Benzoin"
+    },
+    reason: "The vital energy of urban nature linking Italian citrus rind with noble Mediterranean cypress."
+  },
+  {
+    id: "bvlgari-man-rain-essence",
+    brand: "Bvlgari",
+    modelName: "Bvlgari Man Rain Essence",
+    sourceUrl: "https://www.bulgari.com/en-us/fragrances/men/bvlgari-man-rain-essence",
+    sourceRegion: "IT",
+    variants: ["60ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody musky fresh",
+      perfumer: "Alberto Morillas",
+      topNotes: "Green Tea, Orange Essence",
+      heartNotes: "White Lotus, Mineral Amber Accord",
+      baseNotes: "Guaiac Wood, Mineral Musk"
+    },
+    reason: "Regenerative power of rainfall captured in crystalline green tea, white lotus and wet mineral woods."
+  },
+  {
+    id: "bvlgari-aqva-pour-homme",
+    brand: "Bvlgari",
+    modelName: "Aqva Pour Homme Eau de Toilette",
+    sourceUrl: "https://www.bulgari.com/en-us/fragrances/men/aqva-pour-homme",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "aquatic aromatic",
+      perfumer: "Jacques Cavallier",
+      topNotes: "Mandarin Orange, Orange, Petitgrain",
+      heartNotes: "Seaweed (Posidonia Oceanica), Lavender, Cotton Flower",
+      baseNotes: "Virginia Cedar, Woody Notes, Patchouli, Clary Sage, Amber"
+    },
+    reason: "Jacques Cavallier's oceanic masterpiece utilizing authentic Mediterranean Posidonia seaweed."
+  },
+  {
+    id: "bvlgari-aqva-amara",
+    brand: "Bvlgari",
+    modelName: "Aqva Amara Eau de Toilette",
+    sourceUrl: "https://www.bulgari.com/en-us/fragrances/men/aqva-amara",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody aquatic citrus",
+      perfumer: "Jacques Cavallier",
+      topNotes: "Sicilian Mandarin",
+      heartNotes: "Neroli, Water Notes",
+      baseNotes: "Indonesian Patchouli Leaf, Olibanum"
+    },
+    reason: "Sun-drenched bitter citrus aquatic enriched with rich mineral water and sacred incense."
+  },
+  {
+    id: "bvlgari-omnia-crystalline",
+    brand: "Bvlgari",
+    modelName: "Omnia Crystalline Eau de Toilette",
+    sourceUrl: "https://www.bulgari.com/en-us/fragrances/women/omnia-crystalline",
+    sourceRegion: "IT",
+    variants: ["40ml", "65ml", "100ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 65,
+      olfactoryFamily: "floral aquatic",
+      perfumer: "Alberto Morillas",
+      topNotes: "Bamboo, Nashi Pear",
+      heartNotes: "Lotus, Tea, Cassia",
+      baseNotes: "Musk, Guaiac Wood, Oakmoss"
+    },
+    reason: "Alberto Morillas' jewel of radiant crystal purity combining crisp Asian bamboo and transparent lotus."
+  },
+  {
+    id: "bvlgari-tygar-le-gemme",
+    brand: "Bvlgari",
+    modelName: "Le Gemme Tygar Eau de Parfum",
+    sourceUrl: "https://www.bulgari.com/en-us/fragrances/le-gemme/tygar",
+    sourceRegion: "IT",
+    variants: ["100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "citrus woody ambery",
+      perfumer: "Jacques Cavallier",
+      topNotes: "Sparkling Grapefruit",
+      heartNotes: "Ginger, Woods",
+      baseNotes: "Ambrox (Ambroxan)"
+    },
+    reason: "Jacques Cavallier's legendary Le Gemme benchmark delivering an explosive burst of tart grapefruit and ambroxan."
+  },
+  {
+    id: "bvlgari-gyan-le-gemme",
+    brand: "Bvlgari",
+    modelName: "Le Gemme Gyan Eau de Parfum",
+    sourceUrl: "https://www.bulgari.com/en-us/fragrances/le-gemme/gyan",
+    sourceRegion: "IT",
+    variants: ["100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody oriental",
+      perfumer: "Jacques Cavallier",
+      topNotes: "Bergamot",
+      heartNotes: "Jasmine Sambac",
+      baseNotes: "Indonesian Patchouli, Oriental Incense"
+    },
+    reason: "Aristocratic blue sapphire hymn blending velvet midnight jasmine with noble Indonesian patchouli."
+  },
+  {
+    id: "bvlgari-pour-homme-edp",
+    brand: "Bvlgari",
+    modelName: "Bvlgari Pour Homme Eau de Parfum",
+    sourceUrl: "https://www.bulgari.com/en-us/fragrances/men/bvlgari-pour-homme-edp",
+    sourceRegion: "IT",
+    variants: ["50ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody floral musk",
+      perfumer: "Jacques Cavallier",
+      topNotes: "Darjeeling Tea, Ginger",
+      heartNotes: "Black Tea, Guaiac Wood",
+      baseNotes: "White Musk, Ambergris"
+    },
+    reason: "Jacques Cavallier's refined reboot of the 1996 classic tea legend with Darjeeling tea and clean musk."
+  },
+  {
+    id: "bvlgari-goldea-the-roman-night",
+    brand: "Bvlgari",
+    modelName: "Goldea The Roman Night",
+    sourceUrl: "https://www.bulgari.com/en-us/fragrances/women/goldea-the-roman-night",
+    sourceRegion: "IT",
+    variants: ["50ml", "75ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 75,
+      olfactoryFamily: "chypre floral",
+      perfumer: "Alberto Morillas",
+      topNotes: "Mulberry, Black Pepper, Bergamot",
+      heartNotes: "Night Blooming Jasmine, Peony, Tuberose, Rose",
+      baseNotes: "Black Musk, Patchouli, Vetiver, Moss"
+    },
+    reason: "Nocturnal Roman goddess portrait wrapping sweet mulberry and night-blooming jasmine in black musk."
+  },
+
+  // ==========================================
+  // 22. Yves Saint Laurent (YSL) (10 models, France FR)
+  // ==========================================
+  {
+    id: "ysl-y-eau-de-parfum",
+    brand: "Yves Saint Laurent",
+    modelName: "Y Eau de Parfum",
+    sourceUrl: "https://www.yslbeautyus.com/fragrance/mens-fragrance/y/y-eau-de-parfum/675YSL.html",
+    sourceRegion: "FR",
+    variants: ["60ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody aromatic fougère",
+      perfumer: "Dominique Ropion",
+      topNotes: "Apple, Ginger, Bergamot",
+      heartNotes: "Sage, Juniper Berries, Geranium",
+      baseNotes: "Amberwood, Tonka Bean, Cedar, Vetiver, Olibanum"
+    },
+    reason: "Dominique Ropion's blockbuster aromatic fougère contrasting crisp apple with sensual amberwood."
+  },
+  {
+    id: "ysl-y-elixir",
+    brand: "Yves Saint Laurent",
+    modelName: "Y Elixir",
+    sourceUrl: "https://www.yslbeautyus.com/fragrance/mens-fragrance/y/y-elixir/WW-51079YSL.html",
+    sourceRegion: "FR",
+    variants: ["60ml"],
+    attrs: {
+      concentration: "elixir",
+      volumeMl: 60,
+      olfactoryFamily: "woody spicy",
+      perfumer: "Dominique Ropion",
+      topNotes: "Lavender",
+      heartNotes: "Geranium",
+      baseNotes: "Oud, Frankincense"
+    },
+    reason: "Supreme concentration of the iconic Y code enriched with rare oud wood and incense."
+  },
+  {
+    id: "ysl-la-nuit-de-lhomme",
+    brand: "Yves Saint Laurent",
+    modelName: "La Nuit de L'Homme Eau de Toilette",
+    sourceUrl: "https://www.yslbeautyus.com/fragrance/mens-fragrance/l-homme/la-nuit-de-l-homme-eau-de-toilette/124YSL.html",
+    sourceRegion: "FR",
+    variants: ["60ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "oriental spicy",
+      perfumer: "Anne Flipo, Pierre Wargnye & Dominique Ropion",
+      topNotes: "Cardamom",
+      heartNotes: "Lavender, Virginia Cedar, Bergamot",
+      baseNotes: "Vetiver, Caraway"
+    },
+    reason: "The quintessential date-night seducer glowing with enigmatic cardamom, lavender and cedar."
+  },
+  {
+    id: "ysl-libre-edp",
+    brand: "Yves Saint Laurent",
+    modelName: "Libre Eau de Parfum",
+    sourceUrl: "https://www.yslbeautyus.com/fragrance/womens-fragrance/libre/libre-eau-de-parfum/WW-50478YSL.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "50ml", "90ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "oriental fougère floral",
+      perfumer: "Anne Flipo & Carlos Benaïm",
+      topNotes: "Lavender, Mandarin Orange, Blackcurrant, Petitgrain",
+      heartNotes: "Lavender, Orange Blossom, Jasmine",
+      baseNotes: "Madagascar Vanilla, Musk, Cedar, Ambergris"
+    },
+    reason: "The fragrance of freedom twisting traditionally masculine French lavender with sensual Moroccan orange blossom."
+  },
+  {
+    id: "ysl-libre-le-parfum",
+    brand: "Yves Saint Laurent",
+    modelName: "Libre Le Parfum",
+    sourceUrl: "https://www.yslbeautyus.com/fragrance/womens-fragrance/libre/libre-le-parfum/WW-50923YSL.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "50ml", "90ml"],
+    attrs: {
+      concentration: "parfum",
+      volumeMl: 90,
+      olfactoryFamily: "amber floral warm",
+      perfumer: "Anne Flipo & Carlos Benaïm",
+      topNotes: "Ginger, Saffron, Mandarin Orange, Bergamot",
+      heartNotes: "Orange Blossom, Lavender",
+      baseNotes: "Bourbon Vanilla, Honey, Tonka Bean, Vetiver"
+    },
+    reason: "Fiery rendition of Libre ablaze with spicy saffron and wild honey harvested in Ourika Community Gardens."
+  },
+  {
+    id: "ysl-black-opium-edp",
+    brand: "Yves Saint Laurent",
+    modelName: "Black Opium Eau de Parfum",
+    sourceUrl: "https://www.yslbeautyus.com/fragrance/womens-fragrance/black-opium/black-opium-eau-de-parfum/375YSL.html",
+    sourceRegion: "FR",
+    variants: ["30ml", "50ml", "90ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 90,
+      olfactoryFamily: "amber vanilla gourmand",
+      perfumer: "Nathalie Lorson, Marie Salamagne, Olivier Cresp & Honorine Blanc",
+      topNotes: "Pear, Pink Pepper, Orange Blossom",
+      heartNotes: "Coffee, Jasmine, Bitter Almond, Licorice",
+      baseNotes: "Vanilla, Patchouli, Cashmere Wood, Cedar"
+    },
+    reason: "Addictive shot of adrenaline pairing black coffee with luminous white flowers and sweet vanilla."
+  },
+  {
+    id: "ysl-myslf-edp",
+    brand: "Yves Saint Laurent",
+    modelName: "MYSLF Eau de Parfum",
+    sourceUrl: "https://www.yslbeautyus.com/fragrance/mens-fragrance/myslf/myslf-eau-de-parfum/WW-50953YSL.html",
+    sourceRegion: "FR",
+    variants: ["40ml", "60ml", "100ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 100,
+      olfactoryFamily: "woody floral",
+      perfumer: "Christophe Raynaud, Antoine Maisondieu & Daniela Andrier",
+      topNotes: "Calabrian Bergamot, Vert de Bergamot",
+      heartNotes: "Tunisian Orange Blossom",
+      baseNotes: "Ambrofix, Patchouli"
+    },
+    reason: "Modern affirmation of masculinity built around radiant Tunisian orange blossom and sensual wood."
+  },
+  {
+    id: "ysl-tuxedo-le-vestiaire",
+    brand: "Yves Saint Laurent",
+    modelName: "Tuxedo (Le Vestiaire des Parfums)",
+    sourceUrl: "https://www.yslbeautyus.com/fragrance/le-vestiaire-des-parfums/tuxedo/WW-50346YSL.html",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "chypre amber spicy",
+      perfumer: "Juliette Karagueuzoglou",
+      topNotes: "Violet Leaf, Coriander, Bergamot",
+      heartNotes: "Rose, Black Pepper, Lily of the Valley",
+      baseNotes: "Patchouli, Ambergris, Bourbon Vanilla"
+    },
+    reason: "Couture tuxedo reimagined in scent contrasting matte smoked patchouli with shiny spices."
+  },
+  {
+    id: "ysl-babycat-le-vestiaire",
+    brand: "Yves Saint Laurent",
+    modelName: "Babycat (Le Vestiaire des Parfums)",
+    sourceUrl: "https://www.yslbeautyus.com/fragrance/le-vestiaire-des-parfums/babycat/WW-50851YSL.html",
+    sourceRegion: "FR",
+    variants: ["75ml", "125ml"],
+    attrs: {
+      concentration: "eau de parfum",
+      volumeMl: 125,
+      olfactoryFamily: "amber spicy leather",
+      perfumer: "Dominique Ropion",
+      topNotes: "Black Pepper, Pink Pepper, Elemi",
+      heartNotes: "Olibanum, Saffron",
+      baseNotes: "Bourbon Vanilla, Suede, Cedar"
+    },
+    reason: "Dominique Ropion's cult masterpiece wrapping animalic suede and resinous incense in warm Bourbon vanilla."
+  },
+  {
+    id: "ysl-lhomme-edt",
+    brand: "Yves Saint Laurent",
+    modelName: "L'Homme Eau de Toilette",
+    sourceUrl: "https://www.yslbeautyus.com/fragrance/mens-fragrance/l-homme/l-homme-eau-de-toilette/121YSL.html",
+    sourceRegion: "FR",
+    variants: ["60ml", "100ml", "200ml"],
+    attrs: {
+      concentration: "eau de toilette",
+      volumeMl: 100,
+      olfactoryFamily: "woody floral musk",
+      perfumer: "Anne Flipo, Pierre Wargnye & Dominique Ropion",
+      topNotes: "Ginger, Bergamot, Lemon",
+      heartNotes: "Spices, Violet Leaf, White Pepper, Basil",
+      baseNotes: "Tonka Bean, Cedar, Tahitian Vetiver"
+    },
+    reason: "Classic magnet of urban sophistication harmonizing spicy ginger, violet leaves and woody cedar."
+  }
+];
+
+export function generateDataFragranceTs(): string {
+  const parts: string[] = [];
+  parts.push('import type { CensusManifestFile } from "../../../src/domain/coverage-targets";');
+  parts.push('import { makeEntry } from "./common";');
+  parts.push('');
+  parts.push('export const fragranceCensus: CensusManifestFile = {');
+  parts.push('  $schema: "https://json-schema.org/draft/2020-12/schema",');
+  parts.push('  leafKey: "fragrance",');
+  parts.push('  displayName: "Fragrances & Perfumes",');
+  parts.push('  censusDate: "2026-10-11",');
+  parts.push('  supplyExceptions: [],');
+  parts.push('  entries: [');
+
+  let currentBrand = "";
+  let brandIndex = 0;
+
+  for (const item of allPerfumes) {
+    if (item.brand !== currentBrand) {
+      currentBrand = item.brand;
+      brandIndex++;
+      parts.push(`    // ${brandIndex}. ${currentBrand} (10 models)`);
+    }
+
+    parts.push('    makeEntry({');
+    parts.push(`      id: ${JSON.stringify(item.id)},`);
+    parts.push(`      brand: ${JSON.stringify(item.brand)},`);
+    parts.push(`      modelName: ${JSON.stringify(item.modelName)},`);
+    parts.push(`      sourceUrl: ${JSON.stringify(item.sourceUrl)},`);
+    parts.push(`      sourceRegion: ${JSON.stringify(item.sourceRegion)},`);
+    parts.push(`      variants: ${JSON.stringify(item.variants)},`);
+    parts.push(`      attrs: {`);
+    parts.push(`        concentration: ${JSON.stringify(item.attrs.concentration)},`);
+    parts.push(`        volumeMl: ${item.attrs.volumeMl},`);
+    parts.push(`        olfactoryFamily: ${JSON.stringify(item.attrs.olfactoryFamily)},`);
+    parts.push(`        perfumer: ${JSON.stringify(item.attrs.perfumer)},`);
+    parts.push(`        topNotes: ${JSON.stringify(item.attrs.topNotes)},`);
+    parts.push(`        heartNotes: ${JSON.stringify(item.attrs.heartNotes)},`);
+    parts.push(`        baseNotes: ${JSON.stringify(item.attrs.baseNotes)},`);
+    parts.push('      },');
+    parts.push(`      reason: ${JSON.stringify(item.reason)},`);
+    parts.push('    }),');
+  }
+
+  parts.push('  ],');
+  parts.push('};');
+  parts.push('');
+
+  return parts.join('\n');
+}
+
+const outputPath = path.resolve(process.cwd(), "scripts/census/wave4/data-fragrance.ts");
+const content = generateDataFragranceTs();
+fs.writeFileSync(outputPath, content, "utf-8");
+console.log(`Successfully generated ${allPerfumes.length} perfume models to ${outputPath}`);

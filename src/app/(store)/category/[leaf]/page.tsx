@@ -33,6 +33,12 @@ export default async function CategoryPage({
 }) {
   const { leaf } = await params;
   if (!isLeafTypeKey(leaf)) {
+    if (leaf === "fragrances" || leaf === "perfumes" || leaf === "perfume") {
+      redirect("/category/fragrance");
+    }
+    if (leaf === "watch") {
+      redirect("/category/watches");
+    }
     notFound();
   }
 

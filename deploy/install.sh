@@ -12,6 +12,12 @@ target="/opt/buyerguard/releases/$release_id"
 test ! -e "$target" || { echo "Release already exists; choose a new identifier."; exit 1; }
 install -d -m 750 -o buyerguard -g buyerguard "$target"
 tar -xzf /home/ubuntu/release.tar.gz -C "$target"
+if [ -d /opt/buyerguard/current/node_modules ]; then
+    mkdir -p "$target/node_modules"
+    rm -rf "$target/node_modules/sharp" "$target/node_modules/@img"
+    cp -al /opt/buyerguard/current/node_modules/sharp "$target/node_modules/sharp"
+    cp -al /opt/buyerguard/current/node_modules/@img "$target/node_modules/@img"
+fi
 node "$target/deploy/verify-app-artifact.mjs"
 mkdir -p "$target/.next/cache"
 chown -R buyerguard:buyerguard "$target"

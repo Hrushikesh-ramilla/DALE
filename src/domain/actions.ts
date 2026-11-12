@@ -67,6 +67,8 @@ export const actionSchema = z.discriminatedUnion("action", [
     productId: z.string().min(1).max(80),
     model: z.string().max(80),
     groupId: id.optional(),
+    decisionId: id.optional(),
+    paymentMethod: z.enum(["paypal", "cod"]).optional(),
   }),
   z.object({
     action: z.literal("join_group"),
@@ -78,6 +80,17 @@ export const actionSchema = z.discriminatedUnion("action", [
     action: z.literal("checkout"),
     quoteId: id,
     fingerprint: z.string().length(64),
+    paymentMethod: z.enum(["paypal", "cod"]).optional(),
+  }),
+  z.object({
+    action: z.literal("cod_checkout"),
+    quoteId: id,
+    fingerprint: z.string().length(64),
+  }),
+  z.object({
+    action: z.literal("cancel_order"),
+    orderId: id,
+    reason: z.string().max(2000).optional(),
   }),
   z.object({ action: z.literal("capture"), orderId: id }),
   z.object({ action: z.literal("scam"), message: z.string().min(1).max(6000) }),

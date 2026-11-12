@@ -1,4 +1,5 @@
-import { afterEach, beforeEach, expect, it, vi } from "vitest";
+import { afterAll, beforeAll, afterEach, beforeEach, expect, it, vi } from "vitest";
+import { closeDatabase, getDatabase } from "../src/server/database";
 import { createScenario } from "../src/server/scenarios";
 import {
   createWorkspace,
@@ -9,6 +10,13 @@ import {
 import { snapshot, checkout, makeQuote } from "../src/server/service";
 import { recoverWorkspace } from "../src/server/recovery";
 
+beforeAll(async () => {
+  process.env.LOCAL_DATA_DIR = ":memory:";
+  process.env.PAYMENT_MODE = "fixture";
+  process.env.AI_MODE = "fixture";
+  await getDatabase();
+}, 60000);
+afterAll(() => closeDatabase());
 beforeEach(() => {
   process.env.LOCAL_DATA_DIR = ":memory:";
   process.env.PAYMENT_MODE = "sandbox";

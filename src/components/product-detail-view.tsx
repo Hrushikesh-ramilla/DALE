@@ -20,6 +20,7 @@ import { LuxuryArchitectureCard } from "./luxury-architecture-card";
 import { useStore } from "./store-context";
 import { useCopilot } from "./copilot/copilot-context";
 import { formatMoney } from "@/domain/money";
+import { CatalogEvidence } from "./catalog-evidence";
 
 export function ProductDetailView({ product }: { product: Product }) {
   const store = useStore();
@@ -71,11 +72,12 @@ export function ProductDetailView({ product }: { product: Product }) {
               {formatMoney(product.price)}
             </span>
             <span className="pdp-price-meta">
-              USD · Insured Express Shipping Included
+              USD · Recorded demo merchant offer · Simulated shipping
             </span>
           </div>
 
           {/* Key Facts */}
+          <CatalogEvidence product={product} />
           <ul className="product-facts" style={{ margin: "16px 0 24px" }}>
             {product.specs.map((spec) => (
               <li key={spec}>
@@ -87,6 +89,16 @@ export function ProductDetailView({ product }: { product: Product }) {
 
           {/* Action Buttons */}
           <div className="pdp-actions-wrap">
+            {(product.comparisonOnly || product.stock < 1) && (
+              <p role="status">{product.comparisonOnly ? "Comparison only — unavailable for purchase." : "Out of stock."}</p>
+            )}
+            {copilot.error && <p role="alert">{copilot.error}</p>}
+            {copilot.state?.basket.cart.some((item) => item.productId === product.id) && (
+              <p role="status">Saved in your cart. <Link href="/cart">View cart</Link></p>
+            )}
+            {copilot.state?.basket.wishlist.some((item) => item.productId === product.id) && (
+              <p role="status">Saved to your wishlist. <Link href="/wishlist">View wishlist</Link></p>
+            )}
             <button
               type="button"
               className="pdp-button-concierge"
@@ -110,12 +122,14 @@ export function ProductDetailView({ product }: { product: Product }) {
             <button
               type="button"
               className="pdp-button-checkout"
+              disabled={product.comparisonOnly || product.stock < 1}
               data-agent-control="Review this product's PayPal quote"
               onClick={() => void store.choose(product)}
             >
               <ShoppingBag size={18} />
               <span>PayPal Fast Checkout · {formatMoney(product.price)}</span>
             </button>
+            {!product.comparisonOnly && product.stock > 0 && <Link className="pdp-button-concierge" href={`/groups?product=${encodeURIComponent(product.id)}`}>Review buying circle</Link>}
 
             <button
               type="button"
@@ -235,7 +249,7 @@ export function ProductDetailView({ product }: { product: Product }) {
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: "0.08em",
-            color: "#111",
+            color: "inherit",
             textDecoration: "none",
           }}
         >

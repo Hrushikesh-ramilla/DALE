@@ -19,7 +19,8 @@ export function HomeOpening() {
     lenis?.stop();
     const blockScroll = (event: Event) => event.preventDefault();
     const blockKeys = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setComplete(true);
+      if (event.key === "Escape" || event.key === "Enter" || event.key === " ")
+        setComplete(true);
       if (event.key === "Tab")
         document.querySelector<HTMLButtonElement>(".opening-skip")?.focus();
       if (

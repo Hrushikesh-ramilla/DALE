@@ -34,8 +34,11 @@ export function VerifiedProductPhotograph({
         alignItems: "center",
         justifyContent: "center",
         background: "transparent",
-        width: "100%",
-        height: "100%",
+        width: compact ? "120px" : "100%",
+        height: compact ? "120px" : "100%",
+        minWidth: compact ? "120px" : undefined,
+        maxWidth: compact ? "120px" : undefined,
+        flexShrink: compact ? 0 : undefined,
         borderRadius: "0px",
         border: "none",
       }}
@@ -57,6 +60,7 @@ export function VerifiedProductPhotograph({
             alt={product.name}
             width={resolved.width || 600}
             height={resolved.height || 600}
+            unoptimized
             sizes={
               detailPage
                 ? "(max-width: 640px) 90vw, 50vw"
@@ -78,23 +82,46 @@ export function VerifiedProductPhotograph({
         ) : (
           <div
             role="status"
-            aria-label={`Photograph unavailable for ${product.name}`}
+            aria-label={`${product.name} presentation`}
             style={{
-              color: "#94a3b8",
+              color: "#c9cbcf",
               textAlign: "center",
               padding: "24px",
               fontSize: "12px",
               lineHeight: 1.6,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "8px",
             }}
           >
+            <div
+              style={{
+                width: "48px",
+                height: "48px",
+                borderRadius: "50%",
+                border: "1px solid rgba(255,255,255,0.15)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "14px",
+                fontWeight: 600,
+                letterSpacing: "1px",
+                color: "#f8fafc",
+                background: "rgba(255,255,255,0.03)",
+              }}
+            >
+              {(product.brand || product.name || "D").slice(0, 2).toUpperCase()}
+            </div>
             <span
-              style={{ display: "block", fontWeight: 600, color: "#f8fafc" }}
+              style={{ display: "block", fontWeight: 600, color: "#f8fafc", fontSize: "13px" }}
             >
               {product.name}
             </span>
-            {resolved.url
-              ? "Manufacturer photograph unavailable."
-              : "Exact product photograph awaiting verification."}
+            <span style={{ fontSize: "11px", color: "#8a909a", letterSpacing: "0.5px" }}>
+              {product.brand || "Authentic Selection"}
+            </span>
           </div>
         )}
       </div>

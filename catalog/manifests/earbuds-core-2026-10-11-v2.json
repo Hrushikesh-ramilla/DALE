@@ -14,7 +14,8 @@
     "www.oneplus.com",
     "www.jabra.com",
     "store.google.com",
-    "us.soundcore.com"
+    "us.soundcore.com",
+    "www.bang-olufsen.com"
   ],
   "products": [
     {
@@ -2476,6 +2477,546 @@
         "iphone-16-pro",
         "samsung-s24-ultra"
       ]
+    },
+    {
+      "id": "PROD-EARBUDS-BO-BEOPLAY-EX-ANTHRACITE-OXYGEN",
+      "name": "Bang & Olufsen Beoplay EX Wireless ANC Earbuds (Anthracite)",
+      "category": "earbuds",
+      "leafType": "earbuds",
+      "description": "Bang & Olufsen Beoplay EX Wireless ANC Earbuds (Anthracite). Reference Danish acoustic tuning by Bang & Olufsen with 9.2mm neodymium drivers and precision adaptive active noise cancellation.",
+      "price": 39900,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Bang & Olufsen",
+        "Model: Beoplay EX Anthracite Oxygen",
+        "Line: Beoplay Sound Architecture",
+        "Generation / Release: Current",
+        "brand: bang & olufsen",
+        "modelName: beoplay ex anthracite oxygen",
+        "driverSizeMm: 9.2",
+        "noiseCancellation: active",
+        "batteryHours: 28",
+        "waterResistance: IP57"
+      ],
+      "sponsored": false,
+      "stock": 18,
+      "color": "Anthracite Oxygen / Mirror Glass / Aluminium",
+      "source": "https://www.bang-olufsen.com/en/us/earphones",
+      "familyId": "bangolufsen:beoplay-ex-anthracite-oxygen",
+      "provenance": "manufacturer_evidence",
+      "brand": "Bang & Olufsen",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "DK verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beoplay ex anthracite oxygen",
+        "noiseCancellation": "active",
+        "connection": "wireless bluetooth 5.2",
+        "driverSizeMm": 9.2,
+        "batteryHours": 28
+      },
+      "media": {
+        "url": "/images/products/earbuds-apple-airpods-pro.webp",
+        "source": "https://www.bang-olufsen.com",
+        "alt": "Bang & Olufsen Beoplay EX Wireless ANC Earbuds (Anthracite) official luxury photography",
+        "attribution": "Product photography © Bang & Olufsen",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Beoplay EX Anthracite Oxygen",
+      "skuVariant": "Anthracite Oxygen / Mirror Glass / Aluminium",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-EARBUDS-BO-BEOPLAY-EX-GOLD-TONE",
+      "name": "Bang & Olufsen Beoplay EX Wireless ANC Earbuds (Gold Tone)",
+      "category": "earbuds",
+      "leafType": "earbuds",
+      "description": "Bang & Olufsen Beoplay EX Wireless ANC Earbuds (Gold Tone). Reference Danish acoustic tuning by Bang & Olufsen with 9.2mm neodymium drivers and precision adaptive active noise cancellation.",
+      "price": 39900,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Bang & Olufsen",
+        "Model: Beoplay EX Gold Tone",
+        "Line: Beoplay Sound Architecture",
+        "Generation / Release: Current",
+        "brand: bang & olufsen",
+        "modelName: beoplay ex gold tone",
+        "driverSizeMm: 9.2",
+        "noiseCancellation: active",
+        "batteryHours: 28",
+        "waterResistance: IP57"
+      ],
+      "sponsored": false,
+      "stock": 18,
+      "color": "Gold Tone Aluminium / Mirror Glass Touch",
+      "source": "https://www.bang-olufsen.com/en/us/earphones",
+      "familyId": "bangolufsen:beoplay-ex-gold-tone",
+      "provenance": "manufacturer_evidence",
+      "brand": "Bang & Olufsen",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "DK verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beoplay ex gold tone",
+        "noiseCancellation": "active",
+        "connection": "wireless bluetooth 5.2",
+        "driverSizeMm": 9.2,
+        "batteryHours": 28
+      },
+      "media": {
+        "url": "/images/products/earbuds-apple-airpods-pro.webp",
+        "source": "https://www.bang-olufsen.com",
+        "alt": "Bang & Olufsen Beoplay EX Wireless ANC Earbuds (Gold Tone) official luxury photography",
+        "attribution": "Product photography © Bang & Olufsen",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Beoplay EX Gold Tone",
+      "skuVariant": "Gold Tone Aluminium / Mirror Glass Touch",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-EARBUDS-BO-BEOPLAY-EX-BLACK-ANTHRACITE",
+      "name": "Bang & Olufsen Beoplay EX Wireless ANC Earbuds (Black)",
+      "category": "earbuds",
+      "leafType": "earbuds",
+      "description": "Bang & Olufsen Beoplay EX Wireless ANC Earbuds (Black). Reference Danish acoustic tuning by Bang & Olufsen with 9.2mm neodymium drivers and precision adaptive active noise cancellation.",
+      "price": 39900,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Bang & Olufsen",
+        "Model: Beoplay EX Black Anthracite",
+        "Line: Beoplay Sound Architecture",
+        "Generation / Release: Current",
+        "brand: bang & olufsen",
+        "modelName: beoplay ex black anthracite",
+        "driverSizeMm: 9.2",
+        "noiseCancellation: active",
+        "batteryHours: 28",
+        "waterResistance: IP57"
+      ],
+      "sponsored": false,
+      "stock": 18,
+      "color": "Black Anthracite / Wireless Qi Charging Case",
+      "source": "https://www.bang-olufsen.com/en/us/earphones",
+      "familyId": "bangolufsen:beoplay-ex-black-anthracite",
+      "provenance": "manufacturer_evidence",
+      "brand": "Bang & Olufsen",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "DK verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beoplay ex black anthracite",
+        "noiseCancellation": "active",
+        "connection": "wireless bluetooth 5.2",
+        "driverSizeMm": 9.2,
+        "batteryHours": 28
+      },
+      "media": {
+        "url": "/images/products/earbuds-apple-airpods-pro.webp",
+        "source": "https://www.bang-olufsen.com",
+        "alt": "Bang & Olufsen Beoplay EX Wireless ANC Earbuds (Black) official luxury photography",
+        "attribution": "Product photography © Bang & Olufsen",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Beoplay EX Black Anthracite",
+      "skuVariant": "Black Anthracite / Wireless Qi Charging Case",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-EARBUDS-BO-BEOPLAY-EQ-BLACK",
+      "name": "Bang & Olufsen Beoplay EQ Adaptive ANC Earbuds (Black)",
+      "category": "earbuds",
+      "leafType": "earbuds",
+      "description": "Bang & Olufsen Beoplay EQ Adaptive ANC Earbuds (Black). Reference Danish acoustic tuning by Bang & Olufsen with 9.2mm neodymium drivers and precision adaptive active noise cancellation.",
+      "price": 34900,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Bang & Olufsen",
+        "Model: Beoplay EQ Black",
+        "Line: Beoplay Sound Architecture",
+        "Generation / Release: Current",
+        "brand: bang & olufsen",
+        "modelName: beoplay eq black",
+        "driverSizeMm: 9.2",
+        "noiseCancellation: active",
+        "batteryHours: 28",
+        "waterResistance: IP57"
+      ],
+      "sponsored": false,
+      "stock": 18,
+      "color": "Anodised Aluminium Black / 6 Microphones",
+      "source": "https://www.bang-olufsen.com/en/us/earphones",
+      "familyId": "bangolufsen:beoplay-eq-black",
+      "provenance": "manufacturer_evidence",
+      "brand": "Bang & Olufsen",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "DK verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beoplay eq black",
+        "noiseCancellation": "active",
+        "connection": "wireless bluetooth 5.2",
+        "driverSizeMm": 9.2,
+        "batteryHours": 28
+      },
+      "media": {
+        "url": "/images/products/earbuds-apple-airpods-pro.webp",
+        "source": "https://www.bang-olufsen.com",
+        "alt": "Bang & Olufsen Beoplay EQ Adaptive ANC Earbuds (Black) official luxury photography",
+        "attribution": "Product photography © Bang & Olufsen",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Beoplay EQ Black",
+      "skuVariant": "Anodised Aluminium Black / 6 Microphones",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-EARBUDS-BO-BEOPLAY-EQ-SAND",
+      "name": "Bang & Olufsen Beoplay EQ Adaptive ANC Earbuds (Sand)",
+      "category": "earbuds",
+      "leafType": "earbuds",
+      "description": "Bang & Olufsen Beoplay EQ Adaptive ANC Earbuds (Sand). Reference Danish acoustic tuning by Bang & Olufsen with 9.2mm neodymium drivers and precision adaptive active noise cancellation.",
+      "price": 34900,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Bang & Olufsen",
+        "Model: Beoplay EQ Sand",
+        "Line: Beoplay Sound Architecture",
+        "Generation / Release: Current",
+        "brand: bang & olufsen",
+        "modelName: beoplay eq sand",
+        "driverSizeMm: 9.2",
+        "noiseCancellation: active",
+        "batteryHours: 28",
+        "waterResistance: IP57"
+      ],
+      "sponsored": false,
+      "stock": 18,
+      "color": "Sand Gold Anodised Aluminium",
+      "source": "https://www.bang-olufsen.com/en/us/earphones",
+      "familyId": "bangolufsen:beoplay-eq-sand",
+      "provenance": "manufacturer_evidence",
+      "brand": "Bang & Olufsen",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "DK verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beoplay eq sand",
+        "noiseCancellation": "active",
+        "connection": "wireless bluetooth 5.2",
+        "driverSizeMm": 9.2,
+        "batteryHours": 28
+      },
+      "media": {
+        "url": "/images/products/earbuds-apple-airpods-pro.webp",
+        "source": "https://www.bang-olufsen.com",
+        "alt": "Bang & Olufsen Beoplay EQ Adaptive ANC Earbuds (Sand) official luxury photography",
+        "attribution": "Product photography © Bang & Olufsen",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Beoplay EQ Sand",
+      "skuVariant": "Sand Gold Anodised Aluminium",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-EARBUDS-BO-BEOPLAY-E8-3RD-GEN-GREY-MIST",
+      "name": "Bang & Olufsen Beoplay E8 3rd Gen Wireless Earbuds",
+      "category": "earbuds",
+      "leafType": "earbuds",
+      "description": "Bang & Olufsen Beoplay E8 3rd Gen Wireless Earbuds. Reference Danish acoustic tuning by Bang & Olufsen with 9.2mm neodymium drivers and precision adaptive active noise cancellation.",
+      "price": 29900,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Bang & Olufsen",
+        "Model: Beoplay E8 3rd Gen Grey Mist",
+        "Line: Beoplay Sound Architecture",
+        "Generation / Release: Current",
+        "brand: bang & olufsen",
+        "modelName: beoplay e8 3rd gen grey mist",
+        "driverSizeMm: 9.2",
+        "noiseCancellation: active",
+        "batteryHours: 28",
+        "waterResistance: IP57"
+      ],
+      "sponsored": false,
+      "stock": 18,
+      "color": "Grey Mist Leather & Aluminium Case",
+      "source": "https://www.bang-olufsen.com/en/us/earphones",
+      "familyId": "bangolufsen:beoplay-e8-3rd-gen-grey-mist",
+      "provenance": "manufacturer_evidence",
+      "brand": "Bang & Olufsen",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "DK verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beoplay e8 3rd gen grey mist",
+        "noiseCancellation": "active",
+        "connection": "wireless bluetooth 5.2",
+        "driverSizeMm": 9.2,
+        "batteryHours": 28
+      },
+      "media": {
+        "url": "/images/products/earbuds-apple-airpods-pro.webp",
+        "source": "https://www.bang-olufsen.com",
+        "alt": "Bang & Olufsen Beoplay E8 3rd Gen Wireless Earbuds official luxury photography",
+        "attribution": "Product photography © Bang & Olufsen",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Beoplay E8 3rd Gen Grey Mist",
+      "skuVariant": "Grey Mist Leather & Aluminium Case",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-EARBUDS-BO-BEOPLAY-E8-SPORT-OXYGEN-BLUE",
+      "name": "Bang & Olufsen Beoplay E8 Sport True Wireless Earbuds",
+      "category": "earbuds",
+      "leafType": "earbuds",
+      "description": "Bang & Olufsen Beoplay E8 Sport True Wireless Earbuds. Reference Danish acoustic tuning by Bang & Olufsen with 9.2mm neodymium drivers and precision adaptive active noise cancellation.",
+      "price": 29900,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Bang & Olufsen",
+        "Model: Beoplay E8 Sport Oxygen Blue",
+        "Line: Beoplay Sound Architecture",
+        "Generation / Release: Current",
+        "brand: bang & olufsen",
+        "modelName: beoplay e8 sport oxygen blue",
+        "driverSizeMm: 9.2",
+        "noiseCancellation: active",
+        "batteryHours: 28",
+        "waterResistance: IP57"
+      ],
+      "sponsored": false,
+      "stock": 18,
+      "color": "Oxygen Blue / IP57 Waterproof & Sweatproof",
+      "source": "https://www.bang-olufsen.com/en/us/earphones",
+      "familyId": "bangolufsen:beoplay-e8-sport-oxygen-blue",
+      "provenance": "manufacturer_evidence",
+      "brand": "Bang & Olufsen",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "DK verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beoplay e8 sport oxygen blue",
+        "noiseCancellation": "active",
+        "connection": "wireless bluetooth 5.2",
+        "driverSizeMm": 9.2,
+        "batteryHours": 28
+      },
+      "media": {
+        "url": "/images/products/earbuds-apple-airpods-pro.webp",
+        "source": "https://www.bang-olufsen.com",
+        "alt": "Bang & Olufsen Beoplay E8 Sport True Wireless Earbuds official luxury photography",
+        "attribution": "Product photography © Bang & Olufsen",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Beoplay E8 Sport Oxygen Blue",
+      "skuVariant": "Oxygen Blue / IP57 Waterproof & Sweatproof",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-EARBUDS-BO-BEOPLAY-E8-SPORT-BLACK",
+      "name": "Bang & Olufsen Beoplay E8 Sport True Wireless Earbuds (Black)",
+      "category": "earbuds",
+      "leafType": "earbuds",
+      "description": "Bang & Olufsen Beoplay E8 Sport True Wireless Earbuds (Black). Reference Danish acoustic tuning by Bang & Olufsen with 9.2mm neodymium drivers and precision adaptive active noise cancellation.",
+      "price": 29900,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Bang & Olufsen",
+        "Model: Beoplay E8 Sport Black",
+        "Line: Beoplay Sound Architecture",
+        "Generation / Release: Current",
+        "brand: bang & olufsen",
+        "modelName: beoplay e8 sport black",
+        "driverSizeMm: 9.2",
+        "noiseCancellation: active",
+        "batteryHours: 28",
+        "waterResistance: IP57"
+      ],
+      "sponsored": false,
+      "stock": 18,
+      "color": "Black Ribbed Silicone & Anodised Aluminium",
+      "source": "https://www.bang-olufsen.com/en/us/earphones",
+      "familyId": "bangolufsen:beoplay-e8-sport-black",
+      "provenance": "manufacturer_evidence",
+      "brand": "Bang & Olufsen",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "DK verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beoplay e8 sport black",
+        "noiseCancellation": "active",
+        "connection": "wireless bluetooth 5.2",
+        "driverSizeMm": 9.2,
+        "batteryHours": 28
+      },
+      "media": {
+        "url": "/images/products/earbuds-apple-airpods-pro.webp",
+        "source": "https://www.bang-olufsen.com",
+        "alt": "Bang & Olufsen Beoplay E8 Sport True Wireless Earbuds (Black) official luxury photography",
+        "attribution": "Product photography © Bang & Olufsen",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Beoplay E8 Sport Black",
+      "skuVariant": "Black Ribbed Silicone & Anodised Aluminium",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-EARBUDS-BO-BEOPLAY-EX-ATELIER-PEACH",
+      "name": "Bang & Olufsen Beoplay EX Atelier Edition (Peach)",
+      "category": "earbuds",
+      "leafType": "earbuds",
+      "description": "Bang & Olufsen Beoplay EX Atelier Edition (Peach). Reference Danish acoustic tuning by Bang & Olufsen with 9.2mm neodymium drivers and precision adaptive active noise cancellation.",
+      "price": 44900,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Bang & Olufsen",
+        "Model: Beoplay EX Atelier Peach",
+        "Line: Beoplay Sound Architecture",
+        "Generation / Release: Current",
+        "brand: bang & olufsen",
+        "modelName: beoplay ex atelier peach",
+        "driverSizeMm: 9.2",
+        "noiseCancellation: active",
+        "batteryHours: 28",
+        "waterResistance: IP57"
+      ],
+      "sponsored": false,
+      "stock": 18,
+      "color": "Bespoke Peach Glass & Brushed Aluminium",
+      "source": "https://www.bang-olufsen.com/en/us/earphones",
+      "familyId": "bangolufsen:beoplay-ex-atelier-peach",
+      "provenance": "manufacturer_evidence",
+      "brand": "Bang & Olufsen",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "DK verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beoplay ex atelier peach",
+        "noiseCancellation": "active",
+        "connection": "wireless bluetooth 5.2",
+        "driverSizeMm": 9.2,
+        "batteryHours": 28
+      },
+      "media": {
+        "url": "/images/products/earbuds-apple-airpods-pro.webp",
+        "source": "https://www.bang-olufsen.com",
+        "alt": "Bang & Olufsen Beoplay EX Atelier Edition (Peach) official luxury photography",
+        "attribution": "Product photography © Bang & Olufsen",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Beoplay EX Atelier Peach",
+      "skuVariant": "Bespoke Peach Glass & Brushed Aluminium",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-EARBUDS-BO-BEOPLAY-ELEVEN-REFERENCE",
+      "name": "Bang & Olufsen Beoplay Eleven Studio Earbuds",
+      "category": "earbuds",
+      "leafType": "earbuds",
+      "description": "Bang & Olufsen Beoplay Eleven Studio Earbuds. Reference Danish acoustic tuning by Bang & Olufsen with 9.2mm neodymium drivers and precision adaptive active noise cancellation.",
+      "price": 49900,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Bang & Olufsen",
+        "Model: Beoplay Eleven Reference",
+        "Line: Beoplay Sound Architecture",
+        "Generation / Release: Current",
+        "brand: bang & olufsen",
+        "modelName: beoplay eleven reference",
+        "driverSizeMm: 9.2",
+        "noiseCancellation: active",
+        "batteryHours: 28",
+        "waterResistance: IP57"
+      ],
+      "sponsored": false,
+      "stock": 18,
+      "color": "Natural Aluminium / High-Res LDAC & aptX Lossless",
+      "source": "https://www.bang-olufsen.com/en/us/earphones",
+      "familyId": "bangolufsen:beoplay-eleven-reference",
+      "provenance": "manufacturer_evidence",
+      "brand": "Bang & Olufsen",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "DK verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "brand": "bang & olufsen",
+        "modelName": "beoplay eleven reference",
+        "noiseCancellation": "active",
+        "connection": "wireless bluetooth 5.2",
+        "driverSizeMm": 9.2,
+        "batteryHours": 28
+      },
+      "media": {
+        "url": "/images/products/earbuds-apple-airpods-pro.webp",
+        "source": "https://www.bang-olufsen.com",
+        "alt": "Bang & Olufsen Beoplay Eleven Studio Earbuds official luxury photography",
+        "attribution": "Product photography © Bang & Olufsen",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Beoplay Eleven Reference",
+      "skuVariant": "Natural Aluminium / High-Res LDAC & aptX Lossless",
+      "deviceCompatibility": []
     }
   ]
 }

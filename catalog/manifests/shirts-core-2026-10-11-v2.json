@@ -17,7 +17,8 @@
     "www.ralphlauren.com",
     "www.ysl.com",
     "www.tomford.com",
-    "www.zegna.com"
+    "www.zegna.com",
+    "shop.brunellocucinelli.com"
   ],
   "products": [
     {
@@ -7858,6 +7859,506 @@
       "leafType": "shirts",
       "modelName": "Cotton-Linen Blend Band Collar Summer Tunic",
       "skuVariant": "Desert Sand",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-SHIRTS-BRUNELLO-CUCINELLI-CRISP-POPLIN-SPREAD-SHIRT",
+      "name": "Brunello Cucinelli Crisp Poplin Spread-Collar Dress Shirt",
+      "category": "clothing",
+      "leafType": "shirts",
+      "description": "Brunello Cucinelli Crisp Poplin Spread-Collar Dress Shirt. Handcrafted in Solomeo, Italy using the finest natural fibers and artisanal horn button closures.",
+      "price": 79500,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Brunello Cucinelli",
+        "Model: Crisp Poplin Spread Shirt",
+        "Line: Solomeo Tailored Shirts",
+        "Generation / Release: Current",
+        "brand: brunello cucinelli",
+        "modelName: crisp poplin spread shirt",
+        "material: Pure Egyptian Cotton White",
+        "origin: Solomeo, Italy"
+      ],
+      "sponsored": false,
+      "stock": 12,
+      "color": "Pure Egyptian Cotton White",
+      "source": "https://shop.brunellocucinelli.com/en-us/men/ready-to-wear/shirts/",
+      "familyId": "brunellocucinelli:crisp-poplin-spread-shirt",
+      "provenance": "manufacturer_evidence",
+      "brand": "Brunello Cucinelli",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cotton poplin",
+        "brand": "brunello cucinelli",
+        "modelName": "crisp poplin spread shirt",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/shirts-canali-impeccabile-wrinkle-resistant-cotton-poplin-dress-shirt.webp",
+        "source": "https://shop.brunellocucinelli.com",
+        "alt": "Brunello Cucinelli Crisp Poplin Spread-Collar Dress Shirt official luxury photography",
+        "attribution": "Product photography © Brunello Cucinelli",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Crisp Poplin Spread Shirt",
+      "skuVariant": "Pure Egyptian Cotton White",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-SHIRTS-BRUNELLO-CUCINELLI-WASHED-LINEN-SPREAD-SHIRT",
+      "name": "Brunello Cucinelli Washed Linen Spread-Collar Shirt",
+      "category": "clothing",
+      "leafType": "shirts",
+      "description": "Brunello Cucinelli Washed Linen Spread-Collar Shirt. Handcrafted in Solomeo, Italy using the finest natural fibers and artisanal horn button closures.",
+      "price": 84500,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Brunello Cucinelli",
+        "Model: Washed Linen Spread Shirt",
+        "Line: Solomeo Tailored Shirts",
+        "Generation / Release: Current",
+        "brand: brunello cucinelli",
+        "modelName: washed linen spread shirt",
+        "material: Pure European Flax Sky Blue",
+        "origin: Solomeo, Italy"
+      ],
+      "sponsored": false,
+      "stock": 12,
+      "color": "Pure European Flax Sky Blue",
+      "source": "https://shop.brunellocucinelli.com/en-us/men/ready-to-wear/shirts/",
+      "familyId": "brunellocucinelli:washed-linen-spread-shirt",
+      "provenance": "manufacturer_evidence",
+      "brand": "Brunello Cucinelli",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cotton poplin",
+        "brand": "brunello cucinelli",
+        "modelName": "washed linen spread shirt",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/shirts-brioni-nomentano-french-washed-pure-linen-camp-collar-shirt.webp",
+        "source": "https://shop.brunellocucinelli.com",
+        "alt": "Brunello Cucinelli Washed Linen Spread-Collar Shirt official luxury photography",
+        "attribution": "Product photography © Brunello Cucinelli",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Washed Linen Spread Shirt",
+      "skuVariant": "Pure European Flax Sky Blue",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-SHIRTS-BRUNELLO-CUCINELLI-FINE-DENIM-BUTTON-DOWN-SHIRT",
+      "name": "Brunello Cucinelli Fine Denim Artisanal Button-Down Shirt",
+      "category": "clothing",
+      "leafType": "shirts",
+      "description": "Brunello Cucinelli Fine Denim Artisanal Button-Down Shirt. Handcrafted in Solomeo, Italy using the finest natural fibers and artisanal horn button closures.",
+      "price": 89500,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Brunello Cucinelli",
+        "Model: Fine Denim Button-Down Shirt",
+        "Line: Solomeo Tailored Shirts",
+        "Generation / Release: Current",
+        "brand: brunello cucinelli",
+        "modelName: fine denim button-down shirt",
+        "material: Light Indigo Washed Cotton Denim",
+        "origin: Solomeo, Italy"
+      ],
+      "sponsored": false,
+      "stock": 12,
+      "color": "Light Indigo Washed Cotton Denim",
+      "source": "https://shop.brunellocucinelli.com/en-us/men/ready-to-wear/shirts/",
+      "familyId": "brunellocucinelli:fine-denim-button-down-shirt",
+      "provenance": "manufacturer_evidence",
+      "brand": "Brunello Cucinelli",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cotton poplin",
+        "brand": "brunello cucinelli",
+        "modelName": "fine denim button-down shirt",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/shirts-brioni-sartoriale-japanese-cotton-denim-western-shirt.webp",
+        "source": "https://shop.brunellocucinelli.com",
+        "alt": "Brunello Cucinelli Fine Denim Artisanal Button-Down Shirt official luxury photography",
+        "attribution": "Product photography © Brunello Cucinelli",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Fine Denim Button-Down Shirt",
+      "skuVariant": "Light Indigo Washed Cotton Denim",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-SHIRTS-BRUNELLO-CUCINELLI-COTTON-TWILL-FRENCH-CUFF-SHIRT",
+      "name": "Brunello Cucinelli Cotton Twill French-Cuff Dress Shirt",
+      "category": "clothing",
+      "leafType": "shirts",
+      "description": "Brunello Cucinelli Cotton Twill French-Cuff Dress Shirt. Handcrafted in Solomeo, Italy using the finest natural fibers and artisanal horn button closures.",
+      "price": 82500,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Brunello Cucinelli",
+        "Model: Cotton Twill French-Cuff Shirt",
+        "Line: Solomeo Tailored Shirts",
+        "Generation / Release: Current",
+        "brand: brunello cucinelli",
+        "modelName: cotton twill french-cuff shirt",
+        "material: Double-Twisted Cotton Twill Light Blue",
+        "origin: Solomeo, Italy"
+      ],
+      "sponsored": false,
+      "stock": 12,
+      "color": "Double-Twisted Cotton Twill Light Blue",
+      "source": "https://shop.brunellocucinelli.com/en-us/men/ready-to-wear/shirts/",
+      "familyId": "brunellocucinelli:cotton-twill-french-cuff-shirt",
+      "provenance": "manufacturer_evidence",
+      "brand": "Brunello Cucinelli",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cotton poplin",
+        "brand": "brunello cucinelli",
+        "modelName": "cotton twill french-cuff shirt",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/shirts-canali-fine-two-ply-cotton-twill-french-cuff-dress-shirt.webp",
+        "source": "https://shop.brunellocucinelli.com",
+        "alt": "Brunello Cucinelli Cotton Twill French-Cuff Dress Shirt official luxury photography",
+        "attribution": "Product photography © Brunello Cucinelli",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Cotton Twill French-Cuff Shirt",
+      "skuVariant": "Double-Twisted Cotton Twill Light Blue",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-SHIRTS-BRUNELLO-CUCINELLI-BENGAL-STRIPE-CLASSIC-SHIRT",
+      "name": "Brunello Cucinelli Bengal Stripe Classic Collar Shirt",
+      "category": "clothing",
+      "leafType": "shirts",
+      "description": "Brunello Cucinelli Bengal Stripe Classic Collar Shirt. Handcrafted in Solomeo, Italy using the finest natural fibers and artisanal horn button closures.",
+      "price": 79500,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Brunello Cucinelli",
+        "Model: Bengal Stripe Classic Shirt",
+        "Line: Solomeo Tailored Shirts",
+        "Generation / Release: Current",
+        "brand: brunello cucinelli",
+        "modelName: bengal stripe classic shirt",
+        "material: Cotton Poplin Navy & White Bengal Stripe",
+        "origin: Solomeo, Italy"
+      ],
+      "sponsored": false,
+      "stock": 12,
+      "color": "Cotton Poplin Navy & White Bengal Stripe",
+      "source": "https://shop.brunellocucinelli.com/en-us/men/ready-to-wear/shirts/",
+      "familyId": "brunellocucinelli:bengal-stripe-classic-shirt",
+      "provenance": "manufacturer_evidence",
+      "brand": "Brunello Cucinelli",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cotton poplin",
+        "brand": "brunello cucinelli",
+        "modelName": "bengal stripe classic shirt",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/shirts-brioni-bengal-stripe-170-2-two-ply-cotton-poplin-dress-shirt.webp",
+        "source": "https://shop.brunellocucinelli.com",
+        "alt": "Brunello Cucinelli Bengal Stripe Classic Collar Shirt official luxury photography",
+        "attribution": "Product photography © Brunello Cucinelli",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Bengal Stripe Classic Shirt",
+      "skuVariant": "Cotton Poplin Navy & White Bengal Stripe",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-SHIRTS-BRUNELLO-CUCINELLI-OXFORD-CLOTH-CASUAL-SHIRT",
+      "name": "Brunello Cucinelli Oxford Cloth Casual Shirt",
+      "category": "clothing",
+      "leafType": "shirts",
+      "description": "Brunello Cucinelli Oxford Cloth Casual Shirt. Handcrafted in Solomeo, Italy using the finest natural fibers and artisanal horn button closures.",
+      "price": 76500,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Brunello Cucinelli",
+        "Model: Oxford Cloth Casual Shirt",
+        "Line: Solomeo Tailored Shirts",
+        "Generation / Release: Current",
+        "brand: brunello cucinelli",
+        "modelName: oxford cloth casual shirt",
+        "material: Organic Oxford Cotton Optical White",
+        "origin: Solomeo, Italy"
+      ],
+      "sponsored": false,
+      "stock": 12,
+      "color": "Organic Oxford Cotton Optical White",
+      "source": "https://shop.brunellocucinelli.com/en-us/men/ready-to-wear/shirts/",
+      "familyId": "brunellocucinelli:oxford-cloth-casual-shirt",
+      "provenance": "manufacturer_evidence",
+      "brand": "Brunello Cucinelli",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cotton poplin",
+        "brand": "brunello cucinelli",
+        "modelName": "oxford cloth casual shirt",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/shirts-brioni-royal-oxford-high-count-cotton-dress-shirt.webp",
+        "source": "https://shop.brunellocucinelli.com",
+        "alt": "Brunello Cucinelli Oxford Cloth Casual Shirt official luxury photography",
+        "attribution": "Product photography © Brunello Cucinelli",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Oxford Cloth Casual Shirt",
+      "skuVariant": "Organic Oxford Cotton Optical White",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-SHIRTS-BRUNELLO-CUCINELLI-SEA-ISLAND-COTTON-DRESS-SHIRT",
+      "name": "Brunello Cucinelli Sea Island Cotton Slim-Fit Dress Shirt",
+      "category": "clothing",
+      "leafType": "shirts",
+      "description": "Brunello Cucinelli Sea Island Cotton Slim-Fit Dress Shirt. Handcrafted in Solomeo, Italy using the finest natural fibers and artisanal horn button closures.",
+      "price": 115000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Brunello Cucinelli",
+        "Model: Sea Island Cotton Dress Shirt",
+        "Line: Solomeo Tailored Shirts",
+        "Generation / Release: Current",
+        "brand: brunello cucinelli",
+        "modelName: sea island cotton dress shirt",
+        "material: Rare Sea Island Cotton Pearl Gray",
+        "origin: Solomeo, Italy"
+      ],
+      "sponsored": false,
+      "stock": 12,
+      "color": "Rare Sea Island Cotton Pearl Gray",
+      "source": "https://shop.brunellocucinelli.com/en-us/men/ready-to-wear/shirts/",
+      "familyId": "brunellocucinelli:sea-island-cotton-dress-shirt",
+      "provenance": "manufacturer_evidence",
+      "brand": "Brunello Cucinelli",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cotton poplin",
+        "brand": "brunello cucinelli",
+        "modelName": "sea island cotton dress shirt",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/shirts-brioni-milano-spread-collar-west-indian-sea-island-cotton-shirt.webp",
+        "source": "https://shop.brunellocucinelli.com",
+        "alt": "Brunello Cucinelli Sea Island Cotton Slim-Fit Dress Shirt official luxury photography",
+        "attribution": "Product photography © Brunello Cucinelli",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Sea Island Cotton Dress Shirt",
+      "skuVariant": "Rare Sea Island Cotton Pearl Gray",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-SHIRTS-BRUNELLO-CUCINELLI-BRUSHED-FLANNEL-MICRO-CHECK-SHIRT",
+      "name": "Brunello Cucinelli Brushed Flannel Micro-Check Shirt",
+      "category": "clothing",
+      "leafType": "shirts",
+      "description": "Brunello Cucinelli Brushed Flannel Micro-Check Shirt. Handcrafted in Solomeo, Italy using the finest natural fibers and artisanal horn button closures.",
+      "price": 94500,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Brunello Cucinelli",
+        "Model: Brushed Flannel Micro-Check Shirt",
+        "Line: Solomeo Tailored Shirts",
+        "Generation / Release: Current",
+        "brand: brunello cucinelli",
+        "modelName: brushed flannel micro-check shirt",
+        "material: Soft Cotton Flannel Beige & Camel Check",
+        "origin: Solomeo, Italy"
+      ],
+      "sponsored": false,
+      "stock": 12,
+      "color": "Soft Cotton Flannel Beige & Camel Check",
+      "source": "https://shop.brunellocucinelli.com/en-us/men/ready-to-wear/shirts/",
+      "familyId": "brunellocucinelli:brushed-flannel-micro-check-shirt",
+      "provenance": "manufacturer_evidence",
+      "brand": "Brunello Cucinelli",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cotton poplin",
+        "brand": "brunello cucinelli",
+        "modelName": "brushed flannel micro-check shirt",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/shirts-brioni-cortina-cotton-cashmere-twill-soft-collar-shirt.webp",
+        "source": "https://shop.brunellocucinelli.com",
+        "alt": "Brunello Cucinelli Brushed Flannel Micro-Check Shirt official luxury photography",
+        "attribution": "Product photography © Brunello Cucinelli",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Brushed Flannel Micro-Check Shirt",
+      "skuVariant": "Soft Cotton Flannel Beige & Camel Check",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-SHIRTS-BRUNELLO-CUCINELLI-SILK-COTTON-EVENING-TUXEDO-SHIRT",
+      "name": "Brunello Cucinelli Silk & Cotton Evening Tuxedo Shirt",
+      "category": "clothing",
+      "leafType": "shirts",
+      "description": "Brunello Cucinelli Silk & Cotton Evening Tuxedo Shirt. Handcrafted in Solomeo, Italy using the finest natural fibers and artisanal horn button closures.",
+      "price": 125000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Brunello Cucinelli",
+        "Model: Silk Cotton Evening Tuxedo Shirt",
+        "Line: Solomeo Tailored Shirts",
+        "Generation / Release: Current",
+        "brand: brunello cucinelli",
+        "modelName: silk cotton evening tuxedo shirt",
+        "material: Silk & Cotton Marcella Bib White",
+        "origin: Solomeo, Italy"
+      ],
+      "sponsored": false,
+      "stock": 12,
+      "color": "Silk & Cotton Marcella Bib White",
+      "source": "https://shop.brunellocucinelli.com/en-us/men/ready-to-wear/shirts/",
+      "familyId": "brunellocucinelli:silk-cotton-evening-tuxedo-shirt",
+      "provenance": "manufacturer_evidence",
+      "brand": "Brunello Cucinelli",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cotton poplin",
+        "brand": "brunello cucinelli",
+        "modelName": "silk cotton evening tuxedo shirt",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/shirts-canali-fly-front-pure-silk-satin-formal-evening-shirt.webp",
+        "source": "https://shop.brunellocucinelli.com",
+        "alt": "Brunello Cucinelli Silk & Cotton Evening Tuxedo Shirt official luxury photography",
+        "attribution": "Product photography © Brunello Cucinelli",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Silk Cotton Evening Tuxedo Shirt",
+      "skuVariant": "Silk & Cotton Marcella Bib White",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-SHIRTS-BRUNELLO-CUCINELLI-CHAMBRAY-SPORT-SHIRT",
+      "name": "Brunello Cucinelli Chambray Sport Shirt with Horn Buttons",
+      "category": "clothing",
+      "leafType": "shirts",
+      "description": "Brunello Cucinelli Chambray Sport Shirt with Horn Buttons. Handcrafted in Solomeo, Italy using the finest natural fibers and artisanal horn button closures.",
+      "price": 82500,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Brunello Cucinelli",
+        "Model: Chambray Sport Shirt",
+        "Line: Solomeo Tailored Shirts",
+        "Generation / Release: Current",
+        "brand: brunello cucinelli",
+        "modelName: chambray sport shirt",
+        "material: Washed Indigo Chambray / Real Horn Buttons",
+        "origin: Solomeo, Italy"
+      ],
+      "sponsored": false,
+      "stock": 12,
+      "color": "Washed Indigo Chambray / Real Horn Buttons",
+      "source": "https://shop.brunellocucinelli.com/en-us/men/ready-to-wear/shirts/",
+      "familyId": "brunellocucinelli:chambray-sport-shirt",
+      "provenance": "manufacturer_evidence",
+      "brand": "Brunello Cucinelli",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cotton poplin",
+        "brand": "brunello cucinelli",
+        "modelName": "chambray sport shirt",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/shirts-canali-fine-cotton-chambray-cutaway-collar-shirt.webp",
+        "source": "https://shop.brunellocucinelli.com",
+        "alt": "Brunello Cucinelli Chambray Sport Shirt with Horn Buttons official luxury photography",
+        "attribution": "Product photography © Brunello Cucinelli",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Chambray Sport Shirt",
+      "skuVariant": "Washed Indigo Chambray / Real Horn Buttons",
       "deviceCompatibility": []
     }
   ]

@@ -97,10 +97,19 @@ export function useCollectionStack(
           },
           onUpdate: update,
         });
-        const observer = new ResizeObserver(() => trigger.refresh());
+        let stackTimer: NodeJS.Timeout | null = null;
+        const observer = new ResizeObserver(() => {
+          if (document.documentElement.classList.contains("is-scrolling")) {
+            if (stackTimer) clearTimeout(stackTimer);
+            stackTimer = setTimeout(() => trigger.refresh(), 200);
+            return;
+          }
+          trigger.refresh();
+        });
         observer.observe(list);
         list.dataset.stackReady = "true";
         return () => {
+          if (stackTimer) clearTimeout(stackTimer);
           observer.disconnect();
           trigger.kill();
           delete list.dataset.stackReady;
@@ -318,8 +327,15 @@ export function useEditorialPageParallax(
         // first measurement. Refresh on layout changes, never on scroll frames.
         let refreshFrame = 0;
         let disposed = false;
+        let debounceTimer: NodeJS.Timeout | null = null;
         const refresh = () => {
-          if (disposed || refreshFrame) return;
+          if (disposed) return;
+          if (document.documentElement.classList.contains("is-scrolling")) {
+            if (debounceTimer) clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(refresh, 200);
+            return;
+          }
+          if (refreshFrame) return;
           refreshFrame = requestAnimationFrame(() => {
             refreshFrame = 0;
             ScrollTrigger.refresh();
@@ -330,6 +346,7 @@ export function useEditorialPageParallax(
         void document.fonts.ready.then(refresh);
         return () => {
           disposed = true;
+          if (debounceTimer) clearTimeout(debounceTimer);
           observer.disconnect();
           cancelAnimationFrame(refreshFrame);
           timelines.forEach((timeline) => {

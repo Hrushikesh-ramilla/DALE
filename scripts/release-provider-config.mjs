@@ -46,5 +46,11 @@ export function releaseProviderConfig(source, previous = {}, overrides = {}) {
     LOCAL_SPEECH_MODEL: setting("LOCAL_SPEECH_MODEL", ""),
     VOICE_FREE_TIER_CONFIRMED: voiceConfirmed,
     VOICE_BILLING_DISABLED: voiceBilling,
+    CONCIERGE_PROVIDER: setting("CONCIERGE_PROVIDER", provider === "gemini" ? "gemini" : "gemini"),
+    CONCIERGE_MODEL: setting("CONCIERGE_MODEL", setting("AI_MODEL", "gemini-3.5-flash-lite")),
+    CONCIERGE_ALLOW_CLOUD: setting("CONCIERGE_ALLOW_CLOUD", "true"),
+    CONCIERGE_INPUT_TOKEN_LIMIT: setting("CONCIERGE_INPUT_TOKEN_LIMIT", "1048576"),
+    CONCIERGE_CONTEXT_BUDGET_TOKENS: setting("CONCIERGE_CONTEXT_BUDGET_TOKENS", "1048576"),
+    CONCIERGE_GENERATIONS_PER_MINUTE: setting("CONCIERGE_GENERATIONS_PER_MINUTE", "60"),
   };
 }

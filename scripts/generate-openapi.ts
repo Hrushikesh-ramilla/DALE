@@ -6,6 +6,8 @@ import { scenarioKind } from "../src/server/scenarios";
 import { demoRequestSchema } from "../src/server/demo";
 import { voiceRequest } from "../src/domain/voice";
 import { agentRequest } from "../src/domain/agent";
+import { decisionReviewInput } from "../src/domain/shopping-decision";
+import { circleCommand } from "../src/domain/circles";
 const jsonSchema = (schema: z.ZodType) =>
   z.toJSONSchema(schema, { io: "input" });
 const responses = {
@@ -76,6 +78,14 @@ const spec = {
     },
   },
   paths: {
+    "/api/circles": {
+      get: {description:"Public aggregate-only circles in the server-selected storefront. Optional circle UUID targets that exact invitation; product/model preview approved terms. Optional buyer session adds only that buyer's joined/review state; no member identities or private records.",parameters:[{name:"circle",in:"query",schema:{type:"string",format:"uuid"}},{name:"product",in:"query",schema:{type:"string",maxLength:150}},{name:"model",in:"query",schema:{type:"string",maxLength:100}}],responses},
+      post: command("Explicitly commit to the reviewed exact circle/offer, or release your own unused commitment. Joining requires consent=true and matching product, policy and requirement versions. Joining never creates an order/payment; paid or unresolved-capture commitments cannot be released.",jsonSchema(circleCommand)),
+    },
+    "/api/decisions": {
+      get: { description: "Read this shopper's latest or explicitly owned saved decision, including current/stale status. Another customer's ID returns 404.", security: [{ session: [] }], parameters: [{ ...idParameter, required: false }], responses },
+      post: command("Create a fresh decision-bound quote after validating the owned decision, requirements, exact offer and approved group terms. This creates no order or payment.", jsonSchema(decisionReviewInput)),
+    },
     "/api/catalog": {
       get: {
         description:

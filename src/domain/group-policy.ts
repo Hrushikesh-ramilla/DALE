@@ -8,6 +8,7 @@ export const groupPolicySchema = tier
   .extend({
     formingMinutes: z.number().int().min(5).max(10080),
     checkoutMinutes: z.number().int().min(5).max(1440),
+    codCommitmentsEligible: z.boolean().optional(),
     productTiers: z
       .array(tier.extend({ productId: z.string().min(1).max(100) }))
       .max(40),
@@ -27,6 +28,7 @@ export type GroupTerms = {
   checkoutMinutes: number;
   baseAmount: number;
   amount: number;
+  codCommitmentsEligible?: boolean;
 };
 export const defaultGroupPolicy: GroupPolicy = {
   version: 1,
@@ -35,6 +37,7 @@ export const defaultGroupPolicy: GroupPolicy = {
   formingMinutes: 1440,
   checkoutMinutes: 30,
   productTiers: [],
+  codCommitmentsEligible: true,
 };
 export function groupTerms(
   policy: GroupPolicy | undefined,
@@ -49,6 +52,7 @@ export function groupTerms(
     minimumMembers: rule.minimumMembers,
     discountPercent: rule.discountPercent,
     checkoutMinutes: approved.checkoutMinutes,
+    codCommitmentsEligible: approved.codCommitmentsEligible === true,
     baseAmount: product.price,
     amount: Math.round((product.price * (100 - rule.discountPercent)) / 100),
   };

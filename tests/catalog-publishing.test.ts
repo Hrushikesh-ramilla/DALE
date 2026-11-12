@@ -33,7 +33,9 @@ beforeAll(async () => {
   process.env.PAYMENT_MODE = "fixture";
   process.env.AI_MODE = "fixture";
   process.env.SESSION_SECRET = "catalog-publishing-fixture-secret-at-least-32";
-});
+  // Import the full bundled catalog before timing individual publication work.
+  await getDatabase();
+}, 60000);
 afterAll(() => closeDatabase());
 function manifest(id: string) {
   const original = productById("B010");

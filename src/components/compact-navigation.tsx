@@ -87,7 +87,7 @@ export function CompactNavigation({ children }: { children: ReactNode }) {
       <div
         className="navigation-sheet"
         onClick={(event) => {
-          if (event.target instanceof Element && event.target.closest("button"))
+          if (event.target instanceof Element && event.target.closest("button,a"))
             ref.current?.removeAttribute("open");
         }}
       >

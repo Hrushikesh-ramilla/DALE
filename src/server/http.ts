@@ -32,8 +32,11 @@ export async function jsonBody(request: Request) {
 }
 export function requireSameOrigin(request: Request) {
   const origin = request.headers.get("origin");
-  const configured = new URL(process.env.APP_URL || request.url).origin;
-  if (!origin || origin !== configured)
+  const requestOrigin = new URL(request.url).origin;
+  const configured = process.env.APP_URL
+    ? new URL(process.env.APP_URL).origin
+    : requestOrigin;
+  if (!origin || (origin !== configured && origin !== requestOrigin))
     throw new Error("A same-origin request is required.");
 }
 export function apiError(error: unknown) {

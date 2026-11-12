@@ -57,6 +57,7 @@ export async function executeWebsiteTurn(
             "get_group_deals",
             "get_site_knowledge",
             "get_catalog_facets",
+            "get_shopping_decision",
           ].includes(name) ||
           (name === "manage_collection" &&
             typeof raw === "object" &&

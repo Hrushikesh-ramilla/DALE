@@ -63,7 +63,10 @@ button svg {
 }
 button:focus-visible,
 a:focus-visible,
-summary:focus-visible {
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 5px;
 }
@@ -235,14 +238,7 @@ p {
   padding: 0 clamp(22px, 4vw, 72px);
 }
 .mode-strip {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  font-size: 10px;
-  color: #aaa79f;
-  padding: 17px 0;
-  line-height: 1.6;
+  display: none !important;
 }
 .status-dot {
   width: 5px;
@@ -2272,13 +2268,19 @@ summary {
 }
 .card-visual {
   overflow: hidden;
-  background: radial-gradient(circle at 50% 50%, rgba(30, 41, 59, 0.45) 0%, rgba(10, 13, 19, 0.95) 100%);
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 .card-visual .product-art {
   height: 260px;
-  background: transparent;
+  background: #ffffff;
+}
+.card-visual img,
+.product-photograph img,
+.product-art img {
+  mix-blend-mode: multiply;
 }
 .card-details {
   padding: 22px 0;
@@ -3154,6 +3156,7 @@ summary {
   max-width: 94%;
   max-height: 94%;
   object-fit: contain;
+  mix-blend-mode: multiply;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -3364,23 +3367,23 @@ summary {
 .category-brand-card {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, #131722 0%, #090b10 100%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
   padding: 24px;
   text-decoration: none;
-  color: inherit;
+  color: #0f172a;
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
               box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
               border-color 0.3s ease;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 .category-brand-card:hover {
-  transform: translateY(-8px) scale(1.015);
-  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.85), 0 0 30px rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.32);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
+  border-color: #cbd5e1;
 }
 .category-brand-card .card-top-row {
   display: flex;
@@ -3392,22 +3395,21 @@ summary {
 .category-brand-card .brand-name {
   font-family: var(--font-serif, "Playfair Display", Georgia, serif);
   font-size: 24px;
-  font-weight: 500;
-  color: #f8fafc;
+  font-weight: 600;
+  color: #0f172a;
   letter-spacing: -0.01em;
   margin: 0;
-  background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: none;
+  -webkit-text-fill-color: initial;
 }
 .category-brand-card .brand-count-pill {
   padding: 4px 10px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
   border-radius: 999px;
   font-size: 11px;
   font-weight: 600;
-  color: #e2e8f0;
+  color: #475569;
   letter-spacing: 0.04em;
   white-space: nowrap;
 }
@@ -3418,32 +3420,14 @@ summary {
   justify-content: center;
   margin: 12px 0 16px;
   position: relative;
-  background: transparent;
-  overflow: visible;
+  background: #ffffff;
+  overflow: hidden;
 }
 .category-brand-card .brand-preview-stage-dome {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 240px;
-  height: 190px;
-  transform: translate(-50%, -50%);
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 70%);
-  pointer-events: none;
-  z-index: 0;
+  display: none !important;
 }
 .category-brand-card .brand-preview-shadow {
-  position: absolute;
-  bottom: 6px;
-  left: 50%;
-  width: 190px;
-  height: 20px;
-  transform: translateX(-50%);
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.78) 0%, transparent 75%);
-  filter: blur(10px);
-  pointer-events: none;
-  z-index: 0;
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  display: none !important;
 }
 .category-brand-card .brand-hero-img {
   width: 100%;
@@ -3453,16 +3437,12 @@ summary {
   object-fit: contain;
   position: relative;
   z-index: 1;
-  filter: drop-shadow(0 16px 26px rgba(0, 0, 0, 0.75));
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
-}
-.category-brand-card:hover .brand-preview-shadow {
-  transform: translateX(-50%) scale(1.12);
-  opacity: 0.85;
+  filter: none;
+  mix-blend-mode: multiply;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .category-brand-card:hover .brand-hero-img {
-  transform: scale(1.08) translateY(-6px);
-  filter: drop-shadow(0 24px 36px rgba(0, 0, 0, 0.88));
+  transform: scale(1.05);
 }
 .category-brand-card .card-bottom-row {
   display: flex;
@@ -3470,26 +3450,26 @@ summary {
   justify-content: space-between;
   margin-top: auto;
   padding-top: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid #f1f5f9;
 }
 .category-brand-card .brand-price-tag {
-  font-size: 12px;
-  font-weight: 500;
-  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
 }
 .category-brand-card .brand-action-link {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #f1f5f9;
+  color: #0f172a;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  transition: color 0.2s ease, gap 0.2s ease;
+  transition: gap 0.2s ease, color 0.2s ease;
 }
 .category-brand-card:hover .brand-action-link {
-  color: #38bdf8;
+  color: #2563eb;
   gap: 9px;
 }
 
@@ -4758,17 +4738,17 @@ summary {
   justify-content: space-between;
   margin-top: auto;
   padding-top: 16px;
-  border-top: 1px solid #dedbd2;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 .price-display {
   font-size: 18px;
   font-weight: 700;
-  color: #181613;
+  color: #f8fafc !important;
 }
 .price-sub {
   display: block;
   font-size: 11px;
-  color: #777;
+  color: #94a3b8 !important;
 }
 
 .catalog-loading-state,
@@ -5294,18 +5274,18 @@ summary {
 }
 .node-logo-svg {
   width: auto;
-  max-width: 145px;
-  height: 38px;
+  max-width: 120px;
+  height: 32px;
   overflow: visible;
   filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.98)) drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
 }
 .dial-brand-node:hover .node-emblem-wrap {
-  transform: scale(1.22);
-  filter: drop-shadow(0 0 24px rgba(255, 255, 255, 0.95)) drop-shadow(0 0 35px rgba(203, 213, 225, 0.8)) brightness(1.35);
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.95)) drop-shadow(0 0 30px rgba(203, 213, 225, 0.8)) brightness(1.35);
 }
 .dial-brand-node.active-node .node-emblem-wrap {
-  filter: drop-shadow(0 0 28px rgba(255, 255, 255, 1)) drop-shadow(0 0 40px rgba(203, 213, 225, 0.85)) brightness(1.4);
-  transform: scale(1.15);
+  filter: drop-shadow(0 0 24px rgba(255, 255, 255, 1)) drop-shadow(0 0 35px rgba(203, 213, 225, 0.85)) brightness(1.4);
+  transform: scale(1.1);
 }
 
 /* Center Stage: 3D Applied Sculpted Horological Emblem (Highest Elevation z-index 70) */
@@ -5484,3 +5464,39 @@ summary {
   }
 }
 
+
+/* Exact-offer buying circles use the existing storefront palette. */
+.buying-circles { margin-top: 24px; }
+.buying-circles > p { max-width: 76ch; line-height: 1.65; }
+.buying-circles .group-grid { grid-template-columns: 1fr; margin-top: 24px; }
+.buying-circles .group-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 24px;
+  max-width: 100%;
+  background: #181816;
+  border: 1px solid #383630;
+  border-radius: 4px;
+  padding: 24px;
+}
+.buying-circles .group-card .product-art.compact {
+  width: 120px !important;
+  height: 120px !important;
+  min-width: 120px !important;
+  flex: 0 0 120px !important;
+  background: #ffffff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.buying-circles .circle-copy { min-width: 0; flex: 1 1 0%; overflow-wrap: break-word; }
+.buying-circles .group-card h3 { color: #f4f0e7; }
+.buying-circles .group-card p { color: #e6e1d7; line-height: 1.65; }
+.buying-circles .group-card small { color: #d0c9bc; }
+.buying-circles .circle-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 20px; }
+.buying-circles .circle-actions a { color: #f4f0e7; text-decoration: underline; text-underline-offset: 4px; }
+.buying-circles .circle-consent { display: flex; align-items: flex-start; gap: 12px; flex-basis: 100%; color: #f4f0e7; line-height: 1.5; }
+.buying-circles .circle-consent input { width: 20px; height: 20px; flex: 0 0 20px; margin-top: 2px; }
+.buying-circles [role="alert"] { border: 1px solid #dbb8a2; padding: 18px; margin: 18px 0; }
+@media(max-width: 600px) { .buying-circles .group-card { padding: 20px; flex-direction: column; } .buying-circles .circle-actions .button { width: 100%; } }

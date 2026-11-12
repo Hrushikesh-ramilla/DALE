@@ -55,7 +55,7 @@ export function CinematicIntro({
       Promise.resolve()
         .then(() => prepare?.())
         .catch(() => undefined),
-      new Promise<void>((resolve) => timers.push(setTimeout(resolve, 6500))),
+      new Promise<void>((resolve) => timers.push(setTimeout(resolve, 1200))),
     ]);
 
     const measureTarget = () => {
@@ -142,11 +142,18 @@ export function CinematicIntro({
       className="cinematic-intro-root"
       data-lenis-prevent
       data-step={step}
+      onClick={() => {
+        setStep(9);
+        onSettledRef.current?.();
+        onCompleteRef.current?.();
+      }}
+      title="Click to enter DALE"
       style={{
         position: "fixed",
         inset: 0,
         zIndex: 99999,
         pointerEvents: "auto",
+        cursor: "pointer",
         backgroundColor: isFadingOverlay ? "transparent" : "#000000",
         transition: "background-color 0.85s cubic-bezier(0.16, 1, 0.3, 1)",
         display: "flex",

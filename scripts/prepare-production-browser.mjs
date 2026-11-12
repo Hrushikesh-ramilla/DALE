@@ -1,4 +1,4 @@
-import { cp, writeFile, mkdir, symlink } from "node:fs/promises";
+import { cp, writeFile, mkdir, symlink, realpath } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import { createRequire } from "node:module";
 import { resolve, dirname, sep } from "node:path";
@@ -10,7 +10,7 @@ if (process.env.LOCAL_PREVIEW_LINK_PUBLIC === "true") {
   // Local iteration can share immutable workspace assets instead of copying
   // thousands of files through a synced directory. Release builds keep copies.
   await symlink(
-    resolve("public"),
+    await realpath("public"),
     ".next/standalone/public",
     process.platform === "win32" ? "junction" : "dir",
   );

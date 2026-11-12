@@ -1,4 +1,5 @@
-import { beforeEach, expect, it, vi } from "vitest";
+import { afterAll, beforeAll, beforeEach, expect, it, vi } from "vitest";
+import { closeDatabase, getDatabase } from "../src/server/database";
 import {
   createWorkspace,
   getWorkspace,
@@ -12,8 +13,16 @@ vi.mock("../src/server/payments", async (original) => ({
   ...(await original<typeof import("../src/server/payments")>()),
   verifyWebhook: vi.fn(),
 }));
-beforeEach(() => {
+// Cold catalog import is setup, not part of the receipt-verification deadline.
+// Keep it separately bounded and release the embedded engine after this suite.
+beforeAll(async () => {
   process.env.LOCAL_DATA_DIR = ":memory:";
+  process.env.PAYMENT_MODE = "fixture";
+  process.env.AI_MODE = "fixture";
+  await getDatabase();
+}, 60000);
+afterAll(() => closeDatabase());
+beforeEach(() => {
   process.env.PAYMENT_MODE = "fixture";
   vi.mocked(verifyWebhook).mockResolvedValue(false);
 });

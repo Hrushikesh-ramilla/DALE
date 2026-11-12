@@ -467,7 +467,7 @@ export function HorologicalDial({
                   <div className="node-emblem-wrap">
                     <WatchBrandLogo
                       brand={brand.name}
-                      size={150}
+                      size={65}
                       className="node-logo-svg"
                     />
                   </div>

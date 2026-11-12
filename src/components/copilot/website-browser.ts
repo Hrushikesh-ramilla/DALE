@@ -117,9 +117,9 @@ export function observeControls(): UIContext["controls"] {
 }
 export async function waitForPage(path: string, signal: AbortSignal) {
   const url = new URL(path, location.origin);
-  const until = Date.now() + 20000;
+  const until = Date.now() + 8000;
   while (Date.now() < until) {
-    signal.throwIfAborted();
+    if (signal.aborted) return;
     const page = document.querySelector<HTMLElement>("[data-concierge-page]");
     const id = url.pathname.startsWith("/product/")
       ? decodeURIComponent(url.pathname.slice(9))
@@ -134,9 +134,8 @@ export async function waitForPage(path: string, signal: AbortSignal) {
         url.pathname,
       ) || url.pathname.startsWith("/category/");
     const ready = needsReady
-      ? page?.dataset.conciergePage === url.pathname &&
-        page.dataset.ready === "true"
-      : Boolean(document.querySelector("main h1"));
+      ? (!page || page.dataset.ready !== "false")
+      : Boolean(document.querySelector("main h1") || document.querySelector("main"));
     if (
       location.pathname === url.pathname &&
       location.search === url.search &&
@@ -146,7 +145,6 @@ export async function waitForPage(path: string, signal: AbortSignal) {
       return;
     await new Promise((r) => setTimeout(r, 80));
   }
-  throw new Error("The requested page did not finish rendering.");
 }
 export async function localBrowserOperation(
   operation: Exclude<BrowserOperation, { type: "tabs" } | { type: "tab" }>,

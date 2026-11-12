@@ -67,6 +67,8 @@ export async function POST(request: Request) {
           input.productId,
           input.model,
           input.groupId,
+          input.decisionId,
+          input.paymentMethod,
         );
         break;
       case "join_group":
@@ -80,7 +82,19 @@ export async function POST(request: Request) {
           actor,
           input.quoteId,
           input.fingerprint,
+          input.paymentMethod,
         );
+        break;
+      case "cod_checkout":
+        result = await service.checkout(
+          actor,
+          input.quoteId,
+          input.fingerprint,
+          "cod",
+        );
+        break;
+      case "cancel_order":
+        result = await service.cancelOrder(actor, input.orderId, input.reason);
         break;
       case "capture":
         result = await service.capture(actor, input.orderId);

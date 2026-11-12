@@ -68,7 +68,11 @@ function Page() {
       }
     };
     void load().catch((e) => {
-      if (!abort.signal.aborted) setError(e.message);
+      if (!abort.signal.aborted) {
+        setError(e instanceof Error ? e.message : "Could not load current data.");
+        setProducts([]);
+        setLoadedKey(key);
+      }
     });
     return () => abort.abort();
   }, [path, raw, ids, refresh, key]);
@@ -119,6 +123,7 @@ function Page() {
               : "Your cart"}
       </h1>
       {error && <p role="alert">{error}</p>}
+      {c.error && <p role="alert">{c.error}</p>}
       {notice && <p role="status">{notice}</p>}
       {!ready && !error && <p role="status">Loading current data…</p>}
       {path === "/search" && (
@@ -207,16 +212,17 @@ function Page() {
             {products.map((p) => (
               <article key={p.id} data-product-id={p.id}>
                 <Link href={`/product/${p.id}`}>
-                  <ProductArt product={p} />
+                  <div className="concierge-product-art"><ProductArt product={p} /></div>
                   <h2>{p.name}</h2>
                 </Link>
                 <p>
                   {p.brand} · {formatMoney(p.price)}
                 </p>
                 <p>{p.specs.slice(0, 3).join(" · ")}</p>
-                <button type="button" onClick={() => c.addToCart(p)}>
+                <button type="button" disabled={p.comparisonOnly || p.stock < 1} onClick={() => c.addToCart(p)}>
                   Add to cart
                 </button>{" "}
+                {(p.comparisonOnly || p.stock < 1) && <p>{p.comparisonOnly ? "Comparison only — unavailable for purchase." : "Out of stock."}</p>}
                 <button
                   type="button"
                   onClick={() =>
@@ -562,7 +568,6 @@ function Page() {
             ))}
         </>
       )}
-      {c.error && <p role="alert">{c.error}</p>}
     </section>
   );
 }

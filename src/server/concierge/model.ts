@@ -100,7 +100,7 @@ async function geminiRetryDelay(response: Response): Promise<number | null> {
     seconds === undefined ? undefined : seconds * 1000,
   ].filter((n): n is number => n !== undefined && Number.isFinite(n));
   const ms = hints.length ? Math.max(0, ...hints) : 15000;
-  return ms <= 60000 ? Math.ceil(ms) : null;
+  return ms <= 85000 ? Math.ceil(ms) : null;
 }
 export async function modelTurn(
   messages: NativeMessage[],
@@ -131,8 +131,10 @@ async function generate(
   tools: ToolDeclaration[],
   signal?: AbortSignal,
 ): Promise<NativeMessage> {
-  const provider = process.env.CONCIERGE_PROVIDER || "self_hosted";
-  const model = process.env.CONCIERGE_MODEL || process.env.AI_MODEL;
+  const provider =
+    process.env.CONCIERGE_PROVIDER || process.env.AI_PROVIDER || "gemini";
+  const model =
+    process.env.CONCIERGE_MODEL || process.env.AI_MODEL || "gemini-3.5-flash-lite";
   const reasoning = process.env.CONCIERGE_REASONING_EFFORT || "low";
   const streaming = agentStreams();
   const generation = randomUUID();
@@ -258,6 +260,11 @@ async function generate(
     });
   }
   if (!response?.ok) {
+    const errorBody = await response?.text().catch(() => "");
+    console.error(
+      `Concierge inference HTTP ${response?.status ?? "unavailable"}:`,
+      errorBody,
+    );
     await response?.body?.cancel().catch(() => undefined);
     throw new Error(
       `Concierge inference returned HTTP ${response?.status ?? "unavailable"}. No scripted response was substituted.`,

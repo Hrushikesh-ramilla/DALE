@@ -21,8 +21,11 @@ export async function contextLimit() {
       input: setting("CONCIERGE_INPUT_TOKEN_LIMIT", 8192, 512),
       source: "operator configuration",
     };
-  const model = process.env.CONCIERGE_MODEL || process.env.AI_MODEL || "";
-  if (process.env.CONCIERGE_PROVIDER !== "gemini")
+  const provider =
+    process.env.CONCIERGE_PROVIDER || process.env.AI_PROVIDER || "gemini";
+  const model =
+    process.env.CONCIERGE_MODEL || process.env.AI_MODEL || "gemini-3.5-flash-lite";
+  if (provider !== "gemini")
     return { input: 8192, source: "conservative fallback" };
   const cached = metadata.get(model);
   if (cached && Date.now() - cached.at < 600000) return cached.value;

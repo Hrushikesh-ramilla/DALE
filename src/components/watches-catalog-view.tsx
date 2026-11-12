@@ -187,28 +187,20 @@ export const WATCH_BRANDS: WatchBrandInfo[] = [
     signatureCalibre: "Calibre 4131 / 3235",
   },
   {
+    name: "Tudor",
+    origin: "Geneva, Switzerland",
+    est: 1926,
+    tagline: "Born to Dare · Black Bay & Pelagos",
+    count: 10,
+    signatureCalibre: "Manufacture Calibre MT5402 / MT5602",
+  },
+  {
     name: "Grand Seiko",
     origin: "Shizukuishi, Japan",
     est: 1960,
     tagline: "The Nature of Time · Spring Drive & Hi-Beat",
     count: 10,
     signatureCalibre: "Spring Drive 9R65 / 9F Quartz",
-  },
-  {
-    name: "Samsung",
-    origin: "Suwon, South Korea",
-    est: 2013,
-    tagline: "Galaxy Watch Ultra & Classic Rotating Bezel",
-    count: 10,
-    signatureCalibre: "Exynos W1000 3nm 5-Core",
-  },
-  {
-    name: "Apple",
-    origin: "Cupertino, California, USA",
-    est: 2015,
-    tagline: "Apple Watch Ultra 2 & Series 10 Precision OLED",
-    count: 10,
-    signatureCalibre: "Apple S10 / S9 SiP Dual-Core",
   },
 ];
 
@@ -324,18 +316,12 @@ function WatchesCatalogContent({
   }, [allProducts, initialBrands]);
   const availableHouses = useMemo(
     () =>
-      Object.entries(brandCounts)
-        .filter(([, count]) => count > 0)
-        .map(([name, count]) => ({
-          ...(WATCH_BRANDS.find((b) => b.name === name) || {
-            name,
-            origin: "",
-            est: 0,
-            tagline: "Explore recorded watch references",
-            signatureCalibre: "See individual product specifications",
-          }),
-          count,
-        })),
+      WATCH_BRANDS.filter((brand) => (brandCounts[brand.name] ?? 0) > 0).map(
+        (brand) => ({
+          ...brand,
+          count: brandCounts[brand.name] ?? brand.count,
+        }),
+      ),
     [brandCounts],
   );
   const totalWatches =
@@ -488,6 +474,36 @@ function WatchesCatalogContent({
       list.sort((a, b) => b.price - a.price);
     } else if (sortOrder === "brand-asc") {
       list.sort((a, b) => (a.brand || "").localeCompare(b.brand || ""));
+    } else {
+      // Default "featured": prioritize authentic Manufacture Houses first
+      const houseOrder: Record<string, number> = {
+        "patek philippe": 1,
+        "vacheron constantin": 2,
+        "audemars piguet": 3,
+        "a. lange & söhne": 4,
+        "breguet": 5,
+        "blancpain": 6,
+        "rolex": 7,
+        "jaeger-lecoultre": 8,
+        "cartier": 9,
+        "omega": 10,
+        "iwc": 11,
+        "grand seiko": 12,
+        "girard-perregaux": 13,
+        "ulysse nardin": 14,
+        "tudor": 15,
+        "breitling": 16,
+        "tag heuer": 17,
+        "longines": 18,
+        "tissot": 19,
+        "seiko": 20,
+      };
+      list.sort((a, b) => {
+        const rankA = houseOrder[(a.brand || "").toLowerCase()] ?? 99;
+        const rankB = houseOrder[(b.brand || "").toLowerCase()] ?? 99;
+        if (rankA !== rankB) return rankA - rankB;
+        return (b.price || 0) - (a.price || 0);
+      });
     }
     return list;
   }, [filteredProducts, sortOrder]);
@@ -1197,10 +1213,26 @@ function WatchesCatalogContent({
 
                     <div className="card-footer-action">
                       <div>
-                        <strong className="price-display">
+                        <strong
+                          className="price-display"
+                          style={{
+                            fontSize: 18,
+                            fontWeight: 700,
+                            color: "#f8fafc",
+                          }}
+                        >
                           {formatMoney(product.price)}
                         </strong>
-                        <small className="price-sub">USD · Sandbox offer</small>
+                        <small
+                          className="price-sub"
+                          style={{
+                            display: "block",
+                            fontSize: 11,
+                            color: "#94a3b8",
+                          }}
+                        >
+                          USD · Sandbox offer
+                        </small>
                       </div>
 
                       <div style={{ display: "flex", gap: 8 }}>

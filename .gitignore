@@ -20,6 +20,8 @@ test-results/
 /docs/*AUDIT*.md
 /docs/*STATUS*.md
 /docs/*PROGRESS*.md
+# Public implementation checkpoint configuration.
+!/docs/CUSTOMER-STOREFRONT-PROGRESS.md
 /docs/*CHECKPOINT*.md
 /docs/evaluations/
 /docs/reports/
@@ -41,3 +43,39 @@ scripts/**/*.webp
 scripts/**/*.jpg
 /scripts/*-report.json
 /scripts/*-verdicts.json
+
+# Temporary archives and inspection scratch
+*.tar.gz
+cookie.txt
+classified_commits.txt
+clean_commits_blueprint.json
+commit_history_full.json
+*.docx
+
+# Scratch exploratory test scripts
+/scripts/test-*
+/scripts/verify-*
+/scripts/trace-*
+# Scratch investigation scripts
+/scripts/*.py
+/scripts/*.mjs
+/scripts/*.cjs
+/scripts/*.sql
+!/scripts/prepare-production-browser.mjs
+!/scripts/package-release.mjs
+!/scripts/release-provider-config.mjs
+!/scripts/deploy-existing-ec2.mjs
+
+# Scratch investigation scripts
+/scripts/*.py
+/scripts/*.mjs
+/scripts/*.cjs
+/scripts/*.sql
+/scripts/*.json
+/scripts/*.ts
+!/scripts/prepare-production-browser.mjs
+!/scripts/package-release.mjs
+!/scripts/release-provider-config.mjs
+!/scripts/deploy-existing-ec2.mjs
+!/scripts/agent-latency-workloads.json
+!/scripts/generate-openapi.ts

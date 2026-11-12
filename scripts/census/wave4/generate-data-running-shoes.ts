@@ -1,0 +1,1823 @@
+import fs from "node:fs";
+import path from "node:path";
+
+export interface RunningShoeItem {
+  id: string;
+  brand: string;
+  productLine?: string;
+  modelName: string;
+  sourceUrl: string;
+  sourceRegion: string;
+  variants?: string[];
+  attrs: {
+    cushioningTechnology: string;
+    stackHeightMm: number;
+    heelDropMm: number;
+    weightGrams: number;
+    pronationSupport: string;
+    originCountry: string;
+  };
+  reason: string;
+}
+
+export const allRunningShoes: RunningShoeItem[] = [
+  // ==========================================
+  // 1. ASICS (10 models, Japan JP)
+  // ==========================================
+  {
+    id: "asics-gel-kayano-31",
+    brand: "ASICS",
+    productLine: "Gel-Kayano",
+    modelName: "Gel-Kayano 31",
+    sourceUrl: "https://www.asics.com/us/en-us/gel-kayano-31/p/ANA_1011B867-001.html",
+    sourceRegion: "JP",
+    attrs: {
+      cushioningTechnology: "FF BLAST PLUS ECO and PureGEL",
+      stackHeightMm: 40,
+      heelDropMm: 10,
+      weightGrams: 305,
+      pronationSupport: "Overpronation (4D Guidance System)",
+      originCountry: "Vietnam"
+    },
+    reason: "Flagship stability runner featuring revolutionary 4D Guidance System for adaptive biomechanical support."
+  },
+  {
+    id: "asics-gel-nimbus-26",
+    brand: "ASICS",
+    productLine: "Gel-Nimbus",
+    modelName: "Gel-Nimbus 26",
+    sourceUrl: "https://www.asics.com/us/en-us/gel-nimbus-26/p/ANA_1011B794-001.html",
+    sourceRegion: "JP",
+    attrs: {
+      cushioningTechnology: "FF BLAST PLUS ECO and PureGEL",
+      stackHeightMm: 42,
+      heelDropMm: 8,
+      weightGrams: 304,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Max-cushioned long-distance trainer pairing bio-based FF BLAST PLUS ECO foam with HYBRID ASICSGRIP outsole."
+  },
+  {
+    id: "asics-novablast-4",
+    brand: "ASICS",
+    productLine: "Novablast",
+    modelName: "Novablast 4",
+    sourceUrl: "https://www.asics.com/us/en-us/novablast-4/p/ANA_1011B693-001.html",
+    sourceRegion: "JP",
+    attrs: {
+      cushioningTechnology: "FF BLAST PLUS ECO",
+      stackHeightMm: 41,
+      heelDropMm: 8,
+      weightGrams: 260,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Dynamic trampoline-inspired geometric midsole providing ultra-bouncy energy return for daily mileage."
+  },
+  {
+    id: "asics-metaspeed-sky-paris",
+    brand: "ASICS",
+    productLine: "Metaspeed",
+    modelName: "Metaspeed Sky Paris",
+    sourceUrl: "https://www.asics.com/us/en-us/metaspeed-sky-paris/p/ANA_1013A123-700.html",
+    sourceRegion: "JP",
+    attrs: {
+      cushioningTechnology: "FF TURBO PLUS with Full Carbon Plate",
+      stackHeightMm: 40,
+      heelDropMm: 5,
+      weightGrams: 183,
+      pronationSupport: "Neutral (Elite Stride Racer)",
+      originCountry: "Vietnam"
+    },
+    reason: "Elite marathon racing super-shoe engineered for stride runners with ultra-responsive FF TURBO PLUS foam."
+  },
+  {
+    id: "asics-metaspeed-edge-paris",
+    brand: "ASICS",
+    productLine: "Metaspeed",
+    modelName: "Metaspeed Edge Paris",
+    sourceUrl: "https://www.asics.com/us/en-us/metaspeed-edge-paris/p/ANA_1013A124-700.html",
+    sourceRegion: "JP",
+    attrs: {
+      cushioningTechnology: "FF TURBO PLUS with Angled Carbon Plate",
+      stackHeightMm: 40,
+      heelDropMm: 5,
+      weightGrams: 185,
+      pronationSupport: "Neutral (Elite Cadence Racer)",
+      originCountry: "Vietnam"
+    },
+    reason: "Marathon racing super-shoe optimized for cadence runners seeking rapid turn-over and forward propulsion."
+  },
+  {
+    id: "asics-magic-speed-4",
+    brand: "ASICS",
+    productLine: "Magic Speed",
+    modelName: "Magic Speed 4",
+    sourceUrl: "https://www.asics.com/us/en-us/magic-speed-4/p/ANA_1011B875-100.html",
+    sourceRegion: "JP",
+    attrs: {
+      cushioningTechnology: "FF TURBO and FF BLAST PLUS with Carbon Plate",
+      stackHeightMm: 43,
+      heelDropMm: 8,
+      weightGrams: 242,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Versatile carbon-plated tempo trainer providing marathon racing sensation at daily training durability."
+  },
+  {
+    id: "asics-superblast-2",
+    brand: "ASICS",
+    productLine: "Superblast",
+    modelName: "Superblast 2",
+    sourceUrl: "https://www.asics.com/us/en-us/superblast-2/p/ANA_1013A142-100.html",
+    sourceRegion: "JP",
+    attrs: {
+      cushioningTechnology: "FF TURBO PLUS and FF BLAST PLUS ECO dual layer",
+      stackHeightMm: 45,
+      heelDropMm: 8,
+      weightGrams: 249,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Non-plated super-trainer delivering maximalist 45mm stack height of elite marathon foam for effortless recovery runs."
+  },
+  {
+    id: "asics-gt-2000-13",
+    brand: "ASICS",
+    productLine: "GT-2000",
+    modelName: "GT-2000 13",
+    sourceUrl: "https://www.asics.com/us/en-us/gt-2000-13/p/ANA_1011B862-001.html",
+    sourceRegion: "JP",
+    attrs: {
+      cushioningTechnology: "FF BLAST PLUS and PureGEL",
+      stackHeightMm: 37,
+      heelDropMm: 8,
+      weightGrams: 275,
+      pronationSupport: "Overpronation (3D Guidance System)",
+      originCountry: "Vietnam"
+    },
+    reason: "Workhorse daily stability trainer utilizing the lightweight 3D Guidance System for smooth transitions."
+  },
+  {
+    id: "asics-gel-cumulus-26",
+    brand: "ASICS",
+    productLine: "Gel-Cumulus",
+    modelName: "Gel-Cumulus 26",
+    sourceUrl: "https://www.asics.com/us/en-us/gel-cumulus-26/p/ANA_1011B792-001.html",
+    sourceRegion: "JP",
+    attrs: {
+      cushioningTechnology: "FF BLAST PLUS and PureGEL",
+      stackHeightMm: 38,
+      heelDropMm: 8,
+      weightGrams: 255,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Lightweight neutral daily trainer featuring innovative FLUIDRIDE EVA-rubber blend outsole."
+  },
+  {
+    id: "asics-noosa-tri-16",
+    brand: "ASICS",
+    productLine: "Noosa Tri",
+    modelName: "Noosa Tri 16",
+    sourceUrl: "https://www.asics.com/us/en-us/noosa-tri-16/p/ANA_1011B872-700.html",
+    sourceRegion: "JP",
+    attrs: {
+      cushioningTechnology: "FF BLAST PLUS with GUIDESOLE rocker",
+      stackHeightMm: 35,
+      heelDropMm: 5,
+      weightGrams: 215,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Vibrant triathlon racing flat with curved GUIDESOLE rocker and quick-transition heel pull tabs."
+  },
+
+  // ==========================================
+  // 2. Adidas (10 models, Germany DE)
+  // ==========================================
+  {
+    id: "adidas-adizero-adios-pro-3",
+    brand: "Adidas",
+    productLine: "Adizero",
+    modelName: "Adizero Adios Pro 3",
+    sourceUrl: "https://www.adidas.com/us/adizero-adios-pro-3-running-shoes/IG6437.html",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Lightstrike Pro with Carbon ENERGYRODS 2.0",
+      stackHeightMm: 39,
+      heelDropMm: 6,
+      weightGrams: 215,
+      pronationSupport: "Neutral (World Major Marathon Record Holder)",
+      originCountry: "Vietnam"
+    },
+    reason: "Major marathon winner boasting two layers of resilient Lightstrike Pro foam and anatomically driven carbon ENERGYRODS."
+  },
+  {
+    id: "adidas-ultraboost-5",
+    brand: "Adidas",
+    productLine: "Ultraboost",
+    modelName: "Ultraboost 5",
+    sourceUrl: "https://www.adidas.com/us/ultraboost-5-running-shoes/ID8812.html",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Light BOOST with Torsion System",
+      stackHeightMm: 39,
+      heelDropMm: 10,
+      weightGrams: 292,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Next-gen Light BOOST midsole offering highest energy return with Continental rubber grip."
+  },
+  {
+    id: "adidas-supernova-rise",
+    brand: "Adidas",
+    productLine: "Supernova",
+    modelName: "Supernova Rise",
+    sourceUrl: "https://www.adidas.com/us/supernova-rise-running-shoes/IG5839.html",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Dreamstrike+ super foam with Support Rods",
+      stackHeightMm: 36,
+      heelDropMm: 10,
+      weightGrams: 275,
+      pronationSupport: "Neutral",
+      originCountry: "Indonesia"
+    },
+    reason: "Engineered with re-tuned PEBA-based Dreamstrike+ foam for daily training comfort."
+  },
+  {
+    id: "adidas-adizero-boston-12",
+    brand: "Adidas",
+    productLine: "Adizero",
+    modelName: "Adizero Boston 12",
+    sourceUrl: "https://www.adidas.com/us/adizero-boston-12-running-shoes/HP9756.html",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Lightstrike Pro and Lightstrike 2.0 with Glass-fiber ENERGYRODS",
+      stackHeightMm: 38,
+      heelDropMm: 6,
+      weightGrams: 260,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Fast-day tempo trainer pairing race-day Lightstrike Pro foam with glass-fiber rods."
+  },
+  {
+    id: "adidas-adizero-prime-x-2-strung",
+    brand: "Adidas",
+    productLine: "Adizero",
+    modelName: "Adizero Prime X 2 Strung",
+    sourceUrl: "https://www.adidas.com/us/adizero-prime-x-2-strung-running-shoes/HP9709.html",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "50mm Triple Lightstrike Pro with Dual Carbon Plates",
+      stackHeightMm: 50,
+      heelDropMm: 7,
+      weightGrams: 295,
+      pronationSupport: "Neutral (Illegal 50mm Monster Stack)",
+      originCountry: "Vietnam"
+    },
+    reason: "Unregulated 50mm stack height concept shoe with 3 layers of Lightstrike Pro and 2 carbon plates."
+  },
+  {
+    id: "adidas-adizero-takumi-sen-10",
+    brand: "Adidas",
+    productLine: "Adizero",
+    modelName: "Adizero Takumi Sen 10",
+    sourceUrl: "https://www.adidas.com/us/adizero-takumi-sen-10-shoes/IG3129.html",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Lightstrike Pro with Glass-fiber ENERGYRODS",
+      stackHeightMm: 33,
+      heelDropMm: 6,
+      weightGrams: 175,
+      pronationSupport: "Neutral (5K/10K Road Racer)",
+      originCountry: "Vietnam"
+    },
+    reason: "Lightweight road racing weapon designed specifically for 5K and 10K road intervals and records."
+  },
+  {
+    id: "adidas-adizero-sl-2",
+    brand: "Adidas",
+    productLine: "Adizero",
+    modelName: "Adizero SL 2",
+    sourceUrl: "https://www.adidas.com/us/adizero-sl-2-running-shoes/IF3722.html",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Full Lightstrike Pro puck within Lightstrike 2.0 carrier",
+      stackHeightMm: 36,
+      heelDropMm: 9,
+      weightGrams: 240,
+      pronationSupport: "Neutral",
+      originCountry: "Indonesia"
+    },
+    reason: "Elite training experience made accessible with full Lightstrike Pro core drop-in."
+  },
+  {
+    id: "adidas-supernova-prima",
+    brand: "Adidas",
+    productLine: "Supernova",
+    modelName: "Supernova Prima",
+    sourceUrl: "https://www.adidas.com/us/supernova-prima-running-shoes/IG5842.html",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Dreamstrike+ max cushion with bottom-loaded Support Rods",
+      stackHeightMm: 38,
+      heelDropMm: 8,
+      weightGrams: 290,
+      pronationSupport: "Neutral",
+      originCountry: "Indonesia"
+    },
+    reason: "Max-cushion cruiser packed with 13% more Dreamstrike+ foam for smooth distance miles."
+  },
+  {
+    id: "adidas-4dfwd-3",
+    brand: "Adidas",
+    productLine: "4DFWD",
+    modelName: "4DFWD 3",
+    sourceUrl: "https://www.adidas.com/us/4dfwd-3-running-shoes/ID0850.html",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "3D-printed 4DFWD lattice forward-motion midsole",
+      stackHeightMm: 32,
+      heelDropMm: 11,
+      weightGrams: 340,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "High-tech 3D printed lattice structure transforming vertical impact into forward horizontal motion."
+  },
+  {
+    id: "adidas-terrex-agravic-speed-ultra",
+    brand: "Adidas",
+    productLine: "Terrex",
+    modelName: "Terrex Agravic Speed Ultra",
+    sourceUrl: "https://www.adidas.com/us/terrex-agravic-speed-ultra-trail-running-shoes/IF6590.html",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Lightstrike Pro with Integrated Carbon ENERGYRODS",
+      stackHeightMm: 38,
+      heelDropMm: 8,
+      weightGrams: 270,
+      pronationSupport: "Neutral (Ultra-trail Marathon Racer)",
+      originCountry: "Vietnam"
+    },
+    reason: "World-class ultra-trail racing super-shoe combining marathon road foam with Continental trail rubber."
+  },
+
+  // ==========================================
+  // 3. Balenciaga (10 models, France FR / Italy IT - RUNNER & PERFORMANCE)
+  // ==========================================
+  {
+    id: "balenciaga-runner-performance-sneaker",
+    brand: "Balenciaga",
+    productLine: "Runner",
+    modelName: "Balenciaga Runner Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/runner-sneaker-white-677403W3RB19000.html",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Multi-density EVA shock absorbing running midsole",
+      stackHeightMm: 42,
+      heelDropMm: 10,
+      weightGrams: 495,
+      pronationSupport: "Neutral (Designer Performance Icon)",
+      originCountry: "China"
+    },
+    reason: "Demna's quintessential luxury running shoe, uniting high-rebound athletic foam with deconstructed raw aesthetic."
+  },
+  {
+    id: "balenciaga-3xl-runner-sneaker",
+    brand: "Balenciaga",
+    productLine: "3XL",
+    modelName: "3XL Runner Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/3xl-sneaker-grey-734734W3XL11000.html",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Wide-platform high-density EVA cushioning",
+      stackHeightMm: 45,
+      heelDropMm: 8,
+      weightGrams: 520,
+      pronationSupport: "Neutral (Super-wide stable base)",
+      originCountry: "China"
+    },
+    reason: "Ultra-wide footprint running trainer providing enormous lateral stability and pre-scuffed vintage treatments."
+  },
+  {
+    id: "balenciaga-circuit-technical-runner",
+    brand: "Balenciaga",
+    productLine: "Circuit",
+    modelName: "Circuit Technical Runner",
+    sourceUrl: "https://www.balenciaga.com/en-us/circuit-sneaker-black-793420W2RA21000.html",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "High-arch ergonomic aerodynamic foam",
+      stackHeightMm: 38,
+      heelDropMm: 10,
+      weightGrams: 360,
+      pronationSupport: "Neutral",
+      originCountry: "China"
+    },
+    reason: "Aerodynamic lightweight performance trainer featuring an ergonomic sculpted high-arch bridge."
+  },
+  {
+    id: "balenciaga-track-performance-sneaker",
+    brand: "Balenciaga",
+    productLine: "Track",
+    modelName: "Track Performance Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/track-sneaker-black-542023W1GB11000.html",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Dynamic augmented-heel dual-density EVA",
+      stackHeightMm: 40,
+      heelDropMm: 10,
+      weightGrams: 510,
+      pronationSupport: "Neutral (Trail/Road Hybrid)",
+      originCountry: "China"
+    },
+    reason: "Trail and road technical running shoe constructed with 176 overlapping panels for protective stability."
+  },
+  {
+    id: "balenciaga-cargo-runner-sneaker",
+    brand: "Balenciaga",
+    productLine: "Cargo",
+    modelName: "Cargo Runner Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/cargo-sneaker-grey-785750W2RA11000.html",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Maximalist sculpted expanded EVA chassis",
+      stackHeightMm: 52,
+      heelDropMm: 10,
+      weightGrams: 580,
+      pronationSupport: "Neutral",
+      originCountry: "China"
+    },
+    reason: "Monumental volume running trainer testing footwear scale on international runways."
+  },
+  {
+    id: "balenciaga-defender-tire-tread-runner",
+    brand: "Balenciaga",
+    productLine: "Defender",
+    modelName: "Defender Tire Tread Runner",
+    sourceUrl: "https://www.balenciaga.com/en-us/defender-sneaker-black-685611W2RA61000.html",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Curved spherical rockered tire sole with EVA core",
+      stackHeightMm: 55,
+      heelDropMm: 12,
+      weightGrams: 620,
+      pronationSupport: "Neutral",
+      originCountry: "China"
+    },
+    reason: "Curved tire tread rubber sole offering a continuous rocker motion across rugged outdoor terrain."
+  },
+  {
+    id: "balenciaga-speed-2-0-technical-runner",
+    brand: "Balenciaga",
+    productLine: "Speed",
+    modelName: "Speed 2.0 Technical Runner",
+    sourceUrl: "https://www.balenciaga.com/en-us/speed-2.0-sneaker-black-617239W17011015.html",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "5-segment articulated ergonomic molded foam",
+      stackHeightMm: 35,
+      heelDropMm: 10,
+      weightGrams: 280,
+      pronationSupport: "Neutral",
+      originCountry: "Italy"
+    },
+    reason: "Segmented articulated sole trainer allowing individual foot zone flex with 3D technical knit sock."
+  },
+  {
+    id: "balenciaga-track-2-open-air-runner",
+    brand: "Balenciaga",
+    productLine: "Track",
+    modelName: "Track.2 Open Air Runner",
+    sourceUrl: "https://www.balenciaga.com/en-us/track.2-sneaker-white-568614W2GN19000.html",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "High-rebound dual-density EVA running sole",
+      stackHeightMm: 40,
+      heelDropMm: 10,
+      weightGrams: 490,
+      pronationSupport: "Neutral",
+      originCountry: "China"
+    },
+    reason: "Open-cage athletic running structure with 176 laser-cut components providing continuous airflow."
+  },
+  {
+    id: "balenciaga-phantom-technical-runner",
+    brand: "Balenciaga",
+    productLine: "Phantom",
+    modelName: "Phantom Technical Runner",
+    sourceUrl: "https://www.balenciaga.com/en-us/phantom-sneaker-white-678862W2RA29000.html",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Featherweight athletic EVA sole with aerodynamic spoiler",
+      stackHeightMm: 36,
+      heelDropMm: 8,
+      weightGrams: 310,
+      pronationSupport: "Neutral",
+      originCountry: "Italy"
+    },
+    reason: "Lightweight running silhouette constructed from mono-layer breathable mesh and aerodynamic heel spoiler."
+  },
+  {
+    id: "balenciaga-triple-s-track-performance",
+    brand: "Balenciaga",
+    productLine: "Triple S",
+    modelName: "Triple S Track Performance",
+    sourceUrl: "https://www.balenciaga.com/en-us/triple-s-sneaker-black-533882W09E11000.html",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Triple-layer molded composite running sole",
+      stackHeightMm: 48,
+      heelDropMm: 12,
+      weightGrams: 640,
+      pronationSupport: "Neutral",
+      originCountry: "China"
+    },
+    reason: "Triple-density sole molded from athletic molds creating maximalist suspension and street impact."
+  },
+
+  // ==========================================
+  // 4. Dior (10 models, France FR / Italy IT - DIOR CHRONO & B30)
+  // ==========================================
+  {
+    id: "dior-chrono-running-sneaker",
+    brand: "Dior",
+    productLine: "Dior Chrono",
+    modelName: "Dior Chrono Sneaker",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/KCK412NZL_S900-dior-chrono-sneaker-white-and-silver-tone-mesh",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Ultra-lightweight molded EVA running sole with Dior star insert",
+      stackHeightMm: 38,
+      heelDropMm: 9,
+      weightGrams: 320,
+      pronationSupport: "Neutral",
+      originCountry: "Italy"
+    },
+    reason: "Kim Jones' tribute to vintage marathon racers, featuring reflective CD branding, breathable mesh, and high-energy EVA."
+  },
+  {
+    id: "dior-b30-technical-runner",
+    brand: "Dior",
+    productLine: "B30",
+    modelName: "B30 Technical Runner",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN279ZLY_H960-b30-sneaker-black-mesh-and-technical-fabric",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Aerodynamic sculpted EVA foam with rubber grip",
+      stackHeightMm: 38,
+      heelDropMm: 8,
+      weightGrams: 340,
+      pronationSupport: "Neutral (Designer Athleisure Icon)",
+      originCountry: "Italy"
+    },
+    reason: "Modern running-inspired icon with reflective aerodynamic CD30 logo and ultra-lightweight foam core."
+  },
+  {
+    id: "dior-b22-technical-runner",
+    brand: "Dior",
+    productLine: "B22",
+    modelName: "B22 Technical Runner",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN231YUL_H960-b22-sneaker-black-technical-mesh-and-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Chunky sculpted athletic running sole with rubber pods",
+      stackHeightMm: 42,
+      heelDropMm: 10,
+      weightGrams: 480,
+      pronationSupport: "Neutral",
+      originCountry: "Italy"
+    },
+    reason: "Chunky luxury athletic sneaker combining reflective piping, supple calfskin, and thick shock-absorbing sole."
+  },
+  {
+    id: "dior-star-runner",
+    brand: "Dior",
+    productLine: "Dior Star",
+    modelName: "Dior Star Runner",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/KCK368RSC_S29W-dior-star-sneaker-white-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Lightweight flexible rubber and EVA compound",
+      stackHeightMm: 32,
+      heelDropMm: 7,
+      weightGrams: 280,
+      pronationSupport: "Neutral",
+      originCountry: "Italy"
+    },
+    reason: "Streamlined road runner adorned with metallic star insignia and supple calfskin panelling."
+  },
+  {
+    id: "dior-b33-technical-mesh-runner",
+    brand: "Dior",
+    productLine: "B33",
+    modelName: "B33 Technical Mesh Runner",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN295ZQH_H965-b33-sneaker-white-and-blue-dior-oblique",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "High-density cushioned rubber sole with NFC authenticity chip",
+      stackHeightMm: 35,
+      heelDropMm: 8,
+      weightGrams: 390,
+      pronationSupport: "Neutral",
+      originCountry: "Italy"
+    },
+    reason: "Modern athletic trainer featuring Dior Oblique technical jacquard and embedded cryptographic NFC technology."
+  },
+  {
+    id: "dior-b57-sport-runner",
+    brand: "Dior",
+    productLine: "B57",
+    modelName: "B57 Sport Runner",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN293ZOH_H960-b57-mid-top-sneaker-black-and-white-smooth-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Cushioned bi-color EVA midsole",
+      stackHeightMm: 36,
+      heelDropMm: 8,
+      weightGrams: 420,
+      pronationSupport: "Neutral",
+      originCountry: "Italy"
+    },
+    reason: "Sporty court and road trainer detailed with CD jacquard flanks and shock-absorbing rubber outsole."
+  },
+  {
+    id: "dior-explorer-athletic-runner",
+    brand: "Dior",
+    productLine: "Dior Explorer",
+    modelName: "Dior Explorer Athletic Runner",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN272ZIJ_H965-dior-explorer-sneaker-black",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Notched cleated rubber running sole with CD Diamond",
+      stackHeightMm: 40,
+      heelDropMm: 10,
+      weightGrams: 460,
+      pronationSupport: "Neutral",
+      originCountry: "Italy"
+    },
+    reason: "Off-road luxury runner equipped with deep cleated rubber treads and reinforced calfskin mudguards."
+  },
+  {
+    id: "dior-vibe-technical-runner",
+    brand: "Dior",
+    productLine: "Dior Vibe",
+    modelName: "Dior Vibe Technical Runner",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/KCK337LRU_S09W-dior-vibe-sneaker-white-and-gold-tone",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Transparent rubber cushioning inserts with EVA core",
+      stackHeightMm: 38,
+      heelDropMm: 9,
+      weightGrams: 350,
+      pronationSupport: "Neutral",
+      originCountry: "Italy"
+    },
+    reason: "Retro-futuristic running silhouette combining transparent rubber overlays with iconic star heel emblem."
+  },
+  {
+    id: "dior-b27-athletic-runner",
+    brand: "Dior",
+    productLine: "B27",
+    modelName: "B27 Athletic Runner",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN272ZIJ_H965-b27-low-top-sneaker-white",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Multi-density shock-absorbing rubber cupsole",
+      stackHeightMm: 34,
+      heelDropMm: 8,
+      weightGrams: 395,
+      pronationSupport: "Neutral",
+      originCountry: "Italy"
+    },
+    reason: "Supple calfskin trainer featuring Dior Oblique Galaxy perforated side panels and cushioned cupsole."
+  },
+  {
+    id: "dior-b101-performance-runner",
+    brand: "Dior",
+    productLine: "B101",
+    modelName: "B101 Performance Runner",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN285ZRF_H965-b101-sneaker-white",
+    sourceRegion: "FR",
+    attrs: {
+      cushioningTechnology: "Flexible low-profile EVA foam",
+      stackHeightMm: 30,
+      heelDropMm: 6,
+      weightGrams: 310,
+      pronationSupport: "Neutral",
+      originCountry: "Italy"
+    },
+    reason: "Minimalist trainer cut from velvety nubuck and smooth calfskin with CD Diamond embossed sole."
+  },
+
+  // ==========================================
+  // 5. HOKA (10 models, United States US / France FR)
+  // ==========================================
+  {
+    id: "hoka-clifton-9",
+    brand: "HOKA",
+    productLine: "Clifton",
+    modelName: "Clifton 9",
+    sourceUrl: "https://www.hoka.com/en/us/mens-everyday-run-walking/clifton-9/1127895.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Compression Molded EVA with Early-Stage Meta-Rocker",
+      stackHeightMm: 32,
+      heelDropMm: 5,
+      weightGrams: 248,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "HOKA's benchmark daily mileage trainer, eliminating weight while adding 3mm of responsive stack height."
+  },
+  {
+    id: "hoka-bondi-8",
+    brand: "HOKA",
+    productLine: "Bondi",
+    modelName: "Bondi 8",
+    sourceUrl: "https://www.hoka.com/en/us/mens-everyday-run-walking/bondi-8/1127952.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Ultra-light resilient foam with extended heel crash pad",
+      stackHeightMm: 39,
+      heelDropMm: 4,
+      weightGrams: 307,
+      pronationSupport: "Neutral (Max Cushion King)",
+      originCountry: "Vietnam"
+    },
+    reason: "The definitive ultra-cushioned road shoe, engineered with a billowed rear crash pad for pillow-soft strides."
+  },
+  {
+    id: "hoka-mach-6",
+    brand: "HOKA",
+    productLine: "Mach",
+    modelName: "Mach 6",
+    sourceUrl: "https://www.hoka.com/en/us/mens-everyday-run-walking/mach-6/1147790.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Super Critical EVA foam with strategic rubber coverage",
+      stackHeightMm: 37,
+      heelDropMm: 5,
+      weightGrams: 232,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Featherweight speed trainer updated with single-layer super-critical EVA midsole foam."
+  },
+  {
+    id: "hoka-rocket-x-2",
+    brand: "HOKA",
+    productLine: "Rocket X",
+    modelName: "Rocket X 2",
+    sourceUrl: "https://www.hoka.com/en/us/mens-race/rocket-x-2/1127927.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Dual-layer PEBA super foam with curved Carbon Fiber Plate",
+      stackHeightMm: 36,
+      heelDropMm: 5,
+      weightGrams: 236,
+      pronationSupport: "Neutral (Elite Marathon Racer)",
+      originCountry: "Vietnam"
+    },
+    reason: "HOKA's peak marathon weapon pairing dual-layer 100% PEBA foam with spoon-shaped carbon propulsion plate."
+  },
+  {
+    id: "hoka-cielo-x1",
+    brand: "HOKA",
+    productLine: "Cielo X1",
+    modelName: "Cielo X1",
+    sourceUrl: "https://www.hoka.com/en/us/mens-race/cielo-x1/1147910.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Dual-density PEBA with winged Carbon Fiber Plate",
+      stackHeightMm: 39,
+      heelDropMm: 7,
+      weightGrams: 264,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Ultra-aggressive marathon racing shoe featuring extreme rocker geometry and cut-out sole core."
+  },
+  {
+    id: "hoka-arahi-7",
+    brand: "HOKA",
+    productLine: "Arahi",
+    modelName: "Arahi 7",
+    sourceUrl: "https://www.hoka.com/en/us/mens-everyday-run-walking/arahi-7/1147850.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "J-Frame stability technology with CMEVA foam",
+      stackHeightMm: 34,
+      heelDropMm: 5,
+      weightGrams: 281,
+      pronationSupport: "Overpronation (J-Frame Dynamic Support)",
+      originCountry: "Vietnam"
+    },
+    reason: "Remarkably lightweight stability shoe utilizing patented J-Frame firmer foam to guide the foot without stiff posts."
+  },
+  {
+    id: "hoka-rincon-4",
+    brand: "HOKA",
+    productLine: "Rincon",
+    modelName: "Rincon 4",
+    sourceUrl: "https://www.hoka.com/en/us/mens-everyday-run-walking/rincon-4/1155130.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Upgraded resilient CMEVA foam with rubberized EVA",
+      stackHeightMm: 36,
+      heelDropMm: 5,
+      weightGrams: 228,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Incredible cushioning-to-weight ratio delivering soft distance cruising in an ultralight package."
+  },
+  {
+    id: "hoka-skyward-x",
+    brand: "HOKA",
+    productLine: "Skyward X",
+    modelName: "Skyward X",
+    sourceUrl: "https://www.hoka.com/en/us/mens-everyday-run-walking/skyward-x/1147914.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "48mm PEBA core and super-critical EVA with convex Carbon Plate",
+      stackHeightMm: 48,
+      heelDropMm: 5,
+      weightGrams: 320,
+      pronationSupport: "Neutral (Max Super-Trainer)",
+      originCountry: "Vietnam"
+    },
+    reason: "Extreme 48mm super-trainer integrating PEBA foam and a convex carbon plate for trampoline rebound."
+  },
+  {
+    id: "hoka-speedgoat-6",
+    brand: "HOKA",
+    productLine: "Speedgoat",
+    modelName: "Speedgoat 6",
+    sourceUrl: "https://www.hoka.com/en/us/mens-trail/speedgoat-6/1147791.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "CMEVA with Vibram Megagrip Traction Lug",
+      stackHeightMm: 40,
+      heelDropMm: 5,
+      weightGrams: 278,
+      pronationSupport: "Neutral (Trail Benchmark)",
+      originCountry: "Vietnam"
+    },
+    reason: "The gold standard of trail running, equipped with Vibram Megagrip with 5mm Traction Lugs."
+  },
+  {
+    id: "hoka-challenger-7",
+    brand: "HOKA",
+    productLine: "Challenger",
+    modelName: "Challenger 7",
+    sourceUrl: "https://www.hoka.com/en/us/mens-trail/challenger-7/1134497.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Compression Molded EVA with 4mm all-terrain lugs",
+      stackHeightMm: 31,
+      heelDropMm: 5,
+      weightGrams: 252,
+      pronationSupport: "Neutral (Road-to-Trail)",
+      originCountry: "Vietnam"
+    },
+    reason: "Versatile door-to-trail hybrid combining road-shoe plush cushioning with gravel-ready multi-directional lugs."
+  },
+
+  // ==========================================
+  // 6. New Balance (10 models, United States US)
+  // ==========================================
+  {
+    id: "new-balance-fresh-foam-x-1080v13",
+    brand: "New Balance",
+    productLine: "Fresh Foam X",
+    modelName: "Fresh Foam X 1080v13",
+    sourceUrl: "https://www.newbalance.com/pd/fresh-foam-x-1080v13/M1080V13-44101.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Fresh Foam X with Ndurance rubber",
+      stackHeightMm: 38,
+      heelDropMm: 6,
+      weightGrams: 262,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "New Balance's premier daily trainer featuring their softest, most cloud-like Fresh Foam X formulation."
+  },
+  {
+    id: "new-balance-fuelcell-supercomp-elite-v4",
+    brand: "New Balance",
+    productLine: "SuperComp",
+    modelName: "FuelCell SuperComp Elite v4",
+    sourceUrl: "https://www.newbalance.com/pd/fuelcell-supercomp-elite-v4/MRCELV4-44105.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "100% PEBA FuelCell with Energy Arc Carbon Plate",
+      stackHeightMm: 40,
+      heelDropMm: 4,
+      weightGrams: 237,
+      pronationSupport: "Neutral (Marathon Racing Super-Shoe)",
+      originCountry: "Vietnam"
+    },
+    reason: "Top-tier marathon racer powered by 100% PEBA FuelCell foam and Energy Arc void carbon plate geometry."
+  },
+  {
+    id: "new-balance-fuelcell-rebel-v4",
+    brand: "New Balance",
+    productLine: "Rebel",
+    modelName: "FuelCell Rebel v4",
+    sourceUrl: "https://www.newbalance.com/pd/fuelcell-rebel-v4/MFCXV4-44102.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "PEBA/EVA blend FuelCell with FantomFit upper",
+      stackHeightMm: 30,
+      heelDropMm: 6,
+      weightGrams: 212,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Ultra-light non-plated tempo trainer offering explosive energy return in an agile featherweight package."
+  },
+  {
+    id: "new-balance-fresh-foam-x-more-v5",
+    brand: "New Balance",
+    productLine: "Fresh Foam X",
+    modelName: "Fresh Foam X More v5",
+    sourceUrl: "https://www.newbalance.com/pd/fresh-foam-x-more-v5/MMORV5-44108.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Max-stack Fresh Foam X with wide supportive base",
+      stackHeightMm: 44,
+      heelDropMm: 4,
+      weightGrams: 312,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Highest stack of Fresh Foam X ever created, offering 44mm of maximalist shock absorption on a wide stable platform."
+  },
+  {
+    id: "new-balance-fresh-foam-x-880v14",
+    brand: "New Balance",
+    productLine: "Fresh Foam X",
+    modelName: "Fresh Foam X 880v14",
+    sourceUrl: "https://www.newbalance.com/pd/fresh-foam-x-880v14/M880V14-44104.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Dual-layer Fresh Foam X with blown rubber forefoot",
+      stackHeightMm: 35,
+      heelDropMm: 8,
+      weightGrams: 270,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Classic reliable workhorse trainer delivering balanced cushioning and high-mileage durability."
+  },
+  {
+    id: "new-balance-fuelcell-supercomp-trainer-v3",
+    brand: "New Balance",
+    productLine: "SuperComp",
+    modelName: "FuelCell SuperComp Trainer v3",
+    sourceUrl: "https://www.newbalance.com/pd/fuelcell-supercomp-trainer-v3/MRCXV3-44110.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "High-stack PEBA FuelCell with Energy Arc Carbon Plate",
+      stackHeightMm: 40,
+      heelDropMm: 6,
+      weightGrams: 260,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Carbon-plated daily training shoe engineered to withstand intense marathon preparation volume."
+  },
+  {
+    id: "new-balance-fuelcell-propel-v4",
+    brand: "New Balance",
+    productLine: "Propel",
+    modelName: "FuelCell Propel v4",
+    sourceUrl: "https://www.newbalance.com/pd/fuelcell-propel-v4/MFCPRV4-44106.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "FuelCell foam with TPU propulsion plate",
+      stackHeightMm: 31,
+      heelDropMm: 6,
+      weightGrams: 295,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Accessible plated running shoe pairing energetic FuelCell foam with a snappy TPU propulsion plate."
+  },
+  {
+    id: "new-balance-fresh-foam-x-860v14",
+    brand: "New Balance",
+    productLine: "Fresh Foam X",
+    modelName: "Fresh Foam X 860v14",
+    sourceUrl: "https://www.newbalance.com/pd/fresh-foam-x-860v14/M860V14-44103.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Fresh Foam X with Stability Plane EVA bridge",
+      stackHeightMm: 36,
+      heelDropMm: 8,
+      weightGrams: 298,
+      pronationSupport: "Overpronation (Stability Plane Technology)",
+      originCountry: "Vietnam"
+    },
+    reason: "Reliable stability benchmark modernized with a subtle EVA Stability Plane between foam layers."
+  },
+  {
+    id: "new-balance-fuelcell-supercomp-pacer-v2",
+    brand: "New Balance",
+    productLine: "SuperComp",
+    modelName: "FuelCell SuperComp Pacer v2",
+    sourceUrl: "https://www.newbalance.com/pd/fuelcell-supercomp-pacer-v2/MFCPV2-44112.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "100% PEBA FuelCell with Full Carbon Plate",
+      stackHeightMm: 33,
+      heelDropMm: 8,
+      weightGrams: 198,
+      pronationSupport: "Neutral (5K/10K Road Racer)",
+      originCountry: "Vietnam"
+    },
+    reason: "Aggressive low-to-mid stack road racing flat designed for razor-sharp cornering in 5K road events."
+  },
+  {
+    id: "new-balance-fresh-foam-x-hierro-v8",
+    brand: "New Balance",
+    productLine: "Hierro",
+    modelName: "Fresh Foam X Hierro v8",
+    sourceUrl: "https://www.newbalance.com/pd/fresh-foam-x-hierro-v8/MTHIER8-44107.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Fresh Foam X with Vibram EcoStep Natural outsole",
+      stackHeightMm: 32,
+      heelDropMm: 8,
+      weightGrams: 318,
+      pronationSupport: "Neutral (Trail Cruiser)",
+      originCountry: "Vietnam"
+    },
+    reason: "Plush all-terrain trail cruiser utilizing Vibram EcoStep Natural rubber with 4.5mm lugs."
+  },
+
+  // ==========================================
+  // 7. Nike (10 models, United States US)
+  // ==========================================
+  {
+    id: "nike-air-zoom-alphafly-next-3",
+    brand: "Nike",
+    productLine: "Alphafly",
+    modelName: "Air Zoom Alphafly NEXT% 3",
+    sourceUrl: "https://www.nike.com/t/air-zoom-alphafly-3-mens-road-racing-shoes-5JxK1l/FD8311-700",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Dual Zoom Air pods, Full-length ZoomX foam, Full Flyplate Carbon Plate",
+      stackHeightMm: 40,
+      heelDropMm: 8,
+      weightGrams: 218,
+      pronationSupport: "Neutral (Men's & Women's Marathon World Record Holder)",
+      originCountry: "Vietnam"
+    },
+    reason: "The pinnacle of marathon racing engineering, holding both the official men's and women's world records."
+  },
+  {
+    id: "nike-zoomx-vaporfly-3",
+    brand: "Nike",
+    productLine: "Vaporfly",
+    modelName: "ZoomX Vaporfly 3",
+    sourceUrl: "https://www.nike.com/t/vaporfly-3-mens-road-racing-shoes-8VdWJk/DV4129-100",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Full-length ZoomX foam with spoon-shaped Carbon Flyplate",
+      stackHeightMm: 40,
+      heelDropMm: 8,
+      weightGrams: 198,
+      pronationSupport: "Neutral (Sub-200g Marathon Racer)",
+      originCountry: "China"
+    },
+    reason: "The all-distance racing benchmark, shaved down to sub-200 grams with web-rubber waffle outsole."
+  },
+  {
+    id: "nike-air-zoom-pegasus-41",
+    brand: "Nike",
+    productLine: "Pegasus",
+    modelName: "Air Zoom Pegasus 41",
+    sourceUrl: "https://www.nike.com/t/pegasus-41-mens-road-running-shoes-bZ4NqV/FD2722-100",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "ReactX foam with dual forefoot and heel Air Zoom units",
+      stackHeightMm: 37,
+      heelDropMm: 10,
+      weightGrams: 297,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Running's most enduring icon since 1983, updated with eco-friendly ReactX foam offering 13% more energy return."
+  },
+  {
+    id: "nike-zoomx-invincible-3",
+    brand: "Nike",
+    productLine: "Invincible",
+    modelName: "ZoomX Invincible 3",
+    sourceUrl: "https://www.nike.com/t/invincible-3-mens-road-running-shoes-6QD1kL/DR2615-101",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "High-stack ZoomX foam with wide base and Flyknit upper",
+      stackHeightMm: 40,
+      heelDropMm: 9,
+      weightGrams: 310,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Maximalist recovery cruiser packing a massive slab of bouncy ZoomX super-foam onto an ultra-wide base."
+  },
+  {
+    id: "nike-infinityrn-4",
+    brand: "Nike",
+    productLine: "Infinity",
+    modelName: "InfinityRN 4",
+    sourceUrl: "https://www.nike.com/t/infinityrn-4-mens-road-running-shoes-dC8WbN/DR2665-001",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "ReactX foam with curved rocker sole and Flyknit upper",
+      stackHeightMm: 39,
+      heelDropMm: 9,
+      weightGrams: 353,
+      pronationSupport: "Neutral / Mild Stability",
+      originCountry: "Vietnam"
+    },
+    reason: "Injury-prevention oriented cruiser featuring a supportive rocker geometry and sustainable ReactX foam."
+  },
+  {
+    id: "nike-zoom-fly-6",
+    brand: "Nike",
+    productLine: "Zoom Fly",
+    modelName: "Zoom Fly 6",
+    sourceUrl: "https://www.nike.com/t/zoom-fly-6-mens-road-running-shoes-8J8K1l/FN8454-100",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "ZoomX and SR-02 dual foam with Carbon Flyplate",
+      stackHeightMm: 42,
+      heelDropMm: 8,
+      weightGrams: 265,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Carbon-plated training counterpart to the Vaporfly, engineered for brutal weekly workout mileage."
+  },
+  {
+    id: "nike-vomero-17",
+    brand: "Nike",
+    productLine: "Vomero",
+    modelName: "Vomero 17",
+    sourceUrl: "https://www.nike.com/t/vomero-17-mens-road-running-shoes-8RjB9L/FB8502-001",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Dual-density ZoomX top layer over Cushlon 3.0 base",
+      stackHeightMm: 39,
+      heelDropMm: 10,
+      weightGrams: 285,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Dual-foam plush cruiser combining bouncy ZoomX underfoot with durable Cushlon 3.0 base foam."
+  },
+  {
+    id: "nike-pegasus-plus",
+    brand: "Nike",
+    productLine: "Pegasus Plus",
+    modelName: "Pegasus Plus",
+    sourceUrl: "https://www.nike.com/t/pegasus-plus-mens-road-running-shoes-9K1L2m/FQ7260-100",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Full-length ZoomX foam with Flyknit upper and midfoot band",
+      stackHeightMm: 34,
+      heelDropMm: 10,
+      weightGrams: 245,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Spiritual successor to the beloved Pegasus Turbo, featuring a full-length ZoomX midsole without plate."
+  },
+  {
+    id: "nike-streakfly",
+    brand: "Nike",
+    productLine: "Streakfly",
+    modelName: "Streakfly",
+    sourceUrl: "https://www.nike.com/t/streakfly-road-racing-shoes-n6V34L/DJ6566-100",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "ZoomX foam with midfoot Pebax shank",
+      stackHeightMm: 32,
+      heelDropMm: 6,
+      weightGrams: 172,
+      pronationSupport: "Neutral (5K/10K Road Racer)",
+      originCountry: "China"
+    },
+    reason: "Ultra-featherweight 172g racing flat tuned specifically for tactical 5K and 10K road racing."
+  },
+  {
+    id: "nike-wildhorse-8",
+    brand: "Nike",
+    productLine: "Wildhorse",
+    modelName: "Wildhorse 8",
+    sourceUrl: "https://www.nike.com/t/wildhorse-8-mens-trail-running-shoes-7G5K1l/DR2686-001",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "React foam with rock plate and high-abrasion rubber lugs",
+      stackHeightMm: 35,
+      heelDropMm: 8,
+      weightGrams: 348,
+      pronationSupport: "Neutral (Rugged Trail)",
+      originCountry: "China"
+    },
+    reason: "Rugged technical trail runner with segmented rock plate and high-abrasion multi-directional lug outsole."
+  },
+
+  // ==========================================
+  // 8. On Running (10 models, Switzerland CH - LOEWE COLLAB & PERFORMANCE)
+  // ==========================================
+  {
+    id: "on-running-loewe-cloudtilt",
+    brand: "On Running",
+    productLine: "Loewe x On",
+    modelName: "Loewe x On Cloudtilt",
+    sourceUrl: "https://www.on.com/en-us/products/cloudtilt-loewe-3me1017",
+    sourceRegion: "CH",
+    attrs: {
+      cushioningTechnology: "CloudTec Phase with Helion superfoam",
+      stackHeightMm: 35,
+      heelDropMm: 7,
+      weightGrams: 229,
+      pronationSupport: "Neutral (Luxury Designer Icon)",
+      originCountry: "Vietnam"
+    },
+    reason: "Ultra-prestigious collaboration between luxury house LOEWE and On, featuring computer-optimized CloudTec Phase cushioning."
+  },
+  {
+    id: "on-running-loewe-cloudtilt-2",
+    brand: "On Running",
+    productLine: "Loewe x On",
+    modelName: "Loewe x On Cloudtilt 2.0",
+    sourceUrl: "https://www.on.com/en-us/products/cloudtilt-2-loewe-3me1018",
+    sourceRegion: "CH",
+    attrs: {
+      cushioningTechnology: "Sequential CloudTec Phase Helion superfoam with TPU toe cap",
+      stackHeightMm: 36,
+      heelDropMm: 7,
+      weightGrams: 245,
+      pronationSupport: "Neutral (Luxury Designer Icon)",
+      originCountry: "Vietnam"
+    },
+    reason: "Second generation Loewe collaboration with reinforced multi-layer technical mesh and anagram branding."
+  },
+  {
+    id: "on-running-cloudmonster-2",
+    brand: "On Running",
+    productLine: "Cloudmonster",
+    modelName: "Cloudmonster 2",
+    sourceUrl: "https://www.on.com/en-us/products/cloudmonster-2-3me1012/mens/black-frost-shoes-3ME10120106",
+    sourceRegion: "CH",
+    attrs: {
+      cushioningTechnology: "Maximalist Dual-density Helion superfoam CloudTec with Speedboard",
+      stackHeightMm: 35,
+      heelDropMm: 6,
+      weightGrams: 295,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "On's weirdest and wildest max-cushion icon, featuring colossal Cloud elements and snappy nylon-blend Speedboard."
+  },
+  {
+    id: "on-running-cloudsurfer",
+    brand: "On Running",
+    productLine: "Cloudsurfer",
+    modelName: "Cloudsurfer",
+    sourceUrl: "https://www.on.com/en-us/products/cloudsurfer-3md1042/mens/black-eclipse-shoes-3MD10420286",
+    sourceRegion: "CH",
+    attrs: {
+      cushioningTechnology: "Computer-optimized CloudTec Phase with Helion superfoam (No Speedboard)",
+      stackHeightMm: 32,
+      heelDropMm: 10,
+      weightGrams: 245,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "First shoe featuring FEA computer-modeled domino-collapsing CloudTec Phase elements for buttery-smooth heel-to-toe transition."
+  },
+  {
+    id: "on-running-cloudrunner-2",
+    brand: "On Running",
+    productLine: "Cloudrunner",
+    modelName: "Cloudrunner 2",
+    sourceUrl: "https://www.on.com/en-us/products/cloudrunner-2-3me1013/mens/black-white-shoes-3ME10130107",
+    sourceRegion: "CH",
+    attrs: {
+      cushioningTechnology: "Helion superfoam CloudTec with supportive cradle Speedboard",
+      stackHeightMm: 31,
+      heelDropMm: 10,
+      weightGrams: 277,
+      pronationSupport: "Mild Stability / Supportive Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Supportive daily cruiser updated with high-energy Helion superfoam and cradle heel clip."
+  },
+  {
+    id: "on-running-cloudstratus-3",
+    brand: "On Running",
+    productLine: "Cloudstratus",
+    modelName: "Cloudstratus 3",
+    sourceUrl: "https://www.on.com/en-us/products/cloudstratus-3-3md3011/mens/white-black-shoes-3MD30110106",
+    sourceRegion: "CH",
+    attrs: {
+      cushioningTechnology: "Double CloudTec layers with Helion superfoam and nylon Speedboard",
+      stackHeightMm: 32,
+      heelDropMm: 6,
+      weightGrams: 290,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Double layer of connected CloudTec elements providing doubled vertical and horizontal cushioning."
+  },
+  {
+    id: "on-running-cloudflow-4",
+    brand: "On Running",
+    productLine: "Cloudflow",
+    modelName: "Cloudflow 4",
+    sourceUrl: "https://www.on.com/en-us/products/cloudflow-4-3md1063/mens/black-white-shoes-3MD10630106",
+    sourceRegion: "CH",
+    attrs: {
+      cushioningTechnology: "Dual-density Helion superfoam with spoon-shaped Speedboard",
+      stackHeightMm: 31,
+      heelDropMm: 8,
+      weightGrams: 235,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Fast tempo shoe fitted with spoon-shaped glass-fiber infused Speedboard for forward propulsion."
+  },
+  {
+    id: "on-running-cloudboom-echo-3",
+    brand: "On Running",
+    productLine: "Cloudboom",
+    modelName: "Cloudboom Echo 3",
+    sourceUrl: "https://www.on.com/en-us/products/cloudboom-echo-3-3me1006/mens/white-black-shoes-3ME10060106",
+    sourceRegion: "CH",
+    attrs: {
+      cushioningTechnology: "Helion HF 100% Pebax superfoam with Carbon Speedboard",
+      stackHeightMm: 39,
+      heelDropMm: 9,
+      weightGrams: 215,
+      pronationSupport: "Neutral (Elite Marathon Racer)",
+      originCountry: "Vietnam"
+    },
+    reason: "On's pinnacle marathon racing super-shoe combining bouncy Helion HF Pebax foam with full-length carbon Speedboard."
+  },
+  {
+    id: "on-running-cloudvista",
+    brand: "On Running",
+    productLine: "Cloudvista",
+    modelName: "Cloudvista",
+    sourceUrl: "https://www.on.com/en-us/products/cloudvista-64/mens/eclipse-black-shoes-64.98319",
+    sourceRegion: "CH",
+    attrs: {
+      cushioningTechnology: "Helion superfoam CloudTec with Missiongrip rubber",
+      stackHeightMm: 29,
+      heelDropMm: 7,
+      weightGrams: 280,
+      pronationSupport: "Neutral (Light Trail)",
+      originCountry: "Vietnam"
+    },
+    reason: "Lightweight trail runner designed for packed dirt trails and park gravel with Missiongrip rubber."
+  },
+  {
+    id: "on-running-cloudultra-2",
+    brand: "On Running",
+    productLine: "Cloudultra",
+    modelName: "Cloudultra 2",
+    sourceUrl: "https://www.on.com/en-us/products/cloudultra-2-3md1028/mens/black-white-shoes-3MD10280106",
+    sourceRegion: "CH",
+    attrs: {
+      cushioningTechnology: "Double Helion superfoam with FlipRelease fit tool",
+      stackHeightMm: 32,
+      heelDropMm: 5,
+      weightGrams: 295,
+      pronationSupport: "Neutral (Ultra-distance Trail)",
+      originCountry: "Vietnam"
+    },
+    reason: "Ultra-marathon trail shoe featuring FlipRelease switch to relieve foot swelling over 100-mile distances."
+  },
+
+  // ==========================================
+  // 9. Puma (10 models, Germany DE)
+  // ==========================================
+  {
+    id: "puma-deviate-nitro-elite-3",
+    brand: "Puma",
+    productLine: "Deviate Nitro",
+    modelName: "Deviate Nitro Elite 3",
+    sourceUrl: "https://us.puma.com/us/en/pd/deviate-nitro-elite-3-mens-running-shoes/380082",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "100% Aliphatic TPU NITROFOAM ELITE with spoon-shaped PWRPLATE",
+      stackHeightMm: 40,
+      heelDropMm: 8,
+      weightGrams: 194,
+      pronationSupport: "Neutral (Sub-200g Marathon Racer)",
+      originCountry: "Vietnam"
+    },
+    reason: "Puma's premier marathon super-shoe, delivering extreme bounce under 200g with carbon fiber PWRPLATE."
+  },
+  {
+    id: "puma-deviate-nitro-3",
+    brand: "Puma",
+    productLine: "Deviate Nitro",
+    modelName: "Deviate Nitro 3",
+    sourceUrl: "https://us.puma.com/us/en/pd/deviate-nitro-3-mens-running-shoes/378440",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Dual-layer NITROFOAM and NITROFOAM ELITE with Carbon PWRPLATE",
+      stackHeightMm: 39,
+      heelDropMm: 10,
+      weightGrams: 265,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Plated daily speed trainer featuring top-layer racing foam and PUMAGRIP all-weather traction."
+  },
+  {
+    id: "puma-velocity-nitro-3",
+    brand: "Puma",
+    productLine: "Velocity Nitro",
+    modelName: "Velocity Nitro 3",
+    sourceUrl: "https://us.puma.com/us/en/pd/velocity-nitro-3-mens-running-shoes/377748",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Nitrogen-infused NITROFOAM with PROFOAMLITE base",
+      stackHeightMm: 36,
+      heelDropMm: 10,
+      weightGrams: 264,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "One of running's best-value daily trainers, celebrated for its legendary wet-surface PUMAGRIP outsole."
+  },
+  {
+    id: "puma-magnify-nitro-2",
+    brand: "Puma",
+    productLine: "Magnify Nitro",
+    modelName: "Magnify Nitro 2",
+    sourceUrl: "https://us.puma.com/us/en/pd/magnify-nitro-2-mens-running-shoes/377540",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Max-stack 100% NITROFOAM with engineered knit upper",
+      stackHeightMm: 40,
+      heelDropMm: 10,
+      weightGrams: 288,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Full-slab nitrogen-infused max cushion shoe designed for effortless long recovery runs."
+  },
+  {
+    id: "puma-fast-r-nitro-elite-2",
+    brand: "Puma",
+    productLine: "Fast-R",
+    modelName: "Fast-R Nitro Elite 2",
+    sourceUrl: "https://us.puma.com/us/en/pd/fast-r-nitro-elite-2-mens-running-shoes/380084",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Decoupled midsole with NITROFOAM ELITE and extended exposed PWRPLATE",
+      stackHeightMm: 40,
+      heelDropMm: 8,
+      weightGrams: 240,
+      pronationSupport: "Neutral (Radical Decoupled Racer)",
+      originCountry: "Vietnam"
+    },
+    reason: "Radical decoupled super-shoe with visible elongated carbon plate bridging separated forefoot and heel pods."
+  },
+  {
+    id: "puma-foreverrun-nitro",
+    brand: "Puma",
+    productLine: "ForeverRun",
+    modelName: "ForeverRun Nitro",
+    sourceUrl: "https://us.puma.com/us/en/pd/foreverrun-nitro-mens-running-shoes/377757",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Dual-density NITROFOAM with RUNGUIDE system",
+      stackHeightMm: 36,
+      heelDropMm: 10,
+      weightGrams: 274,
+      pronationSupport: "Overpronation (Dynamic RUNGUIDE Rim)",
+      originCountry: "Vietnam"
+    },
+    reason: "Guidance stability shoe incorporating firmer foam rim and Kaiser engineering heel clip to stabilize pronation."
+  },
+  {
+    id: "puma-liberate-nitro-2",
+    brand: "Puma",
+    productLine: "Liberate Nitro",
+    modelName: "Liberate Nitro 2",
+    sourceUrl: "https://us.puma.com/us/en/pd/liberate-nitro-2-mens-running-shoes/377315",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Ultra-light NITROFOAM with mono-mesh upper",
+      stackHeightMm: 28,
+      heelDropMm: 8,
+      weightGrams: 184,
+      pronationSupport: "Neutral (Sub-190g Featherweight)",
+      originCountry: "Vietnam"
+    },
+    reason: "Featherweight non-plated tempo flat offering barefoot-like natural ground feel and high turnover."
+  },
+  {
+    id: "puma-fast-fwd-nitro-elite",
+    brand: "Puma",
+    productLine: "Fast-FWD",
+    modelName: "Fast-FWD Nitro Elite",
+    sourceUrl: "https://us.puma.com/us/en/pd/fast-fwd-nitro-elite-mens-running-shoes/377758",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Aggressive undercut forefoot NITROFOAM ELITE with PWRPLATE",
+      stackHeightMm: 35,
+      heelDropMm: 9,
+      weightGrams: 191,
+      pronationSupport: "Neutral (5K Track-and-Road Specialist)",
+      originCountry: "Vietnam"
+    },
+    reason: "Radically undercut heel and toe profile engineered strictly for aggressive mid-to-forefoot 5K racing."
+  },
+  {
+    id: "puma-electrify-nitro-3",
+    brand: "Puma",
+    productLine: "Electrify Nitro",
+    modelName: "Electrify Nitro 3",
+    sourceUrl: "https://us.puma.com/us/en/pd/electrify-nitro-3-mens-running-shoes/378455",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "Dual-density PROFOAMLITE and heel NITROFOAM with PUMAGRIP",
+      stackHeightMm: 35,
+      heelDropMm: 8,
+      weightGrams: 260,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Accessible daily running trainer offering nitrogen-infused heel strike cushioning."
+  },
+  {
+    id: "puma-voyage-nitro-3",
+    brand: "Puma",
+    productLine: "Voyage Nitro",
+    modelName: "Voyage Nitro 3",
+    sourceUrl: "https://us.puma.com/us/en/pd/voyage-nitro-3-mens-trail-running-shoes/377749",
+    sourceRegion: "DE",
+    attrs: {
+      cushioningTechnology: "NITROFOAM with PUMAGRIP ATR all-terrain 4.5mm lugs",
+      stackHeightMm: 35,
+      heelDropMm: 8,
+      weightGrams: 306,
+      pronationSupport: "Neutral (All-Terrain Trail)",
+      originCountry: "Vietnam"
+    },
+    reason: "All-terrain trail runner pairing NITROFOAM responsiveness with PUMAGRIP ATR multi-surface lugs."
+  },
+
+  // ==========================================
+  // 10. Saucony (10 models, United States US)
+  // ==========================================
+  {
+    id: "saucony-endorphin-pro-4",
+    brand: "Saucony",
+    productLine: "Endorphin",
+    modelName: "Endorphin Pro 4",
+    sourceUrl: "https://www.saucony.com/en/endorphin-pro-4/58428M.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Dual PWRRUN PB and PWRRUN HG superfoam with Carbon Plate",
+      stackHeightMm: 39.5,
+      heelDropMm: 8,
+      weightGrams: 212,
+      pronationSupport: "Neutral (Marathon Racing Super-Shoe)",
+      originCountry: "Vietnam"
+    },
+    reason: "Saucony's premier marathon super-shoe combining ultra-springy PWRRUN HG with PWRRUN PB and carbon plate."
+  },
+  {
+    id: "saucony-endorphin-speed-4",
+    brand: "Saucony",
+    productLine: "Endorphin",
+    modelName: "Endorphin Speed 4",
+    sourceUrl: "https://www.saucony.com/en/endorphin-speed-4/58429M.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "PWRRUN PB with Winged Nylon Plate and SPEEDROLL",
+      stackHeightMm: 36,
+      heelDropMm: 8,
+      weightGrams: 233,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Beloved versatile tempo trainer pairing peba superfoam with flexible winged nylon plate."
+  },
+  {
+    id: "saucony-triumph-22",
+    brand: "Saucony",
+    productLine: "Triumph",
+    modelName: "Triumph 22",
+    sourceUrl: "https://www.saucony.com/en/triumph-22/58793M.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "PWRRUN PB beaded peba superfoam with wide platform",
+      stackHeightMm: 37,
+      heelDropMm: 10,
+      weightGrams: 286,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Major upgrade introducing race-day PWRRUN PB beaded superfoam into a plush, durable daily cruiser."
+  },
+  {
+    id: "saucony-ride-17",
+    brand: "Saucony",
+    productLine: "Ride",
+    modelName: "Ride 17",
+    sourceUrl: "https://www.saucony.com/en/ride-17/58427M.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "PWRRUN+ expanded TPU bead foam",
+      stackHeightMm: 35,
+      heelDropMm: 8,
+      weightGrams: 282,
+      pronationSupport: "Neutral",
+      originCountry: "Vietnam"
+    },
+    reason: "Daily trainer upgraded with bouncy expanded TPU PWRRUN+ foam for long-lasting energy return."
+  },
+  {
+    id: "saucony-guide-17",
+    brand: "Saucony",
+    productLine: "Guide",
+    modelName: "Guide 17",
+    sourceUrl: "https://www.saucony.com/en/guide-17/58430M.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Center Path Technology with PWRRUN foam",
+      stackHeightMm: 35,
+      heelDropMm: 6,
+      weightGrams: 269,
+      pronationSupport: "Overpronation (Center Path Geometry)",
+      originCountry: "Vietnam"
+    },
+    reason: "Revolutionary stability redesign featuring Center Path Technology with wider base and asymmetrical sidewalls."
+  },
+  {
+    id: "saucony-endorphin-elite",
+    brand: "Saucony",
+    productLine: "Endorphin",
+    modelName: "Endorphin Elite",
+    sourceUrl: "https://www.saucony.com/en/endorphin-elite/54128M.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "100% PWRRUN HG superfoam with slotted Carbon Plate",
+      stackHeightMm: 39.5,
+      heelDropMm: 8,
+      weightGrams: 204,
+      pronationSupport: "Neutral (Highest Energy Return)",
+      originCountry: "Vietnam"
+    },
+    reason: "Saucony's highest energy return racer featuring 95% rebound PWRRUN HG foam and forked carbon plate."
+  },
+  {
+    id: "saucony-kinvara-15",
+    brand: "Saucony",
+    productLine: "Kinvara",
+    modelName: "Kinvara 15",
+    sourceUrl: "https://www.saucony.com/en/kinvara-15/58794M.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "PWRRUN foam with PWRRUN+ sockliner (4mm drop)",
+      stackHeightMm: 29,
+      heelDropMm: 4,
+      weightGrams: 199,
+      pronationSupport: "Neutral (Sub-200g Natural Trainer)",
+      originCountry: "Vietnam"
+    },
+    reason: "Minimalist natural running classic with 4mm heel-to-toe offset and sub-200 gram weight."
+  },
+  {
+    id: "saucony-tempus",
+    brand: "Saucony",
+    productLine: "Tempus",
+    modelName: "Tempus",
+    sourceUrl: "https://www.saucony.com/en/tempus/52319M.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Full PWRRUN PB core with contoured PWRRUN supportive frame",
+      stackHeightMm: 36.5,
+      heelDropMm: 8,
+      weightGrams: 252,
+      pronationSupport: "Overpronation (Superfoam Stability)",
+      originCountry: "Vietnam"
+    },
+    reason: "Pioneering stability shoe constructed around a peba superfoam PWRRUN PB core cradled by a supportive frame."
+  },
+  {
+    id: "saucony-hurricane-24",
+    brand: "Saucony",
+    productLine: "Hurricane",
+    modelName: "Hurricane 24",
+    sourceUrl: "https://www.saucony.com/en/hurricane-24/58795M.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "Dual-layer PWRRUN PB over PWRRUN with Center Path Tech",
+      stackHeightMm: 38,
+      heelDropMm: 6,
+      weightGrams: 302,
+      pronationSupport: "Overpronation (Max Cushion Stability)",
+      originCountry: "Vietnam"
+    },
+    reason: "Max-cushion stability cruiser pairing peba superfoam with stabilizing Center Path geometry."
+  },
+  {
+    id: "saucony-peregrine-14",
+    brand: "Saucony",
+    productLine: "Peregrine",
+    modelName: "Peregrine 14",
+    sourceUrl: "https://www.saucony.com/en/peregrine-14/58431M.html",
+    sourceRegion: "US",
+    attrs: {
+      cushioningTechnology: "PWRRUN foam with PWRTRAC 5mm lugged outsole",
+      stackHeightMm: 28,
+      heelDropMm: 4,
+      weightGrams: 267,
+      pronationSupport: "Neutral (Trail Speed)",
+      originCountry: "Vietnam"
+    },
+    reason: "Agile, nimble trail racer featuring tenacious 5mm PWRTRAC rubber lugs and integrated rock plate."
+  }
+];
+
+export function generateDataRunningShoesTs(): string {
+  const parts: string[] = [
+    'import type { CensusManifestFile } from "../../../src/domain/coverage-targets";',
+    'import { makeEntry } from "./common";',
+    '',
+    'export const runningShoesCensus: CensusManifestFile = {',
+    '  $schema: "https://json-schema.org/draft/2020-12/schema",',
+    '  leafKey: "running-shoes",',
+    '  displayName: "Performance Running Shoes",',
+    '  censusDate: "2026-10-11",',
+    '  supplyExceptions: [],',
+    '  entries: [',
+  ];
+
+  let currentBrand = "";
+  let brandIndex = 0;
+
+  for (const item of allRunningShoes) {
+    if (item.brand !== currentBrand) {
+      currentBrand = item.brand;
+      brandIndex++;
+      parts.push(`    // ${brandIndex}. ${currentBrand} (10 models)`);
+    }
+
+    parts.push("    makeEntry({");
+    parts.push(`      id: ${JSON.stringify(item.id)},`);
+    parts.push(`      brand: ${JSON.stringify(item.brand)},`);
+    if (item.productLine) {
+      parts.push(`      productLine: ${JSON.stringify(item.productLine)},`);
+    }
+    parts.push(`      modelName: ${JSON.stringify(item.modelName)},`);
+    parts.push(`      sourceUrl: ${JSON.stringify(item.sourceUrl)},`);
+    parts.push(`      sourceRegion: ${JSON.stringify(item.sourceRegion)},`);
+    if (item.variants) {
+      parts.push(`      variants: ${JSON.stringify(item.variants)},`);
+    }
+    parts.push("      attrs: {");
+    parts.push(`        cushioningTechnology: ${JSON.stringify(item.attrs.cushioningTechnology)},`);
+    parts.push(`        stackHeightMm: ${item.attrs.stackHeightMm},`);
+    parts.push(`        heelDropMm: ${item.attrs.heelDropMm},`);
+    parts.push(`        weightGrams: ${item.attrs.weightGrams},`);
+    parts.push(`        pronationSupport: ${JSON.stringify(item.attrs.pronationSupport)},`);
+    parts.push(`        originCountry: ${JSON.stringify(item.attrs.originCountry)},`);
+    parts.push("      },");
+    parts.push(`      reason: ${JSON.stringify(item.reason)},`);
+    parts.push("    }),");
+  }
+
+  parts.push("  ],");
+  parts.push("};");
+  parts.push("");
+
+  return parts.join("\n");
+}
+
+const outputPath = path.resolve(process.cwd(), "scripts/census/wave4/data-running-shoes.ts");
+const content = generateDataRunningShoesTs();
+fs.writeFileSync(outputPath, content, "utf-8");
+console.log(`Successfully generated ${allRunningShoes.length} running shoe models to ${outputPath}`);

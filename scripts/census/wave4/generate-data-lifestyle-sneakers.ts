@@ -1,0 +1,2377 @@
+import fs from "node:fs";
+import path from "node:path";
+
+export interface LifestyleSneakerItem {
+  id: string;
+  brand: string;
+  productLine?: string;
+  modelName: string;
+  sourceUrl: string;
+  sourceRegion: string;
+  variants?: string[];
+  attrs: {
+    upperLeather: string;
+    soleType: string;
+    closure: string;
+    originCountry: string;
+    distressedFinish: boolean;
+  };
+  reason: string;
+}
+
+export const allLifestyleSneakers: LifestyleSneakerItem[] = [
+  // ==========================================
+  // 1. Alexander McQueen (10 models, United Kingdom GB / Italy IT)
+  // ==========================================
+  {
+    id: "alexander-mcqueen-oversized-sneaker",
+    brand: "Alexander McQueen",
+    productLine: "Oversized",
+    modelName: "Oversized Sneaker",
+    sourceUrl: "https://www.alexandermcqueen.com/en-us/oversized-sneaker-553680WHGP59061.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperLeather: "Smooth White Calfskin Leather",
+      soleType: "Exaggerated 45mm flaring rubber cupsole",
+      closure: "Wide flat lace-up",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "The defining luxury sneaker silhouette of the 2010s, instantly identified by its exaggerated flared sole and contrast heel tab."
+  },
+  {
+    id: "alexander-mcqueen-court-sneaker",
+    brand: "Alexander McQueen",
+    productLine: "Court",
+    modelName: "Court Sneaker",
+    sourceUrl: "https://www.alexandermcqueen.com/en-us/court-sneaker-634619WHZ849061.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperLeather: "French Calfskin Leather",
+      soleType: "Chunky cupsole with leopard-stamped tread",
+      closure: "Lace-up with padded tongue",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Retro tennis-inspired sneaker engineered with lightweight expanded rubber and signature leopard tread."
+  },
+  {
+    id: "alexander-mcqueen-sprint-runner",
+    brand: "Alexander McQueen",
+    productLine: "Sprint",
+    modelName: "Sprint Runner",
+    sourceUrl: "https://www.alexandermcqueen.com/en-us/sprint-runner-688532WIA2M9061.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperLeather: "Pieced Calfskin and Technical Fabric",
+      soleType: "Flexible lightweight runner sole",
+      closure: "Flat lace-up with seal logo appliqué",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Dynamic athletic runner marked by pieced leather construction and an embossed McQueen Seal motif."
+  },
+  {
+    id: "alexander-mcqueen-tread-slick-lace-up",
+    brand: "Alexander McQueen",
+    productLine: "Tread Slick",
+    modelName: "Tread Slick Lace-Up",
+    sourceUrl: "https://www.alexandermcqueen.com/en-us/tread-slick-lace-up-604257W4MV21070.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperLeather: "Heavyweight Cotton Canvas with Leather Trim",
+      soleType: "Exaggerated ribbed rubber lug tread sole",
+      closure: "Lace-up with metallic eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Hybrid plimsoll sneaker resting atop a monumental ribbed rubber tread sole with debossed branding."
+  },
+  {
+    id: "alexander-mcqueen-deck-plimsoll-sneaker",
+    brand: "Alexander McQueen",
+    productLine: "Deck",
+    modelName: "Deck Plimsoll Sneaker",
+    sourceUrl: "https://www.alexandermcqueen.com/en-us/deck-plimsoll-654593W4MV21070.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperLeather: "Cotton Canvas with Nappa Leather heel counter",
+      soleType: "Wrap-around vulcanized rubber cupsole",
+      closure: "Lace-up 6 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Minimalist skate plimsoll displaying thick wrap-around foxing and Alexander McQueen signature on heel."
+  },
+  {
+    id: "alexander-mcqueen-oversized-court-sneaker",
+    brand: "Alexander McQueen",
+    productLine: "Court",
+    modelName: "Oversized Court Sneaker",
+    sourceUrl: "https://www.alexandermcqueen.com/en-us/oversized-court-667822WHZ849061.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperLeather: "Supple Nappa Calfskin",
+      soleType: "Tone-on-tone chunky platform sole",
+      closure: "Lace-up with perforated side holes",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Tonal monochromatic interpretation of the chunky court shoe with micro-perforated aeration."
+  },
+  {
+    id: "alexander-mcqueen-larry-metallic-heel-sneaker",
+    brand: "Alexander McQueen",
+    productLine: "Oversized",
+    modelName: "Larry Metallic Heel Sneaker",
+    sourceUrl: "https://www.alexandermcqueen.com/en-us/larry-metallic-sneaker-553680WHGP79086.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperLeather: "Smooth Calfskin with Metallic Leather",
+      soleType: "Flared chunky rubber sole",
+      closure: "Lace-up",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Classic oversized sneaker electrified by mirror-shine metallic silver foil calfskin heel counter."
+  },
+  {
+    id: "alexander-mcqueen-biker-sprint-sneaker",
+    brand: "Alexander McQueen",
+    productLine: "Sprint",
+    modelName: "Biker Sprint Sneaker",
+    sourceUrl: "https://www.alexandermcqueen.com/en-us/biker-sprint-sneaker-705123WIA2M9061.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperLeather: "Pieced Leather and Technical Mesh",
+      soleType: "Dynamic sculpted running sole",
+      closure: "Lace-up with reinforced eyestays",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Biker jacket-inspired runner featuring paneling cut from contrasting leather textures."
+  },
+  {
+    id: "alexander-mcqueen-tread-slick-chelsea-sneaker",
+    brand: "Alexander McQueen",
+    productLine: "Tread Slick",
+    modelName: "Tread Slick Chelsea Sneaker",
+    sourceUrl: "https://www.alexandermcqueen.com/en-us/tread-slick-chelsea-634617W4MV21070.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperLeather: "Canvas with Elastic Side Panels",
+      soleType: "Ribbed platform rubber sole",
+      closure: "Slip-on with dual pull tabs",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Chelsea boot hybrid built onto the voluminous Tread Slick ribbed rubber foundation."
+  },
+  {
+    id: "alexander-mcqueen-oversized-transparent-sole",
+    brand: "Alexander McQueen",
+    productLine: "Oversized",
+    modelName: "Oversized Transparent Sole Sneaker",
+    sourceUrl: "https://www.alexandermcqueen.com/en-us/oversized-transparent-sole-553680WHZ629061.html",
+    sourceRegion: "GB",
+    attrs: {
+      upperLeather: "Smooth Calfskin",
+      soleType: "Translucent air-cushioned rubber sole",
+      closure: "Lace-up with flat laces",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Futuristic oversized design set on a crystal-clear transparent rubber bubble midsole."
+  },
+
+  // ==========================================
+  // 2. Balenciaga (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "balenciaga-triple-s-sneaker",
+    brand: "Balenciaga",
+    productLine: "Triple S",
+    modelName: "Triple S Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/triple-s-sneaker-black-533882W09E11000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Nubuck Leather, Double Foam and Technical Mesh",
+      soleType: "Triple-stacked 3-layer complex runner sole",
+      closure: "Bicolor round lace-up with embroidered size on toe",
+      originCountry: "China",
+      distressedFinish: true
+    },
+    reason: "The progenitor of the luxury 'chunky dad shoe' craze, constructed with a 3-layer sole molded from running, basketball, and track shoe molds."
+  },
+  {
+    id: "balenciaga-track-sneaker",
+    brand: "Balenciaga",
+    productLine: "Track",
+    modelName: "Track Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/track-sneaker-black-542023W1GB11000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Technical Mesh and Nylon Overlays (Non-leather)",
+      soleType: "Dynamic sole with augmented back",
+      closure: "Double lace-up system with 176 panels",
+      originCountry: "China",
+      distressedFinish: false
+    },
+    reason: "Complex high-tech hiking and running hybrid built from 176 individual overlapping panels."
+  },
+  {
+    id: "balenciaga-3xl-sneaker",
+    brand: "Balenciaga",
+    productLine: "3XL",
+    modelName: "3XL Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/3xl-sneaker-grey-734734W3XL11000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Worn-out Mesh and Polyurethane",
+      soleType: "Super-wide flared aerodynamic runner sole",
+      closure: "Lace-up with laces tied around the toe box",
+      originCountry: "China",
+      distressedFinish: true
+    },
+    reason: "Demna's ultra-wide runner silhouette featuring pre-scuffed vintage treatments and laces knotted around the forefoot."
+  },
+  {
+    id: "balenciaga-defender-sneaker",
+    brand: "Balenciaga",
+    productLine: "Defender",
+    modelName: "Defender Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/defender-sneaker-black-685611W2RA61000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Mesh and Technical Nylon",
+      soleType: "Extreme curved tyre tread super-chunky sole",
+      closure: "Lace-up with debossed logo on tongue",
+      originCountry: "China",
+      distressedFinish: true
+    },
+    reason: "Extreme footwear architecture boasting a giant curved, tire-tread spherical rubber sole."
+  },
+  {
+    id: "balenciaga-runner-sneaker",
+    brand: "Balenciaga",
+    productLine: "Runner",
+    modelName: "Runner Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/runner-sneaker-white-677403W3RB19000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Mesh and Nylon with DIY Glue and Cut Details",
+      soleType: "Sculpted athletic running sole",
+      closure: "Lace-up with shoe size on toe",
+      originCountry: "China",
+      distressedFinish: true
+    },
+    reason: "Deconstructed collage aesthetic featuring raw cuts, exposed glue marks, and intentional worn-in patina."
+  },
+  {
+    id: "balenciaga-speed-2-0-sneaker",
+    brand: "Balenciaga",
+    productLine: "Speed",
+    modelName: "Speed 2.0 Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/speed-2.0-sneaker-black-617239W17011015.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "3D Technical Stretch Knit (Sock sneaker)",
+      soleType: "Articulated ultra-flexible ergonomic molded sole",
+      closure: "Slip-on sock collar",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Evolution of the iconic knit sock trainer featuring 5 segmented sole segments for barefoot agility."
+  },
+  {
+    id: "balenciaga-cargo-sneaker",
+    brand: "Balenciaga",
+    productLine: "Cargo",
+    modelName: "Cargo Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/cargo-sneaker-grey-785750W2RA11000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Microfiber and Technical Mesh",
+      soleType: "Gigantic oversized volume sole",
+      closure: "Lace-up with oversized tongue",
+      originCountry: "China",
+      distressedFinish: true
+    },
+    reason: "Gigantic oversized volume sneaker testing the outer boundaries of shoe scale on fashion week runways."
+  },
+  {
+    id: "balenciaga-circuit-sneaker",
+    brand: "Balenciaga",
+    productLine: "Circuit",
+    modelName: "Circuit Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/circuit-sneaker-black-793420W2RA21000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Synthetic Leather and Aerodynamic Mesh",
+      soleType: "High-arch ergonomic sculpted running sole",
+      closure: "Lace-up with dynamic wave lines",
+      originCountry: "China",
+      distressedFinish: false
+    },
+    reason: "Aerodynamic lightweight runner featuring a dramatic upward-swept arch and dynamic racing lines."
+  },
+  {
+    id: "balenciaga-track-2-sneaker",
+    brand: "Balenciaga",
+    productLine: "Track",
+    modelName: "Track.2 Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/track.2-sneaker-white-568614W2GN19000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Articulated Open-air Mesh and Metallic Polyurethane",
+      soleType: "Dual-density molded EVA sole",
+      closure: "Lace-up with Track.2 metal emblem",
+      originCountry: "China",
+      distressedFinish: false
+    },
+    reason: "Even more intricate evolution composed of 176 laser-cut components creating an open skeleton cage."
+  },
+  {
+    id: "balenciaga-triple-s-clear-sole-sneaker",
+    brand: "Balenciaga",
+    productLine: "Triple S",
+    modelName: "Triple S Clear Sole Sneaker",
+    sourceUrl: "https://www.balenciaga.com/en-us/triple-s-clear-sole-sneaker-541624W09E11000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Double Foam, Nubuck and Mesh",
+      soleType: "TPU injected transparent 3-layer sole",
+      closure: "Bicolor lace-up",
+      originCountry: "China",
+      distressedFinish: true
+    },
+    reason: "Triple S sneaker updated with air-injected transparent TPU bubble sole offering lighter cushioned suspension."
+  },
+
+  // ==========================================
+  // 3. Berluti (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "berluti-playtime-venezia-leather-sneaker",
+    brand: "Berluti",
+    productLine: "Playtime",
+    modelName: "Playtime Venezia Leather Sneaker",
+    sourceUrl: "https://www.berluti.com/en-us/playtime-leather-sneaker/S5210-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Patinated Venezia Calfskin",
+      soleType: "Stitched rubber cupsole",
+      closure: "Lace-up 6 eyelets with leather laces",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Berluti's premier low-top sneaker, constructed from a single seamless piece of hand-patinated Venezia leather."
+  },
+  {
+    id: "berluti-fast-track-leather-sneaker",
+    brand: "Berluti",
+    productLine: "Fast Track",
+    modelName: "Fast Track Leather Sneaker",
+    sourceUrl: "https://www.berluti.com/en-us/fast-track-leather-sneaker/S5320-V2.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Venezia Leather with Brogue Details",
+      soleType: "Sculpted athletic runner sole",
+      closure: "Lace-up 5 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Crossover design bringing Parisian wingtip broguing to a contemporary athletic running sole."
+  },
+  {
+    id: "berluti-shadow-knit-sneaker",
+    brand: "Berluti",
+    productLine: "Shadow",
+    modelName: "Shadow Knit Sneaker",
+    sourceUrl: "https://www.berluti.com/en-us/shadow-knit-sneaker/S5043-K1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Engineered Stretch Knit with Venezia Leather Trim",
+      soleType: "Two-tone sculpted rubber sole",
+      closure: "Lace-up sock silhouette",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Featherweight sock trainer pairing high-tech breathable knit with hand-patinated leather crests."
+  },
+  {
+    id: "berluti-stellar-scritto-leather-sneaker",
+    brand: "Berluti",
+    productLine: "Stellar",
+    modelName: "Stellar Scritto Leather Sneaker",
+    sourceUrl: "https://www.berluti.com/en-us/stellar-scritto-sneaker/S5870-V2.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Venezia Leather with Scritto Engraving",
+      soleType: "Minimalist rubber cupsole",
+      closure: "Lace-up 6 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Court sneaker celebrating Olga Berluti's 18th-century French calligraphy motif etched across the flanks."
+  },
+  {
+    id: "berluti-gravity-leather-sneaker",
+    brand: "Berluti",
+    productLine: "Gravity",
+    modelName: "Gravity Leather Sneaker",
+    sourceUrl: "https://www.berluti.com/en-us/gravity-leather-sneaker/S5520-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Venezia Leather with Padded Collar",
+      soleType: "Technical rubber cupsole with grip pads",
+      closure: "Lace-up high-top",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "High-top luxury basketball silhouette cut from supple patinated calfskin with cushioned ankle support."
+  },
+  {
+    id: "berluti-eden-scritto-slip-on-sneaker",
+    brand: "Berluti",
+    productLine: "Eden",
+    modelName: "Eden Scritto Slip-On Sneaker",
+    sourceUrl: "https://www.berluti.com/en-us/eden-scritto-slip-on/S5610-V2.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Supple Venezia Leather",
+      soleType: "Vulcanized low-profile rubber sole",
+      closure: "Slip-on with elastic side inserts",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Effortless luxury skate slip-on displaying unbroken sweeps of Scritto-engraved patinated leather."
+  },
+  {
+    id: "berluti-fast-track-torisio-sneaker",
+    brand: "Berluti",
+    productLine: "Fast Track",
+    modelName: "Fast Track Torisio Leather Sneaker",
+    sourceUrl: "https://www.berluti.com/en-us/fast-track-torisio/S5712-V2.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Patinated Venezia Hide with Medallion",
+      soleType: "Athletic runner outsole",
+      closure: "Lace-up",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Full-grain dress trainer integrating hand-punched medallion broguing and high-rebound cushioning."
+  },
+  {
+    id: "berluti-playoff-low-top-sneaker",
+    brand: "Berluti",
+    productLine: "Playoff",
+    modelName: "Playoff Low-Top Sneaker",
+    sourceUrl: "https://www.berluti.com/en-us/playoff-low-top-sneaker/S5882-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Multicolor Venezia Leather Panels",
+      soleType: "Vintage basketball rubber cupsole",
+      closure: "Lace-up 7 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Vintage 1980s basketball sneaker constructed with multi-tonal hand-patinated Venezia leather paneling."
+  },
+  {
+    id: "berluti-playoff-high-top-sneaker",
+    brand: "Berluti",
+    productLine: "Playoff",
+    modelName: "Playoff High-Top Sneaker",
+    sourceUrl: "https://www.berluti.com/en-us/playoff-high-top-sneaker/S5902-V1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Patinated Venezia Leather with Padded Tongue",
+      soleType: "Stitched bi-color rubber cupsole",
+      closure: "Lace-up high-top",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "High-top court sneaker paying homage to vintage sports heroes through Parisian cordwaining excellence."
+  },
+  {
+    id: "berluti-shadow-slip-on-sock-sneaker",
+    brand: "Berluti",
+    productLine: "Shadow",
+    modelName: "Shadow Slip-On Sock Sneaker",
+    sourceUrl: "https://www.berluti.com/en-us/shadow-slip-on/S5950-K1.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Seamless Technical Knit with Venezia Leather Heel",
+      soleType: "Ergonomic running sole",
+      closure: "Slip-on sock collar",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Laceless sock trainer uniting modern stretch-knitted ergonomics with patinated leather accents."
+  },
+
+  // ==========================================
+  // 4. Brunello Cucinelli (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "brunello-cucinelli-suede-and-mesh-runner",
+    brand: "Brunello Cucinelli",
+    productLine: "Runner",
+    modelName: "Suede and Mesh Runner",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/sneakers/suede-mesh-runner-242MZUKP320.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Velour Suede Calfskin and Technical Nylon Mesh",
+      soleType: "Lightweight multi-layer microcellular sole",
+      closure: "Flat cotton laces",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Solomeo's refined luxury runner combining buttery Italian calf suede with breathable technical mesh."
+  },
+  {
+    id: "brunello-cucinelli-calfskin-cupsole-sneaker",
+    brand: "Brunello Cucinelli",
+    productLine: "Classic",
+    modelName: "Calfskin Cupsole Sneaker",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/sneakers/calfskin-cupsole-242MZUKB840.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Full-grain French Calfskin",
+      soleType: "Minimalist flat white rubber cupsole",
+      closure: "Lace-up 7 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Quintessential quiet luxury tennis shoe defined by unbranded minimalism and glove-leather interior."
+  },
+  {
+    id: "brunello-cucinelli-monili-trim-sneaker",
+    brand: "Brunello Cucinelli",
+    productLine: "Signature",
+    modelName: "Monili Trim Leather Sneaker",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/sneakers/monili-sneaker-242MZUKM110.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Supple Box Calfskin",
+      soleType: "Flexible rubber cupsole",
+      closure: "Lace-up with signature Monili bead detail",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Subtly accented with a hand-applied row of Cucinelli's sparkling faceted Monili brass beads."
+  },
+  {
+    id: "brunello-cucinelli-knit-suede-sock-sneaker",
+    brand: "Brunello Cucinelli",
+    productLine: "Knitwear",
+    modelName: "Knit and Suede Sock Sneaker",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/sneakers/knit-sock-sneaker-242MZUKK450.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Cashmere-Wool Knit with Suede Overlays",
+      soleType: "Flexible lightweight EVA sole",
+      closure: "Slip-on sock collar with lacing",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Plush knitted sneaker incorporating Solomeo's world-renowned cashmere yarn with suede reinforcements."
+  },
+  {
+    id: "brunello-cucinelli-deerskin-low-top-sneaker",
+    brand: "Brunello Cucinelli",
+    productLine: "Deerskin",
+    modelName: "Deerskin Low-Top Sneaker",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/sneakers/deerskin-sneaker-242MZUKD700.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Buttery Grained Deerskin",
+      soleType: "Cushioned natural rubber sole",
+      closure: "Lace-up with leather lining",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Crafted from exceptionally soft grained deerskin offering glove-like mold and peerless comfort."
+  },
+  {
+    id: "brunello-cucinelli-vintage-tennis-sneaker",
+    brand: "Brunello Cucinelli",
+    productLine: "Vintage",
+    modelName: "Vintage Tennis Sneaker",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/sneakers/vintage-tennis-242MZUKV220.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Buffed Calfskin with Perforated Vamp",
+      soleType: "Off-white retro vulcanized rubber sole",
+      closure: "Lace-up 6 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Retro court silhouette featuring micro-perforated toe box and heritage cream-toned rubber cupsole."
+  },
+  {
+    id: "brunello-cucinelli-perforated-suede-runner",
+    brand: "Brunello Cucinelli",
+    productLine: "Runner",
+    modelName: "Perforated Suede Runner",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/sneakers/perforated-runner-242MZUKP990.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Perforated Calf Suede",
+      soleType: "Multi-layer shock-absorbing EVA sole",
+      closure: "Lace-up",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Breathable summer running sneaker utilizing laser-perforated suede in neutral earth tones."
+  },
+  {
+    id: "brunello-cucinelli-corduroy-suede-sneaker",
+    brand: "Brunello Cucinelli",
+    productLine: "Sartorial",
+    modelName: "Corduroy and Suede Sneaker",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/sneakers/corduroy-sneaker-242MZUKC330.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Cotton Corduroy Fabric with Suede Panels",
+      soleType: "Rubber cupsole",
+      closure: "Lace-up 6 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Autumnal lifestyle sneaker marrying Solomeo fine ribbed corduroy with velvety Italian suede."
+  },
+  {
+    id: "brunello-cucinelli-high-top-suede-sneaker",
+    brand: "Brunello Cucinelli",
+    productLine: "High-Top",
+    modelName: "High-Top Suede Sneaker",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/sneakers/high-top-suede-242MZUKH550.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Calf Suede with Padded Leather Collar",
+      soleType: "Stitched rubber cupsole",
+      closure: "Lace-up 8 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Elevated high-top court trainer with cushioned ankle collar and hand-finished contrast edge welt."
+  },
+  {
+    id: "brunello-cucinelli-shearling-winter-sneaker",
+    brand: "Brunello Cucinelli",
+    productLine: "Winter Special",
+    modelName: "Shearling Lined Winter Sneaker",
+    sourceUrl: "https://shop.brunellocucinelli.com/en-us/men/footwear/sneakers/shearling-winter-242MZUKS880.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Water-repellent Nubuck Leather",
+      soleType: "Cleated winter rubber sole",
+      closure: "Lace-up with genuine shearling lining",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Alpine winter sneaker insulated throughout with genuine soft Merino shearling."
+  },
+
+  // ==========================================
+  // 5. Chanel (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "chanel-cc-low-top-sneaker",
+    brand: "Chanel",
+    productLine: "Sneakers",
+    modelName: "CC Low-Top Sneaker in Calfskin & Suede",
+    sourceUrl: "https://www.chanel.com/us/fashion/p/G35617Y5534994305/sneakers-suede-calfskin-calfskin/",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Suede Calfskin and Smooth Leather",
+      soleType: "Bi-color sculpted rubber sole",
+      closure: "Lace-up with interlocking CC side appliqué",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Chanel's most coveted luxury trainer, instantly recognized by the bold stitched CC logo and multi-tonal leather panels."
+  },
+  {
+    id: "chanel-technical-fabric-suede-runner",
+    brand: "Chanel",
+    productLine: "Runner",
+    modelName: "Technical Fabric & Suede Runner",
+    sourceUrl: "https://www.chanel.com/us/fashion/p/G38290Y55740K3844/sneakers-fabric-suede-calfskin/",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Technical Fabric, Suede Calfskin and Metallic Trim",
+      soleType: "Wavy athletic runner sole with CC emblem",
+      closure: "Lace-up with padded tongue",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Sport-couture runner blending breathable nylon mesh, velvety suede overlays, and metallic highlights."
+  },
+  {
+    id: "chanel-quilted-leather-low-top-sneaker",
+    brand: "Chanel",
+    productLine: "Quilted",
+    modelName: "Quilted Leather Low-Top Sneaker",
+    sourceUrl: "https://www.chanel.com/us/fashion/p/G34085X5317094305/sneakers-quilted-calfskin/",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Diamond-quilted Lambskin Leather",
+      soleType: "Rubber cupsole with cap-toe contrast",
+      closure: "Lace-up with gold-tone eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Embraces the Maison's iconic diamond matelassé quilting and contrasting cap toe inspired by the two-tone slingback."
+  },
+  {
+    id: "chanel-fabric-calfskin-high-top-sneaker",
+    brand: "Chanel",
+    productLine: "High-Top",
+    modelName: "Fabric & Calfskin High-Top Sneaker",
+    sourceUrl: "https://www.chanel.com/us/fashion/p/G39120Y5581094305/high-top-sneakers-fabric-calfskin/",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Calfskin Leather and Technical Mesh",
+      soleType: "Chunky rubber cupsole with CC back logo",
+      closure: "Lace-up high-top with padded ankle collar",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "High-top trainer featuring padded ankle collar, prominent CC heel counter, and sportswear proportions."
+  },
+  {
+    id: "chanel-velvet-patent-low-top-sneaker",
+    brand: "Chanel",
+    productLine: "Velvet",
+    modelName: "Velvet & Patent Low-Top Sneaker",
+    sourceUrl: "https://www.chanel.com/us/fashion/p/G36290X5412094305/sneakers-velvet-patent-calfskin/",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Plush Velvet with Glossy Patent Leather Toe",
+      soleType: "Clean white rubber outsole",
+      closure: "Lace-up with tonal CC branding",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Evening court sneaker pairing deep black cotton velvet with high-gloss patent leather."
+  },
+  {
+    id: "chanel-knit-calfskin-sock-sneaker",
+    brand: "Chanel",
+    productLine: "Knit",
+    modelName: "Knit & Calfskin Sock Sneaker",
+    sourceUrl: "https://www.chanel.com/us/fashion/p/G37450Y55610K2910/sock-sneakers-knit-calfskin/",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Technical Stretch Knit with Calfskin Overlays",
+      soleType: "Ultra-lightweight EVA sole",
+      closure: "Slip-on sock collar with ribbed cuff",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Seamless knitted sock trainer with contrast ribbed ankle cuff and bold CHANEL typography."
+  },
+  {
+    id: "chanel-metallic-calfskin-runner",
+    brand: "Chanel",
+    productLine: "Runner",
+    modelName: "Metallic Calfskin Runner",
+    sourceUrl: "https://www.chanel.com/us/fashion/p/G38820Y558900N480/sneakers-metallic-calfskin/",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Crinkled Metallic Calfskin and Mesh",
+      soleType: "Dynamic running sole with rubber tread",
+      closure: "Lace-up with reflective piping",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Futuristic metallic runner capturing light with crinkled silver-tone leather and reflective accents."
+  },
+  {
+    id: "chanel-tweed-suede-low-top-sneaker",
+    brand: "Chanel",
+    productLine: "Tweed",
+    modelName: "Tweed & Suede Low-Top Sneaker",
+    sourceUrl: "https://www.chanel.com/us/fashion/p/G35618Y55350K3820/sneakers-tweed-suede-calfskin/",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Lesage Woven Tweed and Velour Suede",
+      soleType: "Bi-color rubber cupsole",
+      closure: "Lace-up with CC side patch",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Showcases the iconic Maison Lesage heritage woven tweed fabric integrated into a modern street sneaker."
+  },
+  {
+    id: "chanel-corduroy-velvet-sneaker",
+    brand: "Chanel",
+    productLine: "Corduroy",
+    modelName: "Corduroy & Velvet Sneaker",
+    sourceUrl: "https://www.chanel.com/us/fashion/p/G39420Y55950K4210/sneakers-corduroy-velvet/",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Fine Corduroy Fabric and Calfskin Suede",
+      soleType: "Rubber cupsole",
+      closure: "Lace-up 6 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Tactile autumn sneaker playing with fine-ribbed corduroy texture and rich velvet trims."
+  },
+  {
+    id: "chanel-slip-on-quilted-sneaker",
+    brand: "Chanel",
+    productLine: "Slip-On",
+    modelName: "Slip-On Quilted Sneaker",
+    sourceUrl: "https://www.chanel.com/us/fashion/p/G33745X5128094305/slip-on-sneakers-quilted-calfskin/",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Diamond-quilted Lambskin Leather",
+      soleType: "Vulcanized low-profile rubber sole",
+      closure: "Slip-on with concealed elastic gussets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Effortless skate slip-on boasting full-body Chanel diamond matelassé stitching in buttery lambskin."
+  },
+
+  // ==========================================
+  // 6. Dior (10 models, France FR / Italy IT - B22, B30, B27, B23 ICONS!)
+  // ==========================================
+  {
+    id: "dior-b22-sneaker",
+    brand: "Dior",
+    productLine: "B22",
+    modelName: "B22 Sneaker",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN231YUL_H960-b22-sneaker-black-technical-mesh-and-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Smooth Calfskin, Technical Mesh and Reflective Inserts",
+      soleType: "Thick sculpted athletic rubber sole",
+      closure: "Lace-up with Dior signature on side",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Kim Jones' premier chunky luxury sneaker icon, celebrated for its layered technical mesh, reflective panels, and sculpted sole."
+  },
+  {
+    id: "dior-b30-sneaker",
+    brand: "Dior",
+    productLine: "B30",
+    modelName: "B30 Sneaker",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN279ZLY_H960-b30-sneaker-black-mesh-and-technical-fabric",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Technical Mesh and Smooth Calfskin",
+      soleType: "Sculpted aerodynamic ultra-light EVA rubber sole",
+      closure: "Lace-up with reflective CD30 logo",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Aerodynamic running-inspired icon with graphic reflective CD30 signature on the sides and heel."
+  },
+  {
+    id: "dior-b27-low-top-sneaker",
+    brand: "Dior",
+    productLine: "B27",
+    modelName: "B27 Low-Top Sneaker",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN272ZIJ_H965-b27-low-top-sneaker-white-and-grey-smooth-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Smooth Calfskin with Dior Oblique Galaxy Leather",
+      soleType: "Two-tone rubber cupsole with Dior signature",
+      closure: "Lace-up 7 eyelets with CD Icon eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Court silhouette combining skate culture with perforated Dior Oblique Galaxy leather and CD eyelets."
+  },
+  {
+    id: "dior-b23-high-top-sneaker",
+    brand: "Dior",
+    productLine: "B23",
+    modelName: "B23 High-Top Sneaker",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SH118YNT_H060-b23-high-top-sneaker-white-and-black-dior-oblique",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Transparent Technical Canvas with Dior Oblique Print",
+      soleType: "Deconstructed patchwork-effect rubber sole with Dior signature",
+      closure: "Lace-up high-top with back pull tab",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Iconic high-top featuring translucent upper revealing the Dior Oblique motif and deconstructed patchwork sole."
+  },
+  {
+    id: "dior-b23-low-top-sneaker",
+    brand: "Dior",
+    productLine: "B23",
+    modelName: "B23 Low-Top Sneaker",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN249YNT_H060-b23-low-top-sneaker-dior-oblique-canvas",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Dior Oblique Technical Canvas and Microfiber",
+      soleType: "Patchwork rubber sole with side Dior plate",
+      closure: "Lace-up low-top",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Low-top version of the B23 with transparent overlays and textured side bumper."
+  },
+  {
+    id: "dior-b27-high-top-sneaker",
+    brand: "Dior",
+    productLine: "B27",
+    modelName: "B27 High-Top Sneaker",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SH132ZIJ_H965-b27-high-top-sneaker-white-smooth-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Calfskin Leather with Dior Oblique Jacquard",
+      soleType: "Rubber cupsole with Dior branding",
+      closure: "Lace-up and ankle strap with CD buckle",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "High-top skate sneaker equipped with padded ankle collar and signature CD buckle strap."
+  },
+  {
+    id: "dior-b57-mid-top-sneaker",
+    brand: "Dior",
+    productLine: "B57",
+    modelName: "B57 Mid-Top Sneaker",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN293ZOH_H960-b57-mid-top-sneaker-black-and-white-smooth-calfskin",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Smooth Calfskin with CD Oblique Jacquard inserts",
+      soleType: "Two-tone retro rubber sole with Dior signature",
+      closure: "Lace-up mid-top with perforated toe",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Retro basketball mid-top highlighted by the CD initials rendered in Dior Oblique fabric on each flank."
+  },
+  {
+    id: "dior-chrono-sneaker",
+    brand: "Dior",
+    productLine: "Dior Chrono",
+    modelName: "Dior Chrono Sneaker",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/KCK412NZL_S900-dior-chrono-sneaker-white-and-silver-tone-mesh",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Technical Mesh with Metallic Calfskin Inserts",
+      soleType: "Ultra-lightweight two-tone EVA runner sole",
+      closure: "Lace-up with CD signature on the sides",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Modern running-inspired trainer blending technical mesh, silver leather inserts, and graphic CD branding."
+  },
+  {
+    id: "dior-b101-sneaker",
+    brand: "Dior",
+    productLine: "B101",
+    modelName: "B101 Sneaker",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN285ZRF_H965-b101-sneaker-white-smooth-calfskin-and-nubuck",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Smooth Calfskin and Velvety Nubuck",
+      soleType: "Clean rubber cupsole with CD Diamond motif",
+      closure: "Lace-up with padded tongue",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Understated classic skate sneaker featuring supple calfskin and the CD Diamond logo embossed on heel."
+  },
+  {
+    id: "dior-b33-low-top-sneaker",
+    brand: "Dior",
+    productLine: "B33",
+    modelName: "B33 Low-Top Sneaker",
+    sourceUrl: "https://www.dior.com/en_us/fashion/products/3SN295ZQH_H965-b33-sneaker-white-and-blue-dior-oblique",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Dior Tears Cotton Denim and Mohair Jacquard with Suede",
+      soleType: "Thick rubber sole with embedded NFC chip",
+      closure: "Lace-up low-top",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Pioneering sneaker pairing Dior Tears artisanal jacquard with an embedded NFC digital authenticity key."
+  },
+
+  // ==========================================
+  // 7. Golden Goose (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "golden-goose-super-star-classic-sneaker",
+    brand: "Golden Goose",
+    productLine: "Super-Star",
+    modelName: "Super-Star Classic Sneaker",
+    sourceUrl: "https://www.goldengoose.com/us/en/super-star-sneakers-in-leather-with-suede-star-and-heel-tab-cod-GWF00101.F000314.10272.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Full-grain Italian Calfskin with Suede Star",
+      soleType: "Handcrafted vintage distressed rubber foxing",
+      closure: "Lace-up with signature hand-scuffed treatment",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "The foundational Golden Goose silhouette, handmade in Venice with artisanal vintage scuffs and signature star."
+  },
+  {
+    id: "golden-goose-ball-star-sneaker",
+    brand: "Golden Goose",
+    productLine: "Ball Star",
+    modelName: "Ball Star Sneaker",
+    sourceUrl: "https://www.goldengoose.com/us/en/ball-star-sneakers-in-leather-with-suede-star-cod-GMF00117.F000140.10270.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Crackled Vintage Calfskin and Suede",
+      soleType: "80s American basketball rubber cupsole",
+      closure: "Lace-up with SNEAKERS debossed on heel tabs",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "American collegiate basketball-inspired sneaker capturing the golden era of college hoop culture."
+  },
+  {
+    id: "golden-goose-mid-star-sneaker",
+    brand: "Golden Goose",
+    productLine: "Mid Star",
+    modelName: "Mid Star Sneaker",
+    sourceUrl: "https://www.goldengoose.com/us/en/mid-star-sneakers-in-leather-with-brogue-details-cod-GMF00122.F000325.10283.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Calfskin with Brogue Medallion Wingtip Punching",
+      soleType: "Mid-top distressed rubber sole",
+      closure: "Lace-up mid-top",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Mid-top skate trainer featuring English brogue wingtip punching integrated with vintage scuffs."
+  },
+  {
+    id: "golden-goose-slide-high-top-sneaker",
+    brand: "Golden Goose",
+    productLine: "Slide",
+    modelName: "Slide High-Top Sneaker",
+    sourceUrl: "https://www.goldengoose.com/us/en/slide-sneakers-in-leather-with-glitter-star-cod-GMF00115.F000320.80185.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Calfskin with Metallic Leather and Suede Trim",
+      soleType: "High-top distressed rubber cupsole",
+      closure: "Lace-up with inner side zip closure",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Skater-inspired high-top featuring a convenient inner ankle zip and flashing metallic side stripe."
+  },
+  {
+    id: "golden-goose-purestar-clean-sneaker",
+    brand: "Golden Goose",
+    productLine: "Purestar",
+    modelName: "Purestar Clean Sneaker",
+    sourceUrl: "https://www.goldengoose.com/us/en/purestar-sneakers-in-white-leather-cod-GMF00124.F000537.10100.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Optical White Smooth Calfskin",
+      soleType: "Shock-absorbing pristine white cupsole",
+      closure: "Lace-up 6 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Golden Goose's un-distressed clean white sneaker, featuring state-of-the-art shock-absorbing foam."
+  },
+  {
+    id: "golden-goose-francy-high-top-sneaker",
+    brand: "Golden Goose",
+    productLine: "Francy",
+    modelName: "Francy High-Top Sneaker",
+    sourceUrl: "https://www.goldengoose.com/us/en/francy-sneakers-in-canvas-and-leather-cod-GMF00113.F000323.10283.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Heavy Canvas and Distressed Calfskin",
+      soleType: "Vintage distressed vulcanized rubber sole",
+      closure: "Lace-up with side zip and Golden patch",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "70s vintage basketball high-top constructed with heavy canvas and leather star emblem."
+  },
+  {
+    id: "golden-goose-dad-star-runner",
+    brand: "Golden Goose",
+    productLine: "Dad-Star",
+    modelName: "Dad-Star Runner",
+    sourceUrl: "https://www.goldengoose.com/us/en/dad-star-sneakers-in-mesh-and-suede-cod-GMF00199.F001210.80185.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Laminated Mesh, Calf Suede and Metallic Leather",
+      soleType: "Yellowed vintage-effect chunky runner sole",
+      closure: "Lace-up with exposed eyelets",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Nostalgic 1990s dad runner featuring an intentionally yellowed vintage midsole and metallic trims."
+  },
+  {
+    id: "golden-goose-running-sole-sneaker",
+    brand: "Golden Goose",
+    productLine: "Running Sole",
+    modelName: "Running Sole Sneaker",
+    sourceUrl: "https://www.goldengoose.com/us/en/running-sole-sneakers-in-suede-and-mesh-cod-GMF00126.F000338.80185.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Suede Calfskin and Breathable Mesh",
+      soleType: "Hand-painted chunky running sole",
+      closure: "Lace-up athletic silhouette",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Chunky runner showcasing hand-painted brushstroke distressing on the exaggerated midsole."
+  },
+  {
+    id: "golden-goose-stardan-sneaker",
+    brand: "Golden Goose",
+    productLine: "Stardan",
+    modelName: "Stardan Sneaker",
+    sourceUrl: "https://www.goldengoose.com/us/en/stardan-sneakers-in-leather-cod-GMF00128.F000450.10270.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Smooth Nappa Leather with Mesh Inserts",
+      soleType: "Basketball rubber sole with star pattern",
+      closure: "Lace-up with star patch",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Homage to 90s street basketball icons, built with padded collars and contrast star logo."
+  },
+  {
+    id: "golden-goose-marathon-sneaker",
+    brand: "Golden Goose",
+    productLine: "Marathon",
+    modelName: "Marathon Sneaker",
+    sourceUrl: "https://www.goldengoose.com/us/en/marathon-sneakers-in-nylon-and-suede-cod-GMF00542.F004880.80185.html",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Vintage Nylon and Suede Calfskin",
+      soleType: "Extended heel spoiler rubber track sole",
+      closure: "Lace-up track silhouette",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "70s track-and-field racing flat redesigned with an exaggerated heel spoiler and weathered treatments."
+  },
+
+  // ==========================================
+  // 8. Gucci (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "gucci-ace-embroidered-sneaker",
+    brand: "Gucci",
+    productLine: "Ace",
+    modelName: "Ace Embroidered Sneaker",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-ace-embroidered-sneaker-p-386750A38D09072",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Smooth White Italian Leather",
+      soleType: "Flat rubber cupsole with crest",
+      closure: "Lace-up with green and red Web and metallic bee",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "The defining luxury court sneaker of modern fashion, adorned with green and red Web and gold-embroidered bee."
+  },
+  {
+    id: "gucci-rhyton-leather-sneaker",
+    brand: "Gucci",
+    productLine: "Rhyton",
+    modelName: "Rhyton Leather Sneaker",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-rhyton-leather-sneaker-p-528892DRW009522",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Ivory Treated Leather",
+      soleType: "Chunky 50mm sculpted rubber sole",
+      closure: "Lace-up with vintage Gucci logo print",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Chunky 1990s retro trainer cut from thick ivory leather with oversized vintage Gucci logo print."
+  },
+  {
+    id: "gucci-screener-sneaker",
+    brand: "Gucci",
+    productLine: "Screener",
+    modelName: "Screener Sneaker",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-screener-sneaker-p-5465510YFT09170",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Vintage Distressed Leather and Suede",
+      soleType: "Bicolor retro rubber sole with bee detail",
+      closure: "Lace-up with vintage metal GG badge",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Influenced by 1970s court shoes, featuring pre-treated vintage scuffs and retro GG metal oval plaque."
+  },
+  {
+    id: "gucci-tennis-1977-sneaker",
+    brand: "Gucci",
+    productLine: "Tennis 1977",
+    modelName: "Gucci Tennis 1977 Sneaker",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-gucci-tennis-1977-sneaker-p-606111H0G104370",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Original GG Canvas with Web Ribbon",
+      soleType: "Textured rubber bumper sole with wave stripe",
+      closure: "Lace-up with retro tennis label",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Archival low-top court shoe in heritage GG canvas sporting textured foxing and green Web stripe."
+  },
+  {
+    id: "gucci-mac80-low-top-sneaker",
+    brand: "Gucci",
+    productLine: "MAC80",
+    modelName: "MAC80 Low-Top Sneaker",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-mac80-sneaker-p-742721FACX89060",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Smooth Leather with Fabric Inserts",
+      soleType: "Two-tone rubber sole",
+      closure: "Lace-up with embroidered Interlocking G",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "80s-inspired low-top sneaker featuring an embroidered Interlocking G on the side panel."
+  },
+  {
+    id: "gucci-re-web-sneaker",
+    brand: "Gucci",
+    productLine: "Re-Web",
+    modelName: "Re-Web Sneaker",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-re-web-sneaker-p-781512FAC789060",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "French Box Calfskin",
+      soleType: "Heritage rubber cupsole with debossed Gucci script",
+      closure: "Lace-up with bold Web tongue overlay",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Sabato De Sarno's debut sneaker defined by an oversized green-red Web stripe draped across the tongue."
+  },
+  {
+    id: "gucci-ace-platform-sneaker",
+    brand: "Gucci",
+    productLine: "Ace",
+    modelName: "Ace Platform Sneaker",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-ace-platform-sneaker-p-683120A38D09072",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "White Calfskin Leather",
+      soleType: "Elevated 45mm platform rubber sole",
+      closure: "Lace-up with signature Web stripe",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Platform iteration of the classic Ace sneaker adding height and fashion-forward volume."
+  },
+  {
+    id: "gucci-basket-high-top-sneaker",
+    brand: "Gucci",
+    productLine: "Basket",
+    modelName: "Basket High-Top Sneaker",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-gucci-basket-sneaker-p-6613012SH909192",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Demetra Eco-friendly Material and Mesh",
+      soleType: "High-density basketball sole",
+      closure: "Lace-up high-top with padded collar",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Crafted predominantly from Demetra, Gucci's proprietary animal-free eco-material, inspired by 90s basketball."
+  },
+  {
+    id: "gucci-run-technical-sneaker",
+    brand: "Gucci",
+    productLine: "Gucci Run",
+    modelName: "Run Technical Sneaker",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-gucci-run-sneaker-p-680142US0009060",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Technical Bi-color Knit and Suede",
+      soleType: "Wavy sculpted athletic runner sole",
+      closure: "Lace-up with Interlocking G logo",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Athletic technical runner featuring sculpted wave sole and knitted sock-like construction."
+  },
+  {
+    id: "gucci-flashtrek-sneaker",
+    brand: "Gucci",
+    productLine: "Flashtrek",
+    modelName: "Flashtrek Sneaker",
+    sourceUrl: "https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-flashtrek-sneaker-p-543162DIR301000",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Mixed Suede, Leather and Technical Canvas",
+      soleType: "Heavy rugged rubber lug sole",
+      closure: "Lace-up with SEGA font Gucci logo tongue",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Trail-hiking maximalist sneaker defined by an enormous lug sole and SEGA-licensed font rubber patch."
+  },
+
+  // ==========================================
+  // 9. Loro Piana (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "loro-piana-360-flexy-walk-sneaker",
+    brand: "Loro Piana",
+    productLine: "360 Flexy Walk",
+    modelName: "360 Flexy Walk Sneaker",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/sneakers/360-flexy-walk-sneaker-FAM1698",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Wish Wool Knitted Upper with Calfskin Details",
+      soleType: "Ultra-light technical rubber sole (360 grams)",
+      closure: "Lace-up with knitted sock collar",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Weighing only 360 grams, knitted from ultra-fine Wish wool sourced from selected Australian and New Zealand Merino farms."
+  },
+  {
+    id: "loro-piana-nuages-sneaker-in-suede",
+    brand: "Loro Piana",
+    productLine: "Nuages",
+    modelName: "Nuages Sneaker in Suede",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/sneakers/nuages-sneaker-FAL5955",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Unlined Water-repellent Calf Suede",
+      soleType: "Flat natural rubber cupsole",
+      closure: "Lace-up with rounded toe",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Sublime deconstructed suede sneaker with cloud-soft padding and water-repellent finish."
+  },
+  {
+    id: "loro-piana-weekend-walk-sneaker",
+    brand: "Loro Piana",
+    productLine: "White Sole",
+    modelName: "Weekend Walk Sneaker",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/sneakers/weekend-walk-sneaker-FAM7720",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Supple Grained Deerskin",
+      soleType: "Natural latex rubber cupsole",
+      closure: "Lace-up 6 eyelets with LP logo on tongue",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Luxurious weekend sneaker cut from buttery deerskin leather with natural latex sole."
+  },
+  {
+    id: "loro-piana-tennis-walk-sneaker",
+    brand: "Loro Piana",
+    productLine: "Tennis Walk",
+    modelName: "Tennis Walk Sneaker",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/sneakers/tennis-walk-sneaker-FAM3425",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "French Box Calfskin",
+      soleType: "Low-profile non-slip rubber sole",
+      closure: "Lace-up with micro-perforated toe",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Vintage lawn tennis silhouette featuring clean lines and micro-perforated ventilation."
+  },
+  {
+    id: "loro-piana-modular-walk-sneaker",
+    brand: "Loro Piana",
+    productLine: "Modular Walk",
+    modelName: "Modular Walk Sneaker",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/sneakers/modular-walk-sneaker-FAM8215",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Water-repellent Technical Fabric and Suede Overlays",
+      soleType: "Chunky lightweight EVA sole",
+      closure: "Lace-up with padded collar",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Technical running sneaker incorporating Storm System water-resistant treatment and EVA cushioning."
+  },
+  {
+    id: "loro-piana-360-lady-flexy-walk",
+    brand: "Loro Piana",
+    productLine: "360 Flexy Walk",
+    modelName: "360 Lady Flexy Walk",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/women/sneakers/360-flexy-walk-sneaker-FAL1105",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Knitted Wish Wool with Nappa Trims",
+      soleType: "Ergonomic bi-color ultra-light sole",
+      closure: "Lace-up with elastic collar",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Featherweight Wish wool sneaker tailored for supreme feminine foot ergonomics."
+  },
+  {
+    id: "loro-piana-city-sneaker-in-cashmere",
+    brand: "Loro Piana",
+    productLine: "City",
+    modelName: "City Sneaker in Cashmere & Suede",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/sneakers/city-sneaker-FAM6105",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Storm System Treated Cashmere and Suede",
+      soleType: "White rubber cupsole",
+      closure: "Lace-up 6 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Crafted in Loro Piana's proprietary Storm System treated pure cashmere fabric."
+  },
+  {
+    id: "loro-piana-play-walk-sneaker",
+    brand: "Loro Piana",
+    productLine: "Play Walk",
+    modelName: "Play Walk Sneaker",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/sneakers/play-walk-sneaker-FAM4832",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Deerskin and Nubuck Blend",
+      soleType: "Siped non-marking rubber sole",
+      closure: "Lace-up with contrast leather piping",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Sporty deck sneaker detailed with contrast saddle piping and non-marking siped sole."
+  },
+  {
+    id: "loro-piana-active-flexy-sneaker",
+    brand: "Loro Piana",
+    productLine: "Active",
+    modelName: "Active Flexy Sneaker",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/sneakers/active-flexy-sneaker-FAM9015",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Technical Mesh Lined with Wish Wool",
+      soleType: "Dual-density cushion outsole",
+      closure: "Lace-up athletic silhouette",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Performance running silhouette lined internally with ultra-soft pure Merino wool."
+  },
+  {
+    id: "loro-piana-glider-suede-sneaker",
+    brand: "Loro Piana",
+    productLine: "Glider",
+    modelName: "Glider Suede Sneaker",
+    sourceUrl: "https://us.loropiana.com/en/p/shoes/men/sneakers/glider-sneaker-FAM5535",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Suede Calfskin with Leather Heel Counter",
+      soleType: "Flat vulcanized rubber sole",
+      closure: "Lace-up low-profile",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Low-profile skater trainer handcrafted in water-repellent suede with blind-embossed LP crest."
+  },
+
+  // ==========================================
+  // 10. Louis Vuitton (10 models, France FR / Italy IT - LV TRAINER ICON!)
+  // ==========================================
+  {
+    id: "louis-vuitton-lv-trainer-sneaker",
+    brand: "Louis Vuitton",
+    productLine: "LV Trainer",
+    modelName: "LV Trainer Sneaker",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/lv-trainer-sneaker-nvprod4160098v/1AB8J6",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Supple Calf Leather (7 hours of stitching)",
+      soleType: "Rubber outsole with Monogram flowers",
+      closure: "Lace-up with LV Initials on tongue and side",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Virgil Abloh's iconic vintage basketball design, requiring 7 hours of intricate artisanal stitching in Fiesso d'Artico atelier."
+  },
+  {
+    id: "louis-vuitton-lv-trainer-maxi-sneaker",
+    brand: "Louis Vuitton",
+    productLine: "LV Trainer Maxi",
+    modelName: "LV Trainer Maxi Sneaker",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/lv-trainer-maxi-sneaker-nvprod4430030v/1ABX0P",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Calfskin Leather with Padded Volume",
+      soleType: "Oversized rubber sole with Monogram flowers",
+      closure: "Thick textile laces with LV beads",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Exaggerated oversized iteration of the LV Trainer featuring chunky rope laces with decorative LV beads."
+  },
+  {
+    id: "louis-vuitton-lv-skate-sneaker",
+    brand: "Louis Vuitton",
+    productLine: "LV Skate",
+    modelName: "LV Skate Sneaker",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/lv-skate-sneaker-nvprod4260025v/1ABM5P",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Mixed Technical Mesh and Suede Calf Leather",
+      soleType: "Two-tone rubber sole with Monogram flower detailing",
+      closure: "Double laces with padded tongue and collar",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "90s skate-inspired sneaker featuring extreme padded collar, double laces, and large Monogram flower side appliqués."
+  },
+  {
+    id: "louis-vuitton-beverly-hills-sneaker",
+    brand: "Louis Vuitton",
+    productLine: "Beverly Hills",
+    modelName: "Beverly Hills Sneaker",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/beverly-hills-sneaker-nvprod2400035v/1A8F4H",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Grained Calf Leather with Debossed Monogram",
+      soleType: "Ultra-light chunky rubber sole",
+      closure: "Lace-up with Louis Vuitton Paris script",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Ultra-supple white calfskin sneaker debossed with the Monogram pattern resting on a lightweight platform."
+  },
+  {
+    id: "louis-vuitton-rivoli-sneaker",
+    brand: "Louis Vuitton",
+    productLine: "Rivoli",
+    modelName: "Rivoli Sneaker",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/rivoli-sneaker-nvprod1270045v/1A44VO",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Monogram Canvas and Smooth Calf Leather",
+      soleType: "Two-tone rubber cupsole",
+      closure: "Lace-up with signature Velcro ankle strap",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "High-top court sneaker combining three distinct variations of Monogram canvas with Velcro ankle support."
+  },
+  {
+    id: "louis-vuitton-run-55-sneaker",
+    brand: "Louis Vuitton",
+    productLine: "Run 55",
+    modelName: "Run 55 Sneaker",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/run-55-sneaker-nvprod3760030v/1AA8O1",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Technical Mesh and Metallic Leather Overlays",
+      soleType: "Lifted wedge athletic rubber sole",
+      closure: "Lace-up running silhouette",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Fashion-forward runner featuring elevated wedge midsole and multi-layered reflective metallic panels."
+  },
+  {
+    id: "louis-vuitton-charlie-sneaker",
+    brand: "Louis Vuitton",
+    productLine: "Charlie",
+    modelName: "Charlie Sneaker",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/charlie-sneaker-nvprod3160100v/1A9JN1",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Bioplast and Recycled Polyester Upper (90% eco-materials)",
+      soleType: "Recycled rubber cupsole",
+      closure: "Lace-up with LV upcycling logo",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Louis Vuitton's first unisex eco-designed sneaker, crafted with 90% recycled and bio-sourced materials."
+  },
+  {
+    id: "louis-vuitton-time-out-sneaker",
+    brand: "Louis Vuitton",
+    productLine: "Time Out",
+    modelName: "Time Out Sneaker",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/time-out-sneaker-nvprod100072v/1A3N7V",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "White Calf Leather with Debossed Giant Monogram",
+      soleType: "Elevated ridged platform rubber sole with 3D Monogram flowers",
+      closure: "Lace-up with golden eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Signature platform sneaker identified by its 3D debossed Monogram flowers along the thick rubber outsole."
+  },
+  {
+    id: "louis-vuitton-frontrow-sneaker",
+    brand: "Louis Vuitton",
+    productLine: "Frontrow",
+    modelName: "Frontrow Sneaker",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/frontrow-sneaker-nvprod760100v/1A2XOQ",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Supple White Calf Leather",
+      soleType: "Clean low-profile rubber cupsole",
+      closure: "Lace-up with Monogram canvas heel tab",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Timeless minimalist tennis shoe featuring clean calfskin and signature Monogram patent heel tab."
+  },
+  {
+    id: "louis-vuitton-lv-runner-tatic-sneaker",
+    brand: "Louis Vuitton",
+    productLine: "LV Runner Tatic",
+    modelName: "LV Runner Tatic Sneaker",
+    sourceUrl: "https://us.louisvuitton.com/eng-us/products/lv-runner-tatic-sneaker-nvprod3520035v/1AA80P",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Technical Mesh and Calf Leather",
+      soleType: "Wavy aerodynamic foam sole",
+      closure: "Lace-up with dynamic wave lines and LV Initials",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Wave-patterned athletic trainer debuted on the Spring/Summer 2022 runway designed by Virgil Abloh."
+  },
+
+  // ==========================================
+  // 11. Prada (10 models, Italy IT - AMERICA'S CUP ICON!)
+  // ==========================================
+  {
+    id: "prada-americas-cup-sneaker",
+    brand: "Prada",
+    productLine: "America's Cup",
+    modelName: "America's Cup Sneaker",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-americas-cup-sneakers/4E3400_ASZ_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Patent Leather and Breathable Technical Mesh",
+      soleType: "Flexible rubber sole with iconic red Prada Linea Rossa stripe",
+      closure: "Lace-up with Linea Rossa logo on tongue",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "The historic 1997 Luna Rossa sailing shoe that created modern luxury sportswear, featuring patent leather and red Linea Rossa emblem."
+  },
+  {
+    id: "prada-downtown-leather-sneaker",
+    brand: "Prada",
+    productLine: "Downtown",
+    modelName: "Downtown Leather Sneaker",
+    sourceUrl: "https://www.prada.com/us/en/p/prada-downtown-leather-sneakers/2EE364_3LJ6_F0964",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Perforated Calfskin Leather",
+      soleType: "Two-tone rubber box sole",
+      closure: "Lace-up with enamelled metal triangle logo",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Vintage 1980s basketball sneaker showcasing Prada's iconic enamelled triangle logo on the upper quarter."
+  },
+  {
+    id: "prada-cloudbust-thunder-sneaker",
+    brand: "Prada",
+    productLine: "Cloudbust Thunder",
+    modelName: "Cloudbust Thunder Sneaker",
+    sourceUrl: "https://www.prada.com/us/en/p/cloudbust-thunder-sneakers/2EG293_3L12_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Technical Fabric with 3D Injected Rubber Overlays",
+      soleType: "Sculpted sawtooth lugged rubber sole",
+      closure: "Lace-up futuristic silhouette",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Sculptural futuristic sneaker distinguished by its complex 3D injected rubber exoskeleton and sawtooth tread."
+  },
+  {
+    id: "prada-prax-01-sneaker",
+    brand: "Prada",
+    productLine: "PRAX 01",
+    modelName: "PRAX 01 Sneaker",
+    sourceUrl: "https://www.prada.com/us/en/p/prax-01-sneakers/4E3571_3LFV_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Re-Nylon and Brushed Spazzolato Leather",
+      soleType: "Geometric tread rubber sole",
+      closure: "Lace-up with screen-printed Prada logo",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Sporty runner uniting sustainable Re-Nylon gabardine with high-shine Spazzolato leather trims."
+  },
+  {
+    id: "prada-wheel-re-nylon-high-top-sneaker",
+    brand: "Prada",
+    productLine: "Wheel",
+    modelName: "Wheel Re-Nylon High-Top Sneaker",
+    sourceUrl: "https://www.prada.com/us/en/p/wheel-high-top-sneakers/2EG323_3LFV_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Regenerated Re-Nylon Gabardine Fabric",
+      soleType: "Serrated tyre tread rubber bumper cupsole",
+      closure: "Lace-up high-top with triangle emblem",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "High-top vulcanized sneaker featuring motocross-inspired tyre tread rubber foxing."
+  },
+  {
+    id: "prada-collision-cross-technical-sneaker",
+    brand: "Prada",
+    productLine: "Collision Cross",
+    modelName: "Collision Cross Technical Sneaker",
+    sourceUrl: "https://www.prada.com/us/en/p/collision-cross-sneakers/4E3589_3LEJ_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Thermo-welded High-tech Fabric with Air Pockets",
+      soleType: "Sculpted dual-density sole",
+      closure: "Lace-up athletic runner",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Futuristic runner featuring thermo-welded air-cushioned pockets and athletic tread."
+  },
+  {
+    id: "prada-macro-brushed-leather-sneaker",
+    brand: "Prada",
+    productLine: "Macro",
+    modelName: "Macro Brushed Leather Sneaker",
+    sourceUrl: "https://www.prada.com/us/en/p/macro-sneakers/2EE376_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "High-shine Spazzolato Calfskin",
+      soleType: "Thick platform rubber sole with embossed lettering",
+      closure: "Lace-up with embossed logo tongue",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Clean platform sneaker cut in lustrous Spazzolato leather with embossed Prada typography."
+  },
+  {
+    id: "prada-soft-lux-leather-sneaker",
+    brand: "Prada",
+    productLine: "Soft Lux",
+    modelName: "Soft Lux Leather Sneaker",
+    sourceUrl: "https://www.prada.com/us/en/p/soft-lux-sneakers/2EE380_055_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Deconstructed Nappa Leather",
+      soleType: "Ultra-flexible low-profile sole",
+      closure: "Lace-up 6 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Supple deconstructed leather sneaker offering glove-like softness and low-profile minimalism."
+  },
+  {
+    id: "prada-district-leather-sneaker",
+    brand: "Prada",
+    productLine: "District",
+    modelName: "District Leather Sneaker",
+    sourceUrl: "https://www.prada.com/us/en/p/district-high-top-sneakers/2EE385_3LJ6_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Smooth Calfskin with Saffiano Leather Details",
+      soleType: "Two-tone rubber cupsole",
+      closure: "Lace-up high-top with padded ankle",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "High-top basketball silhouette accented with durable cross-grain Saffiano leather details."
+  },
+  {
+    id: "prada-dimension-knit-sneaker",
+    brand: "Prada",
+    productLine: "Dimension",
+    modelName: "Dimension Knit Sneaker",
+    sourceUrl: "https://www.prada.com/us/en/p/dimension-knit-sneakers/4E3595_3LKT_F0002",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Technical Jacquard Knit with Triangle Motif",
+      soleType: "Ultra-flexible running sole",
+      closure: "Slip-on sock collar with lace-up",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Sock-like runner woven with an intricate geometric jacquard pattern echoing the Prada triangle."
+  },
+
+  // ==========================================
+  // 12. Saint Laurent (10 models, France FR / Italy IT)
+  // ==========================================
+  {
+    id: "saint-laurent-court-classic-sl06-embroidered",
+    brand: "Saint Laurent",
+    productLine: "Court Classic",
+    modelName: "Court Classic SL/06 Embroidered Sneaker",
+    sourceUrl: "https://www.ysl.com/en-us/pr/court-classic-sl-06-embroidered-sneakers-in-leather-61061800SY09260.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Distressed White Calfskin Leather",
+      soleType: "Handcrafted vintage-distressed rubber cupsole",
+      closure: "Lace-up with embroidered Saint Laurent script",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Saint Laurent's most celebrated sneaker, featuring signature handwritten Saint Laurent embroidery and distressed rubber sole."
+  },
+  {
+    id: "saint-laurent-sl10-court-high-top-sneaker",
+    brand: "Saint Laurent",
+    productLine: "SL/10",
+    modelName: "SL/10 Court High-Top Sneaker",
+    sourceUrl: "https://www.ysl.com/en-us/pr/sl-10-high-top-sneakers-in-leather-41802404G101000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Two-tone Colorblocked Calfskin Leather",
+      soleType: "Stitched rubber cupsole",
+      closure: "Lace-up high-top with padded ankle collar",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Hedi Slimane's iconic luxury tribute to the 1985 Air Jordan 1, cut from buttery Italian calfskin."
+  },
+  {
+    id: "saint-laurent-andy-low-top-sneaker",
+    brand: "Saint Laurent",
+    productLine: "Andy",
+    modelName: "Andy Low-Top Sneaker",
+    sourceUrl: "https://www.ysl.com/en-us/pr/andy-sneakers-in-leather-5336150M5009030.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Clean Smooth French Calfskin",
+      soleType: "Low-profile rubber cupsole",
+      closure: "Lace-up with gold-foil embossed logo on quarter",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Minimalist tennis trainer showcasing clean unbroken calfskin lines and gold-foil Saint Laurent lettering."
+  },
+  {
+    id: "saint-laurent-sl80-mid-top-sneaker",
+    brand: "Saint Laurent",
+    productLine: "SL/80",
+    modelName: "SL/80 Mid-Top Sneaker",
+    sourceUrl: "https://www.ysl.com/en-us/pr/sl-80-mid-top-sneakers-733912AAAP11000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Perforated Calfskin and Suede Panels",
+      soleType: "Chunky 80s basketball rubber sole",
+      closure: "Lace-up with perforated toe box",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "80s retro basketball mid-top featuring weathered treatments and perforated side stripes."
+  },
+  {
+    id: "saint-laurent-venice-slip-on-sneaker",
+    brand: "Saint Laurent",
+    productLine: "Venice",
+    modelName: "Venice Slip-On Sneaker",
+    sourceUrl: "https://www.ysl.com/en-us/pr/venice-slip-on-sneakers-in-canvas-585742GUP109113.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Heavy Cotton Canvas with Leather Trim",
+      soleType: "Vulcanized rubber sole with gold logo heel tab",
+      closure: "Slip-on with elastic side gussets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Venice Beach skate-inspired slip-on crafted with luxury leather piping and gold foil Saint Laurent heel tab."
+  },
+  {
+    id: "saint-laurent-court-classic-sl39-mid",
+    brand: "Saint Laurent",
+    productLine: "Court Classic",
+    modelName: "Court Classic SL/39 Mid Sneaker",
+    sourceUrl: "https://www.ysl.com/en-us/pr/court-classic-sl-39-mid-sneakers-45885600SY09260.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Padded Collar Calfskin Leather",
+      soleType: "Off-white vintage rubber cupsole",
+      closure: "Lace-up mid-top",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Mid-top court sneaker detailed with perforated quarter lines and vintage cream outsole."
+  },
+  {
+    id: "saint-laurent-sl61-low-top-sneaker",
+    brand: "Saint Laurent",
+    productLine: "SL/61",
+    modelName: "SL/61 Low-Top Sneaker",
+    sourceUrl: "https://www.ysl.com/en-us/pr/sl-61-low-top-sneakers-713582AAAP11000.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Smooth and Perforated Calf Leather",
+      soleType: "Flat rubber sole with embossed SL/61 branding",
+      closure: "Lace-up with YSL embossed heel",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Anthony Vaccarello's streamlined court shoe displaying micro-perforations and embossed YSL heel."
+  },
+  {
+    id: "saint-laurent-bedford-high-top-sneaker",
+    brand: "Saint Laurent",
+    productLine: "Bedford",
+    modelName: "Bedford High-Top Sneaker",
+    sourceUrl: "https://www.ysl.com/en-us/pr/bedford-high-top-sneakers-55348200SY09260.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Distressed Canvas and Suede",
+      soleType: "Worn-in rubber bumper sole",
+      closure: "Lace-up high-top with ankle patch",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Deconstructed punk high-top featuring intentional fraying and vintage hand-scuffed bumper."
+  },
+  {
+    id: "saint-laurent-malibu-slip-on-sneaker",
+    brand: "Saint Laurent",
+    productLine: "Malibu",
+    modelName: "Malibu Slip-On Sneaker",
+    sourceUrl: "https://www.ysl.com/en-us/pr/malibu-slip-on-sneakers-606014GUP109113.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Washed Distressed Cotton Canvas",
+      soleType: "Vulcanized sole with handwritten print on foxing",
+      closure: "Slip-on with elastic inserts",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Casual canvas slip-on featuring handwritten Saint Laurent logo printed across the distressed foxing."
+  },
+  {
+    id: "saint-laurent-joe-mid-top-sneaker",
+    brand: "Saint Laurent",
+    productLine: "Joe",
+    modelName: "Joe Mid-Top Sneaker",
+    sourceUrl: "https://www.ysl.com/en-us/pr/joe-mid-top-sneakers-58574400SY09260.html",
+    sourceRegion: "FR",
+    attrs: {
+      upperLeather: "Vintage Washed Calfskin",
+      soleType: "Distressed rubber sole",
+      closure: "Lace-up 7 eyelets",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Vintage-washed mid-top trainer displaying lived-in creases and gold embossed logo."
+  },
+
+  // ==========================================
+  // 13. Tod's (10 models, Italy IT)
+  // ==========================================
+  {
+    id: "tods-1t-vintage-runner-in-suede",
+    brand: "Tod's",
+    productLine: "1T",
+    modelName: "1T Vintage Runner in Suede & Fabric",
+    sourceUrl: "https://www.tods.com/us-en/1T-Sneakers-in-Leather-and-Fabric/p/XXM14C0FC80Q64B999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Calfskin Suede and Technical Mesh Fabric",
+      soleType: "Sculpted EVA runner sole with maxi rubber pebbles on heel",
+      closure: "Lace-up with stamped Tod's monogram on tongue",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Tod's celebrated retro 1970s runner defined by oversized gommini rubber pebbles protruding from the sole and heel."
+  },
+  {
+    id: "tods-tabs-sneaker-in-smooth-leather",
+    brand: "Tod's",
+    productLine: "Tabs",
+    modelName: "Tabs Sneaker in Smooth Leather",
+    sourceUrl: "https://www.tods.com/us-en/Tabs-Sneakers-in-Leather/p/XXM68C0DP30OW0B999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Full-grain Italian Calfskin",
+      soleType: "Rubber cupsole with gommini on the heel counter",
+      closure: "Lace-up with stamped Tod's logo",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Minimalist Italian court sneaker crafted from soft calfskin with iconic gommini pebbles wrapping the heel."
+  },
+  {
+    id: "tods-cassetta-low-top-sneaker",
+    brand: "Tod's",
+    productLine: "Cassetta",
+    modelName: "Cassetta Low-Top Sneaker",
+    sourceUrl: "https://www.tods.com/us-en/Cassetta-Sneakers-in-Leather/p/XXM03E0EA40002B999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Smooth Calfskin with Suede Accents",
+      soleType: "Classic white rubber box sole",
+      closure: "Lace-up 6 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Understated tennis sneaker characterized by clean proportions and contrasting leather heel tabs."
+  },
+  {
+    id: "tods-slip-on-sneaker-in-suede",
+    brand: "Tod's",
+    productLine: "Slip-On",
+    modelName: "Slip-On Sneaker in Suede",
+    sourceUrl: "https://www.tods.com/us-en/Slip-On-Sneakers-in-Suede/p/XXM03E00P20RE0S800/",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Water-repellent Velveteen Suede",
+      soleType: "Flexible rubber sole with embossed pebbles",
+      closure: "Slip-on with concealed elastic inserts",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Effortless Italian summer slip-on pairing rich suede with flexible gommini-textured rubber sole."
+  },
+  {
+    id: "tods-no-code-j-sneaker",
+    brand: "Tod's",
+    productLine: "No_Code",
+    modelName: "No_Code J Sneaker",
+    sourceUrl: "https://www.tods.com/us-en/No-Code-J-Sneakers/p/XXM91B00C80NXPB999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Technical Stretch Knit with Calfskin Overlays",
+      soleType: "Sculpted EVA athletic sole with rubber pebble pods",
+      closure: "Lace-up with sock-like collar",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Designed by Yong Bae Seok, blending Milanese artisan shoemaking with high-tech Korean ergonomic design."
+  },
+  {
+    id: "tods-sport-sneaker",
+    brand: "Tod's",
+    productLine: "Sport",
+    modelName: "Tod's Sport Sneaker",
+    sourceUrl: "https://www.tods.com/us-en/Sport-Sneakers-in-Leather/p/XXM08H00P50AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Mixed Smooth and Suede Calfskin",
+      soleType: "Bi-color running sole with gommini tread",
+      closure: "Lace-up with T logo tongue patch",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Dynamic multi-panel sneaker showcasing Tod's mastery of tone-on-tone leather and suede cutting."
+  },
+  {
+    id: "tods-high-top-leather-sneaker",
+    brand: "Tod's",
+    productLine: "High-Top",
+    modelName: "High-Top Leather Sneaker",
+    sourceUrl: "https://www.tods.com/us-en/High-Top-Sneakers-in-Leather/p/XXM05H00P30AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Burnished Calfskin with Padded Collar",
+      soleType: "Stitched rubber cupsole",
+      closure: "Lace-up 8 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Basketball-inspired high-top trainer crafted in hand-burnished calfskin with cushioned ankle support."
+  },
+  {
+    id: "tods-di-bag-inspired-sneaker",
+    brand: "Tod's",
+    productLine: "Di Bag Heritage",
+    modelName: "Di Bag Inspired Sneaker",
+    sourceUrl: "https://www.tods.com/us-en/Sneakers-in-Leather/p/XXM02J00P80AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Soft French Calfskin",
+      soleType: "Lightweight rubber sole",
+      closure: "Lace-up with Di Bag contrast saddle stitch",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Features the artisanal contrast saddle stitching made famous by the iconic Tod's Di Bag."
+  },
+  {
+    id: "tods-kate-sneaker-in-leather",
+    brand: "Tod's",
+    productLine: "Kate",
+    modelName: "Kate Sneaker in Leather",
+    sourceUrl: "https://www.tods.com/us-en/Kate-Sneakers-in-Leather/p/XXW08J0EY40AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Supple Box Calfskin",
+      soleType: "Low-profile rubber cupsole",
+      closure: "Lace-up with embossed Kate chain motif",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Court trainer accented with the embossed interlocking Kate chain motif across the tongue."
+  },
+  {
+    id: "tods-active-leather-sneaker",
+    brand: "Tod's",
+    productLine: "Active",
+    modelName: "Active Leather Sneaker",
+    sourceUrl: "https://www.tods.com/us-en/Active-Sneakers-in-Leather/p/XXM04400P90AKTB999/",
+    sourceRegion: "IT",
+    attrs: {
+      upperLeather: "Smooth and Perforated Calf Panels",
+      soleType: "Ergonomic cushion insole with rubber grip",
+      closure: "Lace-up 6 eyelets",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Featherweight everyday trainer featuring breathable micro-perforations and memory foam footbed."
+  },
+
+  // ==========================================
+  // 14. Tom Ford (10 models, United States US / Italy IT)
+  // ==========================================
+  {
+    id: "tom-ford-cambridge-low-top-sneaker",
+    brand: "Tom Ford",
+    productLine: "Cambridge",
+    modelName: "Cambridge Low-Top Sneaker",
+    sourceUrl: "https://www.tomfordfashion.com/cambridge-low-top-sneaker/J1125T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      upperLeather: "French Box Calfskin",
+      soleType: "Vulcanized rubber cupsole with Tom Ford heel label",
+      closure: "Lace-up with perforated T logo on sides",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Tom Ford's definitive luxury low-top sneaker, featuring the clean perforated T logo along the quarters."
+  },
+  {
+    id: "tom-ford-warwick-leather-sneaker",
+    brand: "Tom Ford",
+    productLine: "Warwick",
+    modelName: "Warwick Leather Sneaker",
+    sourceUrl: "https://www.tomfordfashion.com/warwick-leather-sneaker/J1130T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      upperLeather: "Polished Box Calfskin",
+      soleType: "Two-tone rubber cupsole",
+      closure: "Lace-up with punch-hole T logo",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Minimalist court shoe highlighted by punch-hole T side perforations and contrasting leather heel counter."
+  },
+  {
+    id: "tom-ford-radcliffe-runner-sneaker",
+    brand: "Tom Ford",
+    productLine: "Radcliffe",
+    modelName: "Radcliffe Runner Sneaker",
+    sourceUrl: "https://www.tomfordfashion.com/radcliffe-runner-sneaker/J1150T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      upperLeather: "Calf Suede and Technical Nylon",
+      soleType: "Featherweight EVA wedge running sole",
+      closure: "Lace-up vintage runner",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Retro 1970s track-inspired runner combining lush suede with lightweight nylon and wedge sole."
+  },
+  {
+    id: "tom-ford-jago-technical-sneaker",
+    brand: "Tom Ford",
+    productLine: "Jago",
+    modelName: "Jago Technical Sneaker",
+    sourceUrl: "https://www.tomfordfashion.com/jago-sneaker/J1185T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      upperLeather: "Multi-panel Technical Nylon, Mesh and Calfskin",
+      soleType: "Injected TPU cage and sculpted multi-layer sole",
+      closure: "Double lace-up system with sock collar",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Futuristic luxury athletic sneaker built from artisan sock construction and injection-molded TPU ribs."
+  },
+  {
+    id: "tom-ford-bannister-leather-sneaker",
+    brand: "Tom Ford",
+    productLine: "Bannister",
+    modelName: "Bannister Leather Sneaker",
+    sourceUrl: "https://www.tomfordfashion.com/bannister-sneaker/J1210T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      upperLeather: "Supple White French Calfskin",
+      soleType: "Flat rubber cupsole with gold logo",
+      closure: "Lace-up 6 eyelets with embossed gold TF logo",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Understated tennis sneaker cut from immaculate white calfskin with subtle gold-foil Tom Ford branding."
+  },
+  {
+    id: "tom-ford-cambridge-high-top-sneaker",
+    brand: "Tom Ford",
+    productLine: "Cambridge",
+    modelName: "Cambridge High-Top Sneaker",
+    sourceUrl: "https://www.tomfordfashion.com/cambridge-high-top-sneaker/J1225T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      upperLeather: "French Box Calfskin with Padded Collar",
+      soleType: "Vulcanized rubber sole with heel branding",
+      closure: "Lace-up high-top with perforated T logo",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "High-top iteration of the Cambridge trainer offering ankle support and perforated T branding."
+  },
+  {
+    id: "tom-ford-james-vintage-runner",
+    brand: "Tom Ford",
+    productLine: "James",
+    modelName: "James Vintage Runner",
+    sourceUrl: "https://www.tomfordfashion.com/james-runner/J1245T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      upperLeather: "Distressed Nylon and Suede Calfskin",
+      soleType: "Chunky retro wedge sole with contrast rubber tread",
+      closure: "Lace-up track silhouette",
+      originCountry: "Italy",
+      distressedFinish: true
+    },
+    reason: "Pre-distressed vintage runner featuring aged nylon, weathered suede panels, and flared heel spoiler."
+  },
+  {
+    id: "tom-ford-orford-suede-sneaker",
+    brand: "Tom Ford",
+    productLine: "Orford",
+    modelName: "Orford Suede Sneaker",
+    sourceUrl: "https://www.tomfordfashion.com/orford-suede-sneaker/J1265T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      upperLeather: "Soft Italian Velour Suede",
+      soleType: "Low-profile rubber sole",
+      closure: "Lace-up with tonal T side stitching",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Velvety suede court shoe detailed with discrete tonal T stitching on the quarter panels."
+  },
+  {
+    id: "tom-ford-city-low-top-sneaker",
+    brand: "Tom Ford",
+    productLine: "City",
+    modelName: "City Low-Top Sneaker",
+    sourceUrl: "https://www.tomfordfashion.com/city-sneaker/J1285T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      upperLeather: "Burnished Calfskin Leather",
+      soleType: "Stitched rubber cupsole",
+      closure: "Lace-up with T-shaped toe cap",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Sartorial sneaker combining burnished dress shoe calfskin with a casual cupsole foundation."
+  },
+  {
+    id: "tom-ford-tf-tennis-sneaker",
+    brand: "Tom Ford",
+    productLine: "Tennis",
+    modelName: "TF Tennis Sneaker",
+    sourceUrl: "https://www.tomfordfashion.com/tennis-sneaker/J1305T-LCL027.html",
+    sourceRegion: "US",
+    attrs: {
+      upperLeather: "Clean Nappa Leather",
+      soleType: "Flat rubber sole with gold embossed heel",
+      closure: "Lace-up with gold-foil Tom Ford lettering",
+      originCountry: "Italy",
+      distressedFinish: false
+    },
+    reason: "Clean white nappa tennis trainer highlighted by Tom Ford's gold embossed emblem on tongue and heel."
+  }
+];
+
+export function generateDataLifestyleSneakersTs(): string {
+  const parts: string[] = [
+    'import type { CensusManifestFile } from "../../../src/domain/coverage-targets";',
+    'import { makeEntry } from "./common";',
+    '',
+    'export const lifestyleSneakersCensus: CensusManifestFile = {',
+    '  $schema: "https://json-schema.org/draft/2020-12/schema",',
+    '  leafKey: "lifestyle-sneakers",',
+    '  displayName: "Luxury & Lifestyle Sneakers",',
+    '  censusDate: "2026-10-11",',
+    '  supplyExceptions: [],',
+    '  entries: [',
+  ];
+
+  let currentBrand = "";
+  let brandIndex = 0;
+
+  for (const item of allLifestyleSneakers) {
+    if (item.brand !== currentBrand) {
+      currentBrand = item.brand;
+      brandIndex++;
+      parts.push(`    // ${brandIndex}. ${currentBrand} (10 models)`);
+    }
+
+    parts.push("    makeEntry({");
+    parts.push(`      id: ${JSON.stringify(item.id)},`);
+    parts.push(`      brand: ${JSON.stringify(item.brand)},`);
+    if (item.productLine) {
+      parts.push(`      productLine: ${JSON.stringify(item.productLine)},`);
+    }
+    parts.push(`      modelName: ${JSON.stringify(item.modelName)},`);
+    parts.push(`      sourceUrl: ${JSON.stringify(item.sourceUrl)},`);
+    parts.push(`      sourceRegion: ${JSON.stringify(item.sourceRegion)},`);
+    if (item.variants) {
+      parts.push(`      variants: ${JSON.stringify(item.variants)},`);
+    }
+    parts.push("      attrs: {");
+    parts.push(`        upperLeather: ${JSON.stringify(item.attrs.upperLeather)},`);
+    parts.push(`        soleType: ${JSON.stringify(item.attrs.soleType)},`);
+    parts.push(`        closure: ${JSON.stringify(item.attrs.closure)},`);
+    parts.push(`        originCountry: ${JSON.stringify(item.attrs.originCountry)},`);
+    parts.push(`        distressedFinish: ${item.attrs.distressedFinish},`);
+    parts.push("      },");
+    parts.push(`      reason: ${JSON.stringify(item.reason)},`);
+    parts.push("    }),");
+  }
+
+  parts.push("  ],");
+  parts.push("};");
+  parts.push("");
+
+  return parts.join("\n");
+}
+
+const outputPath = path.resolve(process.cwd(), "scripts/census/wave4/data-lifestyle-sneakers.ts");
+const content = generateDataLifestyleSneakersTs();
+fs.writeFileSync(outputPath, content, "utf-8");
+console.log(`Successfully generated ${allLifestyleSneakers.length} lifestyle sneaker models to ${outputPath}`);

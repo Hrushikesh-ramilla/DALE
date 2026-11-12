@@ -35,6 +35,7 @@ test("independent devices share live group commitments and retain private custom
       .filter({ hasText: "65W USB-C Wall Charger" })
       .first();
     await expect(cardB).toContainText("1 of 2");
+    await cardB.getByRole("checkbox").check();
     await cardB.getByRole("button", { name: "Join this group" }).click();
     const cardA = pageA
       .locator(".group-card")

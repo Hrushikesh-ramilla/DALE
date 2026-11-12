@@ -19,6 +19,7 @@ import { ActionActivity } from "./action-activity";
 import { conversationActivity } from "./conversation-activity";
 import { confirmationCopy } from "./confirmation-copy";
 import { PhotoFinder } from "./photo-finder";
+import { ShoppingDecisionCard } from "./shopping-decision-card";
 
 export function DaleCopilotSidecar() {
   const c = useCopilot();
@@ -29,27 +30,59 @@ export function DaleCopilotSidecar() {
   const [input, setInput] = useState("");
   const [cartView, setCartView] = useState(false);
   const [photoView, setPhotoView] = useState(false);
+  const displayedError = c.error || (!c.isThinking && c.state?.turn?.status === "failed" ? c.state.turn.error || "This request did not finish. Your conversation remains saved." : "");
+  const draftOwner = c.state?.owner_id || null;
+  const restoredOwner = useRef<string | null>(null);
+  useEffect(() => {
+    let active = true;
+    queueMicrotask(() => {
+      if (!active) return;
+      let saved = "";
+      try { if (draftOwner) saved = localStorage.getItem(`dale:draft:${draftOwner}`) || ""; } catch { /* Storage may be unavailable. */ }
+      restoredOwner.current = draftOwner;
+      setInput(saved);
+    });
+    return () => { active = false; };
+  }, [draftOwner]);
+  useEffect(() => {
+    if (!draftOwner || restoredOwner.current !== draftOwner) return;
+    try { localStorage.setItem(`dale:draft:${draftOwner}`, input); } catch { /* Keep the in-memory draft. */ }
+  }, [draftOwner, input]);
   const feed = useRef<HTMLDivElement>(null);
   const historyHeight = useRef<number | null>(null);
   const followLatest = useRef(true);
-  const lastMessage = useRef<string | undefined>(undefined);
+  const lastScrolledMsg = useRef<string | null>(null);
   useEffect(() => {
     const element = feed.current;
     if (!element) return;
     const latest = c.messages.at(-1);
+    if (!latest) return;
     if (historyHeight.current !== null) {
       element.scrollTop = element.scrollHeight - historyHeight.current;
       historyHeight.current = null;
-    } else if (
-      followLatest.current ||
-      (latest?.sender === "user" && latest.id !== lastMessage.current)
-    ) {
-      element.scrollTop = element.scrollHeight;
+      return;
     }
-    lastMessage.current = latest?.id;
-  }, [c.messages, c.isThinking, c.error]);
+    if (latest.sender === "user") {
+      element.scrollTop = element.scrollHeight;
+      lastScrolledMsg.current = null;
+    } else if (latest.sender === "assistant") {
+      const msgEl = element.querySelector(
+        `[data-message-id="${latest.id}"]`,
+      ) as HTMLElement | null;
+      if (msgEl) {
+        if (lastScrolledMsg.current !== latest.id || (!c.isThinking && followLatest.current)) {
+          lastScrolledMsg.current = latest.id;
+          msgEl.scrollIntoView({ behavior: "smooth", block: "start" });
+          if (!c.isThinking) {
+            followLatest.current = false;
+          }
+        }
+      }
+    }
+  }, [c.messages, c.isThinking]);
   const send = () => {
     if (!(input || c.voiceDraft).trim() || c.isThinking) return;
+    followLatest.current = true;
     const text = input || c.voiceDraft;
     setPhotoView(false);
     setInput("");
@@ -147,7 +180,7 @@ export function DaleCopilotSidecar() {
         className="dale-messages-feed"
         tabIndex={0}
         data-lenis-prevent="true"
-        style={{ overflowY: "auto", flex: 1, minHeight: 0 }}
+        style={{ overflowY: "auto", flex: 1, minHeight: 0, position: "relative", scrollPaddingTop: 16 }}
       >
         {photoView ? (
           <PhotoFinder
@@ -259,6 +292,7 @@ export function DaleCopilotSidecar() {
                 <ActionActivity receipts={activity.get(m.id)} />
               </Fragment>
             ))}
+            {c.state?.decision && <ShoppingDecisionCard key={c.state.decision.id} decision={c.state.decision} refresh={c.refresh} close={() => c.toggleOpen(false)} />}
             {c.state?.catalog_match_status === "not_found" && (
               <p className="dale-task-status">
                 No matching product was found under the requested identity and
@@ -327,10 +361,12 @@ export function DaleCopilotSidecar() {
               ))}
           </>
         )}
-        {c.isThinking && (
+        {c.isThinking && c.messages.at(-1)?.sender === "user" && (
           <div role="status" className="dale-task-status">
             <span className="dale-task-dot" aria-hidden="true" />
-            <span>{c.activity || "DALE is working…"}</span>
+            <span>
+              {c.activity || "DALE is searching the collection…"}
+            </span>
             <button type="button" onClick={c.cancel}>
               Stop
             </button>
@@ -373,7 +409,7 @@ export function DaleCopilotSidecar() {
         {!c.isThinking &&
           ["running", "failed"].includes(c.state?.turn?.status || "") && (
             <section className="dale-action-card">
-              <p>The server still records an active turn.</p>
+              <p>{c.state?.turn?.status === "failed" ? "This request did not finish. Your request is saved." : "The server still records an active turn."}</p>
               <button type="button" onClick={() => void c.refresh()}>
                 Refresh turn status
               </button>{" "}
@@ -388,10 +424,15 @@ export function DaleCopilotSidecar() {
         {c.voiceDraft && (
           <p>Review the transcript in the input before sending.</p>
         )}
-        {c.error && (
-          <p role="alert" className="dale-task-status dale-task-error">
-            {c.error}
-          </p>
+        {displayedError && (
+          <div className="dale-task-status dale-task-error">
+            <p role="alert">{displayedError}</p>
+            {c.messages.findLast(message => message.sender === "user") && <button type="button" onClick={() => {
+              setInput(c.messages.findLast(message => message.sender === "user")!.text);
+              requestAnimationFrame(() => document.querySelector<HTMLInputElement>('[aria-label="Message DALE"]')?.focus());
+            }}>Edit last request</button>}
+            <p>Your submitted request and saved history remain available. Retry or resume when the provider is available.</p>
+          </div>
         )}
       </div>
       <form

@@ -8420,6 +8420,506 @@
       "modelName": "Barathea Wool Satin Peak Lapel Gala Overcoat",
       "skuVariant": "Midnight Black with Silk Duchesse Lapels",
       "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-COATS-DIOR-OFFICER-COLLAR-BARATHEA-COAT",
+      "name": "Dior Men Officer Collar Tailored Barathea Coat",
+      "category": "clothing",
+      "leafType": "coats",
+      "description": "Dior Men Officer Collar Tailored Barathea Coat. Haute couture tailoring from the Christian Dior Parisian atelier featuring architectural drape and signature couture finishing.",
+      "price": 420000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Dior",
+        "Model: Officer Collar Barathea Coat",
+        "Line: Christian Dior Tailoring",
+        "Generation / Release: Current",
+        "brand: dior",
+        "modelName: officer collar barathea coat",
+        "material: Black Barathea Virgin Wool / CD Icon Buttons",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 10,
+      "color": "Black Barathea Virgin Wool / CD Icon Buttons",
+      "source": "https://www.dior.com/en_us/fashion/mens-fashion/ready-to-wear/coats",
+      "familyId": "dior:officer-collar-barathea-coat",
+      "provenance": "manufacturer_evidence",
+      "brand": "Dior",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "FR verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cashmere and wool",
+        "brand": "dior",
+        "modelName": "officer collar barathea coat",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/coats-prod-coats-dior-men-dior-men-tailored-cashmere-overcoat.webp",
+        "source": "https://www.dior.com",
+        "alt": "Dior Men Officer Collar Tailored Barathea Coat official photography",
+        "attribution": "Product photography © Christian Dior",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Officer Collar Barathea Coat",
+      "skuVariant": "Black Barathea Virgin Wool / CD Icon Buttons",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-COATS-DIOR-DIOR-OBLIQUE-CASHMERE-COAT",
+      "name": "Dior Oblique Cashmere Double-Breasted Long Coat",
+      "category": "clothing",
+      "leafType": "coats",
+      "description": "Dior Oblique Cashmere Double-Breasted Long Coat. Haute couture tailoring from the Christian Dior Parisian atelier featuring architectural drape and signature couture finishing.",
+      "price": 580000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Dior",
+        "Model: Dior Oblique Cashmere Coat",
+        "Line: Christian Dior Tailoring",
+        "Generation / Release: Current",
+        "brand: dior",
+        "modelName: dior oblique cashmere coat",
+        "material: Beige Double-Faced Cashmere / Tone-on-Tone Oblique",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 10,
+      "color": "Beige Double-Faced Cashmere / Tone-on-Tone Oblique",
+      "source": "https://www.dior.com/en_us/fashion/mens-fashion/ready-to-wear/coats",
+      "familyId": "dior:dior-oblique-cashmere-coat",
+      "provenance": "manufacturer_evidence",
+      "brand": "Dior",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "FR verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cashmere and wool",
+        "brand": "dior",
+        "modelName": "dior oblique cashmere coat",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/coats-dior-men-tailleur-oblique-belted-cotton-gabardine-trench.webp",
+        "source": "https://www.dior.com",
+        "alt": "Dior Oblique Cashmere Double-Breasted Long Coat official photography",
+        "attribution": "Product photography © Christian Dior",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Dior Oblique Cashmere Coat",
+      "skuVariant": "Beige Double-Faced Cashmere / Tone-on-Tone Oblique",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-COATS-DIOR-CHESTERFIELD-WOOL-COAT",
+      "name": "Dior Tailored Chesterfield Coat in Virgin Wool",
+      "category": "clothing",
+      "leafType": "coats",
+      "description": "Dior Tailored Chesterfield Coat in Virgin Wool. Haute couture tailoring from the Christian Dior Parisian atelier featuring architectural drape and signature couture finishing.",
+      "price": 390000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Dior",
+        "Model: Chesterfield Wool Coat",
+        "Line: Christian Dior Tailoring",
+        "Generation / Release: Current",
+        "brand: dior",
+        "modelName: chesterfield wool coat",
+        "material: Navy Blue Compact Virgin Wool / Velvet Collar",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 10,
+      "color": "Navy Blue Compact Virgin Wool / Velvet Collar",
+      "source": "https://www.dior.com/en_us/fashion/mens-fashion/ready-to-wear/coats",
+      "familyId": "dior:chesterfield-wool-coat",
+      "provenance": "manufacturer_evidence",
+      "brand": "Dior",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "FR verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cashmere and wool",
+        "brand": "dior",
+        "modelName": "chesterfield wool coat",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/coats-dior-men-single-breasted-tailored-cashmere-overcoat.webp",
+        "source": "https://www.dior.com",
+        "alt": "Dior Tailored Chesterfield Coat in Virgin Wool official photography",
+        "attribution": "Product photography © Christian Dior",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Chesterfield Wool Coat",
+      "skuVariant": "Navy Blue Compact Virgin Wool / Velvet Collar",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-COATS-DIOR-BELTED-TECHNICAL-TRENCH-COAT",
+      "name": "Dior Belted Trench Coat in Technical Cotton Twill",
+      "category": "clothing",
+      "leafType": "coats",
+      "description": "Dior Belted Trench Coat in Technical Cotton Twill. Haute couture tailoring from the Christian Dior Parisian atelier featuring architectural drape and signature couture finishing.",
+      "price": 340000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Dior",
+        "Model: Belted Technical Trench Coat",
+        "Line: Christian Dior Tailoring",
+        "Generation / Release: Current",
+        "brand: dior",
+        "modelName: belted technical trench coat",
+        "material: Beige Technical Cotton / CD Buckle Belt",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 10,
+      "color": "Beige Technical Cotton / CD Buckle Belt",
+      "source": "https://www.dior.com/en_us/fashion/mens-fashion/ready-to-wear/coats",
+      "familyId": "dior:belted-technical-trench-coat",
+      "provenance": "manufacturer_evidence",
+      "brand": "Dior",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "FR verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cashmere and wool",
+        "brand": "dior",
+        "modelName": "belted technical trench coat",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/coats-dior-men-technical-cotton-twill-fly-front-car-coat.webp",
+        "source": "https://www.dior.com",
+        "alt": "Dior Belted Trench Coat in Technical Cotton Twill official photography",
+        "attribution": "Product photography © Christian Dior",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Belted Technical Trench Coat",
+      "skuVariant": "Beige Technical Cotton / CD Buckle Belt",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-COATS-DIOR-CD-ICON-REVERSIBLE-OVERCOAT",
+      "name": "Dior CD Icon Reversible Cashmere Overcoat",
+      "category": "clothing",
+      "leafType": "coats",
+      "description": "Dior CD Icon Reversible Cashmere Overcoat. Haute couture tailoring from the Christian Dior Parisian atelier featuring architectural drape and signature couture finishing.",
+      "price": 540000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Dior",
+        "Model: CD Icon Reversible Overcoat",
+        "Line: Christian Dior Tailoring",
+        "Generation / Release: Current",
+        "brand: dior",
+        "modelName: cd icon reversible overcoat",
+        "material: Charcoal Gray & Heather Gray Cashmere",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 10,
+      "color": "Charcoal Gray & Heather Gray Cashmere",
+      "source": "https://www.dior.com/en_us/fashion/mens-fashion/ready-to-wear/coats",
+      "familyId": "dior:cd-icon-reversible-overcoat",
+      "provenance": "manufacturer_evidence",
+      "brand": "Dior",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "FR verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cashmere and wool",
+        "brand": "dior",
+        "modelName": "cd icon reversible overcoat",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/coats-dior-men-oversized-flannel-double-breasted-overcoat.webp",
+        "source": "https://www.dior.com",
+        "alt": "Dior CD Icon Reversible Cashmere Overcoat official photography",
+        "attribution": "Product photography © Christian Dior",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "CD Icon Reversible Overcoat",
+      "skuVariant": "Charcoal Gray & Heather Gray Cashmere",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-COATS-DIOR-HEAVYWEIGHT-WOOL-PEACOAT",
+      "name": "Dior Peacoat in Heavyweight Wool Melange",
+      "category": "clothing",
+      "leafType": "coats",
+      "description": "Dior Peacoat in Heavyweight Wool Melange. Haute couture tailoring from the Christian Dior Parisian atelier featuring architectural drape and signature couture finishing.",
+      "price": 360000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Dior",
+        "Model: Heavyweight Wool Peacoat",
+        "Line: Christian Dior Tailoring",
+        "Generation / Release: Current",
+        "brand: dior",
+        "modelName: heavyweight wool peacoat",
+        "material: Dark Navy Wool / Engraved Anchor Buttons",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 10,
+      "color": "Dark Navy Wool / Engraved Anchor Buttons",
+      "source": "https://www.dior.com/en_us/fashion/mens-fashion/ready-to-wear/coats",
+      "familyId": "dior:heavyweight-wool-peacoat",
+      "provenance": "manufacturer_evidence",
+      "brand": "Dior",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "FR verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cashmere and wool",
+        "brand": "dior",
+        "modelName": "heavyweight wool peacoat",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/coats-dior-men-double-breasted-wool-twill-peacoat.webp",
+        "source": "https://www.dior.com",
+        "alt": "Dior Peacoat in Heavyweight Wool Melange official photography",
+        "attribution": "Product photography © Christian Dior",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Heavyweight Wool Peacoat",
+      "skuVariant": "Dark Navy Wool / Engraved Anchor Buttons",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-COATS-DIOR-CANNAGE-QUILTED-CAR-COAT",
+      "name": "Dior Cannage Quilted Technical Car Coat",
+      "category": "clothing",
+      "leafType": "coats",
+      "description": "Dior Cannage Quilted Technical Car Coat. Haute couture tailoring from the Christian Dior Parisian atelier featuring architectural drape and signature couture finishing.",
+      "price": 310000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Dior",
+        "Model: Cannage Quilted Car Coat",
+        "Line: Christian Dior Tailoring",
+        "Generation / Release: Current",
+        "brand: dior",
+        "modelName: cannage quilted car coat",
+        "material: Black Technical Taffeta / Goose Down Padding",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 10,
+      "color": "Black Technical Taffeta / Goose Down Padding",
+      "source": "https://www.dior.com/en_us/fashion/mens-fashion/ready-to-wear/coats",
+      "familyId": "dior:cannage-quilted-car-coat",
+      "provenance": "manufacturer_evidence",
+      "brand": "Dior",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "FR verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cashmere and wool",
+        "brand": "dior",
+        "modelName": "cannage quilted car coat",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/coats-dior-men-cannage-motif-quilted-down-technical-parka.webp",
+        "source": "https://www.dior.com",
+        "alt": "Dior Cannage Quilted Technical Car Coat official photography",
+        "attribution": "Product photography © Christian Dior",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Cannage Quilted Car Coat",
+      "skuVariant": "Black Technical Taffeta / Goose Down Padding",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-COATS-DIOR-STAND-COLLAR-RAGLAN-COAT",
+      "name": "Dior Stand-Collar Raglan Sleeve Cashmere Coat",
+      "category": "clothing",
+      "leafType": "coats",
+      "description": "Dior Stand-Collar Raglan Sleeve Cashmere Coat. Haute couture tailoring from the Christian Dior Parisian atelier featuring architectural drape and signature couture finishing.",
+      "price": 460000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Dior",
+        "Model: Stand-Collar Raglan Coat",
+        "Line: Christian Dior Tailoring",
+        "Generation / Release: Current",
+        "brand: dior",
+        "modelName: stand-collar raglan coat",
+        "material: Camel Hair & Cashmere Blend",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 10,
+      "color": "Camel Hair & Cashmere Blend",
+      "source": "https://www.dior.com/en_us/fashion/mens-fashion/ready-to-wear/coats",
+      "familyId": "dior:stand-collar-raglan-coat",
+      "provenance": "manufacturer_evidence",
+      "brand": "Dior",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "FR verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cashmere and wool",
+        "brand": "dior",
+        "modelName": "stand-collar raglan coat",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/coats-dior-men-cashmere-wool-car-coat-with-detachable-shearling-collar.webp",
+        "source": "https://www.dior.com",
+        "alt": "Dior Stand-Collar Raglan Sleeve Cashmere Coat official photography",
+        "attribution": "Product photography © Christian Dior",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Stand-Collar Raglan Coat",
+      "skuVariant": "Camel Hair & Cashmere Blend",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-COATS-DIOR-WOOL-SILK-EVENING-COAT",
+      "name": "Dior Single-Breasted Wool & Silk Evening Coat",
+      "category": "clothing",
+      "leafType": "coats",
+      "description": "Dior Single-Breasted Wool & Silk Evening Coat. Haute couture tailoring from the Christian Dior Parisian atelier featuring architectural drape and signature couture finishing.",
+      "price": 480000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Dior",
+        "Model: Wool Silk Evening Coat",
+        "Line: Christian Dior Tailoring",
+        "Generation / Release: Current",
+        "brand: dior",
+        "modelName: wool silk evening coat",
+        "material: Black Super 130s Wool with Silk Peak Lapels",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 10,
+      "color": "Black Super 130s Wool with Silk Peak Lapels",
+      "source": "https://www.dior.com/en_us/fashion/mens-fashion/ready-to-wear/coats",
+      "familyId": "dior:wool-silk-evening-coat",
+      "provenance": "manufacturer_evidence",
+      "brand": "Dior",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "FR verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cashmere and wool",
+        "brand": "dior",
+        "modelName": "wool silk evening coat",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/coats-dior-men-satin-collared-grain-de-poudre-evening-overcoat.webp",
+        "source": "https://www.dior.com",
+        "alt": "Dior Single-Breasted Wool & Silk Evening Coat official photography",
+        "attribution": "Product photography © Christian Dior",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Wool Silk Evening Coat",
+      "skuVariant": "Black Super 130s Wool with Silk Peak Lapels",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-COATS-DIOR-DOUBLE-FACED-DUFFEL-COAT",
+      "name": "Dior Hooded Duffel Coat in Double-Faced Cashmere",
+      "category": "clothing",
+      "leafType": "coats",
+      "description": "Dior Hooded Duffel Coat in Double-Faced Cashmere. Haute couture tailoring from the Christian Dior Parisian atelier featuring architectural drape and signature couture finishing.",
+      "price": 510000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Dior",
+        "Model: Double-Faced Duffel Coat",
+        "Line: Christian Dior Tailoring",
+        "Generation / Release: Current",
+        "brand: dior",
+        "modelName: double-faced duffel coat",
+        "material: Navy Double-Faced Cashmere / Buffalo Horn Toggles",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 10,
+      "color": "Navy Double-Faced Cashmere / Buffalo Horn Toggles",
+      "source": "https://www.dior.com/en_us/fashion/mens-fashion/ready-to-wear/coats",
+      "familyId": "dior:double-faced-duffel-coat",
+      "provenance": "manufacturer_evidence",
+      "brand": "Dior",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "FR verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "cashmere and wool",
+        "brand": "dior",
+        "modelName": "double-faced duffel coat",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/coats-dior-men-double-faced-wool-duffle-coat-with-cd-metal-buckles.webp",
+        "source": "https://www.dior.com",
+        "alt": "Dior Hooded Duffel Coat in Double-Faced Cashmere official photography",
+        "attribution": "Product photography © Christian Dior",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Double-Faced Duffel Coat",
+      "skuVariant": "Navy Double-Faced Cashmere / Buffalo Horn Toggles",
+      "deviceCompatibility": []
     }
   ]
 }

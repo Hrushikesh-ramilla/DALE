@@ -18,7 +18,8 @@
     "www.ralphlauren.com",
     "www.ysl.com",
     "www.tomford.com",
-    "www.zegna.com"
+    "www.zegna.com",
+    "www.loropiana.com"
   ],
   "products": [
     {
@@ -8419,6 +8420,506 @@
       "leafType": "trousers",
       "modelName": "High-Rise Extended-Tab Cavalry Twill Trousers",
       "skuVariant": "Dark Vicuna",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-TROUSERS-LORO-PIANA-PLEATED-SUPER-150S-WOOL-TROUSERS",
+      "name": "Loro Piana Regular-Fit Pleated Super 150s Wool Trousers",
+      "category": "clothing",
+      "leafType": "trousers",
+      "description": "Loro Piana Regular-Fit Pleated Super 150s Wool Trousers. Meticulously tailored in Italy from Loro Piana's proprietary noble fibers with sartorial split waistband.",
+      "price": 115000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Pleated Super 150s Wool Trousers",
+        "Line: Sartorial Trousers",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: pleated super 150s wool trousers",
+        "material: Tasmanian® Super 150s Wool Navy Blue",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 14,
+      "color": "Tasmanian® Super 150s Wool Navy Blue",
+      "source": "https://www.loropiana.com/en/men/clothing/trousers",
+      "familyId": "loropiana:pleated-super-150s-wool-trousers",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "wool and cashmere",
+        "brand": "loro piana",
+        "modelName": "pleated super 150s wool trousers",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/trousers-brioni-brunico-double-pleated-cashmere-wool-flannel-trousers.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Regular-Fit Pleated Super 150s Wool Trousers official luxury photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Pleated Super 150s Wool Trousers",
+      "skuVariant": "Tasmanian® Super 150s Wool Navy Blue",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-TROUSERS-LORO-PIANA-COTTON-CASHMERE-TWILL-CHINOS",
+      "name": "Loro Piana Cotton & Cashmere Twill Chinos",
+      "category": "clothing",
+      "leafType": "trousers",
+      "description": "Loro Piana Cotton & Cashmere Twill Chinos. Meticulously tailored in Italy from Loro Piana's proprietary noble fibers with sartorial split waistband.",
+      "price": 98000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Cotton Cashmere Twill Chinos",
+        "Line: Sartorial Trousers",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: cotton cashmere twill chinos",
+        "material: Stretch Cotton & Cashmere Blend Sandstone",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 14,
+      "color": "Stretch Cotton & Cashmere Blend Sandstone",
+      "source": "https://www.loropiana.com/en/men/clothing/trousers",
+      "familyId": "loropiana:cotton-cashmere-twill-chinos",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "wool and cashmere",
+        "brand": "loro piana",
+        "modelName": "cotton cashmere twill chinos",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/trousers-brioni-plume-ultra-light-flat-front-tropical-wool-trousers.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Cotton & Cashmere Twill Chinos official luxury photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Cotton Cashmere Twill Chinos",
+      "skuVariant": "Stretch Cotton & Cashmere Blend Sandstone",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-TROUSERS-LORO-PIANA-LINEN-SILK-STRAIGHT-LEG-TROUSERS",
+      "name": "Loro Piana Linen & Silk Straight-Leg Summer Trousers",
+      "category": "clothing",
+      "leafType": "trousers",
+      "description": "Loro Piana Linen & Silk Straight-Leg Summer Trousers. Meticulously tailored in Italy from Loro Piana's proprietary noble fibers with sartorial split waistband.",
+      "price": 105000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Linen Silk Straight-Leg Trousers",
+        "Line: Sartorial Trousers",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: linen silk straight-leg trousers",
+        "material: Unwashed Pure Linen & Silk Optical White",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 14,
+      "color": "Unwashed Pure Linen & Silk Optical White",
+      "source": "https://www.loropiana.com/en/men/clothing/trousers",
+      "familyId": "loropiana:linen-silk-straight-leg-trousers",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "wool and cashmere",
+        "brand": "loro piana",
+        "modelName": "linen silk straight-leg trousers",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/trousers-canali-pure-irish-linen-relaxed-tailored-summer-trousers.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Linen & Silk Straight-Leg Summer Trousers official luxury photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Linen Silk Straight-Leg Trousers",
+      "skuVariant": "Unwashed Pure Linen & Silk Optical White",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-TROUSERS-LORO-PIANA-MERINO-GABARDINE-FLAT-FRONT-TROUSERS",
+      "name": "Loro Piana Flat-Front Fine Merino Wool Gabardine Trousers",
+      "category": "clothing",
+      "leafType": "trousers",
+      "description": "Loro Piana Flat-Front Fine Merino Wool Gabardine Trousers. Meticulously tailored in Italy from Loro Piana's proprietary noble fibers with sartorial split waistband.",
+      "price": 110000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Merino Gabardine Flat-Front Trousers",
+        "Line: Sartorial Trousers",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: merino gabardine flat-front trousers",
+        "material: Worsted Merino Gabardine Charcoal Gray",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 14,
+      "color": "Worsted Merino Gabardine Charcoal Gray",
+      "source": "https://www.loropiana.com/en/men/clothing/trousers",
+      "familyId": "loropiana:merino-gabardine-flat-front-trousers",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "wool and cashmere",
+        "brand": "loro piana",
+        "modelName": "merino gabardine flat-front trousers",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/trousers-canali-slim-fit-super-130s-tropical-wool-trousers.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Flat-Front Fine Merino Wool Gabardine Trousers official luxury photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Merino Gabardine Flat-Front Trousers",
+      "skuVariant": "Worsted Merino Gabardine Charcoal Gray",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-TROUSERS-LORO-PIANA-CASHMERE-FLANNEL-PLEATED-TROUSERS",
+      "name": "Loro Piana Cashmere Flannel Sartorial Pleated Trousers",
+      "category": "clothing",
+      "leafType": "trousers",
+      "description": "Loro Piana Cashmere Flannel Sartorial Pleated Trousers. Meticulously tailored in Italy from Loro Piana's proprietary noble fibers with sartorial split waistband.",
+      "price": 185000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Cashmere Flannel Pleated Trousers",
+        "Line: Sartorial Trousers",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: cashmere flannel pleated trousers",
+        "material: Double-Faced Cashmere Flannel Oatmeal Melange",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 14,
+      "color": "Double-Faced Cashmere Flannel Oatmeal Melange",
+      "source": "https://www.loropiana.com/en/men/clothing/trousers",
+      "familyId": "loropiana:cashmere-flannel-pleated-trousers",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "wool and cashmere",
+        "brand": "loro piana",
+        "modelName": "cashmere flannel pleated trousers",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/trousers-brioni-essential-side-tab-wool-barathea-evening-trousers.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Cashmere Flannel Sartorial Pleated Trousers official luxury photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Cashmere Flannel Pleated Trousers",
+      "skuVariant": "Double-Faced Cashmere Flannel Oatmeal Melange",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-TROUSERS-LORO-PIANA-TRAVELLER-STRETCH-CHINOS",
+      "name": "Loro Piana Traveller Stretch-Cotton Chinos",
+      "category": "clothing",
+      "leafType": "trousers",
+      "description": "Loro Piana Traveller Stretch-Cotton Chinos. Meticulously tailored in Italy from Loro Piana's proprietary noble fibers with sartorial split waistband.",
+      "price": 92000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Traveller Stretch Chinos",
+        "Line: Sartorial Trousers",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: traveller stretch chinos",
+        "material: Treated Rain System® Stretch Cotton Olive",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 14,
+      "color": "Treated Rain System® Stretch Cotton Olive",
+      "source": "https://www.loropiana.com/en/men/clothing/trousers",
+      "familyId": "loropiana:traveller-stretch-chinos",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "wool and cashmere",
+        "brand": "loro piana",
+        "modelName": "traveller stretch chinos",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/trousers-brioni-heavy-cavalry-twill-high-rise-tailored-trousers.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Traveller Stretch-Cotton Chinos official luxury photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Traveller Stretch Chinos",
+      "skuVariant": "Treated Rain System® Stretch Cotton Olive",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-TROUSERS-LORO-PIANA-DRAWSTRING-CASHMERE-LOUNGE-TROUSERS",
+      "name": "Loro Piana Drawstring-Waist Cashmere Lounge Trousers",
+      "category": "clothing",
+      "leafType": "trousers",
+      "description": "Loro Piana Drawstring-Waist Cashmere Lounge Trousers. Meticulously tailored in Italy from Loro Piana's proprietary noble fibers with sartorial split waistband.",
+      "price": 210000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Drawstring Cashmere Lounge Trousers",
+        "Line: Sartorial Trousers",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: drawstring cashmere lounge trousers",
+        "material: Pure Baby Cashmere Medium Heather Gray",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 14,
+      "color": "Pure Baby Cashmere Medium Heather Gray",
+      "source": "https://www.loropiana.com/en/men/clothing/trousers",
+      "familyId": "loropiana:drawstring-cashmere-lounge-trousers",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "wool and cashmere",
+        "brand": "loro piana",
+        "modelName": "drawstring cashmere lounge trousers",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/trousers-brioni-leisure-elasticated-waist-silk-and-cashmere-trousers.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Drawstring-Waist Cashmere Lounge Trousers official luxury photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Drawstring Cashmere Lounge Trousers",
+      "skuVariant": "Pure Baby Cashmere Medium Heather Gray",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-TROUSERS-LORO-PIANA-SILK-WOOL-BARATHEA-EVENING-TROUSERS",
+      "name": "Loro Piana Evening Silk & Wool Barathea Dress Trousers",
+      "category": "clothing",
+      "leafType": "trousers",
+      "description": "Loro Piana Evening Silk & Wool Barathea Dress Trousers. Meticulously tailored in Italy from Loro Piana's proprietary noble fibers with sartorial split waistband.",
+      "price": 145000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Silk Wool Barathea Evening Trousers",
+        "Line: Sartorial Trousers",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: silk wool barathea evening trousers",
+        "material: Midnight Black Wool & Silk Satin Side Stripes",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 14,
+      "color": "Midnight Black Wool & Silk Satin Side Stripes",
+      "source": "https://www.loropiana.com/en/men/clothing/trousers",
+      "familyId": "loropiana:silk-wool-barathea-evening-trousers",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "wool and cashmere",
+        "brand": "loro piana",
+        "modelName": "silk wool barathea evening trousers",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/trousers-canali-high-rise-side-adjuster-wool-barathea-trousers.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Evening Silk & Wool Barathea Dress Trousers official luxury photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Silk Wool Barathea Evening Trousers",
+      "skuVariant": "Midnight Black Wool & Silk Satin Side Stripes",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-TROUSERS-LORO-PIANA-COTTON-PIQU--CASUAL-TROUSERS",
+      "name": "Loro Piana Slim-Fit Cotton Piqué Casual Trousers",
+      "category": "clothing",
+      "leafType": "trousers",
+      "description": "Loro Piana Slim-Fit Cotton Piqué Casual Trousers. Meticulously tailored in Italy from Loro Piana's proprietary noble fibers with sartorial split waistband.",
+      "price": 89000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Cotton Piqué Casual Trousers",
+        "Line: Sartorial Trousers",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: cotton piqué casual trousers",
+        "material: Textured Cotton Piqué Khaki",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 14,
+      "color": "Textured Cotton Piqué Khaki",
+      "source": "https://www.loropiana.com/en/men/clothing/trousers",
+      "familyId": "loropiana:cotton-piqu--casual-trousers",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "wool and cashmere",
+        "brand": "loro piana",
+        "modelName": "cotton piqué casual trousers",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/trousers-canali-flat-front-stretch-cotton-twill-sartorial-chinos.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Slim-Fit Cotton Piqué Casual Trousers official luxury photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Cotton Piqué Casual Trousers",
+      "skuVariant": "Textured Cotton Piqué Khaki",
+      "deviceCompatibility": []
+    },
+    {
+      "id": "PROD-TROUSERS-LORO-PIANA-GLEN-CHECK-WOOL-DOUBLE-PLEATED-TROUSERS",
+      "name": "Loro Piana Double-Pleated Glen Check Wool Trousers",
+      "category": "clothing",
+      "leafType": "trousers",
+      "description": "Loro Piana Double-Pleated Glen Check Wool Trousers. Meticulously tailored in Italy from Loro Piana's proprietary noble fibers with sartorial split waistband.",
+      "price": 128000,
+      "compatibleModels": [],
+      "specs": [
+        "Brand: Loro Piana",
+        "Model: Glen Check Wool Double-Pleated Trousers",
+        "Line: Sartorial Trousers",
+        "Generation / Release: Current",
+        "brand: loro piana",
+        "modelName: glen check wool double-pleated trousers",
+        "material: Saxon Superfine Wool Glen Urquhart Plaid",
+        "origin: Italy"
+      ],
+      "sponsored": false,
+      "stock": 14,
+      "color": "Saxon Superfine Wool Glen Urquhart Plaid",
+      "source": "https://www.loropiana.com/en/men/clothing/trousers",
+      "familyId": "loropiana:glen-check-wool-double-pleated-trousers",
+      "provenance": "manufacturer_evidence",
+      "brand": "Loro Piana",
+      "offerKind": "sandbox",
+      "evidence": {
+        "checkedAt": "2026-10-15",
+        "region": "IT verified documentation",
+        "missing": [],
+        "review": "specifications"
+      },
+      "attributes": {
+        "material": "wool and cashmere",
+        "brand": "loro piana",
+        "modelName": "glen check wool double-pleated trousers",
+        "origin": "italy"
+      },
+      "media": {
+        "url": "/images/products/trousers-canali-exclusive-double-pleated-wool-silk-linen-trousers.webp",
+        "source": "https://www.loropiana.com",
+        "alt": "Loro Piana Double-Pleated Glen Check Wool Trousers official luxury photography",
+        "attribution": "Product photography © Loro Piana",
+        "reviewedAt": "2026-10-15",
+        "usage": "catalog_packshot"
+      },
+      "modelName": "Glen Check Wool Double-Pleated Trousers",
+      "skuVariant": "Saxon Superfine Wool Glen Urquhart Plaid",
       "deviceCompatibility": []
     }
   ]

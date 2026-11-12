@@ -6,6 +6,7 @@ import type { PurchaseBrief } from "../domain/brief";
 import type { AgentRun } from "../domain/agent";
 import type { ProviderObservation } from "../domain/provider-adjustments";
 import type { GroupPolicy, GroupTerms } from "../domain/group-policy";
+import type { DiscoveryBrief, ShoppingDecision } from "../domain/shopping-decision";
 export type { Evidence } from "../domain/claims";
 export type Role = "buyer" | "seller" | "reviewer";
 export type Actor = { workspaceId: string; userId: string; role: Role };
@@ -21,6 +22,7 @@ export type Order = {
   quote: StoredQuote;
   status:
     | "checkout_pending"
+    | "unpaid_cod"
     | "paid"
     | "shipped"
     | "delivered"
@@ -29,6 +31,9 @@ export type Order = {
     | "refunded"
     | "replacement"
     | "canceled";
+  paymentMethod?: "paypal" | "cod";
+  paymentStatus?: "unpaid" | "paid" | "refunded";
+  codReservationExpiresAt?: string;
   createdAt: string;
   deliveredAt?: string;
   fulfillmentIssue?: { kind: "canceled" | "late"; reason: string; at: string };
@@ -62,6 +67,10 @@ export type Group = {
   checkoutExpiresAt?: string;
   amount?: number;
   terms?: GroupTerms;
+  productDigest?: string;
+  qualifiedMemberCount?: number;
+  releasedMembers?: { buyerId: string; at: string; reason: string }[];
+  memberRequirements?: Record<string, { briefVersion: number | null; discoveryVersion: number | null }>;
 };
 export type ReturnCase = {
   id: string;
@@ -128,6 +137,8 @@ export type Workspace = {
   invite: string;
   quotes: StoredQuote[];
   briefs?: PurchaseBrief[];
+  discoveryBriefs?: DiscoveryBrief[];
+  shoppingDecisions?: ShoppingDecision[];
   conversations?: {
     buyerId: string;
     turns: { role: "user" | "assistant"; text: string; at: string }[];

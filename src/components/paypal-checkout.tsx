@@ -12,6 +12,7 @@ declare global {
       Buttons: (options: {
         createOrder: () => Promise<string>;
         onApprove: () => Promise<void>;
+        onCancel?: () => void;
         onError: () => void;
         style: { layout: string; color: string; label: string };
       }) => Buttons;
@@ -56,6 +57,10 @@ export function PayPalCheckout({
           );
         }
       },
+      onCancel: () =>
+        onError(
+          "PayPal window closed. Checkout was canceled and no payment was captured.",
+        ),
       onError: () =>
         onError(
           "PayPal checkout did not finish. Check your order for confirmed payment status.",

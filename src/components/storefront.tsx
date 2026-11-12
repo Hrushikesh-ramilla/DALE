@@ -12,7 +12,9 @@ import {
   lifestyleProfile,
 } from "@/domain/departments";
 import { CustomerEntry } from "./customer-entry";
+import { BuyingCircles } from "./buying-circles";
 import {
+  Suspense,
   useCallback,
   useEffect,
   useRef,
@@ -28,7 +30,6 @@ import {
   ArrowRight,
   Check,
   ChevronRight,
-  Copy,
   CreditCard,
   HeartHandshake,
   MessageSquare,
@@ -120,6 +121,7 @@ type Modal =
   | { kind: "login" }
   | { kind: "product"; product: Product }
   | { kind: "quote"; quote: StoredQuote; product: Product }
+  | { kind: "receipt"; order: Order }
   | { kind: "return"; order: Order }
   | {
       kind: "evidence";
@@ -158,7 +160,11 @@ async function api<T>(
     body: body === undefined ? undefined : JSON.stringify(body),
   });
   const data = await response.json();
-  if (!response.ok) throw new Error(data.error || "Please try again.");
+  if (!response.ok) {
+    throw Object.assign(new Error(data.error || "Please try again."), {
+      status: response.status,
+    });
+  }
   return data;
 }
 function AgentSurface({
@@ -460,8 +466,12 @@ export default function Storefront({ children }: { children?: ReactNode }) {
           setSession((previous) =>
             previous?.actor.userId === data.actor.userId ? data : previous,
           );
-      } catch {
-        /* Retain the screen during transient connectivity loss. */
+      } catch (failure) {
+        if (!stopped && failure instanceof Error && "status" in failure && failure.status === 401) {
+          setSession(null);
+          setError("Your session expired. Please sign in again.");
+          window.dispatchEvent(new CustomEvent("dale:session-changed"));
+        }
       } finally {
         active = false;
       }
@@ -615,6 +625,9 @@ export default function Storefront({ children }: { children?: ReactNode }) {
             ? lifestyleProfile
             : model,
         groupId,
+        ...(new URLSearchParams(window.location.search).get("decision")
+          ? { decisionId: new URLSearchParams(window.location.search).get("decision") }
+          : {}),
       })) as StoredQuote;
       setModal({ kind: "quote", quote, product });
     });
@@ -802,6 +815,12 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                   </button>
                 ),
               )}
+              <a href="/search">Search</a>
+              <a href="/cart">Cart</a>
+              <a href="/wishlist">Wishlist</a>
+              {(!session || (isBuyer && !session.demo)) && (
+                <button onClick={startShopping}>Account / sign in</button>
+              )}
             </nav>
           </CompactNavigation>
           <div className="header-actions">
@@ -881,21 +900,6 @@ export default function Storefront({ children }: { children?: ReactNode }) {
           data-ready={!restoring ? "true" : "false"}
         >
           {session?.demo && <DemoToolbar session={session} />}
-          <div className="mode-strip">
-            <span className="status-dot" /> Test storefront ·{" "}
-            {!session
-              ? "Sign in to see active adapters"
-              : session.modes.payments === "sandbox"
-                ? "PayPal sandbox"
-                : "Simulated payments"}{" "}
-            ·{" "}
-            {!session
-              ? "Analysis mode awaiting session"
-              : session.modes.ai === "live"
-                ? "Live assisted analysis"
-                : "Deterministic analysis fixtures"}{" "}
-            · Simulated shipping
-          </div>
           {error && (
             <div role="alert" className="feedback error">
               {error}
@@ -1502,14 +1506,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                                         startShopping();
                                         return;
                                       }
-                                      void run(async () => {
-                                        await action({
-                                          action: "join_group",
-                                          productId: product.id,
-                                          model,
-                                        });
-                                        setTab("groups");
-                                      });
+                                      router.push(`/groups?product=${encodeURIComponent(product.id)}&model=${encodeURIComponent(model)}`);
                                     }}
                                   >
                                     <Users size={18} />
@@ -1580,135 +1577,10 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                 title="A little buying power."
                 detail="Each group shows its approved shopper threshold, discount and deadline. Each shopper pays independently. Your locked price stays yours."
               />
-              {session?.demo && (
-                <div className="invite-panel">
-                  <p>
-                    For this private demo, switch Demo persona to Second shopper
-                    to join the same deal. Each shopper keeps a separate order
-                    and approval.
-                  </p>
-                </div>
-              )}
-              {session?.actor.role === "buyer" && !session.demo && (
-                <button
-                  data-agent-control="Open account sign in"
-                  className="button secondary"
-                  onClick={() => {
-                    setRole("buyer");
-                    setModal({ kind: "login" });
-                  }}
-                >
-                  Account / sign in
-                </button>
-              )}
-              {session?.invite && !session.demo && (
-                <div className="invite-panel">
-                  <div>
-                    <strong>Invite someone to your group</strong>
-                    <p className="muted">
-                      Use a separate browser session. Your order and payment
-                      remain private.
-                    </p>
-                  </div>
-                  <button
-                    className="button secondary"
-                    onClick={() =>
-                      void run(async () => {
-                        await navigator.clipboard.writeText(
-                          `${window.location.origin}/groups`,
-                        );
-                        setNotice(
-                          "Store link copied. Open it on another device, start shopping and commit to the same product group.",
-                        );
-                      })
-                    }
-                  >
-                    <Copy size={16} /> Copy invitation
-                  </button>
-                </div>
-              )}
-              {session?.groups.length ? (
-                <div className="group-grid">
-                  {session.groups.map((group) => {
-                    const product = resolveProduct(group.productId);
-                    return (
-                      <article className="group-card" key={group.id}>
-                        <ProductArt product={product} compact />
-                        <div>
-                          <span className="eyebrow">
-                            {group.status === "ready"
-                              ? "DISCOUNT UNLOCKED"
-                              : "BUILDING A GROUP"}
-                          </span>
-                          <h3>{product.name}</h3>
-                          <p>
-                            {deviceLabel(group.model)} · {group.memberCount} of{" "}
-                            {group.terms.minimumMembers}
-                            commitments
-                          </p>
-                          <div className="progress">
-                            <span
-                              style={{
-                                width: `${Math.min(100, (group.memberCount / group.terms.minimumMembers) * 100)}%`,
-                              }}
-                            />
-                          </div>
-                          <p className="muted">
-                            {group.status === "ready"
-                              ? `Your price: ${formatMoney(group.amount!)}. Valid until ${new Date(group.checkoutExpiresAt!).toLocaleTimeString()}.`
-                              : `${group.terms.discountPercent}% off if the threshold is met. No payment is taken until you approve checkout.`}
-                          </p>
-                          {group.joined && group.status === "ready" ? (
-                            <button
-                              className="button primary"
-                              onClick={() => void choose(product, group.id)}
-                              disabled={busy}
-                            >
-                              Review group purchase <ArrowRight size={15} />
-                            </button>
-                          ) : group.joined ? (
-                            <button
-                              className="button secondary"
-                              onClick={() =>
-                                void run(async () => {
-                                  await action({
-                                    action: "leave_group",
-                                    groupId: group.id,
-                                  });
-                                })
-                              }
-                              disabled={busy}
-                            >
-                              Leave commitment
-                            </button>
-                          ) : (
-                            <button
-                              className="button secondary"
-                              onClick={() =>
-                                void run(async () => {
-                                  await action({
-                                    action: "join_group",
-                                    productId: group.productId,
-                                    model: group.model,
-                                  });
-                                })
-                              }
-                              disabled={busy || !isBuyer}
-                            >
-                              Join this group
-                            </button>
-                          )}
-                        </div>
-                      </article>
-                    );
-                  })}
-                </div>
-              ) : (
-                <Empty
-                  title="Your first group starts with you"
-                  detail="Choose the people icon on a product to create a group deal."
-                />
-              )}
+              {session?.actor.role === "buyer" && !session.demo && <button className="button secondary" onClick={startShopping}>Account / sign in</button>}
+              <Suspense fallback={<p>Loading buying circles…</p>}>
+                <BuyingCircles owner={isBuyer ? sessionOwner : null} onUpdated={refresh} choose={choose} startShopping={startShopping}/>
+              </Suspense>
             </>
           )}
           {tab === "orders" && (
@@ -1771,9 +1643,62 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                           </p>
                         </div>
                         <span className="status-chip">
-                          {order.status.replaceAll("_", " ")}
+                          {order.status === "unpaid_cod"
+                            ? "Order confirmed — payment due on delivery"
+                            : order.status.replaceAll("_", " ")}
                         </span>
                       </div>
+                      <div className="order-details-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "0.5rem", margin: "0.5rem 0", fontSize: "0.85rem" }}>
+                        <div>
+                          <span className="muted">Payment method: </span>
+                          <strong>{order.paymentMethod === "cod" ? "Cash on delivery" : order.quote.provider === "sandbox" ? "PayPal Sandbox" : "Card (Simulated)"}</strong>
+                        </div>
+                        <div>
+                          <span className="muted">Pricing terms: </span>
+                          <strong>{order.quote.groupId ? "Qualified Group Circle (-10%)" : "Individual purchase"}</strong>
+                        </div>
+                        <div>
+                          <span className="muted">Payment status: </span>
+                          <strong>
+                            {order.paymentMethod === "cod"
+                              ? "Unpaid — due on delivery"
+                              : order.captureId
+                              ? "Paid"
+                              : order.status === "checkout_pending"
+                              ? "Awaiting authorization"
+                              : order.status === "canceled"
+                              ? "Canceled"
+                              : order.status}
+                          </strong>
+                        </div>
+                        <div>
+                          <span className="muted">Fulfillment: </span>
+                          <strong>
+                            {order.status === "shipped"
+                              ? "Simulated dispatch"
+                              : order.status === "delivered"
+                              ? "Simulated delivery"
+                              : "Simulated fulfillment"}
+                          </strong>
+                        </div>
+                      </div>
+                      {order.quote.discovery?.decisionId && (
+                        <p className="muted" style={{ fontSize: "0.8rem", margin: "0.25rem 0" }}>
+                          Linked AI decision: <code>{order.quote.discovery.decisionId.slice(0, 8)}</code>
+                        </p>
+                      )}
+                      {session?.cases?.some((c) => c.orderId === order.id) && (
+                        <p className="muted" style={{ fontSize: "0.8rem", margin: "0.25rem 0" }}>
+                          Support case:{" "}
+                          <button
+                            type="button"
+                            className="link-button"
+                            onClick={() => setTab("support")}
+                          >
+                            {session.cases.find((c) => c.orderId === order.id)?.id.slice(0, 8)} ({session.cases.find((c) => c.orderId === order.id)?.status})
+                          </button>
+                        </p>
+                      )}
                       {order.quote.deliveryBy && (
                         <p className="muted">
                           Recorded delivery promise:{" "}
@@ -1820,11 +1745,34 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                       />
                       <div className="order-footer">
                         <small className="muted">
-                          {order.captureId
+                          {order.paymentMethod === "cod"
+                            ? "Cash on delivery: Payment due upon physical delivery. No electronic transaction."
+                            : order.captureId
                             ? `Payment reference: ${order.captureId}`
                             : "No captured payment"}
                         </small>
                         <div className="inline-actions">
+                          {isBuyer && order.status === "unpaid_cod" && (
+                            <button
+                              data-agent-control={`Cancel COD order ${order.id}`}
+                              className="button secondary small"
+                              disabled={busy}
+                              onClick={() =>
+                                void run(async () => {
+                                  await action({
+                                    action: "cancel_order",
+                                    orderId: order.id,
+                                    reason: "Customer canceled COD order before delivery",
+                                  });
+                                  setNotice(
+                                    "Your order was canceled and your reservation was released.",
+                                  );
+                                })
+                              }
+                            >
+                              Cancel order
+                            </button>
+                          )}
                           {isBuyer && order.status === "checkout_pending" && (
                             <button
                               data-agent-control={`Review checkout for order ${order.id}`}
@@ -1842,20 +1790,27 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                               Continue checkout
                             </button>
                           )}
+                          <button
+                            data-agent-control={`View receipt for order ${order.id}`}
+                            className="button secondary small"
+                            onClick={() => setModal({ kind: "receipt", order })}
+                          >
+                            View receipt
+                          </button>
                           {isBuyer &&
                             order.captureId &&
                             !["refunded", "canceled"].includes(
                               order.status,
                             ) && (
                               <button
-                                data-agent-control={`Open help for order ${order.id}`}
+                                data-agent-control={`Report a problem for order ${order.id}`}
                                 className="button secondary small"
                                 onClick={() => {
                                   if (order.returnId) setTab("support");
                                   else setModal({ kind: "return", order });
                                 }}
                               >
-                                Get help / return
+                                {order.returnId ? "View support request" : "Report a problem"}
                               </button>
                             )}
                           {session?.actor.role === "seller" &&
@@ -2055,6 +2010,82 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                       {item.eligibility && (
                         <p className="muted">{item.eligibility.explanation}</p>
                       )}
+                      <div className="timeline" data-testid="case-timeline">
+                        <div>
+                          <span className="timeline-dot" />
+                          <p>
+                            Request received: {item.reason.replaceAll("_", " ")} ({item.request})
+                          </p>
+                          <small>{new Date(item.createdAt).toLocaleString()}</small>
+                        </div>
+                        {item.evidence.map((entry) => (
+                          <div key={entry.id}>
+                            <span className="timeline-dot" />
+                            <p>
+                              Evidence received: {entry.checkpoint.replaceAll("_", " ")} ·{" "}
+                              {entry.assetKey
+                                ? entry.mime?.startsWith("video/")
+                                  ? "video"
+                                  : "photo"
+                                : "note"}
+                              {entry.note ? ` — "${entry.note.slice(0, 80)}${entry.note.length > 80 ? "…" : ""}"` : ""}
+                            </p>
+                            <small>
+                              {new Date(entry.provenance?.serverReceivedAt || entry.createdAt).toLocaleString()}
+                            </small>
+                          </div>
+                        ))}
+                        {item.analysis && (
+                          <div>
+                            <span className="timeline-dot" />
+                            <p>
+                              {item.analysis.mode === "unavailable"
+                                ? "AI analysis unavailable · Case submitted for human review"
+                                : item.analysis.mode === "rules"
+                                  ? `Protocol review completed: ${item.analysis.outcome}`
+                                  : `AI-assisted review: ${item.analysis.outcome}`}
+                            </p>
+                            <small>
+                              {item.analysis.versions?.analyzedAt
+                                ? new Date(item.analysis.versions.analyzedAt).toLocaleString()
+                                : new Date().toLocaleString()}
+                            </small>
+                          </div>
+                        )}
+                        <div>
+                          <span className="timeline-dot" />
+                          <p>
+                            {item.resolutionNote
+                              ? `Review completed: ${item.resolutionNote}`
+                              : item.status === "resolved"
+                                ? "Case resolved"
+                                : "Awaiting merchant review"}
+                          </p>
+                          <small>
+                            {item.resolutionNote
+                              ? "Resolution recorded"
+                              : `Response due ${new Date(item.deadlineAt).toLocaleString()}`}
+                          </small>
+                        </div>
+                        {item.returnShipment && (
+                          <div>
+                            <span className="timeline-dot" />
+                            <p>
+                              Return arrangement: {item.returnShipment.status.replaceAll("_", " ")}
+                            </p>
+                            <small>
+                              {new Date(item.returnShipment.authorizedAt).toLocaleString()}
+                            </small>
+                          </div>
+                        )}
+                        {item.appeal && (
+                          <div>
+                            <span className="timeline-dot" />
+                            <p>Appeal submitted: {item.appeal}</p>
+                            <small>Awaiting review</small>
+                          </div>
+                        )}
+                      </div>
                       {item.returnShipment && (
                         <div className="analysis-panel">
                           <h4>
@@ -2298,7 +2329,9 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                             })
                           }
                         >
-                          Review evidence
+                          {item.analysis?.mode === "unavailable"
+                            ? "Retry evidence review"
+                            : "Review evidence"}
                         </button>
                         {session.actor.role === "reviewer" &&
                           ![
@@ -2599,8 +2632,7 @@ export default function Storefront({ children }: { children?: ReactNode }) {
             <div className="footer-bottom">
               <span>DALE / The considered collection</span>
               <span>
-                Test storefront · Manufacturer-linked catalogue + isolated
-                fixtures · Simulated shipping · USD
+                DALE Luxury Storefront · Curated House Collections · Guaranteed Provenance · USD
               </span>
             </div>
           </div>
@@ -2725,7 +2757,12 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                     {role === "buyer" ? (
                       <CustomerEntry
                         onComplete={async () => {
-                          window.location.assign("/shop");
+                          if (pathname === "/groups") {
+                            sessionRestoreRevision.current++;
+                            restoreSession(await api<Session>("/api/session"));
+                            setModal(null);
+                            setRestoring(false);
+                          } else window.location.assign("/shop");
                         }}
                       />
                     ) : (
@@ -2876,7 +2913,78 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                       {new Date(modal.quote.expiresAt).toLocaleTimeString()}.
                       Recipient: {modal.quote.payee}.
                     </p>
-                    {session?.modes.payments === "sandbox" &&
+                    <div className="payment-method-choices" role="radiogroup" aria-label="Choose payment method" style={{ margin: "1rem 0", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                      <label style={{ display: "flex", alignItems: "center", gap: "0.5rem", cursor: "pointer" }}>
+                        <input
+                          type="radio"
+                          name="paymentMethod"
+                          value="paypal"
+                          checked={modal.quote.paymentMethod !== "cod"}
+                          onChange={() =>
+                            void run(async () => {
+                              if (modal.quote.paymentMethod !== "cod") return;
+                              const nextQuote = (await action({
+                                action: "quote",
+                                productId: modal.quote.productId,
+                                model: modal.quote.model,
+                                groupId: modal.quote.groupId,
+                                decisionId: modal.quote.discovery?.decisionId,
+                                paymentMethod: "paypal",
+                              })) as StoredQuote;
+                              setModal({ ...modal, quote: nextQuote });
+                            })
+                          }
+                        />
+                        <span>{session?.modes.payments === "sandbox" ? "PayPal Sandbox" : "Simulated electronic card"}</span>
+                      </label>
+                      <label style={{ display: "flex", alignItems: "center", gap: "0.5rem", cursor: "pointer" }}>
+                        <input
+                          type="radio"
+                          name="paymentMethod"
+                          value="cod"
+                          checked={modal.quote.paymentMethod === "cod"}
+                          onChange={() =>
+                            void run(async () => {
+                              if (modal.quote.paymentMethod === "cod") return;
+                              const nextQuote = (await action({
+                                action: "quote",
+                                productId: modal.quote.productId,
+                                model: modal.quote.model,
+                                groupId: modal.quote.groupId,
+                                decisionId: modal.quote.discovery?.decisionId,
+                                paymentMethod: "cod",
+                              })) as StoredQuote;
+                              setModal({ ...modal, quote: nextQuote });
+                            })
+                          }
+                        />
+                        <span>Cash on delivery (payment due upon delivery)</span>
+                      </label>
+                    </div>
+                    {modal.quote.paymentMethod === "cod" ? (
+                      <>
+                        <div className="fixture-note">
+                          Order confirmed — payment due on delivery. No online advance charge.
+                        </div>
+                        <button
+                          className="button primary full"
+                          disabled={busy}
+                          onClick={() =>
+                            void run(async () => {
+                              await action({
+                                action: "cod_checkout",
+                                quoteId: modal.quote.id,
+                                fingerprint: modal.quote.fingerprint,
+                              });
+                              finishCheckout();
+                              setNotice("Order confirmed — payment due on delivery.");
+                            })
+                          }
+                        >
+                          Confirm Cash on Delivery Order
+                        </button>
+                      </>
+                    ) : session?.modes.payments === "sandbox" &&
                     session.paypalClientId ? (
                       <PayPalCheckout
                         clientId={session.paypalClientId}
@@ -3446,6 +3554,78 @@ export default function Storefront({ children }: { children?: ReactNode }) {
                         <p>{scam.nextStep}</p>
                       </div>
                     )}
+                  </>
+                )}
+                {modal.kind === "receipt" && (
+                  <>
+                    <div className="modal-icon">
+                      <Package />
+                    </div>
+                    <h2 id="modal-title">Order Receipt</h2>
+                    <p className="eyebrow">ORDER {modal.order.id.slice(0, 8).toUpperCase()}</p>
+                    <div className="receipt-details" style={{ display: "flex", flexDirection: "column", gap: "0.75rem", margin: "1rem 0" }}>
+                      <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid var(--border)", paddingBottom: "0.5rem" }}>
+                        <span>Item</span>
+                        <strong>{resolveProduct(modal.order.quote.productId).name} ({deviceLabel(modal.order.quote.model)})</strong>
+                      </div>
+                      <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid var(--border)", paddingBottom: "0.5rem" }}>
+                        <span>Pricing terms</span>
+                        <span>{modal.order.quote.groupId ? "Qualified Group Circle (-10% savings)" : "Individual purchase"}</span>
+                      </div>
+                      <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid var(--border)", paddingBottom: "0.5rem" }}>
+                        <span>Total amount</span>
+                        <strong>{modal.order.replacementOf ? "No charge (Replacement)" : formatMoney(modal.order.quote.amount)} {modal.order.quote.currency}</strong>
+                      </div>
+                      <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid var(--border)", paddingBottom: "0.5rem" }}>
+                        <span>Payment method</span>
+                        <strong>{modal.order.paymentMethod === "cod" ? "Cash on delivery" : modal.order.quote.provider === "sandbox" ? "PayPal Sandbox" : "Card (Simulated)"}</strong>
+                      </div>
+                      <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid var(--border)", paddingBottom: "0.5rem" }}>
+                        <span>Payment reference</span>
+                        <code style={{ fontSize: "0.85rem" }}>
+                          {modal.order.paymentMethod === "cod"
+                            ? "Unpaid — due upon physical delivery"
+                            : modal.order.captureId
+                            ? modal.order.captureId
+                            : "No captured payment"}
+                        </code>
+                      </div>
+                      <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid var(--border)", paddingBottom: "0.5rem" }}>
+                        <span>Payee / Merchant</span>
+                        <span>{modal.order.quote.payee}</span>
+                      </div>
+                      <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid var(--border)", paddingBottom: "0.5rem" }}>
+                        <span>Date placed</span>
+                        <span>{new Date(modal.order.createdAt).toLocaleString()}</span>
+                      </div>
+                      <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid var(--border)", paddingBottom: "0.5rem" }}>
+                        <span>Fulfillment status</span>
+                        <span>{modal.order.status.replaceAll("_", " ")} (Simulated fulfillment)</span>
+                      </div>
+                      {modal.order.quote.deliveryBy && (
+                        <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid var(--border)", paddingBottom: "0.5rem" }}>
+                          <span>Estimated delivery target</span>
+                          <span>{new Date(modal.order.quote.deliveryBy).toLocaleDateString()} (Simulated timeline)</span>
+                        </div>
+                      )}
+                      {modal.order.quote.discovery?.decisionId && (
+                        <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid var(--border)", paddingBottom: "0.5rem" }}>
+                          <span>Linked AI decision</span>
+                          <code>{modal.order.quote.discovery.decisionId.slice(0, 8)}</code>
+                        </div>
+                      )}
+                      {session?.cases?.some((c) => c.orderId === modal.order.id) && (
+                        <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid var(--border)", paddingBottom: "0.5rem" }}>
+                          <span>Linked support case</span>
+                          <span>
+                            {session.cases.find((c) => c.orderId === modal.order.id)?.id.slice(0, 8)} ({session.cases.find((c) => c.orderId === modal.order.id)?.status})
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                    <button className="button primary full" onClick={() => setModal(null)}>
+                      Close receipt
+                    </button>
                   </>
                 )}
                 {error && (

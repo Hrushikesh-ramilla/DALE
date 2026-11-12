@@ -6,6 +6,7 @@ const config: NextConfig = {
   poweredByHeader: false,
   agentRules: false,
   images: {
+    unoptimized: true,
     formats: ["image/avif", "image/webp"],
     maximumRedirects: 2,
     maximumResponseBody: 10_000_000,
@@ -78,6 +79,56 @@ const config: NextConfig = {
       {
         source: "/demo",
         destination: "/",
+        permanent: false,
+      },
+      {
+        source: "/watches",
+        destination: "/category/watches",
+        permanent: false,
+      },
+      {
+        source: "/watch",
+        destination: "/category/watches",
+        permanent: false,
+      },
+      {
+        source: "/category/watch",
+        destination: "/category/watches",
+        permanent: false,
+      },
+      {
+        source: "/fragrances",
+        destination: "/category/fragrance",
+        permanent: false,
+      },
+      {
+        source: "/fragrance",
+        destination: "/category/fragrance",
+        permanent: false,
+      },
+      {
+        source: "/category/fragrances",
+        destination: "/category/fragrance",
+        permanent: false,
+      },
+      {
+        source: "/perfumes",
+        destination: "/category/fragrance",
+        permanent: false,
+      },
+      {
+        source: "/perfume",
+        destination: "/category/fragrance",
+        permanent: false,
+      },
+      {
+        source: "/category/perfumes",
+        destination: "/category/fragrance",
+        permanent: false,
+      },
+      {
+        source: "/category/perfume",
+        destination: "/category/fragrance",
         permanent: false,
       },
     ];

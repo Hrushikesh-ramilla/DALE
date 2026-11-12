@@ -28,7 +28,10 @@ import {
   type Operation,
   type Order,
   type Workspace,
+  type StoredQuote,
 } from "./state";
+import { bindDecisionQuote, assertDecisionQuote, productDigest } from "./concierge/decisions";
+import { activeStock, assertGroupQuote, assertMemberRequirements, releaseCommitment, currentGroupProduct } from "./group-lifecycle";
 import {
   capturePayment,
   createPayment,
@@ -73,43 +76,10 @@ function reviewer(actor: Actor) {
     throw new Error("Reviewer authorization is required.");
 }
 function workspaceAiMode(state: Workspace) {
-  return state.adapterModes?.ai === "fixture" ? "fixture" : aiMode();
+  return state.adapterModes?.ai || aiMode();
 }
 function event(order: Order, text: string) {
   order.events.push({ at: new Date().toISOString(), text });
-}
-function activeStock(
-  state: Workspace,
-  productId: string,
-  replacingGroup?: string,
-  replacingBuyer?: string,
-) {
-  const orders = state.orders.filter(
-    (order) =>
-      order.quote.productId === productId &&
-      !["refunded", "canceled"].includes(order.status),
-  );
-  const reservations = state.groups
-    .filter(
-      (group) =>
-        group.productId === productId &&
-        group.status === "ready" &&
-        Date.parse(group.checkoutExpiresAt || group.expiresAt) > Date.now(),
-    )
-    .reduce(
-      (count, group) =>
-        count +
-        group.members.filter(
-          (member) =>
-            !(group.id === replacingGroup && member === replacingBuyer) &&
-            !orders.some(
-              (order) =>
-                order.quote.groupId === group.id && order.buyerId === member,
-            ),
-        ).length,
-      0,
-    );
-  return orders.length + reservations;
 }
 export async function snapshot(actor: Actor) {
   const state = await getWorkspace(actor.workspaceId);
@@ -197,6 +167,8 @@ export async function snapshot(actor: Actor) {
           catalogReferences.find((p) => p.id === g.productId)!,
         ),
       members: undefined,
+      releasedMembers: undefined,
+      memberRequirements: undefined,
       memberCount: g.members.length,
       joined: g.members.includes(actor.userId),
     })),
@@ -290,6 +262,7 @@ function assertCurrentQuote(
   state: Workspace,
   quote: import("./state").StoredQuote,
 ) {
+  assertGroupQuote(state, quote);
   if (quote.invalidatedAt)
     throw new Error(
       "Your shopping brief changed. Review a fresh quote before payment.",
@@ -416,6 +389,8 @@ export async function makeQuote(
   productId: string,
   model: string,
   groupId?: string,
+  decisionId?: string,
+  paymentMethod?: "paypal" | "cod",
 ) {
   buyer(actor);
   const product = await getStoredProduct(productId, undefined, true);
@@ -427,7 +402,7 @@ export async function makeQuote(
     throw new Error(
       "This product is not confirmed compatible with your device.",
     );
-  return mutateWorkspace(actor.workspaceId, (state) => {
+  return mutateWorkspace(actor.workspaceId, async (state, sql) => {
     const mode = state.adapterModes?.payments || paymentMode();
     const brief = state.briefs?.find((item) => item.buyerId === actor.userId);
     if (realModels.includes(model)) {
@@ -485,6 +460,15 @@ export async function makeQuote(
         new Date(group.checkoutExpiresAt).getTime() <= Date.now()
       )
         throw new Error("The group offer is not available for this purchase.");
+      assertMemberRequirements(state, group, actor.userId);
+      if (
+        paymentMethod === "cod" &&
+        group.terms &&
+        group.terms.codCommitmentsEligible === false
+      )
+        throw new Error(
+          "Cash on delivery is not eligible under these approved group terms.",
+        );
       if (
         state.orders.some(
           (order) =>
@@ -503,13 +487,15 @@ export async function makeQuote(
       throw new Error(
         "This item exceeds your approved budget. Update the brief first.",
       );
-    const quote = {
+    const quote: StoredQuote = {
       id: randomUUID(),
       buyerId: actor.userId,
       productId,
       model,
       payee:
-        mode === "sandbox"
+        paymentMethod === "cod"
+          ? "cod-store"
+          : mode === "sandbox"
           ? process.env.PAYPAL_MERCHANT_ID || ""
           : "fixture-store",
       amount,
@@ -522,11 +508,13 @@ export async function makeQuote(
         : "merchant-policy-v1",
       groupId,
       fingerprint: "",
-      provider: mode,
+      provider: paymentMethod === "cod" ? undefined : mode,
+      paymentMethod,
       briefVersion: brief?.version,
     };
-    if (!quote.payee)
+    if (paymentMethod !== "cod" && !quote.payee)
       throw new Error("PayPal merchant configuration is missing.");
+    if (decisionId) await bindDecisionQuote(state, actor, quote, decisionId, sql);
     quote.fingerprint = quoteFingerprint(quote);
     state.quotes.push(quote);
     audit(state, actor, "quote.created", quote.id);
@@ -539,17 +527,28 @@ export async function joinGroup(
   model: string,
   expectedBriefVersion?: number,
   expectedPolicyVersion?: number,
+  guard?: { circleId?: string; productDigest?: string; discoveryVersion?: number | null; briefVersion?: number | null },
 ) {
   buyer(actor);
-  const product = await getStoredProduct(productId, undefined, true);
+  let product = await getStoredProduct(productId, undefined, true);
   if (product.comparisonOnly)
     throw new Error(
       "This comparison-only record has no verified purchasable variant.",
     );
   if (!productFits(product, model))
     throw new Error("The group product must fit your device.");
-  return mutateWorkspace(actor.workspaceId, (state) => {
-    const available = state.groups.find(
+  return mutateWorkspace(actor.workspaceId, async (state, sql) => {
+    await sql.query("SELECT id FROM catalog_products WHERE id=$1 FOR SHARE", [productId]);
+    product = await currentGroupProduct(productId, sql);
+    if (product.comparisonOnly || !productFits(product, model)) throw new Error("This exact group variant is no longer eligible.");
+    if (guard?.productDigest && guard.productDigest !== productDigest(product)) throw new Error("The exact product offer changed. Refresh the circle before committing.");
+    const discovery = state.discoveryBriefs?.find(b => b.buyerId === actor.userId);
+    if (guard?.briefVersion !== undefined && (state.briefs?.find(b => b.buyerId === actor.userId)?.version || null) !== guard.briefVersion) throw new Error("Your saved shopping brief changed. Refresh the circle before committing.");
+    if (guard?.discoveryVersion !== undefined && (discovery?.version || null) !== guard.discoveryVersion) throw new Error("Your discovery requirements changed. Refresh the circle before committing.");
+    const target = guard?.circleId ? state.groups.find(g => g.id === guard.circleId) : undefined;
+    if (guard?.circleId && (!target || target.productId !== productId || target.model !== model || target.status === "expired" || Date.parse(target.checkoutExpiresAt || target.expiresAt) <= Date.now() || (target.status === "ready" && !target.members.includes(actor.userId)))) throw new Error("This exact circle is not available to join. Review another offer.");
+    if (target?.productDigest && target.status === "forming" && target.productDigest !== productDigest(product)) throw new Error("This circle product offer changed. Review a fresh circle.");
+    const available = target || state.groups.find(
       (g) =>
         g.productId === productId &&
         g.model === model &&
@@ -560,6 +559,9 @@ export async function joinGroup(
     const terms =
       available?.terms ||
       groupTerms(available ? undefined : state.groupPolicy, product);
+    if (available?.status === "forming" && available.productDigest && available.productDigest !== productDigest(product)) throw new Error("This circle product offer changed. Review a fresh circle.");
+    if (discovery && ((discovery.input.constraints.max_price !== null && terms.amount > discovery.input.constraints.max_price) || discovery.input.unknown_requirements.length)) throw new Error("This group exceeds or has not resolved your saved discovery requirements.");
+    if (discovery && !state.shoppingDecisions?.findLast(d => d.buyerId === actor.userId && d.version === discovery.version)?.offers.some(o => o.product.id === productId && o.productDigest === productDigest(product))) throw new Error("This exact group variant does not match your saved discovery decision. Review fresh requirements first.");
     if (terms.minimumMembers > product.stock)
       throw new Error(
         "There is not enough stock for the approved group threshold.",
@@ -623,7 +625,7 @@ export async function joinGroup(
         new Date(g.checkoutExpiresAt || g.expiresAt).getTime() > Date.now(),
     );
     if (previous) return previous.id;
-    let group = state.groups.find(
+    let group = target || state.groups.find(
       (g) =>
         g.productId === productId &&
         g.model === model &&
@@ -642,15 +644,20 @@ export async function joinGroup(
             (state.groupPolicy || defaultGroupPolicy).formingMinutes * 60000,
         ).toISOString(),
         terms,
+        productDigest: productDigest(product),
       };
       state.groups.push(group);
     }
     group.members.push(actor.userId);
+    group.memberRequirements ??= {};
+    group.memberRequirements[actor.userId] = { briefVersion: savedBrief?.version || null, discoveryVersion: discovery?.version || null };
     group.terms ??= terms;
     if (group.members.length >= group.terms.minimumMembers) {
+      for (const member of group.members) assertMemberRequirements(state, group, member);
       if (activeStock(state, productId) + group.members.length > product.stock)
         throw new Error("There is not enough stock for this group.");
       group.status = "ready";
+      group.qualifiedMemberCount = group.members.length;
       group.amount = group.terms.amount;
       group.checkoutExpiresAt = new Date(
         Date.now() + group.terms.checkoutMinutes * 60000,
@@ -692,15 +699,11 @@ export async function updateGroupPolicy(
 }
 export async function leaveGroup(actor: Actor, groupId: string) {
   buyer(actor);
-  return mutateWorkspace(actor.workspaceId, (state) => {
-    const group = state.groups.find(
-      (g) => g.id === groupId && g.members.includes(actor.userId),
-    );
-    if (!group || group.status !== "forming")
-      throw new Error(
-        "This group is finalized. You can decline checkout without being charged.",
-      );
-    group.members = group.members.filter((id) => id !== actor.userId);
+  return mutateWorkspace(actor.workspaceId, state => {
+    const group = state.groups.find(g => g.id === groupId);
+    if (!group) throw new Error("Circle not found.");
+    if (!group.members.includes(actor.userId)) return;
+    releaseCommitment(state, group, actor.userId, group.status === "forming" ? "left_before_readiness" : "declined_checkout");
     audit(state, actor, "group.left", group.id);
   });
 }
@@ -708,6 +711,7 @@ export async function checkout(
   actor: Actor,
   quoteId: string,
   fingerprint: string,
+  paymentMethod?: "paypal" | "cod",
 ) {
   buyer(actor);
   const prepared = await mutateWorkspace(
@@ -717,7 +721,12 @@ export async function checkout(
         (q) => q.id === quoteId && q.buyerId === actor.userId,
       );
       if (!quote) throw new Error("Quote not found");
+      const effectiveMethod = paymentMethod || quote.paymentMethod || "paypal";
+      if (quote.paymentMethod && paymentMethod && quote.paymentMethod !== paymentMethod) {
+        throw new Error("Payment method changed. Your approval is required again with a fresh quote.");
+      }
       assertCurrentQuote(state, quote);
+      await assertDecisionQuote(state, actor, quote, sql);
       checkPurchase(quote, fingerprint, quote);
       const existing = state.orders.find((o) => o.quote.id === quoteId);
       if (existing)
@@ -739,6 +748,12 @@ export async function checkout(
         throw new Error(
           "Your group purchase already exists. Continue it from your orders.",
         );
+      if (quote.groupId && effectiveMethod === "cod") {
+        const group = state.groups.find((g) => g.id === quote.groupId);
+        if (group?.terms && group.terms.codCommitmentsEligible === false) {
+          throw new Error("Cash on delivery is not eligible under these approved group terms.");
+        }
+      }
       if (
         activeStock(state, quote.productId, quote.groupId, actor.userId) >=
         (await getStoredProduct(quote.productId, sql, true)).stock
@@ -746,11 +761,46 @@ export async function checkout(
         throw new Error(
           "The last item was reserved. Please review another option.",
         );
+      if (effectiveMethod === "cod") {
+        const codReservationExpiresAt = quote.deliveryBy || new Date(Date.now() + 72 * 3600000).toISOString();
+        const order: Order = {
+          id: randomUUID(),
+          buyerId: actor.userId,
+          quote,
+          status: "unpaid_cod",
+          paymentMethod: "cod",
+          paymentStatus: "unpaid",
+          codReservationExpiresAt,
+          createdAt: new Date().toISOString(),
+          refundedAmount: 0,
+          dispatchEvidence: [],
+          events: [
+            {
+              at: new Date().toISOString(),
+              text: "Order confirmed — payment due on delivery.",
+            },
+          ],
+        };
+        const operation: Operation = {
+          id: randomUUID(),
+          orderId: order.id,
+          kind: "create",
+          state: "succeeded",
+          amount: quote.amount,
+          createdAt: new Date().toISOString(),
+        };
+        state.orders.push(order);
+        state.operations.push(operation);
+        audit(state, actor, "checkout.cod_confirmed", order.id);
+        return { order, operation };
+      }
       const order: Order = {
         id: randomUUID(),
         buyerId: actor.userId,
         quote,
         status: "checkout_pending",
+        paymentMethod: "paypal",
+        paymentStatus: "unpaid",
         createdAt: new Date().toISOString(),
         refundedAmount: 0,
         dispatchEvidence: [],
@@ -771,6 +821,9 @@ export async function checkout(
       return { order, operation };
     },
   );
+  if (prepared.order.paymentMethod === "cod" || prepared.order.status === "unpaid_cod") {
+    return prepared.order;
+  }
   if (prepared.order.providerOrderId) return prepared.order;
   try {
     const result = await createPayment(
@@ -818,13 +871,18 @@ export async function capture(actor: Actor, orderId: string) {
     actor.workspaceId,
     async (state, sql) => {
       const order = ownedOrder(state, actor, orderId);
+      if (order.paymentMethod === "cod" || order.status === "unpaid_cod")
+        throw new Error("Cash on delivery orders do not support payment capture.");
       if (order.captureId) return { order, operation: undefined };
       if (order.status !== "checkout_pending" || !order.providerOrderId)
         throw new Error("Checkout is not ready for payment.");
       const existingOperation = state.operations.find(
         (op) => op.orderId === orderId && op.kind === "capture",
       );
-      if (!existingOperation) assertCurrentQuote(state, order.quote);
+      if (!existingOperation) {
+        assertCurrentQuote(state, order.quote);
+        await assertDecisionQuote(state, actor, order.quote, sql);
+      }
       checkPurchase(order.quote, order.quote.fingerprint, order.quote);
       let operation = state.operations.find(
         (op) => op.kind === "capture" && op.orderId === order.id,
@@ -864,6 +922,7 @@ export async function capture(actor: Actor, orderId: string) {
       if (order.captureId) return order;
       order.captureId = result.id;
       order.status = "paid";
+      order.paymentStatus = "paid";
       const op = state.operations.find((o) => o.id === prepared.operation!.id)!;
       op.state = "succeeded";
       op.resultId = result.id;
@@ -890,7 +949,7 @@ export async function openReturn(
   buyer(actor);
   return mutateWorkspace(actor.workspaceId, (state) => {
     const order = ownedOrder(state, actor, orderId);
-    if (!order.captureId || ["refunded", "canceled"].includes(order.status))
+    if (order.paymentMethod === "cod" || !order.captureId || ["refunded", "canceled"].includes(order.status))
       throw new Error(
         "There is no eligible captured payment for this request.",
       );
@@ -1001,7 +1060,9 @@ export async function analyzeCase(actor: Actor, caseId: string) {
         ? process.env.AI_MODEL || "unconfigured"
         : analysis.mode === "rules"
           ? "recorded-protocol-v1"
-          : "deterministic-fixture-v1",
+          : analysis.mode === "unavailable"
+            ? "unavailable"
+            : "deterministic-fixture-v1",
     analyzedAt: new Date().toISOString(),
   };
   if (
@@ -1426,7 +1487,7 @@ export async function shippingEvent(
         "Canceled fulfillment cannot be shipped. Review the customer remedy.",
       );
     const allowed =
-      status === "shipped" ? ["paid", "replacement"] : ["shipped"];
+      status === "shipped" ? ["paid", "replacement", "unpaid_cod"] : ["shipped"];
     if (!allowed.includes(order.status))
       throw new Error("This shipment event is not valid in the current state.");
     order.status = status;
@@ -1509,5 +1570,43 @@ export async function addDispatchEvidence(
       );
     audit(state, actor, "dispatch.recorded", orderId);
     return entry;
+  });
+}
+
+export async function cancelOrder(
+  actor: Actor,
+  orderId: string,
+  reason = "Customer canceled order",
+) {
+  buyer(actor);
+  return mutateWorkspace(actor.workspaceId, (state) => {
+    const order = ownedOrder(state, actor, orderId);
+    if (order.status === "canceled") return order;
+    if (order.status !== "unpaid_cod" && order.status !== "checkout_pending") {
+      throw new Error(
+        "This order cannot be canceled in its current fulfillment state.",
+      );
+    }
+    if (order.captureId) {
+      throw new Error("Paid orders must use customer support for cancellations.");
+    }
+    const at = new Date().toISOString();
+    order.status = "canceled";
+    order.quote.invalidatedAt = at;
+    const quote = state.quotes.find((q) => q.id === order.quote.id);
+    if (quote) quote.invalidatedAt = at;
+    if (order.quote.groupId) {
+      const group = state.groups.find((g) => g.id === order.quote.groupId);
+      if (group) releaseCommitment(state, group, order.buyerId, "cod_order_canceled");
+    }
+    order.events.push({
+      at,
+      text:
+        order.paymentMethod === "cod"
+          ? `Order canceled by customer (${reason}). Cash-on-delivery reservation released.`
+          : `Unpaid order canceled by customer (${reason}).`,
+    });
+    audit(state, actor, "customer.order_canceled", order.id);
+    return order;
   });
 }

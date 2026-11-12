@@ -88,6 +88,9 @@
                     "minimum": 5,
                     "maximum": 1440
                   },
+                  "codCommitmentsEligible": {
+                    "type": "boolean"
+                  },
                   "productTiers": {
                     "maxItems": 40,
                     "type": "array",
@@ -148,7 +151,7 @@
               "productId": {
                 "type": "string",
                 "minLength": 1,
-                "maxLength": 100
+                "maxLength": 80
               },
               "briefVersion": {
                 "type": "integer",
@@ -327,7 +330,8 @@
               },
               "productId": {
                 "type": "string",
-                "maxLength": 20
+                "minLength": 1,
+                "maxLength": 80
               },
               "model": {
                 "type": "string",
@@ -337,6 +341,18 @@
                 "type": "string",
                 "format": "uuid",
                 "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+              },
+              "decisionId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+              },
+              "paymentMethod": {
+                "type": "string",
+                "enum": [
+                  "paypal",
+                  "cod"
+                ]
               }
             },
             "required": [
@@ -354,7 +370,8 @@
               },
               "productId": {
                 "type": "string",
-                "maxLength": 20
+                "minLength": 1,
+                "maxLength": 80
               },
               "model": {
                 "type": "string",
@@ -401,12 +418,65 @@
                 "type": "string",
                 "minLength": 64,
                 "maxLength": 64
+              },
+              "paymentMethod": {
+                "type": "string",
+                "enum": [
+                  "paypal",
+                  "cod"
+                ]
               }
             },
             "required": [
               "action",
               "quoteId",
               "fingerprint"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "string",
+                "const": "cod_checkout"
+              },
+              "quoteId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+              },
+              "fingerprint": {
+                "type": "string",
+                "minLength": 64,
+                "maxLength": 64
+              }
+            },
+            "required": [
+              "action",
+              "quoteId",
+              "fingerprint"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "string",
+                "const": "cancel_order"
+              },
+              "orderId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+              },
+              "reason": {
+                "type": "string",
+                "maxLength": 2000
+              }
+            },
+            "required": [
+              "action",
+              "orderId"
             ]
           },
           {
@@ -674,12 +744,16 @@
               "docks",
               "storage",
               "audio",
+              "headphones",
+              "earbuds",
               "accessories",
               "clothing",
               "fragrance",
               "bags",
               "home",
-              "beauty"
+              "watches",
+              "footwear",
+              "sunglasses"
             ]
           },
           "requirements": {
@@ -746,12 +820,99 @@
                 "minimum": 1,
                 "maximum": 256
               },
+              "movement": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "caseDiameterMm": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 10000
+              },
+              "waterResistanceM": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 10000
+              },
+              "frameShape": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "frameMaterial": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "lensWidthMm": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 10000
+              },
+              "bridgeMm": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 10000
+              },
+              "templeMm": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 10000
+              },
+              "polarization": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "uvProtection": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "sizeSystem": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "shoeSize": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "connection": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "noiseCancellation": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "batteryHours": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 10000
+              },
+              "voltage": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 10000
+              },
+              "capacityLitres": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 10000
+              },
               "concentration": {
                 "type": "string",
                 "enum": [
                   "eau de parfum",
                   "eau de toilette",
-                  "eau de cologne"
+                  "eau de cologne",
+                  "parfum",
+                  "extrait de parfum"
                 ]
               }
             },
@@ -831,6 +992,291 @@
     }
   },
   "paths": {
+    "/api/circles": {
+      "get": {
+        "description": "Public aggregate-only circles in the server-selected storefront. Optional circle UUID targets that exact invitation; product/model preview approved terms. Optional buyer session adds only that buyer's joined/review state; no member identities or private records.",
+        "parameters": [
+          {
+            "name": "circle",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "product",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 150
+            }
+          },
+          {
+            "name": "model",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful command or private snapshot; financial completion is reported separately in order/refund status."
+          },
+          "400": {
+            "description": "Invalid fields, unsafe state transition, changed approval, or integrity error."
+          },
+          "401": {
+            "description": "Missing/expired session or invalid access code."
+          },
+          "403": {
+            "description": "Wrong origin, party, or privileged role."
+          },
+          "404": {
+            "description": "Resource is absent or is not owned by this shopper/workspace."
+          },
+          "429": {
+            "description": "Per-actor request budget exhausted; Retry-After: 60. Actions 120/min, uploads 20/min, shopping analysis 10/min and engineering scenarios 20/min."
+          }
+        }
+      },
+      "post": {
+        "description": "Explicitly commit to the reviewed exact circle/offer, or release your own unused commitment. Joining requires consent=true and matching product, policy and requirement versions. Joining never creates an order/payment; paid or unresolved-capture commitments cannot be released. Mutations require an Origin header matching the configured app origin.",
+        "security": [
+          {
+            "session": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "productDigest": {
+                        "type": "string",
+                        "minLength": 64,
+                        "maxLength": 64
+                      },
+                      "policyVersion": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "briefVersion": {
+                        "anyOf": [
+                          {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "maximum": 9007199254740991
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "discoveryVersion": {
+                        "anyOf": [
+                          {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "maximum": 9007199254740991
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "action": {
+                        "type": "string",
+                        "const": "join"
+                      },
+                      "circleId": {
+                        "type": "string",
+                        "format": "uuid",
+                        "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+                      },
+                      "productId": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 150
+                      },
+                      "model": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 100
+                      },
+                      "consent": {
+                        "type": "boolean",
+                        "const": true
+                      }
+                    },
+                    "required": [
+                      "productDigest",
+                      "policyVersion",
+                      "briefVersion",
+                      "discoveryVersion",
+                      "action",
+                      "productId",
+                      "model",
+                      "consent"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "action": {
+                        "type": "string",
+                        "const": "leave"
+                      },
+                      "circleId": {
+                        "type": "string",
+                        "format": "uuid",
+                        "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+                      }
+                    },
+                    "required": [
+                      "action",
+                      "circleId"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful command or private snapshot; financial completion is reported separately in order/refund status."
+          },
+          "400": {
+            "description": "Invalid fields, unsafe state transition, changed approval, or integrity error."
+          },
+          "401": {
+            "description": "Missing/expired session or invalid access code."
+          },
+          "403": {
+            "description": "Wrong origin, party, or privileged role."
+          },
+          "404": {
+            "description": "Resource is absent or is not owned by this shopper/workspace."
+          },
+          "429": {
+            "description": "Per-actor request budget exhausted; Retry-After: 60. Actions 120/min, uploads 20/min, shopping analysis 10/min and engineering scenarios 20/min."
+          }
+        }
+      }
+    },
+    "/api/decisions": {
+      "get": {
+        "description": "Read this shopper's latest or explicitly owned saved decision, including current/stale status. Another customer's ID returns 404.",
+        "security": [
+          {
+            "session": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful command or private snapshot; financial completion is reported separately in order/refund status."
+          },
+          "400": {
+            "description": "Invalid fields, unsafe state transition, changed approval, or integrity error."
+          },
+          "401": {
+            "description": "Missing/expired session or invalid access code."
+          },
+          "403": {
+            "description": "Wrong origin, party, or privileged role."
+          },
+          "404": {
+            "description": "Resource is absent or is not owned by this shopper/workspace."
+          },
+          "429": {
+            "description": "Per-actor request budget exhausted; Retry-After: 60. Actions 120/min, uploads 20/min, shopping analysis 10/min and engineering scenarios 20/min."
+          }
+        }
+      },
+      "post": {
+        "description": "Create a fresh decision-bound quote after validating the owned decision, requirements, exact offer and approved group terms. This creates no order or payment. Mutations require an Origin header matching the configured app origin.",
+        "security": [
+          {
+            "session": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "type": "object",
+                "properties": {
+                  "decisionId": {
+                    "type": "string",
+                    "format": "uuid",
+                    "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+                  },
+                  "productId": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 150
+                  },
+                  "groupId": {
+                    "type": "string",
+                    "format": "uuid",
+                    "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+                  }
+                },
+                "required": [
+                  "decisionId",
+                  "productId"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful command or private snapshot; financial completion is reported separately in order/refund status."
+          },
+          "400": {
+            "description": "Invalid fields, unsafe state transition, changed approval, or integrity error."
+          },
+          "401": {
+            "description": "Missing/expired session or invalid access code."
+          },
+          "403": {
+            "description": "Wrong origin, party, or privileged role."
+          },
+          "404": {
+            "description": "Resource is absent or is not owned by this shopper/workspace."
+          },
+          "429": {
+            "description": "Per-actor request budget exhausted; Retry-After: 60. Actions 120/min, uploads 20/min, shopping analysis 10/min and engineering scenarios 20/min."
+          }
+        }
+      }
+    },
     "/api/catalog": {
       "get": {
         "description": "Public persisted catalog: strict department attributes, name, budget and page queries. Returns up to 48 exact variant records, totals and provenance. Sample stock is not proof of physical inventory.",

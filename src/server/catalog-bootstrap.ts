@@ -11,6 +11,7 @@ import { repairCatalogIndexes } from "./catalog-index-repair";
 export async function bootstrapCatalog(sql: Sql) {
   const existing = await sql.query("SELECT 1 FROM catalog_products LIMIT 1");
   if (existing.rows.length > 0) {
+    await bootstrapReviewedCatalog(sql);
     await applyCatalogRepairs(sql);
     await cleanStoredCatalogCopy(sql);
     await repairCatalogIndexes(sql);

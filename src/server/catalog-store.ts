@@ -129,10 +129,11 @@ export async function getCategoryBrandsSummary(
         min(coalesce(brand, record->>'brand', 'Unknown')) as brand,
       count(*)::text as count,
       min(price) as min_price,
-      (array_agg(record->'media'->>'url' ORDER BY price DESC))[1] as hero_img,
-      (array_agg(record ORDER BY price DESC))[1] as record
+      (array_agg(record->'media'->>'url' ORDER BY CASE WHEN record->'media'->>'url' IS NOT NULL AND record->'media'->>'url' != '' THEN 0 ELSE 1 END, price DESC))[1] as hero_img,
+      (array_agg(record ORDER BY CASE WHEN record->'media'->>'url' IS NOT NULL AND record->'media'->>'url' != '' THEN 0 ELSE 1 END, price DESC))[1] as record
     FROM catalog_products
     WHERE publication='published' AND (leaf_type = $1 OR category = $1)
+      AND ($1 != 'watches' OR lower(coalesce(brand, record->>'brand', '')) NOT IN ('apple', 'samsung'))
       GROUP BY lower(coalesce(brand, record->>'brand', 'Unknown'))
     ORDER BY count(*) DESC, brand ASC`,
     [leaf],

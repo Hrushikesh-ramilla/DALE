@@ -25,6 +25,26 @@ import powerBanksCore from "../../catalog/manifests/power-banks-core-2026-10-11-
 import speakersCore from "../../catalog/manifests/speakers-core-2026-10-11-v2.json";
 import tabletsCore from "../../catalog/manifests/tablets-core-2026-10-11-v2.json";
 import wallChargersCore from "../../catalog/manifests/wall-chargers-core-2026-10-11-v2.json";
+import watchesCore from "../../catalog/manifests/watches-core-2026-10-11-v2.json";
+import fragranceCore from "../../catalog/manifests/fragrance-core-2026-10-11-v2.json";
+import sunglassesCore from "../../catalog/manifests/sunglasses-core-2026-10-11-v2.json";
+import handbagsCore from "../../catalog/manifests/handbags-core-2026-10-11-v2.json";
+import backpacksCore from "../../catalog/manifests/backpacks-core-2026-10-11-v2.json";
+import bootsCore from "../../catalog/manifests/boots-core-2026-10-11-v2.json";
+import formalShoesCore from "../../catalog/manifests/formal-shoes-core-2026-10-11-v2.json";
+import lifestyleSneakersCore from "../../catalog/manifests/lifestyle-sneakers-core-2026-10-11-v2.json";
+import runningShoesCore from "../../catalog/manifests/running-shoes-core-2026-10-11-v2.json";
+import suitsCore from "../../catalog/manifests/suits-core-2026-10-11-v2.json";
+import shirtsCore from "../../catalog/manifests/shirts-core-2026-10-11-v2.json";
+import jacketsCore from "../../catalog/manifests/jackets-core-2026-10-11-v2.json";
+import coatsCore from "../../catalog/manifests/coats-core-2026-10-11-v2.json";
+import denimCore from "../../catalog/manifests/denim-core-2026-10-11-v2.json";
+import dressesCore from "../../catalog/manifests/dresses-core-2026-10-11-v2.json";
+import knitwearCore from "../../catalog/manifests/knitwear-core-2026-10-11-v2.json";
+import trousersCore from "../../catalog/manifests/trousers-core-2026-10-11-v2.json";
+import kitchenwareCore from "../../catalog/manifests/kitchenware-core-2026-10-11-v2.json";
+import decorCore from "../../catalog/manifests/decor-core-2026-10-11-v2.json";
+import homeTextilesCore from "../../catalog/manifests/home-textiles-core-2026-10-11-v2.json";
 
 /** Deploy the reviewed starter batch once. Withdrawal survives subsequent restarts. */
 export async function bootstrapReviewedCatalog(sql: Sql) {
@@ -105,6 +125,26 @@ export async function bootstrapReviewedCatalog(sql: Sql) {
     portableSsdsCore,
     keyboardsCore,
     miceCore,
+    watchesCore,
+    fragranceCore,
+    sunglassesCore,
+    handbagsCore,
+    backpacksCore,
+    bootsCore,
+    formalShoesCore,
+    lifestyleSneakersCore,
+    runningShoesCore,
+    suitsCore,
+    shirtsCore,
+    jacketsCore,
+    coatsCore,
+    denimCore,
+    dressesCore,
+    knitwearCore,
+    trousersCore,
+    kitchenwareCore,
+    decorCore,
+    homeTextilesCore,
   ];
 
   for (const leaf of leafTypeKeys) {
@@ -136,19 +176,29 @@ export async function bootstrapReviewedCatalog(sql: Sql) {
       [manifest.id],
     );
     if (existing.rows.length) {
-      continue;
+      if (existing.rows[0].content_hash !== hash) {
+        await sql.query(
+          "UPDATE catalog_releases SET content_hash=$1, manifest=$2::jsonb WHERE id=$3",
+          [hash, JSON.stringify(manifest), manifest.id],
+        );
+      }
+      const existingProductIds = await sql.query<{ id: string }>(
+        "SELECT id FROM catalog_products WHERE id=ANY($1::text[])",
+        [manifest.products.map((p) => p.id)],
+      );
+      const existingSet = new Set(existingProductIds.rows.map((r) => r.id));
+      const missingProducts = manifest.products.filter(
+        (p) => !existingSet.has(p.id),
+      );
+      if (missingProducts.length === 0) {
+        continue;
+      }
+    } else {
+      await sql.query(
+        "INSERT INTO catalog_releases(id,content_hash,status,manifest,reviewed_by,published_at) VALUES($1,$2,'published',$3::jsonb,$4,now())",
+        [manifest.id, hash, content, manifest.reviewedBy],
+      );
     }
-    const collision = await sql.query(
-      "SELECT id FROM catalog_products WHERE id=ANY($1::text[])",
-      [manifest.products.map((p) => p.id)],
-    );
-    if (collision.rows.length) {
-      continue;
-    }
-    await sql.query(
-      "INSERT INTO catalog_releases(id,content_hash,status,manifest,reviewed_by,published_at) VALUES($1,$2,'published',$3::jsonb,$4,now())",
-      [manifest.id, hash, content, manifest.reviewedBy],
-    );
     const records = manifest.products.map((p) => {
       const p2 = p as Record<string, unknown>;
       const brand = p.brand || p.attributes?.brand || null;
@@ -178,7 +228,16 @@ export async function bootstrapReviewedCatalog(sql: Sql) {
     await sql.query(
       `INSERT INTO catalog_products(id,category,price,record,publication,release_id,leaf_type,brand,model_name,sku_variant,revision_id)
       SELECT id,category,price,record,publication,$2,leaf_type,brand,model_name,sku_variant,revision_id FROM jsonb_to_recordset($1::jsonb)
-      AS items(id text,category text,price integer,record jsonb,publication text,leaf_type text,brand text,model_name text,sku_variant text,revision_id text)`,
+      AS items(id text,category text,price integer,record jsonb,publication text,leaf_type text,brand text,model_name text,sku_variant text,revision_id text)
+      ON CONFLICT(id) DO UPDATE SET
+        category = EXCLUDED.category,
+        price = EXCLUDED.price,
+        record = EXCLUDED.record,
+        publication = EXCLUDED.publication,
+        leaf_type = EXCLUDED.leaf_type,
+        brand = EXCLUDED.brand,
+        model_name = EXCLUDED.model_name,
+        sku_variant = EXCLUDED.sku_variant`,
       [JSON.stringify(records), manifest.id],
     );
     for (const p of manifest.products) {

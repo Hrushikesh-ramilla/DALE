@@ -50,7 +50,9 @@ export function Dialog({
     return () => {
       panel.removeEventListener("keydown", handle);
       document.body.style.overflow = previousOverflow;
-      if (previous?.isConnected) previous.focus();
+      const returnTarget =
+        previous?.closest("details:not([open])")?.querySelector<HTMLElement>("summary") || previous;
+      if (returnTarget?.isConnected) returnTarget.focus();
       else document.getElementById("main")?.focus();
     };
   }, [previous]);
