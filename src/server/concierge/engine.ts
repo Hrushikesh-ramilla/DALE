@@ -552,10 +552,10 @@ export async function acknowledgeBrowser(actor: Actor, raw: unknown) {
       );
       const expected = new URL(action.operation.path, "https://dale.invalid");
       if (
-        actual.pathname.replace(/\/$/, "") !== expected.pathname.replace(/\/$/, "")
-      ) {
-        action.outcome = `Browser navigated to ${actual.pathname}.`;
-      }
+        actual.pathname !== expected.pathname ||
+        actual.search !== expected.search
+      )
+        throw new Error("Browser has not reached the requested destination.");
       if (
         expected.pathname.startsWith("/product/") &&
         receipt.client_context.currently_viewed_product_id !==
@@ -578,13 +578,10 @@ export async function acknowledgeBrowser(actor: Actor, raw: unknown) {
       }
       if (
         receipt.status === "succeeded" &&
-        action.targets?.some((t) => t.status !== "ready")
-      ) {
-        for (const t of action.targets) {
-          t.status = "ready";
-          t.outcome = "Destination rendered in registered browser tab.";
-        }
-      }
+        (!action.targets?.length ||
+          action.targets.some((t) => t.status !== "ready"))
+      )
+        throw new Error("Not every requested browser tab has rendered.");
     }
     if (receipt.status === "succeeded" && action.operation.type === "tab") {
       if (action.operation.command !== "close")
