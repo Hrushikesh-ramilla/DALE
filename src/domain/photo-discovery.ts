@@ -12,6 +12,16 @@ export const photoObservation = z.object({
         leafType: z.enum(leafTypeKeys).nullable(),
         visibleBrand: z.string().trim().min(1).max(80).nullable(),
         visibleModel: z.string().trim().min(1).max(100).nullable(),
+        visibleConcentration: z
+          .enum([
+            "eau de parfum",
+            "eau de toilette",
+            "eau de cologne",
+            "extrait de parfum",
+            "parfum",
+          ])
+          .nullable()
+          .default(null),
         traits: z.array(z.string().trim().min(1).max(60)).max(8),
       }),
     )
@@ -45,6 +55,54 @@ const tokens = (text: string) =>
 const contains = (text: string, phrase: string) =>
   ` ${normalize(text)} `.includes(` ${normalize(phrase)} `);
 
+/** A product beside its own box is one identity, not two recommendations. */
+export function coalescePhotoItems(items: PhotoObservation["items"]) {
+  const result: PhotoObservation["items"] = [];
+  for (const item of items) {
+    const previous =
+      item.visibleBrand && item.visibleModel
+        ? result.find(
+            (p) =>
+              p.category === item.category &&
+              normalize(p.visibleBrand || "") ===
+                normalize(item.visibleBrand!) &&
+              normalize(p.visibleModel || "") ===
+                normalize(item.visibleModel!) &&
+              (!p.visibleConcentration ||
+                !item.visibleConcentration ||
+                p.visibleConcentration === item.visibleConcentration),
+          )
+        : undefined;
+    if (!previous) {
+      result.push({ ...item });
+      continue;
+    }
+    previous.visibleConcentration ||= item.visibleConcentration;
+    if (
+      /\b(box|packaging|carton)\b/i.test(previous.label) &&
+      !/\b(box|packaging|carton)\b/i.test(item.label)
+    ) {
+      previous.label = item.label;
+      previous.traits = item.traits;
+    }
+  }
+  return result;
+}
+
+function recordedConcentration(product: Product) {
+  const text = normalize(
+    product.attributes?.concentration ||
+      product.specs.find((s) => /^concentration\s*:/i.test(s)) ||
+      product.name,
+  );
+  if (/\bextrait(?: de parfum)?\b/.test(text)) return "extrait de parfum";
+  if (/\beau de parfum\b|\bedp\b/.test(text)) return "eau de parfum";
+  if (/\beau de toilette\b|\bedt\b/.test(text)) return "eau de toilette";
+  if (/\beau de cologne\b|\bedc\b/.test(text)) return "eau de cologne";
+  if (/\bparfum\b/.test(text)) return "parfum";
+  return null;
+}
+
 /** Observations are search hints, never proof of identity or specifications. */
 export function matchPhotoItem(
   item: PhotoObservation["items"][number],
@@ -65,6 +123,12 @@ export function matchPhotoItem(
       );
       // A legible different brand is a contradiction, not a similar match.
       if (item.visibleBrand && !brandMatch) return null;
+      if (
+        item.category === "fragrance" &&
+        item.visibleConcentration &&
+        recordedConcentration(p) !== item.visibleConcentration
+      )
+        return null;
       const identityText = [
         p.name,
         p.modelName,
@@ -100,6 +164,9 @@ export function matchPhotoItem(
             : ("similar" as const),
         reasons: [
           ...(brandMatch ? ["Visible brand matches listing"] : []),
+          ...(item.category === "fragrance" && item.visibleConcentration
+            ? [`Label concentration matches: ${item.visibleConcentration}`]
+            : []),
           ...(modelMatch
             ? ["Model text matches listing; confirm variant"]
             : []),
