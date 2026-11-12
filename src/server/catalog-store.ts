@@ -263,6 +263,7 @@ export async function browseCatalog(input: {
   const where = `($1='' OR category=$1 OR leaf_type=$1)
     AND ($6='' OR leaf_type=$6 OR record->>'leafType'=$6 OR category=$6)
     AND ($7='' OR lower(coalesce(brand, record->>'brand', record->'attributes'->>'brand', ''))=lower($7))
+    AND ($1!='watches' AND $6!='watches' OR lower(coalesce(brand, record->>'brand', '')) NOT IN ('apple', 'samsung'))
     AND ($2='' OR to_tsvector('simple',coalesce(record->>'name','') || ' ' || coalesce(record->>'description','') || ' ' || coalesce(record->>'specs','')) @@ plainto_tsquery('simple',$2))
     AND price<=$3 AND coalesce(record->'attributes','{}'::jsonb) @> $4::jsonb
     AND (publication='published' OR ($5 AND publication='fixture'))`;
@@ -297,6 +298,7 @@ export async function browseCatalog(input: {
       (array_agg(record->'media'->>'url' ORDER BY price DESC))[1] as hero_img
     FROM catalog_products
     WHERE publication='published' AND ($1='' OR leaf_type=$1 OR category=$1)
+      AND ($1 != 'watches' OR lower(coalesce(brand, record->>'brand', '')) NOT IN ('apple', 'samsung'))
       GROUP BY lower(coalesce(brand, record->>'brand', 'Unknown'))
     ORDER BY count(*) DESC, brand ASC`,
     [input.leafType || input.category || ""],

@@ -135,7 +135,7 @@ async function generate(
     process.env.CONCIERGE_PROVIDER || process.env.AI_PROVIDER || "gemini";
   const model =
     process.env.CONCIERGE_MODEL || process.env.AI_MODEL || "gemini-3.5-flash-lite";
-  const reasoning = process.env.CONCIERGE_REASONING_EFFORT || "low";
+  const reasoning = process.env.CONCIERGE_REASONING_EFFORT || "none";
   const streaming = agentStreams();
   const generation = randomUUID();
   if (streaming)
@@ -218,7 +218,9 @@ async function generate(
                 }
               : {}),
             temperature: provider === "self_hosted" ? 0 : 0.7,
-            ...(provider === "gemini" ? { reasoning_effort: reasoning } : {}),
+            ...(provider === "gemini" && reasoning !== "none"
+              ? { reasoning_effort: reasoning }
+              : {}),
             max_tokens: replyTokenLimit(),
             stream: streaming,
           }),

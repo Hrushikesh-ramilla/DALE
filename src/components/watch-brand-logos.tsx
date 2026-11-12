@@ -501,19 +501,19 @@ export const AppleWatchLogo: FC<LogoProps> = ({ className = "", size = 80, width
   </svg>
 );
 
-// 10h. Tudor: Iconic Shield + TUDOR Wordmark
+// 10h. Tudor: Iconic Shield + TUDOR Wordmark (Proportionately calibrated to prevent dial crowding)
 export const TudorLogo: FC<LogoProps> = ({ className = "", size = 80, width, height, style, ...props }) => (
   <svg
-    viewBox="0 0 220 80"
-    width={width ?? size * 2.2}
-    height={height ?? size}
+    viewBox="0 0 160 70"
+    width={width ?? size * 1.4}
+    height={height ?? size * 0.7}
     fill="currentColor"
     className={className}
     style={{ overflow: "visible", ...style }}
     {...props}
   >
     {/* Tudor Shield Emblem */}
-    <g transform="translate(110, 22) scale(0.95)">
+    <g transform="translate(80, 18) scale(0.8)">
       <path
         d="M-13 -13 L13 -13 L13 0 C13 10.5 0 17 0 17 C0 17 -13 10.5 -13 0 Z"
         fill="#dc2626"
@@ -528,13 +528,13 @@ export const TudorLogo: FC<LogoProps> = ({ className = "", size = 80, width, hei
       />
     </g>
     <text
-      x="110"
-      y="65"
+      x="80"
+      y="54"
       textAnchor="middle"
       fontFamily="'Playfair Display', 'Cinzel', 'Times New Roman', serif"
-      fontSize="24"
-      fontWeight="800"
-      letterSpacing="5"
+      fontSize="17"
+      fontWeight="700"
+      letterSpacing="3.5"
       fill="currentColor"
     >
       TUDOR

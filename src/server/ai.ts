@@ -129,7 +129,7 @@ export async function completion<T>(
       ],
       response_format: { type: "json_object" },
       ...(endpoint.hostname === "generativelanguage.googleapis.com"
-        ? { max_tokens: 2400, reasoning_effort: "low" }
+        ? { max_tokens: 2400 }
         : { max_completion_tokens: 1200, store: false }),
     }),
     signal: AbortSignal.timeout(30000),

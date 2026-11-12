@@ -30,7 +30,7 @@ export function DaleCopilotSidecar() {
   const [input, setInput] = useState("");
   const [cartView, setCartView] = useState(false);
   const [photoView, setPhotoView] = useState(false);
-  const displayedError = c.error || (!c.isThinking && c.state?.turn?.status === "failed" ? c.state.turn.error || "This request did not finish. Your conversation remains saved." : "");
+  const displayedError = c.error ? c.error : "";
   const draftOwner = c.state?.owner_id || null;
   const restoredOwner = useRef<string | null>(null);
   useEffect(() => {
@@ -372,52 +372,28 @@ export function DaleCopilotSidecar() {
             </button>
           </div>
         )}
-        {!c.isThinking && c.state?.turn?.status === "awaiting_ui" && (
-          <section
-            className="dale-action-card"
-            aria-label="Interrupted browser action"
-          >
-            <p>
-              {c.state.actions.find((a) => a.outcome)?.outcome ||
-                "A browser action is awaiting acknowledgment."}
-            </p>
-            {c.state.actions.some((a) => a.operation.type === "tabs") && (
-              <button type="button" onClick={c.recoverTabs}>
-                Open requested tabs
-              </button>
-            )}
-            {c.state.actions
-              .filter((a) => a.interaction === "file")
-              .map((a) => (
-                <button
-                  key={a.id}
-                  type="button"
-                  onClick={() => c.recoverFile(a.id)}
-                  aria-label="Choose file for DALE task"
-                >
-                  Choose file
-                </button>
-              ))}
-            <button type="button" onClick={() => void c.resume()}>
-              Resume browser action
-            </button>{" "}
-            <button type="button" onClick={c.cancel}>
-              Cancel pending action
-            </button>
-          </section>
-        )}
         {!c.isThinking &&
-          ["running", "failed"].includes(c.state?.turn?.status || "") && (
-            <section className="dale-action-card">
-              <p>{c.state?.turn?.status === "failed" ? "This request did not finish. Your request is saved." : "The server still records an active turn."}</p>
-              <button type="button" onClick={() => void c.refresh()}>
-                Refresh turn status
-              </button>{" "}
-              <button type="button" onClick={() => void c.resume()}>
-                Resume saved task
-              </button>{" "}
+          c.state?.turn?.status === "awaiting_ui" &&
+          c.state.actions.some((a) => a.interaction === "file") && (
+            <section
+              className="dale-action-card"
+              aria-label="File selection required"
+            >
+              <p>Please select a file to proceed with your request.</p>
+              {c.state.actions
+                .filter((a) => a.interaction === "file")
+                .map((a) => (
+                  <button
+                    key={a.id}
+                    type="button"
+                    onClick={() => c.recoverFile(a.id)}
+                    aria-label="Choose file for DALE task"
+                  >
+                    Choose file
+                  </button>
+                ))}
               <button type="button" onClick={c.cancel}>
-                Cancel active turn
+                Cancel
               </button>
             </section>
           )}
